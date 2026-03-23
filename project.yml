@@ -72,14 +72,14 @@ sidebar:
         url: /task-enable-mfa.html
       - title: Maintain an audit trail of Console actions
         url: /task-maintain-audit-trail.html
-  - title: Create storage fleets
-    entries:
-    - title: Discover storage in NetApp Console
-      url: /task-discover-storage.html
-    - title: Organize storage into fleets
-      url: /task-organize-storage-fleets.html
-    - title: Assign users to fleets for storage management
-      url: /task-assign-users-fleets.html
+    - title: Create storage fleets
+      entries:
+      - title: Discover storage in NetApp Console
+        url: /task-discover-storage.html
+      - title: Organize storage into fleets
+        url: /task-organize-storage-fleets.html
+      - title: Assign users to fleets for storage management
+        url: /task-assign-users-fleets.html
   - title: Storage management with NetApp Console
     entries:
     - title: Use storage classes to standardize management
