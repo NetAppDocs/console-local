@@ -34,7 +34,7 @@ sidebar:
         url: /task-install-linux-host.html
     - title: Deploy high-availability environment
       url: /task-deploy-high-availability.html
-  - title: Operate and maintain NetApp Console Local
+  - title: Maintain NetApp Console Local
     entries:
     - title: Monitor NetApp Console system health
       url: /task-monitor-system-health.html
@@ -44,7 +44,7 @@ sidebar:
       url: /task-integrate-siem.html
     - title: Upgrading NetApp Console
       url: /task-upgrade-netapp-console.html
-    - title: Troubleshooting NetApp Console issues
+    - title: Troubleshooting NetApp Console
       entries:
       - title: Diagnose common issues
         url: /task-diagnose-issues.html
@@ -118,23 +118,21 @@ sidebar:
           url: /task-automated-remediation.html
         - title: Guided remediation
           url: /task-guided-remediation.html
-  - title: Protect your data
+      - title: Work with NetApp Support
+        entries:
+        - title: Manage AutoSupport messages
+          url: /task-manage-autosupport.html
+        - title: View and submit support cases
+          url: /task-view-submit-support-cases.html
+  - title: Use NetApp Cyber Resilience data services
     entries:
     - title: Use data services
       url: /concept-use-data-services.html
     - title: Subscribe
       url: /task-subscribe-data-services.html
-    - title: Grant access
+    - title: Grant access to data services
       url: /task-grant-access-data-services.html
     - title: Monitor protection status (new dashboard)
       url: /task-monitor-protection-status.html
-  - title: Get help
-    entries:
-    - title: Manage AutoSupport messages
-      url: /task-manage-autosupport.html
-    - title: View and submit support cases
-      url: /task-view-submit-support-cases.html
-  - title: FAQ
-    url: /faq.html
   - title: Legal notices
     url: /legal-notices.html
