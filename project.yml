@@ -42,14 +42,16 @@ sidebar:
       url: /task-view-performance-metrics.html
     - title: Integrate with your own SIEM tools
       url: /task-integrate-siem.html
-  - title: Upgrading NetApp Console
-    url: /task-upgrade-netapp-console.html
-  - title: Diagnosing issues with NetApp Console
-    url: /task-diagnose-issues.html
-  - title: Working with NetApp Support (ASUP messages)
-    url: /task-work-with-netapp-support.html
-  - title: Using diagnostic tools
-    url: /task-use-diagnostic-tools.html
+    - title: Upgrading NetApp Console
+      url: /task-upgrade-netapp-console.html
+    - title: Troubleshooting NetApp Console issues
+      entries:
+      - title: Diagnose common issues
+        url: /task-diagnose-issues.html
+      - title: Working with NetApp Support (ASUP messages)
+        url: /task-work-with-netapp-support.html
+      - title: Using diagnostic tools
+        url: /task-use-diagnostic-tools.html
   - title: Set up NetApp Console
     entries:
     - title: Verify your Console organization
@@ -96,26 +98,26 @@ sidebar:
           url: /task-associate-storage-class-fleet.html
         - title: Disassociate a storage class from a fleet
           url: /task-disassociate-storage-class-fleet.html
-  - title: Provisioning storage
-    entries:
-    - title: Manual provisioning
-      url: /task-manual-provisioning.html
-    - title: Automated provisioning
-      url: /task-automated-provisioning.html
-    - title: Agentic provisioning
-      url: /task-agentic-provisioning.html
-  - title: Monitor and respond to storage needs
-    entries:
-    - title: Monitor fleet-wide health and performance
-      url: /task-monitor-fleet-health.html
-    - title: Configure notifications and alert policies
-      url: /task-configure-notifications.html
-    - title: Remediating storage issues
+    - title: Provisioning storage
       entries:
-      - title: Automated remediation
-        url: /task-automated-remediation.html
-      - title: Guided remediation
-        url: /task-guided-remediation.html
+      - title: Manual provisioning
+        url: /task-manual-provisioning.html
+      - title: Automated provisioning
+        url: /task-automated-provisioning.html
+      - title: Agentic provisioning
+        url: /task-agentic-provisioning.html
+    - title: Monitor and respond to storage needs
+      entries:
+      - title: Monitor fleet-wide health and performance
+        url: /task-monitor-fleet-health.html
+      - title: Configure notifications and alert policies
+        url: /task-configure-notifications.html
+      - title: Remediating storage issues
+        entries:
+        - title: Automated remediation
+          url: /task-automated-remediation.html
+        - title: Guided remediation
+          url: /task-guided-remediation.html
   - title: Protect your data
     entries:
     - title: Use data services
