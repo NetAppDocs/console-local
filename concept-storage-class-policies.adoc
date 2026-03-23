@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: concept-storage-class-policies.html
+keywords: storage class policies, policies, storage class, IOPS, capacity, tiering, netapp console
+summary: "Learn about the policies that define storage classes in NetApp Console Local."
+---
+= Understand storage class policies
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Learn about the policies that define storage classes in the NetApp Console Local, including performance tiers, capacity thresholds, and data management rules that drive consistent storage provisioning.

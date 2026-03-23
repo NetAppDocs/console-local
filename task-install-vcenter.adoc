@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-install-vcenter.html
+keywords: install, vcenter, vmware, vcenter environment, deployment, netapp console local
+summary: "Install NetApp Console Local in your VMware vCenter environment."
+---
+= Install in your VCenter environment
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Install the NetApp Console Local in your VMware vCenter environment.

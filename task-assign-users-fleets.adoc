@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-assign-users-fleets.html
+keywords: assign users, fleet, access control, roles, storage management, netapp console
+summary: "Assign users to storage fleets to grant them management access in NetApp Console Local."
+---
+= Assign users to fleets for storage management
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Assign users to storage fleets in the NetApp Console Local to grant them the access they need to manage storage resources within their designated fleet.

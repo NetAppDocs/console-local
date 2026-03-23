@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-monitor-protection-status.html
+keywords: protection status, data protection, dashboard, backup, replication, netapp console
+summary: "Monitor the protection status of your data using the NetApp Console Local protection dashboard."
+---
+= Monitor protection status (new dashboard)
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Monitor the protection status of your data using the new protection dashboard in the NetApp Console Local to track backup and replication coverage across your storage environment.

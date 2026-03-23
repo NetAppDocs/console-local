@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-work-with-netapp-support.html
+keywords: AutoSupport, ASUP, support, NetApp support, support cases, netapp console
+summary: "Work with NetApp Support using AutoSupport messages and support cases."
+---
+= Working with NetApp Support (ASUP messages)
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Work with NetApp Support by using AutoSupport (ASUP) messages to share diagnostic data and expedite issue resolution for the NetApp Console Local.

@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-organize-storage-fleets.html
+keywords: organize, storage fleets, fleet, group, storage systems, netapp console
+summary: "Organize discovered storage systems into fleets for simplified management in NetApp Console Local."
+---
+= Organize storage into fleets
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Organize discovered storage systems into fleets in the NetApp Console Local to group related resources and simplify management across your environment.

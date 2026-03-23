@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: whats-new.html
+keywords: what's new, new features, release notes, netapp console local
+summary: "Learn about the new features and enhancements in the latest release of NetApp Console Local."
+---
+= What's new with NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Learn about the new features and enhancements in the latest release of the NetApp Console Local.

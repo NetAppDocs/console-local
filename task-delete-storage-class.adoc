@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-delete-storage-class.html
+keywords: delete storage class, remove storage class, netapp console
+summary: "Delete a storage class from NetApp Console Local when it is no longer needed."
+---
+= Delete a storage class
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Delete a storage class from the NetApp Console Local when it is no longer needed, ensuring it is not associated with any active fleets before removal.

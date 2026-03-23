@@ -1,12 +1,138 @@
 settings:
-  name: "Product Name"
+  name: "NetApp Console Local"
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: true
 
-sidebar: 
+sidebar:
   entries:
+  - title: What's new
+    url: /whats-new.html
+  - title: Learn about NetApp Console Local
+    entries:
+    - title: Learn about NetApp Console Local
+      url: /concept-netapp-console-local.html
+    - title: Learn about storage fleets
+      url: /concept-storage-fleets.html
+    - title: Learn about storage classes
+      url: /concept-storage-classes.html
+    - title: Learn about identity and access management
+      url: /concept-identity-and-access-management.html
+    - title: Learn about LLM integration (AI-assisted management)
+      url: /concept-llm-integration.html
+    - title: Learn about data services
+      url: /concept-data-services.html
+  - title: Deploy NetApp Console Local
+    entries:
+    - title: Install NetApp Console Local
+      entries:
+      - title: Install in your VCenter environment
+        url: /task-install-vcenter.html
+      - title: Install on a Linux host
+        url: /task-install-linux-host.html
+    - title: Deploy high-availability environment
+      url: /task-deploy-high-availability.html
+  - title: Operate and maintain NetApp Console Local
+    entries:
+    - title: Monitor NetApp Console system health
+      url: /task-monitor-system-health.html
+    - title: Viewing performance, diskspace and capacity metrics
+      url: /task-view-performance-metrics.html
+    - title: Integrate with your own SIEM tools
+      url: /task-integrate-siem.html
+  - title: Upgrading NetApp Console
+    url: /task-upgrade-netapp-console.html
+  - title: Diagnosing issues with NetApp Console
+    url: /task-diagnose-issues.html
+  - title: Working with NetApp Support (ASUP messages)
+    url: /task-work-with-netapp-support.html
+  - title: Using diagnostic tools
+    url: /task-use-diagnostic-tools.html
+  - title: Set up NetApp Console
+    entries:
+    - title: Verify your Console organization
+      url: /task-verify-console-organization.html
+    - title: Configure AI management
+      entries:
+      - title: Connect your LLM
+        url: /task-connect-llm.html
+    - title: Secure NetApp Console access
+      entries:
+      - title: Add Console users
+        url: /task-add-users.html
+      - title: Integrate with Active Directory for user management
+        url: /task-integrate-active-directory.html
+      - title: Configure single-sign-on
+        url: /task-configure-sso.html
+      - title: Enable MFA for users
+        url: /task-enable-mfa.html
+      - title: Maintain an audit trail of Console actions
+        url: /task-maintain-audit-trail.html
+  - title: Create storage fleets
+    entries:
+    - title: Discover storage in NetApp Console
+      url: /task-discover-storage.html
+    - title: Organize storage into fleets
+      url: /task-organize-storage-fleets.html
+    - title: Assign users to fleets for storage management
+      url: /task-assign-users-fleets.html
+  - title: Storage management with NetApp Console
+    entries:
+    - title: Use storage classes to standardize management
+      entries:
+      - title: Understand storage classes
+        url: /concept-storage-classes.html
+      - title: Understand storage class policies
+        url: /concept-storage-class-policies.html
+      - title: Manage storage classes
+        entries:
+        - title: Create a storage class
+          url: /task-create-storage-class.html
+        - title: Delete a storage class
+          url: /task-delete-storage-class.html
+        - title: Associate a storage class to a fleet
+          url: /task-associate-storage-class-fleet.html
+        - title: Disassociate a storage class from a fleet
+          url: /task-disassociate-storage-class-fleet.html
+  - title: Provisioning storage
+    entries:
+    - title: Manual provisioning
+      url: /task-manual-provisioning.html
+    - title: Automated provisioning
+      url: /task-automated-provisioning.html
+    - title: Agentic provisioning
+      url: /task-agentic-provisioning.html
+  - title: Monitor and respond to storage needs
+    entries:
+    - title: Monitor fleet-wide health and performance
+      url: /task-monitor-fleet-health.html
+    - title: Configure notifications and alert policies
+      url: /task-configure-notifications.html
+    - title: Remediating storage issues
+      entries:
+      - title: Automated remediation
+        url: /task-automated-remediation.html
+      - title: Guided remediation
+        url: /task-guided-remediation.html
+  - title: Protect your data
+    entries:
+    - title: Use data services
+      url: /concept-use-data-services.html
+    - title: Subscribe
+      url: /task-subscribe-data-services.html
+    - title: Grant access
+      url: /task-grant-access-data-services.html
+    - title: Monitor protection status (new dashboard)
+      url: /task-monitor-protection-status.html
+  - title: Get help
+    entries:
+    - title: Manage AutoSupport messages
+      url: /task-manage-autosupport.html
+    - title: View and submit support cases
+      url: /task-view-submit-support-cases.html
+  - title: FAQ
+    url: /faq.html
   - title: Legal notices
     url: /legal-notices.html

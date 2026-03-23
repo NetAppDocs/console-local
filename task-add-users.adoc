@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-add-users.html
+keywords: add users, user management, access, roles, netapp console local
+summary: "Add Console users to grant access to NetApp Console Local."
+---
+= Add Console users
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Add Console users to grant them access to the NetApp Console Local and assign appropriate roles based on their responsibilities.

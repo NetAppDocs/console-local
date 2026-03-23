@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-create-storage-class.html
+keywords: create storage class, storage class, define, policy, netapp console
+summary: "Create a storage class in NetApp Console Local to standardize storage provisioning."
+---
+= Create a storage class
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Create a storage class in the NetApp Console Local to define a reusable set of storage policies that standardize provisioning across your environment.

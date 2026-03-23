@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-configure-sso.html
+keywords: SSO, single sign-on, SAML, identity provider, authentication, netapp console
+summary: "Configure single sign-on (SSO) for NetApp Console Local using your identity provider."
+---
+= Configure single-sign-on
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Configure single sign-on (SSO) for the NetApp Console Local to allow users to authenticate using your existing identity provider (IdP).

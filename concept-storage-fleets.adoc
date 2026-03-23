@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: concept-storage-fleets.html
+keywords: storage fleets, fleet management, storage organization, netapp console
+summary: "Learn how storage fleets let you group and manage storage resources in NetApp Console Local."
+---
+= Learn about storage fleets
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Learn how storage fleets let you group and manage storage resources in the NetApp Console Local.

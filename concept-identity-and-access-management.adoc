@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: concept-identity-and-access-management.html
+keywords: identity, access management, IAM, roles, users, federation, SSO, MFA, netapp console
+summary: "Learn about identity and access management in NetApp Console Local, including user roles, federation, and access control."
+---
+= Learn about identity and access management
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Learn about the NetApp Console Local identity and access management (IAM) capabilities, including user roles, federation, single sign-on, and multi-factor authentication.

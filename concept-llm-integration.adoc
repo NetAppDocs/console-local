@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: concept-llm-integration.html
+keywords: LLM, AI, artificial intelligence, AI-assisted management, large language model, netapp console
+summary: "Learn how NetApp Console Local integrates with large language models to provide AI-assisted storage management capabilities."
+---
+= Learn about LLM integration (AI-assisted management)
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Learn how the NetApp Console Local integrates with large language models (LLMs) to provide AI-assisted storage management and agentic provisioning capabilities.

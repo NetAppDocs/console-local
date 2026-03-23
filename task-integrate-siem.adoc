@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-integrate-siem.html
+keywords: SIEM, security, logging, monitoring, integration, syslog, netapp console
+summary: "Integrate NetApp Console Local with your SIEM tools for centralized security logging and monitoring."
+---
+= Integrate with your own SIEM tools
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Integrate the NetApp Console Local with your security information and event management (SIEM) tools to centralize logging, monitoring, and security event correlation.

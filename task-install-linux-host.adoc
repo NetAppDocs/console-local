@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-install-linux-host.html
+keywords: install, linux, linux host, bare metal, deployment, netapp console local
+summary: "Install NetApp Console Local on a Linux host."
+---
+= Install on a Linux host
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Install the NetApp Console Local on a Linux host.

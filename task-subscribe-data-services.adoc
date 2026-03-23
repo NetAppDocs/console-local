@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-subscribe-data-services.html
+keywords: subscribe, data services, enable, activate, netapp console
+summary: "Subscribe to data services in NetApp Console Local to enable data protection capabilities."
+---
+= Subscribe
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Subscribe to data services in the NetApp Console Local to activate data protection capabilities for your storage environment.

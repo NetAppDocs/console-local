@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-use-diagnostic-tools.html
+keywords: diagnostic tools, troubleshoot, logs, debug, netapp console local
+summary: "Use the diagnostic tools available in NetApp Console Local to investigate and resolve issues."
+---
+= Using diagnostic tools
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Use the diagnostic tools available in the NetApp Console Local to investigate, debug, and resolve issues in your environment.

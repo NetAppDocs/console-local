@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-agentic-provisioning.html
+keywords: agentic provisioning, AI, LLM, autonomous, intelligent provisioning, netapp console
+summary: "Use AI-driven agentic provisioning to autonomously fulfill storage requests in NetApp Console Local."
+---
+= Agentic provisioning
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Use AI-driven agentic provisioning in the NetApp Console Local to autonomously interpret and fulfill storage requests through your connected LLM, reducing the need for manual configuration.

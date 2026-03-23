@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-automated-provisioning.html
+keywords: automated provisioning, automation, policy-driven, storage class, netapp console
+summary: "Configure automated storage provisioning using storage classes and policies in NetApp Console Local."
+---
+= Automated provisioning
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Configure automated storage provisioning in the NetApp Console Local so that storage is allocated automatically based on storage class policies, reducing manual intervention.
