@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-manual-provisioning.html
+permalink: task-provisioning-manual.html
 keywords: manual provisioning, provision storage, create volume, netapp console
 summary: "Manually provision storage resources using NetApp Console Local."
 ---

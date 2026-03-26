@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-grant-access-data-services.html
+permalink: task-data-services-access-grant.html
 keywords: grant access, data services, permissions, users, roles, netapp console
 summary: "Grant users access to data services in NetApp Console Local."
 ---

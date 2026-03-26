@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-subscribe-data-services.html
+permalink: task-data-services-subscribe.html
 keywords: subscribe, data services, enable, activate, netapp console
 summary: "Subscribe to data services in NetApp Console Local to enable data protection capabilities."
 ---

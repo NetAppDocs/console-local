@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-use-diagnostic-tools.html
+permalink: task-diagnostic-tools-use.html
 keywords: diagnostic tools, troubleshoot, logs, debug, netapp console local
 summary: "Use the diagnostic tools available in NetApp Console Local to investigate and resolve issues."
 ---

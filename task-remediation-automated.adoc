@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-automated-remediation.html
+permalink: task-remediation-automated.html
 keywords: automated remediation, auto-fix, self-healing, storage issues, netapp console
 summary: "Use automated remediation in NetApp Console Local to automatically resolve common storage issues."
 ---

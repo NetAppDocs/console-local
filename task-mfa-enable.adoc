@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-enable-mfa.html
+permalink: task-mfa-enable.html
 keywords: MFA, multi-factor authentication, two-factor, 2FA, security, netapp console
 summary: "Enable multi-factor authentication (MFA) for users in NetApp Console Local."
 ---

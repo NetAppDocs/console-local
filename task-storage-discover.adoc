@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-discover-storage.html
+permalink: task-storage-discover.html
 keywords: discover, storage, storage systems, onboard, inventory, netapp console
 summary: "Discover storage systems in NetApp Console Local to bring them under centralized management."
 ---

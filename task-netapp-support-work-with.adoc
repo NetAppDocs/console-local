@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-work-with-netapp-support.html
+permalink: task-netapp-support-work-with.html
 keywords: AutoSupport, ASUP, support, NetApp support, support cases, netapp console
 summary: "Work with NetApp Support using AutoSupport messages and support cases."
 ---

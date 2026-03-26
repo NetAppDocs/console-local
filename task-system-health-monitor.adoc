@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-monitor-system-health.html
+permalink: task-system-health-monitor.html
 keywords: system health, monitoring, alerts, status, netapp console local
 summary: "Monitor the system health of NetApp Console Local to ensure all components are operating correctly."
 ---

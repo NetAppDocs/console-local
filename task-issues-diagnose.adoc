@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-diagnose-issues.html
+permalink: task-issues-diagnose.html
 keywords: diagnose, troubleshoot, issues, errors, problems, netapp console local
 summary: "Diagnose and troubleshoot issues with NetApp Console Local."
 ---

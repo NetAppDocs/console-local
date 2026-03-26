@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-view-submit-support-cases.html
+permalink: task-support-cases-view-submit.html
 keywords: support cases, support ticket, NetApp support, open case, netapp console
 summary: "View and submit support cases for NetApp Console Local through the NetApp Support site."
 ---

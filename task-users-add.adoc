@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-add-users.html
+permalink: task-users-add.html
 keywords: add users, user management, access, roles, netapp console local
 summary: "Add Console users to grant access to NetApp Console Local."
 ---

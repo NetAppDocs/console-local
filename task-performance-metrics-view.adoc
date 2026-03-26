@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-view-performance-metrics.html
+permalink: task-performance-metrics-view.html
 keywords: performance, metrics, diskspace, capacity, utilization, monitoring, netapp console
 summary: "View performance, disk space, and capacity metrics for storage managed by NetApp Console Local."
 ---
