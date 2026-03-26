@@ -1,12 +1,30 @@
 ---
 sidebar: sidebar
 permalink: concept-storage-class-policies.html
-keywords: storage class policies, policies, storage class, IOPS, capacity, tiering, netapp console
-summary: "Learn about the policies that define storage classes in NetApp Console Local."
+keywords: storage class policies, policies, storage class, IOPS, capacity, tiering, performance policy, netapp console
+summary: "Learn about the policies that serve as building blocks for storage classes in NetApp Console Local."
 ---
 = Understand storage class policies
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Learn about the policies that define storage classes in the NetApp Console Local, including performance tiers, capacity thresholds, and data management rules that drive consistent storage provisioning.
+Storage class policies are the building blocks you use to construct a storage class. Each policy controls a specific aspect of storage behavior. When you combine policies into a storage class, you create a reusable template that the NetApp Console enforces automatically at provisioning time and monitors continuously throughout a workload's lifecycle.
+
+== Policies as building blocks
+
+A storage class is composed of one or more policies, each governing a different dimension of storage behavior. Storage administrators define policies to encode enterprise standards—performance expectations, capacity thresholds, data placement rules—and then assemble those policies into storage class templates. When a workload is provisioned using a storage class, it inherits all of the policies in that class. This design separates the responsibility of defining standards from the act of provisioning, so storage can be provisioned consistently by automated workflows without needing to make individual configuration decisions.
+
+== Types of storage class policies
+
+=== Performance policy
+
+A performance policy defines the IOPS and throughput targets for a workload. You set minimum and maximum values to establish the performance envelope the workload must operate within. The Console uses these targets during placement to recommend clusters with sufficient headroom and monitors provisioned workloads for IOPS or latency drift that would take the workload outside its defined range.
+
+=== Capacity policy
+
+A capacity policy defines thresholds that govern how storage space is consumed. When a workload approaches or exceeds a defined threshold, the Console generates an alert so administrators can act before capacity is exhausted. Capacity policies help prevent unplanned outages and give operations teams visibility into consumption trends before they become problems.
+
+=== Tiering policy
+
+A tiering policy controls how data moves between storage tiers over time. You define rules based on access patterns and retention requirements to ensure that active data remains on high-performance storage while infrequently accessed data is moved to lower-cost capacity tiers automatically. Tiering policies reduce storage costs without requiring manual data movement decisions.

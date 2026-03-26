@@ -9,4 +9,30 @@ summary: "Learn how storage classes in NetApp Console Local let you define and a
 :imagesdir: ./media/
 
 [.lead]
-Learn how storage classes in the NetApp Console Local let you define and apply consistent storage policies across your environment.
+A storage class is a reusable template that defines how storage should behave. When you provision storage using a storage class, the NetApp Console enforces the standards encoded in that class automatically—without requiring administrators to make individual configuration decisions for every workload.
+
+== What a storage class is
+
+A storage class captures your organization's storage standards in a single, reusable object. It bundles policies for performance, capacity, and data placement into a named template. Administrators or automated workflows apply this template at provisioning time. After provisioning, the Console tracks the workload against the class standards and alerts you if the workload drifts out of compliance.
+
+Storage administrators define storage classes to encode enterprise requirements. All provisioning activity—whether done manually, through guided workflows, or through automation—draws from the library of classes those administrators have approved. This structure keeps your storage environment consistent as it grows and as team membership changes.
+
+== How the Console uses storage classes
+
+When you provision storage, you select a storage class rather than configuring individual settings. The Console uses the policies in that class to identify which clusters in your fleet have the capacity and performance headroom to support the workload, then recommends the best placement option. After provisioning, the Console continues to evaluate the workload against the storage class to detect drift—configuration changes or degrading performance that would take the workload outside its defined standards.
+
+When the Console detects drift, it shows options to fix the issue. Depending on your setup, you can follow guided steps to correct the issue manually, or let the Console resolve common drift conditions automatically.
+
+== Storage classes and storage class policies
+
+You assemble a storage class from storage class policies. Each policy controls one dimension of storage behavior: performance targets, capacity thresholds, or tiering rules. You define policies independently, then combine them when you build a storage class. This lets you reuse the same performance policy across multiple storage classes, or update a capacity policy in one place and apply that change to every class that uses it.
+
+link:concept-storage-class-policies.html[Learn about storage class policies]
+
+== Prerequisites
+
+Before you create storage classes, ensure the following are in place:
+
+* Discover at least one ONTAP cluster so the Console has storage targets to evaluate during placement. link:task-storage-discover.html[Discover storage]
+* Have the Organization admin role in the NetApp Console
+* Identify the performance, capacity, and tiering needs for each category of workload in your environment, then create the storage class policies that capture those requirements. Storage classes are assembled from policies, so policies must exist before you can build a storage class. link:concept-storage-class-policies.html[Learn about storage class policies]
