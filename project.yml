@@ -71,7 +71,7 @@ sidebar:
       - title: Enable MFA for users
         url: /task-mfa-enable.html
       - title: Maintain an audit trail of Console actions
-        url: /task-audit-trail-maintain.html
+        url: /task-audit.html
     - title: Create storage fleets
       entries:
       - title: Discover storage in NetApp Console
