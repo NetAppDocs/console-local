@@ -68,7 +68,7 @@ Log into your VCenter environment to deploy the agent.
 
 .Steps
 
-. Upload the self-signed certificate to your trusted certificates if your environment requires it. You replace this certificate after installation.link:task-installing-https-cert.html[Learn how to replace the self-signed certificate.]
+. Upload the self-signed certificate to your trusted certificates if your environment requires it. You can replace this certificate after installation.
 
 . Deploy the OVA from the content library or local system.
 +
@@ -126,8 +126,6 @@ The vSphere task bar shows the progress as the Console agent is deployed.
 
 NOTE: If the deployment fails, you can access the validation report and logs from the agent host. link:task-troubleshoot-agent.html#troubleshoot-installation[Learn how to troubleshoot installation issues.]
 
-
-== Register the Console agent with NetApp Console
 
 
 
