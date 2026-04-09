@@ -29,7 +29,7 @@ sidebar:
     - title: Install NetApp Console Local
       entries:
       - title: Install in your VCenter environment
-        url: /task-vcenter-install.html
+        url: /task-install-agent-on-prem-ova.html
       - title: Install on a Linux host
         url: /task-linux-host-install.html
     - title: Deploy high-availability environment
