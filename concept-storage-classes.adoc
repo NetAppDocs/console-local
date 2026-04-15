@@ -13,7 +13,7 @@ A storage class is a reusable template that defines how storage should behave. W
 
 == What a storage class is
 
-A storage class captures your organization's storage standards in a single, reusable object. It bundles policies for performance, capacity, and data placement into a named template. Administrators or automated workflows apply this template at provisioning time. After provisioning, the Console tracks the workload against the class standards and alerts you if the workload drifts out of compliance.
+A storage class captures your organization's storage standards in a single, reusable object. It bundles policies for performance, capacity, security, and data protection into a named template. Administrators or automated workflows apply this template at provisioning time. After provisioning, the Console tracks the workload against the class standards and alerts you if the workload drifts out of compliance.
 
 Storage administrators define storage classes to encode enterprise requirements. All provisioning activity—whether done manually, through guided workflows, or through automation—draws from the library of classes those administrators have approved. This structure keeps your storage environment consistent as it grows and as team membership changes.
 
@@ -25,7 +25,7 @@ When the Console detects drift, it shows options to fix the issue. Depending on 
 
 == Storage classes and storage class policies
 
-You assemble a storage class from storage class policies. Each policy controls one dimension of storage behavior: performance targets, capacity thresholds, or tiering rules. You define policies independently, then combine them when you build a storage class. This lets you reuse the same performance policy across multiple storage classes, or update a capacity policy in one place and apply that change to every class that uses it.
+You assemble a storage class from storage class policies. Each policy controls one dimension of storage behavior: performance targets, capacity settings, security requirements, or data protection schedules. You define policies independently, then combine them when you build a storage class. This lets you reuse the same performance policy across multiple storage classes, or update a capacity policy in one place and apply that change to every class that uses it.
 
 link:concept-storage-class-policies.html[Learn about storage class policies]
 
@@ -39,9 +39,8 @@ Policies define the individual dimensions of storage behavior—performance targ
 link:concept-storage-class-policies.html[Learn about storage class policies]
 
 . *Create a storage class.*
-Assemble a storage class by combining one policy from each applicable category. You can use a predefined storage class as-is or copy and customize one for your organization's standards. Six predefined classes are available, including Archival, Home Directory, Data Platforms, Enterprise Apps, Revenue Apps, and High Performance.
-+
-link:task-storage-class-create.html[Create a storage class]
+Assemble a storage class by combining one policy from each applicable category. You can use a predefined storage class as-is or copy and customize one for your organization's standards. Six predefined classes are available:
+
 
 . *Associate the storage class with a fleet.*
 After you create a storage class, associate it with the fleet where it will be used for provisioning and compliance monitoring.

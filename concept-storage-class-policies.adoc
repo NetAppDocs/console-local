@@ -28,7 +28,7 @@ Security policy::
 A security policy sets the encryption, ransomware protection, and FIPS requirements for a workload. Each attribute can be set to a required value or left as "any" to accept the system default.
 
 Data protection policy::
-A data protection policy sets the number of snapshots retained at each interval—hourly, daily, weekly, and monthly—so all workloads using the policy get a consistent backup schedule.
+A data protection policy sets the number of snapshots retained at each interval to ensure workloads using the policy get a consistent backup schedule.
 
 == Default policies
 
