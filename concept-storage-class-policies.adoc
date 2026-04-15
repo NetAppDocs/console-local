@@ -34,6 +34,10 @@ A data protection policy sets the number of snapshots retained at each interval 
 
 The Console includes system-defined policies across all four policy types. You can use these policies as-is when you create a storage class, or copy them as a starting point for custom policies tailored to your organization's requirements.
 
+//// 
+These policy names are not final and should be vetted with PM and UX. These are straight from the PRD 
+////
+
 === Performance policies
 
 [cols="2,1,1,1,1,1",options="header"]
