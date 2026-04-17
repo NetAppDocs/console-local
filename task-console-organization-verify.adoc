@@ -2,11 +2,11 @@
 sidebar: sidebar
 permalink: task-console-organization-verify.html
 keywords: organization, verify, setup, tenant, netapp console local
-summary: "Verify your Console organization settings after initial deployment of NetApp Console Local."
+summary: "Verify your Console Local organization settings after initial deployment of NetApp Console Local."
 ---
-= Verify your Console organization
+= Verify your Console Local organization
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Verify your Console organization settings to ensure the NetApp Console Local is correctly configured for your environment before onboarding users and resources.
+Verify your Console Local organization settings to ensure the NetApp Console Local is correctly configured for your environment before onboarding users and resources.

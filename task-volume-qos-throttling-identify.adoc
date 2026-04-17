@@ -17,7 +17,7 @@ A QoS policy must be attached to the volume. If no policy is attached, QoS limit
 
 .Steps
 
-. In the NetApp Console, navigate to *Workload Analyzer*.
+. In the NetApp Console Local, navigate to *Workload Analyzer*.
 +
 Alternatively, from the storage inventory, select a volume and click *Analyze*.
 

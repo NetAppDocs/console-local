@@ -13,7 +13,7 @@ When multiple workloads share nodes and aggregates, a busy neighbor can degrade 
 
 .Steps
 
-. In the NetApp Console, navigate to *Workload Analyzer*.
+. In the NetApp Console Local, navigate to *Workload Analyzer*.
 +
 Alternatively, from the storage inventory, select a volume and click *Analyze*.
 

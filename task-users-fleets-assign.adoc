@@ -120,7 +120,7 @@ You can also manage member access directly from the folder or fleet in the Organ
 
 Remove a member when they leave your organization or no longer need access to any folder or fleet.
 
-When you remove a member, the Console revokes their permissions but retains their Console and NetApp Support Site accounts.
+When you remove a member, the Console Local revokes their permissions but retains their Console Local and NetApp Support Site accounts.
 
 .Steps
 

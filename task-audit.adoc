@@ -2,11 +2,11 @@
 sidebar: sidebar
 permalink: task-audit-trail-maintain.html
 keywords: audit trail, audit log, activity log, compliance, user actions, netapp console
-summary: "Maintain an audit trail of Console actions for compliance and security monitoring."
+summary: "Maintain an audit trail of Console Local actions for compliance and security monitoring."
 ---
-= Maintain an audit trail of Console actions
+= Maintain an audit trail of Console Local actions
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Maintain an audit trail of Console actions in the NetApp Console Local to track user activity, support compliance requirements, and investigate security events.
+Maintain an audit trail of Console Local actions in the NetApp Console Local to track user activity, support compliance requirements, and investigate security events.

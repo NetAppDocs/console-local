@@ -13,9 +13,9 @@ The Workload Analyzer gives you a comprehensive view of a single volume's behavi
 
 == What the Workload Analyzer does
 
-The Workload Analyzer correlates metrics from a single volume across six analysis areas so you can identify root causes quickly. You select a volume and a time range, then the Console renders all analysis sections together so you can see how events, performance, and capacity relate to each other within the same window.
+The Workload Analyzer correlates metrics from a single volume across six analysis areas so you can identify root causes quickly. You select a volume and a time range, then the Console Local renders all analysis sections together so you can see how events, performance, and capacity relate to each other within the same window.
 
-After identifying a root cause, you can act directly from the analyzer. Where automated options are available, the Console surfaces Fix-It recommendations with guided steps or one-click remediation.
+After identifying a root cause, you can act directly from the analyzer. Where automated options are available, the Console Local surfaces Fix-It recommendations with guided steps or one-click remediation.
 
 == How to access the Workload Analyzer
 

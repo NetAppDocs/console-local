@@ -38,13 +38,11 @@ sidebar:
     entries:
     - title: Monitor NetApp Console Local system health
       url: /task-system-health-monitor.html
-    - title: View performance, disk space, and capacity metrics
-      url: /task-performance-metrics-view.html
     - title: Integrate with your own SIEM tools
       url: /task-siem-integrate.html
     - title: Upgrade NetApp Console Local
       url: /task-netapp-console-upgrade.html
-    - title: Troubleshooting NetApp Console
+    - title: Troubleshooting NetApp Console Local
       entries:
       - title: Diagnose common issues
         url: /task-issues-diagnose.html
@@ -52,9 +50,9 @@ sidebar:
         url: /task-netapp-support-work-with.html
       - title: Use diagnostic tools
         url: /task-diagnostic-tools-use.html
-  - title: Set up NetApp Console
+  - title: Set up NetApp Console Local
     entries:
-    - title: Verify your Console organization
+    - title: Verify your Console Local organization
       url: /task-console-organization-verify.html
     - title: Configure AI management
       entries:
@@ -76,9 +74,9 @@ sidebar:
           url: /task-storage-fleets-organize.html
         - title: Edit or delete folders and storage fleets
           url: /task-fleet-edit-delete.html
-      - title: Add users to your Console organization
+      - title: Add users to your Console Local organization
         entries:
-        - title: Add Console users
+        - title: Add Console Local users
           url: /task-users-add.html
         - title: Integrate with Active Directory for user management
           url: /task-active-directory-integrate.html
@@ -94,9 +92,9 @@ sidebar:
           url: /task-users-fleets-assign.html
         - title: Manage member security
           url: /task-manage-member-security.html
-      - title: Maintain an audit trail of Console actions
+      - title: Maintain an audit trail of Console Local actions
         url: /task-audit.html
-  - title: Storage management with NetApp Console
+  - title: Storage management with NetApp Console Local
     entries:
     - title: Use storage classes to standardize management
       entries:

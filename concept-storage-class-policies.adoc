@@ -9,7 +9,7 @@ summary: "Learn about the policies that serve as building blocks for storage cla
 :imagesdir: ./media/
 
 [.lead]
-Storage class policies are the building blocks you use to construct a storage class. Each policy controls a specific aspect of storage behavior. When you combine policies into a storage class, you create a reusable template that the NetApp Console enforces automatically at provisioning time and monitors continuously throughout a workload's lifecycle.
+Storage class policies are the building blocks you use to construct a storage class. Each policy controls a specific aspect of storage behavior. When you combine policies into a storage class, you create a reusable template that the NetApp Console Local enforces automatically at provisioning time and monitors continuously throughout a workload's lifecycle.
 
 == Policies as building blocks
 
@@ -19,7 +19,7 @@ A storage class is composed of one or more policies, each governing a different 
 NetApp Console Local includes four types of policies that you can use to construct storage classes:
 
 Performance policy::
-A performance policy sets expected IOPS/TB, peak IOPS/TB, absolute minimum IOPS, and expected latency targets for a workload. The Console uses these values to recommend clusters with sufficient headroom at provisioning time and to detect IOPS or latency drift after provisioning.
+A performance policy sets expected IOPS/TB, peak IOPS/TB, absolute minimum IOPS, and expected latency targets for a workload. The Console Local uses these values to recommend clusters with sufficient headroom at provisioning time and to detect IOPS or latency drift after provisioning.
 
 Capacity policy::
 A capacity policy controls how a volume consumes and manages space. It sets space reservation (thick, thin, or system default), autogrow behavior, FabricPool tiering, and whether to provision NAS workloads as FlexVol or FlexGroup volumes.
@@ -32,7 +32,7 @@ A data protection policy sets the number of snapshots retained at each interval 
 
 == Default policies
 
-The Console includes system-defined policies across all four policy types. You can use these policies as-is when you create a storage class, or copy them as a starting point for custom policies tailored to your organization's requirements.
+The Console Local includes system-defined policies across all four policy types. You can use these policies as-is when you create a storage class, or copy them as a starting point for custom policies tailored to your organization's requirements.
 
 //// 
 These policy names are not final and should be vetted with PM and UX. These are straight from the PRD 

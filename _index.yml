@@ -4,7 +4,7 @@ indexpage:
   summary: Use NetApp Console Local
   keywords: storage management, data protection, operational efficiency, cost optimization, business continuity, unified management,  self-hosted, high availability, LLM integration, role-based access control, storage provisioning
   tiles: 
-    - title: Deploy NetApp Console
+    - title: Deploy NetApp Console Local
       links: 
         - title: Deploy in your VCenter environment
           url: /task-install-vcenter.html
@@ -12,27 +12,27 @@ indexpage:
           url: /task-install-linux-host.html
         - title: Configure high-availability 
           url: /task-deploy-high-availability.html
-    - title: Maintain NetApp Console
+    - title: Maintain NetApp Console Local
       links: 
         - title: Monitor system health
           url: /task-install-vcenter.html
         - title: Integrate with SIEM tools
           url: /task-install-linux-host.html
-        - title: Upgrade NetApp Console
+        - title: Upgrade NetApp Console Local
           url: /task-upgrade-netapp-console.html
-        - title: Troubleshoot NetApp Console
+        - title: Troubleshoot NetApp Console Local
           url: /task-troubleshoot-netapp-console.html
-    - title: Set up NetApp Console
+    - title: Set up NetApp Console Local
       links: 
-        - title: Verify your Console organization
+        - title: Verify your Console Local organization
           url: /task-verify-console-organization.html
         - title: Configure AI management
           url: /task-configure-ai-management.html
-        - title: Secure NetApp Console Access
+        - title: Secure NetApp Console Local Access
           url: /task-secure-console-access.html
         - title: Manage storage fleets
           url: /task-fleet-create.html
-    - title: Manage storage with NetApp Console
+    - title: Manage storage with NetApp Console Local
       links: 
         - title: Use storage classes to standardize management
           url: /task-use-storage-classes.html

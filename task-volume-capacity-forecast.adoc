@@ -13,7 +13,7 @@ Use the Workload Analyzer to review how a volume's capacity has consumed over ti
 
 .Steps
 
-. In the NetApp Console, navigate to *Workload Analyzer*.
+. In the NetApp Console Local, navigate to *Workload Analyzer*.
 +
 Alternatively, from the storage inventory, select a volume and click *Analyze*.
 

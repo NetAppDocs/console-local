@@ -13,7 +13,7 @@ When application performance degrades, use the Workload Analyzer to identify whi
 
 .Steps
 
-. In the NetApp Console, navigate to *Workload Analyzer*.
+. In the NetApp Console Local, navigate to *Workload Analyzer*.
 +
 Alternatively, from the storage inventory, select a volume and click *Analyze*.
 
@@ -46,4 +46,4 @@ Configuration change events (wrench icon) and alert events (warning and critical
 
 .After you finish
 
-If the cause is a configuration or placement issue that the Console can resolve, a Fix-It option may be available in the alert associated with the volume. See link:task-remediation-guided.html[Remediate with guided steps].
+If the cause is a configuration or placement issue that the Console Local can resolve, a Fix-It option may be available in the alert associated with the volume. See link:task-remediation-guided.html[Remediate with guided steps].

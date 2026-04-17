@@ -9,7 +9,7 @@ summary: "Learn about NetApp Console Local, a self-hosted storage management pla
 :imagesdir: ./media/
 
 [.lead]
-The NetApp Console Local is a self-hosted deployment option that lets you run the NetApp Console platform in your on-premises environment.
+The NetApp Console Local is a self-hosted deployment option that lets you run the NetApp Console Local platform in your on-premises environment.
 
 NetApp Console Local delivers the unified storage management and automation capabilities such as provisioning, policy enforcement, drift detection, and remediation in an isolated deployment that keeps your data, metadata, and management traffic entirely within your own infrastructure. You get operational leverage without sacrificing the data sovereignty your organization requires.
 
@@ -20,7 +20,7 @@ NetApp Console Local enforces consistent storage behavior through storage classe
 
 == Role-based access control and identity integration
 
-NetApp Console Local provides granular role-based access control (RBAC) that scopes what users can see and do to the fleets and resources they are responsible for. You can integrate with Active Directory to manage user access through your existing directory services, configure single sign-on (SSO) through your identity provider, and enforce multi-factor authentication (MFA) for all Console users. Access governance stays aligned with your organization's broader identity and access management practices.
+NetApp Console Local provides granular role-based access control (RBAC) that scopes what users can see and do to the fleets and resources they are responsible for. You can integrate with Active Directory to manage user access through your existing directory services, configure single sign-on (SSO) through your identity provider, and enforce multi-factor authentication (MFA) for all Console Local users. Access governance stays aligned with your organization's broader identity and access management practices.
 
 == Continuous compliance monitoring and automated remediation
 

@@ -13,7 +13,7 @@ When a volume's behavior changes unexpectedly, a recent configuration change is 
 
 .Steps
 
-. In the NetApp Console, navigate to *Workload Analyzer*.
+. In the NetApp Console Local, navigate to *Workload Analyzer*.
 +
 Alternatively, from the storage inventory, select a volume and click *Analyze*.
 
@@ -43,4 +43,4 @@ Look for inflection points in the metric charts that align with the configuratio
 
 .After you finish
 
-If the configuration change was unintended or made outside of the Console directly on the ONTAP cluster, the Console may have already raised a compliance alert. See link:task-remediation-guided.html[Remediate with guided steps] to restore the volume to its expected configuration.
+If the configuration change was unintended or made outside of the Console Local directly on the ONTAP cluster, the Console Local may have already raised a compliance alert. See link:task-remediation-guided.html[Remediate with guided steps] to restore the volume to its expected configuration.

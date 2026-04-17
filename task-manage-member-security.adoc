@@ -18,7 +18,7 @@ You must have the Organization admin role to manage member security settings. Fo
 
 Organization admins cannot reset user passwords for local users. However, they can instruct users to reset their own passwords.
 
-Instruct a user to reset their password from the Console login page by selecting *Forgot password?*.
+Instruct a user to reset their password from the Console Local login page by selecting *Forgot password?*.
 
 NOTE: This option is not available for users in a federated organization.
 
@@ -64,4 +64,4 @@ Creating new credentials deletes the old ones. You cannot use the old credential
 
 . Download or copy the client ID and client secret.
 +
-The Console shows the client secret only once. Make sure you copy or download it and store it securely.
+The Console Local shows the client secret only once. Make sure you copy or download it and store it securely.
