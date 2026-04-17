@@ -4,7 +4,7 @@ permalink: task-system-health-monitor.html
 keywords: system health, monitoring, alerts, status, netapp console local
 summary: "Monitor the system health of NetApp Console Local to ensure all components are operating correctly."
 ---
-= Monitor NetApp Console system health
+= Monitor NetApp Console Local system health
 :icons: font
 :imagesdir: ./media/
 

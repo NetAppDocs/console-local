@@ -1,0 +1,56 @@
+---
+sidebar: sidebar
+permalink: concept-workload-analyzer.html
+keywords: workload analyzer, volume analysis, latency, throughput, capacity, performance, netapp console
+summary: "Learn how the Workload Analyzer helps you investigate volume-level performance, capacity, and data protection issues."
+---
+= Learn about the Workload Analyzer
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The Workload Analyzer gives you a comprehensive view of a single volume's behavior over time. Use it to investigate performance degradation, capacity trends, and resource contention without needing deep ONTAP expertise.
+
+== What the Workload Analyzer does
+
+The Workload Analyzer correlates metrics from a single volume across six analysis areas so you can identify root causes quickly. You select a volume and a time range, then the Console renders all analysis sections together so you can see how events, performance, and capacity relate to each other within the same window.
+
+After identifying a root cause, you can act directly from the analyzer. Where automated options are available, the Console surfaces Fix-It recommendations with guided steps or one-click remediation.
+
+== How to access the Workload Analyzer
+
+You can open the Workload Analyzer from two entry points:
+
+* **From the inventory**: Select a volume and click *Analyze*. The analyzer opens with the volume pre-filled and a default time range of the last two hours.
+* **From the menu**: Navigate directly to the Workload Analyzer, search for a volume, set a time range, and click *Analyze*.
+
+When you navigate from an alert, the analyzer pre-fills the affected volume and sets the time range to the alert window, so you start your investigation in the right context.
+
+== Analysis areas
+
+The Workload Analyzer organizes its output into six sections:
+
+Event timeline::
+Shows configuration changes, warning alerts, and critical alerts for the selected volume during the analysis window. Use this section to correlate "what changed" with changes in performance or capacity behavior.
+
+Latency analysis::
+Shows volume latency over time. You can view latency as a total or broken down by delay center—network, data processing, aggregate operations, cluster interconnect, and others. When a QoS policy is attached to the volume, the analyzer displays the policy's maximum and minimum latency limits as reference lines so you can see how close the workload is to being throttled. Toggle the forecast to project whether latency is trending toward a warning or critical threshold.
+
+Throughput analysis::
+Shows IOPS and MB/s over time, with an optional read/write/other breakdown. When a QoS policy is attached, IOPS and throughput limit lines are displayed. Toggle the forecast to project whether demand is trending toward QoS limits.
+
+Resource utilization::
+Shows how busy the nodes and aggregates serving the volume are during the analysis window. Each resource is displayed as an independent line rather than stacked values, so you can identify whether a specific node or aggregate is a contention source. Toggle the forecast to project whether any resource is trending toward a high-utilization threshold.
+
+Capacity analysis::
+Shows how physical space and available space in the volume have changed over time. Hover to see a storage efficiency breakdown including deduplication, compression, and compaction savings. Toggle the forecast to project when the volume will reach warning or critical capacity thresholds. Switch to the snapshot view to see how snapshot space is tracking against the configured snapshot reserve.
+
+== Forecast
+
+Each analysis section includes a forecast toggle. When enabled, the analyzer extends the chart timeline beyond the current time and projects future values based on the observed trend. A dashed line distinguishes forecast values from actual data. The analyzer also surfaces an insight message when the forecast indicates a threshold will be breached, along with an estimated time to breach.
+
+== Related information
+
+* link:task-fleet-health-monitor.html[Monitor fleet health]
+* link:task-remediation-guided.html[Remediate with guided steps]
+* link:task-remediation-automated.html[Remediate automatically]

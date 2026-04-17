@@ -4,7 +4,7 @@ permalink: task-sso-configure.html
 keywords: SSO, single sign-on, SAML, identity provider, authentication, netapp console
 summary: "Configure single sign-on (SSO) for NetApp Console Local using your identity provider."
 ---
-= Configure single-sign-on
+= Configure single sign-on
 :icons: font
 :imagesdir: ./media/
 

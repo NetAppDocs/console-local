@@ -4,7 +4,7 @@ permalink: task-data-services-access-grant.html
 keywords: grant access, data services, permissions, users, roles, netapp console
 summary: "Grant users access to data services in NetApp Console Local."
 ---
-= Grant access
+= Grant access to data services
 :icons: font
 :imagesdir: ./media/
 

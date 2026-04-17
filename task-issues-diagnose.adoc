@@ -4,7 +4,7 @@ permalink: task-issues-diagnose.html
 keywords: diagnose, troubleshoot, issues, errors, problems, netapp console local
 summary: "Diagnose and troubleshoot issues with NetApp Console Local."
 ---
-= Diagnosing issues with NetApp Console
+= Diagnose common issues
 :icons: font
 :imagesdir: ./media/
 

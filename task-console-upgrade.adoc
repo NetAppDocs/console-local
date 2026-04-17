@@ -4,7 +4,7 @@ permalink: task-netapp-console-upgrade.html
 keywords: upgrade, update, version, netapp console local
 summary: "Upgrade NetApp Console Local to the latest version."
 ---
-= Upgrading NetApp Console
+= Upgrade NetApp Console Local
 :icons: font
 :imagesdir: ./media/
 

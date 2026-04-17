@@ -28,29 +28,29 @@ sidebar:
     entries:
     - title: Install NetApp Console Local
       entries:
-      - title: Install in your VCenter environment
+      - title: Install in your vCenter environment
         url: /task-install-agent-on-prem-ova.html
       - title: Install on a Linux host
         url: /task-linux-host-install.html
-    - title: Deploy high-availability environment
+    - title: Deploy a high-availability environment
       url: /task-high-availability-deploy.html
   - title: Maintain NetApp Console Local
     entries:
-    - title: Monitor NetApp Console system health
+    - title: Monitor NetApp Console Local system health
       url: /task-system-health-monitor.html
-    - title: Viewing performance, diskspace and capacity metrics
+    - title: View performance, disk space, and capacity metrics
       url: /task-performance-metrics-view.html
     - title: Integrate with your own SIEM tools
       url: /task-siem-integrate.html
-    - title: Upgrading NetApp Console
+    - title: Upgrade NetApp Console Local
       url: /task-netapp-console-upgrade.html
     - title: Troubleshooting NetApp Console
       entries:
       - title: Diagnose common issues
         url: /task-issues-diagnose.html
-      - title: Working with NetApp Support (ASUP messages)
+      - title: Work with NetApp Support
         url: /task-netapp-support-work-with.html
-      - title: Using diagnostic tools
+      - title: Use diagnostic tools
         url: /task-diagnostic-tools-use.html
   - title: Set up NetApp Console
     entries:
@@ -66,7 +66,7 @@ sidebar:
         url: /task-users-add.html
       - title: Integrate with Active Directory for user management
         url: /task-active-directory-integrate.html
-      - title: Configure single-sign-on
+      - title: Configure single sign-on
         url: /task-sso-configure.html
       - title: Enable MFA for users
         url: /task-mfa-enable.html
@@ -74,7 +74,7 @@ sidebar:
         url: /task-audit.html
     - title: Create storage fleets
       entries:
-      - title: Discover storage in NetApp Console
+      - title: Discover storage in NetApp Console Local
         url: /task-storage-discover.html
       - title: Organize storage into fleets
         url: /task-storage-fleets-organize.html
@@ -100,23 +100,37 @@ sidebar:
           url: /task-storage-class-fleet-disassociate.html
     - title: Provisioning storage
       entries:
-      - title: Manual provisioning
+      - title: Provision storage manually
         url: /task-provisioning-manual.html
-      - title: Automated provisioning
+      - title: Provision storage automatically
         url: /task-provisioning-automated.html
-      - title: Agentic provisioning
+      - title: Provision storage with agentic workflows
         url: /task-provisioning-agentic.html
     - title: Monitor and respond to storage needs
       entries:
       - title: Monitor fleet-wide health and performance
         url: /task-fleet-health-monitor.html
+      - title: Investigate volume issues with the Workload Analyzer
+        entries:
+        - title: Learn about the Workload Analyzer
+          url: /concept-workload-analyzer.html
+        - title: Investigate high latency on a volume
+          url: /task-volume-latency-investigate.html
+        - title: Determine whether a volume is being throttled by a QoS policy
+          url: /task-volume-qos-throttling-identify.html
+        - title: Identify resource contention affecting a volume
+          url: /task-volume-resource-contention-identify.html
+        - title: Forecast volume capacity and plan for growth
+          url: /task-volume-capacity-forecast.html
+        - title: Correlate a configuration change with a volume issue
+          url: /task-volume-config-change-correlate.html
       - title: Configure notifications and alert policies
         url: /task-notifications-configure.html
       - title: Remediating storage issues
         entries:
-        - title: Automated remediation
+        - title: Remediate storage issues automatically
           url: /task-remediation-automated.html
-        - title: Guided remediation
+        - title: Remediate storage issues with guided steps
           url: /task-remediation-guided.html
       - title: Work with NetApp Support
         entries:
@@ -126,13 +140,13 @@ sidebar:
           url: /task-support-cases-view-submit.html
   - title: Use NetApp Cyber Resilience data services
     entries:
-    - title: Use data services
+    - title: Learn about using data services
       url: /concept-use-data-services.html
-    - title: Subscribe
+    - title: Subscribe to data services
       url: /task-data-services-subscribe.html
     - title: Grant access to data services
       url: /task-data-services-access-grant.html
-    - title: Monitor protection status (new dashboard)
+    - title: Monitor protection status
       url: /task-protection-status-monitor.html
   - title: Legal notices
     url: /legal-notices.html

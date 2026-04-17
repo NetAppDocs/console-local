@@ -4,7 +4,7 @@ permalink: task-high-availability-deploy.html
 keywords: high availability, HA, redundancy, deploy, netapp console local
 summary: "Deploy a high-availability environment for NetApp Console Local to ensure continuous operation."
 ---
-= Deploy high-availability environment
+= Deploy a high-availability environment
 :icons: font
 :imagesdir: ./media/
 

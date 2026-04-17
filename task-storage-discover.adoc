@@ -4,7 +4,7 @@ permalink: task-storage-discover.html
 keywords: discover, storage, storage systems, onboard, inventory, netapp console
 summary: "Discover storage systems in NetApp Console Local to bring them under centralized management."
 ---
-= Discover storage in NetApp Console
+= Discover storage in NetApp Console Local
 :icons: font
 :imagesdir: ./media/
 

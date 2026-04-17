@@ -40,41 +40,41 @@ These policy names are not final and should be vetted with PM and UX. These are 
 
 === Performance policies
 
-[cols="2,1,1,1,1,1",options="header"]
+[cols="2,1,1,1,1,1,3",options="header"]
 |===
-| Name | Type | Expected IOPS/TB | Peak IOPS/TB | Absolute min IOPS | Expected latency (ms)
-| Extreme for Database Data | System defined | 12,288 | 24,576 | 2,000 | 1
-| Extreme for Database Logs | System defined | 22,528 | 45,056 | 4,000 | 1
-| Extreme for Database Shared Data | System defined | 16,384 | 32,768 | 2,000 | 1
-| Extreme Performance | System defined | 6,144 | 12,288 | 1,000 | 1
-| Performance | System defined | 2,048 | 4,096 | 500 | 2
-| Value | System defined | 128 | 512 | 75 | 17
+| Name | Type | Expected IOPS/TB | Peak IOPS/TB | Absolute min IOPS | Expected latency (ms) | Summary
+| Extreme for Database Data | System defined | 12,288 | 24,576 | 2,000 | 1 | Use for transactional database data volumes requiring sustained high IOPS and sub-millisecond latency.
+| Extreme for Database Logs | System defined | 22,528 | 45,056 | 4,000 | 1 | Use for database transaction log volumes requiring the highest IOPS floor to prevent write bottlenecks.
+| Extreme for Database Shared Data | System defined | 16,384 | 32,768 | 2,000 | 1 | Use for shared database volumes accessed by multiple hosts requiring high throughput and consistent latency.
+| Extreme Performance | System defined | 6,144 | 12,288 | 1,000 | 1 | Use for HPC, AI/ML, and analytics workloads requiring high burst IOPS and predictable low latency.
+| Performance | System defined | 2,048 | 4,096 | 500 | 2 | Use for virtualized and enterprise applications requiring reliable performance without extreme IOPS demands.
+| Value | System defined | 128 | 512 | 75 | 17 | Use for cost-sensitive workloads such as home directories, file shares, and archives.
 |===
 
 === Capacity policies
 
-[cols="2,1,1,1,1,1",options="header"]
+[cols="2,1,1,1,1,1,3",options="header"]
 |===
-| Name | Type | Space reserve | Autogrow mode | Tiering policy | Volume type (NAS)
-| default | System defined | System default | System default | none | System default
-| production | System defined | System default | grow | none | System default
+| Name | Type | Space reserve | Autogrow mode | Tiering policy | Volume type (NAS) | Summary
+| default | System defined | System default | System default | none | System default | Use for general workloads where platform default capacity behavior is acceptable.
+| production | System defined | System default | grow | none | System default | Use for production workloads that must expand automatically to prevent out-of-space failures.
 |===
 
 === Security policies
 
-[cols="2,1,1,1,1",options="header"]
+[cols="2,1,1,1,1,3",options="header"]
 |===
-| Name | Type | Encryption | Ransomware protection | FIPS
-| default | System defined | any | any | any
-| anti-ransomware | System defined | any | on | any
-| production | System defined | enabled | any | any
+| Name | Type | Encryption | Ransomware protection | FIPS | Summary
+| default | System defined | any | any | any | Use for workloads where platform default security behavior is acceptable.
+| anti-ransomware | System defined | any | on | any | Use for workloads containing sensitive or business-critical data that require active ransomware protection.
+| production | System defined | enabled | any | any | Use for production workloads where encryption is required for compliance.
 |===
 
 === Data protection policies
 
-[cols="2,1,1,1,1,1",options="header"]
+[cols="2,1,1,1,1,1,3",options="header"]
 |===
-| Name | Type | Hourly snapshots | Daily snapshots | Weekly snapshots | Monthly snapshots
-| default | System defined | 6 | 2 | 2 | 0
-| 3month-hourly | System defined | 23 | 6 | 4 | 3
+| Name | Type | Hourly snapshots | Daily snapshots | Weekly snapshots | Monthly snapshots | Summary
+| default | System defined | 6 | 2 | 2 | 0 | Use for standard workloads requiring short-term recovery points without long-term retention overhead.
+| 3month-hourly | System defined | 23 | 6 | 4 | 3 | Use for regulated or business-critical workloads requiring granular intraday recovery points and three months of historical retention.
 |===

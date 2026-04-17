@@ -4,7 +4,7 @@ permalink: concept-use-data-services.html
 keywords: data services, data protection, backup, replication, subscribe, netapp console
 summary: "Learn about data services available in NetApp Console Local and how they help protect your data."
 ---
-= Use data services
+= Learn about using data services
 :icons: font
 :imagesdir: ./media/
 

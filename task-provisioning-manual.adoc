@@ -4,7 +4,7 @@ permalink: task-provisioning-manual.html
 keywords: manual provisioning, provision storage, create volume, netapp console
 summary: "Manually provision storage resources using NetApp Console Local."
 ---
-= Manual provisioning
+= Provision storage manually
 :icons: font
 :imagesdir: ./media/
 
