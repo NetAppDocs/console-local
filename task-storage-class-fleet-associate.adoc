@@ -4,7 +4,7 @@ permalink: task-storage-class-fleet-associate.html
 keywords: associate, storage class, fleet, assign, netapp console
 summary: "Associate a storage class with a fleet in NetApp Console Local to apply consistent storage policies."
 ---
-= Associate a storage class to a fleet
+= Associate a storage class with a fleet in NetApp Console Local
 :icons: font
 :imagesdir: ./media/
 

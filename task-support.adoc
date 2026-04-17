@@ -4,7 +4,7 @@ permalink: task-netapp-support-work-with.html
 keywords: AutoSupport, ASUP, support, NetApp support, support cases, netapp console
 summary: "Work with NetApp Support using AutoSupport messages and support cases."
 ---
-= Work with NetApp Support
+= Work with NetApp Support for NetApp Console Local
 :icons: font
 :imagesdir: ./media/
 

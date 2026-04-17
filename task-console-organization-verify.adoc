@@ -4,7 +4,7 @@ permalink: task-console-organization-verify.html
 keywords: organization, verify, setup, tenant, netapp console local
 summary: "Verify your Console Local organization settings after initial deployment of NetApp Console Local."
 ---
-= Verify your Console Local organization
+= Verify your NetApp Console Local organization
 :icons: font
 :imagesdir: ./media/
 

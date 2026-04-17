@@ -4,7 +4,7 @@ permalink: task-vcenter-install.html
 keywords: install, vcenter, vmware, vcenter environment, deployment, netapp console local
 summary: "Install NetApp Console Local in your VMware vCenter environment."
 ---
-= Install in your vCenter environment
+= Install NetApp Console Local in your vCenter environment
 :icons: font
 :imagesdir: ./media/
 

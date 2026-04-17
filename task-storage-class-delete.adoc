@@ -4,7 +4,7 @@ permalink: task-storage-class-delete.html
 keywords: delete storage class, remove storage class, netapp console
 summary: "Delete a storage class from NetApp Console Local when it is no longer needed."
 ---
-= Delete a storage class
+= Delete a storage class in NetApp Console Local
 :icons: font
 :imagesdir: ./media/
 

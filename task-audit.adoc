@@ -4,7 +4,7 @@ permalink: task-audit-trail-maintain.html
 keywords: audit trail, audit log, activity log, compliance, user actions, netapp console
 summary: "Maintain an audit trail of Console Local actions for compliance and security monitoring."
 ---
-= Maintain an audit trail of Console Local actions
+= Maintain an audit trail of NetApp Console Local actions
 :icons: font
 :imagesdir: ./media/
 

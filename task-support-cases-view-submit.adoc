@@ -4,7 +4,7 @@ permalink: task-support-cases-view-submit.html
 keywords: support cases, support ticket, NetApp support, open case, netapp console
 summary: "View and submit support cases for NetApp Console Local through the NetApp Support site."
 ---
-= View and submit support cases
+= View and submit support cases for NetApp Console Local
 :icons: font
 :imagesdir: ./media/
 

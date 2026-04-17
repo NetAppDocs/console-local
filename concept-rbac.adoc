@@ -4,7 +4,7 @@ permalink: concept-rbac.html
 keywords: RBAC, role-based access control, roles, permissions, access, least privilege, netapp console local
 summary: "Manage user access to NetApp Console Local with role-based access control (RBAC), assigning predefined roles at the organization, folder, or fleet level."
 ---
-= Understand role-based access control (RBAC)
+= Learn about role-based access control in NetApp Console Local
 :icons: font
 :imagesdir: ./media/
 

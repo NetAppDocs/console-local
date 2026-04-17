@@ -4,7 +4,7 @@ permalink: concept-workload-analyzer.html
 keywords: workload analyzer, volume analysis, latency, throughput, capacity, performance, netapp console
 summary: "Learn how the Workload Analyzer helps you investigate volume-level performance, capacity, and data protection issues."
 ---
-= Learn about the Workload Analyzer
+= Learn about the NetApp Console Local Workload Analyzer
 :icons: font
 :imagesdir: ./media/
 

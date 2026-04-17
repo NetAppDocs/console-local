@@ -4,7 +4,7 @@ permalink: task-diagnostic-tools-use.html
 keywords: diagnostic tools, troubleshoot, logs, debug, netapp console local
 summary: "Use the diagnostic tools available in NetApp Console Local to investigate and resolve issues."
 ---
-= Use diagnostic tools
+= Use NetApp Console Local diagnostic tools
 :icons: font
 :imagesdir: ./media/
 

@@ -4,7 +4,7 @@ permalink: task-volume-capacity-forecast.html
 keywords: capacity, forecast, space, growth, snapshot reserve, workload analyzer, netapp console
 summary: "Project when a volume will reach capacity thresholds and plan for growth using the Workload Analyzer."
 ---
-= Forecast volume capacity and plan for growth
+= Forecast volume capacity and plan for growth in NetApp Console Local
 :icons: font
 :imagesdir: ./media/
 

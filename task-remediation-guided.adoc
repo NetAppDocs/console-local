@@ -4,7 +4,7 @@ permalink: task-remediation-guided.html
 keywords: guided remediation, troubleshoot, step-by-step, resolve issues, netapp console
 summary: "Use guided remediation in NetApp Console Local to resolve storage issues with step-by-step instructions."
 ---
-= Remediate storage issues with guided steps
+= Remediate storage issues with guided steps in NetApp Console Local
 :icons: font
 :imagesdir: ./media/
 

@@ -4,7 +4,7 @@ permalink: task-volume-config-change-correlate.html
 keywords: configuration change, event timeline, correlate, performance, workload analyzer, netapp console
 summary: "Use the Workload Analyzer event timeline to determine whether a configuration change caused a performance or capacity issue on a volume."
 ---
-= Correlate a configuration change with a volume issue
+= Correlate a configuration change with a volume issue in NetApp Console Local
 :icons: font
 :imagesdir: ./media/
 

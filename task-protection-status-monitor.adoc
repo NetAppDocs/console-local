@@ -4,7 +4,7 @@ permalink: task-protection-status-monitor.html
 keywords: protection status, data protection, dashboard, backup, replication, netapp console
 summary: "Monitor the protection status of your data using the NetApp Console Local protection dashboard."
 ---
-= Monitor protection status
+= Monitor protection status in NetApp Console Local
 :icons: font
 :imagesdir: ./media/
 

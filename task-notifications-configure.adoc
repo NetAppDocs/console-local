@@ -4,7 +4,7 @@ permalink: task-notifications-configure.html
 keywords: notifications, alerts, alert policies, thresholds, email, webhooks, netapp console
 summary: "Configure notifications and alert policies in NetApp Console Local to stay informed of storage events."
 ---
-= Configure notifications and alert policies
+= Configure notifications and alert policies in NetApp Console Local
 :icons: font
 :imagesdir: ./media/
 

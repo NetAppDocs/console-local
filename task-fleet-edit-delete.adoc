@@ -4,7 +4,7 @@ permalink: task-fleet-edit-delete.html
 keywords: edit fleet, rename fleet, delete fleet, remove fleet, edit folder, delete folder, storage fleet, netapp console
 summary: "Edit or delete folders and storage fleets as your organizational needs change in NetApp Console Local."
 ---
-= Edit or delete folders and storage fleets
+= Edit or delete folders and storage fleets in NetApp Console Local
 :icons: font
 :imagesdir: ./media/
 

@@ -4,7 +4,7 @@ permalink: task-fleet-create.html
 keywords: create fleet, create folder, storage fleet, new fleet, organize storage, netapp console
 summary: "Create folders and storage fleets to organize your resources in NetApp Console Local."
 ---
-= Create folders and storage fleets
+= Create folders and storage fleets in NetApp Console Local
 :icons: font
 :imagesdir: ./media/
 
