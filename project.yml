@@ -70,6 +70,14 @@ sidebar:
         url: /task-sso-configure.html
       - title: Enable MFA for users
         url: /task-mfa-enable.html
+      - title: Manage user access and security
+        entries:
+        - title: Understand role-based access control (RBAC)
+          url: /concept-rbac.html
+        - title: Manage user access
+          url: /task-users-fleets-assign.html
+        - title: Manage member security
+          url: /task-manage-member-security.html
       - title: Maintain an audit trail of Console actions
         url: /task-audit.html
     - title: Set up folders and fleets
@@ -84,8 +92,6 @@ sidebar:
         url: /task-storage-fleets-organize.html
       - title: Edit or delete folders and storage fleets
         url: /task-fleet-edit-delete.html
-      - title: Assign users to fleets for storage management
-        url: /task-users-fleets-assign.html
   - title: Storage management with NetApp Console
     entries:
     - title: Use storage classes to standardize management
