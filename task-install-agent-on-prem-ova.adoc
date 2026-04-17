@@ -13,29 +13,29 @@ summary: If you are a VMWare user, you can use an OVA to install a Console agent
 :imagesdir: ./media/
 
 [.lead]
-If you are a VMWare user, you can use an OVA to install a Console agent in your VCenter. THe OVA download or URL is available through the NetApp Console Local.
+If you are a VMWare user, you can use an OVA to install a NetApp Console Local  in your VCenter. THe OVA download or URL is available through the NetApp Console Local.
 
-NOTE: When you install a Console agent with your VCenter tools, you can use the VM web console to perform maintenance tasks. link:task-agent-vm-config.html[Learn more about the VM console for the agent.]
-
-
-== Prepare to install the Console agent
-Before installation, make sure your VM host meets the requirements and the Console agent can access the internet and targeted networks. To use NetApp data services or Cloud Volumes ONTAP, create cloud provider credentials for the Console agent to perform actions on your behalf.
-
-=== Review Console agent host requirements
-
-Make sure your host machine meets installation requirements before installing the Console agent.
+NOTE: When you install NetApp Console Local with your VCenter tools, you can use the VM web console to perform maintenance tasks. link:task-agent-vm-config.html[Learn more about the VM console for the agent.]
 
 
+== Prepare to install the NetApp Console Local 
+Before installation, make sure your VM host meets the requirements and the NetApp Console Local can access the internet and targeted networks. To use NetApp data services or Cloud Volumes ONTAP, create cloud provider credentials for the NetApp Console Local to perform actions on your behalf.
 
-NOTE: Install the agent in a vCenter environment rather than directly on an ESXi host. 
+=== Review NetApp Console Local host requirements
+
+Make sure your host machine meets installation requirements before installing the NetApp Console Local.
+
+
+
+NOTE: Install the NetApp Console Local in a vCenter environment rather than directly on an ESXi host. 
 
 
 
 
 [[network-access-agent]]
-=== Set up network access for the Console agent
+=== Set up network access for the NetApp Console Local
 
-NetApp Console Local needs access to the networks where your ONTAP clusters and other resources are located. This allows the Console Local to discover those resources, monitor their health, and perform actions on them. If your agent doesn't have access to a target network, the Console Local won't be able to manage the resources on that network.
+NetApp Console Local needs access to the networks where your ONTAP clusters and other resources are located. This allows the NetApp Console Local to discover those resources, monitor their health, and perform actions on them. If your NetApp Console Local doesn't have access to a target network, it won't be able to manage the resources on that network.
 
 Customer question: What information do I need to gather before I install NetApp Console Local? 
 Cu
@@ -100,13 +100,13 @@ b. Select *Actions* > *New VM from this template*
 ** If you selected explicit proxy, enter the proxy server hostname or IP address and port number, as well as the username, password. 
 ** If you selected transparent proxy, upload the respective certificate.
 * *Virtual Machine Configuration*
-** *Skip config check*: This check box is unchecked by default which means the agent runs a configuration check to validate network access. 
-*** NetApp recommends leaving this box unchecked so that the installation includes a configuration check of the agent. The Configuration check validates that the agent has network access to the required endpoints. If it deployment fails because of connectivity issues, you can access the validation report and logs from the agent host. In some cases, if you are confident that the agent has network access, you can choose to skip the check. For example, if you are still using the link:reference-networking-saas-console-previous.html[previous endpoints] used for agent upgrades, the validation fails with an error. To avoid this, mark the check box to install without a validation check.  link:reference-networking-saas-console-previous.html#update-endpoint-list[Learn how to update your endpoint list].
+** *Skip config check*: This check box is unchecked by default which means the NetApp Console Local runs a configuration check to validate network access. 
+*** NetApp recommends leaving this box unchecked so that the installation includes a configuration check of the NetApp Console Local. The Configuration check validates that the NetApp Console Local has network access to the required endpoints. If it deployment fails because of connectivity issues, you can access the validation report and logs from the NetApp Console Local host. In some cases, if you are confident that the NetApp Console Local has network access, you can choose to skip the check. For example, if you are still using the link:reference-networking-saas-console-previous.html[previous endpoints] used for NetApp Console Local upgrades, the validation fails with an error. To avoid this, mark the check box to install without a validation check.  link:reference-networking-saas-console-previous.html#update-endpoint-list[Learn how to update your endpoint list].
 
 
 
 
-** *Maintenance password*: Set the password for the `maint` user that allows access to the agent maintenance console.
+** *Maintenance password*: Set the password for the `maint` user that allows access to the NetApp Console Local maintenance console.
 ** *NTP servers*: Specify one or more NTP servers for time synchronization.
 ** *Hostname*: Set the hostname for this VM. It must not include the search domain. For example, an FQDN of console10.searchdomain.company.com should be entered as console10.
 ** *Primary DNS*: Specify the primary DNS server to use for name resolution.
@@ -121,10 +121,10 @@ b. Select *Actions* > *New VM from this template*
 
 . Review the details in the *Ready to complete* window, select *Finish*.
 +
-The vSphere task bar shows the progress as the Console agent is deployed.
+The vSphere task bar shows the progress as the NetApp Console Local is deployed.
 . Power on the VM.
 
-NOTE: If the deployment fails, you can access the validation report and logs from the agent host. link:task-troubleshoot-agent.html#troubleshoot-installation[Learn how to troubleshoot installation issues.]
+NOTE: If the deployment fails, you can access the validation report and logs from the NetApp Console Local host. link:task-troubleshoot-agent.html#troubleshoot-installation[Learn how to troubleshoot installation issues.]
 
 
 

@@ -81,7 +81,7 @@ Because NetApp Console Local runs in your own environment, your data and queries
 
 .What do I need before I can enable LLM integration?
 
-Before connecting an LLM, ensure that NetApp Console Local is deployed and running, a Console agent is connected to the clusters you want to manage with AI assistance, you have subscribed to a supported LLM provider (OpenAI, Anthropic, or AWS Bedrock) and obtained a valid API key, your network allows outbound connections from the Console Local to the LLM provider's endpoint, you have the Organization admin role, and storage classes are configured in the Console Local so the AI can guide provisioning decisions.
+Before connecting an LLM, ensure that NetApp Console Local is deployed and running, and has access to the clusters you want to manage with AI assistance, you have subscribed to a supported LLM provider (OpenAI, Anthropic, or AWS Bedrock) and obtained a valid API key, your network allows outbound connections from the Console Local to the LLM provider's endpoint, you have the Organization admin role, and storage classes are configured in the Console Local so the AI can guide provisioning decisions.
 
 == Identity and security integrations
 

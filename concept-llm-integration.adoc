@@ -30,8 +30,8 @@ All AI actions respect the role-based access controls assigned to your user acco
 Before connecting an LLM, ensure the following are in place:
 
 * Deploy and run the NetApp Console Local
-* Connect a Console agent to the clusters you want to manage with AI assistance
+* Ensure the Console Local has access to the clusters you want to manage with AI assistance
 * Subscribe to a supported LLM provider (OpenAI, Anthropic, or AWS Bedrock) and obtain a valid API key
 * Configure your network to allow outbound connections from the Console Local to your LLM provider's endpoint
 * Have the Organization admin role in the NetApp Console Local
-* Configure and assignS storage classes in the Console Local so the AI can guide provisioning decisions
+* Configure and assign storage classes in the Console Local so the AI can guide provisioning decisions
