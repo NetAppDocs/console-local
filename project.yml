@@ -60,16 +60,32 @@ sidebar:
       entries:
       - title: Connect your LLM
         url: /task-llm-connect.html
-    - title: Secure NetApp Console access
+    - title: Identity and access management
       entries:
-      - title: Add Console users
-        url: /task-users-add.html
-      - title: Integrate with Active Directory for user management
-        url: /task-active-directory-integrate.html
-      - title: Configure single sign-on
-        url: /task-sso-configure.html
-      - title: Enable MFA for users
-        url: /task-mfa-enable.html
+      - title: Learn about identity and access management
+        url: /concept-identity-and-access-management.html
+      - title: Set up folders and fleets
+        entries:
+        - title: Learn about organizing resources with folders and fleets
+          url: /concept-folders-fleets-overview.html
+        - title: Discover storage in NetApp Console Local
+          url: /task-storage-discover.html
+        - title: Create folders and storage fleets
+          url: /task-fleet-create.html
+        - title: Organize storage into fleets
+          url: /task-storage-fleets-organize.html
+        - title: Edit or delete folders and storage fleets
+          url: /task-fleet-edit-delete.html
+      - title: Add users to your Console organization
+        entries:
+        - title: Add Console users
+          url: /task-users-add.html
+        - title: Integrate with Active Directory for user management
+          url: /task-active-directory-integrate.html
+        - title: Configure single sign-on
+          url: /task-sso-configure.html
+        - title: Enable MFA for users
+          url: /task-mfa-enable.html
       - title: Manage user access and security
         entries:
         - title: Understand role-based access control (RBAC)
@@ -80,18 +96,6 @@ sidebar:
           url: /task-manage-member-security.html
       - title: Maintain an audit trail of Console actions
         url: /task-audit.html
-    - title: Set up folders and fleets
-      entries:
-      - title: Learn about organizing resources with folders and fleets
-        url: /concept-folders-fleets-overview.html
-      - title: Discover storage in NetApp Console Local
-        url: /task-storage-discover.html
-      - title: Create folders and storage fleets
-        url: /task-fleet-create.html
-      - title: Organize storage into fleets
-        url: /task-storage-fleets-organize.html
-      - title: Edit or delete folders and storage fleets
-        url: /task-fleet-edit-delete.html
   - title: Storage management with NetApp Console
     entries:
     - title: Use storage classes to standardize management
