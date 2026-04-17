@@ -30,8 +30,8 @@ indexpage:
           url: /task-configure-ai-management.html
         - title: Secure NetApp Console Access
           url: /task-secure-console-access.html
-        - title: Create storage fleets
-          url: /task-create-storage-fleets.html
+        - title: Manage storage fleets
+          url: /task-fleet-create.html
     - title: Manage storage with NetApp Console
       links: 
         - title: Use storage classes to standardize management

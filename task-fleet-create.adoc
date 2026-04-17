@@ -1,0 +1,37 @@
+---
+sidebar: sidebar
+permalink: task-fleet-create.html
+keywords: create fleet, storage fleet, new fleet, organize storage, netapp console
+summary: "Create a storage fleet to group related storage systems for unified management in NetApp Console Local."
+---
+= Create a storage fleet
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Create a storage fleet in the NetApp Console Local to group related storage systems for unified management. When you create a fleet, you specify a name and description that reflect how the fleet fits into your operational model.
+
+== About this task
+
+A fleet groups storage systems that you manage together. You might organize fleets by environment (production, development, test), by business unit, by data center location, or by application tier.
+
+The NetApp Console Local creates one fleet for you when you set up your organization. You can create additional fleets to match your organizational structure.
+
+== Steps
+
+. From the NetApp Console Local, select *Storage Fleets*.
+
+. Select *Create Fleet*.
+
+. Enter a name and description for the fleet.
++
+Choose a name that reflects how this fleet fits into your operational model. For example, "Production - US East" or "Engineering - Dev/Test."
+
+. Select *Create*.
+
+== After you finish
+
+After you create a fleet, you can:
+
+* Organize discovered storage systems into the fleet. link:task-storage-fleets-organize.html[Learn how to organize storage into fleets].
+* Assign users to the fleet to grant them storage management access. link:task-users-fleets-assign.html[Learn how to assign users to fleets].
