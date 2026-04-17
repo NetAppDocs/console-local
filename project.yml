@@ -78,6 +78,8 @@ sidebar:
         entries:
         - title: Add Console Local users
           url: /task-users-add.html
+      - title: Secure access to NetApp Console Local
+        entries:
         - title: Integrate with Active Directory for user management
           url: /task-active-directory-integrate.html
         - title: Configure single sign-on
