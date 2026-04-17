@@ -1,29 +1,39 @@
 ---
 sidebar: sidebar
 permalink: task-fleet-edit-delete.html
-keywords: edit fleet, rename fleet, delete fleet, remove fleet, storage fleet, netapp console
-summary: "Edit or delete storage fleets as your organizational needs change in NetApp Console Local."
+keywords: edit fleet, rename fleet, delete fleet, remove fleet, edit folder, delete folder, storage fleet, netapp console
+summary: "Edit or delete folders and storage fleets as your organizational needs change in NetApp Console Local."
 ---
-= Edit or delete a storage fleet
+= Edit or delete folders and storage fleets
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Edit a storage fleet to update its name or description, or delete a fleet that you no longer need.
+Edit a folder or storage fleet to update its name, or delete a folder or fleet that you no longer need.
 
-== Edit a storage fleet
+== Rename a folder or fleet
 
-You can update the name and description of a fleet at any time. Editing a fleet does not affect the storage systems or user assignments associated with it.
+You can rename a folder or fleet at any time. Renaming does not affect associated resources or member access.
 
 .Steps
 
-. From the NetApp Console Local, select *Storage Fleets*.
+. From the Organization page, navigate to a folder or fleet in the table, select image:icon-action.png[An icon with three dots] and then select *Edit folder* or *Edit fleet*.
 
-. Navigate to the fleet in the table, select image:icon-action.png[An icon with three dots] and then select *Edit Fleet*.
-
-. Update the fleet name or description.
+. Enter a new name.
 
 . Select *Apply*.
+
+== Delete a folder
+
+Delete a folder when you no longer need it, such as after restructuring your organization.
+
+Before you delete a folder, make sure it does not contain any fleets or resources. Move any fleets or resources to another location first.
+
+.Steps
+
+. From the Organization page, navigate to the folder in the table, select image:icon-action.png[An icon with three dots] and then select *Delete*.
+
+. Confirm that you want to delete the folder.
 
 == Delete a storage fleet
 
@@ -36,12 +46,12 @@ Before you delete a fleet, be aware of the following constraints:
 
 .Steps
 
-. From the NetApp Console Local, select *Storage Fleets*.
+. From the Organization page, navigate to the fleet in the table.
 
 . Remove all storage systems from the fleet.
 +
 link:task-storage-fleets-organize.html[Learn how to organize storage into fleets].
 
-. Navigate to the fleet in the table, select image:icon-action.png[An icon with three dots] and then select *Delete*.
+. Select image:icon-action.png[An icon with three dots] and then select *Delete*.
 
 . Confirm that you want to delete the fleet.

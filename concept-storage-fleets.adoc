@@ -1,19 +1,29 @@
 ---
 sidebar: sidebar
 permalink: concept-storage-fleets.html
-keywords: storage fleets, fleet management, storage organization, netapp console
-summary: "A storage fleet groups storage systems that you manage together in NetApp Console Local. Fleets help you organize storage by environment, team, location, or business unit. You can apply policies, grant access, and monitor health at the needed scope."
+keywords: storage fleets, fleet management, storage organization, folders, netapp console
+summary: "A storage fleet groups storage systems that you manage together in NetApp Console Local. Use folders to group related fleets. You can apply policies, grant access, and monitor health at the needed scope."
 ---
 = Learn about storage fleets in NetApp Console Local
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-A storage fleet groups storage systems that you manage together in NetApp Console Local. Fleets help you organize storage by environment, team, location, or business unit. You can apply policies, grant access, and monitor health at the needed scope.
+A storage fleet groups storage systems that you manage together in NetApp Console Local. Use folders to group related fleets. You can apply policies, grant access, and monitor health at the needed scope.
 
 == Why fleets matter
 
 As storage environments grow, managing individual clusters in isolation becomes impractical. Fleets give you a structured way to group related storage systems so you can act on them as a unit. Instead of configuring policies or access controls cluster by cluster, you apply them once at the fleet level. This reduces repetitive administrative work and ensures that every cluster in a fleet operates under the same standards.
+
+== How folders and fleets organize your resources
+
+Your organization's resource hierarchy consists of folders and fleets. Folders group related fleets, and fleets group storage systems.
+
+* *Organization* is the top level of the hierarchy and represents your company.
+* *Folders* help you organize related fleets. For example, you might create a folder for each region or business unit, and then create fleets within each folder. Folders can contain other folders or fleets, but they cannot have storage systems directly associated with them. When you assign a role to a member at the folder level, the member inherits that role for all fleets within the folder.
+* *Fleets* group the storage systems that you manage together. You associate storage systems with fleets and assign users to fleets to grant them access.
+
+NOTE: Folders are an organizational tool and are not visible to members who do not have IAM permissions such as the Organization admin or Folder or fleet admin roles. Members access fleets, not folders.
 
 == Fleet examples
 
@@ -24,10 +34,17 @@ How you organize fleets depends on your operational model. Common approaches inc
 * *By location or data center* When clusters are distributed across sites, organizing by location lets you monitor site-level health, apply region-specific tiering policies, and track capacity consumption per site.
 * *By application tier* Group clusters that host a specific class of workload—databases, file shares, or virtual machines—so you can apply a storage class tuned to that workload's performance profile across the entire fleet.
 
+TIP: Use folders to add another level of organization. For example, create a folder for each region and then create environment-based fleets within each regional folder.
+
 == How fleets connect to storage classes
 
 When you associate a storage class with a fleet, the Console applies the policies in that class to all storage provisioning within the fleet. Workloads provisioned inside the fleet automatically inherit the performance, capacity, and tiering rules defined in the storage class—without requiring administrators to select or verify policy settings at provisioning time. This makes fleets the primary way to enforce consistent storage behavior across clusters that serve a common purpose.
 
-== How fleets support access control and visibility
+== How folders and fleets support access control and visibility
 
-Fleets also serve as the boundary for user access. You assign users to fleets, which gives them management access to the storage within that fleet and no further. This lets you delegate storage management to team members or application owners without granting them visibility into unrelated parts of your infrastructure. The Console provides fleet-level health and performance monitoring so you can see the status of all clusters in a fleet from a single view, identify issues early, and act before they affect workloads.
+Folders and fleets serve as the boundaries for user access:
+
+* When you assign a role at the *folder* level, the member inherits that role for all fleets and resources within the folder. This lets Organization admins delegate administrative responsibilities by creating folders and assigning a Folder or fleet admin role. Those admins can then manage all fleets within their folder without access to the entire organization.
+* When you assign a role at the *fleet* level, the member has access only to the storage systems within that fleet.
+
+This lets you delegate storage management to team members or application owners without granting them visibility into unrelated parts of your infrastructure. The Console provides fleet-level health and performance monitoring so you can see the status of all clusters in a fleet from a single view, identify issues early, and act before they affect workloads.

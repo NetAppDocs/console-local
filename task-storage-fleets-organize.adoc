@@ -1,12 +1,76 @@
 ---
 sidebar: sidebar
 permalink: task-storage-fleets-organize.html
-keywords: organize, storage fleets, fleet, group, storage systems, netapp console
-summary: "Organize discovered storage systems into fleets for simplified management in NetApp Console Local."
+keywords: organize, storage fleets, fleet, folder, group, storage systems, associate, netapp console
+summary: "Organize discovered storage systems into folders and fleets for simplified management in NetApp Console Local."
 ---
 = Organize storage into fleets
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Organize discovered storage systems into fleets in the NetApp Console Local to group related resources and simplify management across your environment.
+Organize discovered storage systems into fleets in the NetApp Console Local to group related resources and simplify management across your environment. You can also associate resources with folders so that a Folder or fleet admin can assign them to the appropriate fleets.
+
+== Associate a resource with a folder or fleet
+
+After you discover storage systems, associate them with folders or fleets to make them available to members.
+
+.Steps
+
+. Select *Administration* > *Identity and access*.
+
+. Select *Resources*.
+
+. Navigate to a resource in the table, select image:icon-action.png[An icon with three dots] and then select *Associate to folders or fleets*.
+
+. Select a folder or fleet and then select *Accept*.
++
+To associate the resource with additional folders or fleets, select *Add folder or fleet* and then select the folder or fleet.
+
+. Select *Associate resources*.
+
+NOTE: If you associated the resource with a folder, a Folder or fleet admin can access the resource and associate it with a fleet within the folder. Members can't manage storage in a folder until it is associated with a fleet.
+
+== View the resources associated with a folder or fleet
+
+View which storage systems are associated with a specific folder or fleet.
+
+.Steps
+
+. From the Organization page, navigate to a folder or fleet in the table, select image:icon-action.png[An icon with three dots] and then select *Edit folder* or *Edit fleet*.
+
+. Select *Resources* to view the associated resources.
++
+In the table, the *Status* column identifies whether each resource is associated with the folder or fleet.
+
+== Change the resources associated with a folder or fleet
+
+You can change which resources are associated with a folder or fleet as your organization's needs change.
+
+.Steps
+
+. From the Organization page, navigate to a folder or fleet in the table, select image:icon-action.png[An icon with three dots] and then select *Edit folder* or *Edit fleet*.
+
+. Select *Resources*.
+
+. Select the resources that you'd like to associate or disassociate.
+
+. Select *Associate with the fleet* or *Disassociate from the fleet*, depending on the resources that you selected.
+
+. Select *Apply*.
+
+== Remove a resource from a folder or fleet
+
+To remove a resource from a folder or fleet, remove its association. This prevents members from managing the resource in that folder or fleet.
+
+.Steps
+
+. Select *Administration* > *Identity and access*.
+
+. Select *Resources*.
+
+. Navigate to a resource in the table, select image:icon-action.png[An icon with three dots] and then select *View details*.
+
+. Select image:icon-delete.png[An icon of a trash can] next to the folder or fleet to remove the association.
+
+. Select *Delete* to confirm the removal.

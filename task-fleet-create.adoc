@@ -1,37 +1,76 @@
 ---
 sidebar: sidebar
 permalink: task-fleet-create.html
-keywords: create fleet, storage fleet, new fleet, organize storage, netapp console
-summary: "Create a storage fleet to group related storage systems for unified management in NetApp Console Local."
+keywords: create fleet, create folder, storage fleet, new fleet, organize storage, netapp console
+summary: "Create folders and storage fleets to organize your resources in NetApp Console Local."
 ---
-= Create a storage fleet
+= Create folders and storage fleets
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Create a storage fleet in the NetApp Console Local to group related storage systems for unified management. When you create a fleet, you specify a name and description that reflect how the fleet fits into your operational model.
+Create folders and storage fleets in the NetApp Console Local to organize your resources and manage access. Folders group related fleets, and fleets group storage systems.
 
 == About this task
 
-A fleet groups storage systems that you manage together. You might organize fleets by environment (production, development, test), by business unit, by data center location, or by application tier.
+An organization consists of folders and fleets that form a resource hierarchy:
 
-The NetApp Console Local creates one fleet for you when you set up your organization. You can create additional fleets to match your organizational structure.
+* *Folders* help you organize related fleets. For example, you might create a top-level folder for each region and then create fleets within each folder. Folders can contain other folders or fleets, but they cannot have storage systems directly associated with them.
+* *Fleets* group storage systems that you manage together. You might organize fleets by environment (production, development, test), by business unit, by data center location, or by application tier.
 
-== Steps
+The NetApp Console Local creates one fleet for you when you set up your organization. You can create additional folders and fleets to match your organizational structure.
 
-. From the NetApp Console Local, select *Storage Fleets*.
+You can create up to seven levels of folders and fleets in your organization's resource hierarchy.
 
-. Select *Create Fleet*.
+== Create a folder
+
+Create a folder to group related fleets.
+
+.Steps
+
+. From the NetApp Console Local, select *Administration* > *Identity and access*.
+
+. Select *Organization*.
+
+. Select *Add folder or fleet*.
+
+. Select *Folder*.
+
+. Enter a name and choose a location for the folder.
++
+You can place the folder directly under the organization or inside another folder.
+
+. Select *Add*.
+
+== Create a storage fleet
+
+Create a fleet to group storage systems for unified management.
+
+.Steps
+
+. From the NetApp Console Local, select *Administration* > *Identity and access*.
+
+. Select *Organization*.
+
+. Select *Add folder or fleet*.
+
+. Select *Fleet*.
 
 . Enter a name and description for the fleet.
 +
 Choose a name that reflects how this fleet fits into your operational model. For example, "Production - US East" or "Engineering - Dev/Test."
 
-. Select *Create*.
+. Choose a location for the fleet.
++
+You can place the fleet directly under the organization or inside a folder.
+
+. Select *Add*.
+
+NOTE: Members can't access resources in a folder until those resources are assigned to a fleet. Use folders to hold resources temporarily until you create the necessary fleets. This can help the Organization admin delegate resource allocation to a Folder or fleet admin, who then assigns resources to fleets within the folder.
 
 == After you finish
 
-After you create a fleet, you can:
+After you create folders and fleets, you can:
 
-* Organize discovered storage systems into the fleet. link:task-storage-fleets-organize.html[Learn how to organize storage into fleets].
-* Assign users to the fleet to grant them storage management access. link:task-users-fleets-assign.html[Learn how to assign users to fleets].
+* Organize discovered storage systems into fleets. link:task-storage-fleets-organize.html[Learn how to organize storage into fleets].
+* Assign users to folders or fleets to grant them management access. link:task-users-fleets-assign.html[Learn how to assign users to fleets].
