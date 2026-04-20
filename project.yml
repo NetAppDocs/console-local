@@ -172,266 +172,264 @@ sidebar:
         url: /task-support-cases-view-submit.html
   - title: NetApp Console (SaaS)
     entries:
-    - title: What's new
+    - title: NetApp Console administration
+      url: /placeholder-index.html
+    - title: Release notes
       entries:
       - title: What's new
         url: /placeholder-whats-new-saas.html
       - title: Known limitations
         url: /placeholder-reference-limitations.html
-    - title: Understand NetApp Console
+    - title: Get started
       entries:
-      - title: Learn about NetApp Console
-        url: /placeholder-concept-overview.html
-      - title: Learn about deployment modes
-        url: /placeholder-concept-modes.html
-      - title: Learn about Console agents
-        url: /placeholder-concept-agents.html
-      - title: Learn about identity and access management
-        url: /concept-identity-and-access-management.html
-      - title: Learn about data services
-        url: /concept-data-services.html
-      - title: NetApp Support accounts
-        url: /placeholder-task-adding-nss-accounts.html
-    - title: Deploy NetApp Console (SaaS)
-      entries:
-      - title: Getting started workflow
-        url: /placeholder-task-quick-start-standard-mode.html
-      - title: Prepare network access
-        url: /placeholder-reference-networking-saas-console.html
-      - title: Sign up to NetApp Console
-        url: /placeholder-task-sign-up-saas.html
-      - title: Use the NetApp Console assistant
-        url: /placeholder-task-console-assistant.html
-    - title: Deploy in restricted mode
-      entries:
-      - title: Getting started workflow
-        url: /placeholder-task-quick-start-restricted-mode.html
-      - title: Prepare for deployment
-        url: /placeholder-task-prepare-restricted-mode.html
-      - title: Deploy in restricted mode
-        url: /placeholder-task-install-restricted-mode.html
-      - title: Subscribe to Intelligent Services
-        url: /placeholder-task-subscribe-restricted-mode.html
-      - title: What you can do next
-        url: /placeholder-reference-whats-next-restricted-mode.html
-    - title: Deploy in private mode
-      entries:
-      - title: Getting started workflow
-        url: /placeholder-task-quick-start-private-mode.html
-      - title: Prepare for deployment
-        url: /placeholder-task-prepare-private-mode.html
-      - title: Deploy the Console agent
-        url: /placeholder-task-install-private-mode.html
-      - title: What you can do next
-        url: /placeholder-reference-whats-next-private-mode.html
-    - title: Deploy a Console agent
-      entries:
-      - title: Choose a deployment method
-        url: /placeholder-concept-agent-install-options.html
-      - title: AWS
+      - title: Learn the basics
         entries:
-        - title: Create from NetApp Console
-          url: /placeholder-task-install-agent-aws-console.html
-        - title: Create from the AWS marketplace
-          url: /placeholder-task-install-agent-aws-marketplace.html
-        - title: Manually install in AWS
-          url: /placeholder-task-install-agent-aws-manual.html
-      - title: Azure
+        - title: Learn about NetApp Console
+          url: /placeholder-concept-overview.html
+        - title: Learn about NetApp Console deployment modes
+          url: /placeholder-concept-modes.html
+        - title: NetApp Support accounts
+          url: /placeholder-task-adding-nss-accounts.html
+        - title: Learn about Console agents
+          url: /placeholder-concept-agents.html
+        - title: Identity and access management
+          url: /concept-identity-and-access-management.html
+      - title: Get started with NetApp Console (SaaS)
         entries:
-        - title: Create from NetApp Console
-          url: /placeholder-task-install-agent-azure-console.html
-        - title: Create from the Azure marketplace
-          url: /placeholder-task-install-agent-azure-marketplace.html
-        - title: Manually install in Azure
-          url: /placeholder-task-install-agent-azure-manual.html
-      - title: Google Cloud
+        - title: Getting started workflow
+          url: /placeholder-task-quick-start-standard-mode.html
+        - title: Prepare network access for NetApp Console
+          url: /placeholder-reference-networking-saas-console.html
+        - title: Sign up to NetApp Console
+          url: /placeholder-task-sign-up-saas.html
+        - title: Use the NetApp Console assistant
+          url: /placeholder-task-console-assistant.html
+      - title: Get started with NetApp Console (restricted mode)
         entries:
-        - title: Create from NetApp Console
-          url: /placeholder-task-install-agent-google-console-gcloud.html
-        - title: Create from Google Cloud
-          url: /placeholder-task-install-agent-google-gcloud.html
-        - title: Manually install in Google Cloud
-          url: /placeholder-task-install-agent-google-manual.html
-      - title: On-premises
+        - title: Getting started workflow for restricted mode
+          url: /placeholder-task-quick-start-restricted-mode.html
+        - title: Prepare for restricted NetApp Console deployment
+          url: /placeholder-task-prepare-restricted-mode.html
+        - title: Deploy NetApp Console in restricted mode
+          url: /placeholder-task-install-restricted-mode.html
+        - title: Subscribe to NetApp Intelligent Services
+          url: /placeholder-task-subscribe-restricted-mode.html
+        - title: What you can do next
+          url: /placeholder-reference-whats-next-restricted-mode.html
+      - title: Get started with NetApp Console (private mode)
         entries:
-        - title: Manually install on-premises
-          url: /placeholder-task-install-agent-on-prem.html
-        - title: Install on-premises in VCenter
-          url: /task-install-agent-on-prem-ova.html
-        - title: Ports for the on-premises agent
-          url: /placeholder-reference-ports-on-prem.html
+        - title: Getting started workflow for private mode
+          url: /placeholder-task-quick-start-private-mode.html
+        - title: Prepare for deployment
+          url: /placeholder-task-prepare-private-mode.html
+        - title: Deploy the Console agent
+          url: /placeholder-task-install-private-mode.html
+        - title: What you can do next
+          url: /placeholder-reference-whats-next-private-mode.html
+      - title: Deploy a Console agent
+        entries:
+        - title: Choose a Console agent deployment method
+          url: /placeholder-concept-agent-install-options.html
+        - title: AWS
+          entries:
+          - title: Create a Console agent in AWS from NetApp Console
+            url: /placeholder-task-install-agent-aws-console.html
+          - title: Create a Console agent in AWS from the AWS marketplace
+            url: /placeholder-task-install-agent-aws-marketplace.html
+          - title: Manually install a Console agent in AWS
+            url: /placeholder-task-install-agent-aws-manual.html
+        - title: Azure
+          entries:
+          - title: Create a Console agent in Azure from NetApp Console
+            url: /placeholder-task-install-agent-azure-console.html
+          - title: Create a Console agent in Azure from the Azure marketplace
+            url: /placeholder-task-install-agent-azure-marketplace.html
+          - title: Manually install a Console agent in Azure
+            url: /placeholder-task-install-agent-azure-manual.html
+        - title: Google Cloud
+          entries:
+          - title: Create a Console agent in Google Cloud from NetApp Console
+            url: /placeholder-task-install-agent-google-console-gcloud.html
+          - title: Create a Console agent in Google Cloud from Google Cloud
+            url: /placeholder-task-install-agent-google-gcloud.html
+          - title: Manually install a Console agent in Google Cloud
+            url: /placeholder-task-install-agent-google-manual.html
+        - title: Install an agent on-premises
+          entries:
+          - title: Manually install a Console agent on-premises
+            url: /placeholder-task-install-agent-on-prem.html
+          - title: Install a Console agent on-premises in VCenter
+            url: /task-install-agent-on-prem-ova.html
+          - title: Ports for the on-premises Console agent
+            url: /placeholder-reference-ports-on-prem.html
     - title: Use NetApp Console
       entries:
       - title: Log in to NetApp Console
         url: /placeholder-task-logging-in.html
-      - title: View systems across Console agents
+      - title: View systems associated with different Console agents
         url: /placeholder-task-manage-multiple-agents.html
-      - title: View metrics on the Home page
+      - title: View metrics on the NetApp Console Home page
         url: /placeholder-task-dashboard.html
-      - title: Manage your user settings
+      - title: Manage your NetApp Console user settings
         url: /placeholder-task-user-settings.html
-    - title: Secure and organize access
-      entries:
-      - title: Identity federation
-        entries:
-        - title: Learn about identity federation
-          url: /placeholder-concept-federation.html
-        - title: Verify your domain
-          url: /placeholder-task-federation-verify-domain.html
-        - title: Configure federations
-          entries:
-          - title: Federate with AD FS
-            url: /placeholder-task-federation-adfs.html
-          - title: Federate with Microsoft Entra ID
-            url: /placeholder-task-federation-entra-id.html
-          - title: Federate with PingFederate
-            url: /placeholder-task-federation-ping.html
-          - title: Federate with a SAML identity provider
-            url: /placeholder-task-federation-saml.html
-        - title: Manage federations
-          entries:
-          - title: Manage your federated connections
-            url: /placeholder-task-federation-manage.html
-          - title: Import your existing federated connection
-            url: /placeholder-task-federation-import.html
-      - title: Manage identity and access
-        entries:
-        - title: Learn about identity and access management
-          url: /concept-identity-and-access-management.html
-        - title: Get started with identity and access
-          url: /placeholder-task-iam-get-started.html
-        - title: IAM FAQ
-          url: /placeholder-faq-iam-netapp-console.html
-        - title: Add users, service accounts, and federated groups
-          url: /placeholder-task-iam-manage-members-permissions.html
-        - title: Manage roles
-          url: /placeholder-task-iam-manage-roles.html
-        - title: Manage member security
-          url: /placeholder-task-iam-user-security.html
-      - title: Organize resources with folders and projects
-        entries:
-        - title: Create folders and projects
-          url: /placeholder-task-iam-manage-folders-projects.html
-        - title: Associate resources to folders and projects
-          url: /placeholder-task-iam-manage-resources.html
-        - title: Associate a Console agent with other folders and projects
-          url: /placeholder-task-iam-associate-agents.html
-      - title: Access roles reference
-        entries:
-        - title: Predefined roles
-          url: /placeholder-reference-iam-predefined-roles.html
-        - title: Platform roles
-          url: /placeholder-reference-iam-platform-roles.html
-        - title: Application roles
-          entries:
-          - title: Google Cloud NetApp Volumes roles
-            url: /placeholder-reference-iam-gcnv-roles.html
-          - title: Keystone roles
-            url: /placeholder-reference-iam-keystone-roles.html
-          - title: Operations support analyst roles
-            url: /placeholder-reference-iam-analyst-roles.html
-        - title: Storage roles
-          url: /placeholder-reference-iam-storage-roles.html
-        - title: Data services roles
-          entries:
-          - title: Backup and Recovery roles
-            url: /placeholder-reference-iam-backup-rec-roles.html
-          - title: Disaster Recovery roles
-            url: /placeholder-reference-iam-disaster-rec-roles.html
-          - title: Ransomware Resilience roles
-            url: /placeholder-reference-iam-ransomware-roles.html
-      - title: Identity and access API
-        entries:
-        - title: Organization and project IDs
-          url: /placeholder-task-iam-rename-organization.html
-        - title: IAM API reference
-          url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
-      - title: Enforce ONTAP permissions in NetApp Console
-        url: /placeholder-task-ontap-access-agent.html
-      - title: Enable read-only mode for an organization
-        url: /placeholder-task-enable-read-only-mode.html
     - title: Administer and monitor
       entries:
-      - title: Manage NSS credentials
-        url: /placeholder-task-adding-nss-accounts.html
-      - title: Manage credentials associated with your login
-        url: /placeholder-task-manage-user-credentials.html
-      - title: Manage Console agents
+      - title: Associate NetApp Support accounts
+        entries:
+        - title: Manage NSS credentials
+          url: /placeholder-task-adding-nss-accounts.html
+        - title: Manage credentials associated with your NetApp Console login
+          url: /placeholder-task-manage-user-credentials.html
+      - title: Console agents
         entries:
         - title: Learn about Console agents
           url: /placeholder-concept-agents.html
         - title: Maintain Console agents
           entries:
-          - title: Maintain a VCenter-installed agent
-            url: /placeholder-task-agent-vm-config.html
-          - title: Maintain a manually installed agent
-            url: /placeholder-task-maintain-agents.html
-        - title: Update agent addressing and URIs
-          url: /placeholder-task-update-agent-addressing.html
-        - title: Install a CA-signed certificate
-          url: /placeholder-task-installing-https-cert.html
-        - title: Configure a Console agent to use a proxy server
-          url: /placeholder-task-configuring-proxy.html
-        - title: Troubleshoot the Console agent
-          url: /placeholder-task-troubleshoot-agent.html
-        - title: Upgrade the Console agent
-          url: /placeholder-task-upgrade-agent.html
-        - title: Uninstall and remove the Console agent
-          url: /placeholder-task-uninstall-agent.html
+          - title: Maintain manually installed Console agents
+            entries:
+            - title: Maintain a VCenter-installed agent
+              url: /placeholder-task-agent-vm-config.html
+            - title: Maintain a manually installed agent
+              url: /placeholder-task-maintain-agents.html
+          - title: Update agent addressing and URIs
+            url: /placeholder-task-update-agent-addressing.html
+          - title: Install a CA-signed certificate for web-console access
+            url: /placeholder-task-installing-https-cert.html
+          - title: Configure a Console agent to use a proxy server
+            url: /placeholder-task-configuring-proxy.html
+          - title: Troubleshoot the Console agent
+            url: /placeholder-task-troubleshoot-agent.html
+          - title: Upgrade the Console agent
+            url: /placeholder-task-upgrade-agent.html
+          - title: Uninstall and remove the Console agent
+            url: /placeholder-task-uninstall-agent.html
       - title: Manage cloud provider credentials
         entries:
         - title: AWS
           entries:
-          - title: Learn about AWS credentials and permissions
+          - title: Learn about credentials and permissions
             url: /placeholder-concept-accounts-aws.html
-          - title: Manage AWS credentials and subscriptions
+          - title: Manage credentials and subscriptions
             url: /placeholder-task-adding-aws-accounts.html
         - title: Azure
           entries:
-          - title: Learn about Azure credentials and permissions
+          - title: Learn about credentials and permissions
             url: /placeholder-concept-accounts-azure.html
-          - title: Manage Azure credentials and subscriptions
+          - title: Manage credentials and subscriptions
             url: /placeholder-task-adding-azure-accounts.html
         - title: Google Cloud
           entries:
-          - title: Learn about Google Cloud projects and permissions
+          - title: Learn about projects and permissions
             url: /placeholder-concept-accounts-gcp.html
-          - title: Manage Google Cloud credentials and subscriptions
+          - title: Manage credentials and subscriptions
             url: /placeholder-task-adding-gcp-accounts.html
-      - title: Organization partnerships
+      - title: Identity and access management
+        entries:
+        - title: Learn about managing identity and access
+          url: /concept-identity-and-access-management.html
+        - title: Get started with identity and access
+          url: /placeholder-task-iam-get-started.html
+        - title: Frequently asked questions about identity and access management
+          url: /placeholder-faq-iam-netapp-console.html
+        - title: Set up your Console organization
+          entries:
+          - title: Create folders and projects
+            url: /placeholder-task-iam-manage-folders-projects.html
+          - title: Associate resources to folders and projects
+            url: /placeholder-task-iam-manage-resources.html
+          - title: Associate a Console agent with other folders and projects
+            url: /placeholder-task-iam-associate-agents.html
+        - title: Add users to your Console organization
+          entries:
+          - title: Add users, service accounts, and federated groups
+            url: /placeholder-task-iam-manage-members-permissions.html
+        - title: Manage user access and security
+          entries:
+          - title: Understand role-based access control (RBAC)
+            url: /placeholder-concept-iam-rbac.html
+          - title: Manage user access
+            url: /placeholder-task-iam-manage-roles.html
+          - title: Manage member security
+            url: /placeholder-task-iam-user-security.html
+        - title: NetApp Console access roles
+          entries:
+          - title: NetApp Console access roles
+            url: /placeholder-reference-iam-predefined-roles.html
+          - title: Platform roles
+            url: /placeholder-reference-iam-platform-roles.html
+          - title: Application roles
+            entries:
+            - title: Google Cloud NetApp Volumes roles
+              url: /placeholder-reference-iam-gcnv-roles.html
+            - title: Keystone roles
+              url: /placeholder-reference-iam-keystone-roles.html
+            - title: Operations support analyst
+              url: /placeholder-reference-iam-analyst-roles.html
+          - title: Storage roles
+            url: /placeholder-reference-iam-storage-roles.html
+          - title: Data services roles
+            entries:
+            - title: Backup and Recovery roles
+              url: /placeholder-reference-iam-backup-rec-roles.html
+            - title: Disaster Recovery roles
+              url: /placeholder-reference-iam-disaster-rec-roles.html
+            - title: Ransomware Resilience roles
+              url: /placeholder-reference-iam-ransomware-roles.html
+        - title: Identity and access API
+          entries:
+          - title: Organization and project IDs
+            url: /placeholder-task-iam-rename-organization.html
+          - title: Identity and access management API reference
+            url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
+      - title: Security and compliance
+        entries:
+        - title: Identity federation
+          entries:
+          - title: Learn about identity federation
+            url: /placeholder-concept-federation.html
+          - title: Domain verification
+            entries:
+            - title: Verify your domain
+              url: /placeholder-task-federation-verify-domain.html
+          - title: Configure federations
+            entries:
+            - title: Federate with an Active Directory Federation Services (AD FS) provider
+              url: /placeholder-task-federation-adfs.html
+            - title: Federate with Microsoft Entra ID provider
+              url: /placeholder-task-federation-entra-id.html
+            - title: Federate with PingFederate
+              url: /placeholder-task-federation-ping.html
+            - title: Federate with a SAML identity provider
+              url: /placeholder-task-federation-saml.html
+          - title: Manage federations
+            entries:
+            - title: Manage your federated connections
+              url: /placeholder-task-federation-manage.html
+            - title: Import your existing federated connection
+              url: /placeholder-task-federation-import.html
+        - title: Enforce ONTAP permissions in NetApp Console
+          url: /placeholder-task-ontap-access-agent.html
+        - title: Enable read-only mode for an organization
+          url: /placeholder-task-enable-read-only-mode.html
+        - title: SOC-2 compliance for NetApp Console
+          url: https://www.netapp.com/company/trust-center/compliance/soc-2/
+      - title: Manage organization partnerships
         entries:
         - title: Learn about organization partnerships
           url: /placeholder-concept-org-partnerships.html
         - title: Create an organization partnership
           url: /placeholder-task-partnerships-create.html
-        - title: Manage members for a partnership
+        - title: Manage members for a partnership organization
           url: /placeholder-task-partnerships-assign-users.html
-        - title: Manage resource access for a partnership
+        - title: Manage resource access for a partnership organization
           url: /placeholder-task-partnerships-resource-access.html
-        - title: Work in an organization partnership
+        - title: Work in organization partnership
           url: /placeholder-task-partnerships-work.html
-      - title: Monitor Console operations
+      - title: Monitor NetApp Console operations
         url: /placeholder-task-monitor-cm-operations.html
       - title: Licenses and subscriptions
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
-      - title: SOC-2 compliance
-        url: https://www.netapp.com/company/trust-center/compliance/soc-2/
-    - title: Use data services
-      entries:
-      - title: Learn about using data services
-        url: /concept-use-data-services.html
-      - title: Subscribe to data services
-        url: /task-data-services-subscribe.html
-      - title: Grant access to data services
-        url: /task-data-services-access-grant.html
-      - title: Monitor protection status
-        url: /task-protection-status-monitor.html
-    - title: Knowledge and support
-      entries:
-      - title: Register for support
-        url: /placeholder-task-support-registration.html
-      - title: Get help
-        url: /placeholder-task-get-help.html
     - title: Reference
       entries:
       - title: Agent maintenance console
@@ -440,23 +438,23 @@ sidebar:
           url: /placeholder-reference-agent-maint-console-config-checker.html
         - title: Transparent proxy
           url: /placeholder-reference-agent-maint-console-proxy.html
-      - title: Cloud provider permissions and network requirements
+      - title: Cloud Provider agent permissions and network requirements
         entries:
         - title: Permissions summary
           url: /placeholder-reference-permissions.html
-        - title: AWS
+        - title: AWS agent permissions and security rules
           entries:
           - title: AWS permissions for the Console agent
             url: /placeholder-reference-permissions-aws.html
           - title: Console agent security group rules in AWS
             url: /placeholder-reference-ports-aws.html
-        - title: Azure
+        - title: Azure permissions and required security rules
           entries:
           - title: Azure permissions for the Console agent
             url: /placeholder-reference-permissions-azure.html
           - title: Console agent security group rules in Azure
             url: /placeholder-reference-ports-azure.html
-        - title: Google Cloud
+        - title: Google Cloud permissions and required firewall rules
           entries:
           - title: Google Cloud permissions for the Console agent
             url: /placeholder-reference-permissions-gcp.html
@@ -468,5 +466,11 @@ sidebar:
         url: /placeholder-task-require-imdsv2.html
       - title: Default agent configuration
         url: /placeholder-reference-agent-default-config.html
+    - title: Knowledge and support
+      entries:
+      - title: Register for support
+        url: /placeholder-task-support-registration.html
+      - title: Get help
+        url: /placeholder-task-get-help.html
   - title: Legal notices
     url: /legal-notices.html
