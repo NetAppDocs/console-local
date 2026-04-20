@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-data-services-access-grant.html
+keywords: grant access, data services, permissions, users, roles, netapp console
+summary: "Grant users access to data services in NetApp Console Local."
+---
+= Grant access to data services in NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Grant users access to data services in the NetApp Console Local so they can use data protection capabilities within their assigned fleets and projects.

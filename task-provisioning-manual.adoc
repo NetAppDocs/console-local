@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-provisioning-manual.html
+keywords: manual provisioning, provision storage, create volume, netapp console
+summary: "Manually provision storage resources using NetApp Console Local."
+---
+= Provision storage manually in NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Manually provision storage resources using the NetApp Console Local to create volumes and allocate capacity to meet workload requirements.

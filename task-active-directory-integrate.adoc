@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: task-active-directory-integrate.html
+keywords: Active Directory, LDAP, federation, user management, directory services, netapp console
+summary: "Integrate NetApp Console Local with Active Directory for centralized user management."
+---
+= Integrate NetApp Console Local with Active Directory
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Integrate the NetApp Console Local with Active Directory to enable centralized user management and leverage your existing directory services for authentication and authorization.
+
+== Why integrate with Active Directory
+
+By default, you manage Console Local users individually—creating accounts, setting roles, and removing access manually. As your organization grows, this approach becomes difficult to maintain and creates risk when staff changes happen. Integrating with Active Directory lets the Console Local authenticate users through your existing directory, so access follows your organization's established identity lifecycle. When you add a user to an Active Directory group, they gain the appropriate Console Local access automatically. When you remove them or disable their account, their access is revoked without requiring a separate action in the Console Local.
+
+Active Directory integration also supports compliance requirements by ensuring that Console Local access is governed by the same controls, audit trails, and policies your organization applies to other enterprise systems.
+
+== Prerequisites
+
+Before you integrate with Active Directory, ensure the following are in place:
+
+* Have the Organization admin role in the NetApp Console Local
+* Have an Active Directory domain and access to credentials with permission to query the directory
+* Know the LDAP server address and the base distinguished name (DN) for the directory tree you want to use
+* Confirm that the Console Local can reach your LDAP server over the network—port 389 for LDAP or port 636 for LDAPS
+* Have SSL/TLS certificates available if you plan to use LDAPS for encrypted communication

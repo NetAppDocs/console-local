@@ -1,0 +1,135 @@
+---
+sidebar: sidebar
+permalink: task-users-fleets-assign.html
+keywords: assign users, fleet, folder, access control, roles, storage management, netapp console
+summary: "Assign users to folders and storage fleets to grant them management access in NetApp Console Local."
+---
+= Assign users to fleets in NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Manage member access to folders and storage fleets in the NetApp Console Local. Assign roles to set permissions for fleet resources. Modify or remove access when responsibilities change.
+
+.Required access roles
+You must have the Organization admin role to manage member access across all folders and fleets. Folder or fleet admins can manage member access only for folders and fleets that they administer. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+NOTE: Create your folders and fleets before assigning user access. link:task-fleet-create.html[Learn how to create folders and storage fleets].
+
+== Understand how folder and fleet access works
+
+The NetApp Console Local uses a role-based access control (RBAC) model to manage user permissions. You assign predefined roles to members at the organization, folder, or fleet level.
+
+=== Role inheritance
+
+When you assign a role at a higher level in the resource hierarchy, it is automatically inherited by all resources within that scope:
+
+* *Organization level*: The member has that role across all folders and fleets.
+* *Folder level*: The member inherits that role for all fleets and subfolders within the folder.
+* *Fleet level*: The member has access only to the resources within that fleet.
+
+For example, assigning the Storage admin role at a folder level gives the member storage administration access to all fleets within that folder.
+
+Members can have multiple roles within the same fleet and across different folders and fleets. For example, you might assign a user the Storage admin role for a production folder (which gives them access to all fleets in that folder) and the Storage viewer role for a separate development fleet.
+
+NOTE: You cannot change member access at lower levels if it is inherited from a folder or the organization. Change the member's permission at the higher hierarchy level to change access.
+
+== View members assigned to a folder or fleet
+
+View which members have access to a specific folder or fleet.
+
+.Steps
+
+. Select *Administration* > *Identity and access*.
+
+. Select *Organization*.
+
+. From the Organization page, navigate to a folder or fleet in the table, select image:icon-action.png[An icon with three dots] and then select *Edit folder* or *Edit fleet*.
+
+. Select *Access* to view the members who have access to the folder or fleet.
+
+== Add an access role to a member
+
+You typically assign a role when adding a member to your organization, but you can update it at any time by adding roles.
+
+Your access role strategy should align with how you have organized your folders and storage fleets. For example, if you have a folder for each region, assign the Folder or fleet admin role at the folder level so the admin can manage all fleets within that region.
+
+.Steps
+
+. Select *Administration* > *Identity and access*.
+
+. Select *Members*.
+
+. Select one of the member tabs: *Users*, *Service accounts*, or *Federated groups*.
+
+. Select the actions menu image:icon-action.png[An icon with three dots] next to the member and select *Add a role*.
+
+. Complete the steps in the dialog box:
++
+.. *Select an organization, folder, or fleet*: Choose the level at which the member should have permissions.
++
+If you select the organization, the member has permissions across all folders and fleets. If you select a folder, the member inherits permissions for all fleets within that folder. If you select a fleet, the member has permissions only for resources in that fleet.
+.. *Select a category*: Choose a role category. link:reference-iam-predefined-roles.html[Learn about access roles].
+.. *Select a role*: Choose a role that provides the member with the appropriate permissions for the selected scope.
+.. *Add role*: If you want to provide access to additional folders or fleets, select *Add role*, specify another folder or fleet and role category, and then select a role.
+
+. Select *Add new roles*.
+
+== Change a member's assigned role
+
+Change a member's roles to update their access to folder or fleet resources.
+
+NOTE: Members must have at least one role. You can't remove all roles from a member. If you need to remove all roles, delete the member from your organization.
+
+.Steps
+
+. Select *Administration* > *Identity and access*.
+
+. Select *Members*.
+
+. Select one of the member tabs: *Users*, *Service accounts*, or *Federated groups*.
+
+. From the Members page, navigate to a member in the table, select image:icon-action.png[An icon with three dots] and then select *View details*.
+
+. In the table, expand the row for the organization, folder, or fleet where you want to change the member's assigned role and select *View* in the Role column.
+
+. You can change an existing role or remove a role:
++
+* To change a member's role, select *Change* next to the role you want to change. You can only change a role to a role within the same role category. Confirm the change.
+* To remove a member's role, select image:icon-delete.png[An icon of a trash can] next to the role. Confirm the removal.
+
+== Modify member access from a folder or fleet
+
+You can also manage member access directly from the folder or fleet in the Organization page.
+
+.Steps
+
+. From the Organization page, navigate to a folder or fleet in the table, select image:icon-action.png[An icon with three dots] and then select *Edit folder* or *Edit fleet*.
+
+. Select *Access* to view the list of members who have access.
+
+. Modify member access:
++
+* *Add a member*: Select the member that you'd like to add to the folder or fleet and assign them a role.
+* *Change a member's role*: For any members with a role other than Organization admin, select their existing role and then choose a new role.
+* *Remove member access*: For members who have a role defined at this folder or fleet, you can remove their access.
+
+. Select *Apply*.
+
+== Remove a member from your organization
+
+Remove a member when they leave your organization or no longer need access to any folder or fleet.
+
+When you remove a member, the Console Local revokes their permissions but retains their Console Local and NetApp Support Site accounts.
+
+.Steps
+
+. Select *Administration* > *Identity and access*.
+
+. Select *Members*.
+
+. Select one of the member tabs: *Users*, *Service accounts*, or *Federated groups*.
+
+. From the Members page, navigate to a member in the table, select image:icon-action.png[An icon with three dots] and then select *Delete user*.
+
+. Confirm that you want to remove the member from your organization.
