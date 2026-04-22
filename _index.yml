@@ -1,52 +1,19 @@
 indexpage:
-  title: NetApp Console Local documentation
+  title: NetApp Console documentation
   lead: Do cool things with NetApp Console Local.
-  summary: Use NetApp Console Local
+  summary: Use NetApp Console Local to manage your storage infrastructure, protect your data, and optimize your operations. With NetApp Console Local, you can achieve business continuity, unified management, and cost optimization for your storage environment.
   keywords: storage management, data protection, operational efficiency, cost optimization, business continuity, unified management,  self-hosted, high availability, LLM integration, role-based access control, storage provisioning
   tiles: 
-    - title: Deploy NetApp Console Local
+    - title: NetApp Console Local
       links: 
-        - title: Deploy in your VCenter environment
+        - title: Learn about NetApp Console Local
           url: /task-install-vcenter.html
-        - title: Deploy on a Linux host
-          url: /task-install-linux-host.html
-        - title: Configure high-availability 
-          url: /task-deploy-high-availability.html
-    - title: Maintain NetApp Console Local
+      
+    - title: NetApp Console Service
       links: 
-        - title: Monitor system health
+        - title: Learn about NetApp Console Service
           url: /task-install-vcenter.html
-        - title: Integrate with SIEM tools
-          url: /task-install-linux-host.html
-        - title: Upgrade NetApp Console Local
-          url: /task-upgrade-netapp-console.html
-        - title: Troubleshoot NetApp Console Local
-          url: /task-troubleshoot-netapp-console.html
-    - title: Set up NetApp Console Local
-      links: 
-        - title: Verify your Console Local organization
-          url: /task-verify-console-organization.html
-        - title: Configure AI management
-          url: /task-configure-ai-management.html
-        - title: Secure NetApp Console Local Access
-          url: /task-secure-console-access.html
-        - title: Manage storage fleets
-          url: /task-fleet-create.html
-    - title: Manage storage with NetApp Console Local
-      links: 
-        - title: Use storage classes to standardize management
-          url: /task-use-storage-classes.html
-        - title: Provision storage
-          url: /task-provision-storage.html
-        - title: Manage storage lifecycle
-    - title: Use NetApp Cyber Resilience data services
-      links: 
-        - title: Use data services
-          url: /concept-use-data-services.html
-        - title: Subscribe to data services
-          url: /task-subscribe-data-services.html
-        - title: Grant access to data services
-          url: /task-grant-access-data-services.html
-        - title: Monitor protection status (new dashboard)
-          url: /task-monitor-protection-status.html
+   
+         
+
     
