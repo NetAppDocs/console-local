@@ -1,18 +1,18 @@
 indexpage:
   title: NetApp Console documentation
   lead: Do cool things with NetApp Console Local.
-  summary: Use NetApp Console Local to manage your storage infrastructure, protect your data, and optimize your operations. With NetApp Console Local, you can achieve business continuity, unified management, and cost optimization for your storage environment.
-  keywords: storage management, data protection, operational efficiency, cost optimization, business continuity, unified management,  self-hosted, high availability, LLM integration, role-based access control, storage provisioning
-  tiles: 
+  keywords: storage management, data protection, operational efficiency, cost optimization, business continuity, unified management, self-hosted, high availability, LLM integration, role-based access control, storage provisioning
+  tiles:
     - title: NetApp Console Local
-      links: 
+      summary: Learn how to deploy and manage NetApp Console Local in your own environment.
+      links:
         - title: Learn about NetApp Console Local
-          url: /task-install-vcenter.html
-      
+          url: /concept-netapp-console-local.html
     - title: NetApp Console Service
-      links: 
+      summary: Learn about the SaaS-based NetApp Console Service.
+      links:
         - title: Learn about NetApp Console Service
-          url: /task-install-vcenter.html
+          url: /placeholder-concept-overview.html
    
          
 
