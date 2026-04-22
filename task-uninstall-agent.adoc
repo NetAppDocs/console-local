@@ -1,0 +1,89 @@
+---
+sidebar: sidebar
+permalink: task-uninstall-agent.html
+keywords: uninstall, remove connector, uninstall connector, uninstall agent, remove agent
+summary: Uninstall the a Console agent to troubleshoot issues or to permanently remove it from the host. The steps that you need to use depends on the deployment mode that you're using. Once you have removed a Console agent from your environment, you can remove it from the Console.
+---
+
+= Uninstall and remove a Console agent
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Uninstall the a Console agent to troubleshoot issues or to permanently remove it from the host. The steps that you need to use depends on the deployment mode that you're using. Once you have removed a Console agent from your environment, you can remove it from the Console.
+
+
+== Uninstall the agent when it has outbound connectivity
+
+If you're using standard mode or restricted mode (in other words, the agent host has outbound connectivity), then you should follow the steps below to uninstall the agent.
+
+.Steps
+
+. Connect to the Linux VM for the agent.
+
+. From the Linux host, run the uninstallation script:
++
+`/opt/application/netapp/service-manager-2/uninstall.sh [silent]`
++
+_silent_ runs the script without prompting you for confirmation.
+
+== Uninstall the agent when it has no outbound connectivity
+
+If your agent has no outbound connectivity (for example, in private mode), you must manually remove the agent software from the host.
+
+.Step
+
+. Connect to the Linux VM for the Console agent.
+
+. From the Linux host, run the following commands:
++
+[source,cli]
+/opt/application/netapp/ds/cleanup.sh
+rm -rf /opt/application/netapp/
+
+. From the Linux host, delete old, unused container image files to free space in the /var directory for re-installation.
+
++
+
+[role="tabbed-block"]
+====
+
+.Podman
+--
+
+[source,cli]
+podman system prune --all
+--
+
+.Docker
+--
+
+[source,cli]
+docker system prune -a
+--
+
+====
+
+
+
+
+== Remove Console agents from the Console
+
+If you have deleted an agent VM or uninstalled the agent, you should remove it from the list of agents in the Console. After you delete an agent VM or uninstall the agent software, the agent shows a status of *Disconnected* in the Console.
+
+Note the following about removing a Console agent:
+
+* This action doesn't delete the virtual machine.
+* This action can't be reverted--once you remove a Console agent, you can't add it back.
+
+.Steps
+
+. Select *Administration > Agents*.
+
+. On the *Overview* page , select the action menu for a disconnected agent and select *Remove agent*.
+
+. Enter the name of the agent to confirm and then select *Remove*.
+

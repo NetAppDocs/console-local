@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: reference-iam-analyst-roles.html
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin
+summary: You can assign the Operational support analyst role to users to provide them access to alerts and monitoring. Users with this role can also open support cases.
+---
+
+= Operational support analyst access role in NetApp Console
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can assign the Operational support analyst role to users to provide them access to alerts and monitoring. Users with this role can also open support cases.
+
+== Operational support analyst 
+[cols="1,2",options="header"]
+
+|===
+
+| Task
+| Can perform
+
+| Manage own user credentials from Settings > Credentials | Yes 
+
+| View discovered resources | Yes
+
+| Register for support and submit cases through the Console |Yes  
+
+| View the Audit page and notifications |Yes
+| View, download, and configure alerts | Yes
+
+
+|===

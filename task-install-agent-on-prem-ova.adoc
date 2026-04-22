@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: task-install-agent-on-prem-ova.html
 keywords: install agent, on prem agent installation, on prem connector, vmware, OVA, manual install
-summary: If you are a VMWare user, you can use an OVA to install a Console agent in your VCenter. THe OVA download or URL is available through the NetApp Console Local.
+summary: If you are a VMWare user, you can use an OVA to install a Console agent in your VCenter. THe OVA download or URL is available through the NetApp Console.
 ---
 
-= Install a NetApp Console Local agent on-premises using VCenter
+= Deploy a Console agent on-premises using VCenter
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,44 +13,180 @@ summary: If you are a VMWare user, you can use an OVA to install a Console agent
 :imagesdir: ./media/
 
 [.lead]
-If you are a VMWare user, you can use an OVA to install a NetApp Console Local  in your VCenter. THe OVA download or URL is available through the NetApp Console Local.
+If you are a VMWare user, you can use an OVA to deploy a Console agent in your VCenter. THe OVA download or URL is available through the NetApp Console.
 
-NOTE: When you install NetApp Console Local with your VCenter tools, you can use the VM web console to perform maintenance tasks. link:task-agent-vm-config.html[Learn more about the VM console for the agent.]
-
-
-== Prepare to install the NetApp Console Local 
-Before installation, make sure your VM host meets the requirements and the NetApp Console Local can access the internet and targeted networks. To use NetApp data services or Cloud Volumes ONTAP, create cloud provider credentials for the NetApp Console Local to perform actions on your behalf.
-
-=== Review NetApp Console Local host requirements
-
-Make sure your host machine meets installation requirements before installing the NetApp Console Local.
+NOTE: When you deploy a Console agent with your VCenter tools, you can use the VM web console to perform maintenance tasks. link:task-agent-vm-config.html[Learn more about the VM console for the agent.]
 
 
+== Prepare to install the Console agent
+Before installation, make sure your VM host meets the requirements and the Console agent can access the internet and targeted networks. To use NetApp data services or Cloud Volumes ONTAP, create cloud provider credentials for the Console agent to perform actions on your behalf.
 
-NOTE: Install the NetApp Console Local in a vCenter environment rather than directly on an ESXi host. 
+=== Review Console agent host requirements
+
+Make sure your host machine meets installation requirements before installing the Console agent.
+
+
+include::_include/os-reqs.adoc[tag=vmhost]
+
+NOTE: Install the agent in a vCenter environment rather than directly on an ESXi host. 
 
 
 
 
 [[network-access-agent]]
-=== Set up network access for the NetApp Console Local
+=== Set up network access for the Console agent
 
-NetApp Console Local needs access to the networks where your ONTAP clusters and other resources are located. This allows the NetApp Console Local to discover those resources, monitor their health, and perform actions on them. If your NetApp Console Local doesn't have access to a target network, it won't be able to manage the resources on that network.
+Work with your network administrator to ensure the Console agent has outbound access to the required endpoints and connections to targeted networks.
 
-Customer question: What information do I need to gather before I install NetApp Console Local? 
-Cu
+//Connections to target networks
+include::_include/networking.adoc[tag=networks]
+
+//Outbound internet access
+include::_include/networking.adoc[tag=outbound]
+
+//Endpoints contacted from your web browser
+include::_include/endpoints-console.adoc[]
+
+
+//Endpoints contacted from the Console agent 
+include::_include/endpoints-agent.adoc[tag=intro]
+
+NOTE:  You can't manage resources in Google Cloud with an Console agent installed on your premises. To manage Google Cloud resources, install an agent in Google Cloud.
+
+[role="tabbed-block"]
+====
+
+.AWS
+--
+When the Console agent is installed on-premises, it needs network access to the following AWS endpoints in order to manage NetApp systems (such as Cloud Volumes ONTAP) deployed in AWS.
+
+include::_include/endpoints-agent.adoc[tag=intro]
++
+[cols="2a,1a",options="header,autowidth"]
+|===
+| Endpoints
+| Purpose
+
+include::_include/endpoints-agent.adoc[tag=aws-endpoints]
+
+include::_include/endpoints-agent.adoc[tag=nss-endpoints]
+
+include::_include/endpoints-agent.adoc[tag=saas-endpoints]
+
+include::_include/endpoints-agent.adoc[tag=upgrade-endpoints]
+
+|===
+--
+
+.Azure
+--
+When the Console agent is installed on-premises, it needs network access to the following Azure endpoints in order to manage NetApp systems (such as Cloud Volumes ONTAP) deployed in Azure.
+
+[cols="2a,1a",options="header,autowidth"]
+|===
+| Endpoints
+| Purpose
+
+
+include::_include/endpoints-agent.adoc[tag=azure-public-endpoints]
+
+include::_include/endpoints-agent.adoc[tag=azure-china-endpoints]
+
+include::_include/endpoints-agent.adoc[tag=nss-endpoints]
+
+include::_include/endpoints-agent.adoc[tag=saas-endpoints]
+
+include::_include/endpoints-agent.adoc[tag=upgrade-endpoints]
+
+|===
 
 
 
+--
 
 
 
-== Install NetApp Console Local in your VCenter environment
-NetApp supports installing NetApp Console Local in your VCenter environment. The OVA file includes a pre-configured VM image that you can deploy in your VMware environment.  
+====
+// end tabbed area
+
+//Proxy server
+include::_include/networking.adoc[tag=proxy]
+
+//Ports
+include::_include/networking.adoc[tag=ports]
+
+//NTP
+include::_include/networking.adoc[tag=ntp]
+
+[[agent-permission-aws-azure]]
+=== Create Console agent cloud permissions for AWS or Azure
+
+If you want to use NetApp data services in AWS or Azure with an on-premises Console agent, then you need to set up permissions in your cloud provider so that you can add the credentials to the Console agent after you install it.
+
+NOTE: You can't manage resources in Google Cloud with a Console agent installed on your premises. If you want to manage Google Cloud resources, you need to install an agent in Google Cloud.
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.AWS
+--
+For on-premises Console agents, provide AWS permissions by adding IAM user access keys.
+
+Use IAM user access keys for on-premises Console agents; IAM roles are not supported for on-premises Console agents.
+
+.Steps
+
+include::_include/aws-permissions.adoc[tag=policy]
++
+Depending on the NetApp data services that you're planning to use, you might need to create a second policy.
++
+For standard regions, the permissions are spread across two policies. Two policies are required due to a maximum character size limit for managed policies in AWS. link:reference-permissions-aws.html[Learn more about IAM policies for the Console agent].
+
+include::_include/aws-permissions.adoc[tag=keys]
+
+.Result
+
+You should now have IAM user access keys with the required permissions.After you install the Console agent, associate these credentials with the Console agent from the Console.
+--
+
+.Azure
+--
+When the Console agent is installed on-premises, you need to give the Console agent Azure permissions by setting up a service principal in Microsoft Entra ID and getting the Azure credentials that the Console agent needs.
+
+.Create a Microsoft Entra application for role-based access control
+
+include::_include/azure-set-up-service-principal.adoc[tag=app]
+
+.Assign the application to a role
+ 
+include::_include/azure-set-up-service-principal.adoc[tag=role]
+
+.Add Windows Azure Service Management API permissions
+
+include::_include/azure-set-up-service-principal.adoc[tag=api]
+
+.Get the application ID and directory ID for the application
+
+include::_include/azure-set-up-service-principal.adoc[tag=ids]
+
+.Create a client secret
+
+include::_include/azure-set-up-service-principal.adoc[tags=secret]
+
+--
+
+====
+// end tabbed area
+
+
+== Install a Console agent in your VCenter environment
+NetApp supports installing the Console agent in your VCenter environment. The OVA file includes a pre-configured VM image that you can deploy in your VMware environment. A file download or URL deployment is available directly from the NetApp Console. It includes the Console agent software and a self-signed certificate.
 
 === Download the OVA or copy the URL    
 
-Download the OVA or copy the OVA URL directly from the NetApp Console Local.
+Download the OVA or copy the OVA URL directly from the NetApp Console.
 
 . Select *Administration > Agents*.
 
@@ -62,13 +198,13 @@ Download the OVA or copy the OVA URL directly from the NetApp Console Local.
 
 
 
-=== Deploy the agent in your VCenter
+=== Deploy the agent in your VCenter environment
 
 Log into your VCenter environment to deploy the agent.
 
 .Steps
 
-. Upload the self-signed certificate to your trusted certificates if your environment requires it. You can replace this certificate after installation.
+. Upload the self-signed certificate to your trusted certificates if your environment requires it. You replace this certificate after installation.
 
 . Deploy the OVA from the content library or local system.
 +
@@ -100,13 +236,13 @@ b. Select *Actions* > *New VM from this template*
 ** If you selected explicit proxy, enter the proxy server hostname or IP address and port number, as well as the username, password. 
 ** If you selected transparent proxy, upload the respective certificate.
 * *Virtual Machine Configuration*
-** *Skip config check*: This check box is unchecked by default which means the NetApp Console Local runs a configuration check to validate network access. 
-*** NetApp recommends leaving this box unchecked so that the installation includes a configuration check of the NetApp Console Local. The Configuration check validates that the NetApp Console Local has network access to the required endpoints. If it deployment fails because of connectivity issues, you can access the validation report and logs from the NetApp Console Local host. In some cases, if you are confident that the NetApp Console Local has network access, you can choose to skip the check. For example, if you are still using the link:reference-networking-saas-console-previous.html[previous endpoints] used for NetApp Console Local upgrades, the validation fails with an error. To avoid this, mark the check box to install without a validation check.  link:reference-networking-saas-console-previous.html#update-endpoint-list[Learn how to update your endpoint list].
+** *Skip config check*: This check box is unchecked by default which means the agent runs a configuration check to validate network access. 
+*** NetApp recommends leaving this box unchecked so that the installation includes a configuration check of the agent. The Configuration check validates that the agent has network access to the required endpoints. If it deployment fails because of connectivity issues, you can access the validation report and logs from the agent host. In some cases, if you are confident that the agent has network access, you can choose to skip the check. For example, if you are still using the link:reference-networking-saas-console-previous.html[previous endpoints] used for agent upgrades, the validation fails with an error. To avoid this, mark the check box to install without a validation check.  link:reference-networking-saas-console-previous.html#update-endpoint-list[Learn how to update your endpoint list].
 
 
 
 
-** *Maintenance password*: Set the password for the `maint` user that allows access to the NetApp Console Local maintenance console.
+** *Maintenance password*: Set the password for the `maint` user that allows access to the agent maintenance console.
 ** *NTP servers*: Specify one or more NTP servers for time synchronization.
 ** *Hostname*: Set the hostname for this VM. It must not include the search domain. For example, an FQDN of console10.searchdomain.company.com should be entered as console10.
 ** *Primary DNS*: Specify the primary DNS server to use for name resolution.
@@ -121,16 +257,19 @@ b. Select *Actions* > *New VM from this template*
 
 . Review the details in the *Ready to complete* window, select *Finish*.
 +
-The vSphere task bar shows the progress as the NetApp Console Local is deployed.
+The vSphere task bar shows the progress as the Console agent is deployed.
 . Power on the VM.
 
-NOTE: If the deployment fails, you can access the validation report and logs from the NetApp Console Local host. link:task-troubleshoot-agent.html#troubleshoot-installation[Learn how to troubleshoot installation issues.]
+NOTE: If the deployment fails, you can access the validation report and logs from the agent host. link:task-troubleshoot-agent.html#troubleshoot-installation[Learn how to troubleshoot installation issues.]
 
 
+== Register the Console agent with NetApp Console
 
+include::_include/register-agent.adoc[]
 
+== Add cloud provider credentials to the Console
 
-
+include::_include/add-credentials-to-console.adoc[]
 
 
 
