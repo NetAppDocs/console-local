@@ -170,7 +170,7 @@ sidebar:
         url: /task-autosupport-manage.html
       - title: View and submit support cases
         url: /task-support-cases-view-submit.html
-  - title: NetApp Console (SaaS)
+  - title: NetApp Console Service
     entries:
     - title: NetApp Console administration
       url: /placeholder-index.html
@@ -194,7 +194,7 @@ sidebar:
           url: /placeholder-concept-agents.html
         - title: Identity and access management
           url: /concept-identity-and-access-management.html
-      - title: Get started with NetApp Console (SaaS)
+      - title: Get started with NetApp Console Service
         entries:
         - title: Getting started workflow
           url: /placeholder-task-quick-start-standard-mode.html
