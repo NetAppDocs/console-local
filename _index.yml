@@ -1,6 +1,6 @@
 indexpage:
   title: NetApp Console documentation
-  lead: Do cool things with NetApp Console Local.
+  lead: Choose NetApp Console SaaS for cloud-hosted simplicity, or NetApp Console Local to run the same unified storage management entirely within your own infrastructure.
   keywords: storage management, data protection, operational efficiency, cost optimization, business continuity, unified management, self-hosted, high availability, LLM integration, role-based access control, storage provisioning
   tiles:
     - title: NetApp Console Local
