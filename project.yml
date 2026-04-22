@@ -172,8 +172,6 @@ sidebar:
         url: /task-support-cases-view-submit.html
   - title: NetApp Console Service
     entries:
-    - title: NetApp Console administration
-      url: /placeholder-index.html
     - title: Release notes
       entries:
       - title: What's new
@@ -184,7 +182,7 @@ sidebar:
       entries:
       - title: Learn the basics
         entries:
-        - title: Learn about NetApp Console
+        - title: Learn about NetApp Console Service
           url: /placeholder-concept-overview.html
         - title: Learn about NetApp Console deployment modes
           url: /placeholder-concept-modes.html
