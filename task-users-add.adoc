@@ -1,0 +1,14 @@
+---
+sidebar: sidebar
+permalink: task-users-add.html
+keywords: add users, user management, access, roles, folders, fleets, netapp console local
+summary: "Add Console Local users and assign them roles at the organization, folder, or fleet level in NetApp Console Local."
+---
+= Add users to NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Add Console Local users to grant them access to the NetApp Console Local and assign appropriate roles based on their responsibilities. You can assign roles at the organization, folder, or fleet level to control what resources each user can access.
+
+NOTE: Set up your folders and fleets before adding users so you can assign appropriate access during user creation. link:task-fleet-create.html[Learn how to create folders and storage fleets].

@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-netapp-console-upgrade.html
+keywords: upgrade, update, version, netapp console local
+summary: "Upgrade NetApp Console Local to the latest version."
+---
+= Upgrade NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Upgrade the NetApp Console Local to take advantage of the latest features, security fixes, and performance improvements.

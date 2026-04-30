@@ -1,0 +1,48 @@
+---
+sidebar: sidebar
+permalink: task-volume-resource-contention-identify.html
+keywords: resource contention, node utilization, aggregate utilization, shared resources, workload analyzer, netapp console
+summary: "Identify whether a volume's performance is degraded by contention on a shared node or aggregate using the Workload Analyzer."
+---
+= Identify resource contention affecting a volume in NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+When multiple workloads share nodes and aggregates, a busy neighbor can degrade the performance of other volumes. Use the Workload Analyzer to check whether the nodes and aggregates serving a volume are under high utilization during the period of reported performance issues.
+
+.Steps
+
+. In the NetApp Console Local, navigate to *Workload Analyzer*.
++
+Alternatively, from the storage inventory, select a volume and click *Analyze*.
+
+. In the *Volume* field, search for and select the volume you want to investigate.
+
+. Set the *Time Range* to cover the period of the reported issue, then click *Analyze*.
+
+. In the *Latency Analysis* section, note the timestamps where latency spikes occurred.
+
+. Scroll to the *Resource Utilization* section.
+
+. Review the utilization lines for each node and aggregate serving the volume.
++
+Each resource is shown as an independent line. A high-utilization warning threshold is displayed as a dashed reference line. If a node or aggregate line crosses this threshold at the same time as a latency spike, that resource is a likely contention source.
+
+. Hover over a spike in the resource utilization chart to see the breakdown for each resource:
++
+* For nodes: CPU utilization, network utilization, and available headroom
+* For aggregates: disk busy percentage, number of volumes on the aggregate, and available headroom
+
+. Use the component picker to isolate specific nodes or aggregates if multiple resources are displayed.
+
+. Enable *Show Forecast* to project whether any resource is trending toward the high-utilization threshold.
+
+.Results
+
+If a shared node or aggregate is consistently near or above the high-utilization threshold when the volume experiences latency, other workloads on that resource are competing for the same I/O capacity. Options to resolve this include:
+
+* Moving the volume to a less-utilized aggregate or cluster
+* Applying QoS policies to noisy-neighbor workloads to limit their resource consumption
+
+See link:task-remediation-guided.html[Remediate with guided steps] for assisted options.

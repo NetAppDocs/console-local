@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: faq.html
+keywords: FAQ, frequently asked questions, netapp console local, questions, answers
+summary: "Frequently asked questions about NetApp Console Local."
+---
+= FAQ for NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Find answers to frequently asked questions about the NetApp Console Local.

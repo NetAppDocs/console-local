@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-mfa-enable.html
+keywords: MFA, multi-factor authentication, two-factor, 2FA, security, netapp console
+summary: "Enable multi-factor authentication (MFA) for users in NetApp Console Local."
+---
+= Enable MFA for users in NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Enable multi-factor authentication (MFA) for users in the NetApp Console Local to add an extra layer of security to the login process.

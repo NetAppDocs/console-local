@@ -1,0 +1,26 @@
+---
+sidebar: sidebar
+permalink: concept-identity-and-access-management.html
+keywords: identity, access management, IAM, roles, users, federation, SSO, MFA, folders, fleets, netapp console
+summary: "Learn about identity and access management in NetApp Console Local, including user roles, the folder and fleet resource hierarchy, federation, and access control."
+---
+= Learn about identity and access management in NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Learn about the NetApp Console Local identity and access management (IAM) capabilities, including user roles, the folder and fleet resource hierarchy, federation, single sign-on, and multi-factor authentication.
+
+The NetApp Console Local uses IAM to organize your storage resources and control access according to your business structure. You organize resources in a hierarchy: the organization is at the top, then folders (which can contain other folders or fleets), and then fleets, which contain storage systems.
+
+Assign access roles at the organization, folder, or fleet level so users have the right access to resources.
+
+NOTE: You must have the Organization admin or Folder or fleet admin role to manage IAM in the NetApp Console Local.
+
+=== Resource hierarchy components
+
+* *Organization*: The top level of the IAM hierarchy, representing your company. Your organization consists of folders, fleets, members, roles, and resources.
+* *Folders*: Group related fleets within your organization. Create folders for regions, business units, or teams. You can nest folders within other folders. Assigning a role at the folder level gives the member access to all fleets in that folder. Folders cannot have storage systems directly associated with them.
+* *Fleets*: Group the storage systems that you manage together. Assign resources to fleets and grant users access at the fleet level. Resources can belong to multiple fleets.
+
+link:concept-storage-fleets.html[Learn more about folders and storage fleets].

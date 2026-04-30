@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: task-llm-connect.html
+keywords: LLM, AI, connect, large language model, AI management, netapp console
+summary: "Connect your large language model (LLM) to enable AI-assisted management in NetApp Console Local."
+---
+= Connect your LLM to NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Connect your large language model (LLM) to the NetApp Console Local to enable AI-assisted storage management and agentic provisioning capabilities.

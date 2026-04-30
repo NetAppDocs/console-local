@@ -1,0 +1,80 @@
+---
+sidebar: sidebar
+permalink: concept-storage-class-policies.html
+keywords: storage class policies, policies, storage class, IOPS, capacity, security, data protection, performance policy, netapp console
+summary: "Learn about the policies that serve as building blocks for storage classes in NetApp Console Local."
+---
+= Learn about storage class policies in NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Storage class policies are the building blocks you use to construct a storage class. Each policy controls a specific aspect of storage behavior. When you combine policies into a storage class, you create a reusable template that the NetApp Console Local enforces automatically at provisioning time and monitors continuously throughout a workload's lifecycle.
+
+== Policies as building blocks
+
+A storage class is composed of one or more policies, each governing a different dimension of storage behavior. Storage administrators define policies to encode enterprise standards—performance expectations, capacity thresholds, data placement rules—and then assemble those policies into storage class templates. When a workload is provisioned using a storage class, it inherits all of the policies in that class. This design separates the responsibility of defining standards from the act of provisioning, so storage can be provisioned consistently by automated workflows without needing to make individual configuration decisions.
+
+== Types of storage class policies
+NetApp Console Local includes four types of policies that you can use to construct storage classes:
+
+Performance policy::
+A performance policy sets expected IOPS/TB, peak IOPS/TB, absolute minimum IOPS, and expected latency targets for a workload. The Console Local uses these values to recommend clusters with sufficient headroom at provisioning time and to detect IOPS or latency drift after provisioning.
+
+Capacity policy::
+A capacity policy controls how a volume consumes and manages space. It sets space reservation (thick, thin, or system default), autogrow behavior, FabricPool tiering, and whether to provision NAS workloads as FlexVol or FlexGroup volumes.
+
+Security policy::
+A security policy sets the encryption, ransomware protection, and FIPS requirements for a workload. Each attribute can be set to a required value or left as "any" to accept the system default.
+
+Data protection policy::
+A data protection policy sets the number of snapshots retained at each interval to ensure workloads using the policy get a consistent backup schedule.
+
+== Default policies
+
+The Console Local includes system-defined policies across all four policy types. You can use these policies as-is when you create a storage class, or copy them as a starting point for custom policies tailored to your organization's requirements.
+
+//// 
+These policy names are not final and should be vetted with PM and UX. These are straight from the PRD 
+////
+
+=== Performance policies
+
+[cols="2,1,1,1,1,1,3",options="header"]
+|===
+| Name | Type | Expected IOPS/TB | Peak IOPS/TB | Absolute min IOPS | Expected latency (ms) | Summary
+| Extreme for Database Data | System defined | 12,288 | 24,576 | 2,000 | 1 | Use for transactional database data volumes requiring sustained high IOPS and sub-millisecond latency.
+| Extreme for Database Logs | System defined | 22,528 | 45,056 | 4,000 | 1 | Use for database transaction log volumes requiring the highest IOPS floor to prevent write bottlenecks.
+| Extreme for Database Shared Data | System defined | 16,384 | 32,768 | 2,000 | 1 | Use for shared database volumes accessed by multiple hosts requiring high throughput and consistent latency.
+| Extreme Performance | System defined | 6,144 | 12,288 | 1,000 | 1 | Use for HPC, AI/ML, and analytics workloads requiring high burst IOPS and predictable low latency.
+| Performance | System defined | 2,048 | 4,096 | 500 | 2 | Use for virtualized and enterprise applications requiring reliable performance without extreme IOPS demands.
+| Value | System defined | 128 | 512 | 75 | 17 | Use for cost-sensitive workloads such as home directories, file shares, and archives.
+|===
+
+=== Capacity policies
+
+[cols="2,1,1,1,1,1,3",options="header"]
+|===
+| Name | Type | Space reserve | Autogrow mode | Tiering policy | Volume type (NAS) | Summary
+| default | System defined | System default | System default | none | System default | Use for general workloads where platform default capacity behavior is acceptable.
+| production | System defined | System default | grow | none | System default | Use for production workloads that must expand automatically to prevent out-of-space failures.
+|===
+
+=== Security policies
+
+[cols="2,1,1,1,1,3",options="header"]
+|===
+| Name | Type | Encryption | Ransomware protection | FIPS | Summary
+| default | System defined | any | any | any | Use for workloads where platform default security behavior is acceptable.
+| anti-ransomware | System defined | any | on | any | Use for workloads containing sensitive or business-critical data that require active ransomware protection.
+| production | System defined | enabled | any | any | Use for production workloads where encryption is required for compliance.
+|===
+
+=== Data protection policies
+
+[cols="2,1,1,1,1,1,3",options="header"]
+|===
+| Name | Type | Hourly snapshots | Daily snapshots | Weekly snapshots | Monthly snapshots | Summary
+| default | System defined | 6 | 2 | 2 | 0 | Use for standard workloads requiring short-term recovery points without long-term retention overhead.
+| 3month-hourly | System defined | 23 | 6 | 4 | 3 | Use for regulated or business-critical workloads requiring granular intraday recovery points and three months of historical retention.
+|===
