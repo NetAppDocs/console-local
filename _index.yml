@@ -1,16 +1,52 @@
 indexpage:
-  title: NetApp Console setup and administration documentation
-  lead: Choose NetApp Console Service, the SaaS-based offering, for cloud-hosted simplicity, or NetApp Console Local to run the same unified storage management entirely within your own infrastructure.
-  summary: "Choose NetApp Console Service, the SaaS-based offering, for cloud-hosted simplicity, or NetApp Console Local to run the same unified storage management entirely within your own infrastructure."
-  keywords: storage management, data protection, operational efficiency, cost optimization, business continuity, unified management, self-hosted, high availability, LLM integration, role-based access control, storage provisioning
-  tiles:
-    - title: NetApp Console Local
-      summary: Learn how to deploy and manage NetApp Console Local in your own environment.
-      links:
-        - title: Learn about NetApp Console Local
-          url: /concept-netapp-console-local.html
-    - title: NetApp Console Service
-      summary: Learn about the SaaS-based NetApp Console Service.
-      links:
-        - title: Learn about NetApp Console Service
-          url: /placeholder-concept-overview.html
+  title: NetApp Console Local documentation
+  lead: Do cool things with NetApp Console Local.
+  summary: Use NetApp Console Local
+  keywords: storage management, data protection, operational efficiency, cost optimization, business continuity, unified management,  self-hosted, high availability, LLM integration, role-based access control, storage provisioning
+  tiles: 
+    - title: Deploy NetApp Console Local
+      links: 
+        - title: Deploy in your VCenter environment
+          url: /task-install-vcenter.html
+        - title: Deploy on a Linux host
+          url: /task-install-linux-host.html
+        - title: Configure high-availability 
+          url: /task-deploy-high-availability.html
+    - title: Maintain NetApp Console Local
+      links: 
+        - title: Monitor system health
+          url: /task-install-vcenter.html
+        - title: Integrate with SIEM tools
+          url: /task-install-linux-host.html
+        - title: Upgrade NetApp Console Local
+          url: /task-upgrade-netapp-console.html
+        - title: Troubleshoot NetApp Console Local
+          url: /task-troubleshoot-netapp-console.html
+    - title: Set up NetApp Console Local
+      links: 
+        - title: Verify your Console Local organization
+          url: /task-verify-console-organization.html
+        - title: Configure AI management
+          url: /task-configure-ai-management.html
+        - title: Secure NetApp Console Local Access
+          url: /task-secure-console-access.html
+        - title: Manage storage fleets
+          url: /task-fleet-create.html
+    - title: Manage storage with NetApp Console Local
+      links: 
+        - title: Use storage classes to standardize management
+          url: /task-use-storage-classes.html
+        - title: Provision storage
+          url: /task-provision-storage.html
+        - title: Manage storage lifecycle
+    - title: Use NetApp Cyber Resilience data services
+      links: 
+        - title: Use data services
+          url: /concept-use-data-services.html
+        - title: Subscribe to data services
+          url: /task-subscribe-data-services.html
+        - title: Grant access to data services
+          url: /task-grant-access-data-services.html
+        - title: Monitor protection status (new dashboard)
+          url: /task-monitor-protection-status.html
+    
