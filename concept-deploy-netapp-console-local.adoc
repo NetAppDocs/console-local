@@ -1,0 +1,42 @@
+---
+sidebar: sidebar
+permalink: concept-deploy-netapp-console-local.html
+keywords: deploy, install, vCenter, Linux, high availability, deployment options, netapp console local
+summary: "Learn about deployment options for NetApp Console Local, including vCenter and Linux installations."
+---
+= Deploy NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+NetApp Console Local can be deployed in your on-premises environment using either a VMware vCenter appliance or a Linux host installation. After installation, you can optionally deploy a high-availability configuration for resilience.
+
+== Deployment options
+
+Choose the deployment method that fits your environment.
+
+=== Install in your vCenter environment
+
+Deploy NetApp Console Local as a virtual appliance in your VMware vCenter environment using a pre-configured OVA image.
+
+link:task-install-agent-on-prem-ova.html[Install NetApp Console Local in your vCenter environment]
+
+=== Install on a Linux host
+
+Install NetApp Console Local directly on a supported Linux host for environments that don't use VMware.
+
+link:task-linux-host-install.html[Install NetApp Console Local on a Linux host]
+
+== High availability
+
+For production environments that require resilience, deploy NetApp Console Local in a high-availability configuration so that management operations continue if a single node becomes unavailable.
+
+link:task-high-availability-deploy.html[Deploy a NetApp Console Local high-availability environment]
+
+== Next steps
+
+After deployment, complete the following tasks to get started:
+
+* link:task-console-organization-verify.html[Verify your NetApp Console Local organization]
+* link:task-storage-discover.html[Discover storage in NetApp Console Local]
+* link:task-users-add.html[Add users to NetApp Console Local]

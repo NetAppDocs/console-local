@@ -1,0 +1,48 @@
+---
+sidebar: sidebar
+permalink: concept-administer-netapp-console-local.html
+keywords: administer, maintain, upgrade, SIEM, LLM, system health, netapp console local
+summary: "Learn about the ongoing administration tasks for NetApp Console Local, including LLM configuration, SIEM integration, health monitoring, and upgrades."
+---
+= Administer NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+After deploying and configuring NetApp Console Local, ongoing administration keeps your environment healthy, secure, and up to date.
+
+== Administration tasks
+
+NetApp Console Local administration includes the following areas:
+
+=== AI management
+
+Connect NetApp Console Local to a large language model to enable AI-assisted storage provisioning, alert investigation, and contextual guidance. Your data and queries stay within your network — you control the outbound connection to your LLM provider.
+
+link:task-llm-connect.html[Connect your LLM to NetApp Console Local]
+
+=== Security event integration
+
+Forward audit records to your centralized SIEM platform so your security operations team can correlate NetApp Console Local activity with other system events, trigger alerts on suspicious patterns, and retain logs according to your organization's policies.
+
+link:task-siem-integrate.html[Integrate NetApp Console Local with your SIEM tools]
+
+=== System health monitoring
+
+Monitor the health of all NetApp Console Local components to ensure the platform is operating correctly. Identify issues before they affect your ability to manage storage.
+
+link:task-system-health-monitor.html[Monitor NetApp Console Local system health]
+
+=== Upgrades
+
+Upgrade NetApp Console Local to the latest version for new features, security fixes, and performance improvements.
+
+link:task-console-upgrade.html[Upgrade NetApp Console Local]
+
+=== Troubleshooting
+
+When issues arise, use built-in diagnostic tools and log analysis to identify and resolve problems.
+
+* link:task-issues-diagnose.html[Diagnose common issues with NetApp Console Local]
+* link:task-diagnostic-tools-use.html[Use NetApp Console Local diagnostic tools]
+* link:task-support.html[Work with NetApp Support]

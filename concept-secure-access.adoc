@@ -1,0 +1,53 @@
+---
+sidebar: sidebar
+permalink: concept-secure-access.html
+keywords: security, access control, SSO, MFA, active directory, authentication, identity, netapp console local
+summary: "Learn about the security options available in NetApp Console Local, including Active Directory integration, single sign-on, and multi-factor authentication."
+---
+= Secure access to NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+NetApp Console Local provides multiple layers of security to protect your storage management environment and control who can access it.
+
+== Authentication options
+
+Strengthen authentication to NetApp Console Local by integrating with your existing identity infrastructure.
+
+=== Active Directory integration
+
+Connect NetApp Console Local to your Active Directory so users can sign in with their existing corporate credentials. This eliminates the need for separate accounts and ensures that access changes in your directory are reflected automatically.
+
+link:task-active-directory-integrate.html[Integrate Active Directory with NetApp Console Local]
+
+=== Single sign-on
+
+Enable single sign-on (SSO) so users can access NetApp Console Local as part of their standard authentication flow, reducing sign-in friction and improving security posture.
+
+link:task-sso-configure.html[Configure SSO for NetApp Console Local]
+
+=== Multi-factor authentication
+
+Add an additional layer of verification to prevent unauthorized access, even if credentials are compromised.
+
+link:task-mfa-enable.html[Enable MFA for NetApp Console Local]
+
+== Access control
+
+After authenticating users, control what they can do inside NetApp Console Local.
+
+=== Identity and access management
+
+Use role-based access control to define what each user can see and manage. Assign users to specific fleets so they only access the storage resources relevant to their responsibilities.
+
+* link:concept-identity-and-access-management.html[Learn about NetApp Console Local identity and access management]
+* link:concept-rbac.html[Learn about NetApp Console Local role-based access control]
+* link:task-users-add.html[Add users to NetApp Console Local]
+* link:task-users-fleets-assign.html[Assign users to fleets in NetApp Console Local]
+
+=== Audit logging
+
+Track all user activity in NetApp Console Local for compliance and security investigations.
+
+link:task-audit.html[View audit logs for NetApp Console Local]

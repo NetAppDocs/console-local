@@ -1,0 +1,40 @@
+---
+sidebar: sidebar
+permalink: task-logging-in.html
+keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account
+summary: After you sign up to the NetApp Console, you can log in from the web-based console to start managing your data and storage infrastructure.
+---
+
+= Log in to NetApp Console
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+After you sign up to the NetApp Console, you can log in from the web-based console to start managing your data and storage infrastructure.
+
+After you sign up, your Console organization administrator must add your user account to an organization before you access any resources. If you log in but don't see any resources, contact your organization administrator. link:task-user-settings.html#contact-admin[Contact your organization administrator].
+
+
+.Steps
+
+. Navigate to the NetApp Console URL. The URL depends on which mode of the Console that your organization is using:
++
+* **Standard mode*: Open a web browser and go to the https://console.netapp.com[NetApp Console]
+
+* **Restricted mode or Private mode**: Open a web browser and go to the IP address where the Console agent is installed.
+
+. On the *Log in* page, enter the email address that's associated with your login.
+
+. Depending on the authentication method associated with your login, you'll be prompted to enter your credentials.
+
++
+* Your existing NetApp Support Site (NSS) credentials
+* A NetApp Console account using your email address and a password
+* A federated connection if your administrator has set up identity federation for your organization
+
+
+
+

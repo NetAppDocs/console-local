@@ -1,0 +1,98 @@
+---
+sidebar: sidebar
+permalink: reference-networking-saas-console-previous.html
+keywords: networking, urls, endpoints, web browser, console, network, set up networking, netapp console
+summary: You need to ensure that the Console and any agents you install have the right network access to function properly. 
+---
+
+= Network access for NetApp Console 3.9.55 and earlier
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+NetApp Console, the NetApp Console agent, and NetApp data services require outbound internet access to contact necessary endpoints. 
+
+NOTE: This topic documents the network access required for versions of the NetApp Console standard mode 3.9.55 and below. For required endpoints for 4.0.0 and above, review link:reference-networking-saas-console.html[the required endpoints for 4.0.0 and higher].
+
+You need to set up network access for the following:
+
+* Computers that access the NetApp Console as software as a service (SaaS) 
+* Console agents you install on-premises or in the cloud. 
+
+
+
+[[update-endpoint-list]]
+== Update your endpoint list to the revised list for 4.0.0 and higher
+Starting with version 4.0.0, Console agents require fewer endpoints. Existing deployments before 4.0.0 remain supported. After upgrading to 4.0.0 or later, you may remove the old endpoints from your allow list when convenient.
+
+NetApp recommends updating firewall rules to use the revised endpoint list, which is smaller, more secure, and easier to manage. NetApp removes the need for wildcard entries, and endpoints for agent upgrades support all data services.
+
+include::_include/endpoints-agent.adoc[tag=endpoints-comparison]
+
+
+.Steps
+
+. Verify that your agent is version 4.0.0 or higher. link:task-troubleshoot-agent.html#view-the-console-agent-version[View agent version.]
+
+. Whitelist the endpoints in link:reference-networking-saas-console.html[Supported endpoints for 4.0.0 and higher].
+. Restart the service manager 2 service on each agent by running the following command:
+
++
+[source,cli]
+----
+systemctl restart netapp-service-manager.service
+----
+. Run the following command and verify that the agent's status shows as _active(running)_:
+_
++
+[source,cli]
+----
+systemctl status netapp-service-manager.service
+----
+. Remove the old endpoints from your firewall allow list.
+
+
+
+== Endpoints for NetApp Console and Console agents for 3.9.55 and below
+
+These endpoints are used for Console agents 3.9.55 and below.
+
+
+include::_include/endpoints-agent.adoc[tag=previous-endpoints]
+
+
+
+== Cloud provider endpoints contacted by the Console agent 
+
+
+Console agents must have access to additional endpoints if they are deployed in your cloud provider.
+
+Enable access to the cloud provider endpoints before installing the Console agent.
+
+** link:task-install-agent-aws-console.html#networking-aws-agent[Set up AWS network access for a Console agent]
+** link:task-install-agent-azure-console.html#networking-azure-agent[Set up Azure network access for a Console agent]
+** link:task-install-agent-google-console-gcloud.html#networking-gcp-agent[Set up Google Cloud network access for a Console agent]
+
+Cloud provider endpoints are the same for all versions. 
+
+== Data services endpoints contacted by the Console agent
+
+The Console agent requires additional outbound internet access to support some NetApp data services and Cloud Volumes ONTAP.
+
+
+=== Endpoints for Cloud Volumes ONTAP
+
+** link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-aws.html#outbound-internet-access-for-cloud-volumes-ontap-nodes[Endpoints for Cloud Volumes ONTAP in AWS]
+
+** link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-azure.html[Endpoints for Cloud Volumes ONTAP in Azure]
+
+** link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-gcp.html#outbound-internet-access[Endpoints for Cloud Volumes ONTAP in Google Cloud]
+
+
+
+
+
+
