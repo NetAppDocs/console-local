@@ -30,8 +30,6 @@ sidebar:
         url: /concept-llm-integration.html
       - title: Learn about data services
         url: /concept-data-services.html
-      - title: Learn about Console agents
-        url: /concept-agents.html
       - title: NetApp Console Local FAQ
         url: /faq-netapp-console-local.html
     - title: Install and setup
@@ -58,8 +56,6 @@ sidebar:
         url: /concept-manage-storage.html
       - title: View metrics on the NetApp Console Home page
         url: /task-dashboard.html
-      - title: View systems associated with different Console agents
-        url: /task-manage-multiple-agents.html
       - title: Use storage classes
         entries:
         - title: Learn about storage classes
@@ -128,14 +124,6 @@ sidebar:
         url: /concept-administer-netapp-console-local.html
       - title: Verify your Console Local organization
         url: /task-console-organization-verify.html
-      - title: Authenticate users
-        entries:
-        - title: Integrate with Active Directory
-          url: /task-active-directory-integrate.html
-        - title: Configure single sign-on
-          url: /task-sso-configure.html
-        - title: Enable multi-factor authentication
-          url: /task-mfa-enable.html
       - title: Connect your LLM
         url: /task-llm-connect.html
       - title: Integrate with your SIEM tools
@@ -146,6 +134,8 @@ sidebar:
         url: /task-monitor-cm-operations.html
       - title: Upgrade NetApp Console Local
         url: /task-netapp-console-upgrade.html
+      - title: Licenses and subscriptions
+        url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
       - title: Associate NetApp Support accounts
         entries:
         - title: Manage NSS credentials
@@ -156,26 +146,26 @@ sidebar:
         entries:
         - title: Learn about Console agents
           url: /concept-agents.html
-        - title: Maintain Console agents
+      - title: Maintain Console agents
+        entries:
+        - title: Maintain manually installed Console agents
           entries:
-          - title: Maintain manually installed Console agents
-            entries:
-            - title: Maintain a VCenter-installed agent
-              url: /task-agent-vm-config.html
-            - title: Maintain a manually installed agent
-              url: /task-maintain-agents.html
-          - title: Update agent addressing and URIs
-            url: /task-update-agent-addressing.html
-          - title: Install a CA-signed certificate for web-console access
-            url: /task-installing-https-cert.html
-          - title: Configure a Console agent to use a proxy server
-            url: /task-configuring-proxy.html
-          - title: Troubleshoot the Console agent
-            url: /task-troubleshoot-agent.html
-          - title: Upgrade the Console agent
-            url: /task-upgrade-agent.html
-          - title: Uninstall and remove the Console agent
-            url: /task-uninstall-agent.html
+          - title: Maintain a VCenter-installed agent
+            url: /task-agent-vm-config.html
+          - title: Maintain a manually installed agent
+            url: /task-maintain-agents.html
+        - title: Update agent addressing and URIs
+          url: /task-update-agent-addressing.html
+        - title: Install a CA-signed certificate for web-console access
+          url: /task-installing-https-cert.html
+        - title: Configure a Console agent to use a proxy server
+          url: /task-configuring-proxy.html
+        - title: Troubleshoot the Console agent
+          url: /task-troubleshoot-agent.html
+        - title: Upgrade the Console agent
+          url: /task-upgrade-agent.html
+        - title: Uninstall and remove the Console agent
+          url: /task-uninstall-agent.html
       - title: Identity and access management
         entries:
         - title: Learn about managing identity and access
@@ -190,54 +180,44 @@ sidebar:
             url: /task-iam-manage-folders-projects.html
           - title: Associate resources to folders and projects
             url: /task-iam-manage-resources.html
-          - title: Associate a Console agent with other folders and projects
-            url: /task-iam-associate-agents.html
         - title: Add users to your Console organization
           entries:
           - title: Add users, service accounts, and federated groups
             url: /task-iam-manage-members-permissions.html
-        - title: Manage user access and security
+          - title: Authenticate users
+            entries:
+            - title: Integrate with Active Directory
+              url: /task-active-directory-integrate.html
+            - title: Enable multi-factor authentication
+              url: /task-mfa-enable.html
+        - title: Manage user access to fleets and data services
           entries:
           - title: Understand role-based access control (RBAC)
             url: /concept-iam-rbac.html
           - title: Manage user access
             url: /task-iam-manage-roles.html
-          - title: Manage member security
-            url: /task-iam-user-security.html
+          - title: NetApp Console Local access roles
+            entries:
+            - title: NetApp Console Local access roles
+              url: /reference-iam-predefined-roles.html
+            - title: Platform roles
+              url: /reference-iam-platform-roles.html
+            - title: Application roles
+              entries:
+              - title: Operations support analyst
+                url: /reference-iam-analyst-roles.html
+            - title: Storage roles
+              url: /reference-iam-storage-roles.html
+            - title: Data services roles
+              entries:
+              - title: Backup and Recovery roles
+                url: /reference-iam-backup-rec-roles.html
         - title: Identity and access API
           entries:
           - title: Organization and project IDs
             url: /task-iam-rename-organization.html
           - title: Identity and access management API reference
             url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
-      - title: Security and compliance
-        entries:
-        - title: Secure access overview
-          url: /concept-secure-access.html
-        - title: Identity federation
-          entries:
-          - title: Learn about identity federation
-            url: /concept-federation.html
-          - title: Verify your domain
-            url: /task-federation-verify-domain.html
-          - title: Configure federations
-            entries:
-            - title: Federate with an Active Directory Federation Services (AD FS) provider
-              url: /task-federation-adfs.html
-            - title: Federate with Microsoft Entra ID provider
-              url: /task-federation-entra-id.html
-            - title: Federate with PingFederate
-              url: /task-federation-ping.html
-            - title: Federate with a SAML identity provider
-              url: /task-federation-saml.html
-          - title: Manage federations
-            entries:
-            - title: Manage your federated connections
-              url: /task-federation-manage.html
-            - title: Import your existing federated connection
-              url: /task-federation-import.html
-        - title: Enforce ONTAP permissions in NetApp Console
-          url: /task-ontap-access-agent.html
       - title: Troubleshoot and get support
         entries:
         - title: Diagnose common issues
@@ -258,55 +238,11 @@ sidebar:
       entries:
       - title: Default agent configuration
         url: /reference-agent-default-config.html
-      - title: Agent maintenance console
+      - title: NetApp Console Local maintenance console
         entries:
         - title: Configuration checks
           url: /reference-agent-maint-console-config-checker.html
         - title: Transparent proxy
           url: /reference-agent-maint-console-proxy.html
-      - title: NetApp Console Local access roles
-        entries:
-        - title: NetApp Console Local access roles
-          url: /reference-iam-predefined-roles.html
-        - title: Platform roles
-          url: /reference-iam-platform-roles.html
-        - title: Application roles
-          entries:
-          - title: Operations support analyst
-            url: /reference-iam-analyst-roles.html
-        - title: Storage roles
-          url: /reference-iam-storage-roles.html
-        - title: Data services roles
-          entries:
-          - title: Backup and Recovery roles
-            url: /reference-iam-backup-rec-roles.html
-      - title: Cloud Provider agent permissions and network requirements
-        entries:
-        - title: Permissions summary
-          url: /reference-permissions.html
-        - title: AWS agent permissions and security rules
-          entries:
-          - title: AWS permissions for the Console agent
-            url: /reference-permissions-aws.html
-          - title: Console agent security group rules in AWS
-            url: /reference-ports-aws.html
-        - title: Azure permissions and required security rules
-          entries:
-          - title: Azure permissions for the Console agent
-            url: /reference-permissions-azure.html
-          - title: Console agent security group rules in Azure
-            url: /reference-ports-azure.html
-        - title: Google Cloud permissions and required firewall rules
-          entries:
-          - title: Google Cloud permissions for the Console agent
-            url: /reference-permissions-gcp.html
-          - title: Console agent firewall rules in Google Cloud
-            url: /reference-ports-gcp.html
-      - title: Console network access (legacy)
-        url: /reference-networking-saas-console-previous.html
-      - title: Require the use of IMDSv2 on EC2 instances
-        url: /task-require-imdsv2.html
-      - title: Licenses and subscriptions
-        url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
   - title: Legal notices
     url: /legal-notices.html
