@@ -133,7 +133,7 @@ sidebar:
       - title: Monitor system health
         url: /task-system-health-monitor.html
       - title: Monitor NetApp Console Local operations
-        url: /task-monitor-cm-operations.html
+        url: /task-audit-monitor-console.html
       - title: Licenses and subscriptions
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
       - title: Associate NetApp Support accounts
