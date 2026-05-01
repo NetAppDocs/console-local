@@ -46,22 +46,14 @@ sidebar:
           url: /task-linux-host-install.html
         - title: Deploy a high-availability environment
           url: /task-high-availability-deploy.html
-      - title: Verify your Console Local organization
-        url: /task-console-organization-verify.html
-      - title: Log in to NetApp Console
-        url: /task-logging-in.html
-      - title: Authenticate users
-        entries:
-        - title: Integrate with Active Directory
-          url: /task-active-directory-integrate.html
-        - title: Configure single sign-on
-          url: /task-sso-configure.html
-        - title: Enable multi-factor authentication
-          url: /task-mfa-enable.html
       - title: Discover storage
         url: /task-storage-discover.html
     - title: Use
       entries:
+      - title: Log in to NetApp Console
+        url: /task-logging-in.html
+      - title: Manage your NetApp Console user settings
+        url: /task-user-settings.html
       - title: Storage management overview
         url: /concept-manage-storage.html
       - title: View metrics on the NetApp Console Home page
@@ -134,8 +126,16 @@ sidebar:
       entries:
       - title: Administration overview
         url: /concept-administer-netapp-console-local.html
-      - title: Manage your NetApp Console user settings
-        url: /task-user-settings.html
+      - title: Verify your Console Local organization
+        url: /task-console-organization-verify.html
+      - title: Authenticate users
+        entries:
+        - title: Integrate with Active Directory
+          url: /task-active-directory-integrate.html
+        - title: Configure single sign-on
+          url: /task-sso-configure.html
+        - title: Enable multi-factor authentication
+          url: /task-mfa-enable.html
       - title: Connect your LLM
         url: /task-llm-connect.html
       - title: Integrate with your SIEM tools
