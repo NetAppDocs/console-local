@@ -44,8 +44,10 @@ sidebar:
           url: /task-linux-host-install.html
         - title: Deploy a high-availability environment
           url: /task-high-availability-deploy.html
+      - title: Subscribe to data services
+        url: /task-data-services-subscribe.html
       - title: Discover storage
-        url: /task-storage-discover.html
+        url: /task-discover-storage.html
     - title: Use
       entries:
       - title: Log in to NetApp Console
@@ -132,8 +134,6 @@ sidebar:
         url: /task-system-health-monitor.html
       - title: Monitor NetApp Console Local operations
         url: /task-monitor-cm-operations.html
-      - title: Upgrade NetApp Console Local
-        url: /task-netapp-console-upgrade.html
       - title: Licenses and subscriptions
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
       - title: Associate NetApp Support accounts
@@ -142,11 +142,7 @@ sidebar:
           url: /task-adding-nss-accounts.html
         - title: Manage credentials associated with your NetApp Console login
           url: /task-manage-user-credentials.html
-      - title: Console agents
-        entries:
-        - title: Learn about Console agents
-          url: /concept-agents.html
-      - title: Maintain Console agents
+      - title: Maintain NetApp Console Local
         entries:
         - title: Maintain manually installed Console agents
           entries:
