@@ -55,61 +55,63 @@ sidebar:
       - title: Manage your NetApp Console user settings
         url: /task-user-settings.html
       - title: Storage management overview
-        url: /concept-manage-storage.html
+        entries:
+        - title: Storage management overview
+          url: /concept-manage-storage.html
+        - title: Use storage classes
+          entries:
+          - title: Learn about storage classes
+            url: /concept-storage-classes.html
+          - title: Learn about storage class policies
+            url: /concept-storage-class-policies.html
+          - title: Storage class policy reference
+            url: /reference-storage-class-policies.html
+          - title: Create a storage class
+            url: /task-storage-class-create.html
+          - title: Delete a storage class
+            url: /task-storage-class-delete.html
+          - title: Associate a storage class to a fleet
+            url: /task-storage-class-fleet-associate.html
+          - title: Disassociate a storage class from a fleet
+            url: /task-storage-class-fleet-disassociate.html
+        - title: Provision storage
+          entries:
+          - title: Provision storage manually
+            url: /task-provisioning-manual.html
+          - title: Provision storage automatically
+            url: /task-provisioning-automated.html
+          - title: Provision storage with agentic workflows
+            url: /task-provisioning-agentic.html
+        - title: Monitor storage
+          entries:
+          - title: Monitoring overview
+            url: /concept-monitor-storage.html
+          - title: Monitor fleet-wide health and performance
+            url: /task-fleet-health-monitor.html
+          - title: Investigate volume issues with the Workload Analyzer
+            entries:
+            - title: Learn about the Workload Analyzer
+              url: /concept-workload-analyzer.html
+            - title: Investigate high latency on a volume
+              url: /task-volume-latency-investigate.html
+            - title: Determine whether a volume is being throttled by QoS
+              url: /task-volume-qos-throttling-identify.html
+            - title: Identify resource contention affecting a volume
+              url: /task-volume-resource-contention-identify.html
+            - title: Forecast volume capacity and plan for growth
+              url: /task-volume-capacity-forecast.html
+            - title: Correlate a configuration change with a volume issue
+              url: /task-volume-config-change-correlate.html
+          - title: Configure notifications and alert policies
+            url: /task-notifications-configure.html
+        - title: Remediate storage issues
+          entries:
+          - title: Remediate storage issues automatically
+            url: /task-remediation-automated.html
+          - title: Remediate storage issues with guided steps
+            url: /task-remediation-guided.html
       - title: View metrics on the NetApp Console Home page
         url: /task-dashboard.html
-      - title: Use storage classes
-        entries:
-        - title: Learn about storage classes
-          url: /concept-storage-classes.html
-        - title: Learn about storage class policies
-          url: /concept-storage-class-policies.html
-        - title: Storage class policy reference
-          url: /reference-storage-class-policies.html
-        - title: Create a storage class
-          url: /task-storage-class-create.html
-        - title: Delete a storage class
-          url: /task-storage-class-delete.html
-        - title: Associate a storage class to a fleet
-          url: /task-storage-class-fleet-associate.html
-        - title: Disassociate a storage class from a fleet
-          url: /task-storage-class-fleet-disassociate.html
-      - title: Provision storage
-        entries:
-        - title: Provision storage manually
-          url: /task-provisioning-manual.html
-        - title: Provision storage automatically
-          url: /task-provisioning-automated.html
-        - title: Provision storage with agentic workflows
-          url: /task-provisioning-agentic.html
-      - title: Monitor storage
-        entries:
-        - title: Monitoring overview
-          url: /concept-monitor-storage.html
-        - title: Monitor fleet-wide health and performance
-          url: /task-fleet-health-monitor.html
-        - title: Investigate volume issues with the Workload Analyzer
-          entries:
-          - title: Learn about the Workload Analyzer
-            url: /concept-workload-analyzer.html
-          - title: Investigate high latency on a volume
-            url: /task-volume-latency-investigate.html
-          - title: Determine whether a volume is being throttled by QoS
-            url: /task-volume-qos-throttling-identify.html
-          - title: Identify resource contention affecting a volume
-            url: /task-volume-resource-contention-identify.html
-          - title: Forecast volume capacity and plan for growth
-            url: /task-volume-capacity-forecast.html
-          - title: Correlate a configuration change with a volume issue
-            url: /task-volume-config-change-correlate.html
-        - title: Configure notifications and alert policies
-          url: /task-notifications-configure.html
-      - title: Remediate storage issues
-        entries:
-        - title: Remediate storage issues automatically
-          url: /task-remediation-automated.html
-        - title: Remediate storage issues with guided steps
-          url: /task-remediation-guided.html
       - title: Use data services
         entries:
         - title: Learn about using data services
