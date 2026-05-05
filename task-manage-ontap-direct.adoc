@@ -1,0 +1,58 @@
+---
+sidebar: sidebar
+permalink: task-manage-ontap-direct.html
+keywords: direct discovery, direct, system manager, local, local discovery, 
+summary: If you discovered your on-prem ONTAP cluster directly without using a NetApp Console Agent, you can open the system in the NetApp Console to manage the cluster by using ONTAP System Manager.
+---
+
+= Manage clusters that were discovered directly in NetApp Console
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+If you discovered your on-premises ONTAP cluster directly without using a Console agent, you can open the system in the Console to manage the cluster and access ONTAP System Manager.
+
+
+.Required Console role:
+Storage admin or System health specialist. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles.^]
+
+
+
+.Before you begin
+
+The computer that you're using to access the Console must have a network connection to the on-premises ONTAP cluster, similar to how you would provide connections to other resources in your private network.
+
+
+
+.Limitations
+
+A few System Manager features are not supported from the Console.
+
+link:reference-limitations.html[Review the list of limitations].
+
+.Steps
+
+. On the *Systems* page, select the on-premises ONTAP system.
++
+The word "direct" identifies clusters that were discovered directly:
++
+image:screenshot-direct-discovery-we.png[A screenshot of the system icon that appears on the System page]
+
+. In the *Systems details* page, select *Enter system*.
+
+. If prompted, enter your ONTAP credentials.
++
+The system prompts you to log in with your ONTAP credentials each time you open it unless you save the credentials. You have the option to save the credentials so that you don't need to enter them each time. You can manage these credentials on the User Credentials page. In some cases, your Console administrator (with the Organization admin role) might have disabled this option and require you to enter your credentials each time.
++
+image:screenshot-credentials.png[A screenshot that shows the prompt to enter the user name and password for an ONTAP cluster.]
+
+. Use System Manager to manage ONTAP.
++
+If you need help using System Manager with ONTAP, you can refer to https://docs.netapp.com/us-en/ontap/index.html[ONTAP documentation^] for step-by-step instructions. The following links provide additional guidance:
+
+* https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html[Volume and LUN management^]
+* https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html[Network management^]
+* https://docs.netapp.com/us-en/ontap/concept_dp_overview.html[Data protection^]

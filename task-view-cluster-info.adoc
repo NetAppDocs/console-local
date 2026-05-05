@@ -1,0 +1,26 @@
+---
+sidebar: sidebar
+permalink: task-view-cluster-info.html
+keywords: software contract, hardware contract, contracts, expiration date, expired, software contract
+summary: You can view contract details for each of your on-premises ONTAP clusters from the *Subscriptions and licenses* page.
+---
+
+= View cluster information and contract details
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can view capacity information as well as licensing information directly from the NetApp Console.
+
+== View capacity information
+When you select an on-premises ONTAP cluster from the *Systems* page, the *System details* page displays capacity information for the cluster, including total capacity, used capacity, and available capacity.
+
+
+== View license and contract details
+You can view contract details for each of your on-premises ONTAP clusters from the *Subscriptions and licenses* page.
+
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-on-prem-clusters.html[Learn more about managing licenses for on-prem ONTAP clusters from the Console^]

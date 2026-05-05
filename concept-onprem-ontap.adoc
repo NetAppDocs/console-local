@@ -1,0 +1,44 @@
+---
+sidebar: sidebar
+permalink: concept-onprem-ontap.html
+keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onprem, discover aff cluster, discover cluster, add cluster, active iq, digital wallet, subscriptions, licenses, bluexp
+summary: You can manage the ONTAP clusters running on AFF/FAS controllers and ONTAP Select from the NetApp Console. Adding on-premises ONTAP systems to the NetApp Console enables you to manage all of your storage and data assets from a single interface.
+---
+
+= Learn about on-premises ONTAP cluster management in NetApp Console
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can manage the ONTAP clusters running on AFF/FAS controllers and ONTAP Select from the NetApp Console. Adding on-premises ONTAP systems to the Console enables you to centrally manage all of your storage and data assets.
+
+== NetApp Console
+ 
+The NetApp Console provides centralized management of NetApp storage and data services across on-premises and cloud environments at enterprise grade. The Console is required to access and use NetApp data services. As a management interface, it enables you to manage many storage resources from one interface. Console administrators can control access to storage and services for all systems within the enterprise.
+ 
+You don’t need a license or subscription to start using NetApp Console and you only incur charges when you need to deploy Console agents in your cloud to ensure connectivity to your storage systems or NetApp data services. However, some NetApp data services accessible from the Console are licensed or subscription-based.
+ 
+Learn more about the https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html[NetApp Console].
+
+
+
+== Features
+
+* Manage NFS and CIFS volumes
+* Access ONTAP System Manager for any managed cluster through the Console 
+* Get health and performance observability with analysis and control
+* Use data services to replicate, back up, scan, classify, and tier data
+* View hardware and software contract status information in the Console
+
+== Cost
+
+A cost might be associated, but it depends on the following:
+
+* Where you deploy a Console agent to discover and manage your clusters.
++
+You can install a Console agent in the cloud or on your premises. Installing a Console agent in the cloud incurs costs.
+
+* Whether you use NetApp data services such as NetApp Backup and Recovery, NetApp Ransomware Resilience, and so on.
