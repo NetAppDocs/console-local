@@ -46,6 +46,12 @@ sidebar:
           url: /task-high-availability-deploy.html
       - title: Subscribe to data services
         url: /task-data-services-subscribe.html
+      - title: Associate NetApp Support accounts
+        entries:
+        - title: Manage NSS credentials
+          url: /task-adding-nss-accounts.html
+        - title: Manage credentials associated with your NetApp Console login
+          url: /task-manage-user-credentials.html
       - title: Discover storage
         url: /task-discover-storage.html
     - title: Use
@@ -138,12 +144,6 @@ sidebar:
         url: /task-audit-monitor-console.html
       - title: Licenses and subscriptions
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
-      - title: Associate NetApp Support accounts
-        entries:
-        - title: Manage NSS credentials
-          url: /task-adding-nss-accounts.html
-        - title: Manage credentials associated with your NetApp Console login
-          url: /task-manage-user-credentials.html
       - title: Maintain NetApp Console Local
         entries:
         - title: Maintain manually installed Console agents
