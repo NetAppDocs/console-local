@@ -9,20 +9,38 @@ summary: "Integrate NetApp Console Local with Active Directory for centralized u
 :imagesdir: ./media/
 
 [.lead]
-Integrate the NetApp Console Local with Active Directory to enable centralized user management and leverage your existing directory services for authentication and authorization.
+Integrate NetApp Console Local with Active Directory for centralized user management. Use your directory services for authentication and authorization.
 
-== Why integrate with Active Directory
+.Required role
+Super admin or organization admin.
 
-By default, you manage Console Local users individually—creating accounts, setting roles, and removing access manually. As your organization grows, this approach becomes difficult to maintain and creates risk when staff changes happen. Integrating with Active Directory lets the Console Local authenticate users through your existing directory, so access follows your organization's established identity lifecycle. When you add a user to an Active Directory group, they gain the appropriate Console Local access automatically. When you remove them or disable their account, their access is revoked without requiring a separate action in the Console Local.
+When you integrate with Active Directory, Console Local authenticates users through your existing directory and grants or revokes access based on group membership. This aligns access with your identity lifecycle and eliminates separate user management.
 
-Active Directory integration also supports compliance requirements by ensuring that Console Local access is governed by the same controls, audit trails, and policies your organization applies to other enterprise systems.
+Active Directory integration also helps you meet compliance requirements by applying your existing controls, audit trails, and policies to Console Local access.
 
-== Prerequisites
+== Before you begin
 
-Before you integrate with Active Directory, ensure the following are in place:
+Before you integrate with Active Directory, make sure you have:
 
-* Have the Organization admin role in the NetApp Console Local
-* Have an Active Directory domain and access to credentials with permission to query the directory
-* Know the LDAP server address and the base distinguished name (DN) for the directory tree you want to use
-* Confirm that the Console Local can reach your LDAP server over the network—port 389 for LDAP or port 636 for LDAPS
-* Have SSL/TLS certificates available if you plan to use LDAPS for encrypted communication
+* An Active Directory domain and credentials that can query the directory
+* The LDAP server address and the base distinguished name (DN) for the directory tree
+* Network access from Console Local to your LDAP server on port 389 (LDAP) or 636 (LDAPS)
+* SSL/TLS certificates, if you plan to use LDAPS
+
+.Steps
+. Select *Administration > Identity and access*.
+. Select *Directory services* to open the Federations page.
+. Select *Add integration*.
+. Enter the connection details for your Active Directory server:
++
+* A descriptive name for the integration.
+* The *LDAP host*: hostname or IP address of your LDAP server. For multiple servers, enter the primary.
+* The port: 389 for LDAP or 636 for LDAPS.
+* The *Connection timeout* in milliseconds. The default is 1000 ms.
+. Select *Use SSL/TLS* to use LDAPS. Confirm that your LDAP server supports LDAPS and that Console Local can access the required certificates.
+. Test the connection. If it fails, check the LDAP host, port, network connectivity, and SSL/TLS certificates.
+. After the test succeeds, enter the directory and user details:
++
+* *Base DN*: the starting point for LDAP queries. For example, for the domain `example.com`, use `DC=example,DC=com`.
+* *User DN*: a user account with permission to query the directory. For example, `CN=ldap-reader,OU=Service Accounts,DC=example,DC=com`.
+. Select *Add* to save the integration.
