@@ -5,7 +5,10 @@ keywords: view alerts, alerts overview, alerts dashboard, org-wide alerts, fleet
 summary: "View active alerts across your organization or for a specific fleet from the alerts overview page in NetApp Console Local."
 ---
 = View alerts in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

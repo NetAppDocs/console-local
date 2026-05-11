@@ -5,7 +5,10 @@ keywords: filter alerts, search alerts, alert severity, impact area, netapp cons
 summary: "Search and filter alerts by name, description, resource, severity, or impact area to focus on the alerts that matter most."
 ---
 = Filter and search alerts
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

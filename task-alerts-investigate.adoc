@@ -5,7 +5,10 @@ keywords: alert details, investigate alert, alert metric chart, related alerts, 
 summary: "Open the alert details page to investigate an alert, view related alerts, and review the metric data that triggered the alert."
 ---
 = Investigate an alert in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

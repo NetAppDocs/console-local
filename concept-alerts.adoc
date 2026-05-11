@@ -5,7 +5,10 @@ keywords: alerts, alerting, fleet monitoring, severity, impact area, netapp cons
 summary: "Learn how alerts in NetApp Console Local help you monitor the health of your on-premises ONTAP clusters across your organization and fleets."
 ---
 = Learn about alerts in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

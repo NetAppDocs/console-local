@@ -5,7 +5,10 @@ keywords: systems health, cluster health, alerts by cluster, netapp console loca
 summary: "Use the Systems Health tab to see the distribution of active alerts across your ONTAP clusters in NetApp Console Local."
 ---
 = Monitor systems health by cluster
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

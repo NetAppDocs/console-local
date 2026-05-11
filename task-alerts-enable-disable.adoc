@@ -5,7 +5,10 @@ keywords: enable alert, disable alert, alert on off, alert rule, netapp console 
 summary: "Enable or disable individual alert rules to control which conditions raise alerts in NetApp Console Local."
 ---
 = Enable or disable an alert rule
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

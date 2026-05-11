@@ -5,7 +5,10 @@ keywords: alerts catalog, supported alerts, alert reference, ontap alerts, netap
 summary: "Reference list of alerts supported by NetApp Console Local for on-premises ONTAP clusters."
 ---
 = Alerts catalog
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]
