@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: task-alerts-systems-health-monitor.html
+keywords: systems health, cluster health, alerts by cluster, netapp console local
+summary: "Use the Systems Health tab to see the distribution of active alerts across your ONTAP clusters in NetApp Console Local."
+---
+= Monitor systems health by cluster
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Use the *Systems Health* tab on the alerts overview page in the NetApp Console Local to see how active alerts are distributed across your ONTAP clusters and severity levels.
+
+NOTE: Stub page. Content to be developed.
+
+== Steps
+
+. From the left navigation, select *Alerts*.
+. Select the *Systems Health* tab.
+. Review the alert distribution by cluster and severity. The default view is sorted by cluster name.
+. Select a cluster to view the active alerts for that cluster.

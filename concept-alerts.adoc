@@ -1,0 +1,31 @@
+---
+sidebar: sidebar
+permalink: concept-alerts.html
+keywords: alerts, alerting, fleet monitoring, severity, impact area, netapp console local
+summary: "Learn how alerts in NetApp Console Local help you monitor the health of your on-premises ONTAP clusters across your organization and fleets."
+---
+= Learn about alerts in NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Alerts in NetApp Console Local help you identify and respond to issues across the on-premises ONTAP clusters in your organization. The alerting feature is part of the fleet monitoring experience and lets you view alerts on objects that belong to a fleet for which you have permission, or get an org-wide view across all fleets.
+
+NOTE: Stub page. Content to be developed based on the alerting functional specification.
+
+== What you can do with alerts
+
+* View alerts at the organization level or for a specific fleet
+* Investigate the details of an active alert, including impact area and severity
+* Monitor systems health by cluster
+* Search, filter, and export alerts
+* Enable or disable alert rules
+* Receive notifications when alerts are raised
+
+== Alert sources
+
+Alerts are raised by on-premises ONTAP clusters through the Harvest integration with NetApp Console Local.
+
+== Supported ONTAP platforms
+
+Refer to the support matrix in the alerting documentation for the list of supported ONTAP versions and platforms.

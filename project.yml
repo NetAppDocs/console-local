@@ -110,6 +110,24 @@ sidebar:
               url: /task-volume-config-change-correlate.html
           - title: Configure notifications and alert policies
             url: /task-notifications-configure.html
+        - title: Manage alerts
+          entries:
+          - title: Learn about alerts
+            url: /concept-alerts.html
+          - title: View alerts
+            url: /task-alerts-view.html
+          - title: Investigate an alert
+            url: /task-alerts-investigate.html
+          - title: Monitor systems health by cluster
+            url: /task-alerts-systems-health-monitor.html
+          - title: Filter and search alerts
+            url: /task-alerts-filter-search.html
+          - title: Export alerts to CSV
+            url: /task-alerts-export-csv.html
+          - title: Enable or disable an alert rule
+            url: /task-alerts-enable-disable.html
+          - title: Alerts catalog
+            url: /reference-alerts-catalog.html
         - title: Remediate storage issues
           entries:
           - title: Remediate storage issues automatically

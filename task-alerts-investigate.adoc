@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: task-alerts-investigate.html
+keywords: alert details, investigate alert, alert metric chart, related alerts, netapp console local
+summary: "Open the alert details page to investigate an alert, view related alerts, and review the metric data that triggered the alert."
+---
+= Investigate an alert in NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Open the alert details page in the NetApp Console Local to investigate an active alert. The details page shows the alert description, impacted resource, severity, related alerts, and the metric chart that triggered the alert.
+
+NOTE: Stub page. Content to be developed.
+
+== Steps
+
+. From the *Alerts* tab on the alerts overview page, locate the alert you want to investigate.
+. Select the alert name to open the alert details page.
+. Review the following information:
++
+* Alert summary: name, severity, impact area, timestamp
+* Impacted resource and cluster
+* Related alerts on the same resource
+* Metric chart showing the data that triggered the alert
+* Notifications that were sent for this alert
+
+. Take action based on the recommendations on the page.

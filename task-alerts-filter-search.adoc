@@ -1,0 +1,25 @@
+---
+sidebar: sidebar
+permalink: task-alerts-filter-search.html
+keywords: filter alerts, search alerts, alert severity, impact area, netapp console local
+summary: "Search and filter alerts by name, description, resource, severity, or impact area to focus on the alerts that matter most."
+---
+= Filter and search alerts
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Search and filter alerts in the NetApp Console Local to narrow the alerts table to the alerts you care about. You can search by alert name, description, resource, severity, or impact area, and you can apply filters for severity and impact area.
+
+NOTE: Stub page. Content to be developed.
+
+== Steps
+
+. From the left navigation, select *Alerts* and then select the *Alerts* tab.
+. To search, enter text in the search field above the alerts table.
+. To filter, select one or more values for:
++
+* *Severity*
+* *Impact area*
+
+. To clear filters, select *Clear all*.

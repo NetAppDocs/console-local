@@ -1,0 +1,34 @@
+---
+sidebar: sidebar
+permalink: reference-alerts-catalog.html
+keywords: alerts catalog, supported alerts, alert reference, ontap alerts, netapp console local
+summary: "Reference list of alerts supported by NetApp Console Local for on-premises ONTAP clusters."
+---
+= Alerts catalog
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+This page lists the alerts supported by NetApp Console Local for on-premises ONTAP clusters, including the impact area, severity, and the condition that triggers each alert.
+
+NOTE: Stub page. Content to be developed from the NCL Alerts Catalog.
+
+== Supported ONTAP platforms
+
+Alerting is supported on ONTAP 9.12.1 and later for the following platforms:
+
+[cols="2,1", options="header"]
+|===
+| Platform | Alerting supported
+| AFF | Yes
+| FAS | Yes
+| ASA r1 | Yes
+| ASA R2 | Yes
+| AFX (OAM) | Yes
+| Cloud Volumes ONTAP | Yes
+| FSx for ONTAP, Google Cloud NetApp Volumes, Azure NetApp Files | No
+|===
+
+== Alerts list
+
+Detailed alerts catalog to be added.
