@@ -13,7 +13,7 @@ Enable or disable individual alert rules in the NetApp Console Local to control 
 
 NOTE: Stub page. Content to be developed.
 
-== Steps
+.Steps
 
 . From the left navigation, select *Alerts*.
 . Open the alert rules management page.

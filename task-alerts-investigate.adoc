@@ -13,7 +13,7 @@ Open the alert details page in the NetApp Console Local to investigate an active
 
 NOTE: Stub page. Content to be developed.
 
-== Steps
+.Steps
 
 . From the *Alerts* tab on the alerts overview page, locate the alert you want to investigate.
 . Select the alert name to open the alert details page.

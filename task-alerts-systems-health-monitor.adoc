@@ -13,7 +13,7 @@ Use the *Systems Health* tab on the alerts overview page in the NetApp Console L
 
 NOTE: Stub page. Content to be developed.
 
-== Steps
+.Steps
 
 . From the left navigation, select *Alerts*.
 . Select the *Systems Health* tab.

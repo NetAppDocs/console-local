@@ -13,7 +13,7 @@ Export the alerts list in the NetApp Console Local to a CSV file for offline ana
 
 NOTE: Stub page. Content to be developed.
 
-== Steps
+.Steps
 
 . From the left navigation, select *Alerts* and then select the *Alerts* tab.
 . Set the scope (organization or fleet) and apply any filters or search text you want included in the export.

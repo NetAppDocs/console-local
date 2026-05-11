@@ -13,7 +13,7 @@ Search and filter alerts in the NetApp Console Local to narrow the alerts table 
 
 NOTE: Stub page. Content to be developed.
 
-== Steps
+.Steps
 
 . From the left navigation, select *Alerts* and then select the *Alerts* tab.
 . To search, enter text in the search field above the alerts table.

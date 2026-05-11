@@ -17,7 +17,7 @@ NOTE: Stub page. Content to be developed.
 
 You must have permission to view alerts for the organization or fleet.
 
-== Steps
+.Steps
 
 . From the left navigation, select *Alerts*.
 . From the scope selector, choose one of the following:
