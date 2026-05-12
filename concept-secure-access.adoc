@@ -21,11 +21,6 @@ Connect NetApp Console Local to your Active Directory so users can sign in with 
 
 link:task-active-directory-integrate.html[Integrate Active Directory with NetApp Console Local]
 
-=== Single sign-on
-
-Enable single sign-on (SSO) so users can access NetApp Console Local as part of their standard authentication flow, reducing sign-in friction and improving security posture.
-
-link:task-sso-configure.html[Configure SSO for NetApp Console Local]
 
 === Multi-factor authentication
 
