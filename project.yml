@@ -18,6 +18,8 @@ sidebar:
         url: /reference-limitations.html
     - title: Get started
       entries:
+      - title: Learn about NetApp Console
+        url: /concept-overview.html
       - title: Learn about NetApp Console Local
         url: /concept-netapp-console-local.html
       - title: Learn about storage fleets
@@ -58,6 +60,10 @@ sidebar:
       entries:
       - title: Log in to NetApp Console
         url: /task-logging-in.html
+      - title: Use the NetApp Console assistant
+        url: /task-console-assistant.html
+      - title: View systems associated with different Console agents
+        url: /task-manage-multiple-agents.html
       - title: Manage your NetApp Console user settings
         url: /task-user-settings.html
       - title: Storage management overview
@@ -159,7 +165,7 @@ sidebar:
       - title: Monitor system health
         url: /task-system-health-monitor.html
       - title: Monitor NetApp Console Local operations
-        url: /task-audit-monitor-console.html
+        url: /task-monitor-cm-operations.html
       - title: Licenses and subscriptions
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
       - title: Maintain NetApp Console Local
@@ -212,6 +218,8 @@ sidebar:
             url: /concept-iam-rbac.html
           - title: Manage user access
             url: /task-iam-manage-roles.html
+          - title: Manage member security
+            url: /task-iam-user-security.html
           - title: NetApp Console Local access roles
             entries:
             - title: NetApp Console Local access roles
@@ -234,6 +242,14 @@ sidebar:
             url: /task-iam-rename-organization.html
           - title: Identity and access management API reference
             url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
+      - title: Security and compliance
+        entries:
+        - title: Enforce ONTAP permissions in NetApp Console
+          url: /task-ontap-access-agent.html
+        - title: Enable read-only mode for an organization
+          url: /task-enable-read-only-mode.html
+        - title: Compliance
+          url: /reference-compliance.html
       - title: Troubleshoot and get support
         entries:
         - title: Diagnose common issues
@@ -244,10 +260,6 @@ sidebar:
           url: /task-autosupport-manage.html
         - title: View and submit support cases
           url: /task-support-cases-view-submit.html
-        - title: Register for support
-          url: /task-support-registration.html
-        - title: Get help
-          url: /task-get-help.html
     - title: Reference
       entries:
       - title: Default agent configuration
@@ -258,5 +270,17 @@ sidebar:
           url: /reference-agent-maint-console-config-checker.html
         - title: Transparent proxy
           url: /reference-agent-maint-console-proxy.html
+      - title: Ports for the on-premises Console agent
+        url: /reference-ports-on-prem.html
+      - title: Console network access
+        url: /reference-networking-saas-console.html
+      - title: Console network access (legacy)
+        url: /reference-networking-saas-console-previous.html
+    - title: Knowledge and support
+      entries:
+      - title: Register for support
+        url: /task-support-registration.html
+      - title: Get help
+        url: /task-get-help.html
   - title: Legal notices
     url: /legal-notices.html
