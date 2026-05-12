@@ -13,7 +13,7 @@ sidebar:
     - title: Release notes
       entries:
       - title: What's new
-        url: /placeholder-whats-new-saas.html
+        url: /whats-new.html
       - title: Known limitations
         url: /reference-limitations.html
     - title: Get started
@@ -240,8 +240,6 @@ sidebar:
           url: /task-issues-diagnose.html
         - title: Use diagnostic tools
           url: /task-diagnostic-tools-use.html
-        - title: Work with NetApp Support
-          url: /task-netapp-support-work-with.html
         - title: Manage AutoSupport messages
           url: /task-autosupport-manage.html
         - title: View and submit support cases
