@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-iam-manage-roles.html
-keywords:  projects, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members, access roles
+keywords:  fleets, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members, access roles
 summary: Within the NetApp Console, you can assign roles to users based on what they need to do and where. 
 ---
 
@@ -16,11 +16,11 @@ summary: Within the NetApp Console, you can assign roles to users based on what 
 Manage member access in your Console organization. Assign roles to set permissions. Remove members when they leave.
 
 .Required access roles
-Super admin, Org admin, or Folder or project admin (for folders and projects that they are administering). Link:reference-iam-predefined-roles.html[Learn about access roles].
+Super admin, Org admin, or Folder or fleet admin (for folders and fleets that they are administering). Link:reference-iam-predefined-roles.html[Learn about access roles].
 
-You can assign access roles on a project or folder basis. For example, assign a role to a user for two specific projects or assign the role at the folder level to give a user the Ransomware Resilience admin role for all projects in a folder
+You can assign access roles on a fleet or folder basis. For example, assign a role to a user for two specific fleets or assign the role at the folder level to give a user the Ransomware Resilience admin role for all fleets in a folder
 
-NOTE: Add your folders and projects before assigning users access. link:task-iam-manage-folders-projects.html[Learn how to add folders and projects.]
+NOTE: Add your folders and fleets before assigning users access. link:task-iam-manage-folders-fleets.html[Learn how to add folders and fleets.]
 
 == Understand how access is granted in NetApp Console           
 NetApp Console uses a role-based access control (RBAC) model to manage user permissions. You can assign predefined roles to members individually or through federated groups. You can add and assign roles to service accounts, as well as federated groups. Each role defines what actions a member can perform at the associated resources.
@@ -35,7 +35,7 @@ Note the following about granting access in NetApp Console:
 
 [#role-inheritance]
 === Using role inheritance
-When you assign a role at the organization, folder, or project level in NetApp Console, that role is automatically inherited by all resources within the selected scope. For example, folder-level roles apply to all contained projects, while project-level roles apply to all resources within that project.
+When you assign a role at the organization, folder, or fleet level in NetApp Console, that role is automatically inherited by all resources within the selected scope. For example, folder-level roles apply to all contained fleets, while fleet-level roles apply to all resources within that fleet.
 
 
 
@@ -60,13 +60,13 @@ The *Members* table lists the members of your organization.
 
 You can verify which roles they are currently assigned.
 
-If you have the _Folder or project admin_ role, the page displays all members in the organization. However, you can only view and manage member permissions for the folders and projects for which you have permissions. link:reference-iam-predefined-roles.html[Learn more about the actions that a _Folder or project admin_ can complete].
+If you have the _Folder or fleet admin_ role, the page displays all members in the organization. However, you can only view and manage member permissions for the folders and fleets for which you have permissions. link:reference-iam-predefined-roles.html[Learn more about the actions that a _Folder or fleet admin_ can complete].
 
 include::_include/tasks-role.adoc[tag=view-role]
 
-== View members associated with a folder or project
+== View members associated with a folder or fleet
 
-You can view members who have access to a specific folder or project.
+You can view members who have access to a specific folder or fleet.
 
 .Steps
 
@@ -74,11 +74,11 @@ You can view members who have access to a specific folder or project.
 
 . Select *Organization*.
 
-. From the *Organization* page, navigate to a project or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit project*.
+. From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit fleet*.
 
-* Select *Access* to view the members who have access to the folder or project.
+* Select *Access* to view the members who have access to the folder or fleet.
 +
-image:screenshot-iam-member-access.png[A screenshot of the Edit project page that shows the members who have access to the project.]
+image:screenshot-iam-member-access.png[A screenshot of the Edit fleet page that shows the members who have access to the fleet.]
 
 
 == Assign or modify member access
@@ -92,9 +92,9 @@ You can adjust a member's access by adding or removing roles as needed.
 
 You typically assign a role when adding a member to your organization, but you can update it at any time by removing or adding roles.
 
-You can assign a user an access role for your organization, folder, or project. 
+You can assign a user an access role for your organization, folder, or fleet. 
 
-Members can have multiple roles within the same project and in different projects. For example, smaller organizations may assign all available access roles to the same user, while larger organizations may have users do more specialized tasks. Alternatively, you could also assign one user the Ransomware Resilience admin role at the organization level. In that example, the user would be able to perform Ransomware Resilience tasks on all projects within your organization. 
+Members can have multiple roles within the same fleet and in different fleets. For example, smaller organizations may assign all available access roles to the same user, while larger organizations may have users do more specialized tasks. Alternatively, you could also assign one user the Ransomware Resilience admin role at the organization level. In that example, the user would be able to perform Ransomware Resilience tasks on all fleets within your organization. 
 
 Your access role strategy should align with the way you have organized your NetApp resources. 
 

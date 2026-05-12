@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-iam-platform-roles.html
-keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, bluexp
+keywords: predefined roles, iam roles, organization admin, folder or fleet admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, bluexp
 summary: Assign platform roles to users to grant permissions to manage the NetApp Console, assign roles, add users, create Console agents, and manage federations.
 ---
 
@@ -18,9 +18,9 @@ Assign platform roles to users to grant permissions to manage the NetApp Console
 .Example for organization roles for a large multi-national organization
 XYZ Corporation organizes data storage access by region—North America, Europe, and Asia-Pacific—providing regional control with centralized oversight.
 
-The *Organization admin* in XYZ Corporation's Console creates an initial organization and separate folders for each region. The *Folder or project admin* for each region organizes projects (with associated resources) within the region's folder.
+The *Organization admin* in XYZ Corporation's Console creates an initial organization and separate folders for each region. The *Folder or fleet admin* for each region organizes fleets (with associated resources) within the region's folder.
 
-Regional admins with the *Folder or project admin* role actively manage their folders by adding resources and users. These regional admins can also add, remove, or rename folders and projects they manage. The *Organization admin* inherits permissions for any new resources, maintaining visibility of storage usage across the entire organization.
+Regional admins with the *Folder or fleet admin* role actively manage their folders by adding resources and users. These regional admins can also add, remove, or rename folders and fleets they manage. The *Organization admin* inherits permissions for any new resources, maintaining visibility of storage usage across the entire organization.
 
 Within the same organization, one user is assigned the *Federation admin* role to manage the federation of the organization with their corporate IdP. This user can add or remove federated organizations, but cannot manage users or resources within the organization. The *Organization admin* assigns a user the *Federation viewer* role to check federation status and view federated organizations.
 
@@ -36,24 +36,24 @@ The following tables indicate the actions that each Console platform role can pe
 
 | Task
 | Organization admin
-| Folder or project admin
+| Folder or fleet admin
 
 
 | Create agents | Yes | No 
 
 | Create, modify or delete systems from the Console (add or discover systems) |	Yes | Yes 
 
-| Create folders and projects, including deleting | Yes | No
+| Create folders and fleets, including deleting | Yes | No
 
-| Rename existing folders and projects | Yes | Yes 
+| Rename existing folders and fleets | Yes | Yes 
 
 | Assign roles and add users | Yes | Yes
 
-| Associate resources with folders and projects  | Yes | Yes
+| Associate resources with folders and fleets  | Yes | Yes
 
-| Associate agents with folders and projects  | Yes | No
+| Associate agents with folders and fleets  | Yes | No
 
-| Remove agents from folders and projects  | Yes | No
+| Remove agents from folders and fleets  | Yes | No
 
 | Manage agents (edit certificates, settings, and so on)  | Yes | No
 
@@ -130,7 +130,7 @@ ABC Corporation has a small team of five that leverages the NetApp Console for d
 
 a| Super admin
 a| * Organization admin  
-* Folder or project admin 
+* Folder or fleet admin 
 * Federation admin 
 * Partnership admin 
 * Ransomware Resilience admin 

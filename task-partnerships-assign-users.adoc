@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-partnerships-assign-users.html
-keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects, iam, identity and access management, switch connectors
+keywords: switch organizations, switch fleets, fleets, organizations, change, switch, change organizations, change fleets, iam, identity and access management, switch connectors
 summary: You can add users to a partnership by adding them to the partner organization. After you add users, the partner organization is responsible for assigning them roles for particular resources in their organization.
 ---
 
@@ -70,7 +70,7 @@ You cannot change the role associated with a user. If you have questions about t
 
 . From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
 
-. In the table, expand the respective row for organization, folder, or project where you want to view the member's assigned role and select the number in the *Role* column.
+. In the table, expand the respective row for organization, folder, or fleet where you want to view the member's assigned role and select the number in the *Role* column.
 
 
 

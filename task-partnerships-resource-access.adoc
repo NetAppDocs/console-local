@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-partnerships-resource-access.html
 keywords: role-based access, partnership access, partner resources, resource access, grant acces, provide partner access, partnership organization
-summary: You can grant access to partnership users by assigning them specific roles for folders and projects within your organization.
+summary: You can grant access to partnership users by assigning them specific roles for folders and fleets within your organization.
 ---
 
 = Provide resource access to partnership users
@@ -13,7 +13,7 @@ summary: You can grant access to partnership users by assigning them specific ro
 :imagesdir: ./media/
 
 [.lead]
-You can grant access to partnership users by assigning them specific roles for folders and projects within your organization.
+You can grant access to partnership users by assigning them specific roles for folders and fleets within your organization.
 
 .Required roles
 Partnership admin. link:reference-iam-predefined-roles.html[Learn more about access roles.]
@@ -27,7 +27,7 @@ You can manage roles for members of partner organizations in the same way that y
 You can assign following roles to partner users:
 
 * link:reference-iam-platform-roles.html#organization-admin-roles[Organization admin]
-* link:reference-iam-platform-roles.html#organization-admin-roles[Folder or project admin]
+* link:reference-iam-platform-roles.html#organization-admin-roles[Folder or fleet admin]
 * link:reference-iam-platform-roles.html#federation-roles[Federation admin]
 * link:reference-iam-platform-roles.html#federation-roles[Federation viewer]
 * link:reference-iam-backup-rec-roles.html[Backup and recovery admin]
@@ -50,7 +50,7 @@ link:reference-iam-predefined-roles.html[Learn more about predefined roles]
 == Add a role to a partner user
 You provide access to your organization's resources by adding a role to a member. When you assign a role, you specify one resource and one role. You can assign more than one role to a user.
 
-For example, if you had two projects and wanted the same user to have the role of Backup and recovery admin for both, you would need to provide the role to the user for each project. Similarly if you wanted to provide a user with two different roles for the same project, you would need to assign each role separately.
+For example, if you had two fleets and wanted the same user to have the role of Backup and recovery admin for both, you would need to provide the role to the user for each fleet. Similarly if you wanted to provide a user with two different roles for the same fleet, you would need to assign each role separately.
 
 
 .Steps

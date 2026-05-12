@@ -13,7 +13,7 @@ summary: "Monitor or audit NetApp Console identity and access management actions
 :imagesdir: ./media/
 
 [.lead]
-If you need to monitor or audit an action that was completed related to identity and access, you can view details from the Audit page. For example, you might want to verify who added a member to an organization or that a project was deleted successfully.
+If you need to monitor or audit an action that was completed related to identity and access, you can view details from the Audit page. For example, you might want to verify who added a member to an organization or that a fleet was deleted successfully.
 
 .Steps
 

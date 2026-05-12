@@ -66,7 +66,7 @@ image:diagram-partnership-add-user.png[diagram that shows user assignments]
 [role="quick-margin-para"]
 If you are the initiating organization, you can grant access to specific resources to the users that were assigned to the partnership. You can revoke access at any time. 
 
-You do this by assigning roles for particular projects or folders within your organization.
+You do this by assigning roles for particular fleets or folders within your organization.
 
 image:diagram-partnership-resources.png[diagram that shows resource sharing]
 

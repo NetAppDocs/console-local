@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-iam-user-security.html
-keywords: user, service account, member, role, permissions, organization, project, folder, iam, identity and access management
+keywords: user, service account, member, role, permissions, organization, fleet, folder, iam, identity and access management
 summary: Manage your organization's members to provide permissions across different levels of your organization's resource hierarchy.
 ---
 
@@ -16,7 +16,7 @@ summary: Manage your organization's members to provide permissions across differ
 Secure user access to your NetApp Console organization by managing member security settings. You can reset user passwords, manage multi-factor authentication (MFA), and recreate service account credentials.
 
 .Required access roles
-Super admin, Org admin, or Folder or project admin (for folders and projects that they are administering). Link:reference-iam-predefined-roles.html[Learn about access roles].
+Super admin, Org admin, or Folder or fleet admin (for folders and fleets that they are administering). Link:reference-iam-predefined-roles.html[Learn about access roles].
 
 
 == Reset user passwords (local users only)

@@ -9,4 +9,4 @@ summary: "Grant users access to data services in NetApp Console Local."
 :imagesdir: ./media/
 
 [.lead]
-Grant users access to data services in the NetApp Console Local so they can use data protection capabilities within their assigned fleets and projects.
+Grant users access to data services in the NetApp Console Local so they can use data protection capabilities within their assigned fleets and fleets.

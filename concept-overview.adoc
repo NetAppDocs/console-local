@@ -40,9 +40,9 @@ link:concept-agents.html[Learn more about Console agents].
 
 The Console provides identity and access management (IAM) to improve security and control across your data infrastructure. Organize your storage and data services around organizational roles and responsibilities to reduce the risk of unauthorized access while maintaining operational efficiency:
 
-* A top-level _organization_ enables you to grant and revoke access to storage systems and projects across your entire infrastructure
-* _Folders_ enable you to group storage resources and projects together based on business function or compliance requirements
-* _Projects_ enable you to control which teams access specific storage systems, volumes, and data services
+* A top-level _organization_ enables you to grant and revoke access to storage systems and fleets across your entire infrastructure
+* _Folders_ enable you to group storage resources and fleets together based on business function or compliance requirements
+* _fleets_ enable you to control which teams access specific storage systems, volumes, and data services
 * _Role-based access control (RBAC)_ lets you give storage management permissions to team members at different levels, so you can delegate tasks without giving too much access
 
 link:concept-identity-and-access-management.html[Learn more about IAM in NetApp Console]

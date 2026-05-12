@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: task-iam-switch-organizations-projects.html
-keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects, iam, identity and access management, switch connectors
-summary: You might belong to multiple Console organizations or have permissions to access multiple projects or agents within an organization. When needed, you can easily switch between organizations, projects, and Console agents to access the resources associated with that organization, project, or agent.
+permalink: task-iam-switch-organizations-fleets.html
+keywords: switch organizations, switch fleets, fleets, organizations, change, switch, change organizations, change fleets, iam, identity and access management, switch connectors
+summary: You might belong to multiple Console organizations or have permissions to access multiple fleets or agents within an organization. When needed, you can easily switch between organizations, fleets, and Console agents to access the resources associated with that organization, fleet, or agent.
 ---
 
-= Switch between Console organizations, projects, and agents
+= Switch between Console organizations, fleets, and agents
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: You might belong to multiple Console organizations or have permissions 
 :imagesdir: ./media/
 
 [.lead]
-You might belong to multiple Console organizations or have permissions to access multiple projects or agents within an organization. When needed, you can easily switch between organizations, projects, and Console agents to access the resources associated with that organization, project, or agent.
+You might belong to multiple Console organizations or have permissions to access multiple fleets or agents within an organization. When needed, you can easily switch between organizations, fleets, and Console agents to access the resources associated with that organization, fleet, or agent.
 
 TIP: You might belong to multiple organizations if another organization invites you to join or if you create one yourself. You can create an additional organization by using the API. https://docs.netapp.com/us-en/console-automation/tenancyv4/post-organizations.html[Learn how to create a new organization^]
 
@@ -38,20 +38,20 @@ The *Partnership* tab does not display if you don't have any partner organizatio
 If you have any partnership organizations, select the *Partnership* tab to view the available partner organizations. 
 
 
-== Switch between projects
+== Switch between fleets
 
-If your organization includes multiple projects and you have access to those projects, you can switch between them at any time.
+If your organization includes multiple fleets and you have access to those fleets, you can switch between them at any time.
 
 
-NOTE: You can't switch to another project while you are viewing any of the *Identity and access* pages.
+NOTE: You can't switch to another fleet while you are viewing any of the *Identity and access* pages.
 
 .Steps
 
-. In the top header of the Console, select *Project*.
+. In the top header of the Console, select *fleet*.
 
-. Browse through the folders and projects in your organization, select the project that you want, and then select *Switch*.
+. Browse through the folders and fleets in your organization, select the fleet that you want, and then select *Switch*.
 +
-image:screenshot-iam-switch-projects-select.png[A screenshot of the Scope menu where you can select a new project.]
+image:screenshot-iam-switch-fleets-select.png[A screenshot of the Scope menu where you can select a new fleet.]
 
 
 == Switch between Console agents
@@ -67,7 +67,7 @@ If you have multiple Console agents, you can switch between them to see the syst
 
 .Related information
 
-link:task-iam-associate-agents.html[Associate agents with folders and projects].
+link:task-iam-associate-agents.html[Associate agents with folders and fleets].
 
 == Related information
 

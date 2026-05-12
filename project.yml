@@ -192,9 +192,9 @@ sidebar:
           url: /faq-iam-netapp-console.html
         - title: Set up your Console organization
           entries:
-          - title: Create folders and projects
-            url: /task-iam-manage-folders-projects.html
-          - title: Associate resources to folders and projects
+          - title: Create folders and fleets
+            url: /task-iam-manage-folders-fleets.html
+          - title: Associate resources to folders and fleets
             url: /task-iam-manage-resources.html
         - title: Add users to your Console organization
           entries:
@@ -230,7 +230,7 @@ sidebar:
                 url: /reference-iam-backup-rec-roles.html
         - title: Identity and access API
           entries:
-          - title: Organization and project IDs
+          - title: Organization and fleet IDs
             url: /task-iam-rename-organization.html
           - title: Identity and access management API reference
             url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html

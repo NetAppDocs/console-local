@@ -142,7 +142,7 @@ includedPermissions:
 - compute.machineTypes.get
 - compute.networks.get
 - compute.networks.list
-- compute.projects.get
+- compute.fleets.get
 - compute.regions.get
 - compute.regions.list
 - compute.regionBackendServices.delete
@@ -184,7 +184,7 @@ includedPermissions:
 - logging.logEntries.create
 - logging.logEntries.route
 - monitoring.timeSeries.list
-- resourcemanager.projects.get
+- resourcemanager.fleets.get
 - storage.buckets.create
 - storage.buckets.delete
 - storage.buckets.get
@@ -286,7 +286,7 @@ The Console agent uses the permissions in the custom role to manage Cloud Volume
 | compute.instances.updateDisplayDevice | Yes | Yes | No
 | compute.instances.use | Use virtual machine instances (start, stop, connect operations). | No | Yes | No
 | compute.machineTypes.get | To get the numbers of cores to check quotas. | Yes | No | No
-| compute.projects.get | To support multi-projects. | Yes | No | No
+| compute.fleets.get | To support multi-fleets. | Yes | No | No
 | compute.resourcePolicies.create .3+| Create and manage resource policies for automated resource management. | No | Yes | No
 | compute.resourcePolicies.delete  | No | Yes | No
 | compute.resourcePolicies.get  | No | Yes | No
@@ -324,7 +324,7 @@ The Console agent uses the permissions in the custom role to manage Cloud Volume
 | logging.privateLogEntries.list  | Yes | Yes | No
 | logging.logEntries.create .2+| Create and route log entires for monitoring, debugging, and auditing. | Yes | Yes | No
 | logging.logEntries.route |  Yes | Yes | No
-| resourcemanager.projects.get | To support multi-projects. | Yes | Yes | No
+| resourcemanager.fleets.get | To support multi-fleets. | Yes | Yes | No
 | storage.buckets.create .5+| To create and manage a Google Cloud Storage bucket for data tiering. | Yes | Yes | No
 | storage.buckets.delete  | No | Yes | Yes
 | storage.buckets.get  | No | Yes | No

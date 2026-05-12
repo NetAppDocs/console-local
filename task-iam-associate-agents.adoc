@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: task-iam-associate-agents.html
-keywords: agent, associate agent, folder, project, associate folder with connector, associate project with connector, associate connector with project, associate connector with resource, connector, associate connector,
-summary: If members of your organization need to use a Console agent in another project, you need to associate that Console agent with the respective project.
+keywords: agent, associate agent, folder, fleet, associate folder with connector, associate fleet with connector, associate connector with fleet, associate connector with resource, connector, associate connector,
+summary: If members of your organization need to use a Console agent in another fleet, you need to associate that Console agent with the respective fleet.
 ---
 
-= Associate a Console agent with other folders and projects
+= Associate a Console agent with other folders and fleets
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,12 +13,12 @@ summary: If members of your organization need to use a Console agent in another 
 :imagesdir: ./media/
 
 [.lead]
-Associate Console agents with specific projects to enable resource management and data service access. Resources discovered through a Console agent require both the resource and agent to be associated with the same respective projects for team access.
+Associate Console agents with specific fleets to enable resource management and data service access. Resources discovered through a Console agent require both the resource and agent to be associated with the same respective fleets for team access.
 
-Super admins and Org admins can create agents and associate any agent with any project or folder. Folder or project admins can only associate existing agents with folders and projects that they have permissions for.
-link:reference-iam-predefined-roles.html[Learn more about the actions that a _Folder or project admin_ can complete].
+Super admins and Org admins can create agents and associate any agent with any fleet or folder. Folder or fleet admins can only associate existing agents with folders and fleets that they have permissions for.
+link:reference-iam-predefined-roles.html[Learn more about the actions that a _Folder or fleet admin_ can complete].
 
-NOTE: Users with the Org admin role can add resources to folder to delegate the task of associating the resource with projects to Folder or project admins of the respective folder. link:task-iam-manage-folders-projects.html#associate-resource-folder[Learn about associating a resource with a folder].
+NOTE: Users with the Org admin role can add resources to folder to delegate the task of associating the resource with fleets to Folder or fleet admins of the respective folder. link:task-iam-manage-folders-fleets.html#associate-resource-folder[Learn about associating a resource with a folder].
 
 
 .Steps
@@ -30,24 +30,24 @@ NOTE: Users with the Org admin role can add resources to folder to delegate the 
 +
 Use the search above the table to find a specific Console agent or filter the table by resource hierarchy.
 
-. To view the folders and projects linked to the Console agent, select image:icon-action.png["Three dot icon"] and then select *View details*.
+. To view the folders and fleets linked to the Console agent, select image:icon-action.png["Three dot icon"] and then select *View details*.
 +
-The page displays details about the folders and projects that are associated with the Console agent.
+The page displays details about the folders and fleets that are associated with the Console agent.
 
-. Select *Associate to folder or project*.
+. Select *Associate to folder or fleet*.
 
-. Select a folder or project and then select *Accept*.
+. Select a folder or fleet and then select *Accept*.
 
-. To associate the Console agent with an additional folder or project, select *Add a folder or project* and then select the folder or project.
+. To associate the Console agent with an additional folder or fleet, select *Add a folder or fleet* and then select the folder or fleet.
 
 . Select *Associate Agent*.
 
 
 .After you finish
 
-Associate the Console agent's resources with the same folders and projects from the *Resources* page.
+Associate the Console agent's resources with the same folders and fleets from the *Resources* page.
 
-link:task-iam-manage-resources.html#associate-resource[Learn how to associate a resource with folders and projects].
+link:task-iam-manage-resources.html#associate-resource[Learn how to associate a resource with folders and fleets].
 
 .Related information
 
