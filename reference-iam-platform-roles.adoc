@@ -13,7 +13,7 @@ summary: Assign platform roles to users to grant permissions to manage the NetAp
 :imagesdir: ./media/
 
 [.lead]
-Assign platform roles to users to grant permissions to manage the NetApp Console, assign roles, add users, create Console agents, and manage federations.
+Assign platform roles to users to grant permissions to manage the NetApp Console, assign roles, add users, create fleets, and manage user authentication.
 
 .Example for organization roles for a large multi-national organization
 XYZ Corporation organizes data storage access by region—North America, Europe, and Asia-Pacific—providing regional control with centralized oversight.
@@ -51,13 +51,6 @@ The following tables indicate the actions that each Console platform role can pe
 
 | Associate resources with folders and fleets  | Yes | Yes
 
-| Associate agents with folders and fleets  | Yes | No
-
-| Remove agents from folders and fleets  | Yes | No
-
-| Manage agents (edit certificates, settings, and so on)  | Yes | No
-
-| Manage credentials from Administration > Credentials  | Yes | Yes
 | Create, manage, and view federations | Yes | No
 | Register for support and submit cases through the Console | Yes |	Yes 
 | Use data services that are not associated with an explicit access role | Yes | Yes 
@@ -89,26 +82,6 @@ The following tables indicate the actions that each Console platform role can pe
 
 |===
 
-[[partnership-roles]]
-== Partnership roles
-
-[cols="2,1,1",options="header"]
-|===
-
-| Task
-| Partnership admin
-| Partnership viewer
-
-
-| Can create a partnership | Yes | No
-| Assign roles to partner members | Yes | No 
-
-| Can add members to a partnership |	Yes | No
-
-| Can view organization partnership details | Yes | Yes
-
-
-|===
 
 
 [[super-admin-roles]]
@@ -131,25 +104,16 @@ ABC Corporation has a small team of five that leverages the NetApp Console for d
 a| Super admin
 a| * Organization admin  
 * Folder or fleet admin 
-* Federation admin 
-* Partnership admin 
-* Ransomware Resilience admin 
-* Disaster recovery admin 
+
 * Backup super admin 
 * Storage admin 
-* Keystone admin 
-* Google Cloud NetApp Volumes admin
+
 
 a| Super viewer
 a|
 * Organization viewer
-* Federation viewer
-* Partnership viewer
-* Ransomware Resilience viewer
-* Disaster recovery viewer
 * Backup viewer
 * Storage viewer
-* Keystone viewer
-* Google Cloud NetApp Volumes viewer
+
 
 |===

@@ -202,64 +202,52 @@ sidebar:
             url: /task-iam-manage-folders-fleets.html
           - title: Associate resources to folders and fleets
             url: /task-iam-manage-resources.html
-        - title: Add users to your Console organization
-          entries:
-          - title: Add users, service accounts, and federated groups
-            url: /task-iam-manage-members-permissions.html
-          - title: Authenticate users
+          - title: Set up user authentication
             entries:
             - title: Integrate with Active Directory
               url: /task-active-directory-integrate.html
             - title: Enable multi-factor authentication
               url: /task-mfa-enable.html
-        - title: Manage user access to fleets and data services
-          entries:
-          - title: Understand role-based access control (RBAC)
-            url: /concept-iam-rbac.html
-          - title: Manage user access
-            url: /task-iam-manage-roles.html
-          - title: Manage member security
-            url: /task-iam-user-security.html
-          - title: NetApp Console Local access roles
+          - title: Add users to your Console organization
+            url: /task-iam-add-users.html
+          - title: Add users or service accounts
+            url: /task-iam-manage-members-permissions.html
+          - title: Grant user access to fleets and data services
             entries:
+            - title: Understand role-based access control (RBAC)
+              url: /concept-iam-rbac.html
+            - title: Manage user access
+              url: /task-iam-manage-roles.html
+            - title: Manage member security
+              url: /task-iam-user-security.html
             - title: NetApp Console Local access roles
-              url: /reference-iam-predefined-roles.html
-            - title: Platform roles
-              url: /reference-iam-platform-roles.html
-            - title: Application roles
               entries:
-              - title: Operations support analyst
-                url: /reference-iam-analyst-roles.html
-            - title: Storage roles
-              url: /reference-iam-storage-roles.html
-            - title: Data services roles
-              entries:
-              - title: Backup and Recovery roles
-                url: /reference-iam-backup-rec-roles.html
+              - title: NetApp Console Local access roles
+                url: /reference-iam-predefined-roles.html
+              - title: Platform roles
+                url: /reference-iam-platform-roles.html
+              - title: Application roles
+                entries:
+                - title: Operations support analyst
+                  url: /reference-iam-analyst-roles.html
+              - title: Storage roles
+                url: /reference-iam-storage-roles.html
+              - title: Data services roles
+                entries:
+                - title: Backup and Recovery roles
+                  url: /reference-iam-backup-rec-roles.html
         - title: Identity and access API
           entries:
           - title: Organization and fleet IDs
             url: /task-iam-rename-organization.html
           - title: Identity and access management API reference
             url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
-      - title: Security and compliance
-        entries:
-        - title: Enforce ONTAP permissions in NetApp Console
-          url: /task-ontap-access-agent.html
-        - title: Enable read-only mode for an organization
-          url: /task-enable-read-only-mode.html
-        - title: Compliance
-          url: /reference-compliance.html
-      - title: Troubleshoot and get support
-        entries:
-        - title: Diagnose common issues
-          url: /task-issues-diagnose.html
-        - title: Use diagnostic tools
-          url: /task-diagnostic-tools-use.html
-        - title: Manage AutoSupport messages
-          url: /task-autosupport-manage.html
-        - title: View and submit support cases
-          url: /task-support-cases-view-submit.html
+    - title: Security and compliance
+      entries:
+      - title: Enforce ONTAP permissions in NetApp Console
+        url: /task-ontap-access-agent.html
+      - title: Enable read-only mode for an organization
+        url: /task-enable-read-only-mode.html
     - title: Reference
       entries:
       - title: Default agent configuration
@@ -274,8 +262,6 @@ sidebar:
         url: /reference-ports-on-prem.html
       - title: Console network access
         url: /reference-networking-saas-console.html
-      - title: Console network access (legacy)
-        url: /reference-networking-saas-console-previous.html
     - title: Knowledge and support
       entries:
       - title: Register for support
