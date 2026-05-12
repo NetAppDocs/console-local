@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-volume-resource-contention-identify.html
+permalink: task-analyzer-volume-resource-contention-identify.html
 keywords: resource contention, node utilization, aggregate utilization, shared resources, workload analyzer, netapp console
 summary: "Identify whether a volume's performance is degraded by contention on a shared node or aggregate using the Workload Analyzer."
 ---

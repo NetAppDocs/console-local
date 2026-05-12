@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-volume-config-change-correlate.html
+permalink: task-analyzer-volume-config-change-correlate.html
 keywords: configuration change, event timeline, correlate, performance, workload analyzer, netapp console
 summary: "Use the Workload Analyzer event timeline to determine whether a configuration change caused a performance or capacity issue on a volume."
 ---
@@ -37,9 +37,9 @@ Look for inflection points in the metric charts that align with the configuratio
 
 . If a change correlates with a degradation in performance:
 +
-* For QoS changes: review the latency and throughput charts with QoS limit lines enabled to confirm throttling. See link:task-volume-qos-throttling-identify.html[Determine whether a volume is being throttled by a QoS policy].
+* For QoS changes: review the latency and throughput charts with QoS limit lines enabled to confirm throttling. See link:task-analyzer-volume-qos-throttling-identify.html[Determine whether a volume is being throttled by a QoS policy].
 * For aggregate or volume moves: review the resource utilization charts to check whether the destination node or aggregate is under higher load.
-* For tiering policy changes: check for increased cloud latency in the latency delay center breakdown. See link:task-volume-latency-investigate.html[Investigate high latency on a volume].
+* For tiering policy changes: check for increased cloud latency in the latency delay center breakdown. See link:task-analyzer-volume-latency-investigate.html[Investigate high latency on a volume].
 
 .After you finish
 

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-volume-latency-investigate.html
+permalink: task-analyzer-volume-latency-investigate.html
 keywords: latency, slow performance, delay center, workload analyzer, investigate, netapp console
 summary: "Investigate latency on a volume using the Workload Analyzer to identify which part of the I/O path is causing slow response times."
 ---

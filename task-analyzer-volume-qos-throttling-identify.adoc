@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-volume-qos-throttling-identify.html
+permalink: task-analyzer-volume-qos-throttling-identify.html
 keywords: QoS, throttling, IOPS limit, latency, workload analyzer, netapp console
 summary: "Determine whether a QoS policy is throttling a volume's performance using the Workload Analyzer."
 ---
