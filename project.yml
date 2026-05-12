@@ -162,10 +162,14 @@ sidebar:
         url: /task-llm-connect.html
       - title: Integrate with your SIEM tools
         url: /task-siem-integrate.html
-      - title: Monitor system health
+      - title: Monitor NetApp Console health
         url: /task-system-health-monitor.html
-      - title: Monitor NetApp Console Local operations
-        url: /task-monitor-cm-operations.html
+      - title: Audit NetApp Console Local actions
+        entries:
+        - title: Audit NetApp Console Local operations
+          url: /task-monitor-cm-operations.html
+        - title: Integrate with your SIEM tools
+          url: /task-siem-integrate.html
       - title: Licenses and subscriptions
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
       - title: Maintain NetApp Console Local
