@@ -1,0 +1,60 @@
+---
+sidebar: sidebar
+permalink: task-audit-console-activity.html
+keywords: administer, monitor, timeline, notifications, alerts, events, notification center, email, audit page, audit action
+summary: You can monitor the status of the operations that the Console is performing to see if there are any issues that you need to address. You can view the status from the Audit page, the Notification Center, or have notifications sent to your email.
+---
+
+= Audit NetApp Console Local activity
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can audit user activity (initiate from both the UI and API) from the Audit page, and you can monitor the status of the operations that the Console is performing to see if there are any issues that you need to address. You can view the status from the Audit page or configure the audit logs to be sent to your own syslog server.
+
+
+The table highlights the features of the Audit page and Notification Center by comparing them.
+
+[cols=2*,options="header",cols="47,47",width="95%"]
+|===
+
+| Notification Center
+| Audit page
+
+| Shows high level status for events and actions | Provides details for each event or action for further investigation
+| Shows status for the current login session (the information does not appear in the Notification Center after you log off) | Retains status for the last month
+| Shows only actions initiated in the user interface | Shows all actions from the UI or APIs
+| Shows user-initiated actions | Shows all actions, whether user-initiated or system-initiated
+| Filter results by importance | Filter by service, action, user, status, and more
+| Provides the ability to email notifications to users and to others | No email capability
+
+|===
+
+== Audit user activity from the Audit page
+
+Use the Audit page to identify who performed an action or its status.
+
+The Audit page shows the actions that users completed to manage your organization or account. This includes management actions such as associating users, creating systems, creating agents, and more.
+
+You can also verify who added a member to an organization or that a fleet was deleted successfully.
+
+
+
+.Steps
+
+. Select *Administration > Audit*.
+
+. Use the filters above the table to change which actions display in the table.
++
+For example, you can use the *Service* filter to show actions related to a specific service, or you can use the *User* filter to show actions related to a specific user account.
+
+=== Download audit logs from the Audit page
+You can download the audit logs from the Audit page to a CSV file. This enables you to keep a record of the actions that users perform in your organization. The CSV file includes all columns in the downloaded CSV file, regardless of filters or displayed columns on the Audit page.
+
+.Steps
+. In the *Audit* page, select the download icon in the upper right corner of the table.
+
+

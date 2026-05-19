@@ -13,11 +13,13 @@ sidebar:
     - title: Release notes
       entries:
       - title: What's new
-        url: /placeholder-whats-new-saas.html
+        url: /whats-new.html
       - title: Known limitations
         url: /reference-limitations.html
     - title: Get started
       entries:
+      - title: Learn about NetApp Console
+        url: /concept-overview.html
       - title: Learn about NetApp Console Local
         url: /concept-netapp-console-local.html
       - title: Learn about storage fleets
@@ -58,6 +60,10 @@ sidebar:
       entries:
       - title: Log in to NetApp Console
         url: /task-logging-in.html
+      - title: Use the NetApp Console assistant
+        url: /task-console-assistant.html
+      - title: View systems associated with different Console agents
+        url: /task-manage-multiple-agents.html
       - title: Manage your NetApp Console user settings
         url: /task-user-settings.html
       - title: Storage management overview
@@ -99,17 +105,35 @@ sidebar:
             - title: Learn about the Workload Analyzer
               url: /concept-workload-analyzer.html
             - title: Investigate high latency on a volume
-              url: /task-volume-latency-investigate.html
+              url: /task-analyzer-volume-latency-investigate.html
             - title: Determine whether a volume is being throttled by QoS
-              url: /task-volume-qos-throttling-identify.html
+              url: /task-analyzer-volume-qos-throttling-identify.html
             - title: Identify resource contention affecting a volume
-              url: /task-volume-resource-contention-identify.html
+              url: /task-analyzer-volume-resource-contention-identify.html
             - title: Forecast volume capacity and plan for growth
-              url: /task-volume-capacity-forecast.html
+              url: /task-analyzer-volume-capacity-forecast.html
             - title: Correlate a configuration change with a volume issue
-              url: /task-volume-config-change-correlate.html
+              url: /task-analyzer-volume-config-change-correlate.html
           - title: Configure notifications and alert policies
             url: /task-notifications-configure.html
+        - title: Manage alerts
+          entries:
+          - title: Learn about alerts
+            url: /concept-alerts.html
+          - title: View alerts
+            url: /task-alerts-view.html
+          - title: Investigate an alert
+            url: /task-alerts-investigate.html
+          - title: Monitor systems health by cluster
+            url: /task-alerts-systems-health-monitor.html
+          - title: Filter and search alerts
+            url: /task-alerts-filter-search.html
+          - title: Export alerts to CSV
+            url: /task-alerts-export-csv.html
+          - title: Enable or disable an alert rule
+            url: /task-alerts-enable-disable.html
+          - title: Alerts catalog
+            url: /reference-alerts-catalog.html
         - title: Remediate storage issues
           entries:
           - title: Remediate storage issues automatically
@@ -138,10 +162,14 @@ sidebar:
         url: /task-llm-connect.html
       - title: Integrate with your SIEM tools
         url: /task-siem-integrate.html
-      - title: Monitor system health
+      - title: Monitor NetApp Console health
         url: /task-system-health-monitor.html
-      - title: Monitor NetApp Console Local operations
-        url: /task-audit-monitor-console.html
+      - title: Audit NetApp Console Local actions
+        entries:
+        - title: Audit NetApp Console Local operations
+          url: /task-monitor-cm-operations.html
+        - title: Integrate with your SIEM tools
+          url: /task-siem-integrate.html
       - title: Licenses and subscriptions
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
       - title: Maintain NetApp Console Local
@@ -174,64 +202,56 @@ sidebar:
           url: /faq-iam-netapp-console.html
         - title: Set up your Console organization
           entries:
-          - title: Create folders and projects
-            url: /task-iam-manage-folders-projects.html
-          - title: Associate resources to folders and projects
+          - title: Create folders and fleets
+            url: /task-iam-manage-folders-fleets.html
+          - title: Associate resources to folders and fleets
             url: /task-iam-manage-resources.html
-        - title: Add users to your Console organization
-          entries:
-          - title: Add users, service accounts, and federated groups
-            url: /task-iam-manage-members-permissions.html
-          - title: Authenticate users
+          - title: Set up user authentication
             entries:
             - title: Integrate with Active Directory
               url: /task-active-directory-integrate.html
             - title: Enable multi-factor authentication
               url: /task-mfa-enable.html
-        - title: Manage user access to fleets and data services
-          entries:
-          - title: Understand role-based access control (RBAC)
-            url: /concept-iam-rbac.html
-          - title: Manage user access
-            url: /task-iam-manage-roles.html
-          - title: NetApp Console Local access roles
+          - title: Add users to your Console organization
+            url: /task-iam-add-users.html
+          - title: Add users or service accounts
+            url: /task-iam-manage-members-permissions.html
+          - title: Grant user access to fleets and data services
             entries:
+            - title: Understand role-based access control (RBAC)
+              url: /concept-iam-rbac.html
+            - title: Manage user access
+              url: /task-iam-manage-roles.html
+            - title: Manage member security
+              url: /task-iam-user-security.html
             - title: NetApp Console Local access roles
-              url: /reference-iam-predefined-roles.html
-            - title: Platform roles
-              url: /reference-iam-platform-roles.html
-            - title: Application roles
               entries:
-              - title: Operations support analyst
-                url: /reference-iam-analyst-roles.html
-            - title: Storage roles
-              url: /reference-iam-storage-roles.html
-            - title: Data services roles
-              entries:
-              - title: Backup and Recovery roles
-                url: /reference-iam-backup-rec-roles.html
+              - title: NetApp Console Local access roles
+                url: /reference-iam-predefined-roles.html
+              - title: Platform roles
+                url: /reference-iam-platform-roles.html
+              - title: Application roles
+                entries:
+                - title: Operations support analyst
+                  url: /reference-iam-analyst-roles.html
+              - title: Storage roles
+                url: /reference-iam-storage-roles.html
+              - title: Data services roles
+                entries:
+                - title: Backup and Recovery roles
+                  url: /reference-iam-backup-rec-roles.html
         - title: Identity and access API
           entries:
-          - title: Organization and project IDs
+          - title: Organization and fleet IDs
             url: /task-iam-rename-organization.html
           - title: Identity and access management API reference
             url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
-      - title: Troubleshoot and get support
-        entries:
-        - title: Diagnose common issues
-          url: /task-issues-diagnose.html
-        - title: Use diagnostic tools
-          url: /task-diagnostic-tools-use.html
-        - title: Work with NetApp Support
-          url: /task-netapp-support-work-with.html
-        - title: Manage AutoSupport messages
-          url: /task-autosupport-manage.html
-        - title: View and submit support cases
-          url: /task-support-cases-view-submit.html
-        - title: Register for support
-          url: /task-support-registration.html
-        - title: Get help
-          url: /task-get-help.html
+    - title: Security and compliance
+      entries:
+      - title: Enforce ONTAP permissions in NetApp Console
+        url: /task-ontap-access-agent.html
+      - title: Enable read-only mode for an organization
+        url: /task-enable-read-only-mode.html
     - title: Reference
       entries:
       - title: Default agent configuration
@@ -242,5 +262,15 @@ sidebar:
           url: /reference-agent-maint-console-config-checker.html
         - title: Transparent proxy
           url: /reference-agent-maint-console-proxy.html
+      - title: Ports for the on-premises Console agent
+        url: /reference-ports-on-prem.html
+      - title: Console network access
+        url: /reference-networking-saas-console.html
+    - title: Knowledge and support
+      entries:
+      - title: Register for support
+        url: /task-support-registration.html
+      - title: Get help
+        url: /task-get-help.html
   - title: Legal notices
     url: /legal-notices.html

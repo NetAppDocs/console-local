@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-iam-storage-roles.html
-keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin
+keywords: predefined roles, iam roles, organization admin, folder or fleet admin, identity and access management, access roles, admin
 summary: You can assign the following roles to users to provide them access to the storage management features in the NetApp Console. You can assign users an administrative role to manage storage or a viewer role for monitoring.
 ---
 
@@ -38,9 +38,9 @@ Console services and features:
 
 XYZ Corporation, a multinational company, has a large team of storage engineers and storage administrators. They allow this team to manage storage assets for their regions while limiting access to core Console tasks like user management, agent creation, and license management.
  
-Within a team of 12, two users are given the *Storage viewer* role which allows them to monitor the storage resources associated with the Console projects they are assigned to. The remaining nine are given the *Storage admin* role which includes the ability to manage software updates, access ONTAP System Manager through the Console, as well as discover storage resources (add systems). One person on the team is given the *System health specialist* role so they can manage the health of the storage resources in their region, but not modify or delete any systems. This person can also perform software updates on the storage resources for projects they are assigned.
+Within a team of 12, two users are given the *Storage viewer* role which allows them to monitor the storage resources associated with the Console fleets they are assigned to. The remaining nine are given the *Storage admin* role which includes the ability to manage software updates, access ONTAP System Manager through the Console, as well as discover storage resources (add systems). One person on the team is given the *System health specialist* role so they can manage the health of the storage resources in their region, but not modify or delete any systems. This person can also perform software updates on the storage resources for fleets they are assigned.
  
-The organization has two additional users with the *Organization admin* role who can manage all aspects of the Console, including user management, agent creation, and license management, as well as several users with the *Folder or project admin* role who can perform Console administration tasks for the folders and projects they are assigned to.
+The organization has two additional users with the *Organization admin* role who can manage all aspects of the Console, including user management, agent creation, and license management, as well as several users with the *Folder or fleet admin* role who can perform Console administration tasks for the folders and fleets they are assigned to.
 
 
 The following table shows the actions each storage role performs.

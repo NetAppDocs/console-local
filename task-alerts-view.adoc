@@ -1,0 +1,38 @@
+---
+sidebar: sidebar
+permalink: task-alerts-view.html
+keywords: view alerts, alerts overview, alerts dashboard, org-wide alerts, fleet alerts, netapp console local
+summary: "View active alerts across your organization or for a specific fleet from the alerts overview page in NetApp Console Local."
+---
+= View alerts in NetApp Console Local
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+View active alerts in the NetApp Console Local from the alerts overview page. By default, the page shows an organization-wide view; you can switch to a fleet-wide view to focus on alerts for a specific fleet.
+
+NOTE: Stub page. Content to be developed.
+
+== Before you begin
+
+You must have permission to view alerts for the organization or fleet.
+
+.Steps
+
+. From the left navigation, select *Alerts*.
+. From the scope selector, choose one of the following:
++
+* *Organization* (default) to see alerts across all fleets you have access to
+* A specific fleet to see alerts only for that fleet
+
+. Review the alert summary, including:
++
+* Alert distribution by severity
+* Alert distribution by impact area
+* Critical alerts grouped by impact area
+* Alert count distribution over the past 24 hours
+
+. Select the *Alerts* tab to see the full list of active alerts.

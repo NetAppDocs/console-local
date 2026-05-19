@@ -1,0 +1,206 @@
+---
+sidebar: sidebar
+permalink: task-iam-manage-folders-fleets.html
+keywords: folders, fleets, resource hierarchy, create folders, create fleets, iam, identity and access management, fleet id
+summary: Add folders and fleets to match your business structure. After you create folders and fleets, you can associate resources with them and manage member access to those fleets.
+---
+
+= Add folders and fleets to your NetApp Console organization
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Add folders and fleets to match your business structure. After you create folders and fleets, you can associate resources with them and manage member access to those fleets.
+
+The Console automatically creates one fleet for you when you create a new organization. Most organizations have the need for more than one fleet, as well as folders to keep things organized. link:concept-identity-and-access-management.html[Learn about the resource hierarchy in NetApp Console].
+
+
+
+== Using folders and fleets to organize resources
+In NetApp Console, an organization contains folders and fleets that help you organize your resources. Folders help you group related fleets, and fleets help you manage resources and member access.
+
+=== Folders
+Folders help you organize related fleets. You can create nested folders to represent different levels of your organization's structure. For example, you might create a top-level folder for each business unit and then create subfolders for different teams within that business unit. You then create fleets within folders.
+
+Folders also enable you to manage member access more efficiently using role inheritance. When you assign roles to members at the folder level, they inherit permissions for all child fleets and folders.
+
+NOTE: Folders are an organizational tool and not visible to members who do not have IAM permissions such as the Org admin, Folder or fleet admin, or Super admin roles. Members access fleets, not folders.
+
+Org admins can delegate administrative responsibilities by creating folders. After creating a folder, an Org admin can assign a member the Folder or fleet admin roles for particular folders. These members can then manage all fleets within that folder without having access to the entire organization.
+
+
+Folders can have other folders or fleets as children, but they cannot have resources directly associated with them. Resources must be associated with a fleet.
+
+
+[#associate-resource-folder]
+[NOTE]
+====
+.When to associate a resource with a folder
+
+An _Organization administrator_ can associate a resource with a folder so a _Folder or fleet administrator_ can link it to the appropriate fleets in the folder.
+
+For example, let's say you have a folder that contains two fleets:
+
+image:diagram-iam-resource-association-folder-1.png["A diagram that shows a folder and two fleets that reside in the folder: fleet A and fleet B."]
+
+The _Organization admin_ can associate a resource with the folder:
+
+image:diagram-iam-resource-association-folder-2.png["A diagram that shows a folder with a resource that is associated with the folder. Two fleets that reside in the folder: fleet A and fleet B."]
+
+Associating a resource with a folder does not make it accessible to all fleets; only the _folder or fleet admin_ can see it. The _Folder or fleet admin_ decides which fleets can access it and associates the resource with the appropriate fleets.
+
+In this example, the admin associates the resource with fleet A:
+
+image:diagram-iam-resource-association-folder-3.png["A diagram that shows a folder with two fleets that reside in the folder: fleet A and fleet B. A resource that is associated with fleet A."]
+
+Members who have permissions for fleet A can now access the resource.
+====
+
+
+=== fleets
+Associate resources with fleets to allow members to manage them. Resources must be associated with a fleet for management and user access.
+
+An organization can have one or many fleets. A fleet can be directly under the organization or inside a folder. If an agent is used to discover resources within a fleet, you must also associate the agent with that fleet. 
+
+Users navigate between assigned fleets on the *Systems* page to manage the resources associated with each fleet. 
+
+
+== Add a folder or fleet
+Add fleets to manage resources and folders to group related fleets.
+When you create a new organization, the Console includes one fleet.
+
+You can create up to seven levels of folders and fleets in your organization's resource structure. Create nested folders to organize your resources as needed.
+
+
+
+.Steps
+
+. Select *Administration > Identity and access*.
+
+. Select *Organization*.
+
+. From the *Organization* page, select *Add folder or fleet*.
+
+. Select *Folder* or *fleet*.
+
+. Enter folder or fleet details:
++
+* *Name and location*: Enter a name and choose a location for the folder or fleet. You can place folders or fleets under the organization or inside another folder.
+
+* *Resources*: Select the resources that you want to associate with this folder or fleet. If you haven't added storage systems to the Console yet, you can do this step later.
+
++
+NOTE: Members can't access resources in a folder until those resources are assigned to a fleet. Use folders to hold resources temporarily until you create the necessary fleets. This can help the Organization admin delegate resource allocation to a Folder or fleet admin, who then assigns resources to fleets within the folder.
+
+* *Access*: Select *Add a member* to assign access and a role. You can add or remove members from the fleet or folder at any time.
++
+link:reference-iam-predefined-roles.html[Learn about access roles].
+
+. Select *Add*.
+
+
+
+== Rename a folder or fleet
+
+Rename a folder or fleet as needed. Renaming does not affect associated resources or member access.
+
+.Steps
+
+. From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon with three dots"] and then select *Edit folder* or *Edit fleet*.
+
+. On the *Edit* page, enter a new name and select *Apply*.
+
+
+== Delete a folder or fleet
+
+Delete folders and fleets you no longer need, such as after team restructuring or fleet completion.
+
+Before you delete a folder or fleet, make sure it does not contain any resources. <<modify-resources,Learn how to remove resources>>.
+
+
+.Steps
+
+. From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon with three dots"] and then select *Delete*.
+
+. Confirm that you want to delete the folder or fleet.
+
+[#view-associated-resources-members]
+== View the resources associated with a folder or fleet
+View which resources and members are associated with a folder or fleet.
+
+.Steps
+
+. From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit fleet*.
++
+image:screenshot-iam-edit-fleet.png[A screenshot of the Organization page that shows the Edit fleet option when selecting the action menu for a fleet in the table.]
+
+. On the *Edit* page, you can view details about the selected folder or fleet by expanding the *Resources* or *Access* sections.
++
+* Select *Resources* to view the associated resources. In the table, the *Status* column identifies the resources that are associated with the folder or fleet. 
++
+image:screenshot-iam-allocated-resources.png[A screenshot of the Edit fleet page that shows the available resources that you can associate or disassociate with the fleet.]
+
+[#modify-resources]
+== Change the resources associated with a folder or fleet
+
+You can change the resources associated with a folder or fleet as your organization's needs change.
+
+.Steps
+
+. From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit fleet*.
+
+. On the *Edit* page, select *Resources*.
++
+In the table, the *Status* column identifies the resources that are associated with the folder or fleet.
+
+. Select the resources that you'd like to associate or disassociate.
+
+. Based on the resources that you selected, select either *Associate with the fleet* or *Disassociate from the fleet*.
++
+image:screenshot-iam-associate-resources.png[A screenshot of the Edit fleet page that shows the Associate resources option that is available after you select resources that aren't currently associated.]
+
+. Select *Apply*.
+
+== View members associated with a folder or fleet
+
+You can view the members associated with a folder or fleet from the *Organization* page.
+
+.Steps
+
+. From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit fleet*.
+
+. On the *Edit* page, select *Access* to view the list of members who have access to the selected folder or fleet.
+
+* Select *Access* to view the members who have access to the folder or fleet.
++
+image:screenshot-iam-member-access.png[A screenshot of the Edit fleet page that shows the members who have access to the fleet.]
+
+[#modify-members]
+== Modify member access to a folder or fleet
+
+Modify member access to control resource access. Remember that roles assigned at the folder level are inherited by all child fleets and folders.
+
+You cannot change member access at lower levels if it is inherited from the folder or organization level. Change the member's permission at the higher hierarchy level to change access Alternatively, you can link:task-iam-manage-roles.html#manage-permissions[manage permissions from the Members page].
+
+
+.Steps
+
+. From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit fleet*.
+
+. On the *Edit* page, select *Access* to view the list of members who have access to the selected folder or fleet.
+
+. Modify member access:
+* *Add a member*: Select the member that you'd like to add to the folder or fleet and assign them a role.
+* *Change a member's role*: For any members with a role other than Organization Admin, select their existing role and then choose a new role.
+* *Remove member access*: For members who have a role defined at the folder or fleet for which you're viewing, you can remove their access.
+
+. Select *Apply*.
+
+== Related information
+
+* link:concept-identity-and-access-management.html[Learn about identity and access in NetApp Console]
+* link:task-iam-get-started.html[Get started with identity and access]
+* https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the identity and access API]

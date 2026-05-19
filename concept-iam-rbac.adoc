@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: concept-iam-rbac.html
-keywords: roles, permissions, role-based access control, rbac, iam, identity and access management, least privilege, access control, NetApp Console access, organization access, folder access, project access, resource access
-summary: Manage user access to NetApp Console with role-based access control (RBAC), assigning predefined roles at the organization, folder, or project level. Each role grants specific permissions that define what actions users can perform within their assigned scope.
+keywords: roles, permissions, role-based access control, rbac, iam, identity and access management, least privilege, access control, NetApp Console access, organization access, folder access, fleet access, resource access
+summary: Manage user access to NetApp Console with role-based access control (RBAC), assigning predefined roles at the organization, folder, or fleet level. Each role grants specific permissions that define what actions users can perform within their assigned scope.
 ---
 
 = Learn about NetApp Console role-based access control (RBAC)
@@ -13,15 +13,15 @@ summary: Manage user access to NetApp Console with role-based access control (RB
 :imagesdir: ./media/
 
 [.lead]
-Manage user access to NetApp Console with role-based access control (RBAC), assigning predefined roles at the organization, folder, or project level. Each role grants specific permissions that define what actions users can perform within their assigned scope.
+Manage user access to NetApp Console with role-based access control (RBAC), assigning predefined roles at the organization, folder, or fleet level. Each role grants specific permissions that define what actions users can perform within their assigned scope.
 
 NetApp designs Console roles with least-privilege, so each role includes only the permissions needed for its tasks. This approach enhances security by limiting access to what each member requires.
 
-After you organize resources into folders and projects, assign organization members a role or roles for specific folders or projects, that allow them to perform only the ir responsibilities.
+After you organize resources into folders and fleets, assign organization members a role or roles for specific folders or fleets, that allow them to perform only the ir responsibilities.
 
-For example, you can assign a member the Ransomware Resilience admin role for a specific project level, allowing them to perform Ransomware Resilience operations for resources within that project, without granting them broader access to the entire organization. This same user can be granted the role for several projects within your organization. 
+For example, you can assign a member the Ransomware Resilience admin role for a specific fleet level, allowing them to perform Ransomware Resilience operations for resources within that fleet, without granting them broader access to the entire organization. This same user can be granted the role for several fleets within your organization. 
 
-You can assign users multiple roles for the same scope or different scopes, depending on their responsibilities. For example, a smaller organization might have the same user manage both Ransomware Resilience and Backup and Recovery tasks at the organization level, while a larger organization might have different users assigned to each role at the project level.
+You can assign users multiple roles for the same scope or different scopes, depending on their responsibilities. For example, a smaller organization might have the same user manage both Ransomware Resilience and Backup and Recovery tasks at the organization level, while a larger organization might have different users assigned to each role at the fleet level.
 
 == Types of Console organization members
 There are three types of members in a NetApp Console organization:
@@ -34,7 +34,7 @@ link:task-iam-manage-members-permissions.html#add-members[Learn how to add membe
 
 
 == Predefined roles in NetApp Console
-NetApp Console includes predefined roles that you can assign to organization members. Each role includes permissions that specify what actions a member can do within their assigned scope (organization, folder, or project). 
+NetApp Console includes predefined roles that you can assign to organization members. Each role includes permissions that specify what actions a member can do within their assigned scope (organization, folder, or fleet). 
 
 NetApp Console roles use least-privilege principles that ensure members have only the permissions needed for their tasks, and categorizes roles by the type of access they provide:
 
@@ -42,7 +42,7 @@ NetApp Console roles use least-privilege principles that ensure members have onl
 * Data services roles: Provide permissions for managing specific data services, such as Ransomware Resilience and Backup and Recovery
 * Application roles: Provide permissions for managing storage as well as audit Console events and alerts
 
-You can assign multiple roles to a member based on their responsibilities. For example, you might assign a member both the Ransomware Resilience admin role and the Backup and Recovery admin role for a specific project.
+You can assign multiple roles to a member based on their responsibilities. For example, you might assign a member both the Ransomware Resilience admin role and the Backup and Recovery admin role for a specific fleet.
 
 link:reference-iam-predefined-roles.html[Learn about the predefined roles available in NetApp Console].
 

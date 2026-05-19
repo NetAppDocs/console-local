@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-iam-analyst-roles.html
-keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin
+keywords: predefined roles, iam roles, organization admin, folder or fleet admin, identity and access management, access roles, admin
 summary: You can assign the Operational support analyst role to users to provide them access to alerts and monitoring. Users with this role can also open support cases.
 ---
 

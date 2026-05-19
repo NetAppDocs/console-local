@@ -1,0 +1,49 @@
+---
+sidebar: sidebar
+permalink: task-analyzer-volume-latency-investigate.html
+keywords: latency, slow performance, delay center, workload analyzer, investigate, netapp console
+summary: "Investigate latency on a volume using the Workload Analyzer to identify which part of the I/O path is causing slow response times."
+---
+= Investigate high latency on a volume in NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+When application performance degrades, use the Workload Analyzer to identify which part of the I/O path is responsible. The latency analysis section breaks down response time by delay center so you can distinguish between network issues, data processing overhead, aggregate contention, and other contributors.
+
+.Steps
+
+. In the NetApp Console Local, navigate to *Workload Analyzer*.
++
+Alternatively, from the storage inventory, select a volume and click *Analyze*.
+
+. In the *Volume* field, search for and select the volume you want to investigate.
+
+. Set the *Time Range* to cover the period when the performance issue occurred, then click *Analyze*.
+
+. Review the *Event Timeline* section for configuration changes or alerts that correlate with the time when latency increased.
++
+Configuration change events (wrench icon) and alert events (warning and critical icons) are plotted along the same time axis as the latency chart, making it easy to see whether a change preceded the degradation.
+
+. In the *Latency Analysis* section, open the *View* dropdown and select *By Contribution*.
+
+. Use the metric picker to enable the delay centers you want to examine:
++
+* *Network* — time in the client-facing network stack
+* *Aggregate Ops* — disk I/O and RAID operations at the aggregate level
+* *Data Processing* — inline efficiency operations such as deduplication and compression
+* *Cluster Interconnect* — inter-node communication for cross-node data access
+* *Cloud Latency* — retrieval from a cloud capacity tier via FabricPool
+
+. Hover over a point on the chart where latency is highest to see each delay center's value and its percentage of total latency.
+
+. Identify the dominant contributor and use the value to determine next steps:
++
+* High *Aggregate Ops* latency may indicate disk contention. Check the *Resource Utilization* section to confirm aggregate busy percentage.
+* High *Network* latency may indicate NIC saturation or network path issues outside the cluster.
+* High *Data Processing* latency may indicate that inline efficiency settings are consuming more CPU than the workload can tolerate. Consider adjusting efficiency settings or QoS.
+* High *Cloud Latency* may indicate the workload is frequently accessing cold data on the capacity tier. Consider adjusting the tiering policy.
+
+.After you finish
+
+If the cause is a configuration or placement issue that the Console Local can resolve, a Fix-It option may be available in the alert associated with the volume. See link:task-remediation-guided.html[Remediate with guided steps].

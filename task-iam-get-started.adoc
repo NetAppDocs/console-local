@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-iam-get-started.html
 keywords: iam, quick start, get started, get started with iam, identity and access management
-summary: "To get started with identity and access management in NetApp Console, customize the organization's hierarchy, add additional members, add or discover resources, and associate those resources with projects."
+summary: "To get started with identity and access management in NetApp Console, customize the organization's hierarchy, add additional members, add or discover resources, and associate those resources with fleets."
 ---
 
 = Get started with identity and access in NetApp Console
@@ -13,19 +13,19 @@ summary: "To get started with identity and access management in NetApp Console, 
 :imagesdir: ./media/
 
 [.lead]
-When you sign up for the NetApp Console, you're prompted to create a new organization. The organization includes one member (an Organization admin) and one default project. To set up identity and access management (IAM) to meet your business needs, you'll need to customize your organization's hierarchy, add additional members, add or discover resources, and associate those resources across your hierarchy.
+When you sign up for the NetApp Console, you're prompted to create a new organization. The organization includes one member (an Organization admin) and one default fleet. To set up identity and access management (IAM) to meet your business needs, you'll need to customize your organization's hierarchy, add additional members, add or discover resources, and associate those resources across your hierarchy.
 
-You need the  *Org admin* or *Super admin* permissions to manage identity and access for your organization. With *Folder or project admin* permissions, you can manage only the folders and projects you have access to.
+You need the  *Org admin* or *Super admin* permissions to manage identity and access for your organization. With *Folder or fleet admin* permissions, you can manage only the folders and fleets you have access to.
 
 Follow these steps to set up a new organization. The order may vary based on your organization's needs.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Edit the default project or add to your organization's hierarchy
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Edit the default fleet or add to your organization's hierarchy
 
 [role="quick-margin-para"]
-Use the default project or create additional projects and folders matching your business hierarchy.
+Use the default fleet or create additional fleets and folders matching your business hierarchy.
 
 [role="quick-margin-para"]
-link:task-iam-manage-folders-projects.html[Learn how to organize your resources with folders and projects].
+link:task-iam-manage-folders-fleets.html[Learn how to organize your resources with folders and fleets].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Associate members with your organization
 
@@ -38,7 +38,7 @@ link:task-iam-manage-members-permissions.html[Learn how to manage members and th
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Add or discover resources
 
 [role="quick-margin-para"]
-Add or discover resources (systems) to the Console. Organization members manage systems from within a project.
+Add or discover resources (systems) to the Console. Organization members manage systems from within a fleet.
 
 [role="quick-margin-para"]
 Learn how to create or discover resources:
@@ -51,14 +51,14 @@ Learn how to create or discover resources:
 * https://docs.netapp.com/us-en/storage-management-ontap-onprem/index.html[On-premises ONTAP clusters^]
 * https://docs.netapp.com/us-en/storage-management-storagegrid/index.html[StorageGRID^]
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Associate resources with additional projects
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Associate resources with additional fleets
 
 [role="quick-margin-para"]
-Adding or discovering a system in the Console automatically associates the resource with the currently selected project. To make that resource available to another project in your organization, associate it with the respective project. If a Console agent is used to manage the resource, associate the Console agent with the respective project.
+Adding or discovering a system in the Console automatically associates the resource with the currently selected fleet. To make that resource available to another fleet in your organization, associate it with the respective fleet. If a Console agent is used to manage the resource, associate the Console agent with the respective fleet.
 
 [role="quick-margin-list"]
 * link:task-iam-manage-resources.html[Learn how to manage your organization's resource hierarchy].
-* link:task-iam-associate-agents.html[Learn how to associate a Console agent with a folder or project].
+* link:task-iam-associate-agents.html[Learn how to associate a Console agent with a folder or fleet].
 
 .Related information
 

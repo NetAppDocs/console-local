@@ -1,0 +1,29 @@
+---
+sidebar: sidebar
+permalink: task-discover-storage.html
+keywords: discover storage, add storage, ontap clusters, netapp console local
+summary: "Discover on-premises ONTAP clusters in NetApp Console Local to start managing and monitoring your storage."
+---
+= Discover storage in NetApp Console Local
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Discover on-premises ONTAP clusters in the NetApp Console Local so you can manage and monitor them from a single interface.
+
+NOTE: Stub page. Content to be developed.
+
+== Before you begin
+
+* You have the cluster management IP address and credentials for each ONTAP cluster you want to discover.
+* The Console agent has network access to the clusters.
+
+== Steps
+
+. From the left navigation, select *Storage*.
+. Select *Discover storage*.
+. Enter the cluster details and credentials.
+. Select *Discover*.

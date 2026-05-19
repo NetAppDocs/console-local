@@ -15,7 +15,7 @@ summary: Within the NetApp Console, you can view metrics on the Home page.
 [.lead]
 Monitoring the health of your storage estate ensures that you are aware of issues with storage protection and can take steps to resolve them. Using the NetApp Console Home page, view a status of your backups and restores from NetApp Backup and Recovery and the number of workloads that are at risk for a ransomware attack or protected as indicated by NetApp Ransomware Resilience. You can review the storage capacity for individual clusters and Cloud Volumes ONTAP, ONTAP alerts, storage performance capacity per cluster or Cloud Volumes ONTAP system, the different types of licenses you have, and more.
 
-All panes on the Home page show data at the organization level. The Storage capacity and Storage performance panes show systems associated with projects that the user can access based on IAM permissions.
+All panes on the Home page show data at the organization level. The Storage capacity and Storage performance panes show systems associated with fleets that the user can access based on IAM permissions.
 
 The system refreshes the data on the Home page every five minutes. Caching may cause the data on this page to differ from real values for up to 15 minutes.
 
@@ -26,11 +26,11 @@ NOTE: Accurate metrics on the Home page require appropriately sized and configur
 Each pane in the Home page requires different user roles: 
 
 * *Storage capacity pane*: Ability to see the NetApp Console Systems page
-* *ONTAP alerts pane*: Folder or project admin, Operations Support Analyst, Organization admin, Organization viewer, Super admin, Super viewer
+* *ONTAP alerts pane*: Folder or fleet admin, Operations Support Analyst, Organization admin, Organization viewer, Super admin, Super viewer
 * *Storage performance capacity pane*: Ability to see the NetApp Console Systems page
-* *Licenses and subscriptions pane*: Folder or project admin, Organization admin, Organization viewer, Super admin, Super viewer
-* *Ransomware Resilience pane*: Folder or project admin, Organization admin, Ransomware Resilience admin, Ransomware Resilience viewer, Super admin, Super viewer
-* *Backup and Recovery pane*: Backup and recovery backup admin, Backup and recovery super admin, Backup and recovery backup viewer, Backup and recovery clone admin, Folder or project admin, Organization admin, Backup and recovery restore admin, Super admin, Super viewer
+* *Licenses and subscriptions pane*: Folder or fleet admin, Organization admin, Organization viewer, Super admin, Super viewer
+* *Ransomware Resilience pane*: Folder or fleet admin, Organization admin, Ransomware Resilience admin, Ransomware Resilience viewer, Super admin, Super viewer
+* *Backup and Recovery pane*: Backup and recovery backup admin, Backup and recovery super admin, Backup and recovery backup viewer, Backup and recovery clone admin, Folder or fleet admin, Organization admin, Backup and recovery restore admin, Super admin, Super viewer
 
 If you do not have permissions to access a pane, the pane displays a message indicating you lack permissions to use it.
 
@@ -79,13 +79,13 @@ Warning indicators show for clusters at 80% capacity, with data updating every f
 
 
 
-TIP: If you have multiple projects, you might see different data in the Storage capacity pane compared to the Systems page. This is because the Systems page shows information based on the project level, whereas the Storage capacity pane shows information at the organization level. Also, the data on this pane might differ from real values for a maximum of 15 minutes because the data is cached for that duration to optimize performance.
+TIP: If you have multiple fleets, you might see different data in the Storage capacity pane compared to the Systems page. This is because the Systems page shows information based on the fleet level, whereas the Storage capacity pane shows information at the organization level. Also, the data on this pane might differ from real values for a maximum of 15 minutes because the data is cached for that duration to optimize performance.
 
 .Steps
 
 . From the NetApp Console menu, review the Storage capacity pane. 
 . In the Storage capacity pane, select *View* to go to the Console Systems page. 
-. On the Systems page, select the project containing the cluster you want to view. 
+. On the Systems page, select the fleet containing the cluster you want to view. 
 . On the Systems page, select a cluster to view more details about that cluster.
 
 

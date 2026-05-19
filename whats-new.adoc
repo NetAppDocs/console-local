@@ -5,7 +5,10 @@ keywords: what's new, new features, release notes, netapp console local
 summary: "Learn about the new features and enhancements in the latest release of NetApp Console Local."
 ---
 = What's new with NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

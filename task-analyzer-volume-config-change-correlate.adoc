@@ -1,0 +1,46 @@
+---
+sidebar: sidebar
+permalink: task-analyzer-volume-config-change-correlate.html
+keywords: configuration change, event timeline, correlate, performance, workload analyzer, netapp console
+summary: "Use the Workload Analyzer event timeline to determine whether a configuration change caused a performance or capacity issue on a volume."
+---
+= Correlate a configuration change with a volume issue in NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+When a volume's behavior changes unexpectedly, a recent configuration change is often the cause. Use the Workload Analyzer event timeline to pinpoint when changes occurred and compare those timestamps directly against performance and capacity charts.
+
+.Steps
+
+. In the NetApp Console Local, navigate to *Workload Analyzer*.
++
+Alternatively, from the storage inventory, select a volume and click *Analyze*.
+
+. In the *Volume* field, search for and select the affected volume.
+
+. Set the *Time Range* to cover the period starting before the issue began, then click *Analyze*.
++
+Including time before the issue gives you a baseline to compare against.
+
+. Review the *Event Timeline* at the top of the page.
++
+Configuration change events are marked with a wrench icon. Alert events are marked with warning (yellow) and critical (red) icons. Each event is plotted at the time it occurred.
+
+. Click an event marker to see its details, including the type of change, the time it occurred, and the object that was modified.
++
+Common configuration changes include: QoS policy applied or modified, snapshot policy changed, volume moved to a different aggregate, and tiering policy updated.
+
+. Note the timestamp of each configuration change and compare it against the latency, throughput, and capacity charts in the sections below the timeline.
++
+Look for inflection points in the metric charts that align with the configuration change timestamps. A latency increase immediately following a QoS policy change, for example, indicates the new policy may be throttling the workload.
+
+. If a change correlates with a degradation in performance:
++
+* For QoS changes: review the latency and throughput charts with QoS limit lines enabled to confirm throttling. See link:task-analyzer-volume-qos-throttling-identify.html[Determine whether a volume is being throttled by a QoS policy].
+* For aggregate or volume moves: review the resource utilization charts to check whether the destination node or aggregate is under higher load.
+* For tiering policy changes: check for increased cloud latency in the latency delay center breakdown. See link:task-analyzer-volume-latency-investigate.html[Investigate high latency on a volume].
+
+.After you finish
+
+If the configuration change was unintended or made outside of the Console Local directly on the ONTAP cluster, the Console Local may have already raised a compliance alert. See link:task-remediation-guided.html[Remediate with guided steps] to restore the volume to its expected configuration.

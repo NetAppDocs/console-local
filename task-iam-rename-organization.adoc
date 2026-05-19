@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: task-iam-rename-organization.html
-keywords: rename organization, change organization name, name change, rename, change name, iam, ID, integration, project, organization, API, identity and access management
+keywords: rename organization, change organization name, name change, rename, change name, iam, ID, integration, fleet, organization, API, identity and access management
 summary: If needed, you can change the name of your NetApp Console organization.
 ---
 
-= Organization and project IDs
+= Organization and fleet IDs
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -44,20 +44,20 @@ You can view the organization ID from the Organizations page and copy it to the 
 
 . On the *Organization* page, look for your organization ID in the summary bar and copy it to the clipboard. You can save this for use later or copy it directly to where you need to use it. 
 
-[#project-id]
-== Obtain the ID for a project
+[#fleet-id]
+== Obtain the ID for a fleet
 
-You'll need to obtain the ID for a project if you are using the API. For example, when creating a Cloud Volumes ONTAP system.
+You'll need to obtain the ID for a fleet if you are using the API. For example, when creating a Cloud Volumes ONTAP system.
 
 .Steps
 
-. From the *Organization* page, navigate to a project in the table and select image:icon-action.png["An icon that is three side-by-side dots"]
+. From the *Organization* page, navigate to a fleet in the table and select image:icon-action.png["An icon that is three side-by-side dots"]
 +
-The project ID displays.
+The fleet ID displays.
 
 . To copy the ID, select the copy button.
 +
-image:screenshot-iam-project-id.png[A screenshot of the folders and projects table that shows the project ID after selecting the action menu for a project.]
+image:screenshot-iam-fleet-id.png[A screenshot of the folders and fleets table that shows the fleet ID after selecting the action menu for a fleet.]
 
 .Related information
 

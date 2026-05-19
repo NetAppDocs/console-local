@@ -20,11 +20,7 @@ After you sign up, your Console organization administrator must add your user ac
 
 .Steps
 
-. Navigate to the NetApp Console URL. The URL depends on which mode of the Console that your organization is using:
-+
-* **Standard mode*: Open a web browser and go to the https://console.netapp.com[NetApp Console]
-
-* **Restricted mode or Private mode**: Open a web browser and go to the IP address where the Console agent is installed.
+. Open a web browser and go to the IP address where the Console Local is installed.
 
 . On the *Log in* page, enter the email address that's associated with your login.
 
@@ -33,7 +29,7 @@ After you sign up, your Console organization administrator must add your user ac
 +
 * Your existing NetApp Support Site (NSS) credentials
 * A NetApp Console account using your email address and a password
-* A federated connection if your administrator has set up identity federation for your organization
+* An Active Directory account using your email address and password
 
 
 

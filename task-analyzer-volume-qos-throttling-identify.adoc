@@ -1,0 +1,48 @@
+---
+sidebar: sidebar
+permalink: task-analyzer-volume-qos-throttling-identify.html
+keywords: QoS, throttling, IOPS limit, latency, workload analyzer, netapp console
+summary: "Determine whether a QoS policy is throttling a volume's performance using the Workload Analyzer."
+---
+= Identify QoS policy throttling on a volume in NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+When a volume's performance is constrained, the cause may be a QoS policy limiting its IOPS or throughput. Use the Workload Analyzer to compare actual workload demand against the QoS policy limits attached to the volume.
+
+.Before you begin
+
+A QoS policy must be attached to the volume. If no policy is attached, QoS limit lines do not appear in the analyzer.
+
+.Steps
+
+. In the NetApp Console Local, navigate to *Workload Analyzer*.
++
+Alternatively, from the storage inventory, select a volume and click *Analyze*.
+
+. In the *Volume* field, search for and select the volume you want to investigate.
+
+. Set the *Time Range* to cover the period of the reported performance issue, then click *Analyze*.
+
+. In the *Latency Analysis* section, use the metric picker to enable *QoS Limit Max*.
++
+The QoS maximum latency ceiling appears as a horizontal reference line on the chart. If the latency line is approaching or touching this line, the workload is being throttled.
+
+. In the *Throughput Analysis* section, use the component picker to enable *QoS IOPS Limit* and *QoS MB/s Limit*.
++
+The policy limits appear as horizontal reference lines on the IOPS and MB/s charts. Compare actual throughput against these lines to see how much headroom remains.
+
+. Hover over a point on the throughput chart where IOPS is highest to see the read, write, and other breakdown and compare the total against the QoS IOPS limit line.
+
+. Enable *Show Forecast* in the throughput section to project whether demand is trending toward the QoS limit.
+
+.Results
+
+If the workload is consistently at or near the QoS limit, the volume is being throttled. Options to resolve this include:
+
+* Increasing the QoS policy maximum if the cluster has available headroom
+* Moving the volume to a cluster with more capacity
+* Associating the volume with a storage class that has a higher-performance policy
+
+See link:task-remediation-guided.html[Remediate with guided steps] for assisted options.
