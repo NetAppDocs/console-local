@@ -141,7 +141,7 @@ sidebar:
           - title: Remediate storage issues with guided steps
             url: /task-remediation-guided.html
       - title: View metrics on the NetApp Console Home page
-        url: /task-dashboard.html
+        url: /task-storage-dashboard.html
       - title: Use data services
         entries:
         - title: Learn about using data services
@@ -160,16 +160,14 @@ sidebar:
         url: /task-console-organization-verify.html
       - title: Connect your LLM
         url: /task-llm-connect.html
-      - title: Integrate with your SIEM tools
-        url: /task-siem-integrate.html
+      - title: Configure notification delivery
+        url: /task-console-configure-notifications-delivery.html
       - title: Monitor NetApp Console health
         url: /task-system-health-monitor.html
       - title: Audit NetApp Console Local actions
         entries:
         - title: Audit NetApp Console Local operations
           url: /task-monitor-cm-operations.html
-        - title: Integrate with your SIEM tools with webhooks
-          url: /task-siem-integrate.html
       - title: Licenses and subscriptions
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
       - title: Maintain NetApp Console Local
