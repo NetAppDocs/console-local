@@ -1,0 +1,34 @@
+---
+sidebar: sidebar
+permalink: task-console-configure-email-server.html
+keywords: Active Directory, LDAP, federation, user management, directory services, netapp console
+summary: "Configure the email server for NetApp Console Local."
+---
+= Configure an email server for NetApp Console Local
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Configure an email server for NetApp Console Local to send notifications, alerts, and user invitations.
+
+.Required role
+Super admin or organization admin.
+
+When you configure an email server, Console Local can send notifications, alerts, and user invitations through your specified email server. This ensures that users receive timely updates and important information. NetApp Console Local supports configuring SMTP email servers, which can be your existing corporate email server or a third-party email service. By integrating with your email infrastructure, you can maintain consistent communication and ensure that users receive critical notifications related to their storage management activities.
+
+
+.Steps
+. Select *Administration > Console*.
+. Select *Configuration* to open the Systems configuration page.
+. In the *Email server* section, select *Configure*.
+. Enter the required details for the email server:
+. Enter the connection details for your email server:
++
+* Add a sender name and a sender email address.
+* The *SMTP host*: hostname or IP address of your SMTP server. For multiple servers, enter the primary.
+* Select the connection protocol from the *Connection security* dropdown list. The port is configured for you and is read-only: 25 for SMTP with STARTTLS, or 465 for SMTPS.
+. Select *Use SSL/TLS* to use SMTPS or STARTTLS. Confirm that your SMTP server supports the selected protocol and that Console Local can access the required certificates.
+. Test the connection. If it fails, check the SMTP host, port, network connectivity, and SSL/TLS certificates.
+. After the test succeeds, enter the directory and user details:
+
+. Select *Add* to save the integration.

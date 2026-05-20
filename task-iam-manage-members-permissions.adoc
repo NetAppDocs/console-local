@@ -83,10 +83,7 @@ The Console emails instructions to the user.
 
 [[service-account]]
 === Add a service account 
-Service accounts allow you to automate tasks and securely connect with Console APIs. Choose a client ID and secret for simple setups, or JWT (JSON Web Token) for stronger security in automated or cloud-native environments. Select the method that meets your security requirements.
-
-.Before you begin:
-For JWT authentication, prepare your public key or certificate.
+Service accounts allow you to automate tasks and securely connect with Console APIs. You'll need a client ID and secret for the account before adding it.
 
 
 .Steps
@@ -100,15 +97,6 @@ For JWT authentication, prepare your public key or certificate.
 . For *Member Type*, select *Service account*.
 
 . Enter a name for the service account.
-
-
-. To use JWT authentication, select *Use private key JWT authentication* and upload your public RSA key or certificate. Skip if using client ID and secret.
-
-+  
-Your X.509 certificate. It must be in PEM, CRT, or CER format.
-
-+
-.. Set up expiry notifications for your certificate. Choose between seven days or 30 days. Expiry notifications are emailed and shown in the Console to users with the Super admin or Org admin role.
 
 
 . Use the *Select an organization, folder, or fleet* section to choose the level of your resource hierarchy that the member should have permissions for.
@@ -126,18 +114,18 @@ link:reference-iam-predefined-roles.html[Learn about access roles].
 
 . To give access to more folders, fleets, or roles, select *Add role*, choose the folder, fleet, or role category, and select a role.
 
-
-. If you didn't choose to use JWT authentication, download or copy the client ID and client secret. 
+. Download or copy the client ID and client secret. 
 +
 The Console shows the client secret only once. Copy it securely; you can recreate it later if you lose it.
 
-. If you chose JWT authentication, download or copy the client ID and JWT audience. The Console displays this information only once and does not allow you to retrieve it later.
 
 . Select *Close*.
 
 == Add a directory user to your organization
 
-You can add a directory user from your iDirectory services integration organization and assign them a role or roles. 
+You can add a directory user and assign them a role or roles. 
+
+You must have first configured Directory service before you can add directory users. link:task-active-directory-integrate.html[Learn how to integrate with your directory service].
 
 
 
@@ -151,7 +139,7 @@ You can add a directory user from your iDirectory services integration organizat
 +
 Note the following:
 +
-** You can only select from the folders and fleetss for which you have permissions.
+** You can only select from the folders and fleets for which you have permissions.
 ** Selecting an organization or folder grants the member permissions to all its contents.
 ** You can only assign the *Organization admin* role at the organization level.
 

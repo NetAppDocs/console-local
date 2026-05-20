@@ -1,0 +1,44 @@
+---
+sidebar: sidebar
+permalink: task-webhooks-integrate.html
+keywords: webhooks, audit, audit messages, security, logging, monitoring, integration, netapp console
+summary: "Create a webhook to send NetApp Console Local audit messages to SIEM tools and other external applications."
+---
+= Create a webhook to send audit messages to other applications
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Create a webhook when you want NetApp Console Local to send audit messages to another application, such as a SIEM platform or other external monitoring and automation tool.
+
+.Required role: Organization admin or Super admin
+
+NetApp Console Local generates an audit record for each administrative action, such as provisioning requests, configuration changes, access grants, policy updates, and login events. By default, these audit messages remain within the Console Local. To send them to another application, you must create a webhook that defines the external destination for those messages.
+
+After you create the webhook, the receiving application can ingest NetApp Console Local audit messages for centralized monitoring, alerting, correlation, retention, or downstream automation. This is useful when you want security operations teams, compliance teams, or other external systems to act on audit activity outside the Console Local.
+
+For organizations that must follow compliance rules like SOC 2, ISO 27001, or internal security standards, sending audit messages to external applications can also help provide the evidence and retention workflows those teams require.
+
+== Before you begin
+
+Before you create the webhook, ensure the following are in place:
+* Identify the external application that should receive audit messages
+* Know the endpoint details required by the receiving application
+* Confirm that the Console Local can reach the receiving application over the network
+* Confirm any protocol, authentication, or encryption requirements needed by the receiving application
+
+.Steps
+. Select *Administration > Console*.
+. Select *Configuration* to open the Systems configuration page.
+. In the *Webhook integration* section, select *Configure*.
+. Enter the required details for the webhook:
++
+* A descriptive name for the webhook.
+* The Endpoint URL provided by the receiving application.
+* Any required headers or secrets(authentication credentials).
+* The format to use when sending the webhook. JSON and OTEL(Open Telemetry) are supported.
+. Test the webhook connection to ensure that Console Local can successfully send messages to the receiving application.
+. After the test succeeds, select *Save* to create the webhook.
