@@ -5,7 +5,10 @@ keywords: edit fleet, rename fleet, delete fleet, remove fleet, edit folder, del
 summary: "Edit or delete folders and storage fleets as your organizational needs change in NetApp Console Local."
 ---
 = Edit or delete folders and storage fleets in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

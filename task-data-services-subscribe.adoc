@@ -5,7 +5,10 @@ keywords: subscribe, data services, enable, activate, netapp console
 summary: "Subscribe to data services in NetApp Console Local to enable data protection capabilities."
 ---
 = Subscribe to data services in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

@@ -5,7 +5,10 @@ keywords: notifications, alerts, alert policies, thresholds, email, webhooks, ne
 summary: "Configure notifications and alert policies in NetApp Console Local to stay informed of storage events."
 ---
 = Configure notifications and alert policies in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

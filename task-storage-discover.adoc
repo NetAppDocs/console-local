@@ -5,7 +5,10 @@ keywords: discover, storage, storage systems, onboard, inventory, netapp console
 summary: "Discover storage systems in NetApp Console Local to bring them under centralized management."
 ---
 = Discover storage in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

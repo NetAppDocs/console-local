@@ -5,7 +5,10 @@ keywords: disassociate, remove, storage class, fleet, netapp console
 summary: "Disassociate a storage class from a fleet in NetApp Console Local."
 ---
 = Disassociate a storage class from a fleet in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

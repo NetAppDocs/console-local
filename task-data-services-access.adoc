@@ -5,7 +5,10 @@ keywords: grant access, data services, permissions, users, roles, netapp console
 summary: "Grant users access to data services in NetApp Console Local."
 ---
 = Grant access to data services in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

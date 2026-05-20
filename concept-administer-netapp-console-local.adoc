@@ -5,7 +5,10 @@ keywords: administer, maintain, upgrade, SIEM, LLM, system health, netapp consol
 summary: "Learn about the ongoing administration tasks for NetApp Console Local, including LLM configuration, SIEM integration, health monitoring, and upgrades."
 ---
 = Administer NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

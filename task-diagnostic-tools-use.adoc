@@ -5,7 +5,10 @@ keywords: diagnostic tools, troubleshoot, logs, debug, netapp console local
 summary: "Use the diagnostic tools available in NetApp Console Local to investigate and resolve issues."
 ---
 = Use NetApp Console Local diagnostic tools
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

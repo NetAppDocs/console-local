@@ -4,9 +4,13 @@ permalink: task-console-configure-email-server.html
 keywords: Active Directory, LDAP, federation, user management, directory services, netapp console
 summary: "Configure the email server for NetApp Console Local."
 ---
+
 = Configure an email server for NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
-:imagesdir: ./media/
+:linkattrs:
+:imagesdir: ./media/ 
 
 [.lead]
 Configure an email server for NetApp Console Local to send notifications, alerts, and user invitations.
@@ -21,14 +25,37 @@ When you configure an email server, Console Local can send notifications, alerts
 . Select *Administration > Console*.
 . Select *Configuration* to open the Systems configuration page.
 . In the *Email server* section, select *Configure*.
-. Enter the required details for the email server:
 . Enter the connection details for your email server:
 +
 * Add a sender name and a sender email address.
 * The *SMTP host*: hostname or IP address of your SMTP server. For multiple servers, enter the primary.
 * Select the connection protocol from the *Connection security* dropdown list. The port is configured for you and is read-only: 25 for SMTP with STARTTLS, or 465 for SMTPS.
-. Select *Use SSL/TLS* to use SMTPS or STARTTLS. Confirm that your SMTP server supports the selected protocol and that Console Local can access the required certificates.
-. Test the connection. If it fails, check the SMTP host, port, network connectivity, and SSL/TLS certificates.
-. After the test succeeds, enter the directory and user details:
+. Select *Test email* to send a test email to a recipient you specify.
+. After the test succeeds, select *Save* to save the configuration.
++ 
+If the test fails, re-verify the setting you entered and double-check that Console Local has network access to the email server.
 
-. Select *Add* to save the integration.
+== Update an email server configuration
+You can update an existing email server configuration if you want to use a different email server.
+
+.Steps
+. Select *Administration > Console*.
+. Select *Configuration* to open the Systems configuration page.
+. In the *Email server* section, select *Configure*.
+. Select *Clear fields* to clear the existing configuration.
+. Enter the new connection details for your email server.
+. Select *Test email* to send a test email to a recipient you specify.
+. After the test succeeds, select *Save* to save the new configuration.
++
+If the test fails, re-verify the setting you entered and double-check that Console Local has network access to the email server.
+
+
+== Remove an email server configuration
+You can remove the email server configuration if you no longer want Console Local to send emails.
+
+.Steps
+. Select *Administration > Console*.
+. Select *Configuration* to open the Systems configuration page.
+. In the *Email server* section, select *Configure*.
+. Select *Clear fields* to clear the existing configuration.
+. Select *Save* to save the cleared configuration, which removes the email server configuration from Console Local.

@@ -5,7 +5,10 @@ keywords: add users, user management, access, roles, folders, fleets, netapp con
 summary: "Add Console Local users and assign them roles at the organization, folder, or fleet level in NetApp Console Local."
 ---
 = Add users to NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

@@ -5,7 +5,10 @@ keywords: create storage class, storage class, define, policy, netapp console
 summary: "Create a storage class in NetApp Console Local to standardize storage provisioning."
 ---
 = Create a storage class in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

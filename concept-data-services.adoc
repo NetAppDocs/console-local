@@ -5,7 +5,10 @@ keywords: data services, data protection, data mobility, backup, replication, ne
 summary: "Learn about the data services available in NetApp Console Local for protecting and managing your data."
 ---
 = Learn about data services in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

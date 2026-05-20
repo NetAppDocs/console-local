@@ -5,7 +5,10 @@ keywords: storage fleets, fleet management, storage organization, folders, netap
 summary: "A storage fleet groups storage systems that you manage together in NetApp Console Local. Use folders to group related fleets. You can apply policies, grant access, and monitor health at the needed scope."
 ---
 = Learn about storage fleets in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

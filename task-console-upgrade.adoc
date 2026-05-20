@@ -5,7 +5,10 @@ keywords: upgrade, update, version, netapp console local
 summary: "Upgrade NetApp Console Local to the latest version."
 ---
 = Upgrade NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

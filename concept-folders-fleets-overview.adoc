@@ -5,7 +5,10 @@ keywords: folders, fleets, organization, resource hierarchy, access control, IAM
 summary: "Learn how to use folders and storage fleets to organize resources and control access in NetApp Console Local."
 ---
 = Learn about folders and fleets in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

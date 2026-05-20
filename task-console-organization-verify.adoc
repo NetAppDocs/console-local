@@ -5,7 +5,10 @@ keywords: organization, verify, setup, tenant, netapp console local
 summary: "Verify your Console Local organization settings after initial deployment of NetApp Console Local."
 ---
 = Verify your NetApp Console Local organization
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

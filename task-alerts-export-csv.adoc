@@ -4,6 +4,7 @@ permalink: task-alerts-export-csv.html
 keywords: export alerts, download alerts, csv, alerts report, netapp console local
 summary: "Download the filtered list of alerts in CSV format for offline analysis or reporting."
 ---
+
 = Export alerts to CSV
 :hardbreaks:
 :nofooter:

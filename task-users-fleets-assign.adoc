@@ -5,7 +5,10 @@ keywords: assign users, fleet, folder, access control, roles, storage management
 summary: "Assign users to folders and storage fleets to grant them management access in NetApp Console Local."
 ---
 = Assign users to fleets in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

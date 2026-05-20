@@ -168,7 +168,7 @@ sidebar:
         entries:
         - title: Audit NetApp Console Local operations
           url: /task-monitor-cm-operations.html
-        - title: Integrate with your SIEM tools
+        - title: Integrate with your SIEM tools with webhooks
           url: /task-siem-integrate.html
       - title: Licenses and subscriptions
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html

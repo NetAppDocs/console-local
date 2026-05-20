@@ -5,7 +5,10 @@ keywords: organize, storage fleets, fleet, folder, group, storage systems, assoc
 summary: "Organize discovered storage systems into folders and fleets for simplified management in NetApp Console Local."
 ---
 = Organize storage into fleets in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

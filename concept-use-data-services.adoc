@@ -5,7 +5,10 @@ keywords: data services, data protection, backup, replication, subscribe, netapp
 summary: "Learn about data services available in NetApp Console Local and how they help protect your data."
 ---
 = Learn about using data services in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

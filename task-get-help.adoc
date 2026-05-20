@@ -6,7 +6,10 @@ summary: NetApp provides support for the NetApp Console in a variety of ways. Ex
 ---
 
 = Get help
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

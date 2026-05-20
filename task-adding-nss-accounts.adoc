@@ -6,11 +6,7 @@ summary: Associate a NetApp Support Site account with your NetApp Console organi
 ---
 
 = Manage NSS credentials associated with NetApp Console
-:hardbreaks:
-:nofooter:
-:icons: font
-:linkattrs:
-:imagesdir: ./media/
+
 
 [.lead]
 Associate a NetApp Support Site account with your Console organization to enable key workflows for storage management. These NSS credentials are associated with the entire organization.
