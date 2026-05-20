@@ -37,7 +37,20 @@ The audit logs show activity for the following services:
 . Use the filters above the table to change which actions display in the table.
 +
 For example, you can use the *Service* filter to show actions related to a specific service, or you can use the *User* filter to show actions related to a specific user account.
-<QUESTION: what does the Resource filter show? what is a resource in this context?>
+
+=== Filter audit logs for identity and access management actions
+
+To view only actions related to managing your organization—such as adding members, creating fleets, or deleting resources—filter the audit log by the Tenancy service.
+
+.Steps
+
+. Select *Administration > Audit*.
+
+. Use the filters to narrow the results. Select *Service* and then select *Tenancy*.
+
+. Use any of the other filters to further refine the results.
++
+For example, use the *User* filter to show IAM actions performed by a specific user account.
 
 === Download audit logs from the Audit page
 You can download the audit logs from the Audit page to a CSV file. This enables you to keep a record of the actions that users perform in your organization. The downloaded CSV file includes all audit log columns, regardless of the filters or displayed columns on the Audit page.
@@ -46,10 +59,9 @@ You can download the audit logs from the Audit page to a CSV file. This enables 
 . In the *Audit* page, select the download icon in the upper right corner of the table.
 
 
-=== Configure audit logs to be sent to your syslog server via webhook
-You can configure your audit logs to be exported to an external application such as your own syslog server. You do this by specifying a webhook to use. Before you can configure a webhook, you must first create it. link:task-webhooks-integrate.html[Learn how to create a webhook integration].
+=== Configure audit logs to be exported via webhook
+You can configure your audit logs to be exported to an external application. You do this by specifying a webhook to use. Before you can configure a webhook, you must first create it. link:task-webhooks-integrate.html[Learn how to create a webhook integration].
 
-<QUESTION: what will be here? I see in the Figma that you can pick a webhook, but it seems like it should be a syslog server configuration instead? Will we deliver syslog integration in July?>
 
 .Steps
 . Select *Administration > Audit > Export audit logs*.
