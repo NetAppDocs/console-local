@@ -102,14 +102,20 @@ sidebar:
               url: /concept-workload-analyzer.html
             - title: Investigate high latency on a volume
               url: /task-analyzer-volume-latency-investigate.html
+            - title: Investigate high throughput demand on a volume
+              url: /task-analyzer-volume-throughput-investigate.html
             - title: Determine whether a volume is being throttled by QoS
               url: /task-analyzer-volume-qos-throttling-identify.html
             - title: Identify resource contention affecting a volume
               url: /task-analyzer-volume-resource-contention-identify.html
             - title: Forecast volume capacity and plan for growth
               url: /task-analyzer-volume-capacity-forecast.html
+            - title: Monitor snapshot reserve consumption
+              url: /task-analyzer-snapshot-reserve-monitor.html
             - title: Correlate a configuration change with a volume issue
               url: /task-analyzer-volume-config-change-correlate.html
+            - title: Workload Analyzer metrics reference
+              url: /reference-workload-analyzer-metrics.html
         
         - title: Manage alerts
           entries:
