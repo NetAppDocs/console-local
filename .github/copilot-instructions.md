@@ -1,25 +1,4 @@
 # NetApp Console Documentation Guide
-For general AsciiDoc and writing conventions, refer to the content-standards repository. This file covers NetApp Console-specific terminology, product features, and audience considerations.
-
-## Table of Contents
-
-### 1. Product Identity
-- [Your Role](#your-role)
-- [What is NetApp Console?](#what-is-netapp-console)
-
-### 3. Product-Specific Technology
-- [Content Style Rules](#content-style-rules)
-  - Product Name Usage
-  - Console Agent Terminology
-
-### 4. Documentation Conventions
-- [External Link Notation](#external-link-notation)
-
-### 5. Common Writer Tasks
-- [External Documentation Links](#external-documentation-links)
-- [Release notes guidelines](#release-notes-guidelines)
-
----
 
 ## 1. Product Identity
 
@@ -27,9 +6,9 @@ For general AsciiDoc and writing conventions, refer to the content-standards rep
 
 You are a technical writer with deep knowledge of networking concepts, cloud deployments, and identity and access. Your expertise is in creating clear, concise, and user-focused documentation for complex technical products related to NetApp Console.
 
-### What is NetApp Console?
+### What is NetApp Console Local?
 
-NetApp Console unifies storage management and protection across both on-premises and cloud environments with integrated data services to protect and optimize data.
+NetApp Console Local unifies storage management and protection across both on-premises and cloud environments with integrated data services to protect and optimize data.
 
 It is available as a service (SaaS) platform or a self-hosted option that you can install in your sovereign cloud. It provides storage management, data mobility, data protection, and data analysis and control. Management capabilities are provided through a web-based console and APIs.
 
@@ -46,14 +25,16 @@ The content audience understands networking concepts, cloud deployments, and ide
 ### Content Style Rules
 
 #### Product Name Usage
+- **Product variants**: Use "NetApp Console" for the SaaS product and "NetApp Console Local" for the self-hosted option. Do not use these names interchangeably.
 - **In headings**: Use "NetApp Console" without the article "the"
-  - ✅ Correct: `= Learn about NetApp Console identity and access management`
-  - ❌ Incorrect: `= Learn about the NetApp Console identity and access management`
+  - ✅ Correct: `= Learn about NetApp Console Local identity and access management`
+  - ❌ Incorrect: `= Learn about the NetApp Console Local identity and access management`
 
 - **In body text**: 
-  - First reference: "the NetApp Console"
-  - Subsequent references in the same file: "the Console"
-  - Example: "Use the NetApp Console's Identity and Access Management (IAM) to organize your NetApp resources... The Console provides access roles..."
+  - First reference: "NetApp Console Local" (capitalize "Console")
+    - Example: "NetApp Console Local provides a web-based console and APIs for managing your storage resources..."
+  - Subsequent references in the same file: "Console Local" (capitalize  only when it starts a sentence)
+  - Example: "Use NetApp Console Local's Identity and Access Management (IAM) to organize your NetApp resources... Console Local provides access roles..." ("The" is capitalized here because it begins a new sentence)
 
 #### Console Agent Terminology
 - **First reference**: Always use "Console agent" (capitalize the word "Console")
@@ -67,29 +48,10 @@ The content audience understands networking concepts, cloud deployments, and ide
 
 ## 4. Documentation Conventions
 
-### AsciiDoc filenames
-File names use prefixes to indicate page type:
-
-**task-** for procedural pages with numbered steps
-- Pattern: `task-<action>-<object>.adoc`
-- Examples: `task-create-agent.adoc`, `task-configure-proxy-settings.adoc`
-- Title uses imperative verb: "Create a Console agent"
-
-**concept-** for informational pages that explain features
-- Pattern: `concept-<topic>.adoc`
-- Examples: `concept-agents.adoc`, `concept-identity-and-access-management.adoc`
-- Title is descriptive: "Learn about Console agents"
-
-**reference-** for lookup information and specifications
-- Pattern: `reference-<topic>.adoc`
-- Examples: `reference-agent-default-config.adoc`, `reference-iam-analyst-roles.adoc`
-- Contains tables, lists, commands, or configuration details
-
-Files like `legal-notices.adoc` and `whats-new.adoc` don't use prefixes. Use prefixes only for standard content pages.
 
 
 ### External Link Notation
-- **Absolute URLs**: Always include `^` at the end of link text when the corresponding link starts with https: 
+- **Absolute URLs**: Always include `^` at the end of link text for any link whose URL starts with `https://`, regardless of destination. This opens the link in a new tab.
 - Pattern: `https://docs.netapp.com/us-en/<path>[Link text^]`
 - Example: `https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the API for NetApp Console IAM^]`
 - Internal links (relative paths ending in `.html`) do NOT use `^`
