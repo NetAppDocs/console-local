@@ -46,6 +46,6 @@ link:task-console-upgrade.html[Upgrade NetApp Console Local]
 
 When issues arise, use built-in diagnostic tools and log analysis to identify and resolve problems.
 
-* link:task-issues-diagnose.html[Diagnose common issues with NetApp Console Local]
-* link:task-diagnostic-tools-use.html[Use NetApp Console Local diagnostic tools]
+* link:task-troubleshoot-console-local.html[Diagnose common issues with NetApp Console Local]
+* link:task-troubleshoot-console-local.html[Use NetApp Console Local diagnostic tools]
 * link:task-support.html[Work with NetApp Support]

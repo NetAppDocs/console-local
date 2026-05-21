@@ -35,7 +35,7 @@ Fleets group storage systems. Assign resources to fleets and grant users access 
 +
 For example, you can associate an on-premises ONTAP system with a single fleet or with all fleets in your organization, depending on your needs.
 +
-link:task-fleet-create.html[Learn how to create folders and storage fleets].
+link:task-iam-manage-folders-fleets.html[Learn how to create folders and storage fleets].
 
 == Resources
 
@@ -118,7 +118,7 @@ For organizations with specialized teams requiring specific access, use targeted
 
 == Next steps
 
-* link:task-fleet-create.html[Create folders and storage fleets]
+* link:task-iam-manage-folders-fleets.html[Create folders and storage fleets]
 * link:task-storage-fleets-organize.html[Organize storage into fleets]
 * link:task-users-fleets-assign.html[Assign users to fleets for storage management]
-* link:task-audit.html[Monitor or audit Console Local actions]
+* link:task-audit-console-activity.html[Monitor or audit Console Local actions]

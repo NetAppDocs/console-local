@@ -22,7 +22,7 @@ Strengthen authentication to NetApp Console Local by integrating with your exist
 
 Connect NetApp Console Local to your Active Directory so users can sign in with their existing corporate credentials. This eliminates the need for separate accounts and ensures that access changes in your directory are reflected automatically.
 
-link:task-active-directory-integrate.html[Integrate Active Directory with NetApp Console Local]
+link:task-iam-active-directory-integrate.html[Integrate Active Directory with NetApp Console Local]
 
 
 === Multi-factor authentication
@@ -48,4 +48,4 @@ Use role-based access control to define what each user can see and manage. Assig
 
 Track all user activity in NetApp Console Local for compliance and security investigations.
 
-link:task-audit.html[View audit logs for NetApp Console Local]
+link:task-audit-console-activity.html[View audit logs for NetApp Console Local]

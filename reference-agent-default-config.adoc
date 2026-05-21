@@ -90,7 +90,7 @@ The agent uses the following ports on the Linux host:
 
 == Default configuration without internet access
 
-The following configuration applies if you manually installed the Console agent on an on-premises Linux host that doesn't have internet access. link:task-quick-start-private-mode.html[Learn more about this installation option].
+The following configuration applies if you manually installed the Console agent on an on-premises Linux host that doesn't have internet access. link:task-prepare-private-mode.html[Learn more about this installation option].
 
 * The agent installation folder is in the following location:
 +
