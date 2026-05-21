@@ -222,18 +222,12 @@ sidebar:
         url: /task-enable-read-only-mode.html
     - title: Reference
       entries:
-      - title: Default agent configuration
-        url: /reference-agent-default-config.html
       - title: NetApp Console Local maintenance console
         entries:
         - title: Configuration checks
           url: /reference-agent-maint-console-config-checker.html
-        - title: Transparent proxy
-          url: /reference-agent-maint-console-proxy.html
       - title: Ports for the on-premises Console agent
         url: /reference-ports-on-prem.html
-      - title: Console network access
-        url: /reference-networking-saas-console.html
       - title: Identity and access roles
         entries:
         - title: NetApp Console Local access roles

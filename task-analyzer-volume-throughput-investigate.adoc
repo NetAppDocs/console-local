@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-analyzer-volume-throughput-investigate.html
-keywords: throughput, IOPS, MB/s, read write, workload demand, workload analyzer, netapp console
+keywords: throughput, IOPS, MBs, read write, workload demand, workload analyzer, netapp console local
 summary: "Investigate high throughput demand on a volume using the Workload Analyzer to understand IOPS and MB/s patterns and identify read/write imbalances."
 ---
 = Investigate high throughput demand on a volume in NetApp Console Local

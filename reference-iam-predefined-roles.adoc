@@ -81,10 +81,6 @@ The following is a list of roles in the data service category. Each role grants 
 | link:reference-iam-backup-rec-roles.html[Backup and Recovery restore admin] | Restore workloads in the Backup and Recovery.
 | link:reference-iam-backup-rec-roles.html[Backup and Recovery clone admin] | Clone applications and data in the Backup and Recovery.
 | link:reference-iam-backup-rec-roles.html[Backup and Recovery viewer] | View Backup and Recovery information.
-| link:reference-iam-disaster-rec-roles.html[Disaster Recovery admin] | Perform any actions in NetApp Disaster Recovery service.
-| link:reference-iam-disaster-rec-roles.html[Disaster Recovery failover admin] | Perform failover and migrations.
-| link:reference-iam-disaster-rec-roles.html[Disaster Recovery application admin] | Create replication plans, change replication plans, and start test failovers.
-| link:reference-iam-disaster-rec-roles.html[Disaster Recovery viewer] | View information only.
 | Classification viewer | Allows users to view NetApp Data Classification scan results.
 
 

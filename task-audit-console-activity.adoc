@@ -60,12 +60,13 @@ You can download the audit logs from the Audit page to a CSV file. This enables 
 
 
 === Configure audit logs to be exported via webhook
-You can configure your audit logs to be exported to an external application. You do this by specifying a webhook to use. Before you can configure a webhook, you must first create it. link:task-webhooks-integrate.html[Learn how to create a webhook integration].
+You can configure your audit logs to be exported to an external application. You do this by specifying a webhook to use. Before you can configure a webhook, you must first create it. 
+link:task-notifications-configure.html[Learn how to create a webhook integration].
 
 
 .Steps
 . Select *Administration > Audit > Export audit logs*.
-. Choose a webhook to use to export the audit logs. You can only select from webhooks that you have created. link:task-webhooks-integrate.html[Learn how to create a webhook integration].
+. Choose a webhook to use to export the audit logs. You can only select from webhooks that you have created. 
 . Select *Save* to save the configuration.
 
 
