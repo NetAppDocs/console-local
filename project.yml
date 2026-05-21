@@ -175,19 +175,19 @@ sidebar:
         - title: Maintain manually installed Console Local
           entries:
           - title: Maintain a VCenter-installed Console Local
-            url: /task-agent-vm-config.html
+            url: /task-console-local-vm-config.html
           - title: Maintain a manually installed Console Local
-            url: /task-maintain-agents.html
+            url: /task-maintain-console-local.html
         - title: Update Console Local addressing and URIs
-          url: /task-update-agent-addressing.html
+          url: /task-update-console-local-addressing.html
         - title: Install a CA-signed certificate for web-console access
           url: /task-installing-https-cert.html
         - title: Configure Console Local to use a proxy server
           url: /task-configuring-proxy.html
         - title: Troubleshoot Console Local
-          url: /task-troubleshoot-agent.html
+          url: /task-troubleshoot-console-local.html
         - title: Upgrade Console Local
-          url: /task-upgrade-agent.html
+          url: /task-upgrade-console-local.html
         - title: Uninstall and remove Console Local
           url: /task-uninstall-agent.html
       - title: Identity and access management
