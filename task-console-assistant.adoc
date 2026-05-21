@@ -29,7 +29,7 @@ Use the assistant to complete these tasks, which provide the minimal set up for 
 link:task-adding-nss-accounts.html[Learn how to add an NSS account].
 * Connect to your storage estate by deploying a Console agent.
 +
-link:task-install-agent-on-prem.html[Learn how to install a Console agent on-premises.]
+link:task-install-agent-on-prem-ova.html[Learn how to install a Console agent on-premises.]
 * Manage a storage system by adding or discovering a cluster
 
 * Add a marketplace subscription or PAYGO license.

@@ -94,7 +94,7 @@ Organization admins create Console agents to manage storage systems and enable N
 
 +
 
-link:task-iam-associate-agents.html[Learn how to associate agents with fleets.]
+link:task-iam-manage-folders-fleets.html[Learn how to associate agents with fleets.]
 
 
 === Members and roles

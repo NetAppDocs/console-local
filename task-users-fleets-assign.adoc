@@ -17,7 +17,7 @@ Manage member access to folders and storage fleets in the NetApp Console Local. 
 .Required access roles
 You must have the Organization admin role to manage member access across all folders and fleets. Folder or fleet admins can manage member access only for folders and fleets that they administer. link:reference-iam-predefined-roles.html[Learn about access roles].
 
-NOTE: Create your folders and fleets before assigning user access. link:task-fleet-create.html[Learn how to create folders and storage fleets].
+NOTE: Create your folders and fleets before assigning user access. link:task-iam-manage-folders-fleets.html[Learn how to create folders and storage fleets].
 
 == Understand how folder and fleet access works
 

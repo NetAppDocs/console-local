@@ -1,0 +1,58 @@
+---
+sidebar: sidebar
+permalink: task-analyzer-volume-throughput-investigate.html
+keywords: throughput, IOPS, MBs, read write, workload demand, workload analyzer, netapp console local
+summary: "Investigate high throughput demand on a volume using the Workload Analyzer to understand IOPS and MB/s patterns and identify read/write imbalances."
+---
+= Investigate high throughput demand on a volume in NetApp Console Local
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+When a volume's workload is consuming more IOPS or throughput than expected, use the Workload Analyzer to examine demand patterns over time. The throughput analysis section shows IOPS and MB/s with an optional read, write, and other breakdown so you can identify what type of I/O is driving high demand and whether that demand is trending toward a QoS limit.
+
+.Steps
+
+. In the NetApp Console Local, navigate to *Workload Analyzer*.
++
+Alternatively, from the storage inventory, select a volume and click *Analyze*.
+
+. In the *Volume* field, search for and select the volume you want to investigate.
+
+. Set the *Time Range* to cover the period of high demand, then click *Analyze*.
+
+. Scroll to the *Throughput Analysis* section.
+
+. Open the *View* dropdown and select *Breakdown (RWO)*.
++
+The charts split into read, write, and other components for both IOPS and MB/s. This lets you determine whether demand is driven by read-heavy access patterns, write-heavy patterns, or a combination.
+
+. Use the component picker to enable or disable the metrics you want to examine:
++
+* *Read IOPS* and *Write IOPS* — operations per second by I/O direction
+* *Read MB/s* and *Write MB/s* — throughput in megabytes per second by I/O direction
+* *Other IOPS* and *Other MB/s* — metadata and other non-data operations
+* *QoS IOPS Limit* and *QoS MB/s Limit* — policy ceilings, shown only when a QoS policy is attached to the volume
+
+. Hover over a peak in the chart to see the exact values and percentage breakdown for each component at that point in time.
++
+The hover tooltip also shows the average I/O size (throughput divided by IOPS) for each category, which can indicate whether the workload is performing large sequential I/O or small random I/O.
+
+. Enable *Show Forecast* to project whether current throughput trends will reach the QoS IOPS or MB/s limit.
++
+If the forecast line is approaching a QoS limit line, the workload may be throttled in the near future.
+
+. If you want to see aggregate demand without the breakdown, open the *View* dropdown and select *Totals*.
++
+The totals view shows a single IOPS line and a single MB/s line, which is useful for a quick overall demand summary.
+
+.After you finish
+
+Use the throughput patterns you observe to guide your next steps:
+
+* If read IOPS are very high relative to write IOPS, consider whether read-ahead settings or caching can reduce the load on the volume.
+* If the workload is approaching or has reached the QoS IOPS or MB/s limit, see link:task-analyzer-volume-qos-throttling-identify.html[Identify QoS policy throttling on a volume] to confirm throttling and determine whether the limit needs adjustment.
+* If throughput is high and latency is also elevated, check the *Resource Utilization* section to determine whether the underlying node or aggregate is under contention. See link:task-analyzer-volume-resource-contention-identify.html[Identify resource contention affecting a volume].

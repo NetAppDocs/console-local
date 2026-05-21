@@ -96,21 +96,26 @@ sidebar:
             url: /concept-monitor-storage.html
           - title: Monitor fleet-wide health and performance
             url: /task-fleet-health-monitor.html
-          - title: Investigate volume issues with the Workload Analyzer
-            entries:
-            - title: Learn about the Workload Analyzer
-              url: /concept-workload-analyzer.html
-            - title: Investigate high latency on a volume
-              url: /task-analyzer-volume-latency-investigate.html
-            - title: Determine whether a volume is being throttled by QoS
-              url: /task-analyzer-volume-qos-throttling-identify.html
-            - title: Identify resource contention affecting a volume
-              url: /task-analyzer-volume-resource-contention-identify.html
-            - title: Forecast volume capacity and plan for growth
-              url: /task-analyzer-volume-capacity-forecast.html
-            - title: Correlate a configuration change with a volume issue
-              url: /task-analyzer-volume-config-change-correlate.html
-        
+        - title: Investigate volume issues with the Workload Analyzer
+          entries:
+          - title: Learn about the Workload Analyzer
+            url: /concept-workload-analyzer.html
+          - title: Investigate high latency on a volume
+            url: /task-analyzer-volume-latency-investigate.html
+          - title: Investigate high throughput demand on a volume
+            url: /task-analyzer-volume-throughput-investigate.html
+          - title: Determine whether a volume is being throttled by QoS
+            url: /task-analyzer-volume-qos-throttling-identify.html
+          - title: Identify resource contention affecting a volume
+            url: /task-analyzer-volume-resource-contention-identify.html
+          - title: Forecast volume capacity and plan for growth
+            url: /task-analyzer-volume-capacity-forecast.html
+          - title: Monitor snapshot reserve consumption
+            url: /task-analyzer-snapshot-reserve-monitor.html
+          - title: Correlate a configuration change with a volume issue
+            url: /task-analyzer-volume-config-change-correlate.html
+          - title: Workload Analyzer metrics reference
+            url: /reference-workload-analyzer-metrics.html
         - title: Manage alerts
           entries:
           - title: Learn about alerts
@@ -162,7 +167,7 @@ sidebar:
       - title: Audit NetApp Console Local actions
         entries:
         - title: Audit NetApp Console Local operations
-          url: /task-monitor-cm-operations.html
+          url: /task-audit-console-activity.html
       - title: Licenses and subscriptions
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
       - title: Maintain NetApp Console Local
@@ -189,40 +194,18 @@ sidebar:
             url: /task-iam-manage-folders-fleets.html
           - title: Associate resources to folders and fleets
             url: /task-iam-manage-resources.html
-          - title: Set up user authentication
-            entries:
-            - title: Integrate with Active Directory
-              url: /task-active-directory-integrate.html
-            - title: Enable multi-factor authentication
-              url: /task-mfa-enable.html
+          - title: Integrate with Active Directory
+            url: /task-iam-active-directory-integrate.html
+          - title: Enable multi-factor authentication
+            url: /task-mfa-enable.html
           - title: Add users to your Console organization
-            url: /task-iam-add-users.html
-          - title: Add users or service accounts
             url: /task-iam-manage-members-permissions.html
-          - title: Grant user access to fleets and data services
-            entries:
-            - title: Understand role-based access control (RBAC)
-              url: /concept-iam-rbac.html
-            - title: Manage user access
-              url: /task-iam-manage-roles.html
-            - title: Manage member security
-              url: /task-iam-user-security.html
-            - title: NetApp Console Local access roles
-              entries:
-              - title: NetApp Console Local access roles
-                url: /reference-iam-predefined-roles.html
-              - title: Platform roles
-                url: /reference-iam-platform-roles.html
-              - title: Application roles
-                entries:
-                - title: Operations support analyst
-                  url: /reference-iam-analyst-roles.html
-              - title: Storage roles
-                url: /reference-iam-storage-roles.html
-              - title: Data services roles
-                entries:
-                - title: Backup and Recovery roles
-                  url: /reference-iam-backup-rec-roles.html
+          - title: Understand role-based access control (RBAC)
+            url: /concept-iam-rbac.html
+          - title: Manage user access
+            url: /task-iam-manage-roles.html
+          - title: Manage member security
+            url: /task-iam-user-security.html
         - title: Identity and access API
           entries:
           - title: Organization and fleet IDs
@@ -237,18 +220,24 @@ sidebar:
         url: /task-enable-read-only-mode.html
     - title: Reference
       entries:
-      - title: Default agent configuration
-        url: /reference-agent-default-config.html
       - title: NetApp Console Local maintenance console
         entries:
         - title: Configuration checks
           url: /reference-agent-maint-console-config-checker.html
-        - title: Transparent proxy
-          url: /reference-agent-maint-console-proxy.html
       - title: Ports for the on-premises Console agent
         url: /reference-ports-on-prem.html
-      - title: Console network access
-        url: /reference-networking-saas-console.html
+      - title: Identity and access roles
+        entries:
+        - title: NetApp Console Local access roles
+          url: /reference-iam-predefined-roles.html
+        - title: Platform roles
+          url: /reference-iam-platform-roles.html
+        - title: Operations support analyst roles
+          url: /reference-iam-analyst-roles.html
+        - title: Storage roles
+          url: /reference-iam-storage-roles.html
+        - title: Backup and Recovery roles
+          url: /reference-iam-backup-rec-roles.html
     - title: Knowledge and support
       entries:
       - title: Register for support
