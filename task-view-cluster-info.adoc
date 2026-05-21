@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-view-cluster-info.html
 keywords: software contract, hardware contract, contracts, expiration date, expired, software contract
-summary: You can view contract details for each of your on-premises ONTAP clusters from the *Subscriptions and licenses* page.
+summary: You can view contract details for each of your on-premises ONTAP clusters from the Subscriptions and licenses page.
 ---
 
 = View cluster information and contract details
