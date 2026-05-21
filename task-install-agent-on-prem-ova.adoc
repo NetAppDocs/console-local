@@ -15,7 +15,7 @@ summary: If you are a VMWare user, you can use an OVA to install a Console agent
 [.lead]
 If you are a VMWare user, you can use an OVA to install a NetApp Console Local  in your VCenter. THe OVA download or URL is available through the NetApp Console Local.
 
-NOTE: When you install NetApp Console Local with your VCenter tools, you can use the VM web console to perform maintenance tasks. link:task-agent-vm-config.html[Learn more about the VM console for the agent.]
+NOTE: When you install NetApp Console Local with your VCenter tools, you can use the VM web console to perform maintenance tasks. link:task-console-local-vm-config.html[Learn more about the VM console for the agent.]
 
 
 == Prepare to install the NetApp Console Local 
@@ -124,7 +124,7 @@ b. Select *Actions* > *New VM from this template*
 The vSphere task bar shows the progress as the NetApp Console Local is deployed.
 . Power on the VM.
 
-NOTE: If the deployment fails, you can access the validation report and logs from the NetApp Console Local host. link:task-troubleshoot-agent.html#troubleshoot-installation[Learn how to troubleshoot installation issues.]
+NOTE: If the deployment fails, you can access the validation report and logs from the NetApp Console Local host. link:task-troubleshoot-console-local.html#troubleshoot-installation[Learn how to troubleshoot installation issues.]
 
 
 
