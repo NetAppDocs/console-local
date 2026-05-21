@@ -14,9 +14,12 @@ summary: "Project when a volume will reach capacity thresholds and plan for grow
 [.lead]
 Use the Workload Analyzer to review how a volume's capacity has consumed over time and project when it will reach warning or critical thresholds. You can also check whether snapshot consumption is trending toward overflowing its reserve.
 
+.Required role
+Storage admin or Super admin.
+
 .Steps
 
-. In the NetApp Console Local, navigate to *Workload Analyzer*.
+. In Console Local, navigate to *Workload Analyzer*.
 +
 Alternatively, from the storage inventory, select a volume and click *Analyze*.
 
