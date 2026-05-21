@@ -1,0 +1,229 @@
+---
+sidebar: sidebar
+permalink: reference-workload-analyzer-metrics.html
+keywords: workload analyzer, latency, delay center, throughput, IOPS, resource utilization, capacity, metrics, netapp console
+summary: "Reference for all metrics available in the Workload Analyzer, organized by analysis section."
+---
+= Workload Analyzer metrics reference for NetApp Console Local
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+The Workload Analyzer surfaces metrics across six sections. This page describes each metric, how it is rendered on the chart, and what it indicates about volume behavior.
+
+== Latency delay centers
+
+Latency delay centers are available in the *Latency Analysis* section when you select *By Contribution* from the View dropdown. Each delay center represents a distinct phase of the I/O path. Use these metrics to identify which part of the stack is contributing most to response time.
+
+[cols="20,40,40",options="header"]
+|===
+| Delay center | Description | Common causes of elevated values
+
+| Network
+| Time spent in the client-facing network stack between the initiator and the storage node.
+| Network congestion, NIC saturation, slow client connections, high round-trip latency on the network path.
+
+| Network Processing
+| Time spent processing the network protocol, such as NFS or SMB operation handling.
+| High protocol overhead, many small metadata operations, inefficient client access patterns.
+
+| Cluster Interconnect
+| Time spent on inter-node communication within the cluster.
+| Cross-node data access, HA partner reads, FlexGroup constituent I/O crossing node boundaries.
+
+| Data Processing
+| Time spent on inline data efficiency operations, including deduplication and compression.
+| Aggressive inline efficiency settings on a high-throughput workload; CPU resource pressure.
+
+| Volume Activation
+| Time spent activating volume resources before serving the I/O request.
+| Cold volume access after an idle period; metadata loading after a volume move.
+
+| Aggregate Ops
+| Time spent on aggregate-level disk operations, including RAID processing and media access.
+| Disk contention, high aggregate utilization, RAID reconstruction activity.
+
+| Cloud Latency
+| Time spent retrieving data from a cloud capacity tier via FabricPool.
+| Workload accessing cold data that has been tiered to object storage; high tiering recall rate.
+
+| Sync SnapMirror
+| Time spent waiting for synchronous SnapMirror to acknowledge a write on the destination.
+| High network latency to the SnapMirror destination, destination cluster under load.
+|===
+
+=== QoS reference lines in latency charts
+
+When a QoS policy is attached to the selected volume, two additional reference lines are available in the metric picker:
+
+[cols="20,80",options="header"]
+|===
+| Reference line | Description
+
+| QoS Limit Max
+| The maximum latency ceiling defined by the QoS policy. When the latency line approaches or touches this line, the workload is being throttled.
+
+| QoS Limit Min
+| The guaranteed minimum latency floor defined by the QoS policy. This line indicates the response time floor enforced for the workload.
+|===
+
+These lines are horizontal and are not included in the delay center breakdown on hover. They are reference thresholds, not contributors to latency.
+
+== Throughput components
+
+Throughput components are available in the *Throughput Analysis* section when you select *Breakdown (RWO)* from the View dropdown. Both IOPS and MB/s are shown simultaneously.
+
+[cols="20,40,40",options="header"]
+|===
+| Component | Description | Rendered as
+
+| Read IOPS
+| Read operations per second.
+| Stacked area on the IOPS chart.
+
+| Write IOPS
+| Write operations per second.
+| Stacked area on the IOPS chart.
+
+| Other IOPS
+| Metadata and other non-data operations per second.
+| Stacked area on the IOPS chart.
+
+| Read MB/s
+| Read throughput in megabytes per second.
+| Stacked area on the MB/s chart.
+
+| Write MB/s
+| Write throughput in megabytes per second.
+| Stacked area on the MB/s chart.
+
+| Other MB/s
+| Throughput from metadata and other non-data operations.
+| Stacked area on the MB/s chart.
+
+| QoS IOPS Limit
+| Maximum IOPS ceiling from the attached QoS policy. Only shown when a QoS policy is attached.
+| Horizontal reference line on the IOPS chart.
+
+| QoS MB/s Limit
+| Maximum throughput ceiling from the attached QoS policy. Only shown when a QoS policy is attached.
+| Horizontal reference line on the MB/s chart.
+|===
+
+The Read, Write, and Other components sum to the total IOPS or MB/s value. Hover over the chart to see each component's value, its percentage of the total, and the average I/O size (MB/s ÷ IOPS) per category.
+
+== Resource utilization metrics
+
+Resource utilization metrics are available in the *Resource Utilization* section. Each resource serving the volume is shown as an independent line. Resources do not stack.
+
+=== Node metrics
+
+[cols="25,75",options="header"]
+|===
+| Metric | Description
+
+| Node utilization
+| Composite utilization percentage for the node. Hover to see the CPU utilization, network utilization, and available headroom for each node.
+
+| CPU utilization
+| Percentage of node CPU capacity in use. Visible in the hover tooltip.
+
+| Network utilization
+| Percentage of node network capacity in use. Visible in the hover tooltip.
+
+| Headroom
+| Remaining node capacity available for additional workload. Visible in the hover tooltip.
+|===
+
+=== Aggregate metrics
+
+[cols="25,75",options="header"]
+|===
+| Metric | Description
+
+| Aggregate utilization
+| Disk busy percentage for the aggregate. Hover to see the disk busy value, number of volumes on the aggregate, and available headroom.
+
+| Disk busy
+| Percentage of time the aggregate's disks are actively servicing I/O. Visible in the hover tooltip.
+
+| Volume count
+| Number of volumes currently hosted on the aggregate. Visible in the hover tooltip.
+
+| Headroom
+| Remaining aggregate capacity available for additional workload. Visible in the hover tooltip.
+|===
+
+When a node or aggregate utilization line crosses the high-utilization warning threshold (displayed as a dashed reference line), other workloads on that resource may be competing with the selected volume for I/O capacity.
+
+== Capacity metrics
+
+=== Capacity View
+
+Capacity View metrics are available in the *Capacity Analysis* section when you select *Capacity View* from the View dropdown.
+
+[cols="25,75",options="header"]
+|===
+| Metric | Description
+
+| Physical Capacity
+| Space consumed on disk after storage efficiency operations. This is the bottom stacked area in the chart. Physical + Available always equals the total volume size.
+
+| Available Capacity
+| Free space remaining in the volume. This is the top stacked area in the chart. It decreases as Physical Capacity grows.
+
+| Storage Efficiency Ratio
+| Overall efficiency ratio (logical data ÷ physical data). Visible in the hover tooltip. Reflects savings from deduplication, compression, and compaction combined.
+
+| Deduplication savings
+| Space saved by removing duplicate data blocks. Visible in the hover tooltip.
+
+| Compression savings
+| Space saved by compressing data inline. Visible in the hover tooltip.
+
+| Compaction savings
+| Space saved by packing multiple small blocks into a single physical block. Visible in the hover tooltip.
+|===
+
+=== Snapshot View
+
+Snapshot View metrics are available when you select *Snapshot View* from the View dropdown.
+
+[cols="25,40,35",options="header"]
+|===
+| Metric | Description | Rendered as
+
+| Snapshot Reserve
+| Pre-allocated space reserved for snapshots, configured as a percentage of the volume size.
+| Horizontal reference line.
+
+| Snapshot Used Capacity
+| Actual space consumed by snapshot copies.
+| Area chart below the reserve line.
+|===
+
+Hover over the chart to see the snapshot reserve size, snapshot space used and its percentage of the reserve, total snapshot count, and the age of the oldest snapshot. When snapshot consumption exceeds the reserve, snapshots begin consuming space from the volume's data area.
+
+== Forecast behavior
+
+Each analysis section includes a *Show Forecast* toggle. When enabled, the analyzer projects future values beyond the current time based on the observed trend. The following behaviors apply across all sections:
+
+[cols="25,75",options="header"]
+|===
+| Aspect | Behavior
+
+| Projection window
+| Projects forward based on the selected time range. For a 2-hour view, the projection window is approximately 1 hour. For a 7-day view, the projection window extends several days.
+
+| Visual style
+| Forecast values are rendered as a dashed line. A vertical separator marks the boundary between actual data and projected values.
+
+| Threshold alerts
+| An insight message appears when the forecast indicates a warning or critical threshold will be breached, along with an estimated time to breach.
+
+| Trend basis
+| The projection uses the rate of change observed in the most recent portion of the selected time range. High volatility in recent data reduces forecast confidence.
+|===

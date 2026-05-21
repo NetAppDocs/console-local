@@ -22,12 +22,12 @@ After identifying a root cause, you can act directly from the analyzer. Where au
 
 == How to access the Workload Analyzer
 
-You can open the Workload Analyzer from two entry points:
+The Workload Analyzer has four entry points:
 
-* **From the inventory**: Select a volume and click *Analyze*. The analyzer opens with the volume pre-filled and a default time range of the last two hours.
-* **From the menu**: Navigate directly to the Workload Analyzer, search for a volume, set a time range, and click *Analyze*.
-
-When you navigate from an alert, the analyzer pre-fills the affected volume and sets the time range to the alert window, so you start your investigation in the right context.
+* *From the storage inventory*: Select a volume and click *Analyze*. The analyzer opens with the volume pre-filled and a default time range of the last two hours.
+* *From a volume detail page*: Click *Analyze* to open the analyzer pre-filled with the current volume and a default time range of the last two hours.
+* *From an alert detail page*: Click *Investigate with Analyzer*. The analyzer pre-fills the affected volume and sets the time range to the alert window, so you start your investigation in context without adjusting any settings.
+* *From the menu*: Navigate directly to the Workload Analyzer, search for a volume, set a time range, and click *Analyze*.
 
 == Analysis areas
 
