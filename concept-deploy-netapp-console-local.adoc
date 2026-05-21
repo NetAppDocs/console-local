@@ -5,7 +5,10 @@ keywords: deploy, install, vCenter, Linux, high availability, deployment options
 summary: "Learn about deployment options for NetApp Console Local, including vCenter and Linux installations."
 ---
 = Deploy NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

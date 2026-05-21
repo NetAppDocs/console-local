@@ -141,7 +141,7 @@ sidebar:
           - title: Remediate storage issues with guided steps
             url: /task-remediation-guided.html
       - title: View metrics on the NetApp Console Home page
-        url: /task-dashboard.html
+        url: /task-storage-dashboard.html
       - title: Use data services
         entries:
         - title: Learn about using data services
@@ -160,37 +160,35 @@ sidebar:
         url: /task-console-organization-verify.html
       - title: Connect your LLM
         url: /task-llm-connect.html
-      - title: Integrate with your SIEM tools
-        url: /task-siem-integrate.html
+      - title: Configure notification delivery
+        url: /task-console-configure-notifications-delivery.html
       - title: Monitor NetApp Console health
         url: /task-system-health-monitor.html
       - title: Audit NetApp Console Local actions
         entries:
         - title: Audit NetApp Console Local operations
           url: /task-monitor-cm-operations.html
-        - title: Integrate with your SIEM tools
-          url: /task-siem-integrate.html
       - title: Licenses and subscriptions
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
       - title: Maintain NetApp Console Local
         entries:
-        - title: Maintain manually installed Console agents
+        - title: Maintain manually installed Console Local
           entries:
-          - title: Maintain a VCenter-installed agent
-            url: /task-agent-vm-config.html
-          - title: Maintain a manually installed agent
-            url: /task-maintain-agents.html
-        - title: Update agent addressing and URIs
-          url: /task-update-agent-addressing.html
+          - title: Maintain a VCenter-installed Console Local
+            url: /task-console-local-vm-config.html
+          - title: Maintain a manually installed Console Local
+            url: /task-maintain-console-local.html
+        - title: Update Console Local addressing and URIs
+          url: /task-update-console-local-addressing.html
         - title: Install a CA-signed certificate for web-console access
           url: /task-installing-https-cert.html
-        - title: Configure a Console agent to use a proxy server
+        - title: Configure Console Local to use a proxy server
           url: /task-configuring-proxy.html
-        - title: Troubleshoot the Console agent
-          url: /task-troubleshoot-agent.html
-        - title: Upgrade the Console agent
-          url: /task-upgrade-agent.html
-        - title: Uninstall and remove the Console agent
+        - title: Troubleshoot Console Local
+          url: /task-troubleshoot-console-local.html
+        - title: Upgrade Console Local
+          url: /task-upgrade-console-local.html
+        - title: Uninstall and remove Console Local
           url: /task-uninstall-agent.html
       - title: Identity and access management
         entries:

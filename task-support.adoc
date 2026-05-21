@@ -5,7 +5,10 @@ keywords: AutoSupport, ASUP, support, NetApp support, support cases, netapp cons
 summary: "Work with NetApp Support using AutoSupport messages and support cases."
 ---
 = Work with NetApp Support for NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

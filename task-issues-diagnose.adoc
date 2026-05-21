@@ -5,7 +5,10 @@ keywords: diagnose, troubleshoot, issues, errors, problems, netapp console local
 summary: "Diagnose and troubleshoot issues with NetApp Console Local."
 ---
 = Diagnose common issues with NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

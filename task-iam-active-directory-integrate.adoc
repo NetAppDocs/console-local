@@ -1,11 +1,14 @@
 ---
 sidebar: sidebar
-permalink: task-active-directory-integrate.html
+permalink: task-iam-active-directory-integrate.html
 keywords: Active Directory, LDAP, federation, user management, directory services, netapp console
 summary: "Integrate NetApp Console Local with Active Directory for centralized user management."
 ---
 = Integrate NetApp Console Local with Active Directory
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

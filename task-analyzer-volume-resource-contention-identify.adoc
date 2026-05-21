@@ -5,7 +5,10 @@ keywords: resource contention, node utilization, aggregate utilization, shared r
 summary: "Identify whether a volume's performance is degraded by contention on a shared node or aggregate using the Workload Analyzer."
 ---
 = Identify resource contention affecting a volume in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

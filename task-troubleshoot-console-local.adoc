@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-troubleshoot-agent.html
+permalink: task-troubleshoot-console-local.html
 keywords: troubleshoot, system id, system ID, autosupport, asup, troubleshoot connector, download failure, cloud volumes ontap download failure, agent
 summary: To troubleshoot issues with a Console agent, you can work with NetApp Support who might ask for your system ID, agent version, or the latest AutoSupport messages. You can also view the NetApp Knowledge Base to troubleshoot issues yourself.
 ---
@@ -63,8 +63,8 @@ Use one of the following commands to verify your Console agent. All services sho
 
 For more detailed information about accessing the Console agent diagnostics, see the following topics:
 
-* link:task-maintain-agents.html#connect-linux-host[Check the Console agent status (for Linux host deployments)]
-* link:task-agent-vm-config.html#connect-vcenter-host[Check the Console agent status (for VCenter deployments)]
+* link:task-maintain-console-local.html#connect-linux-host[Check the Console agent status (for Linux host deployments)]
+* link:task-console-local-vm-config.html#connect-vcenter-host[Check the Console agent status (for VCenter deployments)]
 ====
 
 Docker (for Ubuntu and VCenter deployments):: 

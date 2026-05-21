@@ -5,7 +5,10 @@ keywords: create fleet, create folder, storage fleet, new fleet, organize storag
 summary: "Create folders and storage fleets to organize your resources in NetApp Console Local."
 ---
 = Create folders and storage fleets in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

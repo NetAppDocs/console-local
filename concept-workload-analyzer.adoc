@@ -5,7 +5,10 @@ keywords: workload analyzer, volume analysis, latency, throughput, capacity, per
 summary: "Learn how the Workload Analyzer helps you investigate volume-level performance, capacity, and data protection issues."
 ---
 = Learn about the NetApp Console Local Workload Analyzer
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

@@ -5,7 +5,10 @@ keywords: manual provisioning, provision storage, create volume, netapp console
 summary: "Manually provision storage resources using NetApp Console Local."
 ---
 = Provision storage manually in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

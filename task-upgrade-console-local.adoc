@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-upgrade-agent.html
+permalink: task-upgrade-console-local.html
 keywords: upgrade, manual upgrade, agent upgrade, manual agent upgrade, upgrade agent manually, private mode upgrade, offline upgrade, upgrade private mode, connector upgrade, agent upgrade, vcenter upgrade, OVA upgrade, ISO upgrade, vsphere upgrade
 summary: The Console agent is automatically upgraded when it has outbound connectivity. If your Console agent does not have outbound connectivity, you can manually upgrade it. If your agent was deployed in vCenter, you can upgrade it using an ISO.
 ---

@@ -5,7 +5,10 @@ keywords: MFA, multi-factor authentication, two-factor, 2FA, security, netapp co
 summary: "Enable multi-factor authentication (MFA) for users in NetApp Console Local."
 ---
 = Enable MFA for users in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

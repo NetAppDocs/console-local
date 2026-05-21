@@ -5,7 +5,10 @@ keywords: install, vcenter, vmware, vcenter environment, deployment, netapp cons
 summary: "Install NetApp Console Local in your VMware vCenter environment."
 ---
 = Install NetApp Console Local in your vCenter environment
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

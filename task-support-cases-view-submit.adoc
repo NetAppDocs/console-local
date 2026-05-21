@@ -5,7 +5,10 @@ keywords: support cases, support ticket, NetApp support, open case, netapp conso
 summary: "View and submit support cases for NetApp Console Local through the NetApp Support site."
 ---
 = View and submit support cases for NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

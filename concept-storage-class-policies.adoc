@@ -5,7 +5,10 @@ keywords: storage class policies, policies, storage class, IOPS, capacity, secur
 summary: "Learn about the policies that serve as building blocks for storage classes in NetApp Console Local."
 ---
 = Learn about storage class policies in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

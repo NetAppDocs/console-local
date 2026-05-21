@@ -6,7 +6,10 @@ summary:
 ---
 
 = Legal notices
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 // Include the common notices

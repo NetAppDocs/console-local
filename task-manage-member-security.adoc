@@ -5,7 +5,10 @@ keywords: member security, password reset, MFA, multi-factor authentication, ser
 summary: "Manage member security settings in NetApp Console Local, including password resets, MFA management, and service account credentials."
 ---
 = Manage member security in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

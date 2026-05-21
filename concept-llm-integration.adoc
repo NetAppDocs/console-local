@@ -5,7 +5,10 @@ keywords: LLM, AI, artificial intelligence, AI-assisted management, large langua
 summary: "Learn how NetApp Console Local integrates with large language models to provide AI-assisted storage management capabilities."
 ---
 = Learn about LLM integration in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]

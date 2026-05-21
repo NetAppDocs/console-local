@@ -5,7 +5,10 @@ keywords: protection status, data protection, dashboard, backup, replication, ne
 summary: "Monitor the protection status of your data using the NetApp Console Local protection dashboard."
 ---
 = Monitor protection status in NetApp Console Local
+:hardbreaks:
+:nofooter:
 :icons: font
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]
