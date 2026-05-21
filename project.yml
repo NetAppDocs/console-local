@@ -172,23 +172,23 @@ sidebar:
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
       - title: Maintain NetApp Console Local
         entries:
-        - title: Maintain manually installed Console agents
+        - title: Maintain manually installed Console Local
           entries:
-          - title: Maintain a VCenter-installed agent
+          - title: Maintain a VCenter-installed Console Local
             url: /task-agent-vm-config.html
-          - title: Maintain a manually installed agent
+          - title: Maintain a manually installed Console Local
             url: /task-maintain-agents.html
-        - title: Update agent addressing and URIs
+        - title: Update Console Local addressing and URIs
           url: /task-update-agent-addressing.html
         - title: Install a CA-signed certificate for web-console access
           url: /task-installing-https-cert.html
-        - title: Configure a Console agent to use a proxy server
+        - title: Configure Console Local to use a proxy server
           url: /task-configuring-proxy.html
-        - title: Troubleshoot the Console agent
+        - title: Troubleshoot Console Local
           url: /task-troubleshoot-agent.html
-        - title: Upgrade the Console agent
+        - title: Upgrade Console Local
           url: /task-upgrade-agent.html
-        - title: Uninstall and remove the Console agent
+        - title: Uninstall and remove Console Local
           url: /task-uninstall-agent.html
       - title: Identity and access management
         entries:
