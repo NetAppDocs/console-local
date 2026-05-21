@@ -1,52 +1,68 @@
 indexpage:
   title: NetApp Console Local documentation
-  lead: Do cool things with NetApp Console Local.
+  lead: Manage, monitor, and protect your storage infrastructure with NetApp Console Local.
   summary: Use NetApp Console Local
   keywords: storage management, data protection, operational efficiency, cost optimization, business continuity, unified management,  self-hosted, high availability, LLM integration, role-based access control, storage provisioning
-  tiles: 
+  tiles:
     - title: Deploy NetApp Console Local
-      links: 
-        - title: Deploy in your VCenter environment
-          url: /task-install-vcenter.html
-        - title: Deploy on a Linux host
-          url: /task-install-linux-host.html
-        - title: Configure high-availability 
-          url: /task-deploy-high-availability.html
+      links:
+        - title: Learn about deploying Console Local
+          url: /concept-deploy-netapp-console-local.html
+        - title: Install Console Local in your vCenter environment
+          url: /task-install-agent-on-prem-ova.html
+        - title: Review port requirements
+          url: /reference-ports-on-prem.html
+        - title: Configure a proxy for Console Local
+          url: /task-configuring-proxy.html
+        - title: Discover your storage
+          url: /task-discover-storage.html
     - title: Maintain NetApp Console Local
-      links: 
-        - title: Monitor system health
-          url: /task-install-vcenter.html
-        - title: Integrate with SIEM tools
-          url: /task-install-linux-host.html
-        - title: Upgrade NetApp Console Local
-          url: /task-upgrade-netapp-console.html
-        - title: Troubleshoot NetApp Console Local
-          url: /task-troubleshoot-netapp-console.html
+      links:
+        - title: Upgrade the Console agent
+          url: /task-upgrade-console-local.html
+        - title: Maintain a vCenter-installed Console Local
+          url: /task-console-local-vm-config.html
+        - title: Manage AutoSupport messages
+          url: /task-autosupport-manage.html
+        - title: Audit NetApp Console Local operations
+          url: /task-audit-console-activity.html
+        - title: Troubleshoot Console Local
+          url: /task-troubleshoot-console-local.html
     - title: Set up NetApp Console Local
-      links: 
-        - title: Verify your Console Local organization
-          url: /task-verify-console-organization.html
-        - title: Configure AI management
-          url: /task-configure-ai-management.html
-        - title: Secure NetApp Console Local Access
-          url: /task-secure-console-access.html
-        - title: Manage storage fleets
-          url: /task-fleet-create.html
+      links:
+        - title: Get started with identity and access
+          url: /task-iam-get-started.html
+        - title: Create folders and fleets
+          url: /task-iam-manage-folders-fleets.html
+        - title: Add users to your Console organization
+          url: /task-iam-manage-members-permissions.html
+        - title: Integrate with Active Directory
+          url: /task-iam-active-directory-integrate.html
+        - title: Connect your LLM
+          url: /task-llm-connect.html
     - title: Manage storage with NetApp Console Local
-      links: 
-        - title: Use storage classes to standardize management
-          url: /task-use-storage-classes.html
-        - title: Provision storage
-          url: /task-provision-storage.html
-        - title: Manage storage lifecycle
+      links:
+        - title: Provision storage automatically
+          url: /task-provisioning-automated.html
+        - title: Create a storage class
+          url: /task-storage-class-create.html
+        - title: Monitor fleet-wide health and performance
+          url: /task-fleet-health-monitor.html
+        - title: Configure notification rules for alerts
+          url: /task-notifications-configure.html
+        - title: Investigate high latency on a volume
+          url: /task-analyzer-volume-latency-investigate.html
+        - title: Remediate storage issues automatically
+          url: /task-remediation-automated.html
     - title: Use NetApp Cyber Resilience data services
-      links: 
-        - title: Use data services
-          url: /concept-use-data-services.html
+      links:
+        - title: Learn about data services
+          url: /concept-data-services.html
         - title: Subscribe to data services
-          url: /task-subscribe-data-services.html
+          url: /task-data-services-subscribe.html
         - title: Grant access to data services
-          url: /task-grant-access-data-services.html
-        - title: Monitor protection status (new dashboard)
-          url: /task-monitor-protection-status.html
-    
+          url: /task-data-services-access-grant.html
+        - title: Monitor protection status
+          url: /task-protection-status-monitor.html
+  
+

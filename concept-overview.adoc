@@ -25,17 +25,6 @@ The Console works with Console agents that you deploy in your environment to man
 Start using NetApp Console by signing up for the SaaS application (standard mode), installing it in your cloud (restricted mode), or on your premises (private mode). Some features are unavailable in restricted or private mode.
 
 
-link:concept-modes.html[Learn more about deployment modes].
-
-==  Extend Console capabilities with Console agents
-
-Console agents are lightweight software components that provide connectivity to the NetApp Console SaaS application and cloud-based APIs, enabling advanced features and data services.
-
-In restricted or private mode, install a Console agent in your cloud or on-premises environment to access the NetApp Console application. You need to deploy additional agents to support features that require direct connectivity to NetApp Console and its APIs.
-
-
-link:concept-agents.html[Learn more about Console agents].
-
 == Manage user access and permissions in NetApp Console
 
 The Console provides identity and access management (IAM) to improve security and control across your data infrastructure. Organize your storage and data services around organizational roles and responsibilities to reduce the risk of unauthorized access while maintaining operational efficiency:
@@ -109,16 +98,6 @@ Use built-in data services to protect critical data and optimize storage efficie
 NetApp Backup and Recovery::
 Back up and restore cloud and on-premises data. Requires subscription.
 
-NetApp Copy and Sync::
-Sync data between on-premises and cloud data stores.
-
-
-NetApp Replication::
-Replicate data between storage systems to support backup and disaster recovery.
-
-
-Automation hub::
-Use scripted solutions to automate the setup and connection of NetApp products and services for smoother and more consistent operations.
 
 
 NetApp Data Classification::
@@ -130,5 +109,5 @@ Get your application data and cloud environments privacy ready for compliance wi
 
 === NetApp Console cost
 
-NetApp does not charge for the Console. You incur costs when you deploy Console agents or use Restricted mode in the cloud. Some NetApp data services also have associated costs.
+NetApp does not charge for the Console. You incur costs when you deploy Console agents or use Restricted mode in the cloud. Although some NetApp data services have associated costs.
 https://bluexp.netapp.com/pricing[Learn about NetApp data services pricing^]

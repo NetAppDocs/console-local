@@ -199,8 +199,6 @@ sidebar:
           - title: Enable multi-factor authentication
             url: /task-mfa-enable.html
           - title: Add users to your Console organization
-            url: /task-users-add.html
-          - title: Add users or service accounts
             url: /task-iam-manage-members-permissions.html
           - title: Understand role-based access control (RBAC)
             url: /concept-iam-rbac.html

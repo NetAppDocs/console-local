@@ -30,6 +30,8 @@ Forward audit records to your centralized SIEM platform so your security operati
 
 link:task-siem-integrate.html[Integrate NetApp Console Local with your SIEM tools]
 
+////
+
 === System health monitoring
 
 Monitor the health of all NetApp Console Local components to ensure the platform is operating correctly. Identify issues before they affect your ability to manage storage.
@@ -42,6 +44,7 @@ Upgrade NetApp Console Local to the latest version for new features, security fi
 
 link:task-console-upgrade.html[Upgrade NetApp Console Local]
 
+
 === Troubleshooting
 
 When issues arise, use built-in diagnostic tools and log analysis to identify and resolve problems.
@@ -49,3 +52,5 @@ When issues arise, use built-in diagnostic tools and log analysis to identify an
 * link:task-troubleshoot-console-local.html[Diagnose common issues with NetApp Console Local]
 * link:task-troubleshoot-console-local.html[Use NetApp Console Local diagnostic tools]
 * link:task-support.html[Work with NetApp Support]
+
+////
