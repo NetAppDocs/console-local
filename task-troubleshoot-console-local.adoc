@@ -5,7 +5,7 @@ keywords: troubleshoot, system id, system ID, autosupport, asup, troubleshoot co
 summary: To troubleshoot issues with a Console agent, you can work with NetApp Support who might ask for your system ID, agent version, or the latest AutoSupport messages. You can also view the NetApp Knowledge Base to troubleshoot issues yourself.
 ---
 
-= Troubleshoot the Console agent
+= Troubleshoot NetApp Console Local
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: To troubleshoot issues with a Console agent, you can work with NetApp S
 :imagesdir: ./media/
 
 [.lead]
-To troubleshoot issues with a Console agent, you can verify issues yourself or work with NetApp Support who might ask for your system ID, agent version, or the latest AutoSupport messages. 
+To troubleshoot issues with NetApp Console Local, you can verify issues yourself or work with NetApp Support who might ask for your system ID, agent version, or the latest AutoSupport messages. 
 
 If you have a NetApp Support Site account, you can also view the link:https://kb.netapp.com/Cloud/BlueXP[NetApp Knowledge Base.]
 
@@ -25,7 +25,7 @@ This table lists common error messages and shows how to fix them:
 |===
 | Error message | Explanation | What to do
 
-a|Unable to load the Console agent UI
+a|Unable to load the Console Local UI
 a|Agent installation has failed
 a|
 * Verify that the Service Manager service is active.
@@ -33,10 +33,10 @@ a|
 * Ensure your firewall allows access to the service at port 8888.
 * If you still have problems, contact support.
 
-a|Cannot access the NetApp agent UI
+a|Cannot access the NetApp Console Local UI
 a|This message appears when trying to access the IP address of an agent. The agent can fail to initialize if it doesn't have the correct network access or if it is unstable.
 a|
-* Connect to the Console agent.
+* Connect to the Console Local agent.
 * Verify that the Service Manager service
 * Verify that the agent has the network access it needs. link:reference-networking-saas-console.html[Learn more about required network access endpoints.]
 
@@ -93,7 +93,6 @@ link:reference-networking-saas-console.html[Learn more about required network ac
 
 During installation, NetApp checks that the agent host has at least 80 percent of total disk space available, which includes 48 GB in `/opt` and 32 GB in `/var` (80 GB total). After installation, it requires at least 20 percent of total disk to remain available, which includes 12 GB in `/opt` and 8 GB in `/var` (20 GB total).
 
-link:reference-networking-saas-console.html[Learn more about required network access points.]
 
 You can also run validation checks using the agent maintenance console. link:reference-agent-maint-console-config-checker.html[Learn more about using the config-checker validate command.]
 
