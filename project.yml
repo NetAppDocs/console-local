@@ -152,8 +152,6 @@ sidebar:
           url: /task-data-services-subscribe.html
         - title: Grant access to data services
           url: /task-data-services-access-grant.html
-        - title: Monitor protection status
-          url: /task-protection-status-monitor.html
     - title: Administer and monitor
       entries:
       - title: Administration overview
@@ -200,22 +198,33 @@ sidebar:
             url: /task-mfa-enable.html
           - title: Add users to your Console organization
             url: /task-iam-manage-members-permissions.html
-          - title: Understand role-based access control (RBAC)
-            url: /concept-iam-rbac.html
-          - title: Manage user access
-            url: /task-iam-manage-roles.html
-          - title: Manage member security
-            url: /task-iam-user-security.html
-        - title: Identity and access API
-          entries:
-          - title: Organization and fleet IDs
-            url: /task-iam-rename-organization.html
-          - title: Identity and access management API reference
-            url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
-    - title: Security and compliance
-      entries:
-      - title: Enforce ONTAP permissions in NetApp Console
-        url: /task-ontap-access-agent.html
+          - title: Manage user access and security
+            entries:
+            - title: Understand role-based access control (RBAC)
+              url: /concept-iam-rbac.html
+            - title: Manager user access
+              url: /task-iam-manage-roles.html
+            - title: Manage member security
+              url: /task-iam-user-security.html
+          - title: Identity and access roles
+            entries:
+            - title: NetApp Console Local access roles
+              url: /reference-iam-predefined-roles.html
+            - title: Platform roles
+              url: /reference-iam-platform-roles.html
+            - title: Operations support analyst roles
+              url: /reference-iam-analyst-roles.html
+            - title: Storage roles
+              url: /reference-iam-storage-roles.html
+            - title: Backup and Recovery roles
+              url: /reference-iam-backup-rec-roles.html
+          - title: Identity and access API
+            entries:
+            - title: Organization and fleet IDs
+              url: /task-iam-rename-organization.html
+            - title: Identity and access management API reference
+              url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
+
     - title: Reference
       entries:
       - title: NetApp Console Local maintenance console
@@ -224,18 +233,6 @@ sidebar:
           url: /reference-agent-maint-console-config-checker.html
       - title: Ports for the on-premises Console agent
         url: /reference-ports-on-prem.html
-      - title: Identity and access roles
-        entries:
-        - title: NetApp Console Local access roles
-          url: /reference-iam-predefined-roles.html
-        - title: Platform roles
-          url: /reference-iam-platform-roles.html
-        - title: Operations support analyst roles
-          url: /reference-iam-analyst-roles.html
-        - title: Storage roles
-          url: /reference-iam-storage-roles.html
-        - title: Backup and Recovery roles
-          url: /reference-iam-backup-rec-roles.html
     - title: Knowledge and support
       entries:
       - title: Register for support
