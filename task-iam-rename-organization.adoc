@@ -57,7 +57,7 @@ The fleet ID displays.
 
 . To copy the ID, select the copy button.
 +
-image:screenshot-iam-fleet-id.png[A screenshot of the folders and fleets table that shows the fleet ID after selecting the action menu for a fleet.]
+image:screenshot-iam-project-id.png[A screenshot of the folders and fleets table that shows the fleet ID after selecting the action menu for a fleet.]
 
 .Related information
 

@@ -24,5 +24,5 @@ NOTE: You can't switch to another fleet while you are viewing any of the *Identi
 
 . Browse through the fleets in your organization, select the fleet that you want, and then select *Switch*.
 +
-image:screenshot-iam-switch-fleets-select.png[A screenshot of the Scope menu where you can select a new fleet.]
+image:screenshot-iam-switch-projects-select.png[A screenshot of the Scope menu where you can select a new fleet.]
 
