@@ -39,9 +39,7 @@ sidebar:
       - title: Installation overview for NetApp Console Local
         url: /concept-deploy-netapp-console-local.html
       - title: Install NetApp Console Local
-        entries:
-        - title: Install in your vCenter environment
-          url: /task-install-agent-on-prem-ova.html
+        url: /task-install-agent-on-prem-ova.html
       - title: Subscribe to data services
         url: /task-data-services-subscribe.html
       - title: Associate NetApp Support accounts
@@ -126,14 +124,8 @@ sidebar:
             url: /task-alerts-investigate.html
           - title: Monitor systems health by cluster
             url: /task-alerts-systems-health-monitor.html
-          - title: Filter and search alerts
-            url: /task-alerts-filter-search.html
-          - title: Export alerts to CSV
-            url: /task-alerts-export-csv.html
           - title: Configure notification rules for alerts
             url: /task-notifications-configure.html
-          - title: Enable or disable an alert rule
-            url: /task-alerts-enable-disable.html
           - title: Alerts catalog
             url: /reference-alerts-catalog.html
         - title: Remediate storage issues
@@ -152,14 +144,10 @@ sidebar:
           url: /task-data-services-subscribe.html
         - title: Grant access to data services
           url: /task-data-services-access-grant.html
-        - title: Monitor protection status
-          url: /task-protection-status-monitor.html
     - title: Administer and monitor
       entries:
       - title: Administration overview
         url: /concept-administer-netapp-console-local.html
-      - title: Verify your Console Local organization
-        url: /task-console-organization-verify.html
       - title: Connect your LLM
         url: /task-llm-connect.html
       - title: Configure notification delivery
@@ -172,10 +160,8 @@ sidebar:
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
       - title: Maintain NetApp Console Local
         entries:
-        - title: Maintain manually installed Console Local
-          entries:
-          - title: Maintain a VCenter-installed Console Local
-            url: /task-console-local-vm-config.html
+        - title: Maintain the NetApp Console Local VM
+          url: /task-console-local-vm-config.html
         - title: Update Console Local addressing and URIs
           url: /task-update-console-local-addressing.html
         - title: Troubleshoot Console Local
@@ -194,30 +180,39 @@ sidebar:
             url: /task-iam-manage-folders-fleets.html
           - title: Associate resources to folders and fleets
             url: /task-iam-manage-resources.html
+        - title: Add users to your Console organization
+          entries: 
           - title: Integrate with Active Directory
             url: /task-iam-active-directory-integrate.html
-          - title: Enable multi-factor authentication
-            url: /task-mfa-enable.html
-          - title: Add users to your Console organization
+          - title: Add users and manage their permissions
             url: /task-iam-manage-members-permissions.html
+        - title: Manage user access and security
+          entries:
           - title: Understand role-based access control (RBAC)
             url: /concept-iam-rbac.html
-          - title: Manage user access
+          - title: Manager user access
             url: /task-iam-manage-roles.html
           - title: Manage member security
             url: /task-iam-user-security.html
+        - title: Identity and access roles
+          entries:
+          - title: NetApp Console Local access roles
+            url: /reference-iam-predefined-roles.html
+          - title: Platform roles
+            url: /reference-iam-platform-roles.html
+          - title: Operations support analyst roles
+            url: /reference-iam-analyst-roles.html
+          - title: Storage roles
+            url: /reference-iam-storage-roles.html
+          - title: Backup and Recovery roles
+            url: /reference-iam-backup-rec-roles.html
         - title: Identity and access API
           entries:
           - title: Organization and fleet IDs
             url: /task-iam-rename-organization.html
           - title: Identity and access management API reference
             url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
-    - title: Security and compliance
-      entries:
-      - title: Enforce ONTAP permissions in NetApp Console
-        url: /task-ontap-access-agent.html
-      - title: Enable read-only mode for an organization
-        url: /task-enable-read-only-mode.html
+
     - title: Reference
       entries:
       - title: NetApp Console Local maintenance console
@@ -226,18 +221,6 @@ sidebar:
           url: /reference-agent-maint-console-config-checker.html
       - title: Ports for the on-premises Console agent
         url: /reference-ports-on-prem.html
-      - title: Identity and access roles
-        entries:
-        - title: NetApp Console Local access roles
-          url: /reference-iam-predefined-roles.html
-        - title: Platform roles
-          url: /reference-iam-platform-roles.html
-        - title: Operations support analyst roles
-          url: /reference-iam-analyst-roles.html
-        - title: Storage roles
-          url: /reference-iam-storage-roles.html
-        - title: Backup and Recovery roles
-          url: /reference-iam-backup-rec-roles.html
     - title: Knowledge and support
       entries:
       - title: Register for support

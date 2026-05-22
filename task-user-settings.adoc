@@ -31,19 +31,6 @@ You can change your Console display name, which identifies you to other users. Y
 
 . Enter your new display name in the *Name* field.
 
-== Elevate your role in read-only mode
-In some cases, your Organization admin may put your organization into read-only mode. If you have an admin role, you must elevate permissions to make changes. This ensures changes are intentional and authorized.
-
-After elevating your role, you can make changes in the Console until your current session expires. 
-
-When you're finished, either log out of the Console or move the slider back to return to read-only mode. The system removes your elevated permissions when your session expires.
-
-.Steps
-. Select the profile icon in the upper right corner of the Console to view the User settings panel.
-
-. For *Read-only mode status*, move the slider to the *Elevated* position and confirm the changes.
-+
-image:screenshot-user-elevated.png[A screenshot that shows the Read-only mode slider in the Elevated position.]
 
 
 [[task-user-mfa]]

@@ -40,8 +40,8 @@ After authenticating users, control what they can do inside NetApp Console Local
 Use role-based access control to define what each user can see and manage. Assign users to specific fleets so they only access the storage resources relevant to their responsibilities.
 
 * link:concept-identity-and-access-management.html[Learn about NetApp Console Local identity and access management]
-* link:concept-rbac.html[Learn about NetApp Console Local role-based access control]
-* link:task-iam-manage-members-permission.html[Add users to NetApp Console Local]
+* link:concept-iam-rbac.html[Learn about NetApp Console Local role-based access control]
+* link:task-iam-manage-members-permissions.html[Add users to NetApp Console Local]
 * link:task-users-fleets-assign.html[Assign users to fleets in NetApp Console Local]
 
 === Audit logging

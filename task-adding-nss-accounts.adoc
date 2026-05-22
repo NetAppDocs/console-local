@@ -6,6 +6,11 @@ summary: Associate a NetApp Support Site account with your NetApp Console organi
 ---
 
 = Manage NSS credentials associated with NetApp Console
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
 
 
 [.lead]
@@ -74,7 +79,7 @@ Users can now select the account when creating new Cloud Volumes ONTAP systems a
 
 == Update NSS credentials
 
-For security reasons, you must update your NSS credentials every 90 days. You'll be notified in the Console notification center if your NSS credential has expired. link:task-monitor-cm-operations.html#notification-center[Learn about the Notification Center^]. 
+For security reasons, you must update your NSS credentials every 90 days. You'll be notified in the Console notification center if your NSS credential has expired. link:task-console-configure-notifications-delivery.html[Learn about configuring notifications^]. 
 
 Expired credentials can disrupt the following, but are not limited to:
 

@@ -24,13 +24,14 @@ Connect NetApp Console Local to a large language model to enable AI-assisted sto
 
 link:task-llm-connect.html[Connect your LLM to NetApp Console Local]
 
+////
+
 === Security event integration
 
 Forward audit records to your centralized SIEM platform so your security operations team can correlate NetApp Console Local activity with other system events, trigger alerts on suspicious patterns, and retain logs according to your organization's policies.
 
 link:task-siem-integrate.html[Integrate NetApp Console Local with your SIEM tools]
 
-////
 
 === System health monitoring
 

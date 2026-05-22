@@ -12,7 +12,7 @@ summary: "Learn about deployment options for NetApp Console Local, including vCe
 :imagesdir: ./media/
 
 [.lead]
-NetApp Console Local can be deployed in your on-premises environment using either a VMware vCenter appliance or a Linux host installation. After installation, you can optionally deploy a high-availability configuration for resilience.
+NetApp Console Local can be deployed in your on-premises environment using either a VMware vCenter appliance.
 
 == Deployment options
 
@@ -29,6 +29,5 @@ link:task-install-agent-on-prem-ova.html[Install NetApp Console Local in your vC
 
 After deployment, complete the following tasks to get started:
 
-* link:task-console-organization-verify.html[Verify your NetApp Console Local organization]
 * link:task-storage-discover.html[Discover storage in NetApp Console Local]
-* link:task-iam-manage-members-permission.html[Add users to NetApp Console Local]
+* link:task-iam-manage-members-permissions.html[Add users to NetApp Console Local]

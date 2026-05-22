@@ -54,7 +54,7 @@ Members of your organization are user accounts or service accounts. A service ac
 +
 Add members to your organization after they sign up for the NetApp Console Local. After you add them, assign roles to provide access to resources.
 +
-link:task-iam-manage-members-permission.html[Learn how to add members to your organization].
+link:task-iam-manage-members-permissions.html[Learn how to add members to your organization].
 
 Access roles::
 The Console Local provides access roles that you can assign to the members of your organization.
