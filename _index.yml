@@ -4,6 +4,16 @@ indexpage:
   summary: Use NetApp Console Local
   keywords: storage management, data protection, operational efficiency, cost optimization, business continuity, unified management,  self-hosted, high availability, LLM integration, role-based access control, storage provisioning
   tiles:
+    - title: Learn about NetApp Console Local
+      links:
+        - title: What is NetApp Console Local?
+          url: /concept-netapp-console-local.html
+        - title: Learn about identity and access management
+          url: /concept-identity-and-access-management.html
+        - title: Learn about managing storage with NetApp Console Local 
+          url: /concept-manage-storage.html
+        - title: Learn about NetApp Console Local data services
+          url: /concept-data-services.html
     - title: Deploy NetApp Console Local
       links:
         - title: Learn about deploying Console Local

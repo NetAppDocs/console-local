@@ -51,7 +51,6 @@ The following table lists the storage management features, data services, and ad
 
 | Product area
 | NetApp service or feature
-| Console agent required
 
 
 .2+| *Storage systems management*
@@ -102,12 +101,11 @@ https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-manage
 
 === Private mode installed on-premises
 
-[cols=3*,options="header,autowidth"]
+[cols=2*,options="header,autowidth"]
 |===
 
 | Product area
 | NetApp service or feature
-| Console agent required
 
 
 .1+| *Storage systems management*
@@ -121,7 +119,7 @@ a| On-premises ONTAP clusters
 +
 You must have an installed Console agent to discover on-premises ONTAP clusters. | You can use direct discovery without a Console agent, but you need an agent to use management features.
 
-.3+| *Data Services*
+.2+| *Data Services*
 
 a| Backup and Recovery
 
@@ -144,12 +142,10 @@ a| NetApp Classification
 
 
 .6+| *Administrative features*
-| Audit | No
 a| Licenses and subscriptions management 
 
-* Only BYOL is supported with private mode. |No
-| Identity and access management | No
-| Read-only mode | No
+* Only BYOL is supported with NetApp Console Local. | 
+| Identity and access management | 
 
 
 |===
