@@ -31,4 +31,4 @@ After deployment, complete the following tasks to get started:
 
 * link:task-console-organization-verify.html[Verify your NetApp Console Local organization]
 * link:task-storage-discover.html[Discover storage in NetApp Console Local]
-* link:task-iam-manage-members-permission.html[Add users to NetApp Console Local]
+* link:task-iam-manage-members-permissions.html[Add users to NetApp Console Local]
