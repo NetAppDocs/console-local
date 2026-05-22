@@ -15,17 +15,17 @@ summary: If you are a VMWare user, you can use an OVA to install a Console agent
 [.lead]
 If you are a VMWare user, you can use an OVA to install a NetApp Console Local in your VCenter. THe OVA download or URL is available through the NetApp Console Local.
 
-NOTE: When you install NetApp Console Local with your VCenter tools, you can use the VM web console to perform maintenance tasks. link:task-console-local-vm-config.html[Learn more about the VM console for the agent.]
+NOTE: When you install NetApp Console Local with your VCenter tools, you can use the VM web console to perform maintenance tasks. link:task-console-local-vm-config.html[Learn more about the VM console for the NetApp Console Local.]
 
-== Prepare to install the NetApp Console Local 
+== Prepare to install  NetApp Console Local 
 Before installation, make sure your VM host meets the requirements and the NetApp Console Local can access the internet and targeted networks. To use NetApp data services or Cloud Volumes ONTAP, create cloud provider credentials for the NetApp Console Local to perform actions on your behalf.
 
 === Review NetApp Console Local host requirements
 
-Make sure your host machine meets installation requirements before installing the NetApp Console Local.
+Make sure your host machine meets installation requirements before installing NetApp Console Local.
 
 
-NOTE: Install the NetApp Console Local in a vCenter environment rather than directly on an ESXi host. 
+NOTE: Install NetApp Console Local in a vCenter environment rather than directly on an ESXi host. 
 
 
 
@@ -99,7 +99,7 @@ b. Select *Actions* > *New VM from this template*
 ** If you selected transparent proxy, upload the respective certificate.
 * *Virtual Machine Configuration*
 ** *Skip config check*: This check box is unchecked by default which means the NetApp Console Local runs a configuration check to validate network access. 
-*** NetApp recommends leaving this box unchecked so that the installation includes a configuration check of the NetApp Console Local. The Configuration check validates that the NetApp Console Local has network access to the required endpoints. If it deployment fails because of connectivity issues, you can access the validation report and logs from the NetApp Console Local host. In some cases, if you are confident that the NetApp Console Local has network access, you can choose to skip the check. For example, if you are still using the link:reference-networking-saas-console-previous.html[previous endpoints] used for NetApp Console Local upgrades, the validation fails with an error. To avoid this, mark the check box to install without a validation check.  link:reference-networking-saas-console-previous.html#update-endpoint-list[Learn how to update your endpoint list].
+*** NetApp recommends leaving this box unchecked so that the installation includes a configuration check of the NetApp Console Local. The Configuration check validates that the NetApp Console Local has network access to the required endpoints. If it deployment fails because of connectivity issues, you can access the validation report and logs from the NetApp Console Local host. In some cases, if you are confident that the NetApp Console Local has network access, you can choose to skip the check.
 
 
 

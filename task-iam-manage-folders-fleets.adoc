@@ -135,7 +135,7 @@ View which resources and members are associated with a folder or fleet.
 
 . From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit fleet*.
 +
-image:screenshot-iam-edit-[project].png[A screenshot of the Organization page that shows the Edit fleet option when selecting the action menu for a fleet in the table.]
+image:screenshot-iam-edit-project.png[A screenshot of the Organization page that shows the Edit fleet option when selecting the action menu for a fleet in the table.]
 
 . On the *Edit* page, you can view details about the selected folder or fleet by expanding the *Resources* or *Access* sections.
 +
