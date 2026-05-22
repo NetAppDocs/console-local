@@ -210,12 +210,12 @@ sidebar:
             url: /reference-iam-storage-roles.html
           - title: Backup and Recovery roles
             url: /reference-iam-backup-rec-roles.html
-          - title: Identity and access API
-            entries:
-            - title: Organization and fleet IDs
-              url: /task-iam-rename-organization.html
-            - title: Identity and access management API reference
-              url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
+        - title: Identity and access API
+          entries:
+          - title: Organization and fleet IDs
+            url: /task-iam-rename-organization.html
+          - title: Identity and access management API reference
+            url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
 
     - title: Reference
       entries:
