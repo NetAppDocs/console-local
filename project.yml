@@ -126,10 +126,6 @@ sidebar:
             url: /task-alerts-investigate.html
           - title: Monitor systems health by cluster
             url: /task-alerts-systems-health-monitor.html
-          - title: Filter and search alerts
-            url: /task-alerts-filter-search.html
-          - title: Export alerts to CSV
-            url: /task-alerts-export-csv.html
           - title: Configure notification rules for alerts
             url: /task-notifications-configure.html
           - title: Alerts catalog

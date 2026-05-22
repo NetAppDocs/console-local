@@ -20,6 +20,8 @@ NOTE: Stub page. Content to be developed.
 
 You must have permission to view alerts for the organization or fleet.
 
+== View ONTAP alerts
+
 .Steps
 
 . From the left navigation, select *Alerts*.
@@ -36,3 +38,33 @@ You must have permission to view alerts for the organization or fleet.
 * Alert count distribution over the past 24 hours
 
 . Select the *Alerts* tab to see the full list of active alerts.
+
+== Filter alerts
+
+Search and filter alerts in the NetApp Console Local to narrow the alerts table to the alerts you care about. You can search by alert name, description, resource, severity, or impact area, and you can apply filters for severity and impact area.
+
+NOTE: Stub page. Content to be developed.
+
+.Steps
+
+. From the left navigation, select *Alerts* and then select the *Alerts* tab.
+. To search, enter text in the search field above the alerts table.
+. To filter, select one or more values for:
++
+* *Severity*
+* *Impact area*
+
+. To clear filters, select *Clear all*.
+
+== Export alerts to CSV
+
+Export the alerts list in the NetApp Console Local to a CSV file for offline analysis or reporting. The export reflects the current scope (organization or fleet), search text, and filters.
+
+NOTE: Stub page. Content to be developed.
+
+.Steps
+
+. From the left navigation, select *Alerts* and then select the *Alerts* tab.
+. Set the scope (organization or fleet) and apply any filters or search text you want included in the export.
+. Select *Download CSV*.
+. Open the file from your browser's downloads location.
