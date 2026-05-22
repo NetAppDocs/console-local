@@ -132,8 +132,6 @@ sidebar:
             url: /task-alerts-export-csv.html
           - title: Configure notification rules for alerts
             url: /task-notifications-configure.html
-          - title: Enable or disable an alert rule
-            url: /task-alerts-enable-disable.html
           - title: Alerts catalog
             url: /reference-alerts-catalog.html
         - title: Remediate storage issues
@@ -156,8 +154,6 @@ sidebar:
       entries:
       - title: Administration overview
         url: /concept-administer-netapp-console-local.html
-      - title: Verify your Console Local organization
-        url: /task-console-organization-verify.html
       - title: Connect your LLM
         url: /task-llm-connect.html
       - title: Configure notification delivery
@@ -192,32 +188,32 @@ sidebar:
             url: /task-iam-manage-folders-fleets.html
           - title: Associate resources to folders and fleets
             url: /task-iam-manage-resources.html
+        - title: Add users to your Console organization
+          entries: 
           - title: Integrate with Active Directory
             url: /task-iam-active-directory-integrate.html
-          - title: Enable multi-factor authentication
-            url: /task-mfa-enable.html
-          - title: Add users to your Console organization
+          - title: Add users and manage their permissions
             url: /task-iam-manage-members-permissions.html
-          - title: Manage user access and security
-            entries:
-            - title: Understand role-based access control (RBAC)
-              url: /concept-iam-rbac.html
-            - title: Manager user access
-              url: /task-iam-manage-roles.html
-            - title: Manage member security
-              url: /task-iam-user-security.html
-          - title: Identity and access roles
-            entries:
-            - title: NetApp Console Local access roles
-              url: /reference-iam-predefined-roles.html
-            - title: Platform roles
-              url: /reference-iam-platform-roles.html
-            - title: Operations support analyst roles
-              url: /reference-iam-analyst-roles.html
-            - title: Storage roles
-              url: /reference-iam-storage-roles.html
-            - title: Backup and Recovery roles
-              url: /reference-iam-backup-rec-roles.html
+        - title: Manage user access and security
+          entries:
+          - title: Understand role-based access control (RBAC)
+            url: /concept-iam-rbac.html
+          - title: Manager user access
+            url: /task-iam-manage-roles.html
+          - title: Manage member security
+            url: /task-iam-user-security.html
+        - title: Identity and access roles
+          entries:
+          - title: NetApp Console Local access roles
+            url: /reference-iam-predefined-roles.html
+          - title: Platform roles
+            url: /reference-iam-platform-roles.html
+          - title: Operations support analyst roles
+            url: /reference-iam-analyst-roles.html
+          - title: Storage roles
+            url: /reference-iam-storage-roles.html
+          - title: Backup and Recovery roles
+            url: /reference-iam-backup-rec-roles.html
           - title: Identity and access API
             entries:
             - title: Organization and fleet IDs
