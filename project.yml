@@ -216,8 +216,6 @@ sidebar:
       entries:
       - title: Enforce ONTAP permissions in NetApp Console
         url: /task-ontap-access-agent.html
-      - title: Enable read-only mode for an organization
-        url: /task-enable-read-only-mode.html
     - title: Reference
       entries:
       - title: NetApp Console Local maintenance console

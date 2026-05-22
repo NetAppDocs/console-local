@@ -15,6 +15,8 @@ summary: "Configure the notifications delivery channels for NetApp Console Local
 [.lead]
 You can set up multiple channels for notifications. You can configure an email server so that notifications can be delivered via email and you can also use webhooks to send notifications directly to third-party applications. 
 
+By default notifications are sent through the Console Local's built-in notification system, which provides basic alerting capabilities. However, configuring additional delivery channels allows you to receive notifications in the way that best fits your workflow and ensures that you stay informed about important events and alerts related to your storage management activities.
+
 .Required role
 Super admin or organization admin.
 

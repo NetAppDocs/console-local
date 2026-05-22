@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: task-iam-switch-organizations-fleets.html
+permalink: task-iam-switch--fleets.html
 keywords: switch fleets, fleets, organizations, change, switch, change organizations, change fleets, iam, identity and access management, console, console local
 summary: If your organization includes multiple fleets and you have access to those fleets, you can switch between them at any time.
 ---
 
-= Switch between Console organizations, fleets, and agents
+= Switch between Console fleets
 :hardbreaks:
 :nofooter:
 :icons: font
