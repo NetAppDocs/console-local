@@ -12,6 +12,8 @@ summary: "Learn how storage alerts in NetApp Console Local help you monitor the 
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3316, SPSPM-3496
+
 Alerts in NetApp Console Local help you find and resolve issues in your on-premises ONTAP clusters. The alerting feature is part of fleet monitoring. You can view alerts for fleets you have permission to access or see all alerts across your organization.
 
 NOTE: This topic is a stub. Expand it based on the alerting functional specification.
@@ -29,6 +31,4 @@ NOTE: This topic is a stub. Expand it based on the alerting functional specifica
 
 On-premises ONTAP clusters raise alerts through the Harvest integration with NetApp Console Local.
 
-== Supported ONTAP platforms
 
-See the support matrix in the alerting documentation to find the ONTAP versions and platforms that the alerting feature supports.

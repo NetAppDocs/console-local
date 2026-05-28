@@ -13,9 +13,13 @@ summary: "Configure the notifications delivery channels for NetApp Console Local
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3316, SPSPM-3496
+
 You can set up multiple channels for notifications. You can configure an email server so that notifications can be delivered via email and you can also use webhooks to send notifications directly to third-party applications. 
 
 By default notifications are sent through the Console Local's built-in notification system, which provides basic alerting capabilities. However, configuring additional delivery channels allows you to receive notifications in the way that best fits your workflow and ensures that you stay informed about important events and alerts related to your storage management activities.
+
+Notifications include storage alerts, and system alerts,. You can choose to send all notifications through the same channels or use different channels for different types of notifications. For example, you might want to receive storage alerts through email but send audit logs to a third-party monitoring tool through a webhook.
 
 .Required role
 Super admin or organization admin.

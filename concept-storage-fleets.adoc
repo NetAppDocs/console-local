@@ -12,6 +12,8 @@ summary: "A storage fleet groups storage systems that you manage together in Net
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3302, SPSPM-3328, SPSPM-3497
+
 A storage fleet groups storage systems that you manage together in NetApp Console Local. Use folders to group related fleets. You can apply policies, grant access, and monitor health at the needed scope.
 
 == Why fleets matter

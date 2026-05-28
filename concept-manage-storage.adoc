@@ -12,6 +12,8 @@ summary: "Learn about managing storage in NetApp Console Local, including storag
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3309
+
 NetApp Console Local provides a structured approach to storage management: define standards with storage classes and policies, then provision storage manually, automatically, or through AI-assisted agentic workflows.
 
 == Define storage standards

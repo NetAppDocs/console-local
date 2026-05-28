@@ -12,4 +12,6 @@ summary: "Use AI-driven agentic provisioning to autonomously fulfill storage req
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3325, SPSPM-3304
+
 Use AI-driven agentic provisioning in the NetApp Console Local to autonomously interpret and fulfill storage requests through your connected LLM, reducing the need for manual configuration.

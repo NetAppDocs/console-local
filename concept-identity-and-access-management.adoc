@@ -13,6 +13,8 @@ summary: Use NetApp Console's Identity and Access Management (IAM) to structure 
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3302, SPSPM-3328
+
 Use NetApp Console's Identity and Access Management (IAM) to organize your NetApp resources and control access according to your business structure—by location, department, or fleet. 
 
 You organize resources in a hierarchy: the organization is at the top, then folders (which can have other folders or fleets), and then fleets, which have storage systems, workloads, and agents.

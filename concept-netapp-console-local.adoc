@@ -12,6 +12,8 @@ summary: "Learn about NetApp Console Local, a self-hosted storage management pla
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3319
+
 The NetApp Console Local is a self-hosted deployment option that lets you run the NetApp Console Local platform in your on-premises environment.
 
 NetApp Console Local delivers the unified storage management and automation capabilities such as provisioning, policy enforcement, drift detection, and remediation in an isolated deployment that keeps your data, metadata, and management traffic entirely within your own infrastructure. You get operational leverage without sacrificing the data sovereignty your organization requires.

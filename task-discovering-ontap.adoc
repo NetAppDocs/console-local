@@ -13,6 +13,8 @@ summary: Discover on-prem ONTAP clusters from the NetApp Console so that you can
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3497
+
 Discover on-premises ONTAP clusters from the NetApp Console so that you can start managing volumes and performing advanced management using ONTAP System Manager, directly from the Console.
 
 .Required Console role:

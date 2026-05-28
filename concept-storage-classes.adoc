@@ -12,6 +12,8 @@ summary: "Learn how storage classes in NetApp Console Local let you define and a
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3309, SPSPM-3328
+
 A storage class is a reusable template that defines how storage should behave. When you provision storage using a storage class, the NetApp Console Local enforces the standards encoded in that class automatically—without requiring administrators to make individual configuration decisions for every workload.
 
 == What a storage class is

@@ -12,6 +12,8 @@ summary: "Learn how NetApp Console Local integrates with large language models t
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3325, SPSPM-3304
+
 The NetApp Console Local can connect to a large language model (LLM) of your choice to provide AI-assisted storage management. Once connected, you can use natural language to provision storage, investigate alerts, and get answers to storage management questions—without leaving the Console Local.
 
 AI-assisted management allows you to describe what you need in plain language and have the Console Local act on it, guided by the storage policies your organization has already defined.

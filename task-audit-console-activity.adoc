@@ -13,6 +13,8 @@ summary: You can audit user activity (initiated from both the UI and API) from t
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3319
+
 You can audit user activity initiated from both the UI and API from the Audit page, and you can monitor the status of operations and the user who initiated them.
 
 You can view audit activity in the Console Local, download a CSV of the audit logs, or configure the audit logs to be sent to your own syslog server by using a webhook.

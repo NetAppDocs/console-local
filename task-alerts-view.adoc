@@ -12,6 +12,8 @@ summary: "View active alerts across your organization or for a specific fleet fr
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3316, SPSPM-3496
+
 View active alerts in the NetApp Console Local from the alerts overview page. By default, the page shows an organization-wide view; you can switch to a fleet-wide view to focus on alerts for a specific fleet.
 
 NOTE: Stub page. Content to be developed.

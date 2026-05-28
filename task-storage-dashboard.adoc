@@ -13,6 +13,8 @@ summary: Within the NetApp Console, you can view metrics on the Home page.
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3327
+
 Monitoring the health of your storage estate ensures that you are aware of issues with storage protection and can take steps to resolve them. Using the NetApp Console Home page, view a status of your backups and restores from NetApp Backup and Recovery and the number of workloads that are at risk for a ransomware attack or protected as indicated by NetApp Ransomware Resilience. You can review the storage capacity for individual clusters and Cloud Volumes ONTAP, ONTAP alerts, storage performance capacity per cluster or Cloud Volumes ONTAP system, the different types of licenses you have, and more.
 
 All panes on the Home page show data at the organization level. The Storage capacity and Storage performance panes show systems associated with fleets that the user can access based on IAM permissions.

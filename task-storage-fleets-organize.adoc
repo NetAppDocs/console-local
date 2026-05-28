@@ -12,6 +12,8 @@ summary: "Organize discovered storage systems into folders and fleets for simpli
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3497
+
 Organize discovered storage systems into fleets in the NetApp Console Local to group related resources and simplify management across your environment. You can also associate resources with folders so that a Folder or fleet admin can assign them to the appropriate fleets.
 
 == Associate a resource with a folder or fleet
