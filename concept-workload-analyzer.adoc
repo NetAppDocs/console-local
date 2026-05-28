@@ -16,25 +16,27 @@ The Workload Analyzer gives you a comprehensive view of a single volume's behavi
 
 == What the Workload Analyzer does
 
-The Workload Analyzer correlates metrics from a single volume across six analysis areas so you can identify root causes quickly. You select a volume and a time range, then the Console Local renders all analysis sections together so you can see how events, performance, and capacity relate to each other within the same window.
+The Workload Analyzer correlates metrics from a single volume across six analysis areas so you can identify root causes quickly. You select a volume and a time range, then Console local renders all analysis sections together so you can see how events, performance, and capacity relate to each other within the same window. This view can also help you determine whether storage is the likely source of an application issue or whether the cause is more likely in networking or another layer.
 
 After identifying a root cause, you can act directly from the analyzer. Where automated options are available, the Console Local surfaces Fix-It recommendations with guided steps or one-click remediation.
 
 == How to access the Workload Analyzer
 
-The Workload Analyzer has four entry points:
+The Workload Analyzer has multiple entry points:
 
 * *From the storage inventory*: Select a volume and click *Analyze*. The analyzer opens with the volume pre-filled and a default time range of the last two hours.
 * *From a volume detail page*: Click *Analyze* to open the analyzer pre-filled with the current volume and a default time range of the last two hours.
-* *From an alert detail page*: Click *Investigate with Analyzer*. The analyzer pre-fills the affected volume and sets the time range to the alert window, so you start your investigation in context without adjusting any settings.
+* *From an alert detail page*: Click *Investigate with Analyzer*. The analyzer pre-fills the affected volume and shows the last 10 days of data by default, so you start your investigation in context without adjusting any settings.
 * *From the menu*: Navigate directly to the Workload Analyzer, search for a volume, set a time range, and click *Analyze*.
+* *From other inventory views*: You can also start analysis from supported workload inventory pages, including LUN, NFS share, SMB/CIFS share, and related workload views.
+* *From the Virtual Machines page*: Select a datastore object and start workload analysis directly from that object.
 
 == Analysis areas
 
 The Workload Analyzer organizes its output into six sections:
 
 Event timeline::
-Shows configuration changes, warning alerts, and critical alerts for the selected volume during the analysis window. Use this section to correlate "what changed" with changes in performance or capacity behavior.
+Shows current and historical configuration changes, warning alerts, and critical alerts for the selected volume during the analysis window. Use this section to correlate "what changed" with changes in performance or capacity behavior.
 
 Latency analysis::
 Shows volume latency over time. You can view latency as a total or broken down by delay center—network, data processing, aggregate operations, cluster interconnect, and others. When a QoS policy is attached to the volume, the analyzer displays the policy's maximum and minimum latency limits as reference lines so you can see how close the workload is to being throttled. Toggle the forecast to project whether latency is trending toward a warning or critical threshold.
