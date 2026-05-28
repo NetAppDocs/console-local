@@ -4,7 +4,7 @@ permalink: concept-alerts.html
 keywords: alerts, alerting, fleet monitoring, severity, impact area, netapp console local
 summary: "Learn how storage alerts in NetApp Console Local help you monitor the health of your on-premises ONTAP clusters across your organization and fleets."
 ---
-= Learn about storage alerts in NetApp Console Local
+= Monitor and manage storage alerts in NetApp Console Local
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,9 +12,9 @@ summary: "Learn how storage alerts in NetApp Console Local help you monitor the 
 :imagesdir: ./media/
 
 [.lead]
-Alerts in NetApp Console Local help you identify and respond to issues across the on-premises ONTAP clusters in your organization. The alerting feature is part of the fleet monitoring experience and lets you view alerts on objects that belong to a fleet for which you have permission, or get an org-wide view across all fleets.
+Alerts in NetApp Console Local help you find and resolve issues in your on-premises ONTAP clusters. The alerting feature is part of fleet monitoring. You can view alerts for fleets you have permission to access or see all alerts across your organization.
 
-NOTE: Stub page. Content to be developed based on the alerting functional specification.
+NOTE: This topic is a stub. Expand it based on the alerting functional specification.
 
 == What you can do with alerts
 
@@ -23,12 +23,12 @@ NOTE: Stub page. Content to be developed based on the alerting functional specif
 * Monitor systems health by cluster
 * Search, filter, and export alerts
 * Enable or disable alert rules
-* Receive notifications when alerts are raised
+* Receive notifications when alerts occur
 
 == Alert sources
 
-Alerts are raised by on-premises ONTAP clusters through the Harvest integration with NetApp Console Local.
+On-premises ONTAP clusters raise alerts through the Harvest integration with NetApp Console Local.
 
 == Supported ONTAP platforms
 
-Refer to the support matrix in the alerting documentation for the list of supported ONTAP versions and platforms.
+See the support matrix in the alerting documentation to find the ONTAP versions and platforms that the alerting feature supports.
