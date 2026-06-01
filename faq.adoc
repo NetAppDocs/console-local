@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: faq.html
-keywords: faq, frequently asked questions, frequently asked questions about netapp console local, netapp console local, deployment, storage fleets, storage classes, alerts, iam, data services, llm integration
-summary: "Frequently asked questions about NetApp Console Local topics covered in this documentation set."
+keywords: faq, frequently asked questions, frequently asked questions about netapp console (local), netapp console (local), deployment, storage fleets, storage classes, alerts, iam, data services, llm integration
+summary: "Frequently asked questions about NetApp Console (local) topics covered in this documentation set."
 ---
-= FAQ for NetApp Console Local
+= FAQ for NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,30 +12,30 @@ summary: "Frequently asked questions about NetApp Console Local topics covered i
 :imagesdir: ./media/
 
 [.lead]
-This FAQ lists common questions about NetApp Console Local. It focuses on the major topics covered in this documentation set and can be used to shape deeper FAQ content.
+This FAQ lists common questions about NetApp Console (local). It focuses on the major topics covered in this documentation set and can be used to shape deeper FAQ content.
 
 == Getting started
 
-* What is NetApp Console Local and which management tasks is it designed to handle?
-* How is NetApp Console Local different from the SaaS version of NetApp Console?
-* Which environments and storage platforms can NetApp Console Local manage?
-* What should I understand first before deploying NetApp Console Local in production?
+* What is NetApp Console (local) and which management tasks is it designed to handle?
+* How is NetApp Console (local) different from the SaaS version of NetApp Console?
+* Which environments and storage platforms can NetApp Console (local) manage?
+* What should I understand first before deploying NetApp Console (local) in production?
 * Which topics in this documentation set are most important for a new administrator?
 
 == Deployment and setup
 
-* What are the deployment options for NetApp Console Local?
-* When should I install NetApp Console Local in vCenter instead of on a Linux host?
+* What are the deployment options for NetApp Console (local)?
+* When should I install NetApp Console (local) in vCenter instead of on a Linux host?
 * What are the prerequisites for a high-availability deployment?
 * What network ports and connectivity paths are required during installation?
 * What is the recommended order for deployment, organization setup, and storage discovery?
-* How do I verify that the initial NetApp Console Local organization is configured correctly?
+* How do I verify that the initial NetApp Console (local) organization is configured correctly?
 * What should I prepare before discovering ONTAP storage?
 
 
 == Storage fleets and organization
 
-* What is a storage fleet in NetApp Console Local?
+* What is a storage fleet in NetApp Console (local)?
 * How should I organize storage systems into fleets?
 * When should I use folders as part of the resource hierarchy?
 * How do fleets affect visibility, delegation, and day-to-day administration?
@@ -53,7 +53,7 @@ This FAQ lists common questions about NetApp Console Local. It focuses on the ma
 
 == Monitoring, alerts, and remediation
 
-* What monitoring capabilities are available in NetApp Console Local?
+* What monitoring capabilities are available in NetApp Console (local)?
 * What types of alerts can administrators expect to see?
 * How should I investigate an alert before taking action?
 * When should I use the Workload Analyzer instead of general alert views?
@@ -75,7 +75,7 @@ This FAQ lists common questions about NetApp Console Local. It focuses on the ma
 == AI-assisted management and integrations
 
 * What AI-assisted management capabilities are available through LLM integration?
-* Which LLM providers are supported by NetApp Console Local?
+* Which LLM providers are supported by NetApp Console (local)?
 * What prerequisites should I confirm before connecting an external LLM?
 * How should I evaluate security and privacy considerations before enabling AI features?
 * What tasks are most suitable for the NetApp Console assistant?
@@ -83,18 +83,18 @@ This FAQ lists common questions about NetApp Console Local. It focuses on the ma
 
 == Data services and protection
 
-* What data services can be used with NetApp Console Local?
+* What data services can be used with NetApp Console (local)?
 * What is the process for subscribing to data services?
 * How is access to data services granted to users and teams?
 * What should I monitor to understand protection status across managed resources?
-* How do data services fit into the overall operating model of NetApp Console Local?
+* How do data services fit into the overall operating model of NetApp Console (local)?
 
 == Maintenance, troubleshooting, and support
 
 * What maintenance tasks are required for Console agents over time?
 * When do I need to update agent addressing, certificates, or proxy settings?
 * What should I check first when a Console agent is unhealthy or disconnected?
-* How should I approach upgrading NetApp Console Local and its agents?
+* How should I approach upgrading NetApp Console (local) and its agents?
 * Which logs, diagnostics, and health views are most useful for troubleshooting?
 * How do I collect the right information before opening a support case?
 * When should I use read-only mode or other protective maintenance actions?

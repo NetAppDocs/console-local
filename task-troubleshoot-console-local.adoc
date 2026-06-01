@@ -5,7 +5,7 @@ keywords: troubleshoot, system id, system ID, autosupport, asup, troubleshoot co
 summary: To troubleshoot issues with a Console agent, you can work with NetApp Support who might ask for your system ID, agent version, or the latest AutoSupport messages. You can also view the NetApp Knowledge Base to troubleshoot issues yourself.
 ---
 
-= Troubleshoot NetApp Console Local
+= Troubleshoot NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: To troubleshoot issues with a Console agent, you can work with NetApp S
 :imagesdir: ./media/
 
 [.lead]
-To troubleshoot issues with NetApp Console Local, you can verify issues yourself or work with NetApp Support who might ask for your system ID, agent version, or the latest AutoSupport messages. 
+To troubleshoot issues with NetApp Console (local), you can verify issues yourself or work with NetApp Support who might ask for your system ID, agent version, or the latest AutoSupport messages. 
 
 If you have a NetApp Support Site account, you can also view the link:https://kb.netapp.com/Cloud/BlueXP[NetApp Knowledge Base.]
 
@@ -25,7 +25,7 @@ This table lists common error messages and shows how to fix them:
 |===
 | Error message | Explanation | What to do
 
-a|Unable to load the Console Local UI
+a|Unable to load the Console (local) UI
 a|Agent installation has failed
 a|
 * Verify that the Service Manager service is active.
@@ -33,10 +33,10 @@ a|
 * Ensure your firewall allows access to the service at port 8888.
 * If you still have problems, contact support.
 
-a|Cannot access the NetApp Console Local UI
+a|Cannot access the NetApp Console (local) UI
 a|This message appears when trying to access the IP address of an agent. The agent can fail to initialize if it doesn't have the correct network access or if it is unstable.
 a|
-* Connect to the Console Local agent.
+* Connect to the Console (local) agent.
 * Verify that the Service Manager service
 * Verify that the agent has the network access it needs. link:reference-networking-saas-console.html[Learn more about required network access endpoints.]
 
@@ -74,9 +74,9 @@ docker ps -a
 ----
 
 
-== View the Console Local version
+== View the Console (local) version
 
-View the Console Local version to confirm the upgrade or share it with your NetApp representative.
+View the Console (local) version to confirm the upgrade or share it with your NetApp representative.
 
 .Steps
 
@@ -86,8 +86,8 @@ View the Console Local version to confirm the upgrade or share it with your NetA
 The Console displays the version at the top of the page.
 
 
-== Validate that the Console Local meet requirements
-Console Local requires access to certain network endpoints, need to have several ports open, and must meet hardware requirements. You can validate that your Console Local meets these requirements from the Console or by using the agent maintenance console.
+== Validate that the Console (local) meet requirements
+Console (local) requires access to certain network endpoints, need to have several ports open, and must meet hardware requirements. You can validate that your Console (local) meets these requirements from the Console or by using the agent maintenance console.
 
 link:reference-networking-saas-console.html[Learn more about required network access points.]
 
@@ -164,12 +164,12 @@ systemctl restart netapp-service-manager.service
 //// 
 
 == Work with NetApp Support
-If you haven't been able to resolve the issues with your Console Local, you may want to contact NetApp Support. NetApp support may ask for the Console Local ID or for you to send the Console Local logs to them if they don't have them already.
+If you haven't been able to resolve the issues with your Console (local), you may want to contact NetApp Support. NetApp support may ask for the Console (local) ID or for you to send the Console (local) logs to them if they don't have them already.
 
 
-=== Find the Console Local ID 
+=== Find the Console (local) ID 
 
-To help you get started, you may need the system ID of your Console Local. The ID is typically used for licensing and troubleshooting purposes.
+To help you get started, you may need the system ID of your Console (local). The ID is typically used for licensing and troubleshooting purposes.
 
 .Steps
 
@@ -188,7 +188,7 @@ image:screenshot-system-id.png[A screenshot that shows the System ID that appear
 
 If you're having problems, NetApp might ask you to send an AutoSupport message to NetApp support for troubleshooting purposes.
 
-NOTE: The NetApp Console Local takes up to five hours to send AutoSupport messages due to load balancing. For urgent communication, download the file and send it manually.
+NOTE: The NetApp Console (local) takes up to five hours to send AutoSupport messages due to load balancing. For urgent communication, download the file and send it manually.
 
 .Steps
 

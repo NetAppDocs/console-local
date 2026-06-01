@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: task-alerts-investigate.html
-keywords: alert details, investigate alert, alert metric chart, related alerts, netapp console local
+keywords: alert details, investigate alert, alert metric chart, related alerts, netapp console (local)
 summary: "Open the alert details page to investigate an alert, view related alerts, and review the metric data that triggered the alert."
 ---
-= Investigate an alert in NetApp Console Local
+= Investigate an alert in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: "Open the alert details page to investigate an alert, view related aler
 :imagesdir: ./media/
 
 [.lead]
-Open the alert details page in the NetApp Console Local to investigate an active alert. The details page shows the alert description, impacted resource, severity, related alerts, and the metric chart that triggered the alert.
+Open the alert details page in the NetApp Console (local) to investigate an active alert. The details page shows the alert description, impacted resource, severity, related alerts, and the metric chart that triggered the alert.
 
 NOTE: Stub page. Content to be developed.
 

@@ -4,7 +4,7 @@ permalink: task-analyzer-snapshot-reserve-monitor.html
 keywords: snapshot reserve, snapshot overflow, snapshot space, capacity, workload analyzer, netapp console
 summary: "Monitor snapshot reserve consumption on a volume and project when snapshots will overflow the reserve into the volume's data space."
 ---
-= Monitor snapshot reserve consumption on a volume in NetApp Console Local
+= Monitor snapshot reserve consumption on a volume in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,7 +16,7 @@ When snapshot copies accumulate faster than expected, they can overflow the snap
 
 .Steps
 
-. In the NetApp Console Local, navigate to *Workload Analyzer*.
+. In the NetApp Console (local), navigate to *Workload Analyzer*.
 +
 Alternatively, from the storage inventory, select a volume and click *Analyze*.
 

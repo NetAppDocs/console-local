@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: concept-llm-integration.html
 keywords: LLM, AI, artificial intelligence, AI-assisted management, large language model, netapp console
-summary: "Learn how NetApp Console Local integrates with large language models to provide AI-assisted storage management capabilities."
+summary: "Learn how NetApp Console (local) integrates with large language models to provide AI-assisted storage management capabilities."
 ---
-= Learn about LLM integration in NetApp Console Local
+= Learn about LLM integration in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,29 +14,29 @@ summary: "Learn how NetApp Console Local integrates with large language models t
 [.lead]
 // Jira: SPSPM-3325, SPSPM-3304
 
-The NetApp Console Local can connect to a large language model (LLM) of your choice to provide AI-assisted storage management. Once connected, you can use natural language to provision storage, investigate alerts, and get answers to storage management questions—without leaving the Console Local.
+The NetApp Console (local) can connect to a large language model (LLM) of your choice to provide AI-assisted storage management. Once connected, you can use natural language to provision storage, investigate alerts, and get answers to storage management questions—without leaving the Console (local).
 
-AI-assisted management allows you to describe what you need in plain language and have the Console Local act on it, guided by the storage policies your organization has already defined.
+AI-assisted management allows you to describe what you need in plain language and have the Console (local) act on it, guided by the storage policies your organization has already defined.
 
-Because the NetApp Console Local runs in your own environment, your data and queries stay within your network at all times. You bring your own LLM subscription—the Console Local does not send your data to a third-party service without your explicit configuration.
+Because the NetApp Console (local) runs in your own environment, your data and queries stay within your network at all times. You bring your own LLM subscription—the Console (local) does not send your data to a third-party service without your explicit configuration.
 
 == What you can do with AI-assisted management
 
-When LLM integration is enabled, the Console Local provides three AI-assisted capabilities:
+When LLM integration is enabled, the Console (local) provides three AI-assisted capabilities:
 
-* *Storage provisioning* Describe a workload's requirements in plain language, and the Console Local recommends and executes a provisioning plan based on your configured storage classes.
-* *Alert response*  Ask the Console Local to investigate an active alert, and it will analyze the issue and suggest a fix or perform an action, depending on the permissions you've granted.
-* *Search and guidance* Ask questions about your storage environment or ONTAP administration, and the Console Local returns contextual answers drawn from documentation and your fleet's current state.
+* *Storage provisioning* Describe a workload's requirements in plain language, and the Console (local) recommends and executes a provisioning plan based on your configured storage classes.
+* *Alert response*  Ask the Console (local) to investigate an active alert, and it will analyze the issue and suggest a fix or perform an action, depending on the permissions you've granted.
+* *Search and guidance* Ask questions about your storage environment or ONTAP administration, and the Console (local) returns contextual answers drawn from documentation and your fleet's current state.
 
-All AI actions respect the role-based access controls assigned to your user account. Sensitive operations require your confirmation before the Console Local proceeds.
+All AI actions respect the role-based access controls assigned to your user account. Sensitive operations require your confirmation before the Console (local) proceeds.
 
 == Prerequisites
 
 Before connecting an LLM, ensure the following are in place:
 
-* Deploy and run the NetApp Console Local
-* Ensure the Console Local has access to the clusters you want to manage with AI assistance
+* Deploy and run the NetApp Console (local)
+* Ensure the Console (local) has access to the clusters you want to manage with AI assistance
 * Subscribe to a supported LLM provider (OpenAI, Anthropic, or AWS Bedrock) and obtain a valid API key
-* Configure your network to allow outbound connections from the Console Local to your LLM provider's endpoint
-* Have the Organization admin role in the NetApp Console Local
-* Configure and assign storage classes in the Console Local so the AI can guide provisioning decisions
+* Configure your network to allow outbound connections from the Console (local) to your LLM provider's endpoint
+* Have the Organization admin role in the NetApp Console (local)
+* Configure and assign storage classes in the Console (local) so the AI can guide provisioning decisions

@@ -191,5 +191,5 @@ For organizations with specialized teams requiring specific data service access,
 == Next steps with IAM in NetApp Console
 
 * link:task-iam-get-started.html[Get started with IAM in NetApp Console]
-* link:task-audit-console-activity.html[Monitor or audit Console Local activity]
+* link:task-audit-console-activity.html[Monitor or audit Console (local) activity]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the API for NetApp Console IAM^]

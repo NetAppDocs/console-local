@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-iam-active-directory-integrate.html
 keywords: Active Directory, LDAP, federation, user management, directory services, netapp console
-summary: "Integrate NetApp Console Local with Active Directory for centralized user management."
+summary: "Integrate NetApp Console (local) with Active Directory for centralized user management."
 ---
-= Integrate NetApp Console Local with Active Directory
+= Integrate NetApp Console (local) with Active Directory
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,14 +12,14 @@ summary: "Integrate NetApp Console Local with Active Directory for centralized u
 :imagesdir: ./media/
 
 [.lead]
-Integrate NetApp Console Local with Active Directory for centralized user management. Use your directory services for authentication and authorization.
+Integrate NetApp Console (local) with Active Directory for centralized user management. Use your directory services for authentication and authorization.
 
 .Required role
 Super admin or organization admin.
 
-When you integrate with Active Directory, Console Local authenticates users through your existing directory and grants or revokes access based on group membership. This aligns access with your identity lifecycle and eliminates separate user management.
+When you integrate with Active Directory, Console (local) authenticates users through your existing directory and grants or revokes access based on group membership. This aligns access with your identity lifecycle and eliminates separate user management.
 
-Active Directory integration also helps you meet compliance requirements by applying your existing controls, audit trails, and policies to Console Local access.
+Active Directory integration also helps you meet compliance requirements by applying your existing controls, audit trails, and policies to Console (local) access.
 
 == Before you begin
 
@@ -27,7 +27,7 @@ Before you integrate with Active Directory, make sure you have:
 
 * An Active Directory domain and credentials that can query the directory
 * The LDAP server address and the base distinguished name (DN) for the directory tree
-* Network access from Console Local to your LDAP server on port 389 (LDAP) or 636 (LDAPS)
+* Network access from Console (local) to your LDAP server on port 389 (LDAP) or 636 (LDAPS)
 * SSL/TLS certificates, if you plan to use LDAPS
 
 .Steps
@@ -40,7 +40,7 @@ Before you integrate with Active Directory, make sure you have:
 * The *LDAP host*: hostname or IP address of your LDAP server. For multiple servers, enter the primary.
 * The port: 389 for LDAP or 636 for LDAPS.
 * The *Connection timeout* in milliseconds. The default is 1000 ms.
-. Select *Use SSL/TLS* to use LDAPS. Confirm that your LDAP server supports LDAPS and that Console Local can access the required certificates.
+. Select *Use SSL/TLS* to use LDAPS. Confirm that your LDAP server supports LDAPS and that Console (local) can access the required certificates.
 . Test the connection. If it fails, check the LDAP host, port, network connectivity, and SSL/TLS certificates.
 . After the test succeeds, enter the directory and user details:
 +

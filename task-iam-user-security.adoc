@@ -13,7 +13,7 @@ summary: Manage your organization's members to provide permissions across differ
 :imagesdir: ./media/
 
 [.lead]
-Secure user access to your NetApp Console Local organization by managing member security settings. You can reset user passwords, manage multi-factor authentication (MFA), and recreate service account credentials.
+Secure user access to your NetApp Console (local) organization by managing member security settings. You can reset user passwords, manage multi-factor authentication (MFA), and recreate service account credentials.
 
 .Required access roles
 Super admin, Org admin, or Folder or fleet admin (for folders and fleets that they are administering). Link:reference-iam-predefined-roles.html[Learn about access roles].

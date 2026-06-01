@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: concept-alerts.html
-keywords: alerts, alerting, fleet monitoring, severity, impact area, netapp console local
-summary: "Learn how storage alerts in NetApp Console Local help you monitor the health of your on-premises ONTAP clusters across your organization and fleets."
+keywords: alerts, alerting, fleet monitoring, severity, impact area, netapp console (local)
+summary: "Learn how storage alerts in NetApp Console (local) help you monitor the health of your on-premises ONTAP clusters across your organization and fleets."
 ---
-= Monitor and manage storage alerts in NetApp Console Local
+= Monitor and manage storage alerts in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,7 +14,7 @@ summary: "Learn how storage alerts in NetApp Console Local help you monitor the 
 [.lead]
 // Jira: SPSPM-3316, SPSPM-3496
 
-Alerts in NetApp Console Local help you find and resolve issues in your on-premises ONTAP clusters. The alerting feature is part of fleet monitoring. You can view alerts for fleets you have permission to access or see all alerts across your organization.
+Alerts in NetApp Console (local) help you find and resolve issues in your on-premises ONTAP clusters. The alerting feature is part of fleet monitoring. You can view alerts for fleets you have permission to access or see all alerts across your organization.
 
 NOTE: This topic is a stub. Expand it based on the alerting functional specification.
 
@@ -29,6 +29,6 @@ NOTE: This topic is a stub. Expand it based on the alerting functional specifica
 
 == Alert sources
 
-On-premises ONTAP clusters raise alerts through the Harvest integration with NetApp Console Local.
+On-premises ONTAP clusters raise alerts through the Harvest integration with NetApp Console (local).
 
 

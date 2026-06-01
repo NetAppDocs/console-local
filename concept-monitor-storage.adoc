@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: concept-monitor-storage.html
-keywords: monitor, health, performance, alerts, workload analyzer, remediation, netapp console local
-summary: "Learn about monitoring storage health and performance in NetApp Console Local, including fleet-wide dashboards, the Workload Analyzer, and remediation options."
+keywords: monitor, health, performance, alerts, workload analyzer, remediation, netapp console (local)
+summary: "Learn about monitoring storage health and performance in NetApp Console (local), including fleet-wide dashboards, the Workload Analyzer, and remediation options."
 ---
-= Monitor storage in NetApp Console Local
+= Monitor storage in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,38 +14,38 @@ summary: "Learn about monitoring storage health and performance in NetApp Consol
 [.lead]
 // Jira: SPSPM-3315
 
-NetApp Console Local provides fleet-wide health dashboards, deep-dive volume analysis, configurable alerts, and guided or automated remediation so you can identify and resolve storage issues before they affect workloads.
+NetApp Console (local) provides fleet-wide health dashboards, deep-dive volume analysis, configurable alerts, and guided or automated remediation so you can identify and resolve storage issues before they affect workloads.
 
 == Fleet-wide health and performance
 
 Monitor the health and performance of all volumes across your fleets from a single dashboard. Quickly identify clusters or volumes that need attention.
 
-link:task-fleet-health-monitor.html[Monitor fleet-wide health and performance in NetApp Console Local]
+link:task-fleet-health-monitor.html[Monitor fleet-wide health and performance in NetApp Console (local)]
 
 == Workload Analyzer
 
 Use the Workload Analyzer to investigate performance issues on individual volumes. The Workload Analyzer correlates latency, throughput, IOPS, and configuration changes to help you pinpoint root causes.
 
-* link:concept-workload-analyzer.html[Learn about the NetApp Console Local Workload Analyzer]
-* link:task-analyzer-volume-latency-investigate.html[Investigate high latency on a volume in NetApp Console Local]
-* link:task-analyzer-volume-qos-throttling-identify.html[Identify QoS throttling on a volume in NetApp Console Local]
-* link:task-analyzer-volume-resource-contention-identify.html[Identify resource contention affecting a volume in NetApp Console Local]
-* link:task-analyzer-volume-capacity-forecast.html[Forecast volume capacity in NetApp Console Local]
-* link:task-analyzer-volume-config-change-correlate.html[Correlate configuration changes with volume issues in NetApp Console Local]
+* link:concept-workload-analyzer.html[Learn about the NetApp Console (local) Workload Analyzer]
+* link:task-analyzer-volume-latency-investigate.html[Investigate high latency on a volume in NetApp Console (local)]
+* link:task-analyzer-volume-qos-throttling-identify.html[Identify QoS throttling on a volume in NetApp Console (local)]
+* link:task-analyzer-volume-resource-contention-identify.html[Identify resource contention affecting a volume in NetApp Console (local)]
+* link:task-analyzer-volume-capacity-forecast.html[Forecast volume capacity in NetApp Console (local)]
+* link:task-analyzer-volume-config-change-correlate.html[Correlate configuration changes with volume issues in NetApp Console (local)]
 
 == Alerts and notifications
 
 Configure alert policies and notification channels so the right people are informed when storage conditions require attention.
 
-link:task-notifications-configure.html[Configure notifications and alert policies in NetApp Console Local]
+link:task-notifications-configure.html[Configure notifications and alert policies in NetApp Console (local)]
 link:task-al
 
 == Remediation
 
-When issues are detected, remediate them directly from NetApp Console Local:
+When issues are detected, remediate them directly from NetApp Console (local):
 
-* *Automated remediation* — NetApp Console Local applies corrective actions automatically based on predefined rules.
-link:task-remediation-automated.html[Remediate storage issues automatically in NetApp Console Local]
+* *Automated remediation* — NetApp Console (local) applies corrective actions automatically based on predefined rules.
+link:task-remediation-automated.html[Remediate storage issues automatically in NetApp Console (local)]
 
 * *Guided remediation* — Follow step-by-step recommendations to resolve issues with full control over each action.
-link:task-remediation-guided.html[Remediate storage issues with guided steps in NetApp Console Local]
+link:task-remediation-guided.html[Remediate storage issues with guided steps in NetApp Console (local)]

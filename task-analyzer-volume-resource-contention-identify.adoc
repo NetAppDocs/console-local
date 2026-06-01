@@ -4,7 +4,7 @@ permalink: task-analyzer-volume-resource-contention-identify.html
 keywords: resource contention, node utilization, aggregate utilization, shared resources, workload analyzer, netapp console
 summary: "Identify whether a volume's performance is degraded by contention on a shared node or aggregate using the Workload Analyzer."
 ---
-= Identify resource contention affecting a volume in NetApp Console Local
+= Identify resource contention affecting a volume in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,7 +16,7 @@ When multiple workloads share nodes and aggregates, a busy neighbor can degrade 
 
 .Steps
 
-. In the NetApp Console Local, navigate to *Workload Analyzer*.
+. In the NetApp Console (local), navigate to *Workload Analyzer*.
 +
 Alternatively, from the storage inventory, select a volume and click *Analyze*.
 

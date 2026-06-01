@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-storage-class-fleet-disassociate.html
 keywords: disassociate, remove, storage class, fleet, netapp console
-summary: "Disassociate a storage class from a fleet in NetApp Console Local."
+summary: "Disassociate a storage class from a fleet in NetApp Console (local)."
 ---
-= Disassociate a storage class from a fleet in NetApp Console Local
+= Disassociate a storage class from a fleet in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,4 +12,4 @@ summary: "Disassociate a storage class from a fleet in NetApp Console Local."
 :imagesdir: ./media/
 
 [.lead]
-Disassociate a storage class from a fleet in the NetApp Console Local when the policies defined by that storage class no longer apply to the fleet.
+Disassociate a storage class from a fleet in the NetApp Console (local) when the policies defined by that storage class no longer apply to the fleet.

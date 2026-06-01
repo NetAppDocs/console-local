@@ -4,7 +4,7 @@ permalink: concept-workload-analyzer.html
 keywords: workload analyzer, volume analysis, latency, throughput, capacity, performance, netapp console
 summary: "Learn how the Workload Analyzer helps you investigate volume-level performance, capacity, and data protection issues."
 ---
-= Learn about the NetApp Console Local Workload Analyzer
+= Learn about the NetApp Console (local) Workload Analyzer
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,9 +18,9 @@ The Workload Analyzer gives you a comprehensive view of a single volume's behavi
 
 == What the Workload Analyzer does
 
-The Workload Analyzer correlates metrics from a single volume across six analysis areas so you can identify root causes quickly. You select a volume and a time range, then Console local renders all analysis sections together so you can see how events, performance, and capacity relate to each other within the same window. This view can also help you determine whether storage is the likely source of an application issue or whether the cause is more likely in networking or another layer.
+The Workload Analyzer correlates metrics from a single volume across six analysis areas so you can identify root causes quickly. You select a volume and a time range, then Console (local) renders all analysis sections together so you can see how events, performance, and capacity relate to each other within the same window. This view can also help you determine whether storage is the likely source of an application issue or whether the cause is more likely in networking or another layer.
 
-After identifying a root cause, you can act directly from the analyzer. Where automated options are available, the Console Local surfaces Fix-It recommendations with guided steps or one-click remediation.
+After identifying a root cause, you can act directly from the analyzer. Where automated options are available, the Console (local) surfaces Fix-It recommendations with guided steps or one-click remediation.
 
 == How to access the Workload Analyzer
 

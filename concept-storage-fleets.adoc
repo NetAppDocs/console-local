@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: concept-storage-fleets.html
 keywords: storage fleets, fleet management, storage organization, folders, netapp console
-summary: "A storage fleet groups storage systems that you manage together in NetApp Console Local. Use folders to group related fleets. You can apply policies, grant access, and monitor health at the needed scope."
+summary: "A storage fleet groups storage systems that you manage together in NetApp Console (local). Use folders to group related fleets. You can apply policies, grant access, and monitor health at the needed scope."
 ---
-= Learn about storage fleets in NetApp Console Local
+= Learn about storage fleets in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,7 +14,7 @@ summary: "A storage fleet groups storage systems that you manage together in Net
 [.lead]
 // Jira: SPSPM-3302, SPSPM-3328, SPSPM-3497
 
-A storage fleet groups storage systems that you manage together in NetApp Console Local. Use folders to group related fleets. You can apply policies, grant access, and monitor health at the needed scope.
+A storage fleet groups storage systems that you manage together in NetApp Console (local). Use folders to group related fleets. You can apply policies, grant access, and monitor health at the needed scope.
 
 == Why fleets matter
 
@@ -43,7 +43,7 @@ TIP: Use folders to add another level of organization. For example, create a fol
 
 == How fleets connect to storage classes
 
-When you associate a storage class with a fleet, the Console Local applies the policies in that class to all storage provisioning within the fleet. Workloads provisioned inside the fleet automatically inherit the performance, capacity, and tiering rules defined in the storage class—without requiring administrators to select or verify policy settings at provisioning time. This makes fleets the primary way to enforce consistent storage behavior across clusters that serve a common purpose.
+When you associate a storage class with a fleet, the Console (local) applies the policies in that class to all storage provisioning within the fleet. Workloads provisioned inside the fleet automatically inherit the performance, capacity, and tiering rules defined in the storage class—without requiring administrators to select or verify policy settings at provisioning time. This makes fleets the primary way to enforce consistent storage behavior across clusters that serve a common purpose.
 
 == How folders and fleets support access control and visibility
 
@@ -52,4 +52,4 @@ Folders and fleets serve as the boundaries for user access:
 * When you assign a role at the *folder* level, the member inherits that role for all fleets and resources within the folder. This lets Organization admins delegate administrative responsibilities by creating folders and assigning a Folder or fleet admin role. Those admins can then manage all fleets within their folder without access to the entire organization.
 * When you assign a role at the *fleet* level, the member has access only to the storage systems within that fleet.
 
-This lets you delegate storage management to team members or application owners without granting them visibility into unrelated parts of your infrastructure. The Console Local provides fleet-level health and performance monitoring so you can see the status of all clusters in a fleet from a single view, identify issues early, and act before they affect workloads.
+This lets you delegate storage management to team members or application owners without granting them visibility into unrelated parts of your infrastructure. The Console (local) provides fleet-level health and performance monitoring so you can see the status of all clusters in a fleet from a single view, identify issues early, and act before they affect workloads.

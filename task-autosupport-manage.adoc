@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-autosupport-manage.html
 keywords: AutoSupport, ASUP, support bundle, diagnostics, NetApp support, netapp console
-summary: "Manage AutoSupport messages in NetApp Console Local to share diagnostic data with NetApp Support."
+summary: "Manage AutoSupport messages in NetApp Console (local) to share diagnostic data with NetApp Support."
 ---
-= Manage AutoSupport messages in NetApp Console Local
+= Manage AutoSupport messages in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,4 +12,4 @@ summary: "Manage AutoSupport messages in NetApp Console Local to share diagnosti
 :imagesdir: ./media/
 
 [.lead]
-Manage AutoSupport (ASUP) messages in the NetApp Console Local to control the diagnostic data shared with NetApp Support and to generate support bundles when troubleshooting issues.
+Manage AutoSupport (ASUP) messages in the NetApp Console (local) to control the diagnostic data shared with NetApp Support and to generate support bundles when troubleshooting issues.
