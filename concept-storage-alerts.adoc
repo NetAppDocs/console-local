@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-storage-alerts.html
-keywords: alerts, alerting, fleet monitoring, severity, impact area, netapp console (local)
+keywords: alerts, alerting, fleet monitoring, severity, impact area, netapp console local
 summary: "Learn how storage alerts in NetApp Console (local) help you monitor the health of your on-premises ONTAP clusters across your organization and fleets."
 ---
 = Monitor and manage storage alerts in NetApp Console (local)

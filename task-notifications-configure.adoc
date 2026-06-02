@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-alert-rules-configure.html
-keywords: notifications, alerts, alert policies, thresholds, email, webhooks, netapp console (local)
+keywords: notifications, alerts, alert policies, thresholds, email, webhooks, netapp console local
 summary: "Configure notifications and alert policies in NetApp Console (local) to stay informed of storage events."
 ---
 = Configure notifications and alert policies in NetApp Console (local)

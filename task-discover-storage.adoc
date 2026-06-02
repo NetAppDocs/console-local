@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-discover-storage.html
-keywords: discover storage, add storage, ontap clusters, netapp console (local)
+keywords: discover storage, add storage, ontap clusters, netapp console local
 summary: "Discover on-premises ONTAP clusters in NetApp Console (local) to start managing and monitoring your storage."
 ---
 = Discover storage in NetApp Console (local)

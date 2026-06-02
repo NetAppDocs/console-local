@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-secure-access.html
-keywords: security, access control, SSO, MFA, active directory, authentication, identity, netapp console (local)
+keywords: security, access control, SSO, MFA, active directory, authentication, identity, netapp console local
 summary: "Learn about the security options available in NetApp Console (local), including Active Directory integration, single sign-on, and multi-factor authentication."
 ---
 = Secure access to NetApp Console (local)

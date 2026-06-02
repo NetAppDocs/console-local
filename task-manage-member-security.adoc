@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-manage-member-security.html
-keywords: member security, password reset, MFA, multi-factor authentication, service account, credentials, netapp console (local)
+keywords: member security, password reset, MFA, multi-factor authentication, service account, credentials, netapp console local
 summary: "Manage member security settings in NetApp Console (local), including password resets, MFA management, and service account credentials."
 ---
 = Manage member security in NetApp Console (local)

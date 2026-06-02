@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-alerts-systems-health-monitor.html
-keywords: systems health, cluster health, alerts by cluster, netapp console (local)
+keywords: systems health, cluster health, alerts by cluster, netapp console local
 summary: "Use the Systems Health tab to see the distribution of active alerts across your ONTAP clusters in NetApp Console (local)."
 ---
 = Monitor systems health by cluster

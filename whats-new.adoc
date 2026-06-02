@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: what's new, new features, release notes, netapp console (local)
+keywords: what's new, new features, release notes, netapp console local
 summary: "Learn about the new features and enhancements in the latest release of NetApp Console (local)."
 ---
 = What's new with NetApp Console (local)

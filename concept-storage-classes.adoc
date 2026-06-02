@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-storage-classes.html
-keywords: storage classes, storage policy, standardize, netapp console (local)
+keywords: storage classes, storage policy, standardize, netapp console local
 summary: "Learn how storage classes in NetApp Console (local) let you define and apply consistent storage policies across your environment."
 ---
 = Learn about storage classes in NetApp Console (local)

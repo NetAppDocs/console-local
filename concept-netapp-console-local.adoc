@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-netapp-console-local.html
-keywords: netapp console (local), overview, self-hosted, sovereign cloud, storage management
+keywords: netapp console local, overview, self-hosted, sovereign cloud, storage management
 summary: "Learn about NetApp Console (local), a self-hosted storage management platform you can deploy in your own environment."
 ---
 = Learn about NetApp Console (local)

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: faq.html
-keywords: faq, frequently asked questions, frequently asked questions about netapp console (local), netapp console (local), deployment, storage fleets, storage classes, alerts, iam, data services, llm integration
+keywords: faq, frequently asked questions, frequently asked questions about netapp console local, netapp console local, deployment, storage fleets, storage classes, alerts, iam, data services, llm integration
 summary: "Frequently asked questions about NetApp Console (local) topics covered in this documentation set."
 ---
 = FAQ for NetApp Console (local)

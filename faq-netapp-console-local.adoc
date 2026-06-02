@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: faq-netapp-console-local.html
-keywords: faq, frequently asked questions, frequently asked questions about netapp console (local), netapp console (local), storage classes, storage fleets, storage class policies, active directory, siem, llm, ai-assisted management, ontap
+keywords: faq, frequently asked questions, frequently asked questions about netapp console local, netapp console local, storage classes, storage fleets, storage class policies, active directory, siem, llm, ai-assisted management, ontap
 summary: "Frequently asked questions about NetApp Console (local), including storage classes, fleets, LLM integration, and security integrations."
 ---
 

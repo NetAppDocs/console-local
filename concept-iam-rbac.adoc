@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-iam-rbac.html
-keywords: roles, permissions, role-based access control, rbac, iam, identity and access management, least privilege, access control, NetApp Console (local) access, organization access, folder access, fleet access, resource access
+keywords: roles, permissions, role-based access control, rbac, iam, identity and access management, least privilege, access control, NetApp Console local access, organization access, folder access, fleet access, resource access
 summary: Manage user access to NetApp Console (local) with role-based access control (RBAC), assigning predefined roles at the organization, folder, or fleet level. Each role grants specific permissions that define what actions users can perform within their assigned scope.
 ---
 

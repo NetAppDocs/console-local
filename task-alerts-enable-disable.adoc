@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-alerts-enable-disable.html
-keywords: enable alert, disable alert, alert on off, alert rule, netapp console (local)
+keywords: enable alert, disable alert, alert on off, alert rule, netapp console local
 summary: "Enable or disable individual alert rules to control which conditions raise alerts in NetApp Console (local)."
 ---
 = Enable or disable an alert rule
