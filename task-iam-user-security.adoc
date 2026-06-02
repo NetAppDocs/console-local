@@ -5,7 +5,7 @@ keywords: user, service account, member, role, permissions, organization, fleet,
 summary: Manage your organization's members to provide permissions across different levels of your organization's resource hierarchy.
 ---
 
-= User security
+= User security in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -23,9 +23,9 @@ Super admin, Org admin, or Folder or fleet admin (for folders and fleets that th
 
 Org admins cannot reset user passwords for local users. However, they can instruct users to reset their own passwords.
 
-Instruct a user to reset their password from the Console login page by selecting *Forgot password?*.
+Instruct a user to reset their password from the Console login page by asking them to select *Forgot password?* when they log in.
 
-NOTE: This option is not available for users in a federated organization.
+NOTE: This option is not available for users who use a Active Directory authentication.
 
 [[manage-mfa]]
 == Manage a user's multi-factor authentication (MFA)
@@ -70,7 +70,7 @@ Creating new credentials deletes the old ones. You cannot use the old credential
 
 . Download or copy the client ID and client secret.
 +
-The Console shows the client secret only once. Make sure you copy or download it and store it securely.
+Console (local) shows the client secret only once. Make sure you copy or download it and store it securely.
 
 
 

@@ -5,7 +5,7 @@ keywords: predefined roles, iam roles, organization admin, folder or fleet admin
 summary: NetApp Console identity and access management includes predefined roles that you can assign to the members of your organization.
 ---
 
-= NetApp Console access roles
+= NetApp Console (local) access roles
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,12 +13,12 @@ summary: NetApp Console identity and access management includes predefined roles
 :imagesdir: ./media/
 
 [.lead]
-Identity and access management (IAM) in the NetApp Console provides predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes. Roles fall into the following categories: platform, application, and data service.
+Identity and access management (IAM) in NetApp Console (local) provides predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes. Roles fall into the following categories: platform, application, and data service.
 
 
 [[platform-roles]]
 == Platform roles
-Platform roles grant NetApp Console administration permissions, including role assignment and user management. The Console has several platform roles. 
+Platform roles grant NetApp Console (local) administration permissions, including role assignment and user management. The Console (local) has several platform roles. 
 
 [cols="1,2",options="header"]
 |===

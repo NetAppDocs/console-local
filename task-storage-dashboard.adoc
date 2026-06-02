@@ -5,7 +5,7 @@ keywords:  bluexp, dashboard, console, home page
 summary: Within the NetApp Console, you can view metrics on the Home page. 
 ---
 
-= View metrics on the NetApp Console Home page
+= View metrics on the NetApp Console (local) Home page
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,9 +13,9 @@ summary: Within the NetApp Console, you can view metrics on the Home page.
 :imagesdir: ./media/
 
 [.lead]
-// Jira: SPSPM-3327
+// Jira: PSPM-3769 for full GA, not July
 
-Monitoring the health of your storage estate ensures that you are aware of issues with storage protection and can take steps to resolve them. Using the NetApp Console Home page, view a status of your backups and restores from NetApp Backup and Recovery and the number of workloads that are at risk for a ransomware attack or protected as indicated by NetApp Ransomware Resilience. You can review the storage capacity for individual clusters and Cloud Volumes ONTAP, ONTAP alerts, storage performance capacity per cluster or Cloud Volumes ONTAP system, the different types of licenses you have, and more.
+Monitoring the health of your storage estate ensures that you are aware of issues with storage protection and can take steps to resolve them. Using the NetApp Console (local) Home page, view a status of your backups and restores from NetApp Backup and Recovery and the number of workloads that are at risk for a ransomware attack or protected as indicated by NetApp Ransomware Resilience. You can review the storage capacity for individual clusters and Cloud Volumes ONTAP, ONTAP alerts, storage performance capacity per cluster or Cloud Volumes ONTAP system, the different types of licenses you have, and more.
 
 All panes on the Home page show data at the organization level. The Storage capacity and Storage performance panes show systems associated with fleets that the user can access based on IAM permissions.
 
@@ -23,7 +23,7 @@ The system refreshes the data on the Home page every five minutes. Caching may c
 
 NOTE: Accurate metrics on the Home page require appropriately sized and configured Console agents.
 
-== Required NetApp Console roles
+== Required NetApp Console (local) roles
 
 Each pane in the Home page requires different user roles: 
 
@@ -31,51 +31,39 @@ Each pane in the Home page requires different user roles:
 * *ONTAP alerts pane*: Folder or fleet admin, Operations Support Analyst, Organization admin, Organization viewer, Super admin, Super viewer
 * *Storage performance capacity pane*: Ability to see the NetApp Console Systems page
 * *Licenses and subscriptions pane*: Folder or fleet admin, Organization admin, Organization viewer, Super admin, Super viewer
-* *Ransomware Resilience pane*: Folder or fleet admin, Organization admin, Ransomware Resilience admin, Ransomware Resilience viewer, Super admin, Super viewer
 * *Backup and Recovery pane*: Backup and recovery backup admin, Backup and recovery super admin, Backup and recovery backup viewer, Backup and recovery clone admin, Folder or fleet admin, Organization admin, Backup and recovery restore admin, Super admin, Super viewer
 
 If you do not have permissions to access a pane, the pane displays a message indicating you lack permissions to use it.
 
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about NetApp Console access roles.]. 
+link:reference-iam-predefined-roles.html[Learn about NetApp Console (local) access roles.]. 
 
 .Steps
 
 . From the NetApp Console menu, select *Home*.
 +
-If you have the Organization admin role and no agent or storage systems are set up, the Home page displays getting started information.
+If you have the Organization admin or Super admin role and haven't yet added any storage systems, the Home page displays getting started information.
 +
-image:screenshot-home-greenfield.png[NetApp Console Home page welcoming new users]
+image:screenshot-home-greenfield.png[NetApp Console (local) Home page welcoming new users]
 + 
-If you already set up the NetApp Console, at least one Console agent is enabled, and at least one cluster or Cloud Volumes ONTAP system has been added on that agent, the Home page shows metrics about your storage environment.
+If you already set up the NetApp Console (local), and added at least one ONTAP cluster, the Home page shows metrics about your storage environment.
 +
-image:screenshot-home-metrics.png[NetApp Console Home page showing metrics]
+image:screenshot-home-metrics.png[NetApp Console (local) Home page showing metrics]
 
    
 == Enable metrics to appear on the Home page    
 
-You can see metrics on the Home page when the following conditions are met: 
+You can see metrics on the Home page when you belong to an organization with existing storage resources that have been added to Console (local).
 
-* You are logged into a SaaS instance of the NetApp Console. 
-* You belong to an organization with existing storage resources (agent and cluster or Cloud Volumes ONTAP system).
-* At least one Console agent is enabled.
-* At least one cluster or Cloud Volumes ONTAP system has been added on that agent.
-
-
-To enable metrics to appear on the Home page, complete the following tasks: 
-
-* Enable at least one Console agent. 
-* Add at least one cluster or one Cloud Volumes ONTAP using that agent.  
 
 == View the overall storage capacity
 
-The Storage capacity pane provides the following information across ONTAP clusters and Cloud Volumes ONTAP systems: 
+The Storage capacity pane provides the following information across all ONTAP clusters: 
 
 * Number of ONTAP systems discovered in the Console
-* Number of Cloud Volumes ONTAP systems discovered in the Console
 * Capacity usage per cluster 
 
-The order of the clusters or Cloud Volumes ONTAP systems is based on the amount of capacity used. The cluster or system with the highest capacity appears first for easy identification.
+The order of the clusters is based on the amount of capacity used. The cluster with the highest capacity appears first for easy identification.
 
 Warning indicators show for clusters at 80% capacity, with data updating every five minutes.
 
@@ -85,7 +73,6 @@ TIP: If you have multiple fleets, you might see different data in the Storage ca
 
 .Steps
 
-. From the NetApp Console menu, review the Storage capacity pane. 
 . In the Storage capacity pane, select *View* to go to the Console Systems page. 
 . On the Systems page, select the fleet containing the cluster you want to view. 
 . On the Systems page, select a cluster to view more details about that cluster.
@@ -176,28 +163,6 @@ TIP: Caching optimizes performance, but may cause the data on this pane to diffe
 . In the Licenses and subscriptions pane, select *View* to go to the Console Licenses and subscriptions page. 
 
 
-
-== View Ransomware Resilience status
-
-Find out if workloads are at risk of ransomware attacks or protected with the NetApp Ransomware Resilience data service. You can review the total amount of data that is protected, view the number of recommended actions, and view the number of alerts related to ransomware protection. 
-
-
-The data refreshes every 5 minutes and matches the data shown in the NetApp Ransomware Resilience Dashboard.
-
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html[Learn about NetApp Ransomware Resilience^].
-
-
-.Steps
-
-. From the NetApp Console menu, review the Ransomware Resilience pane. 
-
-. Do one of the following in the Ransomware Resilience pane: 
-
-* Select *View* to go to the NetApp Ransomware Resilience Dashboard. For details, refer to https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-dashboard.html[Monitor workload health using the NetApp Ransomware Resilience Dashboard^].
-
-* Review "Recommended actions" in the NetApp Ransomware Resilience Dashboard. For details, refer to https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-dashboard.html[Review protection recommendations on the NetApp Ransomware Resilience Dashboard^].
-
-* Select the alerts link to review alerts in NetApp Ransomware Resilience Alerts page. For details, refer https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html[Handle detected ransomware alerts with NetApp Ransomware Resilience^].
 
 
 == View Backup and Recovery status

@@ -33,7 +33,7 @@ The content audience understands networking concepts, cloud deployments, and ide
 - **In body text**: 
   - First reference: "NetApp Console (local)" (capitalize "Console")
     - Example: "NetApp Console (local) provides a web-based console and APIs for managing your storage resources..."
-  - Subsequent references in the same file: Console (local) (capitalize  only when it starts a sentence)
+  - Subsequent references in the same file: Console (local) (capitalize "Console")
   - Example: "Use NetApp Console (local)'s Identity and Access Management (IAM) to organize your NetApp resources... Console (local) provides access roles..." ("The" is capitalized here because it begins a new sentence)
 
 #### Console Agent Terminology
