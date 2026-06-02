@@ -42,12 +42,6 @@ sidebar:
         url: /task-install-agent-on-prem-ova.html
       - title: Subscribe to data services
         url: /task-data-services-subscribe.html
-      - title: Associate NetApp Support accounts
-        entries:
-        - title: Manage NSS credentials
-          url: /task-adding-nss-accounts.html
-        - title: Manage credentials associated with your NetApp Console login
-          url: /task-manage-user-credentials.html
       - title: Discover storage
         url: /task-discover-storage.html
     - title: Use

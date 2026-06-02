@@ -49,7 +49,7 @@ indexpage:
         - title: Provision storage automatically
           url: /task-provisioning-automated.html
         - title: Create a storage class
-          url: /task-storage-class-create.html
+          url: /task-storage-class-manage.html
         - title: Monitor fleet-wide health and performance
           url: /task-fleet-health-monitor.html
         - title: Configure notification rules for alerts
@@ -62,11 +62,8 @@ indexpage:
       links:
         - title: Learn about data services
           url: /concept-data-services.html
-        - title: Subscribe to data services
-          url: /task-data-services-subscribe.html
-        - title: Grant access to data services
-          url: /task-data-services-access-grant.html
-        - title: Monitor protection status
-          url: /task-protection-status-monitor.html
+        - title: Get started with data services
+          url: /task-quickstart-data-services.html
+   
   
 

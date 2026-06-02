@@ -20,7 +20,7 @@ You install NetApp Console (local) on-premises or in a secure cloud environment.
 
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] link:task-prepare-private-mode.html[Prepare for deployment]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Prepare for deployment
 
 [role="quick-margin-list"]
 .. Prepare a dedicated Linux host that meets requirements for CPU, RAM, disk space, container orchestration tool, and more.
@@ -29,7 +29,7 @@ You install NetApp Console (local) on-premises or in a secure cloud environment.
 
 .. For cloud deployments, set up permissions in your cloud provider so that you can associate those permissions with the Console agent after you install the software.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] link:task-install-private-mode.html[Deploy the Console agent]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Deploy the Console (local) software
 
 [role="quick-margin-list"]
 .. Install the Console agent on your own Linux host.
