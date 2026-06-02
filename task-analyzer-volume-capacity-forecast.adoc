@@ -4,7 +4,7 @@ permalink: task-analyzer-volume-capacity-forecast.html
 keywords: capacity, forecast, space, growth, snapshot reserve, workload analyzer, netapp console
 summary: "Project when a volume will reach capacity thresholds and plan for growth using the Workload Analyzer."
 ---
-= Forecast volume capacity and plan for growth in NetApp Console Local
+= Forecast volume capacity and plan for growth in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,6 +12,8 @@ summary: "Project when a volume will reach capacity thresholds and plan for grow
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3315
+
 Use the Workload Analyzer to review how a volume's capacity has consumed over time and project when it will reach warning or critical thresholds. You can also check whether snapshot consumption is trending toward overflowing its reserve.
 
 .Required role
@@ -19,7 +21,7 @@ Storage admin or Super admin.
 
 .Steps
 
-. In Console Local, navigate to *Workload Analyzer*.
+. In Console (local), navigate to *Workload Analyzer*.
 +
 Alternatively, from the storage inventory, select a volume and click *Analyze*.
 

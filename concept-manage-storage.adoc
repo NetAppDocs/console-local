@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: concept-manage-storage.html
 keywords: storage management, storage classes, provisioning, storage class policies, netapp console local
-summary: "Learn about managing storage in NetApp Console Local, including storage classes, policies, and provisioning methods."
+summary: "Learn about managing storage in NetApp Console (local), including storage classes, policies, and provisioning methods."
 ---
-= Manage storage in NetApp Console Local
+= Manage storage in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,9 @@ summary: "Learn about managing storage in NetApp Console Local, including storag
 :imagesdir: ./media/
 
 [.lead]
-NetApp Console Local provides a structured approach to storage management: define standards with storage classes and policies, then provision storage manually, automatically, or through AI-assisted agentic workflows.
+// Jira: SPSPM-3309
+
+NetApp Console (local) provides a structured approach to storage management: define standards with storage classes and policies, then provision storage manually, automatically, or through AI-assisted agentic workflows.
 
 == Define storage standards
 
@@ -20,35 +22,35 @@ Storage classes let you define and enforce consistent configurations across your
 
 === Storage classes
 
-A storage class is a named collection of policies that represent the desired state for a set of volumes. When you assign a storage class to a fleet, NetApp Console Local continuously monitors volumes and alerts you to deviations.
+A storage class is a named collection of policies that represent the desired state for a set of volumes. When you assign a storage class to a fleet, NetApp Console (local) continuously monitors volumes and alerts you to deviations.
 
-* link:concept-storage-classes.html[Learn about storage classes in NetApp Console Local]
-* link:task-storage-class-create.html[Create a storage class in NetApp Console Local]
-* link:task-storage-class-delete.html[Delete a storage class from NetApp Console Local]
+* link:concept-storage-classes.html[Learn about storage classes in NetApp Console (local)]
+* link:task-storage-class-manage.html[Learn how to create a storage class in NetApp Console (local)]
+
 
 === Storage class policies
 
 Storage class policies are the individual rules within a storage class. Each policy controls a specific aspect of storage configuration, such as capacity management, performance tiering, or data protection schedules.
 
-* link:concept-storage-class-policies.html[Learn about NetApp Console Local storage class policies]
-* link:reference-storage-class-policies.html[NetApp Console Local storage class policy reference]
+* link:concept-storage-class-policies.html[Learn about NetApp Console (local) storage class policies]
+* link:reference-storage-class-policies.html[NetApp Console (local) storage class policy reference]
 
 === Fleet association
 
 After creating a storage class, associate it with one or more fleets to apply those standards to the volumes in each fleet.
 
-* link:task-storage-class-fleet-associate.html[Associate a storage class to a fleet in NetApp Console Local]
-* link:task-storage-class-fleet-disassociate.html[Disassociate a storage class from a fleet in NetApp Console Local]
+* link:task-storage-class-fleet-associate.html[Associate a storage class to a fleet in NetApp Console (local)]
+* link:task-storage-class-fleet-disassociate.html[Disassociate a storage class from a fleet in NetApp Console (local)]
 
 == Provision storage
 
-NetApp Console Local supports three provisioning methods to match your operational model:
+NetApp Console (local) supports three provisioning methods to match your operational model:
 
 * *Manual provisioning* — Create volumes with full control over every parameter.
-link:task-provisioning-manual.html[Provision storage manually in NetApp Console Local]
+link:task-provisioning-manual.html[Provision storage manually in NetApp Console (local)]
 
-* *Automated provisioning* — Let NetApp Console Local select optimal settings based on your storage class policies.
-link:task-provisioning-automated.html[Provision storage automatically in NetApp Console Local]
+* *Automated provisioning* — Let NetApp Console (local) select optimal settings based on your storage class policies.
+link:task-provisioning-automated.html[Provision storage automatically in NetApp Console (local)]
 
 * *Agentic provisioning* — Use natural-language requests through the AI assistant to provision storage conversationally.
-link:task-provisioning-agentic.html[Provision storage with agentic workflows in NetApp Console Local]
+link:task-provisioning-agentic.html[Provision storage with agentic workflows in NetApp Console (local)]

@@ -5,7 +5,7 @@ keywords: agent VM, vcenter, esxi, increase cpu, increase ram, vm maintenance, a
 summary: You can make changes to your existing VCenter or ESXi host after you deploy the Console agent. For example, you can increase the CPU or RAM of the VM instance that hosts the Console agent. 
 ---
 
-= Maintain your VCenter or ESXi host for Console Local
+= Maintain your VCenter or ESXi host for Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: You can make changes to your existing VCenter or ESXi host after you de
 :imagesdir: ./media/
 
 [.lead]
-You can make changes to your existing VCenter or ESXi host after you deploy the Console Local. For example, you can increase the CPU or RAM of the VM instance that hosts the Console Local. 
+You can make changes to your existing VCenter or ESXi host after you deploy the Console (local). For example, you can increase the CPU or RAM of the VM instance that hosts the Console (local). 
 
 Perform these maintenance tasks using the VM web console:
 
@@ -72,26 +72,26 @@ Edit the VM instance settings in your VCenter or ESXi host, then use the mainten
 . Enter `2` and follow the on-screen prompts. The console scans for new settings and increases the size of the partitions.
 
 
-=== View network settings for the Console Local VM
+=== View network settings for the Console (local) VM
 
-View the network settings for the Console Local VM in the VSphere client to confirm or troubleshoot network issues. You can only view (not update) the following network settings: IP address and DNS details.
+View the network settings for the Console (local) VM in the VSphere client to confirm or troubleshoot network issues. You can only view (not update) the following network settings: IP address and DNS details.
 
 .Steps
 
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console Local.
+. Select the VM instance that hosts the Console (local).
 . Select *Launch Web Console*.
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 . Enter `2` to view the `Network Configuration` menu.
 . Enter a number between 1 and 6 to view the corresponding network settings. 
 
-=== Update the static routes for the Console Local VM
-Add, update, or remove static routes for the Console Local VM as needed.
+=== Update the static routes for the Console (local) VM
+Add, update, or remove static routes for the Console (local) VM as needed.
 
 .Steps
 
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console Local.
+. Select the VM instance that hosts the Console (local).
 . Select *Launch Web Console*.
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 . Enter `2` to view the `Network Configuration` menu.
@@ -100,13 +100,13 @@ Add, update, or remove static routes for the Console Local VM as needed.
 . Optionally, make additional changes.
 . Enter `9` to commit your changes.
 
-=== Update domain search settings for the Console Local VM
-You can update the search domain settings for the Console Local VM.
+=== Update domain search settings for the Console (local) VM
+You can update the search domain settings for the Console (local) VM.
 
 .Steps
 
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console Local.
+. Select the VM instance that hosts the Console (local).
 . Select *Launch Web Console*.
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 . Enter `2`` to view the `Network Configuration` menu.
@@ -124,15 +124,15 @@ Access diagnostic tools to troubleshoot issues with the Console agent. NetApp Su
 
 .Steps
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console Local.
+. Select the VM instance that hosts the Console (local).
 . Select *Launch Web Console*.
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 . Enter `3` to view the Support and Diagnostics menu.
 . Enter `1` to access the diagnostic tools and follow the on-screen prompts.
-+ For example, you can verify that all Console Local services are running. link:task-troubleshoot-console-local.html#check-console-local-status[Check the Console Local status^].
++ For example, you can verify that all Console (local) services are running. link:task-troubleshoot-console-local.html#check-console-local-status[Check the Console (local) status^].
 
-=== Access the Console Local diagnostic tools remotely
-You can access diagnostic tools remotely with a tool such as Putty. Enable SSH access to the Console Local VM by assigning a one-time password.
+=== Access the Console (local) diagnostic tools remotely
+You can access diagnostic tools remotely with a tool such as Putty. Enable SSH access to the Console (local) VM by assigning a one-time password.
 
 SSH access enables advanced terminal features like copy and paste.
 
@@ -140,12 +140,12 @@ SSH access enables advanced terminal features like copy and paste.
 
 .Steps
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console Local.
+. Select the VM instance that hosts the Console (local).
 . Select *Launch Web Console*.
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 . Enter `3` to view the `Support and Diagnostics` menu.
 . Enter `2` to access the diagnostic tools and follow the on-screen prompts to configure a one-time password that expires in 24 hours.
-. Use an SSH tool such as Putty to connect to the Console Local VM using the user name `diag` and the one-time password that you configured.
+. Use an SSH tool such as Putty to connect to the Console (local) VM using the user name `diag` and the one-time password that you configured.
 
 
 

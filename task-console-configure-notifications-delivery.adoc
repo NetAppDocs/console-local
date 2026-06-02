@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: task-console-configure-notifications-delivery.html
 keywords: Active Directory, LDAP, federation, user management, directory services, netapp console
-summary: "Configure the notifications delivery channels for NetApp Console Local."
+summary: "Configure the notifications delivery channels for NetApp Console (local)."
 ---
 
-= Set up notifications delivery channels in NetApp Console Local
+= Set up notifications delivery channels in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,9 +13,13 @@ summary: "Configure the notifications delivery channels for NetApp Console Local
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3316, SPSPM-3496
+
 You can set up multiple channels for notifications. You can configure an email server so that notifications can be delivered via email and you can also use webhooks to send notifications directly to third-party applications. 
 
-By default notifications are sent through the Console Local's built-in notification system, which provides basic alerting capabilities. However, configuring additional delivery channels allows you to receive notifications in the way that best fits your workflow and ensures that you stay informed about important events and alerts related to your storage management activities.
+By default notifications are sent through the Console (local)'s built-in notification system, which provides basic alerting capabilities. However, configuring additional delivery channels allows you to receive notifications in the way that best fits your workflow and ensures that you stay informed about important events and alerts related to your storage management activities.
+
+Notifications include storage alerts, and system alerts,. You can choose to send all notifications through the same channels or use different channels for different types of notifications. For example, you might want to receive storage alerts through email but send audit logs to a third-party monitoring tool through a webhook.
 
 .Required role
 Super admin or organization admin.
@@ -23,7 +27,7 @@ Super admin or organization admin.
 
 == Configure an email server
 
-When you configure an email server, Console Local can send notifications, alerts, and user invitations through your specified email server. This ensures that users receive timely updates and important information. NetApp Console Local supports configuring SMTP email servers, which can be your existing corporate email server or a third-party email service. By integrating with your email infrastructure, you can maintain consistent communication and ensure that users receive critical notifications related to their storage management activities.
+When you configure an email server, Console (local) can send notifications, alerts, and user invitations through your specified email server. This ensures that users receive timely updates and important information. NetApp Console (local) supports configuring SMTP email servers, which can be your existing corporate email server or a third-party email service. By integrating with your email infrastructure, you can maintain consistent communication and ensure that users receive critical notifications related to their storage management activities.
 
 
 .Steps
@@ -38,7 +42,7 @@ When you configure an email server, Console Local can send notifications, alerts
 . Select *Test email* to send a test email to a recipient you specify.
 . After the test succeeds, select *Save* to save the configuration.
 +
-If the test fails, re-verify the settings you entered and double-check that Console Local has network access to the email server.
+If the test fails, re-verify the settings you entered and double-check that Console (local) has network access to the email server.
 
 === Update an email server configuration
 You can update an existing email server configuration if you want to use a different email server.
@@ -52,30 +56,30 @@ You can update an existing email server configuration if you want to use a diffe
 . Select *Test email* to send a test email to a recipient you specify.
 . After the test succeeds, select *Save* to save the new configuration.
 +
-If the test fails, re-verify the settings you entered and double-check that Console Local has network access to the email server.
+If the test fails, re-verify the settings you entered and double-check that Console (local) has network access to the email server.
 
 
 === Remove an email server configuration
-You can remove the email server configuration if you no longer want Console Local to send emails.
+You can remove the email server configuration if you no longer want Console (local) to send emails.
 
 .Steps
 . Select *Administration > Console*.
 . Select *Configuration* to open the Systems configuration page.
 . In the *Email server* section, select *Configure*.
 . Select *Clear fields* to clear the existing configuration.
-. Select *Save* to save the cleared configuration, which removes the email server configuration from Console Local.
+. Select *Save* to save the cleared configuration, which removes the email server configuration from Console (local).
 
 
 == Configure a webhook 
 
-Set up webhooks to send notifications from the Console Local to other tools or services. After creating a webhook, assign it to specific types of notifications, such as alerts or audit logs. Configuring webhooks allows you to send important messages to the right place and help your team stay informed and respond quickly.
+Set up webhooks to send notifications from the Console (local) to other tools or services. After creating a webhook, assign it to specific types of notifications, such as alerts or audit logs. Configuring webhooks allows you to send important messages to the right place and help your team stay informed and respond quickly.
 
 .Before you begin
 
 Before you create the webhook, ensure the following are in place:
 * Identify the external application that should receive notifications
 * Know the endpoint details required by the receiving application
-* Confirm that the Console Local can reach the receiving application over the network
+* Confirm that the Console (local) can reach the receiving application over the network
 * Confirm any protocol, authentication, or encryption requirements needed by the receiving application
 
 .Steps
@@ -88,5 +92,5 @@ Before you create the webhook, ensure the following are in place:
 * The Endpoint URL provided by the receiving application.
 * Any required headers or secrets (authentication credentials).
 * The format to use when sending the webhook. JSON and OTEL (OpenTelemetry) are supported.
-. Test the webhook connection to ensure that Console Local can successfully send messages to the receiving application.
+. Test the webhook connection to ensure that Console (local) can successfully send messages to the receiving application.
 . After the test succeeds, select *Save* to create the webhook.

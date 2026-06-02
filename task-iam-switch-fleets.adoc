@@ -13,14 +13,14 @@ summary: If your organization includes multiple fleets and you have access to th
 :imagesdir: ./media/
 
 [.lead]
-If your organization includes multiple fleets and you have access to those fleets, you can switch between them at any time.
+If you have access to multiple fleets, you can switch between them at any time.
 
 
 NOTE: You can't switch to another fleet while you are viewing any of the *Identity and access* pages.
 
 .Steps
 
-. In the top header of the Console Local, select *Scope*.
+. In the top header of the Console (local), select *Scope*.
 
 . Browse through the fleets in your organization, select the fleet that you want, and then select *Switch*.
 +

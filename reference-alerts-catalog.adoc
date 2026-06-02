@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: reference-alerts-catalog.html
 keywords: alerts catalog, supported alerts, alert reference, ontap alerts, netapp console local
-summary: "Reference list of alerts supported by NetApp Console Local for on-premises ONTAP clusters."
+summary: "Reference list of alerts supported by NetApp Console (local) for on-premises ONTAP clusters."
 ---
 = Alerts catalog
 :hardbreaks:
@@ -12,7 +12,7 @@ summary: "Reference list of alerts supported by NetApp Console Local for on-prem
 :imagesdir: ./media/
 
 [.lead]
-This page lists the alerts supported by NetApp Console Local for on-premises ONTAP clusters, including the impact area, severity, and the condition that triggers each alert.
+This page lists the alerts supported by NetApp Console (local) for on-premises ONTAP clusters, including the impact area, severity, and the condition that triggers each alert.
 
 NOTE: Stub page. Content to be developed from the NCL Alerts Catalog.
 

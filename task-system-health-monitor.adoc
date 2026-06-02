@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-system-health-monitor.html
 keywords: system health, monitoring, alerts, status, netapp console local
-summary: "Monitor the system health of NetApp Console Local to ensure all components are operating correctly."
+summary: "Monitor the system health of NetApp Console (local) to ensure all components are operating correctly."
 ---
-= Monitor NetApp Console Local system health
+= Monitor NetApp Console (local) system health
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: "Monitor the system health of NetApp Console Local to ensure all compon
 :imagesdir: ./media/
 
 [.lead]
-Monitor the NetApp Console Local system health to ensure all components are operating correctly and to identify issues before they affect your environment.
+Monitor the NetApp Console (local) system health to ensure all components are operating correctly and to identify issues before they affect your environment.
 
 == View system health status
 
@@ -22,7 +22,7 @@ Monitor the NetApp Console Local system health to ensure all components are oper
 
 [#notification-center]
 == View system health notifications
-NetApp Console Local provides notifications to keep you informed about the health of your system. You can view these notifications in the Notification Center, which provides information about any issues that may arise with your system.
+NetApp Console (local) provides notifications to keep you informed about the health of your system. You can view these notifications in the Notification Center, which provides information about any issues that may arise with your system.
 
 
 You can display the notifications by selecting the notification bell (image:icon_bell.png[notification bell]) in the menu bar. The color of the little bubble in the bell indicates the highest level severity notification that is active. So if you see a red bubble, it means there's an important notification that you should look at.

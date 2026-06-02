@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: concept-secure-access.html
 keywords: security, access control, SSO, MFA, active directory, authentication, identity, netapp console local
-summary: "Learn about the security options available in NetApp Console Local, including Active Directory integration, single sign-on, and multi-factor authentication."
+summary: "Learn about the security options available in NetApp Console (local), including Active Directory integration, single sign-on, and multi-factor authentication."
 ---
-= Secure access to NetApp Console Local
+= Secure access to NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,40 +12,36 @@ summary: "Learn about the security options available in NetApp Console Local, in
 :imagesdir: ./media/
 
 [.lead]
-NetApp Console Local provides multiple layers of security to protect your storage management environment and control who can access it.
+NetApp Console (local) provides multiple layers of security to protect your storage management environment and control who can access it.
 
-== Authentication options
+== Active Directory integration
 
-Strengthen authentication to NetApp Console Local by integrating with your existing identity infrastructure.
+Connect NetApp Console (local) to your Active Directory so users can sign in with their existing corporate credentials. This eliminates the need for separate accounts and ensures that access changes in your directory are reflected automatically.
 
-=== Active Directory integration
-
-Connect NetApp Console Local to your Active Directory so users can sign in with their existing corporate credentials. This eliminates the need for separate accounts and ensures that access changes in your directory are reflected automatically.
-
-link:task-iam-active-directory-integrate.html[Integrate Active Directory with NetApp Console Local]
+link:task-iam-active-directory-integrate.html[Integrate Active Directory with NetApp Console (local)]
 
 
-=== Multi-factor authentication
+== Multi-factor authentication
 
-Add an additional layer of verification to prevent unauthorized access, even if credentials are compromised.
+Users who aren't a part of your organization's single sign-on (SSO) setup can enable multi-factor authentication (MFA) for an additional layer of verification to prevent unauthorized access, even if credentials are compromised.
 
-link:task-mfa-enable.html[Enable MFA for NetApp Console Local]
+link:task-mfa-enable.html[Enable MFA for NetApp Console (local)]
 
 == Access control
 
-After authenticating users, control what they can do inside NetApp Console Local.
+After authenticating users, control and monitor what they can do inside NetApp Console (local).
 
-=== Identity and access management
+== Identity and access management
 
 Use role-based access control to define what each user can see and manage. Assign users to specific fleets so they only access the storage resources relevant to their responsibilities.
 
-* link:concept-identity-and-access-management.html[Learn about NetApp Console Local identity and access management]
-* link:concept-iam-rbac.html[Learn about NetApp Console Local role-based access control]
-* link:task-iam-manage-members-permissions.html[Add users to NetApp Console Local]
-* link:task-users-fleets-assign.html[Assign users to fleets in NetApp Console Local]
+* link:concept-identity-and-access-management.html[Learn about NetApp Console (local) identity and access management]
+* link:concept-iam-rbac.html[Learn about NetApp Console (local) role-based access control]
+* link:task-iam-manage-members-permissions.html[Add users to NetApp Console (local)]
+* link:task-users-fleets-assign.html[Assign users to fleets in NetApp Console (local)]
 
-=== Audit logging
+== Audit logging
 
-Track all user activity in NetApp Console Local for compliance and security investigations.
+Track all user activity in NetApp Console (local) for compliance and security investigations.
 
-link:task-audit-console-activity.html[View audit logs for NetApp Console Local]
+link:task-audit-console-activity.html[View audit logs for NetApp Console (local)]

@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: concept-folders-fleets-overview.html
 keywords: folders, fleets, organization, resource hierarchy, access control, IAM, roles, members, netapp console local
-summary: "Learn how to use folders and storage fleets to organize resources and control access in NetApp Console Local."
+summary: "Learn how to use folders and storage fleets to organize resources and control access in NetApp Console (local)."
 ---
-= Learn about folders and fleets in NetApp Console Local
+= Learn about folders and fleets in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,14 +16,14 @@ Use folders and storage fleets to organize your NetApp resources and control acc
 
 You organize resources in a hierarchy: the organization is at the top, then folders (which can contain other folders or fleets), and then fleets, which contain storage systems. Assign access roles at the organization, folder, or fleet level so users have the right access to resources.
 
-NOTE: You must have the Organization admin or Folder or fleet admin role to manage folders and fleets in the NetApp Console Local.
+NOTE: You must have the Organization admin or Folder or fleet admin role to manage folders and fleets in the NetApp Console (local).
 
 == Organizational components
 
 The organizational components—organization, folders, and fleets—form a hierarchy that determines how resources are grouped and how access is delegated.
 
 Organization::
-An organization is the top level of the NetApp Console Local hierarchy and typically represents your company. Your organization consists of folders, fleets, members, roles, and resources. Resources are associated with fleets, and members are assigned roles at the organization, folder, or fleet level.
+An organization is the top level of the NetApp Console (local) hierarchy and typically represents your company. Your organization consists of folders, fleets, members, roles, and resources. Resources are associated with fleets, and members are assigned roles at the organization, folder, or fleet level.
 
 Folders::
 Folders group related fleets to organize them by location, site, or business unit. You can't associate storage systems directly with folders, but assigning a user a role at the folder level gives them access to all fleets in that folder.
@@ -39,7 +39,7 @@ link:task-iam-manage-folders-fleets.html[Learn how to create folders and storage
 
 == Resources
 
-A resource is a storage system that the Console Local is aware of and that can be assigned to a fleet. Associate a resource with a fleet so that users with access to the fleet can manage the resource.
+A resource is a storage system that the Console (local) is aware of and that can be assigned to a fleet. Associate a resource with a fleet so that users with access to the fleet can manage the resource.
 
 For example, you might associate an ONTAP cluster with one fleet or with all fleets in your organization. How you associate a resource depends on your organization's needs.
 
@@ -52,16 +52,16 @@ Members are the users and service accounts in your organization. Roles define wh
 Members::
 Members of your organization are user accounts or service accounts. A service account is typically used by an application to complete specified tasks without human intervention.
 +
-Add members to your organization after they sign up for the NetApp Console Local. After you add them, assign roles to provide access to resources.
+Add members to your organization after they sign up for the NetApp Console (local). After you add them, assign roles to provide access to resources.
 +
 link:task-iam-manage-members-permissions.html[Learn how to add members to your organization].
 
 Access roles::
-The Console Local provides access roles that you can assign to the members of your organization.
+The Console (local) provides access roles that you can assign to the members of your organization.
 +
 When you associate a member with a role, you can grant that role for the entire organization, a specific folder, or a specific fleet. The role that you select gives a member permission to the resources in the selected part of the hierarchy.
 +
-The NetApp Console Local provides granular roles that adhere to the principle of least privilege, which means access roles are designed to give users access to only what they need.
+The NetApp Console (local) provides granular roles that adhere to the principle of least privilege, which means access roles are designed to give users access to only what they need.
 +
 Users can have multiple roles as their duties expand.
 
@@ -121,4 +121,4 @@ For organizations with specialized teams requiring specific access, use targeted
 * link:task-iam-manage-folders-fleets.html[Create folders and storage fleets]
 * link:task-storage-fleets-organize.html[Organize storage into fleets]
 * link:task-users-fleets-assign.html[Assign users to fleets for storage management]
-* link:task-audit-console-activity.html[Monitor or audit Console Local actions]
+* link:task-audit-console-activity.html[Monitor or audit Console (local) actions]

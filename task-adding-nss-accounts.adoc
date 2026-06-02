@@ -14,6 +14,8 @@ summary: Associate a NetApp Support Site account with your NetApp Console organi
 
 
 [.lead]
+// Jira: SPSPM-3303
+
 Associate a NetApp Support Site account with your Console organization to enable key workflows for storage management. These NSS credentials are associated with the entire organization.
 
 The Console also supports associating one NSS account per user account. link:task-manage-user-credentials.html[Learn how to manage user-level credentials].

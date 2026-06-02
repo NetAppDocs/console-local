@@ -42,6 +42,8 @@ Users who use single sign-on with an external identity provider or the NetApp Su
 
 Do not enable MFA if your user account is used for API access. Multi-factor authentication stops API access when enabled for a user account. Use service accounts for all API access.
 
+NOTE: You can't configure MFA for your account through the Console if your organization is federated or using Active Directory (AD) for authentication. 
+
 .Before you begin
 * You must have already downloaded an authentication app, such as Google Authenticator or Microsoft Authenticator, to your device.
 * You'll need your password to set up MFA. 

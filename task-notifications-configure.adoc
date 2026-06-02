@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
-permalink: task-alert-rules-configure.html
+permalink: task-notifications-configure.html
 keywords: notifications, alerts, alert policies, thresholds, email, webhooks, netapp console local
-summary: "Configure notifications and alert policies in NetApp Console Local to stay informed of storage events."
+summary: "Configure notifications and alert policies in NetApp Console (local) to stay informed of storage events."
 ---
-= Configure notifications and alert policies in NetApp Console Local
+= Configure notifications and alert policies in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: "Configure notifications and alert policies in NetApp Console Local to 
 :imagesdir: ./media/
 
 [.lead]
-Set up notification rules in the NetApp Console Local to get alerts when storage events exceed limits or require attention.
+Set up notification rules in the NetApp Console (local) to get alerts when storage events exceed limits or require attention.
 
 
 .Steps

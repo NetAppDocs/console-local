@@ -1,38 +1,38 @@
 indexpage:
-  title: NetApp Console Local documentation
-  lead: Manage, monitor, and protect your storage infrastructure with NetApp Console Local.
-  summary: Use NetApp Console Local
+  title: NetApp Console (local) documentation
+  lead: Manage, monitor, and protect your storage infrastructure with NetApp Console (local).
+  summary: Use NetApp Console (local)
   keywords: storage management, data protection, operational efficiency, cost optimization, business continuity, unified management,  self-hosted, high availability, LLM integration, role-based access control, storage provisioning
   tiles:
-    - title: Learn about NetApp Console Local
+    - title: Learn about NetApp Console (local)
       links:
-        - title: What is NetApp Console Local?
+        - title: What is NetApp Console (local)?
           url: /concept-netapp-console-local.html
         - title: Learn about identity and access management
           url: /concept-identity-and-access-management.html
-        - title: Learn about managing storage with NetApp Console Local 
+        - title: Learn about managing storage with NetApp Console (local) 
           url: /concept-manage-storage.html
-        - title: Learn about NetApp Console Local data services
+        - title: Learn about NetApp Console (local) data services
           url: /concept-data-services.html
-    - title: Deploy NetApp Console Local
+    - title: Deploy NetApp Console (local)
       links:
-        - title: Learn about deploying Console Local
+        - title: Learn about deploying Console (local)
           url: /concept-deploy-netapp-console-local.html
-        - title: Install Console Local in your vCenter environment
+        - title: Install Console (local) in your vCenter environment
           url: /task-install-agent-on-prem-ova.html
         - title: Review port requirements
           url: /reference-ports-on-prem.html
         - title: Discover your storage
           url: /task-discover-storage.html
-    - title: Maintain NetApp Console Local
+    - title: Maintain NetApp Console (local)
       links:
-        - title: Maintain a vCenter-installed Console Local
+        - title: Maintain a vCenter-installed Console (local)
           url: /task-console-local-vm-config.html
-        - title: Audit NetApp Console Local operations
+        - title: Audit NetApp Console (local) operations
           url: /task-audit-console-activity.html
-        - title: Troubleshoot Console Local
+        - title: Troubleshoot Console (local)
           url: /task-troubleshoot-console-local.html
-    - title: Set up NetApp Console Local
+    - title: Set up NetApp Console (local)
       links:
         - title: Get started with identity and access
           url: /task-iam-get-started.html
@@ -44,12 +44,12 @@ indexpage:
           url: /task-iam-active-directory-integrate.html
         - title: Connect your LLM
           url: /task-llm-connect.html
-    - title: Manage storage with NetApp Console Local
+    - title: Manage storage with NetApp Console (local)
       links:
         - title: Provision storage automatically
           url: /task-provisioning-automated.html
         - title: Create a storage class
-          url: /task-storage-class-create.html
+          url: /task-storage-class-manage.html
         - title: Monitor fleet-wide health and performance
           url: /task-fleet-health-monitor.html
         - title: Configure notification rules for alerts
@@ -62,11 +62,8 @@ indexpage:
       links:
         - title: Learn about data services
           url: /concept-data-services.html
-        - title: Subscribe to data services
-          url: /task-data-services-subscribe.html
-        - title: Grant access to data services
-          url: /task-data-services-access-grant.html
-        - title: Monitor protection status
-          url: /task-protection-status-monitor.html
+        - title: Get started with data services
+          url: /task-quickstart-data-services.html
+   
   
 

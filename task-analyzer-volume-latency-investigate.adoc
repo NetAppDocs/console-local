@@ -4,7 +4,7 @@ permalink: task-analyzer-volume-latency-investigate.html
 keywords: latency, slow performance, delay center, workload analyzer, investigate, netapp console
 summary: "Investigate latency on a volume using the Workload Analyzer to identify which part of the I/O path is causing slow response times."
 ---
-= Investigate high latency on a volume in NetApp Console Local
+= Investigate high latency on a volume in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,7 +16,7 @@ When application performance degrades, use the Workload Analyzer to identify whi
 
 .Steps
 
-. In the NetApp Console Local, navigate to *Workload Analyzer*.
+. In the NetApp Console (local), navigate to *Workload Analyzer*.
 +
 Alternatively, from the storage inventory, select a volume and click *Analyze*.
 
@@ -49,4 +49,4 @@ Configuration change events (wrench icon) and alert events (warning and critical
 
 .After you finish
 
-If the cause is a configuration or placement issue that the Console Local can resolve, a Fix-It option may be available in the alert associated with the volume. See link:task-remediation-guided.html[Remediate with guided steps].
+If the cause is a configuration or placement issue that the Console (local) can resolve, a Fix-It option may be available in the alert associated with the volume. See link:task-remediation-guided.html[Remediate with guided steps].

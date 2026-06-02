@@ -5,7 +5,7 @@ keywords: administer, monitor, timeline, notifications, alerts, events, notifica
 summary: You can audit user activity (initiated from both the UI and API) from the Audit page, and you can monitor the status of the operations that the Console is performing to see if there are any issues that you need to address. You can view the status from the Audit page or configure the audit logs to be sent to your own syslog server.
 ---
 
-= Audit NetApp Console Local activity
+= Audit NetApp Console (local) activity
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,9 +13,11 @@ summary: You can audit user activity (initiated from both the UI and API) from t
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3319
+
 You can audit user activity initiated from both the UI and API from the Audit page, and you can monitor the status of operations and the user who initiated them.
 
-You can view audit activity in the Console Local, download a CSV of the audit logs, or configure the audit logs to be sent to your own syslog server by using a webhook.
+You can view audit activity in the Console (local), download a CSV of the audit logs, or configure the audit logs to be sent to your own syslog server by using a webhook.
 
 
 == Audit user activity from the Audit page
@@ -61,7 +63,7 @@ You can download the audit logs from the Audit page to a CSV file. This enables 
 
 === Configure audit logs to be exported via webhook
 You can configure your audit logs to be exported to an external application. You do this by specifying a webhook to use. Before you can configure a webhook, you must first create it. 
-link:task-notifications-configure.html[Learn how to create a webhook integration].
+link:task-console-configure-notifications-delivery.html[Learn how to create a webhook integration].
 
 
 .Steps

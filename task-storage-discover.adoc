@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-storage-discover.html
 keywords: discover, storage, storage systems, onboard, inventory, netapp console
-summary: "Discover storage systems in NetApp Console Local to bring them under centralized management."
+summary: "Discover storage systems in NetApp Console (local) to bring them under centralized management."
 ---
-= Discover storage in NetApp Console Local
+= Discover storage in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,4 +12,4 @@ summary: "Discover storage systems in NetApp Console Local to bring them under c
 :imagesdir: ./media/
 
 [.lead]
-Discover storage systems in the NetApp Console Local to bring them under centralized management and make them available for fleet organization.
+Discover storage systems in the NetApp Console (local) to bring them under centralized management and make them available for fleet organization.

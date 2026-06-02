@@ -4,7 +4,7 @@ permalink: task-analyzer-volume-config-change-correlate.html
 keywords: configuration change, event timeline, correlate, performance, workload analyzer, netapp console
 summary: "Use the Workload Analyzer event timeline to determine whether a configuration change caused a performance or capacity issue on a volume."
 ---
-= Correlate a configuration change with a volume issue in NetApp Console Local
+= Correlate a configuration change with a volume issue in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,7 +16,7 @@ When a volume's behavior changes unexpectedly, a recent configuration change is 
 
 .Steps
 
-. In the NetApp Console Local, navigate to *Workload Analyzer*.
+. In the NetApp Console (local), navigate to *Workload Analyzer*.
 +
 Alternatively, from the storage inventory, select a volume and click *Analyze*.
 
@@ -46,4 +46,4 @@ Look for inflection points in the metric charts that align with the configuratio
 
 .After you finish
 
-If the configuration change was unintended or made outside of the Console Local directly on the ONTAP cluster, the Console Local may have already raised a compliance alert. See link:task-remediation-guided.html[Remediate with guided steps] to restore the volume to its expected configuration.
+If the configuration change was unintended or made outside of the Console (local) directly on the ONTAP cluster, the Console (local) may have already raised a compliance alert. See link:task-remediation-guided.html[Remediate with guided steps] to restore the volume to its expected configuration.

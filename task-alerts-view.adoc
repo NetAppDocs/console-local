@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-alerts-view.html
 keywords: view alerts, alerts overview, alerts dashboard, org-wide alerts, fleet alerts, netapp console local
-summary: "View active alerts across your organization or for a specific fleet from the alerts overview page in NetApp Console Local."
+summary: "View active alerts across your organization or for a specific fleet from the alerts overview page in NetApp Console (local)."
 ---
-= View alerts in NetApp Console Local
+= View alerts in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,9 @@ summary: "View active alerts across your organization or for a specific fleet fr
 :imagesdir: ./media/
 
 [.lead]
-View active alerts in the NetApp Console Local from the alerts overview page. By default, the page shows an organization-wide view; you can switch to a fleet-wide view to focus on alerts for a specific fleet.
+// Jira: SPSPM-3316, SPSPM-3496
+
+View active alerts in the NetApp Console (local) from the alerts overview page. By default, the page shows an organization-wide view; you can switch to a fleet-wide view to focus on alerts for a specific fleet.
 
 NOTE: Stub page. Content to be developed.
 
@@ -41,7 +43,7 @@ You must have permission to view alerts for the organization or fleet.
 
 == Filter alerts
 
-Search and filter alerts in the NetApp Console Local to narrow the alerts table to the alerts you care about. You can search by alert name, description, resource, severity, or impact area, and you can apply filters for severity and impact area.
+Search and filter alerts in the NetApp Console (local) to narrow the alerts table to the alerts you care about. You can search by alert name, description, resource, severity, or impact area, and you can apply filters for severity and impact area.
 
 NOTE: Stub page. Content to be developed.
 
@@ -58,7 +60,7 @@ NOTE: Stub page. Content to be developed.
 
 == Export alerts to CSV
 
-Export the alerts list in the NetApp Console Local to a CSV file for offline analysis or reporting. The export reflects the current scope (organization or fleet), search text, and filters.
+Export the alerts list in the NetApp Console (local) to a CSV file for offline analysis or reporting. The export reflects the current scope (organization or fleet), search text, and filters.
 
 NOTE: Stub page. Content to be developed.
 
