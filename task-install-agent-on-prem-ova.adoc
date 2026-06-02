@@ -5,7 +5,7 @@ keywords: install agent, on prem agent installation, on prem connector, vmware, 
 summary: If you are a VMWare user, you can use an OVA to install a Console agent in your VCenter. THe OVA download or URL is available through the NetApp Console (local).
 ---
 
-= Install a NetApp Console (local) agent on-premises using VCenter
+= Install NetApp Console (local) using VCenter
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,17 +13,17 @@ summary: If you are a VMWare user, you can use an OVA to install a Console agent
 :imagesdir: ./media/
 
 [.lead]
-If you are a VMWare user, you can use an OVA to install a NetApp Console (local) in your VCenter. THe OVA download or URL is available through the NetApp Console (local).
+You use an OVA to install a NetApp Console (local) in your VCenter. THe OVA download or URL is available through the NetApp Support site.
 
-NOTE: When you install NetApp Console (local) with your VCenter tools, you can use the VM web console to perform maintenance tasks. link:task-console-local-vm-config.html[Learn more about the VM console for the NetApp Console (local).]
 
 == Prepare to install  NetApp Console (local) 
-Before installation, make sure your VM host meets the requirements and the NetApp Console (local) can access the internet and targeted networks. To use NetApp data services or Cloud Volumes ONTAP, create cloud provider credentials for the NetApp Console (local) to perform actions on your behalf.
+Before installation, make sure your VM host meets the requirements and the NetApp Console (local) can access the internet and targeted networks. To use NetApp data services such as NetApp Backup and Recovery, create cloud provider credentials for the NetApp Console (local) to perform actions on your behalf.
 
 === Review NetApp Console (local) host requirements
 
 Make sure your host machine meets installation requirements before installing NetApp Console (local).
 
+include::os-reqs.adoc[tag=vm-host]
 
 NOTE: Install NetApp Console (local) in a vCenter environment rather than directly on an ESXi host. 
 
@@ -36,7 +36,7 @@ NOTE: Install NetApp Console (local) in a vCenter environment rather than direct
 NetApp Console (local) needs access to the networks where your ONTAP clusters and other resources are located. This allows the NetApp Console (local) to discover those resources, monitor their health, and perform actions on them. If your NetApp Console (local) doesn't have access to a target network, it won't be able to manage the resources on that network.
 
 Customer question: What information do I need to gather before I install NetApp Console (local)? 
-Cu
+
 
 
 
@@ -48,7 +48,7 @@ NetApp supports installing NetApp Console (local) in your VCenter environment. T
 
 === Download the OVA or copy the URL    
 
-Download the OVA or copy the OVA URL directly from the NetApp Console (local).
+Download the OVA.
 
 . Download the Console agent software from the NetApp Support Site.
 
