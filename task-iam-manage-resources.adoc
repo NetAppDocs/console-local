@@ -15,7 +15,7 @@ summary: Control user access to resources by adding them to fleets and folders i
 [.lead]
 Control user access to resources by adding them to fleets and folders in your NetApp Console organization. Grant access to users at the fleet level.
 
-A _resource_ is an entity that the Console is aware of, such as a storage resource, a Console agent, or a Backup and Recovery workload. 
+A _resource_ is an entity that the Console is aware of, such as a storage resource  or a Backup and Recovery workload. 
 
 You can view and manage resources from the *Resources* page in the Console.
 
@@ -29,11 +29,6 @@ Storage resources are the most common type of resource in your organization and 
 
 NOTE: Users with the Org admin role can add resources to folder to delegate the task of associating the resource with fleets to Folder or fleet admins of the respective folder. link:task-iam-manage-folders-fleets.html#associate-resource-folder[Learn about associating a resource with a folder].
 
-Console agents::
-If you used a Console agent to discover storage systems, add the agent to the same fleet as the storage system. This allows users to perform agent-enabled functions, such as data services or Console-native storage management. You can add agents to fleets from the *Agents* page in the Console. link:task-iam-manage-folders-fleets.html[Learn how to associate a Console agent with a fleet].
-
-Keystone subscriptions::
-If you have Keystone subscriptions in your organization, you can view them on the *Resources* page. You can associate Keystone subscriptions with fleets to provide access to members who have permissions for those fleets.
 
 
 Backup and Recovery workloads::
@@ -87,11 +82,6 @@ Note that you can only select from the folders and fleets for which you have adm
 * If you associated the resource with fleets, members who have permissions for those fleets now have the ability to access the resource from the Console.
 * If you associated the resource with a folder, a _Folder or fleet admin_ can now access the resource and associate it with a fleet within the folder. link:task-iam-manage-folders-fleets.html#associate-resource-folder[Learn about associating a resource with a folder].
 
-.After you finish
-
-If you discover a resource using a Console agent, associate the Console agent with the fleet to grant access. Otherwise, the Console agent and its associated resource are not accessible by members without the _Organization admin_ role.
-
-link:task-iam-manage-folders-fleets.html[Learn how to associate a Console agent with a folder or fleet].
 
 
 
