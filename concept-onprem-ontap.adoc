@@ -19,7 +19,7 @@ You can manage the ONTAP clusters running on AFF/FAS controllers and ONTAP Selec
  
 NetApp Console (local) provides centralized management of NetApp storage and data services across on-premises and cloud environments at enterprise grade. The Console (local) is required to access and use NetApp data services. As a management interface, it enables you to manage many storage resources from one interface. Console (local) administrators can control access to storage and services for all systems within the enterprise.
  
-You don’t need a license or subscription to start using NetApp Console (local) and you only incur charges when you need to deploy Console (local) agents in your cloud to ensure connectivity to your storage systems or NetApp data services. However, some NetApp data services accessible from the Console (local) are licensed or subscription-based.
+You don’t need a license or subscription to start using NetApp Console (local). However, some NetApp data services accessible from the Console (local) are licensed or subscription-based.
  
 Learn more about the https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html[NetApp Console (local)].
 
@@ -35,6 +35,4 @@ Learn more about the https://docs.netapp.com/us-en/console-setup-admin/concept-o
 
 == Cost
 
-A cost might be associated, but it depends on the following:
-
-* Whether you use NetApp data services such as NetApp Backup and Recovery..
+A cost might be associated if you use NetApp data services such as NetApp Backup and Recovery.

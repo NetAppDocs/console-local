@@ -12,7 +12,7 @@ summary: "Frequently asked questions about NetApp Console (local) topics covered
 :imagesdir: ./media/
 
 [.lead]
-This FAQ lists common questions about NetApp Console (local). It focuses on the major topics covered in this documentation set and can be used to shape deeper FAQ content.
+This FAQ lists common questions about NetApp Console (local). It focuses on the major topics covered in this documentation set and can be used to shape deeper FAQ content. <DRAFT>
 
 == Getting started
 
@@ -91,10 +91,6 @@ This FAQ lists common questions about NetApp Console (local). It focuses on the 
 
 == Maintenance, troubleshooting, and support
 
-* What maintenance tasks are required for Console agents over time?
-* When do I need to update agent addressing, certificates, or proxy settings?
-* What should I check first when a Console agent is unhealthy or disconnected?
-* How should I approach upgrading NetApp Console (local) and its agents?
 * Which logs, diagnostics, and health views are most useful for troubleshooting?
 * How do I collect the right information before opening a support case?
 * When should I use read-only mode or other protective maintenance actions?

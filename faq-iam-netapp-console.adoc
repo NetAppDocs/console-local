@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: faq-iam-netapp-console.html
-keywords: faq, frequently asked questions, frequently asked questions about netapp console iam, identity and access management, role-based access control, rbac, iam, roles, permissions, organization, folders, fleets, members, agents, service accounts, federated groups
+keywords: faq, frequently asked questions, frequently asked questions about netapp console iam, identity and access management, role-based access control, rbac, iam, roles, permissions, organization, folders, fleets, members, service accounts, federated groups
 summary: "Frequently asked questions about identity and access management and role-based access control in NetApp Console."
 ---
 
@@ -49,19 +49,15 @@ You can create up to seven levels of folders and fleets in your organization's r
 Resources that can be associated with fleets include:
 
 * Storage systems
-* Keystone subscriptions
 * Some Backup and Recovery workloads
-* Console agents
+
 
 == Roles and permissions
 
 .What is the difference between an Organization admin and a Folder or fleet admin?
 
-An Organization admin has unrestricted access to all fleets and folders across the entire organization and is the only role that can create Console agents. A Folder or fleet admin can only manage the specific folders and fleets they are assigned and cannot create Console agents.
+An Organization admin has unrestricted access to all fleets and folders across the entire organization. A Folder or fleet admin can only manage the specific folders and fleets they are assigned. Folder or fleet admins can add members and manage resources within their assigned folders or fleets, but they cannot access or manage resources outside of their assigned areas.
 
-.Who can create Console agents in NetApp Console?
-
-Only users with the Organization admin role can create Console agents. Folder or fleet admins cannot create Console agents.
 
 .What role should I assign to a user who only needs to monitor storage health and manage support cases?
 
@@ -87,11 +83,6 @@ No. Even when a federated group is assigned a role, individual users must meet t
 NetApp recommends assigning a minimum access role such as Organization viewer to these users.
 
 
-== Console agents
-
-.What happens to a Console agent after it is created, and can it be used in other fleets?
-
-Console agents are initially tied to the fleet where they are created. After creation, admins can add agents to other fleets or associate them with a folder from the Agents page.
 
 == Related information
 

@@ -5,7 +5,7 @@ keywords: iam, quick start, get started, get started with iam, identity and acce
 summary: "To get started with identity and access management in NetApp Console, customize the organization's hierarchy, add additional members, add or discover resources, and associate those resources with fleets."
 ---
 
-= Get started with identity and access in NetApp Console (local)
+= Get started with fleet management in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,11 +13,10 @@ summary: "To get started with identity and access management in NetApp Console, 
 :imagesdir: ./media/
 
 [.lead]
-When you sign up for the NetApp Console (local), you're prompted to create a new organization. The organization includes one member (an Organization admin) and one default fleet. To set up identity and access management (IAM) to meet your business needs, you'll need to customize your organization's hierarchy, add additional members, add or discover resources, and associate those resources across your hierarchy.
+When you install NetApp Console (local), you're prompted to create a new organization. The organization includes one member (an Organization admin) and one default fleet. To set up fleet management to meet your business needs, you'll need to customize your organization's hierarchy, add additional members, add or discover resources, and associate those resources across your hierarchy.
 
-You need the  *Org admin* or *Super admin* permissions to manage identity and access for your organization. With *Folder or fleet admin* permissions, you can manage only the folders and fleets you have access to.
-
-Follow these steps to set up a new organization. The order may vary based on your organization's needs.
+You need the *Org admin* or *Super admin* permissions to set up fleet management for your organization. You configure fleets and grant access with the Identity and access features of Console (local)
+Follow these steps to create fleets within your organization and grant access to them. The order may vary based on your organization's needs.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Edit the default fleet or add to your organization's hierarchy
 
@@ -30,7 +29,7 @@ link:task-iam-manage-folders-fleets.html[Learn how to organize your resources wi
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Associate members with your organization
 
 [role="quick-margin-para"]
-After users sign up for NetApp Console (local), you must explicitly add them to your Console organization. You also have the option to add service accounts to your organization.
+When you add a user to  NetApp Console (local), you grant them access to specific fleet(s) by assiging them a role within a fleet or fleets.
 
 [role="quick-margin-para"]
 link:task-iam-manage-members-permissions.html[Learn how to manage members and their permissions].
@@ -54,11 +53,11 @@ Learn how to create or discover resources:
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Associate resources with additional fleets
 
 [role="quick-margin-para"]
-Adding or discovering a system in the Console automatically associates the resource with the currently selected fleet. To make that resource available to another fleet in your organization, associate it with the respective fleet. If a Console agent is used to manage the resource, associate the Console agent with the respective fleet.
+Adding or discovering a system in the Console automatically associates the resource with the currently selected fleet. To make that resource available to another fleet in your organization, associate it with the respective fleet. 
 
 [role="quick-margin-list"]
 * link:task-iam-manage-resources.html[Learn how to manage your organization's resource hierarchy].
-* link:task-iam-manage-folders-fleets.html[Learn how to associate a Console agent with a folder or fleet].
+
 
 .Related information
 

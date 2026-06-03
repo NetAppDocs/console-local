@@ -17,7 +17,7 @@ summary: Use NetApp Console's Identity and Access Management (IAM) to structure 
 
 Use NetApp Console's Identity and Access Management (IAM) to organize your NetApp resources and control access according to your business structure—by location, department, or fleet. 
 
-You organize resources in a hierarchy: the organization is at the top, then folders (which can have other folders or fleets), and then fleets, which have storage systems, workloads, and agents.
+You organize resources in a hierarchy: the organization is at the top, then folders (which can have other folders or fleets), and then fleets, which have storage systems and Backup and Recovery workloads.
 
 Assign access roles at the organization, folder, or fleet level so users have the right access to resources.
 
@@ -61,7 +61,7 @@ NOTE: Users with the Org admin role can add resources to a folder to delegate th
 
 === Resources
 
-A _resource_ is an entity that the Console is aware of and that can be assigned to a fleet. _Resources_ include storage systems, Keystone subscriptions, some Backup and Recovery workloads, as well as Console agents.
+A _resource_ is an entity that the Console is aware of and that can be assigned to a fleet. _Resources_ include storage system and some Backup and Recovery workloads.
 
 Associate a resource with a fleet so that users with access to the fleet can use the resource.
 
@@ -86,17 +86,6 @@ Keystone subscriptions are also resources that you can associate with fleets in 
 Backup and Recovery workloads (Oracle and Microsoft SQL Server)::
 Some Backup and Recovery workloads are also considered resources. Assign a Backup and Recovery workload to a fleet in order to grant users access. 
 
-
-
-[#associate-agents]
-Console agents::
-
-Organization admins create Console agents to manage storage systems and enable NetApp data services. Agents are initially tied to the fleet where they are created, but admins can add them to other fleets from the *Agents* page. 
-
-
-+
-
-link:task-iam-manage-folders-fleets.html[Learn how to associate agents with fleets.]
 
 
 === Members and roles
@@ -148,7 +137,7 @@ For organizations with fewer than 50 users and centralized storage management, c
 * **Roles:**
 ** 2 senior members: *Super admin* role for full administrative access
 ** 3 team members: *Super viewer* role for monitoring without modification rights
-* **Agent strategy:** Single agent associated with all fleets for shared resource access
+
 * **Benefits:** Simplified administration, reduced role complexity, suitable for teams requiring broad access
 
 === Multi-regional enterprise strategy
@@ -169,7 +158,7 @@ For large organizations with regional operations and specialized teams, implemen
 * **Data service roles:**
 ** *Backup and Recovery admin*: Per-fleet based on backup responsibilities
 ** *Ransomware Resilience admin*: Security team monitoring across fleets
-* **Agent strategy:** Regional agents associated with appropriate geographical fleets
+
 * **Benefits:** Enhanced security through role segregation, regional autonomy, and compliance with local regulations
 
 === Departmental specialization strategy
@@ -184,7 +173,7 @@ For organizations with specialized teams requiring specific data service access,
 ** Backup team: *Backup and Recovery super admin* for comprehensive backup operations
 ** Development team: *Storage admin* for test environment management
 ** Compliance team: *Operation support analyst* for monitoring and support case management
-* **Agent strategy:** Agents linked to departmental fleets based on resource ownership
+
 * **Benefits:** Tailored access control, improved operational efficiency, and clear accountability for specialized tasks
 
 

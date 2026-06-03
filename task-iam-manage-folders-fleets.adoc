@@ -63,7 +63,7 @@ Members who have permissions for fleet A can now access the resource.
 === Fleets
 Associate resources with fleets to allow members to manage them. Resources must be associated with a fleet for management and user access.
 
-An organization can have one or many fleets. A fleet can be directly under the organization or inside a folder. If an agent is used to discover resources within a fleet, you must also associate the agent with that fleet. 
+An organization can have one or many fleets. A fleet can be directly under the organization or inside a folder. 
 
 Users navigate between assigned fleets on the *Systems* page to manage the resources associated with each fleet. 
 
