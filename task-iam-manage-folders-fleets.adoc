@@ -13,66 +13,48 @@ summary: Add folders and fleets to match your business structure. After you crea
 :imagesdir: ./media/
 
 [.lead]
-Add folders and fleets to match your business structure. After you create folders and fleets, you can associate resources with them and manage member access to those fleets.
+Use folders and fleets to match your business structure, control access, and organize resources in NetApp Console (local).
 
-The Console automatically creates one fleet for you when you create a new organization. Most organizations have the need for more than one fleet, as well as folders to keep things organized. link:concept-identity-and-access-management.html[Learn about the resource hierarchy in NetApp Console].
+NetApp Console (local) creates one default fleet when you create an organization. You can add more fleets and group them with folders. link:concept-identity-and-access-management.html[Learn about the resource hierarchy in NetApp Console].
+
 
 
 
 == Using folders and fleets to organize resources
-In NetApp Console, an organization contains folders and fleets that help you organize your resources. Folders help you group related fleets, and fleets help you manage resources and member access.
+In NetApp Console (local), your organization contains folders and fleets.
+
+* Folders group related fleets and support delegated administration and role inheritance.
+* Fleets are where you associate resources for management and how you grant users operational access.
+
+You can create folders and fleets first and add resources and member access later. This lets you plan your resource hierarchy before adding users and resources in Console (local). If your structure is already defined, you can add resources and assign access when you create the fleet. You can update fleets at any time.
+
+For example, put production clusters in a Production fleet and test clusters in a Test fleet, and grant each team access only to the fleet they own.
 
 === Folders
-Folders help you organize related fleets. You can create nested folders to represent different levels of your organization's structure. For example, you might create a top-level folder for each business unit and then create subfolders for different teams within that business unit. You then create fleets within folders.
+Folders organize fleets by business structure, such as business unit, region, or team. You can nest folders to mirror your organization.
 
-Folders also enable you to manage member access more efficiently using role inheritance. When you assign roles to members at the folder level, they inherit permissions for all child fleets and folders.
+Roles assigned at a folder level are inherited by child folders and fleets. You can also use a folder to delegate fleet assignment tasks to a Folder or fleet admin for that part of the hierarchy.
 
-NOTE: Folders are an organizational tool and not visible to members who do not have IAM permissions such as the Org admin, Folder or fleet admin, or Super admin roles. Members access fleets, not folders.
+NOTE: Members work in fleets, not folders. A resource associated only with a folder is not manageable by members until it is associated with a fleet.
 
-Org admins can delegate administrative responsibilities by creating folders. After creating a folder, an Org admin can assign a member the Folder or fleet admin roles for particular folders. These members can then manage all fleets within that folder without having access to the entire organization.
-
-
-Folders can have other folders or fleets as children, but they cannot have resources directly associated with them. Resources must be associated with a fleet.
+For example, a regional enterprise could use folders to organize ONTAP storage by business unit and workload. It might create a top-level folder for North America, subfolders for Production and Development, and fleets for ONTAP clusters that host SAP, VMware, and backup volumes. Storage admins assigned to the North America folder inherit access to all child fleets, while application teams get access only to the fleets they manage.
 
 
-[#associate-resource-folder]
-[NOTE]
-====
-.When to associate a resource with a folder
-
-An _Organization administrator_ can associate a resource with a folder so a _Folder or fleet administrator_ can link it to the appropriate fleets in the folder.
-
-For example, let's say you have a folder that contains two fleets:
-
-image:diagram-iam-resource-association-folder-1.png["A diagram that shows a folder and two fleets that reside in the folder: fleet A and fleet B."]
-
-The _Organization admin_ can associate a resource with the folder:
-
-image:diagram-iam-resource-association-folder-2.png["A diagram that shows a folder with a resource that is associated with the folder. Two fleets that reside in the folder: fleet A and fleet B."]
-
-Associating a resource with a folder does not make it accessible to all fleets; only the _folder or fleet admin_ can see it. The _Folder or fleet admin_ decides which fleets can access it and associates the resource with the appropriate fleets.
-
-In this example, the admin associates the resource with fleet A:
-
-image:diagram-iam-resource-association-folder-3.png["A diagram that shows a folder with two fleets that reside in the folder: fleet A and fleet B. A resource that is associated with fleet A."]
-
-Members who have permissions for fleet A can now access the resource.
-====
 
 
 === Fleets
-Associate resources with fleets to allow members to manage them. Resources must be associated with a fleet for management and user access.
+Associate resources with fleets so members can manage them. A fleet can exist directly under the organization or inside a folder.
 
-An organization can have one or many fleets. A fleet can be directly under the organization or inside a folder. 
+For example, a healthcare company uses ONTAP storage in separate production and development fleets. The production fleet runs clinical apps and patient record databases, while the development fleet supports testing and validation. This separation protects live data, enforces tighter production access, supports auditability and least-privilege controls, and lets dev teams work without impacting patient-facing workloads.
 
 Users navigate between assigned fleets on the *Systems* page to manage the resources associated with each fleet. 
 
 
 == Add a folder or fleet
-Add fleets to manage resources and folders to group related fleets.
-When you create a new organization, the Console includes one fleet.
+Add fleets to manage resources. Add folders to group related fleets and delegate administration.
+You can create up to seven hierarchy levels.
 
-You can create up to seven levels of folders and fleets in your organization's resource structure. Create nested folders to organize your resources as needed.
+You can add resources and assign member access when you create a fleet or folder, or you can do it later.
 
 
 
@@ -84,18 +66,16 @@ You can create up to seven levels of folders and fleets in your organization's r
 
 . From the *Organization* page, select *Add folder or fleet*.
 
-. Select *Folder* or *fleet*.
+. Select *Folder* or *Fleet*.
 
-. Enter folder or fleet details:
+. In *Name and location*: Enter a name and choose a location for the folder or fleet.
+
+. Optional: Expand the *Resources* section to associate resources with the fleet or folder.
+.. Mark the check box next to the resource you want to associate and then select *Associate with the fleet*. If you haven't added systems to Console (local) yet, you can do this step later.
 +
-* *Name and location*: Enter a name and choose a location for the folder or fleet. You can place folders or fleets under the organization or inside another folder.
+NOTE: Members can't access resources in a folder until those resources are assigned to a fleet.
 
-* *Resources*: Select the resources that you want to associate with this folder or fleet. If you haven't added storage systems to the Console yet, you can do this step later.
-
-+
-NOTE: Members can't access resources in a folder until those resources are assigned to a fleet. Use folders to hold resources temporarily until you create the necessary fleets. This can help the Organization admin delegate resource allocation to a Folder or fleet admin, who then assigns resources to fleets within the folder.
-
-* *Access*: Select *Add a member* to assign access and a role. You can add or remove members from the fleet or folder at any time.
+. Optional: Expand the *Access* section to assign access to members. Select *Add a member* to assign access and a role. By default, the user who creates the fleet has access to it.
 +
 link:reference-iam-predefined-roles.html[Learn about access roles].
 
@@ -173,8 +153,6 @@ You can view the members associated with a folder or fleet from the *Organizatio
 . From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit fleet*.
 
 . On the *Edit* page, select *Access* to view the list of members who have access to the selected folder or fleet.
-
-* Select *Access* to view the members who have access to the folder or fleet.
 +
 image:screenshot-iam-member-access.png[A screenshot of the Edit fleet page that shows the members who have access to the fleet.]
 
@@ -183,7 +161,7 @@ image:screenshot-iam-member-access.png[A screenshot of the Edit fleet page that 
 
 Modify member access to control resource access. Remember that roles assigned at the folder level are inherited by all child fleets and folders.
 
-You cannot change member access at lower levels if it is inherited from the folder or organization level. Change the member's permission at the higher hierarchy level to change access Alternatively, you can link:task-iam-manage-roles.html#manage-permissions[manage permissions from the Members page].
+You cannot change access at a lower level when that access is inherited from a folder or the organization. To change inherited access, update permissions at the higher level. Alternatively, you can link:task-iam-manage-roles.html#manage-permissions[manage permissions from the Members page].
 
 
 .Steps
