@@ -70,6 +70,7 @@ You can add resources and assign member access when you create a fleet or folder
 
 . In *Name and location*: Enter a name and choose a location for the folder or fleet.
 
+[#associate-resource-folder]
 . Optional: Expand the *Resources* section to associate resources with the fleet or folder.
 .. Mark the check box next to the resource you want to associate and then select *Associate with the fleet*. If you haven't added systems to Console (local) yet, you can do this step later.
 +

@@ -66,23 +66,9 @@ If you have the _Folder or fleet admin_ role, the page displays all members in t
 
 include::_include/tasks-role.adoc[tag=view-role]
 
-== View members associated with a folder or fleet
+== Fleet-level membership view
 
-You can view members who have access to a specific folder or fleet.
-
-NOTE: This page remains member-centric. For frequent fleet-level assignment changes, use link:task-users-fleets-assign.html[Manage fleet access assignments].
-
-.Steps
-
-. Select *Administration > Identity and access*.
-
-. Select *Organization*.
-
-. From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit fleet*.
-
-* Select *Access* to view the members who have access to the folder or fleet.
-+
-image:screenshot-iam-member-access.png[A screenshot of the Edit fleet page that shows the members who have access to the fleet.]
+This page is member-centric. To view or modify access from a specific folder or fleet, use the fleet-centric task: link:task-users-fleets-assign.html[Manage fleet access assignments].
 
 
 == Assign or modify member access

@@ -53,55 +53,9 @@ View which members have access to a specific folder or fleet.
 
 . Select *Access* to view the members who have access to the folder or fleet.
 
-== Add an access role to a member
+== Manage one member across multiple scopes
 
-You typically assign a role when adding a member to your organization, but you can update it at any time by adding roles.
-
-Your access role strategy should align with how you have organized your folders and storage fleets. For example, if you have a folder for each region, assign the Folder or fleet admin role at the folder level so the admin can manage all fleets within that region.
-
-.Steps
-
-. Select *Administration* > *Identity and access*.
-
-. Select *Members*.
-
-. Select one of the member tabs: *Users*, *Service accounts*, or *Federated groups*.
-
-. Select the actions menu image:icon-action.png[An icon with three dots] next to the member and select *Add a role*.
-
-. Complete the steps in the dialog box:
-+
-.. *Select an organization, folder, or fleet*: Choose the level at which the member should have permissions.
-+
-If you select the organization, the member has permissions across all folders and fleets. If you select a folder, the member inherits permissions for all fleets within that folder. If you select a fleet, the member has permissions only for resources in that fleet.
-.. *Select a category*: Choose a role category. link:reference-iam-predefined-roles.html[Learn about access roles].
-.. *Select a role*: Choose a role that provides the member with the appropriate permissions for the selected scope.
-.. *Add role*: If you want to provide access to additional folders or fleets, select *Add role*, specify another folder or fleet and role category, and then select a role.
-
-. Select *Add new roles*.
-
-== Change a member's assigned role
-
-Change a member's roles to update their access to folder or fleet resources.
-
-NOTE: Members must have at least one role. You can't remove all roles from a member. If you need to remove all roles, delete the member from your organization.
-
-.Steps
-
-. Select *Administration* > *Identity and access*.
-
-. Select *Members*.
-
-. Select one of the member tabs: *Users*, *Service accounts*, or *Federated groups*.
-
-. From the Members page, navigate to a member in the table, select image:icon-action.png[An icon with three dots] and then select *View details*.
-
-. In the table, expand the row for the organization, folder, or fleet where you want to change the member's assigned role and select *View* in the Role column.
-
-. You can change an existing role or remove a role:
-+
-* To change a member's role, select *Change* next to the role you want to change. You can only change a role to a role within the same role category. Confirm the change.
-* To remove a member's role, select image:icon-delete.png[An icon of a trash can] next to the role. Confirm the removal.
+This page is fleet-centric. If you need to add roles, change roles, or remove one member across multiple folders or fleets, use the member-centric task: link:task-iam-manage-roles.html[Manage member access].
 
 == Modify member access from a folder or fleet
 
@@ -123,18 +77,4 @@ You can also manage member access directly from the folder or fleet in the Organ
 
 == Remove a member from your organization
 
-Remove a member when they leave your organization or no longer need access to any folder or fleet.
-
-When you remove a member, the Console (local) revokes their permissions but retains their Console (local) and NetApp Support Site accounts.
-
-.Steps
-
-. Select *Administration* > *Identity and access*.
-
-. Select *Members*.
-
-. Select one of the member tabs: *Users*, *Service accounts*, or *Federated groups*.
-
-. From the Members page, navigate to a member in the table, select image:icon-action.png[An icon with three dots] and then select *Delete user*.
-
-. Confirm that you want to remove the member from your organization.
+Use the member-centric task to remove a member from your organization: link:task-iam-manage-roles.html#remove-a-member-from-your-organization[Remove a member from your organization].
