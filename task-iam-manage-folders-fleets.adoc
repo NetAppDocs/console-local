@@ -94,11 +94,18 @@ Rename a folder or fleet as needed. Renaming does not affect associated resource
 . On the *Edit* page, enter a new name and select *Apply*.
 
 
+[#delete-a-folder-or-fleet]
 == Delete a folder or fleet
 
 Delete folders and fleets you no longer need, such as after team restructuring or fleet completion.
 
 Before you delete a folder or fleet, make sure it does not contain any resources. <<modify-resources,Learn how to remove resources>>.
+
+Before deleting, also verify member access:
+
+* Review members with access to the folder or fleet. <<view-associated-resources-members,View associated resources and members>>.
+* Remove or update member access if needed. <<modify-members,Modify member access>>.
+* If you are deleting a fleet, move resources to the target fleet first. link:task-iam-manage-resources.html[Learn how to move resources between fleets].
 
 
 .Steps
@@ -181,4 +188,5 @@ You cannot change access at a lower level when that access is inherited from a f
 
 * link:concept-identity-and-access-management.html[Learn about identity and access in NetApp Console]
 * link:task-iam-get-started.html[Get started with identity and access]
+* link:task-users-fleets-assign.html[Manage fleet access assignments]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the identity and access API]

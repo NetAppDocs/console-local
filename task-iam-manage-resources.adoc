@@ -32,7 +32,7 @@ NOTE: Users with the Org admin role can add resources to folder to delegate the 
 
 
 Backup and Recovery workloads::
-Backup and Recovery workloads are also considered resources. You can assign users permissions to access Backup and Recovery workloads by associating the workloads with fleets. For example, assign a user access to a Backup and Recovery workload by associating it with a  fleet the user can access and granting the appropriate Backup and Recovery role.
+Backup and Recovery workloads are also considered resources. You can assign member permissions to access Backup and Recovery workloads by associating the workloads with fleets. For example, assign a member access to a Backup and Recovery workload by associating it with a fleet the member can access and granting the appropriate Backup and Recovery role.
 
 
 
@@ -120,9 +120,28 @@ NOTE: To remove a discovered resource from the entire organization, go to the *S
 
 . Select *Delete* to remove the association.
 
+== Move a resource between fleets
+
+To move a resource from one fleet to another, remove its association with the current fleet and then associate it with the target fleet.
+
+NOTE: Access to the resource changes as soon as the association changes. If possible, complete both steps in one maintenance window.
+
+.Steps
+
+. From the *Resources* page, navigate to a resource in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
+
+. Select image:icon-delete.png[An icon of a garbage can] next to the current fleet and select *Delete*.
+
+. Select *Add folder or fleet*.
+
+. Select the target fleet and select *Accept*.
+
+. Select *Associate resources*.
+
 
 == Related information
 
 * link:concept-identity-and-access-management.html[Learn about identity and access in NetApp Console]
 * link:task-iam-get-started.html[Get started with identity and access in NetApp Console]
+* link:task-users-fleets-assign.html[Manage fleet access assignments after moving resources]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the API for identity and access^]

@@ -17,6 +17,8 @@ summary: Use NetApp Console's Identity and Access Management (IAM) to structure 
 
 Use NetApp Console's Identity and Access Management (IAM) to organize your NetApp resources and control access according to your business structure—by location, department, or fleet. 
 
+Use this page for the IAM model, member types, and role scope. For hierarchy planning examples, link:concept-folders-fleets-overview.html[learn about folders and fleets].
+
 You organize resources in a hierarchy: the organization is at the top, then folders (which can have other folders or fleets), and then fleets, which have storage systems and Backup and Recovery workloads.
 
 Assign access roles at the organization, folder, or fleet level so users have the right access to resources.
@@ -41,7 +43,7 @@ An _organization_ is the top level of the Console IAM system and typically repre
 
 fleets::
 
-fleets group storage resources. Assign resources to fleets and grant users access at the fleet level. Resources can belong to multiple fleets. Users with fleet access can use its resources.
+fleets group storage resources. Assign resources to fleets and grant members access at the fleet level. Resources can belong to multiple fleets. Members with fleet access can use its resources.
 
 +
 
@@ -53,9 +55,10 @@ link:task-iam-manage-folders-fleets.html[Learn how to add fleets to your organiz
 
 Folders::
 
-Group related fleets in _folders_ to organize them by location, site, or business unit. You can't associate resources directly to folders, but assigning a user a role at the folder level gives them access to all fleets in that folder.
+Group related fleets in _folders_ to organize them by location, site, or business unit. You can't associate resources directly to folders, but assigning a member a role at the folder level gives them access to all fleets in that folder.
 
-NOTE: Users with the Org admin role can add resources to a folder to delegate the task of associating the resource with fleets to a Folder or fleet admins of the respective folder. link:task-iam-manage-folders-fleets.html#associate-resource-folder[Learn about associating a resource with a folder].
+NOTE: Users with the Org admin role can add resources to a folder to delegate the task of associating the resource with fleets to Folder or fleet admins of the respective folder. link:task-iam-manage-resources.html#associate-resource[Learn how to associate resources with folders and fleets].
+
 
 
 
@@ -80,11 +83,11 @@ Storage systems are automatically associated with the fleet where they are added
 
 
 Keystone subscriptions::
-Keystone subscriptions are also resources that you can associate with fleets in order to grant users access to the subscription in NetApp Console. 
+Keystone subscriptions are also resources that you can associate with fleets in order to grant members access to the subscription in NetApp Console.
 
 
 Backup and Recovery workloads (Oracle and Microsoft SQL Server)::
-Some Backup and Recovery workloads are also considered resources. Assign a Backup and Recovery workload to a fleet in order to grant users access. 
+Some Backup and Recovery workloads are also considered resources. Assign a Backup and Recovery workload to a fleet in order to grant members access.
 
 
 
@@ -114,7 +117,7 @@ When you associate a member with a role, you can grant that role for the entire 
 
 +
 
-NetApp Console provides granular roles that adhere to the principles of "least privilege", which means access roles are designed to give users access to only what they need.
+NetApp Console provides granular roles that adhere to the principles of "least privilege", which means access roles are designed to give members access to only what they need.
 
 +
 Users may have multiple roles as their duties expand.

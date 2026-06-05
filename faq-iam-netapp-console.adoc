@@ -82,6 +82,23 @@ No. Even when a federated group is assigned a role, individual users must meet t
 
 NetApp recommends assigning a minimum access role such as Organization viewer to these users.
 
+== Ongoing hierarchy maintenance
+
+.What happens to access when I delete a fleet?
+
+Members lose access to resources that were available only through that fleet. Before deleting a fleet, move resources to another fleet and update member assignments so the right teams retain access.
+
+.How do I move a resource from one fleet to another?
+
+Remove the resource association from the current fleet and then associate the resource with the target fleet. Complete both actions in one maintenance window to minimize access disruption.
+
+.How do I update access after a team or business change?
+
+Use a fleet-centric approach when you need to update everyone assigned to one fleet. Use a member-centric approach when you need to update one member across many fleets or folders.
+
+* link:task-users-fleets-assign.html[Fleet-centric: manage access for a specific fleet or folder]
+* link:task-iam-manage-roles.html[Member-centric: manage access for a specific member]
+
 
 
 == Related information
@@ -90,4 +107,4 @@ NetApp recommends assigning a minimum access role such as Organization viewer to
 * link:reference-iam-predefined-roles.html[Learn about NetApp Console access roles]
 * link:task-iam-get-started.html[Get started with identity and access in NetApp Console]
 * link:task-iam-manage-folders-fleets.html[Add folders and fleets to your NetApp Console organization]
-* link:task-iam-manage-members-permissions.html[Add users to a NetApp Console organization]
+* link:task-iam-manage-members-permissions.html[Add members and assign roles in a NetApp Console organization]

@@ -156,30 +156,32 @@ sidebar:
         entries:
         - title: Learn about managing identity and access
           url: /concept-identity-and-access-management.html
+        - title: Learn about folders and fleets
+          url: /concept-folders-fleets-overview.html
+        - title: Understand role-based access control (RBAC)
+          url: /concept-iam-rbac.html
         - title: Get started with identity and access
           url: /task-iam-get-started.html
-        - title: Frequently asked questions about identity and access management
-          url: /faq-iam-netapp-console.html
         - title: Set up your Console organization
           entries:
           - title: Create folders and fleets
             url: /task-iam-manage-folders-fleets.html
-          - title: Associate resources to folders and fleets
-            url: /task-iam-manage-resources.html
-        - title: Add users to your Console organization
-          entries: 
+          - title: Add members and assign roles
+            url: /task-iam-manage-members-permissions.html
           - title: Integrate with Active Directory
             url: /task-iam-active-directory-integrate.html
-          - title: Add users and manage their permissions
-            url: /task-iam-manage-members-permissions.html
-        - title: Manage user access and security
+          - title: Associate resources to folders and fleets
+            url: /task-iam-manage-resources.html
+        - title: Ongoing IAM operations
           entries:
-          - title: Understand role-based access control (RBAC)
-            url: /concept-iam-rbac.html
-          - title: Manager user access
+          - title: Manage member access (member-centric)
             url: /task-iam-manage-roles.html
+          - title: Manage fleet access assignments (fleet-centric)
+            url: /task-users-fleets-assign.html
           - title: Manage member security
             url: /task-iam-user-security.html
+        - title: Frequently asked questions about identity and access management
+          url: /faq-iam-netapp-console.html
         - title: Identity and access roles
           entries:
           - title: NetApp Console (local) access roles

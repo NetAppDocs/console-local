@@ -21,7 +21,7 @@ After you organize resources into folders and fleets, assign organization member
 
 For example, you can assign a member the Backup and Recovery admin role for a specific fleet level, allowing them to perform Backup and Recovery operations for resources within that fleet, without granting them broader access to the entire organization. This same user can be granted the role for several fleets within your organization. 
 
-You can assign users multiple roles for the same scope or different scopes, depending on their responsibilities. For example, a smaller organization might have the same user manage both Storage admin and Backup and Recovery admin roles at the organization level, while a larger organization might have different users assigned to each role at the fleet level.
+You can assign members multiple roles for the same scope or different scopes, depending on their responsibilities. For example, a smaller organization might have the same member manage both Storage admin and Backup and Recovery admin roles at the organization level, while a larger organization might have different members assigned to each role at the fleet level.
 
 == Types of Console organization members
 There are three types of members in a NetApp Console (local) organization:

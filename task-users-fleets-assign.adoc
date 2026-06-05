@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: task-users-fleets-assign.html
-keywords: assign users, fleet, folder, access control, roles, storage management, netapp console
-summary: "Assign users to folders and storage fleets to grant them management access in NetApp Console (local)."
+keywords: assign members, fleet, folder, access control, roles, storage management, netapp console
+summary: "Manage member access assignments for folders and storage fleets in NetApp Console (local)."
 ---
-= Assign users to fleets in NetApp Console (local)
+= Manage fleet access assignments in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,16 +12,18 @@ summary: "Assign users to folders and storage fleets to grant them management ac
 :imagesdir: ./media/
 
 [.lead]
-Manage member access to folders and storage fleets in the NetApp Console (local). Assign roles to set permissions for fleet resources. Modify or remove access when responsibilities change.
+Use this fleet-centric workflow to manage access for a specific folder or fleet. Assign roles to set permissions for fleet resources, and modify or remove access when responsibilities change.
+
+If you want to manage all roles for one member across multiple fleets, use the member-centric workflow. link:task-iam-manage-roles.html[Manage member access].
 
 .Required access roles
 You must have the Organization admin role to manage member access across all folders and fleets. Folder or fleet admins can manage member access only for folders and fleets that they administer. link:reference-iam-predefined-roles.html[Learn about access roles].
 
-NOTE: Create your folders and fleets before assigning user access. link:task-iam-manage-folders-fleets.html[Learn how to create folders and storage fleets].
+NOTE: Create your folders and fleets before assigning member access. link:task-iam-manage-folders-fleets.html[Learn how to create folders and storage fleets].
 
 == Understand how folder and fleet access works
 
-The NetApp Console (local) uses a role-based access control (RBAC) model to manage user permissions. You assign predefined roles to members at the organization, folder, or fleet level.
+The NetApp Console (local) uses a role-based access control (RBAC) model to manage member permissions. You assign predefined roles to members at the organization, folder, or fleet level.
 
 === Role inheritance
 
@@ -33,7 +35,7 @@ When you assign a role at a higher level in the resource hierarchy, it is automa
 
 For example, assigning the Storage admin role at a folder level gives the member storage administration access to all fleets within that folder.
 
-Members can have multiple roles within the same fleet and across different folders and fleets. For example, you might assign a user the Storage admin role for a production folder (which gives them access to all fleets in that folder) and the Storage viewer role for a separate development fleet.
+Members can have multiple roles within the same fleet and across different folders and fleets. For example, you might assign a member the Storage admin role for a production folder (which gives them access to all fleets in that folder) and the Storage viewer role for a separate development fleet.
 
 NOTE: You cannot change member access at lower levels if it is inherited from a folder or the organization. Change the member's permission at the higher hierarchy level to change access.
 

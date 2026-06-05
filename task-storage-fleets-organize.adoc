@@ -14,7 +14,14 @@ summary: "Organize discovered storage systems into folders and fleets for simpli
 [.lead]
 // Jira: SPSPM-3497
 
-Organize discovered storage systems into fleets in the NetApp Console (local) to group related resources and simplify management across your environment. You can also associate resources with folders so that a Folder or fleet admin can assign them to the appropriate fleets.
+Use this page as an alternate entry point for resource-to-fleet organization. The canonical workflow is link:task-iam-manage-resources.html[Add resources to folders and fleets in NetApp Console], which includes viewing resources, associating resources, removing associations, and moving resources between fleets.
+
+For full lifecycle guidance, use the canonical task.
+
+* link:task-iam-manage-resources.html#associate-resource[Associate a resource with folders and fleets]
+* link:task-iam-manage-resources.html#view-folders-and-fleets[View folders and fleets associated with a resource]
+* link:task-iam-manage-resources.html#remove-resource[Remove a resource from a folder or fleet]
+* link:task-iam-manage-resources.html[Move a resource between fleets]
 
 == Associate a resource with a folder or fleet
 
@@ -35,6 +42,8 @@ To associate the resource with additional folders or fleets, select *Add folder 
 . Select *Associate resources*.
 
 NOTE: If you associated the resource with a folder, a Folder or fleet admin can access the resource and associate it with a fleet within the folder. Members can't manage storage in a folder until it is associated with a fleet.
+
+TIP: For complete resource lifecycle operations, use link:task-iam-manage-resources.html[the canonical resource association task].
 
 == View the resources associated with a folder or fleet
 

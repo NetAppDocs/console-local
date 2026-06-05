@@ -104,5 +104,5 @@ SnapCenter does not have a viewer role.
 
 * link:concept-identity-and-access-management.html[Learn about NetApp Console identity and access management]
 * link:task-iam-get-started.html[Get started with NetApp Console IAM]
-* link:task-iam-manage-members-permissions.html[Manage NetApp Console members and their permissions]
+* link:task-iam-manage-members-permissions.html[Add members and assign roles in a NetApp Console organization]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the API for NetApp Console IAM^]

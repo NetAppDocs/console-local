@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: task-iam-manage-members-permissions.html
 keywords: user, service account, member, role, permissions, organization, fleet, folder, iam, identity and access management, federated groups, SSO, access roles, add members, grant permissions
-summary: Manage your organization's members to provide permissions across different levels of your organization's resource hierarchy.
+summary: Add members and assign roles to provide permissions across different levels of your organization's resource hierarchy.
 ---
 
-= Add users to a NetApp Console organization
+= Add members and assign roles in a NetApp Console organization
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,18 +13,18 @@ summary: Manage your organization's members to provide permissions across differ
 :imagesdir: ./media/
 
 [.lead]
-Within the Console, you grant users access to fleets or folders to according to an access role. A _access role_ contains a set of permissions that enables a member (user or service account) to perform specific actions at the assigned level of the resource hierarchy. 
+Within the Console, grant member access to fleets or folders according to assigned roles. An _access role_ contains permissions that enable a member (user account, service account, or federated group) to perform specific actions at the assigned level of the resource hierarchy.
 
 .Required access roles
 Super admin, Org admin, or Folder or fleet admin (for folders and fleets that they are administering). link:reference-iam-predefined-roles.html[Learn about access roles].
 
 == Understand how access is granted in NetApp Console           
-NetApp Console uses role-based access control (RBAC) to manage permissions. Assign roles to users individually to provide them with the necessary permissions. Each role defines allowed actions for specific resources.
+NetApp Console uses role-based access control (RBAC) to manage permissions. Assign roles to members to provide the required access. Each role defines allowed actions for specific resources.
 
 Note the following about granting access in NetApp Console:
 
 * All users must first sign up for the NetApp Console before they can be granted access to resources, even if they are part of a federated group.
-* You must explicitly assign a role to each user in the Console before they can access resources, even if they are members of a federated group that has been assigned a role.   
+* You must explicitly assign at least one role to each member in the Console before they can access resources, even if they are members of a federated group that has been assigned a role.
 * You can add service accounts directly from the Console and assign them roles.
 
 
@@ -42,7 +42,7 @@ When adding a member, choose the resource level (organization, folder, or fleet)
 
 
 
-=== Add a user
+=== Add a user account
 
 Users sign up for the NetApp Console, but an Org admin or Folder or fleet admin must add them to an organization, folder, or fleet so they can access resources.
 
