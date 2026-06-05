@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-iam-manage-folders-fleets.html
-keywords: folders, fleets, resource hierarchy, create folders, create fleets, iam, identity and access management, fleet id
+keywords: folders, fleets, resource hierarchy, create folders, create fleets, iam, identity and access management, fleet id, initial iam setup, fleet hierarchy design, folder hierarchy configuration, rbac setup, tenancy setup, organizational onboarding, team structure alignment, delegated administration model, access governance planning, operational readiness
 summary: Add folders and fleets to match your business structure. After you create folders and fleets, you can associate resources with them and manage member access to those fleets.
 ---
 
@@ -100,12 +100,11 @@ Rename a folder or fleet as needed. Renaming does not affect associated resource
 
 Delete folders and fleets you no longer need, such as after team restructuring or fleet completion.
 
-Before you delete a folder or fleet, make sure it does not contain any resources. <<modify-resources,Learn how to remove resources>>.
+Before you delete a folder or fleet, complete the following checks:
 
-Before deleting, also verify member access:
-
-* Review members with access to the folder or fleet. <<view-associated-resources-members,View associated resources and members>>.
-* Remove or update member access if needed. <<modify-members,Modify member access>>.
+* Verify that the folder or fleet does not contain resources. link:task-iam-manage-resources.html#remove-resource[Learn how to remove resource associations].
+* Review members who still have access to the folder or fleet. link:task-users-fleets-assign.html[View member access assignments].
+* Remove or update member access as needed. link:task-users-fleets-assign.html[Modify member access assignments].
 * If you are deleting a fleet, move resources to the target fleet first. link:task-iam-manage-resources.html[Learn how to move resources between fleets].
 
 
@@ -115,79 +114,18 @@ Before deleting, also verify member access:
 
 . Confirm that you want to delete the folder or fleet.
 
-[#view-associated-resources-members]
-== View the resources associated with a folder or fleet
-View which resources and members are associated with a folder or fleet.
+== Manage fleets and folders in NetApp Console (local)
 
-.Steps
+After initial setup, use the task that matches your goal:
 
-. From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit fleet*.
-+
-image:screenshot-iam-edit-project.png[A screenshot of the Organization page that shows the Edit fleet option when selecting the action menu for a fleet in the table.]
-
-. On the *Edit* page, you can view details about the selected folder or fleet by expanding the *Resources* or *Access* sections.
-+
-* Select *Resources* to view the associated resources. In the table, the *Status* column identifies the resources that are associated with the folder or fleet. 
-+
-image:screenshot-iam-allocated-resources.png[A screenshot of the Edit fleet page that shows the available resources that you can associate or disassociate with the fleet.]
-
-[#modify-resources]
-== Change the resources associated with a folder or fleet
-
-You can change the resources associated with a folder or fleet as your organization's needs change.
-
-.Steps
-
-. From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit fleet*.
-
-. On the *Edit* page, select *Resources*.
-+
-In the table, the *Status* column identifies the resources that are associated with the folder or fleet.
-
-. Select the resources that you'd like to associate or disassociate.
-
-. Based on the resources that you selected, select either *Associate with the fleet* or *Disassociate from the fleet*.
-+
-image:screenshot-iam-associate-resources.png[A screenshot of the Edit fleet page that shows the Associate resources option that is available after you select resources that aren't currently associated.]
-
-. Select *Apply*.
-
-== View members associated with a folder or fleet
-
-You can view the members associated with a folder or fleet from the *Organization* page.
-
-.Steps
-
-. From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit fleet*.
-
-. On the *Edit* page, select *Access* to view the list of members who have access to the selected folder or fleet.
-+
-image:screenshot-iam-member-access.png[A screenshot of the Edit fleet page that shows the members who have access to the fleet.]
-
-[#modify-members]
-== Modify member access to a folder or fleet
-
-Modify member access to control resource access. Remember that roles assigned at the folder level are inherited by all child fleets and folders.
-
-You cannot change access at a lower level when that access is inherited from a folder or the organization. To change inherited access, update permissions at the higher level. Alternatively, you can link:task-iam-manage-roles.html#manage-permissions[manage permissions from the Members page].
-
-
-.Steps
-
-. From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit fleet*.
-
-. On the *Edit* page, select *Access* to view the list of members who have access to the selected folder or fleet.
-
-. Modify member access:
-* *Add a member*: Select the member that you'd like to add to the folder or fleet and assign them a role.
-* *Change a member's role*: For any members with a role other than Organization Admin, select their existing role and then choose a new role.
-* *Remove member access*: For members who have a role defined at the folder or fleet for which you're viewing, you can remove their access.
-
-. Select *Apply*.
+* *Manage resource associations for folders and fleets*: link:task-iam-manage-resources.html[Manage resources].
+* *View or update access for one folder or fleet*: link:task-users-fleets-assign.html[Manage fleet access assignments].
+* *Manage one member across multiple folders and fleets*: link:task-iam-manage-roles.html[Manage member access].
+* *Add additional members and assign starting permissions*: link:task-iam-manage-members-permissions.html[Manage members and permissions].
 
 == Related information
 
 * link:concept-identity-and-access-management.html[Learn about identity and access in NetApp Console]
 * link:task-iam-get-started.html[Get started with identity and access]
 * link:task-users-fleets-assign.html[Manage fleet access assignments]
-* https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the identity and access API]
+* https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the identity and access API^]
