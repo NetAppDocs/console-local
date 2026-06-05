@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+permalink: task-data-services-access-grant.html
+keywords: grant access, data services, permissions, roles, netapp console local
+summary: "Grant access to data services in NetApp Console (local) so the right users and teams can use those services."
+---
+= Grant access to data services in NetApp Console (local)
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Grant access to data services in NetApp Console (local) so the right users and teams can use those services.
+
+NOTE: Stub page. Content to be developed.
+
+.Steps
+
+. Open the data service that you want to manage.
+. Review the available access options.
+. Assign access to the appropriate users, groups, or teams.
