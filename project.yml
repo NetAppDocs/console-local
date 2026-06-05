@@ -36,7 +36,7 @@ sidebar:
         url: /faq-netapp-console-local.html
     - title: Install and setup
       entries:
-      - title: Installation
+      - title: Install NetApp Console (local)
         entries:
         - title: Installation overview for NetApp Console (local)
           url: /concept-deploy-netapp-console-local.html
