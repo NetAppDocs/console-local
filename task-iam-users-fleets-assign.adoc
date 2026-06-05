@@ -4,7 +4,7 @@ permalink: task-users-fleets-assign.html
 keywords: assign members, fleet, folder, access control, roles, storage management, netapp console
 summary: "Audit or change member access assignments for folders and storage fleets in NetApp Console (local)."
 ---
-= Audit or change fleet access assignments in NetApp Console (local)
+= View or change fleet access assignments in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font

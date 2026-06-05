@@ -36,14 +36,62 @@ sidebar:
         url: /faq-netapp-console-local.html
     - title: Install and setup
       entries:
-      - title: Installation overview for NetApp Console (local)
-        url: /concept-deploy-netapp-console-local.html
-      - title: Install NetApp Console (local)
-        url: /task-install-agent-on-prem-ova.html
-      - title: Subscribe to data services
-        url: /task-data-services-subscribe.html
-      - title: Create your fleets
-        url: /task-discover-storage.html
+      - title: Installation
+        entries:
+        - title: Installation overview for NetApp Console (local)
+          url: /concept-deploy-netapp-console-local.html
+        - title: Install NetApp Console (local)
+          url: /task-install-agent-on-prem-ova.html
+        - title: Subscribe to data services
+          url: /task-data-services-subscribe.html
+        - title: Create your fleets
+          url: /task-discover-storage.html
+      - title: Set up your Console (local) organization
+        entries:
+        - title: Quick start for Console organization setup
+          url: /task-iam-fleet-mgmt-get-started.html
+        - title: Learn about folders and fleets
+          url: /concept-folders-fleets-overview.html
+        - title: Understand role-based access control (RBAC)
+          url: /concept-iam-rbac.html
+        - title: Set up your Console organization
+          entries:
+          - title: Create folders and fleets
+            url: /task-iam-manage-folders-fleets.html
+          - title: Add members and assign roles
+            url: /task-iam-manage-members-permissions.html
+          - title: Associate resources to folders and fleets
+            url: /task-iam-manage-resources.html
+          - title: Identity and access roles
+            entries:
+            - title: NetApp Console (local) access roles
+              url: /reference-iam-predefined-roles.html
+            - title: Platform roles
+              url: /reference-iam-platform-roles.html
+            - title: Operations support analyst roles
+              url: /reference-iam-analyst-roles.html
+            - title: Storage roles
+              url: /reference-iam-storage-roles.html
+            - title: Backup and Recovery roles
+              url: /reference-iam-backup-rec-roles.html
+      - title: Configure Console integrations and services
+        entries:
+        - title: Integrate NetApp Console (local) with Active Directory
+          url: /task-iam-active-directory-integrate.html
+        - title: Connect your LLM
+          url: /task-llm-connect.html
+        - title: Configure notification delivery
+          url: /task-console-configure-notifications-delivery.html
+      - title: Set up data services
+        entries:
+        - title: Subscribe to data services
+          url: /task-data-services-subscribe.html
+        - title: Learn about using data services
+          url: /concept-use-data-services.html
+        - title: Quick start to using data services
+          url: /task-quickstart-data-services.html
+        - title: Grant access to data services
+          url: /task-data-services-access-grant.html
     - title: Use
       entries:
       - title: Log in to NetApp Console
@@ -124,22 +172,10 @@ sidebar:
             url: /task-remediation-automated.html
           - title: Remediate storage issues with guided steps
             url: /task-remediation-guided.html
-      - title: Use data services
-        entries:
-        - title: Learn about using data services
-          url: /concept-use-data-services.html
-        - title: Quick start to using data services
-          url: /task-quickstart-data-services.html
-        - title: Grant access to data services
-          url: /task-data-services-access-grant.html
     - title: Administer and monitor
       entries:
       - title: Administration overview
         url: /concept-administer-netapp-console-local.html
-      - title: Connect your LLM
-        url: /task-llm-connect.html
-      - title: Configure notification delivery
-        url: /task-console-configure-notifications-delivery.html
       - title: Audit NetApp Console (local) actions
         entries:
         - title: Audit NetApp Console (local) operations
@@ -152,61 +188,27 @@ sidebar:
           url: /task-console-local-vm-config.html
         - title: Troubleshoot Console (local)
           url: /task-troubleshoot-console-local.html
-      - title: Identity and access management
+      - title: User management
         entries:
-        - title: Learn about managing identity and access
-          url: /concept-identity-and-access-management.html
-        - title: Learn about folders and fleets
-          url: /concept-folders-fleets-overview.html
-        - title: Understand role-based access control (RBAC)
-          url: /concept-iam-rbac.html
-        - title: Get started with identity and access
-          url: /task-iam-get-started.html
-        - title: Set up your Console organization
-          entries:
-          - title: Create folders and fleets
-            url: /task-iam-manage-folders-fleets.html
-          - title: Add members and assign roles
-            url: /task-iam-manage-members-permissions.html
-          - title: Integrate with Active Directory
-            url: /task-iam-active-directory-integrate.html
-          - title: Associate resources to folders and fleets
-            url: /task-iam-manage-resources.html
-        - title: Ongoing IAM operations
-          entries:
-          - title: Manage member access (member-centric)
-            url: /task-iam-manage-roles.html
-          - title: Manage fleet access assignments (fleet-centric)
-            url: /task-users-fleets-assign.html
-          - title: Manage member security
-            url: /task-iam-user-security.html
-        - title: Frequently asked questions about identity and access management
-          url: /faq-iam-netapp-console.html
-        - title: Identity and access roles
-          entries:
-          - title: NetApp Console (local) access roles
-            url: /reference-iam-predefined-roles.html
-          - title: Platform roles
-            url: /reference-iam-platform-roles.html
-          - title: Operations support analyst roles
-            url: /reference-iam-analyst-roles.html
-          - title: Storage roles
-            url: /reference-iam-storage-roles.html
-          - title: Backup and Recovery roles
-            url: /reference-iam-backup-rec-roles.html
-        - title: Identity and access API
-          entries:
-          - title: Organization and fleet IDs
-            url: /task-iam-rename-organization.html
-          - title: Identity and access management API reference
-            url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
+        - title: Manage member security
+          url: /task-manage-member-security.html
+      - title: Manage fleet access
+        entries:
+        - title: Manage member access (member-centric)
+          url: /task-iam-manage-roles.html
+        - title: Manage fleet access assignments (fleet-centric)
+          url: /task-users-fleets-assign.html
 
     - title: Reference
       entries:
+      - title: Identity and access API
+        entries:
+        - title: Organization and fleet IDs
+          url: /task-iam-rename-organization.html
+        - title: Identity and access management API reference
+          url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
       - title: NetApp Console (local) maintenance console
         entries:
-        - title: Configuration checks
-          url: /reference-agent-maint-console-config-checker.html
       - title: Ports for the on-premises Console agent
         url: /reference-ports-on-prem.html
     - title: Knowledge and support
