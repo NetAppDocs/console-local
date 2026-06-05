@@ -5,7 +5,7 @@ keywords: resource, hierarchy, association, access, resource permissions, resour
 summary: Control user access to resources by adding them to fleets and folders in your NetApp Console organization. Grant access to users at the fleet level. 
 ---
 
-= Add resources to folders and fleets in NetApp Console
+= Manage resources in folders and fleets in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,22 +13,22 @@ summary: Control user access to resources by adding them to fleets and folders i
 :imagesdir: ./media/
 
 [.lead]
-Control user access to resources by adding them to fleets and folders in your NetApp Console organization. Grant access to users at the fleet level.
+After you set up folders and fleets, manage resource access by associating resources with the correct fleet or folder. Resource association controls which teams can access and manage those resources.
 
-A _resource_ is an entity that the Console is aware of, such as a storage resource  or a Backup and Recovery workload. 
+Place resources where the right teams can manage them, move them when ownership changes, and remove associations when they are no longer needed.
 
-You can view and manage resources from the *Resources* page in the Console.
+A _resource_ is an entity that Console (local) recognizes, such as a storage resource or a Backup and Recovery workload.
+
+.Required access roles
+You must have the _Super admin_, _Organization admin_, or _Folder or fleet admin_ role to manage resources in NetApp Console (local). link:reference-iam-predefined-roles.html[Learn about access roles].
 
 == Console resource types
-Console (local) supports both storage resources and Backup and Recovery workloads. You can associate both resource types with fleets to control access and management.  
+Console (local) supports both storage resources and Backup and Recovery workloads. Associate either resource type with a fleet to control access and management.
 
 Storage resources::
-Storage resources are the most common type of resource in your organization and represent both on-premises and cloud storage systems. When you add a storage system to the Console, you need to add it to a fleet. Until then, the Console marks it as undiscovered and does not display it on the *Resources* page.
+Storage resources are the most common type of resource in your organization. When you add a storage system to Console (local), associate it with a fleet so the appropriate teams can access and manage it. For example, after adding an ONTAP cluster, associate it with the `Production-US-East` fleet.
 
 +
-
-NOTE: Users with the Org admin role can add resources to folder to delegate the task of associating the resource with fleets to Folder or fleet admins of the respective folder. link:task-iam-manage-folders-fleets.html#associate-resource-folder[Learn about associating a resource with a folder].
-
 
 
 Backup and Recovery workloads::
@@ -39,9 +39,9 @@ Backup and Recovery workloads are also considered resources. You can assign memb
 
 == View the resources in your organization
 
-You can view both discovered and undiscovered resources associated with your organization. The system finds storage resources and marks them as undiscovered until you add them to the Console.
+View the resources in your organization to find a specific resource and see which fleets or folders it is associated with. If you haven't created any folders or fleets, all resources are associated with the default fleet directly under the organization.
 
-NOTE: The Console excludes Amazon FSx for NetApp ONTAP resources from the Resources page because users cannot associate them with a role. You can view these resources on the *Systems* page or from Workloads.
+
 
 .Steps
 
@@ -61,14 +61,16 @@ NOTE: The Console excludes Amazon FSx for NetApp ONTAP resources from the Resour
 . Select *Search*.
 
 [#associate-resource]
-== Associate a resource with folders and fleets
+== Associate a resource with a folder or fleet
 
-Place a resource into the fleet (or folder of fleets) whose members should manage it. For example, after discovering a new on-prem ONTAP cluster, associate it with `Production-US-East` so the regional Storage admins immediately inherit access through their existing fleet role.
+Associate a resource with a fleet or folder so the appropriate teams can manage it. For example, after adding an ONTAP cluster, associate it with the `Production-US-East` fleet so the regional Storage admins for that fleet can manage it.
+
+NOTE: Users with the Org admin role can add resources to a folder to delegate fleet association tasks to the Folder or fleet admin for that folder. link:task-iam-manage-folders-fleets.html#associate-resource-folder[Learn about associating a resource with a folder].
 
 
 .Steps
 
-. From the *Resources* page, navigate to a resource in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Associate to folders or fleets*.
+. From the *Resources* page, navigate to a resource in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Associate to a folder or fleet*.
 
 . Select a folder or fleet and then select *Accept*.
 
@@ -89,9 +91,9 @@ Note that you can only select from the folders and fleets for which you have adm
 [#view-folders-and-fleets]
 == View the folders and fleets associated with a resource
 
-You can verify which fleets or folders a resource is associated with. 
+Verify which fleets or folders a resource is associated with.
 
-NOTE: If you need to find out which organization members have access to the resource, use the fleet-centric access workflow to view members assigned to the associated folder or fleet. link:task-users-fleets-assign.html[Manage fleet access assignments].
+NOTE: To see which members have access to the resource, review the members assigned to the associated folder or fleet. link:task-users-fleets-assign.html[Manage fleet access assignments].
 
 .Steps
 
@@ -102,15 +104,15 @@ The following example shows a resource that is associated with one fleet.
 image:screenshot-iam-resource-details.png[A screenshot of the resource details page that shows a resource associated with a fleet that's directly underneath the organization.]
 
 
-NOTE: To see which organization members have access to the resource, use link:task-users-fleets-assign.html[Manage fleet access assignments]. If you need to manage one member across multiple scopes, use link:task-iam-manage-roles.html[Manage member access].
+NOTE: To see which members have access to the resource, review the associated folder or fleet. link:task-users-fleets-assign.html[Manage fleet access assignments]. To manage one member across multiple scopes, use link:task-iam-manage-roles.html[Manage member access].
 
 [#remove-resource]
 == Remove a resource from a folder or fleet
 
-To remove a resource from a folder or fleet, remove its association. This prevents members from managing the resource in that folder or fleet.
+Remove a resource's association with a folder or fleet to prevent members from managing it there.
 
 
-NOTE: To remove a discovered resource from the entire organization, go to the *Systems* page and remove the system.
+NOTE: To remove a storage system from the entire organization, go to the *Systems* page and remove the system.
 
 .Steps
 
@@ -122,7 +124,7 @@ NOTE: To remove a discovered resource from the entire organization, go to the *S
 
 == Move a resource between fleets
 
-To move a resource from one fleet to another, remove its association with the current fleet and then associate it with the target fleet.
+Move a resource from one fleet to another by removing its association with the current fleet and then associating it with the target fleet.
 
 NOTE: Access to the resource changes as soon as the association changes. If possible, complete both steps in one maintenance window.
 

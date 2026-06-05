@@ -13,19 +13,17 @@ summary: Manage member access in your Console organization. Assign roles to set 
 :imagesdir: ./media/
 
 [.lead]
-Manage member access in your Console organization. Assign roles to set permissions. Remove members when they leave.
+Review or change a user's roles across multiple folders or fleets, such as checking everything a storage engineer can access, adding a new role in another region, or removing that user's access when responsibilities change.
 
 
 .Required access roles
 Super admin, Org admin, or Folder or fleet admin (for folders and fleets that they are administering). link:reference-iam-predefined-roles.html[Learn about access roles].
 
-You can assign access roles on a fleet or folder basis. For example, assign a role to a member for two specific fleets or assign the role at the folder level to give a member the Ransomware Resilience admin role for all fleets in a folder.
+You can view and manage access in two ways depending on your needs. If you want to view the roles that a particular user has across all the fleet in your organization, use the *Members* page.
 
-If you want to manage access from a specific fleet or folder, use the fleet-centric workflow instead. link:task-users-fleets-assign.html[Manage fleet access assignments].
+If you want to confirm who can access a specific fleet, review the members assigned to that fleet instead. link:task-users-fleets-assign.html[Manage fleet access assignments].
 
-If you need to add a new member, service account, or directory user and assign their first role, use the onboarding task instead. link:task-iam-manage-members-permissions.html[Add members and assign roles].
-
-NOTE: Add your folders and fleets before assigning member access. link:task-iam-manage-folders-fleets.html[Learn how to add folders and fleets.]
+To add a new member, service account, or directory user and assign their first role, use the onboarding task instead. link:task-iam-manage-members-permissions.html[Add members and assign roles].
 
 == Understand how access is granted in NetApp Console
 NetApp Console uses role-based access control (RBAC) to manage member permissions. You can assign predefined roles at the organization, folder, or fleet level, depending on the scope of access that a member needs.
@@ -34,21 +32,7 @@ NetApp Console uses role-based access control (RBAC) to manage member permission
 === Using role inheritance
 A role that you assign at the folder level applies to all child fleets and folders. For example, a role that you assign at the folder level applies to all fleets within that folder, while a role that you assign at the fleet level applies only to the resources in that fleet.
 
-== View organization members
 
-Open a member's details to see every role they hold within the folders and fleets of your organization. For example, view a storage engineer's member details to see that they have the Storage admin role on the `Production-US-East` fleet and the Backup and Recovery admin role on the `Production-EU-West` fleet.
-
-
-.Steps
-
-. Select *Administration > Identity and access*.
-
-. Select *Members*.
-
-+
-The *Members* table lists the members of your organization.
-
-. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
 
 [#manage-permissions]
 == View roles assigned to a member
@@ -107,8 +91,6 @@ include::_include/tasks-role.adoc[tag=remove-role]
 == Remove a member from your organization
 
 Remove a member when they leave the organization or change roles in a way that ends their need for Console access. For example, when a contractor's engagement ends or an employee transfers to a team outside your Console organization. 
-
-<HOW DO YOU REMOVE A MEMBER NOW?--TONIA>
 
 [NOTE] 
 ====

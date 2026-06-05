@@ -28,6 +28,22 @@ Note the following about granting access in NetApp Console:
 * You can add service accounts directly from the Console and assign them roles.
 
 
+== View members of your organization
+
+Open a member's details to see each role they hold within the folders and fleets of your organization. For example, view a storage engineer's member details to see that they have the Storage admin role on the `Production-US-East` fleet and the Backup and Recovery admin role on the `Production-EU-West` fleet.
+
+
+.Steps
+
+. Select *Administration > Identity and access*.
+
+. Select *Members*.
+
++
+The *Members* table lists the members of your organization.
+
+
+
 
 [#add-members]
 == Add members to your organization
