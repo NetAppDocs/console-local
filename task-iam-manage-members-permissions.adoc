@@ -123,9 +123,9 @@ The Console shows the client secret only once. Copy it securely; you can recreat
 
 == Add a directory user to your organization
 
-You can add a directory user and assign them a role or roles. 
+Add a user from your integrated directory service and grant their first roles. For example, add a new storage engineer from Active Directory and assign the Storage admin role on the `Production-US-East` fleet so they can work in that fleet.
 
-You must have first configured Directory service before you can add directory users. link:task-iam-active-directory-integrate.html[Learn how to integrate with your directory service].
+You must first configure Directory service before you can add directory users. link:task-iam-active-directory-integrate.html[Learn how to integrate with your directory service].
 
 
 

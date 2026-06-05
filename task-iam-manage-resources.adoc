@@ -20,7 +20,7 @@ A _resource_ is an entity that the Console is aware of, such as a storage resour
 You can view and manage resources from the *Resources* page in the Console.
 
 == Console resource types
-You can associate several types of resources to fleets in your NetApp Console organization:
+Console (local) supports both storage resources and Backup and Recovery workloads. You can associate both resource types with fleets to control access and management.  
 
 Storage resources::
 Storage resources are the most common type of resource in your organization and represent both on-premises and cloud storage systems. When you add a storage system to the Console, you need to add it to a fleet. Until then, the Console marks it as undiscovered and does not display it on the *Resources* page.
@@ -63,7 +63,7 @@ NOTE: The Console excludes Amazon FSx for NetApp ONTAP resources from the Resour
 [#associate-resource]
 == Associate a resource with folders and fleets
 
-Associate a resource to a folder or fleet to make it available to members who have permissions for that folder or fleet.
+Place a resource into the fleet (or folder of fleets) whose members should manage it. For example, after discovering a new on-prem ONTAP cluster, associate it with `Production-US-East` so the regional Storage admins immediately inherit access through their existing fleet role.
 
 
 .Steps
@@ -89,7 +89,7 @@ Note that you can only select from the folders and fleets for which you have adm
 [#view-folders-and-fleets]
 == View the folders and fleets associated with a resource
 
-You can view the folders and fleets that are associated with a particular resource.
+You can verify which fleets or folders a resource is associated with. 
 
 NOTE: If you need to find out which organization members have access to the resource, use the fleet-centric access workflow to view members assigned to the associated folder or fleet. link:task-users-fleets-assign.html[Manage fleet access assignments].
 

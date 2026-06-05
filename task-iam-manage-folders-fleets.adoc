@@ -21,7 +21,7 @@ NetApp Console (local) creates one default fleet when you create an organization
 
 
 == Using folders and fleets to organize resources
-In NetApp Console (local), your organization contains folders and fleets.
+Folders and fleets are the two building blocks you use to shape your organization into something that matches how your teams actually work. For example, one folder per region with a production and a development fleet inside each.
 
 * Folders group related fleets and support delegated administration and role inheritance.
 * Fleets are where you associate resources for management and how you grant users operational access.
@@ -51,7 +51,8 @@ Users navigate between assigned fleets on the *Systems* page to manage the resou
 
 
 == Add a folder or fleet
-Add fleets to manage resources. Add folders to group related fleets and delegate administration.
+Add a fleet whenever you need a new boundary for resources and member access, and add a folder when you want to group related fleets and delegate their administration. For example, add a `Production` folder containing a `Production-US-East` fleet and a `Production-EU-West` fleet, then assign a regional lead the Folder or fleet admin role on just their fleet.
+
 You can create up to seven hierarchy levels.
 
 You can add resources and assign member access when you create a fleet or folder, or you can do it later.
@@ -116,12 +117,12 @@ Before you delete a folder or fleet, complete the following checks:
 
 == Manage fleets and folders in NetApp Console (local)
 
-After initial setup, use the task that matches your goal:
+After initial setup, you can do the following:
 
-* *Manage resource associations for folders and fleets*: link:task-iam-manage-resources.html[Manage resources].
-* *View or update access for one folder or fleet*: link:task-users-fleets-assign.html[Manage fleet access assignments].
-* *Manage one member across multiple folders and fleets*: link:task-iam-manage-roles.html[Manage member access].
-* *Add additional members and assign starting permissions*: link:task-iam-manage-members-permissions.html[Manage members and permissions].
+* *Manage resource associations for folders and fleets*: link:task-iam-manage-resources.html[Learn how to associate resources with fleets and folders].
+* *View or update access for one folder or fleet*: link:task-users-fleets-assign.html[Learn how to grant users access to fleets].
+* *Manage one member across multiple folders and fleets*: link:task-iam-manage-roles.html[Learn how to manage member access].
+* *Add additional members and assign starting permissions*: link:task-iam-manage-members-permissions.html[Learn how to manage members and permissions].
 
 == Related information
 
