@@ -71,7 +71,7 @@ Users can have multiple roles as their duties expand.
 
 When you assign a role at the organization or folder level, that role is automatically inherited by all resources within the selected scope. Folder-level roles apply to all contained fleets, while fleet-level roles apply to all resources within that fleet.
 
-== Strategy examples
+== Organization design examples
 
 The right organizational structure depends on the size of your organization and how your teams are organized. The following examples show how different organizations can use the folder and fleet hierarchy to manage access effectively.
 
