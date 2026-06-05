@@ -207,8 +207,6 @@ sidebar:
           url: /task-iam-rename-organization.html
         - title: Identity and access management API reference
           url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
-      - title: NetApp Console (local) maintenance console
-        entries:
       - title: Ports for the on-premises Console agent
         url: /reference-ports-on-prem.html
     - title: Knowledge and support
