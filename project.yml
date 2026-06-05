@@ -42,10 +42,6 @@ sidebar:
           url: /concept-deploy-netapp-console-local.html
         - title: Install NetApp Console (local)
           url: /task-install-agent-on-prem-ova.html
-        - title: Subscribe to data services
-          url: /task-data-services-subscribe.html
-        - title: Create your fleets
-          url: /task-discover-storage.html
       - title: Set up your Console (local) organization
         entries:
         - title: Quick start for Console organization setup
@@ -58,10 +54,12 @@ sidebar:
           entries:
           - title: Create folders and fleets
             url: /task-iam-manage-folders-fleets.html
-          - title: Add members and assign roles
-            url: /task-iam-manage-members-permissions.html
+          - title: Add storage systems to NetApp Console (local)
+            url: /task-discover-storage.html
           - title: Associate resources to folders and fleets
             url: /task-iam-manage-resources.html
+          - title: Add members and assign roles
+            url: /task-iam-manage-members-permissions.html
           - title: Identity and access roles
             entries:
             - title: NetApp Console (local) access roles
