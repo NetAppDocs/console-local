@@ -5,7 +5,7 @@ keywords: user, service account, member, role, permissions, organization, fleet,
 summary: Add members and assign roles to provide permissions across different levels of your organization's resource hierarchy.
 ---
 
-= Add members and assign roles in a NetApp Console organization
+= Add members to your NetApp Console (local) organization
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,37 +13,24 @@ summary: Add members and assign roles to provide permissions across different le
 :imagesdir: ./media/
 
 [.lead]
-Within the Console, grant member access to fleets or folders according to assigned roles. An _access role_ contains permissions that enable a member (user account, service account, or federated group) to perform specific actions at the assigned level of the resource hierarchy.
+After you create your folder and fleet hierarchy and place resources in the correct fleets, add members and assign their starting roles. You can grant access at the organization, folder, or fleet level for users, service accounts, and directory users.
+
+== Before you begin
+
+* Create the folder and fleet hierarchy that matches your organization. link:task-iam-manage-folders-fleets.html[Learn how to organize your resources with folders and fleets].
+* Associate resources with the correct fleets before you assign member access. link:task-iam-manage-resources.html[Learn how to manage resources in folders and fleets].
+* If you are adding a directory user, integrate your directory service first. link:task-iam-active-directory-integrate.html[Learn how to integrate with your directory service].
 
 .Required access roles
 Super admin, Org admin, or Folder or fleet admin (for folders and fleets that they are administering). link:reference-iam-predefined-roles.html[Learn about access roles].
 
-== Understand how access is granted in NetApp Console           
+== Understand how access is granted in NetApp Console (local)          
 NetApp Console uses role-based access control (RBAC) to manage permissions. Assign roles to members to provide the required access. Each role defines allowed actions for specific resources.
 
-Note the following about granting access in NetApp Console:
+Note the following about granting access in NetApp Console (local):
 
-* All users must first sign up for the NetApp Console before they can be granted access to resources, even if they are part of a federated group.
-* You must explicitly assign at least one role to each member in the Console before they can access resources, even if they are members of a federated group that has been assigned a role.
+* You must explicitly add a user and assign at least one role to each member in the Console before they can access resources, even if they are members of a federated group that has been assigned a role.
 * You can add service accounts directly from the Console and assign them roles.
-
-
-== View members of your organization
-
-Open a member's details to see each role they hold within the folders and fleets of your organization. For example, view a storage engineer's member details to see that they have the Storage admin role on the `Production-US-East` fleet and the Backup and Recovery admin role on the `Production-EU-West` fleet.
-
-
-.Steps
-
-. Select *Administration > Identity and access*.
-
-. Select *Members*.
-
-+
-The *Members* table lists the members of your organization.
-
-
-
 
 [#add-members]
 == Add members to your organization
@@ -54,13 +41,13 @@ Users must sign up for NetApp Console before you can add them and assign a role,
 
 All members must have at least one role explicitly assigned to them in order to access resources.
 
-When adding a member, choose the resource level (organization, folder, or fleet) and assign a role or roles with the needed permissions.
+When adding a member, choose the organization, folder, or fleet where the member needs access and assign the starting role or roles they need.
 
 
 
 === Add a user account
 
-Users sign up for the NetApp Console, but an Org admin or Folder or fleet admin must add them to an organization, folder, or fleet so they can access resources.
+You must have the Org admin or Folder or fleet admin role to add a user to an organization, folder, or fleet so they can access resources.
 
 
 
@@ -75,7 +62,7 @@ Users sign up for the NetApp Console, but an Org admin or Folder or fleet admin 
 
 . For *Member Type*, keep *User* selected.
 . For *User's email*, enter the user's email address that is associated with the login that they created.
-. Use the *Select an organization, folder, or fleet* section to choose the level of your resource hierarchy that the member should have permissions for.
+. Use the *Select an organization, folder, or fleet* section to choose where the member needs access.
 
 + 
 Note the following:
@@ -84,7 +71,7 @@ Note the following:
 ** When you select an organization or folder, you grant the member permissions to all its contents.
 ** You can only assign the *Organization admin* role at the organization level.
 
-. *Select a category* then select a *Role* that provides the member with permissions for the resources that are associated with the organization, folder, or fleet that you selected.
+. *Select a category* then select a *Role* that gives the member the starting permissions they need for the organization, folder, or fleet you selected.
 
 +
 link:reference-iam-predefined-roles.html[Learn about access roles].
@@ -99,7 +86,7 @@ The Console emails instructions to the user.
 
 [[service-account]]
 === Add a service account 
-Service accounts allow you to automate tasks and securely connect with Console APIs. You'll need a client ID and secret for the account before adding it.
+Add a service account when you need to automate tasks or connect securely to Console APIs. After you create the account, copy its client ID and client secret for the integration that will use it.
 
 
 .Steps
@@ -115,7 +102,7 @@ Service accounts allow you to automate tasks and securely connect with Console A
 . Enter a name for the service account.
 
 
-. Use the *Select an organization, folder, or fleet* section to choose the level of your resource hierarchy that the member should have permissions for.
+. Use the *Select an organization, folder, or fleet* section to choose where the service account needs access.
 +
 Note the following:
 +
@@ -123,7 +110,7 @@ Note the following:
 ** Selecting an organization or folder grants the member permissions to all its contents.
 ** You can only assign the *Organization admin* role at the organization level.
 
-. Select a *Category* then select a *Role* that gives the member permissions for the resources in the organization, folder, or fleet you selected.
+. Select a *Category* then select a *Role* that gives the service account the starting permissions it needs for the organization, folder, or fleet you selected.
 
 +
 link:reference-iam-predefined-roles.html[Learn about access roles].
@@ -151,7 +138,7 @@ You must first configure Directory service before you can add directory users. l
 . Select *Add a member*.
 . For *Member Type*, select *Directory user*.               
 . For *User's email*, enter the email address of the directory user that you want to add. This email address must match the email address associated with the user's login in your directory.
-. Use the *Select an organization, folder, or fleet* section to choose the level of your resource hierarchy that the member should have permissions for.
+. Use the *Select an organization, folder, or fleet* section to choose where the directory user needs access.
 +
 Note the following:
 +
@@ -159,12 +146,25 @@ Note the following:
 ** Selecting an organization or folder grants the member permissions to all its contents.
 ** You can only assign the *Organization admin* role at the organization level.
 
-. Select a *Category* then select a *Role* that gives the member permissions for the resources in the organization, folder, or fleet you selected.
+. Select a *Category* then select a *Role* that gives the directory user the starting permissions they need for the organization, folder, or fleet you selected.
 
 +
 link:reference-iam-predefined-roles.html[Learn about access roles].
 
-. To give the user additional access access to other folders, fleets, or roles, select *Add role*, choose the folder or fleet, role category, and select a role.
+. To give the user additional access to other folders, fleets, or roles, select *Add role*, choose the folder or fleet, role category, and select a role.
+
+== View members of your organization
+
+Open a member's details to review each role they hold within the folders and fleets of your organization. For example, you can confirm that a storage engineer has the Storage admin role on the `Production-US-East` fleet and the Backup and Recovery admin role on the `Production-EU-West` fleet.
+
+.Steps
+
+. Select *Administration > Identity and access*.
+
+. Select *Members*.
+
++
+The *Members* table lists the members of your organization.
 
 
 

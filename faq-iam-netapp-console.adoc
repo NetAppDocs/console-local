@@ -69,9 +69,6 @@ No. You cannot change member access at a lower level if it was inherited from a 
 
 == Managing members and access
 
-.What must happen before I can add a user to my NetApp Console organization?
-
-The user must have already signed up for the NetApp Console before you can add them to your organization, folder, or fleet. This requirement applies even to users who are members of a federated group.
 
 .Do federated users automatically get access to resources when I add their group to the Console?
 

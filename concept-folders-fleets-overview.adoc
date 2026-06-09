@@ -54,8 +54,8 @@ Members are the users and service accounts in your organization. Roles define wh
 Members::
 Members of your organization are user accounts or service accounts. A service account is typically used by an application to complete specified tasks without human intervention.
 +
-Add members to your organization after they sign up for the NetApp Console (local). After you add them, assign roles to provide access to resources.
-+
+users with the Org admin role can add new members to your organization. All users (including service accounts and Active Directory users) must be explicitly added and granted at least one role in order to access Console (local).
+
 link:task-iam-manage-members-permissions.html[Learn how to add members to your organization].
 
 Access roles::
