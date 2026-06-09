@@ -42,7 +42,7 @@ sidebar:
           url: /concept-deploy-netapp-console-local.html
         - title: Install NetApp Console (local)
           url: /task-install-agent-on-prem-ova.html
-      - title: Set up your Console (local) organization
+      - title: Plan your Console (local) organization
         entries:
         - title: Quick start for Console organization setup
           url: /task-iam-fleet-mgmt-get-started.html
@@ -50,28 +50,28 @@ sidebar:
           url: /concept-folders-fleets-overview.html
         - title: Understand role-based access control (RBAC)
           url: /concept-iam-rbac.html
-        - title: Set up your Console organization
+      - title: Complete Console organization setup
+        entries:
+        - title: Create folders and fleets
+          url: /task-iam-manage-folders-fleets.html
+        - title: Add storage systems to NetApp Console (local)
+          url: /task-discover-storage.html
+        - title: Associate resources to folders and fleets
+          url: /task-iam-manage-resources.html
+        - title: Add members and assign initial roles
+          url: /task-iam-manage-members-permissions.html
+        - title: Access roles
           entries:
-          - title: Create folders and fleets
-            url: /task-iam-manage-folders-fleets.html
-          - title: Add storage systems to NetApp Console (local)
-            url: /task-discover-storage.html
-          - title: Associate resources to folders and fleets
-            url: /task-iam-manage-resources.html
-          - title: Add members and assign initial roles
-            url: /task-iam-manage-members-permissions.html
-          - title: Identity and access roles
-            entries:
-            - title: NetApp Console (local) access roles
-              url: /reference-iam-predefined-roles.html
-            - title: Platform roles
-              url: /reference-iam-platform-roles.html
-            - title: Operations support analyst roles
-              url: /reference-iam-analyst-roles.html
-            - title: Storage roles
-              url: /reference-iam-storage-roles.html
-            - title: Backup and Recovery roles
-              url: /reference-iam-backup-rec-roles.html
+          - title: NetApp Console (local) access roles
+            url: /reference-iam-predefined-roles.html
+          - title: Platform roles
+            url: /reference-iam-platform-roles.html
+          - title: Operations support analyst roles
+            url: /reference-iam-analyst-roles.html
+          - title: Storage roles
+            url: /reference-iam-storage-roles.html
+          - title: Backup and Recovery roles
+            url: /reference-iam-backup-rec-roles.html
       - title: Configure Console integrations and services
         entries:
         - title: Integrate NetApp Console (local) with Active Directory
