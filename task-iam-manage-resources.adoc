@@ -93,7 +93,7 @@ Note that you can only select from the folders and fleets for which you have adm
 
 Verify which fleets or folders a resource is associated with.
 
-NOTE: To see which members have access to the resource, review the members assigned to the associated folder or fleet. link:task-users-fleets-assign.html[Manage fleet access assignments].
+NOTE: To see which members have access to the resource, review the members assigned to the associated folder or fleet. link:task-iam-users-fleets-assign.html'[Manage fleet access assignments].
 
 .Steps
 
@@ -104,7 +104,7 @@ The following example shows a resource that is associated with one fleet.
 image:screenshot-iam-resource-details.png[A screenshot of the resource details page that shows a resource associated with a fleet that's directly underneath the organization.]
 
 
-NOTE: To see which members have access to the resource, review the associated folder or fleet. link:task-users-fleets-assign.html[Manage fleet access assignments]. To manage one member across multiple scopes, use link:task-iam-manage-roles.html[Manage member access].
+NOTE: To see which members have access to the resource, review the associated folder or fleet. link:task-iam-users-fleets-assign.html'[Manage fleet access assignments]. To manage one member across multiple scopes, use link:task-iam-manage-roles.html[Manage member access].
 
 [#remove-resource]
 == Remove a resource from a folder or fleet
@@ -145,5 +145,5 @@ NOTE: Access to the resource changes as soon as the association changes. If poss
 
 * link:concept-identity-and-access-management.html[Learn about identity and access in NetApp Console]
 * link:task-iam-get-started.html[Get started with identity and access in NetApp Console]
-* link:task-users-fleets-assign.html[Manage fleet access assignments after moving resources]
+* link:task-iam-users-fleets-assign.html'[Manage fleet access assignments after moving resources]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the API for identity and access^]

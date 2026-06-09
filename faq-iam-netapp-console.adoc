@@ -88,7 +88,7 @@ Remove the resource association from the current fleet and then associate the re
 
 Use a fleet-centric approach when you need to update everyone assigned to one fleet. Use a member-centric approach when you need to update one member across many fleets or folders.
 
-* link:task-users-fleets-assign.html[Fleet-centric: manage access for a specific fleet or folder]
+* link:task-iam-users-fleets-assign.html'[Fleet-centric: manage access for a specific fleet or folder]
 * link:task-iam-manage-roles.html[Member-centric: manage access for a specific member]
 
 

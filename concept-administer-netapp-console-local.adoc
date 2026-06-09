@@ -39,5 +39,5 @@ Maintain the VM that hosts Console (local), review network and system settings, 
 Review member access across your organization, adjust access at the fleet level, and manage security settings such as MFA recovery and service account credentials.
 
 * link:task-iam-manage-roles.html[Manage member access in NetApp Console]
-* link:task-users-fleets-assign.html[View or change fleet access assignments in NetApp Console (local)]
+* link:task-iam-users-fleets-assign.html'[View or change fleet access assignments in NetApp Console (local)]
 * link:task-manage-member-security.html[Manage member security in NetApp Console (local)]

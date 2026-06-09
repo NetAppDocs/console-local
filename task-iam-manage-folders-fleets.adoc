@@ -104,8 +104,8 @@ Delete folders and fleets you no longer need, such as after team restructuring o
 Before you delete a folder or fleet, complete the following checks:
 
 * Verify that the folder or fleet does not contain resources. link:task-iam-manage-resources.html#remove-resource[Learn how to remove resource associations].
-* Review members who still have access to the folder or fleet. link:task-users-fleets-assign.html[View member access assignments].
-* Remove or update member access as needed. link:task-users-fleets-assign.html[Modify member access assignments].
+* Review members who still have access to the folder or fleet. link:task-iam-users-fleets-assign.html'[View member access assignments].
+* Remove or update member access as needed. link:task-iam-users-fleets-assign.html'[Modify member access assignments].
 * If you are deleting a fleet, move resources to the target fleet first. link:task-iam-manage-resources.html[Learn how to move resources between fleets].
 
 
@@ -120,7 +120,7 @@ Before you delete a folder or fleet, complete the following checks:
 After initial setup, you can do the following:
 
 * *Manage resource associations for folders and fleets*: link:task-iam-manage-resources.html[Learn how to associate resources with fleets and folders].
-* *View or update access for one folder or fleet*: link:task-users-fleets-assign.html[Learn how to grant users access to fleets].
+* *View or update access for one folder or fleet*: link:task-iam-users-fleets-assign.html'[Learn how to grant users access to fleets].
 * *Manage one member across multiple folders and fleets*: link:task-iam-manage-roles.html[Learn how to manage member access].
 * *Add additional members and assign starting permissions*: link:task-iam-manage-members-permissions.html[Learn how to manage members and permissions].
 
@@ -128,5 +128,5 @@ After initial setup, you can do the following:
 
 * link:concept-identity-and-access-management.html[Learn about identity and access in NetApp Console]
 * link:task-iam-get-started.html[Get started with identity and access]
-* link:task-users-fleets-assign.html[Manage fleet access assignments]
+* link:task-iam-users-fleets-assign.html'[Manage fleet access assignments]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the identity and access API^]
