@@ -22,7 +22,7 @@ You must have the Organization admin role to manage member access across all fol
 
 == How folder and fleet access works
 
-Console (local) uses role-based access control (RBAC). A role that you assign at the folder level applies to all fleets and subfolders within that folder; a role that you assign at the fleet level applies only to that fleet's resources. link:task-iam-manage-roles.html#role-inheritance[Learn more about how access is granted and inherited].
+Console (local) uses role-based access control (RBAC). A role that you assign at the folder level applies to all fleets and subfolders within that folder; a role that you assign at the fleet level applies only to that fleet's resources. link:concept-iam-rbac.html#role-inheritance[Learn more about how access is granted and inherited].
 
 NOTE: You can't change a role at the fleet level if a member inherits it from a folder or from the organization. To change inherited access, change the role at the higher scope.
 

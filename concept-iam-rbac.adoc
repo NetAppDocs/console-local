@@ -44,5 +44,16 @@ NetApp Console (local) roles use least-privilege principles that ensure members 
 
 You can assign multiple roles to a member based on their responsibilities. For example, you might assign a member both the Storage admin role and the Backup and Recovery admin role for a specific fleet.
 
+[#role-inheritance]
+== How role inheritance works
+
+When you assign a role at the organization or folder level, that role is inherited by the child scopes within that part of the hierarchy. This means that organization-level roles apply across the organization, folder-level roles apply to all child folders and fleets in that folder, and fleet-level roles apply only to the resources in that fleet.
+
+Use the scope that matches the access you want the member to keep. For example, assign a role at the folder level when the member needs the same access across several fleets in one region. Assign the role at the fleet level when the member should access only one fleet.
+
+You can't override inherited access at a lower scope. If a member inherits a role from the organization or from a folder, change that assignment at the higher scope where you originally granted it.
+
+To see how inheritance works in your resource hierarchy, link:concept-folders-fleets-overview.html[learn about folders and fleets]. To update roles for one member or one fleet, use link:task-iam-manage-roles.html[Manage member access] or link:task-users-fleets-assign.html[Manage fleet access assignments].
+
 link:reference-iam-predefined-roles.html[Learn about the predefined roles available in NetApp Console (local)].
 

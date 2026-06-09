@@ -50,9 +50,11 @@ After a user signs in, NetApp Console (local) uses RBAC to determine what that u
 
 Assign predefined roles at the organization, folder, or fleet level. The same role grants different effective access depending on the scope where you assign it. This model lets you give broad access to central administrators while limiting regional or team-level administrators to the fleets they manage.
 
+Roles that you assign at the organization or folder level are inherited by child scopes. This inheritance model is a key part of how NetApp Console delegates access across folders and fleets.
+
 NetApp designs NetApp Console (local) roles with least-privilege principles so each role includes only the permissions needed for its tasks.
 
-To learn more about role design and scope, link:concept-iam-rbac.html[learn about RBAC in NetApp Console (local)].
+To learn more about role design, scope, and inheritance, link:concept-iam-rbac.html#role-inheritance[learn how role-based access control and role inheritance work in NetApp Console (local)].
 
 
 == How the IAM hierarchy works
@@ -62,6 +64,8 @@ NetApp Console (local) uses a hierarchy to group resources and scope access. The
 This hierarchy is what makes delegation possible. For example, an organization admin can manage access across the entire organization, while a folder or fleet admin can manage only the resources and members within the part of the hierarchy they own.
 
 NetApp Console IAM is built on three types of components: organizational components that define the hierarchy, resources that are assigned within that hierarchy, and members and roles that control who can access what.
+
+Because roles inherit through this hierarchy, your folder and fleet design directly affects how broadly each access assignment applies.
 
 link:task-iam-manage-folders-fleets.html[Learn how to add fleets to your organization.^]
 

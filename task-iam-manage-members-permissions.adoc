@@ -30,7 +30,7 @@ NetApp Console uses role-based access control (RBAC) to manage permissions. Assi
 Note the following about granting access in NetApp Console (local):
 
 * You must explicitly add a user and assign at least one role to each member in the Console before they can access resources, even if they are members of a federated group that has been assigned a role.
-* You can add service accounts directly from the Console and assign them roles.
+* A role that you assign at the organization or folder level is inherited by child scopes. Choose the assignment scope carefully so the member gets access only where needed. link:concept-iam-rbac.html#role-inheritance[Learn how role inheritance works].
 
 [#add-members]
 == Add members to your organization

@@ -30,7 +30,7 @@ NetApp Console uses role-based access control (RBAC) to manage member permission
 
 [#role-inheritance]
 === Using role inheritance
-A role that you assign at the folder level applies to all child fleets and folders. For example, a role that you assign at the folder level applies to all fleets within that folder, while a role that you assign at the fleet level applies only to the resources in that fleet.
+A role that you assign at the folder level applies to all child fleets and folders, while a role that you assign at the fleet level applies only to that fleet's resources. If a member inherits access from the organization or a folder, change that assignment at the higher scope where you granted it. link:concept-iam-rbac.html#role-inheritance[Learn more about how role inheritance works].
 
 
 
@@ -50,7 +50,7 @@ You can adjust a member's access whenever responsibilities change. For example, 
 If you need to add a new member and assign their first role, see link:task-iam-manage-members-permissions.html#add-members[Add members and assign roles].
 
 
-== Add an access role to an existing member
+=== Add an access role to an existing member
 
 Grant a member an additional role at the organization, folder, or fleet level when their responsibilities expand. For example, give a Storage admin the Backup and Recovery admin role at the organization level so they can manage backup and recovery tasks across every fleet without losing their existing storage permissions.
 
@@ -71,7 +71,7 @@ Your access role strategy should align with the way you have organized your NetA
 
 include::_include/tasks-role.adoc[tag=add-role]
 
-== Change a member's assigned role
+=== Change a member's assigned role
 
 Replace a member's existing role with a different one when their responsibilities shift. For example, when a Storage viewer on the `Production-US-East` fleet needs the Storage admin role instead.
 
@@ -88,7 +88,7 @@ NOTE: Each user must have at least one role. You can't remove all roles from a u
 include::_include/tasks-role.adoc[tag=remove-role]
 
 
-== Remove a member from your organization
+=== Remove a member from your organization
 
 Remove a member when they leave the organization or change roles in a way that ends their need for Console access. For example, when a contractor's engagement ends or an employee transfers to a team outside your Console organization. 
 
