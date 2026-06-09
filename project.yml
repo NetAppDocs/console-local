@@ -174,7 +174,7 @@ sidebar:
           url: /task-console-local-vm-config.html
         - title: Troubleshoot Console (local)
           url: /task-troubleshoot-console-local.html
-      - title: Manage IAM users and access
+      - title: Manage users and access
         entries:
         - title: Manage member access (member-centric)
           url: /task-iam-manage-roles.html
