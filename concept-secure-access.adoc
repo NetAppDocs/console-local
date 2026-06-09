@@ -25,7 +25,7 @@ link:task-iam-active-directory-integrate.html[Integrate Active Directory with Ne
 
 Users who aren't a part of your organization's single sign-on (SSO) setup can enable multi-factor authentication (MFA) for an additional layer of verification to prevent unauthorized access, even if credentials are compromised.
 
-link:task-mfa-enable.html[Enable MFA for NetApp Console (local)]
+link:task-user-settings.html[Enable MFA for NetApp Console (local)]
 
 == Access control
 

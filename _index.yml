@@ -30,8 +30,6 @@ indexpage:
           url: /task-console-local-vm-config.html
         - title: Audit NetApp Console (local) operations
           url: /task-audit-console-activity.html
-        - title: Troubleshoot Console (local)
-          url: /task-troubleshoot-console-local.html
     - title: Set up NetApp Console (local)
       links:
         - title: Get started with identity and access

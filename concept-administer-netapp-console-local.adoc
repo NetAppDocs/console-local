@@ -12,7 +12,7 @@ summary: "Learn how to administer and monitor NetApp Console (local), including 
 :imagesdir: ./media/
 
 [.lead]
-After you deploy NetApp Console (local), use the administration and monitoring tools to review activity, maintain the VM, troubleshoot issues, and manage member access.
+After you deploy NetApp Console (local), use the administration and monitoring tools to review activity, maintain the VM, and manage member access.
 
 == Audit activity
 
@@ -31,8 +31,8 @@ link:https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html[Lea
 
 Maintain the VM that hosts Console (local), review network and system settings, access diagnostic tools, and troubleshoot issues when the service or agent does not behave as expected.
 
-* link:task-console-local-vm-config.html[Maintain your VCenter or ESXi host for Console (local)]
-* link:task-troubleshoot-console-local.html[Troubleshoot NetApp Console (local)]
+link:task-console-local-vm-config.html[Learn about how to maintain your VCenter or ESXi host for Console (local).]
+
 
 == Manage users and access
 
