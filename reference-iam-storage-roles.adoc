@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-iam-storage-roles.html
-keywords: predefined roles, iam roles, organization admin, folder or fleet admin, identity and access management, access roles, admin
+keywords: predefined roles, iam roles, organization admin, folder or fleet admin, identity and access management, access roles, admin console local
 summary: You can assign the following roles to users to provide them access to the storage management features in the NetApp Console. You can assign users an administrative role to manage storage or a viewer role for monitoring.
 ---
 
