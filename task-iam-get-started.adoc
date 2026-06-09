@@ -62,7 +62,7 @@ After initial setup is complete, manage access and resource placement as your or
 
 * link:task-iam-manage-resources.html[Manage resources in folders and fleets]
 * link:task-iam-manage-roles.html[Manage member access across fleets and folders (member-centric)]
-* link:task-iam-users-fleets-assign.html'[Manage who can access a specific fleet or folder (fleet-centric)]
+* link:task-iam-users-fleets-assign.html[Manage who can access a specific fleet or folder (fleet-centric)]
 
 
 .Related information

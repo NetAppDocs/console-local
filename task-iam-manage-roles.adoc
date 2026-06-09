@@ -21,7 +21,7 @@ Super admin, Org admin, or Folder or fleet admin (for folders and fleets that th
 
 You can view and manage access in two ways depending on your needs. If you want to view the roles that a particular user has across all the fleet in your organization, use the *Members* page.
 
-If you want to confirm who can access a specific fleet, review the members assigned to that fleet instead. link:task-iam-users-fleets-assign.html'[Manage fleet access assignments].
+If you want to confirm who can access a specific fleet, review the members assigned to that fleet instead. link:task-iam-users-fleets-assign.html[Manage fleet access assignments].
 
 To add a new member, service account, or directory user and assign their first role, use the onboarding task instead. link:task-iam-manage-members-permissions.html[Add members and assign roles].
 

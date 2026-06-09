@@ -38,7 +38,7 @@ Use role-based access control to define what each member can see and manage. Ass
 * link:concept-identity-and-access-management.html[Learn about NetApp Console (local) identity and access management]
 * link:concept-iam-rbac.html[Learn about NetApp Console (local) role-based access control]
 * link:task-iam-manage-members-permissions.html[Add members and assign roles in NetApp Console (local)]
-* link:task-iam-users-fleets-assign.html'[Manage fleet access assignments in NetApp Console (local)]
+* link:task-iam-users-fleets-assign.html[Manage fleet access assignments in NetApp Console (local)]
 
 == Audit logging
 

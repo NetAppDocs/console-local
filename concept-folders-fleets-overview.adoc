@@ -124,5 +124,5 @@ For organizations with specialized teams requiring specific access, use targeted
 
 * link:task-iam-manage-folders-fleets.html[Create folders and storage fleets]
 * link:task-iam-manage-resources.html[Associate resources with folders and fleets]
-* link:task-iam-users-fleets-assign.html'[Manage fleet access assignments]
+* link:task-iam-users-fleets-assign.html[Manage fleet access assignments]
 * link:task-audit-console-activity.html[Monitor or audit Console (local) actions]
