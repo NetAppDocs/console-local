@@ -50,7 +50,7 @@ sidebar:
           url: /concept-folders-fleets-overview.html
         - title: Understand role-based access control (RBAC)
           url: /concept-iam-rbac.html
-      - title: Complete Console organization setup
+      - title: Set up your Console organization setup
         entries:
         - title: Create folders and fleets
           url: /task-iam-manage-folders-fleets.html
@@ -130,30 +130,30 @@ sidebar:
             url: /concept-monitor-storage.html
           - title: Monitor fleet-wide health and performance
             url: /task-fleet-health-monitor.html
-          - title: Manage storage alerts
-            entries:
-            - title: Learn about storage alerts
-              url: /concept-storage-alerts.html
-            - title: View alerts
-              url: /task-alerts-view.html
-            - title: Investigate an alert
-              url: /task-alerts-investigate.html
-            - title: Monitor systems health by cluster
-              url: /task-alerts-systems-health-monitor.html
-            - title: Configure notification rules for alerts
-              url: /task-notifications-configure.html
-            - title: Alerts catalog
-              url: /reference-alerts-catalog.html
-          - title: Investigate performance issues
-            entries:
-            - title: Learn about the Workload Analyzer
-              url: /concept-workload-analyzer.html
-            - title: Investigate high latency on a volume
-              url: /task-analyzer-volume-latency-investigate.html
-            - title: Investigate high throughput demand on a volume
-              url: /task-analyzer-volume-throughput-investigate.html
-            - title: Workload Analyzer metrics reference
-              url: /reference-workload-analyzer-metrics.html
+        - title: Manage storage alerts
+          entries:
+          - title: Learn about storage alerts
+            url: /concept-storage-alerts.html
+          - title: View alerts
+            url: /task-alerts-view.html
+          - title: Investigate an alert
+            url: /task-alerts-investigate.html
+          - title: Monitor systems health by cluster
+            url: /task-alerts-systems-health-monitor.html
+          - title: Configure notification rules for alerts
+            url: /task-notifications-configure.html
+          - title: Alerts catalog
+            url: /reference-alerts-catalog.html
+        - title: Investigate performance issues
+          entries:
+          - title: Learn about the Workload Analyzer
+            url: /concept-workload-analyzer.html
+          - title: Investigate high latency on a volume
+            url: /task-analyzer-volume-latency-investigate.html
+          - title: Investigate high throughput demand on a volume
+            url: /task-analyzer-volume-throughput-investigate.html
+          - title: Workload Analyzer metrics reference
+            url: /reference-workload-analyzer-metrics.html
         - title: Remediate storage issues
           entries:
           - title: Remediate storage issues automatically
