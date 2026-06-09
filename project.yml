@@ -130,16 +130,14 @@ sidebar:
             url: /concept-monitor-storage.html
           - title: Monitor fleet-wide health and performance
             url: /task-fleet-health-monitor.html
-          - title: Investigate volume issues with the Workload Analyzer
-            entries:
-            - title: Learn about the Workload Analyzer
-              url: /concept-workload-analyzer.html
-            - title: Investigate high latency on a volume
-              url: /task-analyzer-volume-latency-investigate.html
-            - title: Investigate high throughput demand on a volume
-              url: /task-analyzer-volume-throughput-investigate.html
-            - title: Workload Analyzer metrics reference
-              url: /reference-workload-analyzer-metrics.html
+          - title: Learn about the Workload Analyzer
+            url: /concept-workload-analyzer.html
+          - title: Investigate high latency on a volume
+            url: /task-analyzer-volume-latency-investigate.html
+          - title: Investigate high throughput demand on a volume
+            url: /task-analyzer-volume-throughput-investigate.html
+          - title: Workload Analyzer metrics reference
+            url: /reference-workload-analyzer-metrics.html
           - title: Manage storage alerts
             entries:
             - title: Learn about storage alerts
