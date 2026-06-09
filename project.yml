@@ -172,14 +172,12 @@ sidebar:
         entries:
         - title: Maintain the NetApp Console (local) VM
           url: /task-console-local-vm-config.html
-        - title: Troubleshoot Console (local)
-          url: /task-troubleshoot-console-local.html
       - title: Manage users and access
         entries:
         - title: Manage member access (member-centric)
           url: /task-iam-manage-roles.html
         - title: Manage fleet access assignments (fleet-centric)
-          url: /task-users-fleets-assign.html
+          url: /task-iam-users-fleets-assign.html
         - title: Manage member security
           url: /task-manage-member-security.html
 
