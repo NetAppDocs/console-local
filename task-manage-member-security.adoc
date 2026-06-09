@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-manage-member-security.html
-keywords: member security, password reset, MFA, multi-factor authentication, service account, credentials, netapp console local
+keywords: member security, password reset, MFA, multi-factor authentication, service account, credentials, netapp console local, AD, Active Directory, directory services
 summary: "Manage member security settings in NetApp Console (local), including password resets, MFA management, and service account credentials."
 ---
 = Manage member security in NetApp Console (local)
@@ -23,13 +23,13 @@ Organization admins cannot reset user passwords for local users. However, they c
 
 Instruct a local user to reset their password from the Console (local) login page by selecting *Forgot password?*.
 
-NOTE: This option is not available for users in a federated organization.
+NOTE: This option is not available for users who authenticate through an integrated directory service.
 
 == Manage a local user's multi-factor authentication (MFA) 
 
 If a local user loses access to their MFA device, you can either remove or disable their MFA configuration.
 
-NOTE: Multi-factor authentication is only available for local users. Federated users cannot enable MFA.
+NOTE: Multi-factor authentication is only available for local users. Directory-authenticated users cannot enable MFA through Console (local).
 
 Users must set up MFA again when they log in after removal. If the user temporarily loses access to their MFA device, they can use their saved recovery code to log in.
 

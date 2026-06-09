@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: faq-netapp-console-local.html
-keywords: faq, frequently asked questions, frequently asked questions about netapp console local, netapp console local, storage classes, storage fleets, storage class policies, active directory, siem, llm, ai-assisted management, ontap
+keywords: faq, frequently asked questions, frequently asked questions about netapp console local, netapp console local, storage classes, storage fleets, storage class policies, AD, Active Directory, directory services, siem, llm, ai-assisted management, ontap
 summary: "Frequently asked questions about NetApp Console (local), including storage classes, fleets, LLM integration, and security integrations."
 ---
 
@@ -87,7 +87,7 @@ Before connecting an LLM, ensure that NetApp Console (local) is deployed and run
 
 .Why should I integrate NetApp Console (local) with Active Directory?
 
-By default, Console (local) users are managed individually, which becomes difficult to maintain and creates access risk as staff changes. Active Directory integration lets the Console (local) authenticate users through your existing directory, so access follows your organization's established identity lifecycle automatically—access is granted when a user is added to the appropriate group and revoked when their account is disabled or removed, without requiring a separate action in the Console (local). This also supports compliance requirements by ensuring Console (local) access is governed by the same controls and audit trails applied to other enterprise systems.
+By default, Console (local) users are managed individually, which becomes difficult to maintain and creates access risk as staff changes. Active Directory integration lets Console (local) authenticate users through your existing directory, so users can sign in with their corporate credentials and administrators can look up directory users when assigning access. Console (local) still uses its own roles to control authorization, which helps keep access decisions explicit and auditable.
 
 .What do I need before I can integrate with Active Directory?
 

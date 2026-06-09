@@ -99,7 +99,7 @@ For large organizations with regional operations and specialized teams, implemen
 * *Platform roles*:
 ** 1 Organization admin: Global oversight and policy management
 ** 3 Folder or fleet admins: Regional control (one per region)
-** 1 Federation admin: Corporate identity provider integration
+** 1 Federation admin: Corporate identity provider and SSO integration
 * *Storage roles by region*:
 ** Storage admin: Discover and manage storage systems in assigned regions
 ** Storage viewer: Monitor storage resources across regions

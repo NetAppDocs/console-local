@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-identity-and-access-management.html
-keywords: iam overview, overview, how iam works, iam example, organization, folders, fleets, resources, members, roles, permissions, resource hierarchy, identity and access management, access roles, iam
+keywords: iam overview, overview, how iam works, iam example, organization, folders, fleets, resources, members, roles, permissions, resource hierarchy, identity and access management, access roles, iam, authentication, directory users, AD, Active Directory, directory services
 summary: Use NetApp Console's Identity and Access Management (IAM) to structure and control resource access according to your business hierarchy, such as by location, department, or fleet.
 ---
 
@@ -15,7 +15,7 @@ summary: Use NetApp Console's Identity and Access Management (IAM) to structure 
 [.lead]
 // Jira: SPSPM-3302, SPSPM-3328
 
-Identity and access management (IAM) in NetApp Console (local) controls who can sign in, how identities are verified, what resources users can access, and what actions they can perform. In NetApp Console (local), IAM includes role-based access control (RBAC), multi-factor authentication (MFA), federation, and single sign-on (SSO), as well as the hierarchy and audit model that support delegated administration.
+Identity and access management (IAM) in NetApp Console (local) controls who can sign in, how identities are verified, what resources users can access, and what actions they can perform. In NetApp Console (local), IAM includes role-based access control (RBAC), multi-factor authentication (MFA), directory-backed authentication, and single sign-on (SSO), as well as the hierarchy and audit model that support delegated administration.
 
 Use this page to understand the NetApp Console (local) IAM model at a high level. For detailed hierarchy planning examples, link:concept-folders-fleets-overview.html[learn about folders and fleets].
 
@@ -37,7 +37,7 @@ NetApp Console (local) IAM combines identity verification, access control, deleg
 
 NetApp Console (local) supports both local identities and external identity integration.
 
-You can integrate NetApp Console (local) with Active Directory so users sign in with their existing corporate credentials. This eliminates the need for separate accounts and ensures that access changes in your directory are reflected automatically.
+You can integrate NetApp Console (local) with Active Directory so users sign in with their existing corporate credentials. This eliminates the need for separate passwords in Console (local) and lets administrators look up directory users when assigning access.
 
 For local users, MFA adds another verification step to reduce the risk of unauthorized access if credentials are compromised.
 
@@ -48,7 +48,9 @@ To learn more about authentication and secure sign-in options, link:concept-secu
 
 After a user signs in, NetApp Console (local) uses RBAC to determine what that user can see and do.
 
-Assign predefined roles at the organization, folder, or fleet level. The same role grants different effective access depending on the scope where you assign it. This model lets you give broad access to central administrators while limiting regional or team-level administrators to the fleets they manage.
+Active Directory or LDAP integration handles authentication. NetApp Console (local) authorization remains separate: administrators assign predefined roles at the organization, folder, or fleet level to control what each member can access.
+
+The same role grants different effective access depending on the scope where you assign it. This model lets you give broad access to central administrators while limiting regional or team-level administrators to the fleets they manage.
 
 Roles that you assign at the organization or folder level are inherited by child scopes. This inheritance model is a key part of how NetApp Console delegates access across folders and fleets.
 

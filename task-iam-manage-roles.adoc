@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-iam-manage-roles.html
-keywords:  fleets, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members, access roles
+keywords: fleets, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members, access roles, directory users, AD, Active Directory, directory services
 summary: Manage member access in your Console organization. Assign roles to set permissions. Remove members when they leave.
 ---
 
@@ -67,7 +67,7 @@ Your access role strategy should align with the way you have organized your NetA
 
 . Select *Members*.
 
-. Select one of the member tabs: *Users*, *Service accounts*, or *Federated groups*.
+. Select one of the member tabs: *Users*, *Directory users*, or *Service accounts*.
 
 include::_include/tasks-role.adoc[tag=add-role]
 
@@ -83,7 +83,7 @@ NOTE: Each user must have at least one role. You can't remove all roles from a u
 
 . Select *Members*.
 
-. Select one of the member tabs: *Users*, *Service accounts*, or *Federated groups*.
+. Select one of the member tabs: *Users*, *Directory users*, or *Service accounts*.
 
 include::_include/tasks-role.adoc[tag=remove-role]
 
@@ -94,9 +94,8 @@ Remove a member when they leave the organization or change roles in a way that e
 
 [NOTE] 
 ====
-.Federated members
-* Federated users automatically lose access to NetApp Console when you remove them from your IdP. Still remove them from your Console organization to keep your member list up to date.
-* If you remove a user from a federated group in your IdP, they lose the Console access associated with that group. However, they retain any access associated with an explicit role that you assigned to them in the Console.
+.Directory users
+Removing a user from your directory prevents that user from authenticating. You should also remove the user from your Console organization to keep the member list accurate and to remove any roles that were assigned in Console (local).
 
 ====
 
@@ -106,7 +105,7 @@ Remove a member when they leave the organization or change roles in a way that e
 
 . Select *Members*.
 
-. Select one of the member tabs: *Users*, *Service accounts*, or *Federated groups*.
+. Select one of the member tabs: *Users*, *Directory users*, or *Service accounts*.
 
 . From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] then select *Delete user*.
 

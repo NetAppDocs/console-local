@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-secure-access.html
-keywords: security, access control, SSO, MFA, active directory, authentication, identity, netapp console local
+keywords: security, access control, SSO, MFA, AD, Active Directory, directory services, authentication, identity, netapp console local
 summary: "Learn about the security options available in NetApp Console (local), including Active Directory integration, single sign-on, and multi-factor authentication."
 ---
 = Secure access to NetApp Console (local)
@@ -16,7 +16,7 @@ NetApp Console (local) provides multiple layers of security to protect your stor
 
 == Active Directory integration
 
-Connect NetApp Console (local) to your Active Directory so users can sign in with their existing corporate credentials. This eliminates the need for separate accounts and ensures that access changes in your directory are reflected automatically.
+Connect NetApp Console (local) to your Active Directory so users can sign in with their existing corporate credentials. This eliminates the need for separate passwords in Console (local) and supports directory-backed sign-in for the users that you add to your organization.
 
 link:task-iam-active-directory-integrate.html[Integrate Active Directory with NetApp Console (local)]
 

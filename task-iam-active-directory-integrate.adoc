@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: task-iam-active-directory-integrate.html
-keywords: Active Directory, LDAP, federation, user management, directory services, netapp console
-summary: "Integrate NetApp Console (local) with Active Directory for centralized user management."
+keywords: AD, Active Directory, LDAP, directory services, directory users, authentication, user management, netapp console
+summary: "Integrate NetApp Console (local) with Active Directory for directory-backed sign-in and user lookup."
 ---
 = Integrate NetApp Console (local) with Active Directory
 :hardbreaks:
@@ -12,14 +12,16 @@ summary: "Integrate NetApp Console (local) with Active Directory for centralized
 :imagesdir: ./media/
 
 [.lead]
-Integrate NetApp Console (local) with Active Directory for centralized user management. Use your directory services for authentication and authorization.
+Integrate NetApp Console (local) with Active Directory for directory-backed sign-in and user lookup. Use your directory service to authenticate users, then assign access to those users in NetApp Console (local).
 
 .Required role
 Super admin or organization admin.
 
-When you integrate with Active Directory, Console (local) authenticates users through your existing directory and grants or revokes access based on group membership. This aligns access with your identity lifecycle and eliminates separate user management.
+When you integrate with Active Directory, Console (local) authenticates users through your existing directory. After you add a directory user to your organization, assign roles in Console (local) to control what that user can access.
 
 Active Directory integration also helps you meet compliance requirements by applying your existing controls, audit trails, and policies to Console (local) access.
+
+NOTE: Active Directory integration does not create federated groups in Console (local), does not synchronize directory-group assignments into Console (local), and does not automatically grant access. Administrators still add directory users to the organization and assign roles in Console (local).
 
 == Before you begin
 

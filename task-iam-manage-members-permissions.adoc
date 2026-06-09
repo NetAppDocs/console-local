@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-iam-manage-members-permissions.html
-keywords: user, service account, member, role, permissions, organization, fleet, folder, iam, identity and access management, federated groups, SSO, access roles, add members, grant permissions
+keywords: user, directory user, directory users, service account, member, role, permissions, organization, fleet, folder, iam, identity and access management, access roles, add members, grant permissions, AD, Active Directory, directory services
 summary: Add members and assign roles to provide permissions across different levels of your organization's resource hierarchy.
 ---
 
@@ -29,15 +29,15 @@ NetApp Console uses role-based access control (RBAC) to manage permissions. Assi
 
 Note the following about granting access in NetApp Console (local):
 
-* You must explicitly add a user and assign at least one role to each member in the Console before they can access resources, even if they are members of a federated group that has been assigned a role.
+* You must explicitly add each user to your organization and assign at least one role before that user can access resources.
 * A role that you assign at the organization or folder level is inherited by child scopes. Choose the assignment scope carefully so the member gets access only where needed. link:concept-iam-rbac.html#role-inheritance[Learn how role inheritance works].
 
 [#add-members]
 == Add members to your organization
 
-NetApp Console supports three types of members: user accounts, service accounts, and federated groups. 
+NetApp Console supports three types of members: user accounts, directory users, and service accounts.
 
-Users must sign up for NetApp Console before you can add them and assign a role, even if they are in a federated group. Create service accounts directly in the Console.
+Users with local Console accounts must create their sign-in before you can add them to the organization. Directory users authenticate through your integrated directory service, but you still add each directory user individually and assign roles in Console (local). Create service accounts directly in the Console.
 
 All members must have at least one role explicitly assigned to them in order to access resources.
 
@@ -78,7 +78,7 @@ link:reference-iam-predefined-roles.html[Learn about access roles].
 
 . To give access to more folders, fleets, or roles, select *Add role*, choose the folder, fleet, or role category, and select a role.
 
-. Select *Add*. 
+. Select *Add*.
 +
 The Console emails instructions to the user.
 
@@ -128,7 +128,7 @@ The Console shows the client secret only once. Copy it securely; you can recreat
 
 Add a user from your integrated directory service and grant their first roles. For example, add a new storage engineer from Active Directory and assign the Storage admin role on the `Production-US-East` fleet so they can work in that fleet.
 
-You must first configure Directory service before you can add directory users. link:task-iam-active-directory-integrate.html[Learn how to integrate with your directory service].
+You must first configure your directory service before you can add directory users. link:task-iam-active-directory-integrate.html[Learn how to integrate with your directory service].
 
 
 

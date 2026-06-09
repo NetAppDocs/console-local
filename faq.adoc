@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: faq.html
-keywords: faq, frequently asked questions, frequently asked questions about netapp console local, netapp console local, deployment, storage fleets, storage classes, alerts, iam, data services, llm integration
+keywords: faq, frequently asked questions, frequently asked questions about netapp console local, netapp console local, deployment, storage fleets, storage classes, alerts, iam, data services, llm integration, AD, Active Directory, directory services
 summary: "Frequently asked questions about NetApp Console (local) topics covered in this documentation set."
 ---
 = FAQ for NetApp Console (local)
@@ -69,7 +69,7 @@ This FAQ lists common questions about NetApp Console (local). It focuses on the 
 * What should I set up first when enabling IAM for a new organization?
 * When should I integrate with Active Directory?
 * How does multi-factor authentication affect user access?
-* How do I assign users, service accounts, and federated groups to the right scope?
+* How do I assign users, directory users, and service accounts to the right scope?
 * What access changes can be made directly at a fleet and what is inherited from higher levels?
 
 == AI-assisted management and integrations

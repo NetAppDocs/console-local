@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: faq-iam-netapp-console.html
-keywords: faq, frequently asked questions, frequently asked questions about netapp console iam, identity and access management, role-based access control, rbac, iam, roles, permissions, organization, folders, fleets, members, service accounts, federated groups
+keywords: faq, frequently asked questions, frequently asked questions about netapp console iam, identity and access management, role-based access control, rbac, iam, roles, permissions, organization, folders, fleets, members, service accounts, directory users, AD, Active Directory, directory services
 summary: "Frequently asked questions about identity and access management and role-based access control in NetApp Console."
 ---
 
@@ -70,14 +70,9 @@ No. You cannot change member access at a lower level if it was inherited from a 
 == Managing members and access
 
 
-.Do federated users automatically get access to resources when I add their group to the Console?
+.Does Active Directory integration automatically grant a directory user access to resources?
 
-No. Even when a federated group is assigned a role, individual users must meet two requirements before they can access resources:
-
-. The user must have already signed up for the NetApp Console.
-. The user must be explicitly assigned a role in the Console.
-
-NetApp recommends assigning a minimum access role such as Organization viewer to these users.
+No. Active Directory integration lets users authenticate with their existing directory credentials, but administrators still need to add each directory user to the Console organization and assign at least one role in Console (local).
 
 == Ongoing hierarchy maintenance
 

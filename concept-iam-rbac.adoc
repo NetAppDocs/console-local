@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-iam-rbac.html
-keywords: roles, permissions, role-based access control, rbac, iam, identity and access management, least privilege, access control, NetApp Console local access, organization access, folder access, fleet access, resource access
+keywords: roles, permissions, role-based access control, rbac, iam, identity and access management, least privilege, access control, NetApp Console local access, organization access, folder access, fleet access, resource access, directory users, AD, Active Directory, directory services
 summary: Manage user access to NetApp Console (local) with role-based access control (RBAC), assigning predefined roles at the organization, folder, or fleet level. Each role grants specific permissions that define what actions users can perform within their assigned scope.
 ---
 
@@ -24,11 +24,11 @@ For example, you can assign a member the Backup and Recovery admin role for a sp
 You can assign members multiple roles for the same scope or different scopes, depending on their responsibilities. For example, a smaller organization might have the same member manage both Storage admin and Backup and Recovery admin roles at the organization level, while a larger organization might have different members assigned to each role at the fleet level.
 
 == Types of Console organization members
-There are three types of members in a NetApp Console (local) organization:
+NetApp Console (local) supports the following types of members:
 
-* _User accounts_: Individual users who log in to the NetApp Console (local) to manage resources. 
-* _Service accounts_: Non-human accounts used by applications or services to interact with the NetApp Console (local) via APIs. You can add service accounts directly to your Console (local) organization.
-* _Federated groups_: Groups synchronized from your identity provider (IdP) that allow you to manage access for multiple users collectively. Each user within a federated group must be added to your organization with an access role in NetApp Console (local) before they can access resources granted to the group.
+* _User accounts_: Individual users who sign in to NetApp Console (local) with local credentials and manage resources directly.
+* _Directory users_: Individual users who authenticate through your integrated Active Directory or LDAP service. After you integrate your directory, add these users to your organization individually and assign roles in Console (local).
+* _Service accounts_: Non-human accounts that applications or services use to interact with NetApp Console (local) through APIs. You can add service accounts directly to your Console (local) organization.
 
 link:task-iam-manage-members-permissions.html#add-members[Learn how to add members to your organization.]
 
