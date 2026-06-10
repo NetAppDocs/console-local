@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-identity-and-access-management.html
-keywords: iam overview, overview, how iam works, iam example, organization, folders, fleets, resources, members, roles, permissions, resource hierarchy, identity and access management, access roles, iam
+keywords: iam overview, overview, how iam works, iam example, organization, folders, fleets, resources, members, roles, permissions, resource hierarchy, identity and access management, access roles, iam, authentication, directory users, AD, Active Directory, directory services
 summary: Use NetApp Console's Identity and Access Management (IAM) to structure and control resource access according to your business hierarchy, such as by location, department, or fleet.
 ---
 
@@ -15,181 +15,91 @@ summary: Use NetApp Console's Identity and Access Management (IAM) to structure 
 [.lead]
 // Jira: SPSPM-3302, SPSPM-3328
 
-Use NetApp Console's Identity and Access Management (IAM) to organize your NetApp resources and control access according to your business structure—by location, department, or fleet. 
+Identity and access management (IAM) in NetApp Console (local) controls who can sign in, how identities are verified, what resources users can access, and what actions they can perform. In NetApp Console (local), IAM includes role-based access control (RBAC), multi-factor authentication (MFA), directory-backed authentication, and single sign-on (SSO), as well as the hierarchy and audit model that support delegated administration.
 
-You organize resources in a hierarchy: the organization is at the top, then folders (which can have other folders or fleets), and then fleets, which have storage systems, workloads, and agents.
-
-Assign access roles at the organization, folder, or fleet level so users have the right access to resources.
+Use this page to understand the NetApp Console (local) IAM model at a high level. For detailed hierarchy planning examples, link:concept-folders-fleets-overview.html[learn about folders and fleets].
 
 NOTE: You must have the _Super admin_, _Organization admin_, or _Folder or fleet admin_ roles to manage IAM in NetApp Console.
 
 
-The following image illustrates this hierarchy at a basic level.
+== What IAM means in NetApp Console (local)
 
-image:diagram-iam-resource-hierarchy.png[A conceptual diagram that shows the components of resource management]
+NetApp Console (local) IAM combines identity verification, access control, delegation, and auditability:
 
-== Identity and access management components
+* _Authentication_ determines how users sign in, whether with local credentials or through your directory and SSO configuration.
+* _Authorization_ determines what members can do after they sign in, based on predefined roles and the scope where you assign them.
+* _Hierarchy and scoping_ determine which folders, fleets, and resources a member can access.
+* _Member and credential management_ determine how you add users, service accounts, and how you manage MFA and service account secrets.
+* _Audit and compliance tracking_ records IAM-related activity so you can review who changed access and when.
+
+
+== How authentication works
+
+NetApp Console (local) supports both local identities and external identity integration.
+
+You can integrate NetApp Console (local) with Active Directory so users sign in with their existing corporate credentials. This eliminates the need for separate passwords in Console (local) and lets administrators look up directory users when assigning access.
+
+For local users, MFA adds another verification step to reduce the risk of unauthorized access if credentials are compromised.
+
+To learn more about authentication and secure sign-in options, link:concept-secure-access.html[learn about secure access in NetApp Console (local)].
+
+
+== How authorization works
+
+After a user signs in, NetApp Console (local) uses RBAC to determine what that user can see and do.
+
+Active Directory or LDAP integration handles authentication. NetApp Console (local) authorization remains separate: administrators assign predefined roles at the organization, folder, or fleet level to control what each member can access.
+
+The same role grants different effective access depending on the scope where you assign it. This model lets you give broad access to central administrators while limiting regional or team-level administrators to the fleets they manage.
+
+Roles that you assign at the organization or folder level are inherited by child scopes. This inheritance model is a key part of how NetApp Console delegates access across folders and fleets.
+
+NetApp designs NetApp Console (local) roles with least-privilege principles so each role includes only the permissions needed for its tasks.
+
+To learn more about role design, scope, and inheritance, link:concept-iam-rbac.html#role-inheritance[learn how role-based access control and role inheritance work in NetApp Console (local)].
+
+
+== How the IAM hierarchy works
+
+NetApp Console (local) uses a hierarchy to group resources and scope access. The organization is at the top, then folders, then fleets, and then the resources (including possible sub-folders) associated with those fleets.
+
+This hierarchy is what makes delegation possible. For example, an organization admin can manage access across the entire organization, while a folder or fleet admin can manage only the resources and members within the part of the hierarchy they own.
+
 NetApp Console IAM is built on three types of components: organizational components that define the hierarchy, resources that are assigned within that hierarchy, and members and roles that control who can access what.
 
-=== NetApp Console organizational components
-The organizational components—organization, folders, and fleets—form a hierarchy that determines how resources are grouped and how access is delegated.
-
-Organization::
-
-An _organization_ is the top level of the Console IAM system and typically represents your company. Your organization consists of folders, fleets, members, roles, and resources. Resources are associated with fleets, and members are assigned roles at the organization, folder, or fleet level.
-
-
-fleets::
-
-fleets group storage resources. Assign resources to fleets and grant users access at the fleet level. Resources can belong to multiple fleets. Users with fleet access can use its resources.
-
-+
-
-For example, you can associate an on-premises ONTAP system with a single fleet or with all fleets in your organization, depending on your needs. 
-
-+
+Because roles inherit through this hierarchy, your folder and fleet design directly affects how broadly each access assignment applies.
 
 link:task-iam-manage-folders-fleets.html[Learn how to add fleets to your organization.^]
 
-Folders::
-
-Group related fleets in _folders_ to organize them by location, site, or business unit. You can't associate resources directly to folders, but assigning a user a role at the folder level gives them access to all fleets in that folder.
-
-NOTE: Users with the Org admin role can add resources to a folder to delegate the task of associating the resource with fleets to a Folder or fleet admins of the respective folder. link:task-iam-manage-folders-fleets.html#associate-resource-folder[Learn about associating a resource with a folder].
 
 
+== Member security and credentials
 
-=== Resources
+IAM in NetApp Console (local) also includes operational controls for securing member access after accounts exist.
 
-A _resource_ is an entity that the Console is aware of and that can be assigned to a fleet. _Resources_ include storage systems, Keystone subscriptions, some Backup and Recovery workloads, as well as Console agents.
+For local users, administrators can help users recover access by directing password reset, removing or temporarily disabling MFA, and reviewing local-user MFA behavior. For service accounts, administrators can recreate credentials when secrets are lost or rotated.
 
-Associate a resource with a fleet so that users with access to the fleet can use the resource.
+These controls are part of IAM because they determine how identities remain secure over time, not just how access is assigned initially.
 
-For example, you might associate a Cloud Volumes ONTAP system with one fleet or with all fleets in your organization. How you associate a resource depends on your organization's needs.
-
-
-link:task-iam-manage-resources.html[Learn how to associate resources to fleets.]
+link:task-manage-member-security.html[Learn how to manage member security].
 
 
-Storage systems::
-Storage systems are the primary resources that you manage in NetApp Console. NetApp Console supports management of both on-premises and cloud storage systems. Add a storage system to a fleet so that users with access to the fleet can access it.
+== Audit IAM activity
 
-+
+IAM in NetApp Console (local) includes the ability to review and export access-related activity.
 
-Storage systems are automatically associated with the fleet where they are added, but you can associate them with other fleets or folders from the *Resources* page. You cannot associate FSx for NetApp ONTAP storage systems with fleets or folders, but you can view them on the *Systems* page or from Workloads.
+From the Audit page, you can review actions related to managing your organization, such as adding members, creating fleets, and associating resources. You can also filter audit records by the Tenancy service to focus on IAM-related changes, or export audit logs to an external system.
 
+Auditability is an important IAM principle because it lets you verify who changed access, when the change happened, and whether the change was successful.
 
-Keystone subscriptions::
-Keystone subscriptions are also resources that you can associate with fleets in order to grant users access to the subscription in NetApp Console. 
+link:task-audit-console-activity.html[Learn how to audit NetApp Console (local) activity].
 
-
-Backup and Recovery workloads (Oracle and Microsoft SQL Server)::
-Some Backup and Recovery workloads are also considered resources. Assign a Backup and Recovery workload to a fleet in order to grant users access. 
-
-
-
-[#associate-agents]
-Console agents::
-
-Organization admins create Console agents to manage storage systems and enable NetApp data services. Agents are initially tied to the fleet where they are created, but admins can add them to other fleets from the *Agents* page. 
-
-
-+
-
-link:task-iam-manage-folders-fleets.html[Learn how to associate agents with fleets.]
-
-
-=== Members and roles
-Members are the users and service accounts in your organization. Roles define what actions they can perform and at what level of the hierarchy—organization, folder, or fleet.
-
-Members::
-
-Members of your organization are user accounts or service accounts. A service account is typically used by an application to complete specified tasks without human intervention.
-
-+
-Add members to your organization after they sign up for NetApp Console. After you add them, assign roles to provide access to resources. You can manually add service accounts from within the Console or automate their creation and management through the NetApp Console IAM API.
-
-+
-
-link:task-iam-manage-members-permissions.html#add-members[Learn how to add members to your organization.^]
-
-
-
-Access roles::
-
-The Console provides access roles that you can assign to the members of your organization.
-
-+
-
-When you associate a member with a role, you can grant that role for the entire organization, a specific folder, or a specific fleet. The role that you select gives a member permission to the resources in the selected part of the hierarchy.
-
-+
-
-NetApp Console provides granular roles that adhere to the principles of "least privilege", which means access roles are designed to give users access to only what they need.
-
-+
-Users may have multiple roles as their duties expand.
-
-+
-
-link:reference-iam-predefined-roles.html[Learn about access roles].
-
-
-== IAM strategy examples
-The right IAM structure depends on the size of your organization and how your teams are organized. The following examples show how different organizations can use the IAM hierarchy to manage access effectively.
-
-=== Small organization strategy
-
-For organizations with fewer than 50 users and centralized storage management, consider a simplified approach using Super admin and Super viewer roles.
-
-**Example: ABC Corporation (5-person team)**
-
-* **Structure:** Single organization with 3 fleets (Production, Development, Backup)
-* **Roles:**
-** 2 senior members: *Super admin* role for full administrative access
-** 3 team members: *Super viewer* role for monitoring without modification rights
-* **Agent strategy:** Single agent associated with all fleets for shared resource access
-* **Benefits:** Simplified administration, reduced role complexity, suitable for teams requiring broad access
-
-=== Multi-regional enterprise strategy
-
-For large organizations with regional operations and specialized teams, implement a hierarchical approach with folders representing geographical or business unit boundaries.
-
-**Example: XYZ Corporation (multinational company)**
-
-* **Structure:** Organization > Regional folders (North America, Europe, Asia-Pacific) > fleet folders per region
-* **Platform roles:**
-** 1 *Organization admin*: Global oversight and policy management
-** 3 *Folder or fleet admins*: Regional control (one per region)
-** 1 *Federation admin*: Corporate identity provider integration
-* **Storage roles by region:**
-** 9 *Storage admin*: Discover and manage storage systems in assigned regions
-** 2 *Storage viewer*: Monitor storage resources across regions
-** 1 *System health specialist*: Manage storage health without system modifications
-* **Data service roles:**
-** *Backup and Recovery admin*: Per-fleet based on backup responsibilities
-** *Ransomware Resilience admin*: Security team monitoring across fleets
-* **Agent strategy:** Regional agents associated with appropriate geographical fleets
-* **Benefits:** Enhanced security through role segregation, regional autonomy, and compliance with local regulations
-
-=== Departmental specialization strategy
-
-For organizations with specialized teams requiring specific data service access, use targeted role assignments based on functional responsibilities.
-
-**Example: TechCorp (mid-size technology company)**
-
-* **Structure:** Organization > Department folders (IT, Security, Development) > fleet-specific resources
-* **Specialized roles:**
-** Security team: *Ransomware Resilience admin* and *Classification viewer* roles
-** Backup team: *Backup and Recovery super admin* for comprehensive backup operations
-** Development team: *Storage admin* for test environment management
-** Compliance team: *Operation support analyst* for monitoring and support case management
-* **Agent strategy:** Agents linked to departmental fleets based on resource ownership
-* **Benefits:** Tailored access control, improved operational efficiency, and clear accountability for specialized tasks
 
 
 == Next steps with IAM in NetApp Console
 
-* link:task-iam-get-started.html[Get started with IAM in NetApp Console]
+* link:task-iam-fleet-mgmt-get-started.html[Quick start for Console organization setup]
+* link:concept-secure-access.html[Learn about secure access in NetApp Console (local)]
+* link:concept-iam-rbac.html[Learn about RBAC in NetApp Console (local)]
 * link:task-audit-console-activity.html[Monitor or audit Console (local) activity]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the API for NetApp Console IAM^]

@@ -14,6 +14,8 @@ summary: "Learn how to use folders and storage fleets to organize resources and 
 [.lead]
 Use folders and storage fleets to organize your NetApp resources and control access according to your business structure—by location, department, or workload type.
 
+Use this page for hierarchy strategy and fleet design patterns. For a complete IAM model of members, roles, and resource scope, link:concept-identity-and-access-management.html[learn about identity and access management].
+
 You organize resources in a hierarchy: the organization is at the top, then folders (which can contain other folders or fleets), and then fleets, which contain storage systems. Assign access roles at the organization, folder, or fleet level so users have the right access to resources.
 
 NOTE: You must have the Organization admin or Folder or fleet admin role to manage folders and fleets in the NetApp Console (local).
@@ -26,12 +28,12 @@ Organization::
 An organization is the top level of the NetApp Console (local) hierarchy and typically represents your company. Your organization consists of folders, fleets, members, roles, and resources. Resources are associated with fleets, and members are assigned roles at the organization, folder, or fleet level.
 
 Folders::
-Folders group related fleets to organize them by location, site, or business unit. You can't associate storage systems directly with folders, but assigning a user a role at the folder level gives them access to all fleets in that folder.
+Folders group related fleets to organize them by location, site, or business unit. You can't associate storage systems directly with folders, but assigning a member a role at the folder level gives them access to all fleets in that folder.
 +
-NOTE: Organization admins can add a resource to a folder to delegate the task of associating the resource with fleets to a Folder or fleet admin. link:task-storage-fleets-organize.html[Learn about associating resources with folders and fleets].
+NOTE: Organization admins can add a resource to a folder to delegate the task of associating the resource with fleets to a Folder or fleet admin. link:task-iam-manage-resources.html[Learn about associating resources with folders and fleets].
 
 Fleets::
-Fleets group storage systems. Assign resources to fleets and grant users access at the fleet level. Resources can belong to multiple fleets. Users with fleet access can manage the resources in that fleet.
+Fleets group storage systems. Assign resources to fleets and grant members access at the fleet level. Resources can belong to multiple fleets. Members with fleet access can manage the resources in that fleet.
 +
 For example, you can associate an on-premises ONTAP system with a single fleet or with all fleets in your organization, depending on your needs.
 +
@@ -43,7 +45,7 @@ A resource is a storage system that the Console (local) is aware of and that can
 
 For example, you might associate an ONTAP cluster with one fleet or with all fleets in your organization. How you associate a resource depends on your organization's needs.
 
-link:task-storage-fleets-organize.html[Learn how to associate resources with fleets].
+link:task-iam-manage-resources.html[Learn how to associate resources with fleets].
 
 == Members and roles
 
@@ -52,8 +54,8 @@ Members are the users and service accounts in your organization. Roles define wh
 Members::
 Members of your organization are user accounts or service accounts. A service account is typically used by an application to complete specified tasks without human intervention.
 +
-Add members to your organization after they sign up for the NetApp Console (local). After you add them, assign roles to provide access to resources.
-+
+users with the Org admin role can add new members to your organization. All users (including service accounts and Active Directory users) must be explicitly added and granted at least one role in order to access Console (local).
+
 link:task-iam-manage-members-permissions.html[Learn how to add members to your organization].
 
 Access roles::
@@ -61,7 +63,7 @@ The Console (local) provides access roles that you can assign to the members of 
 +
 When you associate a member with a role, you can grant that role for the entire organization, a specific folder, or a specific fleet. The role that you select gives a member permission to the resources in the selected part of the hierarchy.
 +
-The NetApp Console (local) provides granular roles that adhere to the principle of least privilege, which means access roles are designed to give users access to only what they need.
+The NetApp Console (local) provides granular roles that adhere to the principle of least privilege, which means access roles are designed to give members access to only what they need.
 +
 Users can have multiple roles as their duties expand.
 
@@ -69,7 +71,9 @@ Users can have multiple roles as their duties expand.
 
 When you assign a role at the organization or folder level, that role is automatically inherited by all resources within the selected scope. Folder-level roles apply to all contained fleets, while fleet-level roles apply to all resources within that fleet.
 
-== Strategy examples
+To learn how inheritance affects role assignments and access changes, link:concept-iam-rbac.html#role-inheritance[learn how RBAC and role inheritance work].
+
+== Organization design examples
 
 The right organizational structure depends on the size of your organization and how your teams are organized. The following examples show how different organizations can use the folder and fleet hierarchy to manage access effectively.
 
@@ -95,7 +99,7 @@ For large organizations with regional operations and specialized teams, implemen
 * *Platform roles*:
 ** 1 Organization admin: Global oversight and policy management
 ** 3 Folder or fleet admins: Regional control (one per region)
-** 1 Federation admin: Corporate identity provider integration
+** 1 Federation admin: Corporate identity provider and SSO integration
 * *Storage roles by region*:
 ** Storage admin: Discover and manage storage systems in assigned regions
 ** Storage viewer: Monitor storage resources across regions
@@ -119,6 +123,6 @@ For organizations with specialized teams requiring specific access, use targeted
 == Next steps
 
 * link:task-iam-manage-folders-fleets.html[Create folders and storage fleets]
-* link:task-storage-fleets-organize.html[Organize storage into fleets]
-* link:task-users-fleets-assign.html[Assign users to fleets for storage management]
+* link:task-iam-manage-resources.html[Associate resources with folders and fleets]
+* link:task-iam-users-fleets-assign.html[Manage fleet access assignments]
 * link:task-audit-console-activity.html[Monitor or audit Console (local) actions]

@@ -19,7 +19,7 @@ image:screenshot_azure_ad.png[Shows the Active Directory service in Microsoft Az
 
 . Select *Register*.
 +
-You've created the AD application and service principal.
+You've created the Active Directory application and service principal.
 //end::app[]
 
 //tag::role[]

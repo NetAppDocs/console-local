@@ -30,4 +30,4 @@ link:task-install-agent-on-prem-ova.html[Install NetApp Console (local) in your 
 After deployment, complete the following tasks to get started:
 
 * link:task-storage-discover.html[Discover storage in NetApp Console (local)]
-* link:task-iam-manage-members-permissions.html[Add users to NetApp Console (local)]
+* link:task-iam-manage-members-permissions.html[Add members and assign roles in NetApp Console (local)]

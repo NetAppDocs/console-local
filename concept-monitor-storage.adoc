@@ -28,17 +28,15 @@ Use the Workload Analyzer to investigate performance issues on individual volume
 
 * link:concept-workload-analyzer.html[Learn about the NetApp Console (local) Workload Analyzer]
 * link:task-analyzer-volume-latency-investigate.html[Investigate high latency on a volume in NetApp Console (local)]
-* link:task-analyzer-volume-qos-throttling-identify.html[Identify QoS throttling on a volume in NetApp Console (local)]
-* link:task-analyzer-volume-resource-contention-identify.html[Identify resource contention affecting a volume in NetApp Console (local)]
-* link:task-analyzer-volume-capacity-forecast.html[Forecast volume capacity in NetApp Console (local)]
-* link:task-analyzer-volume-config-change-correlate.html[Correlate configuration changes with volume issues in NetApp Console (local)]
+* link:task-analyzer-volume-throughput-investigate.html[Investigate high throughput demand on a volume in NetApp Console (local)]
+* link:reference-workload-analyzer-metrics.html[Review Workload Analyzer metrics in NetApp Console (local)]
 
 == Alerts and notifications
 
 Configure alert policies and notification channels so the right people are informed when storage conditions require attention.
 
 link:task-notifications-configure.html[Configure notifications and alert policies in NetApp Console (local)]
-link:task-al
+link:task-alerts-view.html[View storage alerts in NetApp Console (local)]
 
 == Remediation
 

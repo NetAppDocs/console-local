@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: task-iam-manage-roles.html
-keywords:  fleets, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members, access roles
-summary: Within the NetApp Console, you can assign roles to users based on what they need to do and where. 
+keywords: fleets, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members, access roles, directory users, AD, Active Directory, directory services
+summary: Manage member access in your Console organization. Assign roles to set permissions. Remove members when they leave.
 ---
 
 = Manage member access in NetApp Console (local)
@@ -13,86 +13,48 @@ summary: Within the NetApp Console, you can assign roles to users based on what 
 :imagesdir: ./media/
 
 [.lead]
-Manage member access in your Console organization. Assign roles to set permissions. Remove members when they leave.
+Review or change a user's roles across multiple folders or fleets, such as checking everything a storage engineer can access, adding a new role in another region, or removing that user's access when responsibilities change.
+
 
 .Required access roles
-Super admin, Org admin, or Folder or fleet admin (for folders and fleets that they are administering). Link:reference-iam-predefined-roles.html[Learn about access roles].
+Super admin, Org admin, or Folder or fleet admin (for folders and fleets that they are administering). link:reference-iam-predefined-roles.html[Learn about access roles].
 
-You can assign access roles on a fleet or folder basis. For example, assign a role to a user for two specific fleets or assign the role at the folder level to give a user the Ransomware Resilience admin role for all fleets in a folder
+You can view and manage access in two ways depending on your needs. If you want to view the roles that a particular user has across all the fleet in your organization, use the *Members* page.
 
-NOTE: Add your folders and fleets before assigning users access. link:task-iam-manage-folders-fleets.html[Learn how to add folders and fleets.]
+If you want to confirm who can access a specific fleet, review the members assigned to that fleet instead. link:task-iam-users-fleets-assign.html[Manage fleet access assignments].
 
-== Understand how access is granted in NetApp Console           
-NetApp Console uses a role-based access control (RBAC) model to manage user permissions. You can assign predefined roles to members individually or through federated groups. You can add and assign roles to service accounts, as well as federated groups. Each role defines what actions a member can perform at the associated resources.
+To add a new member, service account, or directory user and assign their first role, use the onboarding task instead. link:task-iam-manage-members-permissions.html[Add members and assign roles].
 
-Note the following about granting access in NetApp Console:
-
-* All users must first sign up for the NetApp Console before they can be granted access to resources.
-* You must explicitly assign a role to each user in the Console before they can access resources, even if they are members of a federated group that has been assigned a role.   
-* You can add service accounts directly from the Console and assign them roles.
-
-
+== Understand how access is granted in NetApp Console
+NetApp Console uses role-based access control (RBAC) to manage member permissions. You can assign predefined roles at the organization, folder, or fleet level, depending on the scope of access that a member needs.
 
 [#role-inheritance]
 === Using role inheritance
-When you assign a role at the organization, folder, or fleet level in NetApp Console, that role is automatically inherited by all resources within the selected scope. For example, folder-level roles apply to all contained fleets, while fleet-level roles apply to all resources within that fleet.
+A role that you assign at the folder level applies to all child fleets and folders, while a role that you assign at the fleet level applies only to that fleet's resources. If a member inherits access from the organization or a folder, change that assignment at the higher scope where you granted it. link:concept-iam-rbac.html#role-inheritance[Learn more about how role inheritance works].
 
 
-
-== View organization members
-
-To understand which resources and permissions are available to a member, you can view the roles assigned to the member at different levels of your organization's resource hierarchy. link:task-iam-manage-roles.html[Learn how to use roles to control access to Console resources.^]
-
-
-.Steps
-
-. Select *Administration > Identity and access*.
-
-. Select *Members*.
-
-+
-The *Members* table lists the members of your organization.
-
-. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *View details*.
 
 [#manage-permissions]
-== View roles(s) assigned to a member
+== View roles assigned to a member
 
-You can verify which roles they are currently assigned.
+Confirm exactly which roles a member holds and at which scope before you make a change. For example, check whether a teammate already has the Storage admin role on the `Production-EU-West` fleet.
 
-If you have the _Folder or fleet admin_ role, the page displays all members in the organization. However, you can only view and manage member permissions for the folders and fleets for which you have permissions. link:reference-iam-predefined-roles.html[Learn more about the actions that a _Folder or fleet admin_ can complete].
+If you have the _Folder or fleet admin_ role, the page displays all members in the organization. However, you can view and manage permissions only for the folders and fleets that you administer. link:reference-iam-predefined-roles.html[Learn more about the actions that a _Folder or fleet admin_ can complete].
 
 include::_include/tasks-role.adoc[tag=view-role]
 
-== View members associated with a folder or fleet
-
-You can view members who have access to a specific folder or fleet.
-
-.Steps
-
-. Select *Administration > Identity and access*.
-
-. Select *Organization*.
-
-. From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon that is three side-by-side dots"] and then select *Edit folder* or *Edit fleet*.
-
-* Select *Access* to view the members who have access to the folder or fleet.
-+
-image:screenshot-iam-member-access.png[A screenshot of the Edit fleet page that shows the members who have access to the fleet.]
-
-
 == Assign or modify member access
 
-After a user signs up for NetApp Console, you can add them to your organization and assign them a role to provide access to resources. link:task-iam-manage-members-permissions.html#add-members[Learn how to add members to your organization.^]
+You can adjust a member's access whenever responsibilities change. For example, when a teammate takes on backup duties for a second region, add the Backup and Recovery admin role on that region's fleet without touching their existing storage roles.
 
-You can adjust a member's access by adding or removing roles as needed.
+If you need to add a new member and assign their first role, see link:task-iam-manage-members-permissions.html#add-members[Add members and assign roles].
 
 
-==  Add an access role to a member
+=== Add an access role to an existing member
 
-You typically assign a role when adding a member to your organization, but you can update it at any time by removing or adding roles.
+Grant a member an additional role at the organization, folder, or fleet level when their responsibilities expand. For example, give a Storage admin the Backup and Recovery admin role at the organization level so they can manage backup and recovery tasks across every fleet without losing their existing storage permissions.
 
-You can assign a user an access role for your organization, folder, or fleet. 
+You can assign a member an access role for your organization, folder, or fleet.
 
 Members can have multiple roles within the same fleet and in different fleets. For example, smaller organizations may assign all available access roles to the same user, while larger organizations may have users do more specialized tasks. Alternatively, you could also assign one user the Ransomware Resilience admin role at the organization level. In that example, the user would be able to perform Ransomware Resilience tasks on all fleets within your organization. 
 
@@ -105,15 +67,15 @@ Your access role strategy should align with the way you have organized your NetA
 
 . Select *Members*.
 
-. Select one of the member tabs: *Users*, *Service accounts*, or *Federated groups*.
+. Select one of the member tabs: *Users*, *Directory users*, or *Service accounts*.
 
 include::_include/tasks-role.adoc[tag=add-role]
 
-== Change a member's assigned role
+=== Change a member's assigned role
 
-Change a member's roles to update their access.
+Replace a member's existing role with a different one when their responsibilities shift. For example, when a Storage viewer on the `Production-US-East` fleet needs the Storage admin role instead.
 
-NOTE: Users must have at least one role assigned to them. You can't remove all roles from a user. If you need to remove all roles, you must delete the user from your organization.
+NOTE: Each user must have at least one role. You can't remove all roles from a user. If you need to remove all roles, delete the user from your organization.
 
 .Steps
 
@@ -121,22 +83,19 @@ NOTE: Users must have at least one role assigned to them. You can't remove all r
 
 . Select *Members*.
 
-. Select one of the member tabs: *Users*, *Service accounts*, or *Federated groups*.
+. Select one of the member tabs: *Users*, *Directory users*, or *Service accounts*.
 
 include::_include/tasks-role.adoc[tag=remove-role]
 
 
-== Remove a member from your organization
+=== Remove a member from your organization
 
-Remove a member if they leave your organization.
-
-When you remove a member, the system revokes their Console permissions but retains their Console and NetApp Support Site accounts.
+Remove a member when they leave the organization or change roles in a way that ends their need for Console access. For example, when a contractor's engagement ends or an employee transfers to a team outside your Console organization. 
 
 [NOTE] 
 ====
-.Federated members
-* Federated users automatically lose access to the NetApp Console when they are removed from your IdP. But you should still remove them from your Console organization to keep your member list up to date.
-* If you remove a user from a federated group in your IdP, they lose the Console access associated with that group. However, they still retain any access associated with an explicit role assigned to them in the Console.
+.Directory users
+Removing a user from your directory prevents that user from authenticating. You should also remove the user from your Console organization to keep the member list accurate and to remove any roles that were assigned in Console (local).
 
 ====
 
@@ -146,7 +105,7 @@ When you remove a member, the system revokes their Console permissions but retai
 
 . Select *Members*.
 
-. Select one of the member tabs: *Users*, *Service accounts*, or *Federated groups*.
+. Select one of the member tabs: *Users*, *Directory users*, or *Service accounts*.
 
 . From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] then select *Delete user*.
 

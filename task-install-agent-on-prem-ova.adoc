@@ -50,13 +50,13 @@ NetApp supports installing NetApp Console (local) in your VCenter environment. T
 
 Download the OVA.
 
-. Download the Console agent software from the NetApp Support Site.
+. Download the Console (local) software from the NetApp Support Site.
 
 
 
-=== Deploy the agent in your VCenter
+=== Deploy NetApp Console (local) in your VCenter
 
-Log into your VCenter environment to deploy the agent.
+Log into your VCenter environment to deploy Console (local).
 
 .Steps
 
@@ -71,11 +71,11 @@ a. Right-click and select *Deploy OVF template...*.
 
 b. Choose the OVA file from the URL or browse to its location, then select *Next*.
 |
-a. Go to your content library and select the Console agent OVA. 
+a. Go to your content library and select the Console OVA. 
 
 b. Select *Actions* > *New VM from this template*
 |===
-. Complete the Deploy OVF Template wizard to deploy the Console agent.
+. Complete the Deploy OVF Template wizard to deploy the Console.
 
 . Select a name and folder for the VM, then select *Next*.
 . Select a compute resource, then select *Next*.

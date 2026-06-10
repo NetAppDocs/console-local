@@ -26,7 +26,7 @@ Your organization's resource hierarchy consists of folders and fleets. Folders g
 
 * *Organization* is the top level of the hierarchy and represents your company.
 * *Folders* help you organize related fleets. For example, you might create a folder for each region or business unit, and then create fleets within each folder. Folders can contain other folders or fleets, but they cannot have storage systems directly associated with them. When you assign a role to a member at the folder level, the member inherits that role for all fleets within the folder.
-* *Fleets* group the storage systems that you manage together. You associate storage systems with fleets and assign users to fleets to grant them access.
+* *Fleets* group the storage systems that you manage together. You associate storage systems with fleets and assign members to fleets to grant them access.
 
 NOTE: Folders are an organizational tool and are not visible to members who do not have IAM permissions such as the Organization admin or Folder or fleet admin roles. Members access fleets, not folders.
 

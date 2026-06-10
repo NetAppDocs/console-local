@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+permalink: task-console-assistant.html
+keywords: console assistant, ai assistant, ask questions, netapp console local
+summary: "Use the NetApp Console assistant to ask questions and get guided help while working in NetApp Console (local)."
+---
+= Use the NetApp Console assistant
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Use the NetApp Console assistant to ask questions and get guided help while working in NetApp Console (local).
+
+NOTE: Stub page. Content to be developed.
+
+.Steps
+
+. Open the NetApp Console assistant.
+. Enter your question or request.
+. Review the response and follow the suggested guidance.

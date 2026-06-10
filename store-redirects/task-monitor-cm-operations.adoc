@@ -1,4 +1,4 @@
 ---
-permalink: console-local-internal/task-monitor-cm-operations.html
-redirect: task-audit-console-activity.html
+permalink: task-monitor-cm-operations.html
+redirect: console-local/task-audit-console-activity.html
 ---

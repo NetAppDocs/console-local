@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: task-console-local-vm-config.html
-keywords: agent VM, vcenter, esxi, increase cpu, increase ram, vm maintenance, agent maintenance, agent operating system, agent host
-summary: You can make changes to your existing VCenter or ESXi host after you deploy the Console agent. For example, you can increase the CPU or RAM of the VM instance that hosts the Console agent. 
+keywords: Console local VM, vcenter, esxi, increase cpu, increase ram, vm maintenance, Console local maintenance, Console local operating system, Console local host
+summary: You can make changes to your existing VCenter or ESXi host after you deploy Console (local). For example, you can increase the CPU or RAM of the VM instance that hosts Console (local). 
 ---
 
 = Maintain your vCenter or ESXi host for NetApp Console (local)
@@ -18,7 +18,7 @@ You can make changes to your existing VCenter or ESXi host after you deploy the 
 Perform these maintenance tasks using the VM web console:
 
 * Increase disk size
-* Restart the agent
+* Restart the Console (local)
 * Update static routes
 * Update search domains
 
@@ -31,7 +31,7 @@ You can access the maintenance console from the VSphere client.
 
 .Steps
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console agent.
+. Select the VM instance that hosts the Console (local).
 . Select *Launch Web Console*.
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 
@@ -42,20 +42,20 @@ You can change the password for the `maint` user.
 
 .Steps
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console agent.
+. Select the VM instance that hosts the Console (local).
 . Select *Launch Web Console*.
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 . Enter `1` to view the `System Configuration` menu.
 . Enter `1` to change the maintenance user password and follow the on-screen prompts.
 
 === Increase the CPU or RAM of the VM instance
-You can increase the CPU or RAM of the VM instance that hosts the Console agent.
+You can increase the CPU or RAM of the VM instance that hosts Console (local).
 
 Edit the VM instance settings in your VCenter or ESXi host, then use the maintenance Console to apply the changes.
 
 .Steps in the VSphere client
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console agent.
+. Select the VM instance that hosts the Console (local).
 . Right-click the VM instance and select *Edit Settings*.
 . Increase the hard drive space used for /opt or the /var partition.
 .. Select *Hard Disk 2* to increase the hard drive space used for /opt.
@@ -65,7 +65,7 @@ Edit the VM instance settings in your VCenter or ESXi host, then use the mainten
 .Steps in the maintenance console
 
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console agent.
+. Select the VM instance that hosts Console (local).
 . Select *Launch Web Console*.
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 . Enter `1 to view the `System Configuration` menu.
@@ -118,9 +118,9 @@ You can update the search domain settings for the Console (local) VM.
 
 
 [[connect-vcenter-host]]
-=== Access the agent diagnostic tools
+=== Access the Console (local) diagnostic tools
 
-Access diagnostic tools to troubleshoot issues with the Console agent. NetApp Support may ask you to do this when troubleshooting issues.
+Access diagnostic tools to troubleshoot issues with the Console (local). NetApp Support may ask you to do this when troubleshooting issues.
 
 .Steps
 . Open the VSphere client and log in to your VCenter.

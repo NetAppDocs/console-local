@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-console-configure-notifications-delivery.html
-keywords: Active Directory, LDAP, federation, user management, directory services, netapp console
+keywords: console local, SMTP, email server, webhook,  notifications delivery, alert routing, incident response, operational awareness, third-party integration, SIEM
 summary: "Configure the notifications delivery channels for NetApp Console (local)."
 ---
 

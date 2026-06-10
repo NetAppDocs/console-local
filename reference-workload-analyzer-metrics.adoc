@@ -12,11 +12,11 @@ summary: "Reference for all metrics available in the Workload Analyzer, organize
 :imagesdir: ./media/
 
 [.lead]
-The Workload Analyzer surfaces metrics across six sections. This page describes each metric, how it is rendered on the chart, and what it indicates about volume behavior.
+Use this page to understand the metrics that the Workload Analyzer shows across six sections. It explains each metric, how the analyzer renders it on the chart, and what it indicates about volume behavior.
 
 == Latency delay centers
 
-Latency delay centers are available in the *Latency Analysis* section when you select *By Contribution* from the View dropdown. Each delay center represents a distinct phase of the I/O path. Use these metrics to identify which part of the stack is contributing most to response time.
+Use the delay centers in the *Latency Analysis* section after you select *By Contribution* from the View dropdown. Each delay center represents a distinct phase of the I/O path. Use these metrics to identify which part of the stack contributes most to response time.
 
 [cols="20,40,40",options="header"]
 |===
@@ -57,7 +57,7 @@ Latency delay centers are available in the *Latency Analysis* section when you s
 
 === QoS reference lines in latency charts
 
-When a QoS policy is attached to the selected volume, two additional reference lines are available in the metric picker:
+If the selected volume uses a QoS policy, you can use two additional reference lines in the metric picker:
 
 [cols="20,80",options="header"]
 |===
@@ -70,11 +70,11 @@ When a QoS policy is attached to the selected volume, two additional reference l
 | The guaranteed minimum latency floor defined by the QoS policy. This line indicates the response time floor enforced for the workload.
 |===
 
-These lines are horizontal and are not included in the delay center breakdown on hover. They are reference thresholds, not contributors to latency.
+These horizontal lines do not appear in the delay center breakdown on hover. They serve as reference thresholds, not as contributors to latency.
 
 == Throughput components
 
-Throughput components are available in the *Throughput Analysis* section when you select *Breakdown (RWO)* from the View dropdown. Both IOPS and MB/s are shown simultaneously.
+Use the throughput components in the *Throughput Analysis* section after you select *Breakdown (RWO)* from the View dropdown. The analyzer shows both IOPS and MB/s simultaneously.
 
 [cols="20,40,40",options="header"]
 |===
@@ -105,11 +105,11 @@ Throughput components are available in the *Throughput Analysis* section when yo
 | Stacked area on the MB/s chart.
 
 | QoS IOPS Limit
-| Maximum IOPS ceiling from the attached QoS policy. Only shown when a QoS policy is attached.
+| Maximum IOPS ceiling from the attached QoS policy. The analyzer shows this line only when the volume uses a QoS policy.
 | Horizontal reference line on the IOPS chart.
 
 | QoS MB/s Limit
-| Maximum throughput ceiling from the attached QoS policy. Only shown when a QoS policy is attached.
+| Maximum throughput ceiling from the attached QoS policy. The analyzer shows this line only when the volume uses a QoS policy.
 | Horizontal reference line on the MB/s chart.
 |===
 
@@ -117,7 +117,7 @@ The Read, Write, and Other components sum to the total IOPS or MB/s value. Hover
 
 == Resource utilization metrics
 
-Resource utilization metrics are available in the *Resource Utilization* section. Each resource serving the volume is shown as an independent line. Resources do not stack.
+Use the *Resource Utilization* section to review resource utilization metrics. The analyzer shows each resource serving the volume as an independent line. Resources do not stack.
 
 === Node metrics
 
@@ -129,13 +129,13 @@ Resource utilization metrics are available in the *Resource Utilization* section
 | Composite utilization percentage for the node. Hover to see the CPU utilization, network utilization, and available headroom for each node.
 
 | CPU utilization
-| Percentage of node CPU capacity in use. Visible in the hover tooltip.
+| Percentage of node CPU capacity in use. The hover tooltip shows this value.
 
 | Network utilization
-| Percentage of node network capacity in use. Visible in the hover tooltip.
+| Percentage of node network capacity in use. The hover tooltip shows this value.
 
 | Headroom
-| Remaining node capacity available for additional workload. Visible in the hover tooltip.
+| Remaining node capacity available for additional workload. The hover tooltip shows this value.
 |===
 
 === Aggregate metrics
@@ -148,22 +148,22 @@ Resource utilization metrics are available in the *Resource Utilization* section
 | Disk busy percentage for the aggregate. Hover to see the disk busy value, number of volumes on the aggregate, and available headroom.
 
 | Disk busy
-| Percentage of time the aggregate's disks are actively servicing I/O. Visible in the hover tooltip.
+| Percentage of time the aggregate's disks actively service I/O. The hover tooltip shows this value.
 
 | Volume count
-| Number of volumes currently hosted on the aggregate. Visible in the hover tooltip.
+| Number of volumes currently hosted on the aggregate. The hover tooltip shows this value.
 
 | Headroom
-| Remaining aggregate capacity available for additional workload. Visible in the hover tooltip.
+| Remaining aggregate capacity available for additional workload. The hover tooltip shows this value.
 |===
 
-When a node or aggregate utilization line crosses the high-utilization warning threshold (displayed as a dashed reference line), other workloads on that resource may be competing with the selected volume for I/O capacity.
+When a node or aggregate utilization line crosses the high-utilization warning threshold, which the chart marks with a dashed reference line, other workloads on that resource may be competing with the selected volume for I/O capacity.
 
 == Capacity metrics
 
 === Capacity View
 
-Capacity View metrics are available in the *Capacity Analysis* section when you select *Capacity View* from the View dropdown.
+Use the *Capacity Analysis* section to review Capacity View metrics after you select *Capacity View* from the View dropdown.
 
 [cols="25,75",options="header"]
 |===
@@ -176,21 +176,21 @@ Capacity View metrics are available in the *Capacity Analysis* section when you 
 | Free space remaining in the volume. This is the top stacked area in the chart. It decreases as Physical Capacity grows.
 
 | Storage Efficiency Ratio
-| Overall efficiency ratio (logical data ÷ physical data). Visible in the hover tooltip. Reflects savings from deduplication, compression, and compaction combined.
+| Overall efficiency ratio (logical data ÷ physical data). The hover tooltip shows this value. It reflects combined savings from deduplication, compression, and compaction.
 
 | Deduplication savings
-| Space saved by removing duplicate data blocks. Visible in the hover tooltip.
+| Space saved by removing duplicate data blocks. The hover tooltip shows this value.
 
 | Compression savings
-| Space saved by compressing data inline. Visible in the hover tooltip.
+| Space saved by compressing data inline. The hover tooltip shows this value.
 
 | Compaction savings
-| Space saved by packing multiple small blocks into a single physical block. Visible in the hover tooltip.
+| Space saved by packing multiple small blocks into a single physical block. The hover tooltip shows this value.
 |===
 
 === Snapshot View
 
-Snapshot View metrics are available when you select *Snapshot View* from the View dropdown.
+Use Snapshot View when you want to review snapshot-specific metrics.
 
 [cols="25,40,35",options="header"]
 |===
@@ -209,7 +209,7 @@ Hover over the chart to see the snapshot reserve size, snapshot space used and i
 
 == Forecast behavior
 
-Each analysis section includes a *Show Forecast* toggle. When enabled, the analyzer projects future values beyond the current time based on the observed trend. The following behaviors apply across all sections:
+Use the *Show Forecast* toggle in any analysis section when you want to project future values beyond the current time based on the observed trend. The following behaviors apply across all sections:
 
 [cols="25,75",options="header"]
 |===
@@ -219,11 +219,17 @@ Each analysis section includes a *Show Forecast* toggle. When enabled, the analy
 | Projects forward based on the selected time range. For a 2-hour view, the projection window is approximately 1 hour. For a 7-day view, the projection window extends several days.
 
 | Visual style
-| Forecast values are rendered as a dashed line. A vertical separator marks the boundary between actual data and projected values.
+| The analyzer renders forecast values as a dashed line. A vertical separator marks the boundary between actual data and projected values.
 
 | Threshold alerts
-| An insight message appears when the forecast indicates a warning or critical threshold will be breached, along with an estimated time to breach.
+| The analyzer displays an insight message when the forecast indicates that the volume will breach a warning or critical threshold, along with an estimated time to breach.
 
 | Trend basis
-| The projection uses the rate of change observed in the most recent portion of the selected time range. High volatility in recent data reduces forecast confidence.
+| The projection uses the rate of change from the most recent portion of the selected time range. High volatility in recent data reduces forecast confidence.
 |===
+
+== Related information
+
+* link:concept-workload-analyzer.html[Learn about NetApp Console (local) Workload Analyzer]
+* link:task-analyzer-volume-latency-investigate.html[Investigate high latency on a volume]
+* link:task-analyzer-volume-throughput-investigate.html[Investigate high throughput demand on a volume]

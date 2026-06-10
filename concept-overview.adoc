@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: concept-overview.html
+keywords: netapp console, overview, introduction, platform overview
+summary: "Learn about NetApp Console and how it helps you manage storage and data services across your environment."
+---
+= Learn about NetApp Console
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Learn about NetApp Console and how it helps you manage storage and data services across your environment.
+
+NOTE: This topic is a stub. Expand it with the high-level product overview and positioning.
+
+== What NetApp Console provides
+
+* Centralized storage management
+* Data services integration
+* Identity and access management
+* Monitoring and operational controls
