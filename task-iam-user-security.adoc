@@ -5,7 +5,7 @@ keywords: user, service account, member, role, permissions, organization, fleet,
 summary: Manage your organization's members to provide permissions across different levels of your organization's resource hierarchy.
 ---
 
-= User security in NetApp Console (local)
+= Manage user security in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font

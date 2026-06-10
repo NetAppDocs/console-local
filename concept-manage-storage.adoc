@@ -4,7 +4,7 @@ permalink: concept-manage-storage.html
 keywords: storage management, storage classes, provisioning, storage class policies, netapp console local
 summary: "Learn about managing storage in NetApp Console (local), including storage classes, policies, and provisioning methods."
 ---
-= Manage storage in NetApp Console (local)
+= Storage management in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font

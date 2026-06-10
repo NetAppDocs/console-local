@@ -5,7 +5,7 @@ keywords: system manager, advanced view, access system manager, load system mana
 summary: If you discovered an on-premises ONTAP cluster using a Console Agent, you can create volumes from the Standard view, use System Manager from the Advanced view, and enable NetApp data services.
 ---
 
-= Manage clusters that were discovered with a Console agent
+= Manage ONTAP clusters discovered with a Console agent
 :hardbreaks:
 :nofooter:
 :icons: font

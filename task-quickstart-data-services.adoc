@@ -4,7 +4,7 @@ permalink: task-quickstart-data-services.html
 keywords: quickstart, data services, enable, activate, netapp console
 summary: "Quickstart for data services in NetApp Console (local) to enable data protection capabilities."
 ---
-= Quickstart for data services in NetApp Console (local)
+= Quick start for data services in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font

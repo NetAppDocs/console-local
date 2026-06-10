@@ -5,7 +5,7 @@ keywords:  bluexp, dashboard, console, home page
 summary: Within the NetApp Console, you can view metrics on the Home page. 
 ---
 
-= View metrics on the NetApp Console (local) Home page
+= View Home page metrics in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
