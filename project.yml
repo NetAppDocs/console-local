@@ -38,7 +38,7 @@ sidebar:
       entries:
       - title: Install NetApp Console (local)
         entries:
-        - title: Installation overview for NetApp Console (local)
+        - title: Installation workflow for NetApp Console (local)
           url: /concept-deploy-netapp-console-local.html
         - title: Install NetApp Console (local)
           url: /task-install-agent-on-prem-ova.html
@@ -50,7 +50,7 @@ sidebar:
           url: /concept-folders-fleets-overview.html
         - title: Understand role-based access control (RBAC)
           url: /concept-iam-rbac.html
-      - title: Set up your Console organization setup
+      - title: Set up your Console organization
         entries:
         - title: Create folders and fleets
           url: /task-iam-manage-folders-fleets.html
