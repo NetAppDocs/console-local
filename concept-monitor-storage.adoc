@@ -4,7 +4,7 @@ permalink: concept-monitor-storage.html
 keywords: monitor, health, performance, alerts, workload analyzer, remediation, netapp console local
 summary: "Learn about monitoring storage health and performance in NetApp Console (local), including fleet-wide dashboards, the Workload Analyzer, and remediation options."
 ---
-= Monitor storage in NetApp Console (local)
+= Storage monitoring in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font

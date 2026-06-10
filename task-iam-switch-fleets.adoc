@@ -5,7 +5,7 @@ keywords: switch fleets, fleets, organizations, change, switch, change organizat
 summary: If your organization includes multiple fleets and you have access to those fleets, you can switch between them at any time.
 ---
 
-= Switch between Console fleets
+= Switch between fleets in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font

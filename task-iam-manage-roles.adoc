@@ -5,7 +5,7 @@ keywords: fleets, access, resources, user roles, iam, identity and access manage
 summary: Manage member access in your Console organization. Assign roles to set permissions. Remove members when they leave.
 ---
 
-= Manage member access in NetApp Console
+= Manage member access in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font

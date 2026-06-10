@@ -5,7 +5,7 @@ keywords: iam overview, overview, how iam works, iam example, organization, fold
 summary: Use NetApp Console's Identity and Access Management (IAM) to structure and control resource access according to your business hierarchy, such as by location, department, or fleet.
 ---
 
-= Learn about NetApp Console identity and access management
+= Learn about NetApp Console (local) identity and access management
 :hardbreaks:
 :nofooter:
 :icons: font

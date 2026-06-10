@@ -5,7 +5,7 @@ keywords: direct discovery, direct, system manager, local, local discovery,
 summary: If you discovered your on-prem ONTAP cluster directly without using a NetApp Console Agent, you can open the system in the NetApp Console to manage the cluster by using ONTAP System Manager.
 ---
 
-= Manage clusters that were discovered directly in NetApp Console
+= Manage ONTAP clusters discovered directly in NetApp Console
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -5,7 +5,7 @@ keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud c
 summary: After you sign up to the NetApp Console, you can log in from the web-based console to start managing your data and storage infrastructure.
 ---
 
-= Log in to NetApp Console
+= Log in to NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font

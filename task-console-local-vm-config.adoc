@@ -5,7 +5,7 @@ keywords: Console local VM, vcenter, esxi, increase cpu, increase ram, vm mainte
 summary: You can make changes to your existing VCenter or ESXi host after you deploy Console (local). For example, you can increase the CPU or RAM of the VM instance that hosts Console (local). 
 ---
 
-= Maintain your VCenter or ESXi host for Console (local)
+= Maintain your vCenter or ESXi host for NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font

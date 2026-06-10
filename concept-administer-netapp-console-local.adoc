@@ -4,7 +4,7 @@ permalink: concept-administer-netapp-console-local.html
 keywords: administer, monitor, audit, subscriptions, maintenance, troubleshooting, access management, netapp console local
 summary: "Learn how to administer and monitor NetApp Console (local), including audit activity, subscriptions, maintenance, troubleshooting, and member access."
 ---
-= Administer NetApp Console (local)
+= Administration and monitoring in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
