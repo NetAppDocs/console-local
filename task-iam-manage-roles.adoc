@@ -5,7 +5,7 @@ keywords:  fleets, access, resources, user roles, iam, identity and access manag
 summary: Within the NetApp Console, you can assign roles to users based on what they need to do and where. 
 ---
 
-= Manage member access in NetApp Console
+= Manage member access in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font

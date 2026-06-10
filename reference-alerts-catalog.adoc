@@ -4,7 +4,7 @@ permalink: reference-alerts-catalog.html
 keywords: alerts catalog, supported alerts, alert reference, ontap alerts, netapp console local
 summary: "Reference list of alerts supported by NetApp Console (local) for on-premises ONTAP clusters."
 ---
-= Alerts catalog
+= Alerts catalog for NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -5,7 +5,7 @@ keywords: Active Directory, LDAP, federation, user management, directory service
 summary: "Configure the notifications delivery channels for NetApp Console (local)."
 ---
 
-= Set up notifications delivery channels in NetApp Console (local)
+= Set up notification delivery channels in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font

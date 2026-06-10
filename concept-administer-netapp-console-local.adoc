@@ -4,7 +4,7 @@ permalink: concept-administer-netapp-console-local.html
 keywords: administer, maintain, upgrade, SIEM, LLM, system health, netapp console local
 summary: "Learn about the ongoing administration tasks for NetApp Console (local), including LLM configuration, SIEM integration, health monitoring, and upgrades."
 ---
-= Administer NetApp Console (local)
+= Administration and monitoring in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
