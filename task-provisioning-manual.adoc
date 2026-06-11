@@ -14,8 +14,13 @@ summary: "Manually provision storage resources using NetApp Console (local)."
 [.lead]
 Manually provision storage in NetApp Console (local) when you need full control over configuration. Create volumes (or LUNs), select the target system, and allocate capacity to meet workload requirements.
 
-You must have the Org admin or Folder or fleet admin role to provision storage manually.
+Use manual provisioning when you need to control configuration details directly—for example, when:
 
+- creating exception workloads
+- migrating a workload with known requirements
+- troubleshooting or validating behavior during rollout
+
+In manual provisioning, you can still select a storage class to apply approved standards while retaining explicit control over placement and other selections.
 
 .Steps (for Volume)
 
