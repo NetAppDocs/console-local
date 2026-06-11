@@ -14,10 +14,34 @@ summary: "Use the NetApp Console assistant to ask questions and get guided help 
 [.lead]
 Use the NetApp Console assistant to ask questions and get guided help while working in NetApp Console (local).
 
-NOTE: Stub page. Content to be developed.
+After you connect your LLM, enable the Console assistant to use natural language to provision storage, investigate alerts, and get answers to storage management questions. When you grant the assistant read/write access, it can act on your storage infrastructure, guided by the storage policies your organization has defined.
+
+.Required role
+Super admin or organization admin.
+
+== Before you begin
+
+Before you use the Console assistant, make sure you have:
+
+* Connected your LLM to the Console (local). For more information, see link:task-llm-connect.html[Connect your LLM].
+* The role-based access permissions required for the actions you want the assistant to perform.
+
+== Enable the Console assistant
+
+Open the Console assistant and select an access mode to control whether the assistant can make changes to your storage infrastructure.
 
 .Steps
-
-. Open the NetApp Console assistant.
-. Enter your question or request.
-. Review the response and follow the suggested guidance.
+. From the NetApp Console (local) dashboard, select the *Console assistant* button.
+. To allow the assistant to make changes to your storage infrastructure, select *Read/write* from the drop-down.
++
+Select *Read only* if you want the assistant to answer questions and provide guidance without making changes.
+. Enter a prompt that describes what you want to do, and then select *Send*.
++
+For example: `Create a 10GiB volume for Home Drives. Name the volume and share home. The share permissions need to be set to Everyone FULL_CONTROL.`
++
+NOTE: If you encounter LLM errors, verify your LLM configuration in *Administration > AI Tools*. For more information, see link:task-llm-connect.html[Connect your LLM].
+. Review the suggested action, provide any additional details the assistant requests, and then confirm the action.
++
+For actions that change your storage infrastructure, the assistant shows the details for you to review and confirm before it proceeds.
+. After you confirm, the assistant runs the action. For asynchronous operations, such as volume creation, the assistant creates a job.
+. To check the status of an action, ask the assistant. For example: `Let me know when the job completes`. The assistant returns the current job status.

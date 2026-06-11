@@ -14,4 +14,38 @@ summary: "Connect your large language model (LLM) to enable AI-assisted manageme
 [.lead]
 Connect your large language model (LLM) to the NetApp Console (local) to enable AI-assisted storage management and agentic provisioning capabilities.
 
+To connect your LLM, you obtain an API key from your LLM provider and then enter the key and select a model in the Console (local) AI Tools settings. After you connect your LLM, you can use natural language to provision storage, investigate alerts, and get answers to storage management questions.
+
+
+
+.Required role
+Super admin or Organization admin.
+
+== Before you begin
+
+Before you connect your LLM, make sure you have:
+
+* A valid API key from a supported LLM provider. Create the key with your provider and keep it available to paste into the Console (local). Because most providers display the key only once, copy it as soon as you generate it.
+* Your user name or single sign-on (SSO) ID for the LLM provider account.
+* Network access from the Console (local) to your LLM provider's endpoint.
+
+
+== Connect your LLM
+
+Enter your API key and select a model in the AI Tools settings to connect your LLM to the Console (local).
+
+.Steps
+. Log in to the NetApp Console (local).
+. Select *Administration > AI Tools*.
+. Select the menu, and then select *Edit*.
+. In the *User name* field, enter your user name or SSO ID.
+. In the *API key* field, paste the API key from your LLM provider.
+. Select a model from the list. For example, `gpt-5-mini`.
+. Review the configuration, and then select *Save*.
++
+If you encounter LLM errors when you use AI-assisted features, return to the AI Tools settings and verify that the user name, API key, and model are correct.
+
+== What's next
+
+After you connect your LLM, use the NetApp Console assistant to provision storage, investigate alerts, and ask questions in natural language. For more information, see link:task-console-assistant.html[Use the NetApp Console assistant].
 
