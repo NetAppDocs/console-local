@@ -94,7 +94,7 @@ sidebar:
       entries:
       - title: Log in to NetApp Console
         url: /task-logging-in.html
-      - title: Use the NetApp Console assistant
+      - title: Enable the NetApp Console assistant
         url: /task-console-assistant.html
       - title: View systems associated with fleets
         url: /task-iam-switch-fleets.html
