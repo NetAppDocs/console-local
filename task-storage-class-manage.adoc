@@ -12,4 +12,103 @@ summary: "Create a storage class in NetApp Console (local) to standardize storag
 :imagesdir: ./media/
 
 [.lead]
-Create a storage class in the NetApp Console (local) to define a reusable set of storage policies that standardize provisioning across your environment.
+Create a storage class in the NetApp Console (local) to standardize how storage is provisioned and governed across your fleets. A storage class is a reusable template that bundles storage class policies—such as performance targets, capacity behavior, security requirements, and data protection schedules—into a single named definition.
+
+
+When users (or automation) provision a volume or LUN using a storage class, NetApp Console (local) applies the class’s policies automatically. After provisioning, Console (local) continuously monitors workloads against the storage class to detect drift and can guide or automate remediation to restore compliance.
+
+
+== Before you begin
+
+* Discover at least one ONTAP cluster so Console (local) has targets for placement recommendations.
+* Ensure you have the Organization admin role (or a role that grants storage class management permissions in your environment).
+* Create (or identify) the storage class policies you plan to use—performance, capacity, security, and data protection—because storage classes are assembled from policies.
+
+
+=== Create a storage class
+
+You must have the Org admin or Folder or fleet admin role to add a storage class.
+
+
+.Steps
+
+. Select *Storage > Management*.
+
+. Select *Storage classes*.
+
+. Select *Add*.
+
+. Under *Basic information*, enter the following:
+.. *Storage class name*: Enter a unique name for the storage class.
+.. *Description*: (Optional) Enter a description of the storage class.
+.. *Recommended apps*: (Optional) Enter a list of recommended apps for the storage class.
+
+. Under *Storage policies*, select one or more policies to associate with the storage class.
+
+. Select *Add*.
+
+
+=== Customize an existing storage class
+
+You must have the Org admin or Folder or fleet admin role to customize an existing storage class.
+
+
+.Steps
+
+. Select *Storage > Management*.
+
+. Select *Storage classes*.
+
+. For the storage class you want to customize, select *…*, and then select *Duplicate*.
+
+. Under *Basic information*, update the following as required:
+.. *Storage class name*: Enter a unique name for the storage class.
+.. *Description*: (Optional) Enter a description of the storage class.
+.. *Recommended apps*: (Optional) Enter a list of recommended apps for the storage class.
+
+. Under *Storage policies*, select one or more policies to associate with the storage class.
+
+. Select *Add*.
+
+
+=== Edit a user-defined storage class
+
+You must have the Org admin or Folder or fleet admin role to edit a user-defined storage class.
+
+
+.Steps
+
+. Select *Storage > Management*.
+
+. Select *Storage classes*.
+
+. For the storage class you want to edit, select *…*, and then select *Edit*.
+
+. Under *Basic information*, edit the following as required:
+.. *Storage class name*: Enter a unique name for the storage class.
+.. *Description*: (Optional) Enter a description of the storage class.
+.. *Recommended apps*: (Optional) Enter a list of recommended apps for the storage class.
+
+. Under *Storage policies*, select one or more policies to associate with the storage class.
+
+. Select *Add*.
+
+
+=== Delete a user-defined storage class
+
+You must have the Org admin or Folder or fleet admin role to delete a user-defined storage class.
+
+
+.Steps
+
+. Select *Storage > Management*.
+
+. Select *Storage classes*.
+
+. For the storage class you want to delete, select *…*, and then select *Delete*.
+
+. Select *Delete*.
+
++ 
+Note that this action cannot be undone. If you delete a storage class that is currently in use, any volumes or LUNs provisioned with that class will continue to operate but will no longer be associated with the deleted class.
+

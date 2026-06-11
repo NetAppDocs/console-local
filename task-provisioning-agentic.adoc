@@ -14,4 +14,4 @@ summary: "Use AI-driven agentic provisioning to autonomously fulfill storage req
 [.lead]
 // Jira: SPSPM-3325, SPSPM-3304
 
-Use AI-driven agentic provisioning in the NetApp Console (local) to autonomously interpret and fulfill storage requests through your connected LLM, reducing the need for manual configuration.
+Use agentic provisioning to request storage using natural language through your connected LLM. The AI assistant interprets your request, proposes a provisioning plan aligned with your storage classes and policies, and then provisions the workload after you review and approve the plan.

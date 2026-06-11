@@ -12,4 +12,34 @@ summary: "Manually provision storage resources using NetApp Console (local)."
 :imagesdir: ./media/
 
 [.lead]
-Manually provision storage resources using the NetApp Console (local) to create volumes and allocate capacity to meet workload requirements.
+Manually provision storage in NetApp Console (local) when you need full control over configuration. Create volumes (or LUNs), select the target system, and allocate capacity to meet workload requirements.
+
+You must have the Org admin or Folder or fleet admin role to provision storage manually.
+
+
+.Steps (for Volume)
+
+. Select *Storage > Management*.
+
+. Select *Fleets*.
+
+. Select the fleet you want to provision into.
+
+. Select *Add*.
+
+. From the menu, select *Volume*.
+
+. Under *Volume details*:
+.. Enter a volume name.
+.. Enter capacity (and choose units if needed).
+.. (Optional) Select a storage class.
+
+. Under *System details*:
+.. Choose a system (if prompted).
+.. Select a storage VM.
+
+. Under *Host (NAS) details*, choose how hosts access the volume:
+.. Export by NFS
+.. Share by SMB/CIFS
+
+. Select *Add*.
