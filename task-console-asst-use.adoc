@@ -48,7 +48,3 @@ For example: `Create a 10GiB volume for home directories named home, and share i
 * For an action, the assistant shows the suggested action and asks you to provide any missing details, such as a permission level, and then confirm before it proceeds.
 . Confirm the action. For asynchronous operations, such as volume creation, the assistant creates a job to complete the request.
 . To check on a request, ask the assistant. For example, enter `Let me know when the job completes`, and the assistant returns the current status.
-
-== Related information
-
-* link:task-llm-connect.html[Connect your LLM and enable the NetApp Console assistant]
