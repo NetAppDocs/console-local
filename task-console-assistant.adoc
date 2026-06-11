@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-console-asst-admin.html
+permalink: task-console-assistant.html
 keywords: console assistant, ai assistant, enable assistant, agentic features, netapp console local
 summary: "Enable the NetApp Console assistant so that users can ask questions and manage storage with natural language in NetApp Console (local)."
 ---
@@ -44,4 +44,4 @@ After you enable the Console assistant, users open it from the dashboard and cho
 * In *Read only* mode, the assistant answers questions and provides guidance without making changes.
 * In *Read/write* mode, the assistant can act on storage infrastructure. Before it makes a change, it shows the details for the user to review and confirm. For asynchronous operations, such as volume creation, the assistant creates a job that the user can check on by asking the assistant.
 
-Users describe what they need in plain language. For example, a user might enter a prompt to create a volume and share, then review and confirm the suggested action before the assistant runs it. For more information, see link:task-console-asst-use.html[Use the NetApp Console assistant].
+Users describe what they need in plain language. For example, a user might enter a prompt to create a volume and share, then review and confirm the suggested action before the assistant runs it. For more information, see link:task-use-console-assistant.html[Use the NetApp Console assistant].

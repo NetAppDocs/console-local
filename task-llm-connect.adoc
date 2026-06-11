@@ -47,5 +47,5 @@ If you encounter LLM errors when you use AI-assisted features, return to the AI 
 
 == What's next
 
-After you connect your LLM, the Console assistant becomes available to users in your organization. For more information, see link:task-console-assistant.html[Enable the NetApp Console assistant].
+After you connect your LLM, the Console assistant becomes available to users in your organization. For more information, see link:task-console-asst-admin.html[Enable the NetApp Console assistant].
 

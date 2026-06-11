@@ -78,6 +78,8 @@ sidebar:
           url: /task-iam-active-directory-integrate.html
         - title: Connect your LLM
           url: /task-llm-connect.html
+        - title: Enable the NetApp Console assistant
+          url: /task-console-asst-admin.html
         - title: Configure notification delivery
           url: /task-console-configure-notifications-delivery.html
       - title: Set up data services
@@ -94,8 +96,8 @@ sidebar:
       entries:
       - title: Log in to NetApp Console
         url: /task-logging-in.html
-      - title: Enable the NetApp Console assistant
-        url: /task-console-assistant.html
+      - title: Use the NetApp Console assistant
+        url: /task-console-asst-use.html
       - title: View systems associated with fleets
         url: /task-iam-switch-fleets.html
       - title: Manage your NetApp Console user settings
