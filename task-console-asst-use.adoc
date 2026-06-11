@@ -26,7 +26,7 @@ Because the Console (local) runs in your own environment, your data and queries 
 
 == Before you begin
 
-* An organization admin or super admin must enable the Console assistant by connecting a large language model (LLM) to the Console (local). If you don't see the *Console assistant* button on the dashboard, ask your administrator to enable it. For more information, see link:task-console-asst-admin.html[Enable the NetApp Console assistant].
+* An organization admin or super admin must enable the Console assistant by connecting a large language model (LLM) to the Console (local). If you don't see the *Console assistant* button on the dashboard, ask your administrator to enable it. For more information, see link:task-llm-connect.html[Connect your LLM and enable the NetApp Console assistant].
 * Make sure you have the role-based access controls required for the actions you want the assistant to perform.
 
 == Ask a question or request an action
@@ -51,5 +51,4 @@ For example: `Create a 10GiB volume for home directories named home, and share i
 
 == Related information
 
-* link:task-console-asst-admin.html[Enable the NetApp Console assistant]
-* link:task-llm-connect.html[Connect your LLM]
+* link:task-llm-connect.html[Connect your LLM and enable the NetApp Console assistant]

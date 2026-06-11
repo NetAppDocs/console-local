@@ -76,10 +76,8 @@ sidebar:
         entries:
         - title: Integrate NetApp Console (local) with Active Directory
           url: /task-iam-active-directory-integrate.html
-        - title: Connect your LLM
+        - title: Connect your LLM and enable the NetApp Console assistant
           url: /task-llm-connect.html
-        - title: Enable the NetApp Console assistant
-          url: /task-console-asst-admin.html
         - title: Configure notification delivery
           url: /task-console-configure-notifications-delivery.html
       - title: Set up data services
