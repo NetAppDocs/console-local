@@ -1,0 +1,50 @@
+---
+sidebar: sidebar
+permalink: task-console-asst-use.html
+keywords: console assistant, ai assistant, ask questions, provision storage, natural language, agentic, netapp console local
+summary: "Use the NetApp Console assistant to provision storage, investigate alerts, and get answers with natural language in NetApp Console (local)."
+---
+= Use the NetApp Console assistant
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Use the NetApp Console assistant to manage storage and get answers with natural language. Instead of navigating menus, describe what you need in plain language and let the Console (local) act on it, guided by your organization's storage policies and your role-based access.
+
+== What you can do with the Console assistant
+
+The Console assistant is a natural language interface to NetApp Console (local). Ask it a question or describe a task, and it interprets your request and responds with an answer or a proposed action. The assistant provides the following capabilities:
+
+* *Provision storage* Describe a workload in plain language, and the assistant recommends a storage class and placement, then creates the volume or LUN after you confirm the details. For example, ask it to create a CIFS volume with a specific capacity, and the assistant identifies the cluster and storage virtual machine (SVM), fills in the required parameters, and provisions the storage.
+* *Search and get guidance* Ask questions about your storage environment, find Console (local) features, and get contextual answers drawn from NetApp documentation and your fleet's current state.
+* *Investigate alerts* Ask the assistant to look into an active alert. It analyzes the issue and suggests a fix or, with your confirmation, performs a remediation action.
+
+Because the Console (local) runs in your own environment, your data and queries stay within your network. The assistant requests your confirmation before it performs any action that changes your storage, and all actions respect the role-based access controls assigned to your account.
+
+== Before you begin
+
+* An organization admin or super admin must enable the Console assistant by connecting a large language model (LLM) to the Console (local). If you don't see the *Console assistant* button on the dashboard, ask your administrator to enable it. For more information, see link:task-llm-connect.html[Connect your LLM and enable the NetApp Console assistant].
+* Make sure you have the role-based access controls required for the actions you want the assistant to perform.
+
+== Ask a question or request an action
+
+Open the Console assistant, choose an access mode, and enter a prompt that describes what you need.
+
+.Steps
+. From the NetApp Console (local) dashboard, select the *Console assistant* button.
+. Select an access mode:
++
+* Select *Read only* to ask questions and get guidance without making changes.
+* Select *Read/write* to allow the assistant to act on your storage infrastructure.
+. Enter a prompt that describes your question or the task you want to perform, and then select *Send*.
++
+For example: `Create a 10GiB volume for home directories named home, and share it with Everyone set to FULL_CONTROL.`
+. Review the assistant's response:
++
+* For a question, the assistant returns an answer that you can act on.
+* For an action, the assistant shows the suggested action and asks you to provide any missing details, such as a permission level, and then confirm before it proceeds.
+. Confirm the action. For asynchronous operations, such as volume creation, the assistant creates a job to complete the request.
+. To check on a request, ask the assistant. For example, enter `Let me know when the job completes`, and the assistant returns the current status.

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: task-console-assistant.html
-keywords: console assistant, ai assistant, ask questions, netapp console local
-summary: "Use the NetApp Console assistant to ask questions and get guided help while working in NetApp Console (local)."
+keywords: console assistant, ai assistant, enable assistant, agentic features, netapp console local
+summary: "Enable the NetApp Console assistant so that users can ask questions and manage storage with natural language in NetApp Console (local)."
 ---
-= Use the NetApp Console assistant
+= Enable the NetApp Console assistant
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,12 +12,36 @@ summary: "Use the NetApp Console assistant to ask questions and get guided help 
 :imagesdir: ./media/
 
 [.lead]
-Use the NetApp Console assistant to ask questions and get guided help while working in NetApp Console (local).
+Enable the NetApp Console assistant so that users in your organization can use natural language to provision storage, investigate alerts, and get answers to storage management questions in NetApp Console (local).
 
-NOTE: Stub page. Content to be developed.
+As an organization admin or super admin, you make the Console assistant available by connecting a large language model (LLM) to the Console (local). After you connect the LLM, the Console assistant becomes available to users, and its actions remain guided by the storage policies and role-based access controls that your organization has defined.
+
+.Required role
+Super admin or organization admin.
+
+== Before you begin
+
+Before you enable the Console assistant, make sure you have:
+
+* A valid API key from a supported LLM provider.
+* The role-based access controls and storage classes that you want to govern the assistant's actions already configured in the Console (local).
+
+== Enable the Console assistant
+
+Connect an LLM to make the Console assistant available to users in your organization.
 
 .Steps
+. Connect your LLM to the Console (local). For the detailed steps, see link:task-llm-connect.html[Connect your LLM].
+. Confirm that the *Console assistant* button appears on the NetApp Console (local) dashboard.
+. Verify that users have the role-based access controls they need for the actions you want them to perform with the assistant.
 
-. Open the NetApp Console assistant.
-. Enter your question or request.
-. Review the response and follow the suggested guidance.
+NOTE: If users encounter LLM errors when they use the assistant, verify the LLM configuration in *Administration > AI Tools*. For more information, see link:task-llm-connect.html[Connect your LLM].
+
+== How users interact with the Console assistant
+
+After you enable the Console assistant, users open it from the dashboard and choose an access mode that controls whether the assistant can change storage infrastructure:
+
+* In *Read only* mode, the assistant answers questions and provides guidance without making changes.
+* In *Read/write* mode, the assistant can act on storage infrastructure. Before it makes a change, it shows the details for the user to review and confirm. For asynchronous operations, such as volume creation, the assistant creates a job that the user can check on by asking the assistant.
+
+Users describe what they need in plain language. For example, a user might enter a prompt to create a volume and share, then review and confirm the suggested action before the assistant runs it. For more information, see link:task-use-console-assistant.html[Use the NetApp Console assistant].
