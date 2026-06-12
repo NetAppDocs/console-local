@@ -12,4 +12,75 @@ summary: "Manually provision storage resources using NetApp Console (local)."
 :imagesdir: ./media/
 
 [.lead]
-Manually provision storage resources using the NetApp Console (local) to create volumes and allocate capacity to meet workload requirements.
+Manually provision storage when you need full control over system selection and configuration details. Manual provisioning is useful when you're creating exception workloads, migrating workloads with known requirements, or validating behavior during rollout. 
+
+You can optionally select a storage class during manual provisioning to apply approved standards while retaining explicit control over placement.
+
+== Required role
+
+You must have a role that allows provisioning in the target fleet (for example, Organization admin, Folder or fleet admin, or Storage admin for that fleet).
+
+== Before you begin
+
+- Ensure the target ONTAP cluster is discovered in Console (local).
+- Ensure you have credentials and access to the fleet that contains the target system.
+- If you intend to use a storage class, ensure the class exists and is associated with the fleet.
+
+== Manually provision a volume
+
+.Steps
+
+. Select *Storage > Management*.
+
+. Select *Fleets*.
+
+. Select the fleet you want to provision into.
+
+. Select *Add*.
+
+. From the menu, select *Volume*.
+
+. Under *Volume details*:
+.. Enter a volume name.
+.. Enter capacity (and choose units if needed).
+.. (Optional) Select a storage class to apply storage class policies. If you don't select one, the volume is provisioned without storage class policies.
+
+. Under *System details*:
+.. Select a system from the eligible systems for the selected fleet.
+.. Select a storage VM.
+
+. Under *Host (NAS) details*, choose how hosts access the volume:
+.. Export by NFS (export policies control which NFS hosts can access the volume)
+.. Share by SMB/CIFS
+
+. Select *Add*.
+
+== Manually provision a LUN
+
+.Steps
+
+. Select *Storage > Management*.
+
+. Select *Fleets*.
+
+. Select the fleet you want to provision into.
+
+. Select *Add*.
+
+. From the menu, select *LUNs*.
+
+. Under *LUN storage details*:
+.. Enter a prefix name.
+.. Enter the number of LUNs to create with that prefix.
+.. Enter the capacity per LUN (and choose units if needed).
+.. (Optional) Select a storage class to apply storage class policies. If you don't select one, the LUNs are provisioned without storage class policies.
+
+. Under *System details*:
+.. Select a system (if prompted).
+.. Select a storage VM.
+
+. Under *Host (SAN) details*, choose how hosts access the volume:
+.. Choose the host operation system (for example, Windows or Linux) to set recommended defaults for LUN alignment and block size.
+.. Choose the host mapping group to control which initiators can access the LUNs.
+
+. Select *Add*.
