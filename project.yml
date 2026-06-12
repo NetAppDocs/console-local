@@ -138,10 +138,6 @@ sidebar:
             url: /concept-storage-alerts.html
           - title: View alerts
             url: /task-alerts-view.html
-          - title: Investigate an alert
-            url: /task-alerts-investigate.html
-          - title: Monitor systems health by cluster
-            url: /task-alerts-systems-health-monitor.html
           - title: Configure notification rules for alerts
             url: /task-notifications-configure.html
           - title: Alerts catalog
@@ -162,6 +158,18 @@ sidebar:
             url: /task-remediation-automated.html
           - title: Remediate storage issues with guided steps
             url: /task-remediation-guided.html
+        - title: Create custom dashboards
+          entries:
+          - title: Learn about custom dashboards
+            url: /concept-custom-dashboards.html
+          - title: Create a custom dashboard
+            url: /task-dashboard-create.html
+          - title: Add cards to a dashboard
+            url: /task-dashboard-cards-add.html
+          - title: Manage custom dashboards
+            url: /task-dashboard-manage.html
+          - title: Custom dashboard card templates reference
+            url: /reference-dashboard-card-templates.html
     - title: Administer and monitor
       entries:
       - title: Administration overview

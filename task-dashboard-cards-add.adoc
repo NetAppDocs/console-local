@@ -1,0 +1,68 @@
+---
+sidebar: sidebar
+permalink: task-dashboard-cards-add.html
+keywords: add card, dashboard card, card template, widget, preview, netapp console local
+summary: "Add cards to a custom dashboard in NetApp Console (local) by choosing a template and customizing its scope, aggregation, and time window."
+---
+= Add cards to a dashboard in NetApp Console (local) (placeholder)
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Placeholder topic. Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
+
+Add cards to a custom dashboard in the NetApp Console (local) to display the metrics you want to monitor. You create each card from a template, then customize its scope, aggregation, target resources, and time window before adding it.
+
+.Required role
+
+
+== Add a card from the Add Card menu
+
+.Steps
+
+. Open the dashboard you want to add a card to.
+
+. Select *Add Card*.
+
+. Select the *Scope* for the card, such as fleet, system, or volume.
+
+. Select the *Metric Type*: *Performance*, *Capacity*, *Health*, or *Alerts*.
+
+. Select a *Card Template*.
++
+The template defines the metric and the chart type. For the full list of templates, see link:reference-dashboard-card-templates.html[Custom dashboard card templates].
+
+. Select the *Aggregation*, such as fleet-wide or top N elements.
+
+. Select the *Target Resource Type* and then the specific *Target Resources* to monitor.
+
+. Select the *Time Window*: 30 minutes, 1 hour, 24 hours (default), 48 hours, 7 days, or 30 days.
+
+. Review the card preview, which shows live data.
+
+. Enter a name and description for the card.
+
+. Select *Add* to add the card to the dashboard.
+
+. Repeat these steps for each additional card, then save the dashboard.
+
+== Create a card from the Card Templates menu
+
+.Steps
+
+. Select *Storage > Dashboards > Card Templates*.
+
+. Browse, sort, or filter the templates by metric type, metric, or target resource type.
+
+. Select a template, then select *Create Card from Template*.
+
+. Customize the scope, aggregation, target resource type, target resources, and time window.
+
+. Review the card preview and enter a name and description.
+
+. Add the card to an existing dashboard or create a new dashboard.
+
+. Save the dashboard.

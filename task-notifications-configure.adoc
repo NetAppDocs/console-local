@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: task-notifications-configure.html
-keywords: notifications, alerts, alert policies, thresholds, email, webhooks, netapp console local
-summary: "Configure notifications and alert policies in NetApp Console (local) to stay informed of storage events."
+keywords: notifications, alerts, notification rules, alert rules, severity, impact area, email, webhook, mute, netapp console local
+summary: "Configure notification rules in NetApp Console (local) to control which alerts raise notifications, who receives them, and how they are delivered."
 ---
-= Configure notifications and alert policies in NetApp Console (local)
+= Configure notification rules for alerts in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,24 +12,65 @@ summary: "Configure notifications and alert policies in NetApp Console (local) t
 :imagesdir: ./media/
 
 [.lead]
-Set up notification rules in the NetApp Console (local) to get alerts when storage events exceed limits or require attention.
+Configure notification rules in the NetApp Console (local) to control which alerts raise notifications, who receives them, and how they are delivered. Use notification rules to route the right alerts to the right people through the channels that fit your environment, while reducing noise from alerts that aren't relevant to you.
 
+A notification rule matches alerts based on conditions you define—such as service, severity, and impact area—and then delivers a notification through the channels you select. The Console (local) includes default notification rules that you can view and adjust, and you can create your own custom rules. You can also mute rules to temporarily suppress notifications during planned events like maintenance windows.
+
+.Required role
+Super admin or organization admin.
+
+== Before you begin
+
+* To deliver notifications by email, your organization admin must configure an email server in the Console (local). To deliver notifications to an external system, your organization admin must configure a webhook. For the steps, see link:task-console-configure-notifications-delivery.html[Configure notification delivery].
+* The Console (local) Notification Center displays notifications by default, so no additional setup is required for in-console notifications.
+
+== View notification rules
+
+The notification rules page is the central place to review and manage every rule that applies to your organization. Each rule shows its key attributes so that you can quickly assess and adjust your alerting behavior.
 
 .Steps
+. From the left navigation, select *Health > Alerts*.
+. Select *Notification settings*.
+. Review the rules in the list. Each rule shows its active status, name, the services and severity levels it monitors, the roles authorized to receive notifications, the enabled delivery channels, when it was last modified, and any scheduled mute period.
+. To find a specific rule, use the filter and search controls to filter by active status, service, severity, role, channel, or mute status.
 
-. Select *Health > Alerts > Notification rules*.
-. Select *Add rule*.
-. Define the notification rule, including:
+== Create a notification rule
+
+Create a notification rule to define the conditions that trigger a notification and how that notification is delivered.
+
+.Steps
+. From the left navigation, select *Health > Alerts*.
+. Select *Notification settings*, and then select *Add rule*.
+. Define the conditions that the rule matches:
 +
-* Rule name and description
-* The service where the alert originates, such as ONTAP management
-* The access role of the users who will receive the notification
-* The severity level that triggers the notification
-* The impact area(s) affected
-. Select delivery channels for the notification.
-+ 
-* Your organization admin must set up your email server to enable automatic email notifications. When configured, email notifications happen automatically when rules are configured.
-* The NetApp Console UI displays all notifications by default.
-* You can send notifications to external systems with a webhook only if your organization admin has already configured a webhook.
+* *Rule name*: enter a concise, descriptive name. This field is required.
+* *Rule description*: optionally, enter additional context about the rule's purpose.
+* *Services*: select one or more ONTAP or platform services that the rule applies to.
+* *Roles*: select the access roles that users must have to receive notifications when the rule is triggered.
+* *Severity levels*: select which severity levels the rule monitors, such as Critical, Warning, Error, or Information.
+* *Impact area*: select the operational areas to match, such as Capacity or Performance.
+* *Alert name*: select the specific alert types that trigger the rule.
+* *System*: select the system context that the rule applies to.
+. Select the delivery channels for the notification:
++
+* *Email*: sends alert emails to users who have the selected roles. Requires a configured email server.
+* *Webhook*: sends alert data to an external system. Requires selecting a configured webhook integration.
+* *Console (local) Notification Center*: displays real-time alerts in the Console (local) for users who have the selected roles.
+. Optionally, to suppress notifications from this rule during a planned period, such as a maintenance window, set a *Mute notifications* schedule, and choose a recurrence if you want the mute period to repeat.
+. Select *Save*.
 
-. Select *Create*.
+== Enable or disable a notification rule
+
+Enable or disable individual notification rules to control which conditions raise notifications. Disable rules that aren't relevant to your environment to reduce noise, and enable rules to start receiving their notifications again.
+
+.Steps
+. From the left navigation, select *Health > Alerts*.
+. Select *Notification settings*.
+. Locate the rule you want to change.
+. Toggle the rule's *Active* switch on or off. The change takes effect immediately.
+
+== Related information
+
+* link:task-console-configure-notifications-delivery.html[Configure notification delivery]
+* link:concept-storage-alerts.html[Learn about storage alerts]
+* link:task-alerts-view.html[View alerts]

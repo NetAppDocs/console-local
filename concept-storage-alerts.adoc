@@ -15,13 +15,10 @@ summary: "Learn how storage alerts in NetApp Console (local) help you monitor th
 // Jira: SPSPM-3316, SPSPM-3496
 Alerts in NetApp Console (local) help you find and resolve issues in your on-premises ONTAP clusters. You can view alerts for fleets you have permission to access. Alerts include information about the impact area and severity of the issue. You can also receive notifications when alerts occur, so you can take action to resolve them quickly.
 
-NOTE: This topic is a stub. Expand it based on the alerting functional specification.
-
 == What you can do with alerts
 
 * View alerts at the organization level or for a specific fleet
 * Investigate the details of an active alert, including impact area and severity
-* Monitor systems health by cluster
 * Search, filter, and export alerts
 * Enable or disable alert rules
 * Receive notifications when alerts occur

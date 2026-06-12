@@ -1,0 +1,147 @@
+---
+sidebar: sidebar
+permalink: reference-dashboard-card-templates.html
+keywords: card templates, dashboard cards, metric types, chart types, performance, capacity, health, alerts, netapp console local
+summary: "Reference for the custom dashboard card templates available in NetApp Console (local), organized by metric type."
+---
+= Custom dashboard card templates in NetApp Console (local) (placeholder)
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Placeholder topic. Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
+
+Custom dashboards provide card templates that you can add to a dashboard, organized by metric type. Each template defines a metric and a recommended chart type; you customize the scope, aggregation, and target objects when you add the card.
+
+== Chart types
+
+[cols="25,75",options="header"]
+|===
+| Chart type | Best for
+
+| Line chart
+| Time-series trends, such as latency, IOPS, throughput, utilization, and alert trends over time.
+
+| Bar chart
+| Categorical comparison and distribution, such as alerts by severity or impact area.
+
+| Pie or doughnut
+| Proportional distribution, such as capacity used percentage.
+
+| Table
+| Detailed, multi-column data, such as used capacity, health status, and recent alerts.
+
+| Single number (stat)
+| A single key value at a glance, such as critical alert counts or failed disks.
+|===
+
+== Performance templates
+
+[cols="25,20,55",options="header"]
+|===
+| Template | Chart type | Description
+
+| Average Latency
+| Line
+| Average latency across the selected targets over the chosen time window.
+
+| Peak Latency
+| Line
+| Maximum latency observed across the selected targets over the chosen time window.
+
+| IOPS
+| Line
+| Sum of I/O operations per second across the selected targets.
+
+| Throughput (MB/s)
+| Line
+| Sum of data throughput across the selected targets.
+
+| Utilization
+| Line
+| Average CPU or disk utilization across the selected targets.
+
+| Performance Capacity
+| Table
+| Headroom analysis comparing current utilization to the optimal point.
+|===
+
+== Capacity templates
+
+[cols="25,20,55",options="header"]
+|===
+| Template | Chart type | Description
+
+| Used Capacity
+| Table
+| Sum of used capacity across the selected targets.
+
+| Free Capacity
+| Table
+| Sum of free or available capacity across the selected targets.
+
+| Capacity Used (%)
+| Pie or doughnut
+| Average used-to-total ratio across the selected targets.
+
+| Snapshot Capacity Used
+| Table
+| Sum of snapshot space consumed across the selected targets.
+|===
+
+== Health templates
+
+[cols="25,20,55",options="header"]
+|===
+| Template | Chart type | Description
+
+| Health Status
+| Table
+| Latest health state for each selected target object.
+
+| Degraded/Critical Objects
+| Single number
+| Count of objects whose health state is not OK.
+
+| Failed Disks
+| Single number
+| Sum of failed disks across the selected systems.
+
+| Network Interface Errors
+| Pie or doughnut
+| Sum of network interface error counters across the selected targets.
+
+| Hot Objects (by Latency)
+| Table
+| Resources ranked by peak latency, in descending order.
+|===
+
+== Alerts templates
+
+[cols="25,20,55",options="header"]
+|===
+| Template | Chart type | Description
+
+| Alerts (Critical)
+| Single number
+| Count of critical-severity alerts within the time window.
+
+| Alerts by Severity
+| Bar
+| Alerts grouped by severity level.
+
+| Alerts by Impact Area
+| Bar
+| Alerts grouped by impact area, such as capacity, performance, or security.
+
+| Recent Alerts
+| Table
+| Most recent alerts, sorted by time in descending order.
+
+| Alert Trend
+| Line
+| Alert count per time bucket over the chosen time window.
+|===
