@@ -12,10 +12,17 @@ summary: "Configure automated storage provisioning using storage classes and pol
 :imagesdir: ./media/
 
 [.lead]
-Use automated provisioning to allocate storage based on your storage class policies. NetApp Console (local) recommends (and can apply) optimal settings and placement, reducing manual steps while keeping provisioning consistent with your standards.
+Use automated provisioning to allocate storage based on storage class standards and fleet capacity. Automated provisioning is best when you want consistent outcomes and reduced manual decision-making.
 
-Use automated provisioning when you want Console (local) to use the selected storage class to recommend best-fit placement and apply settings consistently—for example, when:
+Automated provisioning typically selects best-fit placement from available systems in the fleet based on capacity and performance headroom, then provisions the workload with settings aligned to the storage class.
 
-- you want operators to provision safely without deep ONTAP decision-making
-- you want consistent outcomes across fleets
-- you want to reduce configuration drift introduced during provisioning
+== Required role
+
+You must have a role that allows provisioning in the target fleet (for example, Organization admin, Folder or fleet admin, or Storage admin for that fleet).
+
+== Before you begin
+
+- Ensure at least one ONTAP cluster is discovered in the target fleet.
+- If you want class-driven outcomes, ensure the storage class exists and is associated with the fleet.
+
+.Steps

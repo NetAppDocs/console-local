@@ -4,7 +4,7 @@ permalink: task-provisioning-agentic.html
 keywords: agentic provisioning, AI, LLM, autonomous, intelligent provisioning, netapp console
 summary: "Use AI-driven agentic provisioning to autonomously fulfill storage requests in NetApp Console (local)."
 ---
-= Provision storage with agentic workflows in NetApp Console (local)
+= Provision storage with AI-assisted (agentic) workflows in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,12 +14,29 @@ summary: "Use AI-driven agentic provisioning to autonomously fulfill storage req
 [.lead]
 // Jira: SPSPM-3325, SPSPM-3304
 
-Use agentic provisioning to request storage using natural language through your connected LLM. The AI assistant interprets your request, proposes a provisioning plan aligned with your storage classes and policies, and then provisions the workload after you review and approve the plan.
-
-Use agentic provisioning when you want to request storage conversationally, review a proposed plan, and approve the change. This workflow is useful when:
-
-- you want faster provisioning requests with less UI navigation
-- you want a plan-review step that translates intent into concrete settings
-- you want to keep provisioning aligned with storage classes and RBAC
+Use AI-assisted (agentic) provisioning when you want to request storage conversationally, review a proposed plan, and approve the change. This approach is useful when you want faster requests with less UI navigation while still keeping provisioning aligned with storage classes and RBAC. 
 
 Agentic provisioning requires an LLM integration to be configured and available in your NetApp Console (local) environment.
+
+== Required role
+
+Your AI-assisted actions are limited by the same RBAC permissions as UI-based actions. You must have permission to provision in the target fleet.
+
+== Before you begin
+
+- Ensure LLM integration is configured and enabled for your NetApp Console (local).
+- Ensure the target fleet contains discovered storage systems.
+- Ensure storage classes are configured and associated with the fleet so the assistant can propose class-aligned plans.
+
+.Steps (to be revisited)
+
+. Open the NetApp Console assistant.
+. Describe what you need in plain language (for example, protocol, size, environment, performance intent, and target fleet if applicable).
+. Review the proposed plan, including:
+The selected fleet and target system placement (if applicable)
+The storage class selected or recommended
+Key settings that will be applied (capacity behavior, protection schedule, security requirements, and any QoS-related intent if shown)
+. Confirm or adjust the plan.
+If the plan selects an unexpected class or placement, specify the desired class, fleet, or constraints and regenerate the plan.
+. Approve execution to provision the workload.
+. Verify the created resource in the storage inventory and confirm it is associated with the intended storage class for ongoing drift monitoring.

@@ -12,17 +12,23 @@ summary: "Manually provision storage resources using NetApp Console (local)."
 :imagesdir: ./media/
 
 [.lead]
-Manually provision storage in NetApp Console (local) when you need full control over configuration. Create volumes (or LUNs), select the target system, and allocate capacity to meet workload requirements.
+Manually provision storage when you need full control over system selection and configuration details. Manual provisioning is useful when you're creating exception workloads, migrating workloads with known requirements, or validating behavior during rollout. 
 
-Use manual provisioning when you need to control configuration details directly—for example, when:
+You can optionally select a storage class during manual provisioning to apply approved standards while retaining explicit control over placement.
 
-- creating exception workloads
-- migrating a workload with known requirements
-- troubleshooting or validating behavior during rollout
+== Required role
 
-In manual provisioning, you can still select a storage class to apply approved standards while retaining explicit control over placement and other selections.
+You must have a role that allows provisioning in the target fleet (for example, Organization admin, Folder or fleet admin, or Storage admin for that fleet).
 
-.Steps (for Volume)
+== Before you begin
+
+- Ensure the target ONTAP cluster is discovered in Console (local).
+- Ensure you have credentials and access to the fleet that contains the target system.
+- If you intend to use a storage class, ensure the class exists and is associated with the fleet.
+
+== Manually provision a volume
+
+.Steps
 
 . Select *Storage > Management*.
 
@@ -37,10 +43,39 @@ In manual provisioning, you can still select a storage class to apply approved s
 . Under *Volume details*:
 .. Enter a volume name.
 .. Enter capacity (and choose units if needed).
-.. (Optional) Select a storage class.
+.. (Optional) Select a storage class to apply storage class policies. If you don't select one, the volume is provisioned without storage class policies.
 
 . Under *System details*:
-.. Choose a system (if prompted).
+.. Select a system from the eligible systems for the selected fleet.
+.. Select a storage VM.
+
+. Under *Host (NAS) details*, choose how hosts access the volume:
+.. Export by NFS (export policies control which NFS hosts can access the volume)
+.. Share by SMB/CIFS
+
+. Select *Add*.
+
+== Manually provision a LUN
+
+.Steps
+
+. Select *Storage > Management*.
+
+. Select *Fleets*.
+
+. Select the fleet you want to provision into.
+
+. Select *Add*.
+
+. From the menu, select *LUN*.
+
+. Under *Volume details*:
+.. Enter a volume name.
+.. Enter capacity (and choose units if needed).
+.. (Optional) Select a storage class to apply storage class policies. If you don't select one, the volume is provisioned without storage class policies.
+
+. Under *System details*:
+.. Select a system (if prompted).
 .. Select a storage VM.
 
 . Under *Host (NAS) details*, choose how hosts access the volume:
