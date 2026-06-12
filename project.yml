@@ -22,6 +22,8 @@ sidebar:
         url: /concept-overview.html
       - title: Learn about NetApp Console (local)
         url: /concept-netapp-console-local.html
+      - title: Learn about managing storage with NetApp Console (local)
+        url: /concept-manage-storage.html
       - title: Learn about storage fleets
         url: /concept-storage-fleets.html
       - title: Learn about storage classes
