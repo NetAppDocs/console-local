@@ -51,7 +51,7 @@ indexpage:
         - title: Monitor fleet-wide health and performance
           url: /task-fleet-health-monitor.html
         - title: Configure notification rules for alerts
-          url: /task-notifications-configure.html
+          url: /task-alert-rules-manage.html
         - title: Investigate high latency on a volume
           url: /task-analyzer-volume-latency-investigate.html
         - title: Remediate storage issues automatically

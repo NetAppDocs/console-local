@@ -139,9 +139,7 @@ sidebar:
           - title: View alerts
             url: /task-alerts-view.html
           - title: Configure notification rules for alerts
-            url: /task-notifications-configure.html
-          - title: Alerts catalog
-            url: /reference-alerts-catalog.html
+            url: /task-alert-rules-manage.html
         - title: Investigate performance issues
           entries:
           - title: Learn about the Workload Analyzer

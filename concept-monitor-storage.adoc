@@ -35,7 +35,7 @@ Use the Workload Analyzer to investigate performance issues on individual volume
 
 Configure alert policies and notification channels so the right people are informed when storage conditions require attention.
 
-link:task-notifications-configure.html[Configure notifications and alert policies in NetApp Console (local)]
+link:task-alert-rules-manage.html[Configure notifications and alert policies in NetApp Console (local)]
 link:task-alerts-view.html[View storage alerts in NetApp Console (local)]
 
 == Remediation

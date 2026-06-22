@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-notifications-configure.html
+permalink: task-alert-rules-manage.html
 keywords: notifications, alerts, notification rules, alert rules, severity, impact area, email, webhook, mute, netapp console local
 summary: "Configure notification rules in NetApp Console (local) to control which alerts raise notifications, who receives them, and how they are delivered."
 ---
@@ -14,7 +14,9 @@ summary: "Configure notification rules in NetApp Console (local) to control whic
 [.lead]
 // Jira: SPSPM-3316, SPSPM-3496
 
-Configure notification rules in the NetApp Console (local) to control which alerts raise notifications, who receives them, and how they are delivered. Use notification rules to route the right alerts to the right people through the channels that fit your environment, while reducing noise from alerts that aren't relevant to you.
+Configure notification rules in the NetApp Console (local) to control which alerts raise notifications, who receives them, and how they are delivered. 
+
+Use notification rules to route the right alerts to the right people through the channels that fit your environment, while reducing noise from alerts that aren't relevant to you.
 
 A notification rule matches alerts based on conditions you define—such as service, severity, and impact area—and then delivers a notification through the channels you select. The Console (local) includes default notification rules that you can view and adjust, and you can create your own custom rules. You can also mute rules to temporarily suppress notifications during planned events like maintenance windows.
 
