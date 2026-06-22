@@ -5,7 +5,7 @@ keywords: iam, quick start, get started, get started with iam, identity and acce
 summary: "Set up identity and access in NetApp Console by creating your folder and fleet hierarchy, adding members, adding or discovering resources, and placing those resources in the correct fleets."
 ---
 
-= Get started with identity and access in NetApp Console (local)
+= Get started with identity and access in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: "Set up identity and access in NetApp Console by creating your folder a
 :imagesdir: ./media/
 
 [.lead]
-When you install NetApp Console (local), you're prompted to create a new organization. The organization includes one member (an Organization admin) and one default fleet. Use this setup order to create your folder and fleet hierarchy, add members, add or discover resources, and place those resources in the correct fleets.
+When you install NetApp Console (local deployment), you're prompted to create a new organization. The organization includes one member (an Organization admin) and one default fleet. Use this setup order to create your folder and fleet hierarchy, add members, add or discover resources, and place those resources in the correct fleets.
 
 You need the *Org admin* or *Super admin* role to complete initial setup. After setup is complete, use the related task topics to manage resources, member access, and fleet access as your organization changes.
 
@@ -22,7 +22,7 @@ Follow this setup order to align with most organizations.
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Add or discover resources
 
 [role="quick-margin-para"]
-Add or discover systems in Console (local). During initial setup, systems are typically added while the default fleet is selected.
+Add or discover systems in Console (local deployment). During initial setup, systems are typically added while the default fleet is selected.
 
 [role="quick-margin-para"]
 Learn how to create or discover resources:
@@ -43,7 +43,7 @@ link:task-iam-manage-folders-fleets.html[Learn how to organize your resources wi
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Place resources in the correct fleets
 
 [role="quick-margin-para"]
-Adding or discovering a system in Console (local) automatically associates the resource with the currently selected fleet. To make a system available to the right teams, associate it with the appropriate fleets in your hierarchy.
+Adding or discovering a system in Console (local deployment) automatically associates the resource with the currently selected fleet. To make a system available to the right teams, associate it with the appropriate fleets in your hierarchy.
 
 [role="quick-margin-list"]
 * link:task-iam-manage-resources.html[Learn how to manage resources in folders and fleets].

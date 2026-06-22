@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: reference-storage-class-policies.html
 keywords: storage class policies, performance policy, capacity policy, security policy, data protection policy, netapp console
-summary: "Reference the system-defined storage class policies available in NetApp Console (local)."
+summary: "Reference the system-defined storage class policies available in NetApp Console (local deployment)."
 ---
-= Storage class policies in NetApp Console (local)
+= Storage class policies in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: "Reference the system-defined storage class policies available in NetAp
 :imagesdir: ./media/
 
 [.lead]
-NetApp Console (local) includes system-defined policies across all four policy types. Use this reference to identify which policy best fits your workload requirements when creating or customizing a storage class.
+NetApp Console (local deployment) includes system-defined policies across all four policy types. Use this reference to identify which policy best fits your workload requirements when creating or customizing a storage class.
 
 == Performance policies
 

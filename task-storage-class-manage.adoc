@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-storage-class-manage.html
 keywords: create storage class, storage class, define, policy, netapp console
-summary: "Create a storage class in NetApp Console (local) to standardize storage provisioning."
+summary: "Create a storage class in NetApp Console (local deployment) to standardize storage provisioning."
 ---
-= Create a storage class in NetApp Console (local)
+= Create a storage class in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,15 +12,15 @@ summary: "Create a storage class in NetApp Console (local) to standardize storag
 :imagesdir: ./media/
 
 [.lead]
-Create a storage class in the NetApp Console (local) to standardize how storage is provisioned and governed across your fleets. A storage class is a reusable template that bundles storage class policies—such as performance targets, capacity behavior, security requirements, and data protection schedules—into a single named definition.
+Create a storage class in the NetApp Console (local deployment) to standardize how storage is provisioned and governed across your fleets. A storage class is a reusable template that bundles storage class policies—such as performance targets, capacity behavior, security requirements, and data protection schedules—into a single named definition.
 
 
-When users (or automation) provision a volume or LUN using a storage class, NetApp Console (local) applies the class’s policies automatically. After provisioning, Console (local) continuously monitors workloads against the storage class to detect drift and can guide or automate remediation to restore compliance.
+When users (or automation) provision a volume or LUN using a storage class, NetApp Console (local deployment) applies the class’s policies automatically. After provisioning, Console (local deployment) continuously monitors workloads against the storage class to detect drift and can guide or automate remediation to restore compliance.
 
 
 == Before you begin
 
-* Discover at least one ONTAP cluster so Console (local) has targets for placement recommendations.
+* Discover at least one ONTAP cluster so Console (local deployment) has targets for placement recommendations.
 * Ensure you have the Organization admin role (or a role that grants storage class management permissions in your environment).
 * Create (or identify) the storage class policies you plan to use—performance, capacity, security, and data protection—because storage classes are assembled from policies.
 

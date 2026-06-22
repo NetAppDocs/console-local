@@ -4,7 +4,7 @@ permalink: task-analyzer-volume-latency-investigate.html
 keywords: latency, slow performance, delay center, workload analyzer, investigate, netapp console
 summary: "Investigate latency on a volume using the Workload Analyzer to identify which part of the I/O path is causing slow response times."
 ---
-= Investigate high latency on a volume in NetApp Console (local) (placeholder)
+= Investigate high latency on a volume in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,12 +16,12 @@ When application performance degrades, use the Workload Analyzer to identify whi
 
 == Before you begin
 
-* Ensure NetApp Console (local) has already discovered the volume you want to investigate.
+* Ensure NetApp Console (local deployment) has already discovered the volume you want to investigate.
 * Identify the approximate time window when the issue occurred so you can select the right analysis range.
 
 .Steps
 
-. In the NetApp Console (local), navigate to *Workload Analyzer*.
+. In the NetApp Console (local deployment), navigate to *Workload Analyzer*.
 +
 Alternatively, from the storage inventory, select a volume and click *Analyze*.
 
@@ -44,6 +44,8 @@ The analyzer plots configuration change events (wrench icon) and alert events (w
 * *Cloud Latency* — retrieval from a cloud capacity tier via FabricPool
 
 . Hover over a point on the chart where latency is highest to see each delay center's value and its percentage of total latency.
++
+The delay center with the highest contribution usually points to a resource that is in contention. When a shared resource can't keep up with demand, the volumes that use it wait longer for I/O. Reducing the load on that resource, such as moving workloads or adjusting a QoS limit, typically lowers latency.
 
 . Identify the dominant contributor and use the value to determine next steps:
 +
@@ -62,4 +64,4 @@ The analyzer plots configuration change events (wrench icon) and alert events (w
 
 .After you finish
 
-If a configuration or placement issue caused the problem and Console (local) can resolve it, the alert associated with the volume may offer a Fix-It option. See link:task-remediation-guided.html[Remediate with guided steps]. Refer to link:reference-workload-analyzer-metrics.html[Workload Analyzer metrics reference] if you need detailed descriptions of QoS limit lines, resource utilization indicators, or forecast behavior while you investigate.
+If a configuration or placement issue caused the problem and Console (local deployment) can resolve it, the alert associated with the volume may offer a Fix-It option. See link:task-remediation-guided.html[Remediate with guided steps]. Refer to link:reference-workload-analyzer-metrics.html[Workload Analyzer metrics reference] if you need detailed descriptions of QoS limit lines, resource utilization indicators, or forecast behavior while you investigate.

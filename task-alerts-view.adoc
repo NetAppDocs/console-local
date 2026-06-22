@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-alerts-view.html
 keywords: view alerts, alerts overview, alerts dashboard, org-wide alerts, fleet alerts, netapp console local
-summary: "View active alerts across your organization or for a specific fleet from the alerts overview page in NetApp Console (local)."
+summary: "View active alerts across your organization or for a specific fleet from the alerts overview page in NetApp Console (local deployment)."
 ---
 = View alerts in NetApp Console (local deployment)
 :hardbreaks:
@@ -45,7 +45,7 @@ include::_include/ontap-alerts-ems.adoc[]
 
 == Export alerts to CSV
 
-Export the alerts list in the NetApp Console (local) to a CSV file for offline analysis or reporting. The export reflects the current scope (organization or fleet), search text, and filters.
+Export the alerts list in the NetApp Console (local deployment) to a CSV file for offline analysis or reporting. The export reflects the current scope (organization or fleet), search text, and filters.
 
 
 .Steps

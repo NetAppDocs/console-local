@@ -4,7 +4,7 @@ permalink: concept-workload-analyzer.html
 keywords: workload analyzer, volume analysis, latency, throughput, capacity, performance, netapp console
 summary: "Learn how the Workload Analyzer helps you investigate volume-level performance, capacity, and data protection issues."
 ---
-= Learn about NetApp Console (local) Workload Analyzer (placeholder)
+= Learn about NetApp Console (local deployment) Workload Analyzer
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -22,7 +22,7 @@ Use the Workload Analyzer to correlate metrics from a single volume across six s
 
 Review the capacity section as part of this assessment. When an ONTAP system is more than 85% full, the high utilization can itself cause performance issues, so low available capacity can explain latency that the performance charts alone don't account for.
 
-After you identify a root cause, you can act directly from the analyzer. When automated options are available, Console (local) provides Fix-It recommendations with guided steps or one-click remediation.
+After you identify a root cause, you can act directly from the analyzer. When automated options are available, Console (local deployment) provides Fix-It recommendations with guided steps or one-click remediation.
 
 NOTE: Workload charts for LUNs don't provide the same level of detail as the charts for volumes, so you'll see fewer statistics when you analyze a LUN.
 

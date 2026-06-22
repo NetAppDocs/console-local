@@ -4,7 +4,7 @@ permalink: reference-workload-analyzer-metrics.html
 keywords: workload analyzer, latency, delay center, throughput, IOPS, resource utilization, capacity, metrics, netapp console
 summary: "Reference for all metrics available in the Workload Analyzer, organized by analysis section."
 ---
-= Workload Analyzer metrics in NetApp Console (local) (placeholder)
+= Workload Analyzer metrics in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -17,6 +17,8 @@ Use this page to understand the metrics that the Workload Analyzer shows across 
 == Latency delay centers
 
 Use the delay centers in the *Latency Analysis* section after you select *By Contribution* from the View dropdown. Each delay center represents a distinct phase of the I/O path. Use these metrics to identify which part of the stack contributes most to response time.
+
+A delay center contributes the most latency when the resource it represents is in contention. When a resource is in contention, it can't keep up with demand, so the workloads that share it wait longer for I/O and experience higher latency. To bring a resource out of contention, reduce its load—for example, move workloads to a less busy node or aggregate, or adjust a QoS limit—so that response times return to normal.
 
 [cols="20,40,40",options="header"]
 |===
@@ -64,10 +66,10 @@ If the selected volume uses a QoS policy, you can use two additional reference l
 | Reference line | Description
 
 | QoS Limit Max
-| The maximum latency ceiling defined by the QoS policy. When the latency line approaches or touches this line, ONTAP is throttling the workload.
+| The maximum latency ceiling defined by the QoS policy. When the latency line approaches or touches this line, ONTAP is throttling the workload, and the QoS limit—rather than a physical resource—is the dominant source of latency.
 
 | QoS Limit Min
-| The guaranteed minimum latency floor defined by the QoS policy. This line indicates the response time floor enforced for the workload.
+| The guaranteed minimum latency floor defined by the QoS policy. This line indicates the response time floor enforced for the workload. When other workloads use QoS minimums to guarantee their throughput, this workload can be throttled and show higher latency.
 |===
 
 These horizontal lines do not appear in the delay center breakdown on hover. They serve as reference thresholds, not as contributors to latency.
@@ -252,6 +254,6 @@ Use the *Show Forecast* toggle in any analysis section when you want to project 
 
 == Related information
 
-* link:concept-workload-analyzer.html[Learn about NetApp Console (local) Workload Analyzer]
+* link:concept-workload-analyzer.html[Learn about NetApp Console (local deployment) Workload Analyzer]
 * link:task-analyzer-volume-latency-investigate.html[Investigate high latency on a volume]
 * link:task-analyzer-volume-throughput-investigate.html[Investigate high throughput demand on a volume]

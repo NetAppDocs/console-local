@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: reference-dashboard-card-templates.html
 keywords: card templates, dashboard cards, metric types, chart types, performance, capacity, health, alerts, netapp console local
-summary: "Reference for the custom dashboard card templates available in NetApp Console (local), organized by metric type."
+summary: "Reference for the custom dashboard card templates available in NetApp Console (local deployment), organized by metric type."
 ---
-= Custom dashboard card templates in NetApp Console (local) (placeholder)
+= Custom dashboard card templates in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: "Reference for the custom dashboard card templates available in NetApp 
 :imagesdir: ./media/
 
 [.lead]
-// Placeholder topic. Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
+// Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
 
 Custom dashboards provide card templates that you can add to a dashboard, organized by metric type. Each template defines a metric and a recommended chart type; you customize the scope, aggregation, and target objects when you add the card.
 

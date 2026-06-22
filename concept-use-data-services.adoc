@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: concept-use-data-services.html
 keywords: data services, data protection, backup, replication, subscribe, netapp console
-summary: "Learn about data services available in NetApp Console (local) and how they help protect your data."
+summary: "Learn about data services available in NetApp Console (local deployment) and how they help protect your data."
 ---
-= Learn about data services in NetApp Console (local)
+= Learn about data services in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,4 +12,4 @@ summary: "Learn about data services available in NetApp Console (local) and how 
 :imagesdir: ./media/
 
 [.lead]
-Learn about the data services available in the NetApp Console (local) and how they integrate with your storage environment to protect your data and ensure business continuity.
+Learn about the data services available in the NetApp Console (local deployment) and how they integrate with your storage environment to protect your data and ensure business continuity.

@@ -4,7 +4,7 @@ permalink: task-analyzer-volume-throughput-investigate.html
 keywords: throughput, IOPS, MBs, read write, workload demand, workload analyzer, netapp console local
 summary: "Investigate high throughput demand on a volume using the Workload Analyzer to understand IOPS and MB/s patterns and identify read/write imbalances."
 ---
-= Investigate high throughput on a volume in NetApp Console (local) (placeholder)
+= Investigate high throughput on a volume in NetApp Console (local deployment>
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,12 +16,12 @@ When a volume's workload is consuming more IOPS or throughput than expected, use
 
 == Before you begin
 
-* Ensure NetApp Console (local) has already discovered the volume you want to investigate.
+* Ensure NetApp Console (local deployment) has already discovered the volume you want to investigate.
 * Identify the approximate time window when the demand spike occurred so you can select the right analysis range.
 
 .Steps
 
-. In the NetApp Console (local), navigate to *Workload Analyzer*.
+. In the NetApp Console (local deployment), navigate to *Workload Analyzer*.
 +
 Alternatively, from the storage inventory, select a volume and click *Analyze*.
 

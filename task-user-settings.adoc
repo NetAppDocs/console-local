@@ -6,7 +6,7 @@ summary: You can modify your Console profile including change your password, ena
 
 ---
 
-= Manage your NetApp Console (local) user settings
+= Manage your NetApp Console (local deployment) user settings
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,16 +14,16 @@ summary: You can modify your Console profile including change your password, ena
 :imagesdir: ./media/
 
 [.lead]
-You can modify your Console (local) profile including change your password, enable multi-factor authentication (MFA), and see who your Console administrator is.
+You can modify your Console (local deployment) profile including change your password, enable multi-factor authentication (MFA), and see who your Console administrator is.
 
 
 == Change your display name
 
-You can change your Console (local) display name, which identifies you to other users. You cannot change your username or email address.
+You can change your Console (local deployment) display name, which identifies you to other users. You cannot change your username or email address.
 
 .Steps
 
-. Select the profile icon in the upper right corner of the Console (local) to view the User settings panel.
+. Select the profile icon in the upper right corner of the Console (local deployment) to view the User settings panel.
 
 . Select the *Edit* icon next to your name.
 
@@ -40,7 +40,7 @@ Users who use single sign-on with an external identity provider or the NetApp Su
 
 Do not enable MFA if your user account is used for API access. Multi-factor authentication stops API access when enabled for a user account. Use service accounts for all API access.
 
-NOTE: You can't configure MFA for your account through the Console (local) if your account uses Active Directory or another integrated directory service for authentication.
+NOTE: You can't configure MFA for your account through the Console (local deployment) if your account uses Active Directory or another integrated directory service for authentication.
 
 .Before you begin
 * You must have already downloaded an authentication app, such as Google Authenticator or Microsoft Authenticator, to your device.
@@ -56,24 +56,24 @@ NOTE: If you do not have access to your authentication app or lose your recovery
 
 +
 
-After you set up MFA, the Console (local) prompts you to enter a one-time code from your authentication app each time you log in.
+After you set up MFA, the Console (local deployment) prompts you to enter a one-time code from your authentication app each time you log in.
 
 == Regenerate your MFA recovery code
 You can only use a recovery code once. If you lose yours, create a new one.
 
 .Steps
-. Select the profile icon in the upper right corner of the the Console (local) to view the User settings panel.
+. Select the profile icon in the upper right corner of the the Console (local deployment) to view the User settings panel.
 . Select image:icon-action.png["An icon that is three side-by-side dots"] next to the *Multi-Factor Authentication* header.
 . Select *Regenerate recovery code*.
 . Copy the generated recovery code and save it in a secure location.
 
 == Delete your MFA configuration
-When you're finished, either log out of the Console (local) or move the slider back to return to read-only mode. The system removes your elevated permissions when your session expires.
+When you're finished, either log out of the Console (local deployment) or move the slider back to return to read-only mode. The system removes your elevated permissions when your session expires.
 
 NOTE: If you are unable to access your authentication app or recovery code, you will need to contact your Organization administrator to reset your MFA configuration.
 
 .Steps
-. Select the profile icon in the upper right corner of the Console (local) to view the User settings panel.
+. Select the profile icon in the upper right corner of the Console (local deployment) to view the User settings panel.
 . Select image:icon-action.png["An icon that is three side-by-side dots"] next to the *Multi-Factor Authentication* header.
 . Select *Delete*.
 
@@ -86,16 +86,16 @@ If you need to contact your organization administrator, you can send an email to
 NOTE: You must have a default email application configured for your browser to use the *Contact admins* feature. 
 
 .Steps
-. Select the profile icon in the upper right corner of the Console (local) to view the User settings panel.
+. Select the profile icon in the upper right corner of the Console (local deployment) to view the User settings panel.
 . Select *Contact admins* to send an email to your organization administrator. 
 . Select the email application to use.
 . Finish the email and select *Send*.
 
 == Configure dark mode (dark theme)
-You can set the Console (local) to display in dark mode.
+You can set the Console (local deployment) to display in dark mode.
 
 .Steps
-. Select the profile icon in the upper right corner of the Console (local) to view the User settings panel.
+. Select the profile icon in the upper right corner of the Console (local deployment) to view the User settings panel.
 . Move the *Dark theme* slider to enable it.
 
 
