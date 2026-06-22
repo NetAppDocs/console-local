@@ -248,6 +248,7 @@ Use the *Show Forecast* toggle in any analysis section when you want to project 
 | Trend basis
 | The projection uses the rate of change from the most recent portion of the selected time range. High volatility in recent data reduces forecast confidence.
 
+// ENGINEERING REVIEW: Confirm the capacity forecast minimum-data requirement and the "almost full" threshold for Console (local). The following values are carried over from Active IQ Unified Manager and may differ.
 | Minimum data required
 | Capacity forecasting requires at least 10 days of historical data. When fewer than 30 days of capacity remain before the volume is full, the analyzer identifies the storage as almost full.
 |===

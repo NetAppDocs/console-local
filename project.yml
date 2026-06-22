@@ -148,6 +148,8 @@ sidebar:
             url: /task-analyzer-volume-latency-investigate.html
           - title: Investigate high throughput demand on a volume
             url: /task-analyzer-volume-throughput-investigate.html
+          - title: Investigate capacity growth on a volume
+            url: /task-analyzer-volume-capacity-investigate.html
           - title: Workload Analyzer metrics reference
             url: /reference-workload-analyzer-metrics.html
         - title: Remediate storage issues

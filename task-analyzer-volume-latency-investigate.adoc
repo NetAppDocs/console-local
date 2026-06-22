@@ -23,11 +23,11 @@ When application performance degrades, use the Workload Analyzer to identify whi
 
 . In the NetApp Console (local deployment), navigate to *Workload Analyzer*.
 +
-Alternatively, from the storage inventory, select a volume and click *Analyze*.
+Alternatively, from the storage inventory, select a volume and select *Analyze*.
 
 . In the *Volume* field, search for and select the volume you want to investigate.
 
-. Set the *Time Range* to cover the period when the performance issue occurred, then click *Analyze*.
+. Set the *Time Range* to cover the period when the performance issue occurred, then select *Analyze*.
 
 . Review the *Event Timeline* section for configuration changes or alerts that correlate with the time when latency increased.
 +

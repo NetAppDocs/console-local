@@ -54,6 +54,8 @@ indexpage:
           url: /task-alert-rules-manage.html
         - title: Investigate high latency on a volume
           url: /task-analyzer-volume-latency-investigate.html
+        - title: Investigate capacity growth on a volume
+          url: /task-analyzer-volume-capacity-investigate.html
         - title: Remediate storage issues automatically
           url: /task-remediation-automated.html
     - title: Use NetApp Cyber Resilience data services

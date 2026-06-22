@@ -23,11 +23,11 @@ When a volume's workload is consuming more IOPS or throughput than expected, use
 
 . In the NetApp Console (local deployment), navigate to *Workload Analyzer*.
 +
-Alternatively, from the storage inventory, select a volume and click *Analyze*.
+Alternatively, from the storage inventory, select a volume and select *Analyze*.
 
 . In the *Volume* field, search for and select the volume you want to investigate.
 
-. Set the *Time Range* to cover the period of high demand, then click *Analyze*.
+. Set the *Time Range* to cover the period of high demand, then select *Analyze*.
 
 . Scroll to the *Throughput Analysis* section.
 
