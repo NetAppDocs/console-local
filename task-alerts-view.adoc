@@ -4,7 +4,7 @@ permalink: task-alerts-view.html
 keywords: view alerts, alerts overview, alerts dashboard, org-wide alerts, fleet alerts, netapp console local
 summary: "View active alerts across your organization or for a specific fleet from the alerts overview page in NetApp Console (local)."
 ---
-= View alerts in NetApp Console (local)
+= View alerts in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,10 +14,13 @@ summary: "View active alerts across your organization or for a specific fleet fr
 [.lead]
 // Jira: SPSPM-3316, SPSPM-3496
 
-View active alerts in the NetApp Console (local) from the alerts overview page. By default, the page shows an organization-wide view; you can switch to a fleet-wide view to focus on alerts for a specific fleet.
+View active ONTAP alerts in the NetApp Console (local deployment). You can view alerts for the entire organization or switch to a fleet-wide view to focus on alerts for a specific fleet.
 
 .Required role
+Any role with the exception of Federation admin or Federation viewer. Federation admins and viewers cannot view alerts.
 
+
+include::_include/ontap-alerts-ems.adoc[]
 
 == View ONTAP alerts
 

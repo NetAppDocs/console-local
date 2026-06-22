@@ -15,11 +15,11 @@ summary: "Configure the notifications delivery channels for NetApp Console (loca
 [.lead]
 // Jira: SPSPM-3316, SPSPM-3496
 
-You can set up multiple channels for notifications. You can configure an email server so that notifications can be delivered via email and you can also use webhooks to send notifications directly to third-party applications. 
+You can set up multiple channels for alert notifications, including email and webhooks. You can configure an email server so that notifications can be delivered via email and you can also use webhooks to send notifications directly to third-party applications, such as your SIEM (Security Information and Event Management) system.
 
 By default notifications are sent through the Console (local)'s built-in notification system, which provides basic alerting capabilities. However, configuring additional delivery channels allows you to receive notifications in the way that best fits your workflow and ensures that you stay informed about important events and alerts related to your storage management activities.
 
-Notifications include storage alerts, and system alerts,. You can choose to send all notifications through the same channels or use different channels for different types of notifications. For example, you might want to receive storage alerts through email but send audit logs to a third-party monitoring tool through a webhook.
+You can choose to send all notifications through the same channels or use different channels for different types of notifications. For example, you might want to receive only urgent storage alerts through email but all alert traffice to a third-party monitoring tool through a webhook.
 
 .Required role
 Super admin or organization admin.
@@ -72,7 +72,9 @@ You can remove the email server configuration if you no longer want Console (loc
 
 == Configure a webhook 
 
-Set up webhooks to send notifications from the Console (local) to other tools or services. After creating a webhook, assign it to specific types of notifications, such as alerts or audit logs. Configuring webhooks allows you to send important messages to the right place and help your team stay informed and respond quickly.
+Set up webhooks to send notifications from the Console (local) to other tools or services. After creating a webhook, users with the Storage admin role can assign it to specific alert rules. For example, storage admins can create rules to send only critical alerts to email while sending all alerts to a third-party monitoring tool through a webhook. 
+
+link:task-
 
 .Before you begin
 

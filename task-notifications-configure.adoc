@@ -12,12 +12,16 @@ summary: "Configure notification rules in NetApp Console (local) to control whic
 :imagesdir: ./media/
 
 [.lead]
+// Jira: SPSPM-3316, SPSPM-3496
+
 Configure notification rules in the NetApp Console (local) to control which alerts raise notifications, who receives them, and how they are delivered. Use notification rules to route the right alerts to the right people through the channels that fit your environment, while reducing noise from alerts that aren't relevant to you.
 
 A notification rule matches alerts based on conditions you define—such as service, severity, and impact area—and then delivers a notification through the channels you select. The Console (local) includes default notification rules that you can view and adjust, and you can create your own custom rules. You can also mute rules to temporarily suppress notifications during planned events like maintenance windows.
 
 .Required role
-Super admin or organization admin.
+Super admin, Organization admin, Storage admin, Operations support analyst, or any of the admin roles for NetApp Backup and Recovery.
+
+include::_include/ontap-alerts-ems.adoc[]
 
 == Before you begin
 
@@ -37,6 +41,22 @@ The notification rules page is the central place to review and manage every rule
 == Create a notification rule
 
 Create a notification rule to define the conditions that trigger a notification and how that notification is delivered.
+
+NOTE: You can't set notification rules for fleets. You can set them only for specific systems.
+
+.Example notification rule for storage admins
+Suppose your storage admins need to respond immediately to critical capacity issues, but you don't want lower-severity alerts to flood their inboxes. You can create a notification rule that emails the storage admins when a critical alert occurs.
+
+In this example, you create a rule with the following settings:
+
+* *ONTAP management service*: Enabled
+* *Severity*: Critical
+* *Impact area*: Capacity
+* *IAM role*: Storage admin
+* *System*: <system_name>
+* *Delivery method*: Email
+
+With this rule in place, Console (local) sends an email to all storage admins for the specified system when a critical capacity alert occurs. Alerts with a lower severity, such as warning or informational, don't generate an email, so the team can focus on the issues that require urgent attention.
 
 .Steps
 . From the left navigation, select *Health > Alerts*.
@@ -68,6 +88,16 @@ Enable or disable individual notification rules to control which conditions rais
 . Select *Notification settings*.
 . Locate the rule you want to change.
 . Toggle the rule's *Active* switch on or off. The change takes effect immediately.
+
+== Delete a notification rule
+
+Delete a notification rule if you no longer need it. Deleting a rule permanently removes it, so you can't recover it.
+
+.Steps
+. From the left navigation, select *Health > Alerts*.
+. Select *Notification settings*.
+. In the rules list, locate the rule you want to delete and select the action menu for that rule.
+. Select *Delete* from the action menu.
 
 == Related information
 

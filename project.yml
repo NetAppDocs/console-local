@@ -172,12 +172,10 @@ sidebar:
             url: /reference-dashboard-card-templates.html
     - title: Administer and monitor
       entries:
-      - title: Administration overview
+      - title: Learn about administering NetApp Console (local)
         url: /concept-administer-netapp-console-local.html
-      - title: Audit NetApp Console (local) actions
-        entries:
-        - title: Audit NetApp Console (local) operations
-          url: /task-audit-console-activity.html
+      - title: Audit NetApp Console (local) operationa
+        url: /task-audit-console-activity.html
       - title: Licenses and subscriptions
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
       - title: Maintain NetApp Console (local)
