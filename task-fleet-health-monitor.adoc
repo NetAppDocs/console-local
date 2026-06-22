@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-fleet-health-monitor.html
 keywords: fleet health, performance, monitoring, storage health, netapp console
-summary: "Monitor fleet-wide health and performance across all storage managed by NetApp Console (local)."
+summary: "Monitor fleet-wide health and performance across all storage managed by NetApp Console (local deployment)."
 ---
-= Monitor fleet-wide health and performance in NetApp Console (local)
+= Monitor fleet-wide health and performance in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,4 +14,4 @@ summary: "Monitor fleet-wide health and performance across all storage managed b
 [.lead]
 // Jira: SPSPM-3315
 
-Monitor fleet-wide health and performance in the NetApp Console (local) to gain a unified view of storage status, utilization, and potential issues across all fleets.
+Monitor fleet-wide health and performance in the NetApp Console (local deployment) to gain a unified view of storage status, utilization, and potential issues across all fleets.

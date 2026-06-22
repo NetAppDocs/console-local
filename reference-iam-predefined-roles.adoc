@@ -5,7 +5,7 @@ keywords: predefined roles, iam roles, organization admin, folder or fleet admin
 summary: NetApp Console identity and access management includes predefined roles that you can assign to the members of your organization.
 ---
 
-= NetApp Console (local) access roles
+= NetApp Console (local deployment) access roles
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,12 +13,12 @@ summary: NetApp Console identity and access management includes predefined roles
 :imagesdir: ./media/
 
 [.lead]
-Identity and access management (IAM) in NetApp Console (local) provides predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes. Roles fall into the following categories: platform, application, and data service.
+Identity and access management (IAM) in NetApp Console (local deployment) provides predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes. Roles fall into the following categories: platform, application, and data service.
 
 
 [[platform-roles]]
 == Platform roles
-Platform roles grant NetApp Console (local) administration permissions, including role assignment and user management. The Console (local) has several platform roles. 
+Platform roles grant NetApp Console (local deployment) administration permissions, including role assignment and user management. The Console (local deployment) has several platform roles. 
 
 [cols="1,2",options="header"]
 |===
@@ -35,10 +35,10 @@ Users with this role manage your organization by creating folders and fleets, as
 
 | link:reference-iam-platform-roles.html#organization-admin-roles[Folder or fleet admin]|	Allows a user unrestricted access to assigned fleets and folders. Can add members to folders or fleets they manage, as well as perform any task and use any data service or application on resources within the folder or fleet they are assigned. 
 
-| link:reference-iam-platform-roles.html#federation-roles[Federation admin]|	Allows a user to create and manage federations with the Console, which enables single-sign on (SSO). 
-| link:reference-iam-platform-roles.html#federation-roles[Federation viewer]|	Allows a user to view existing federations with the Console. Cannot create or manage federations.
-| link:reference-iam-platform-roles.html#super-admin-roles[Super admin]| Gives the user a subset of admin roles. This role is designed for smaller organizations that may not need to distribute Console responsibilities across multiple users. 
-| link:reference-iam-platform-roles.html#super-admin-roles[Super viewer]|	Gives the user a subset viewer roles. This role is designed for smaller organizations that may not need to distribute Console responsibilities across multiple users.
+| link:reference-iam-platform-roles.html#federation-roles[Federation admin]|	Allows a user to create and manage federations (including directory service integrations) with the Console, which enables single-sign on (SSO). 
+| link:reference-iam-platform-roles.html#federation-roles[Federation viewer]|	Allows a user to view existing federations and directory service integrations with the Console. Cannot create or manage federations.
+| link:reference-iam-platform-roles.html#super-admin-roles[Super admin]| Gives the user all of admin roles. This role is designed for smaller organizations that may not need to distribute Console responsibilities across multiple users. 
+| link:reference-iam-platform-roles.html#super-admin-roles[Super viewer]|	Gives the user all viewer roles. This role is designed for smaller organizations that may not need to distribute Console responsibilities across multiple users.
 
 
 
@@ -54,7 +54,7 @@ The following is a list of roles in the application category. Each role grants s
 |===
 | Application role | Responsibilities
 
-|link:reference-iam-analyst-roles.html[Operation support analyst] | Provides access to alerts and monitoring tools and ability to enter and manage support cases.
+|link:reference-iam-analyst-roles.html[Operation support analyst] | Provides access to alerts and monitoring tools such as the Audit page.
 | link:reference-iam-storage-roles.html[Storage admin] | Administer storage health and governance functions, discover storage resources, as well as modify and delete existing systems.
 | link:reference-iam-storage-roles.html[Storage viewer] | View storage health and governance functions, as well as view previously discovered storage resources. Cannot discover, modify, or delete existing storage systems.
 | link:reference-iam-storage-roles.html[System health specialist] | Administer storage and health and governance functions, all permissions of the Storage admin except cannot modify or delete existing systems.

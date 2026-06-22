@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-alerts-view.html
 keywords: view alerts, alerts overview, alerts dashboard, org-wide alerts, fleet alerts, netapp console local
-summary: "View active alerts across your organization or for a specific fleet from the alerts overview page in NetApp Console (local)."
+summary: "View active alerts across your organization or for a specific fleet from the alerts overview page in NetApp Console (local deployment)."
 ---
-= View alerts in NetApp Console (local)
+= View alerts in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,22 +14,22 @@ summary: "View active alerts across your organization or for a specific fleet fr
 [.lead]
 // Jira: SPSPM-3316, SPSPM-3496
 
-View active alerts in the NetApp Console (local) from the alerts overview page. By default, the page shows an organization-wide view; you can switch to a fleet-wide view to focus on alerts for a specific fleet.
+View active ONTAP alerts in the NetApp Console (local deployment). You can view alerts for the entire organization or switch to a fleet-wide view to focus on alerts for a specific fleet.
 
-NOTE: Stub page. Content to be developed.
+.Required role
+Any role with the exception of Federation admin or Federation viewer. Federation admins and viewers cannot view alerts.
 
-== Before you begin
 
-You must have permission to view alerts for the organization or fleet.
+include::_include/ontap-alerts-ems.adoc[]
 
 == View ONTAP alerts
 
 .Steps
 
-. From the left navigation, select *Alerts*.
+. From the left navigation, select *Health > Alerts*.
 . From the scope selector, choose one of the following:
 +
-* *Organization* (default) to see alerts across all fleets you have access to
+* *All* (default) to see alerts across all fleets you have access to
 * A specific fleet to see alerts only for that fleet
 
 . Review the alert summary, including:
@@ -41,32 +41,16 @@ You must have permission to view alerts for the organization or fleet.
 
 . Select the *Alerts* tab to see the full list of active alerts.
 
-== Filter alerts
 
-Search and filter alerts in the NetApp Console (local) to narrow the alerts table to the alerts you care about. You can search by alert name, description, resource, severity, or impact area, and you can apply filters for severity and impact area.
-
-NOTE: Stub page. Content to be developed.
-
-.Steps
-
-. From the left navigation, select *Alerts* and then select the *Alerts* tab.
-. To search, enter text in the search field above the alerts table.
-. To filter, select one or more values for:
-+
-* *Severity*
-* *Impact area*
-
-. To clear filters, select *Clear all*.
 
 == Export alerts to CSV
 
-Export the alerts list in the NetApp Console (local) to a CSV file for offline analysis or reporting. The export reflects the current scope (organization or fleet), search text, and filters.
+Export the alerts list in the NetApp Console (local deployment) to a CSV file for offline analysis or reporting. The export reflects the current scope (organization or fleet), search text, and filters.
 
-NOTE: Stub page. Content to be developed.
 
 .Steps
 
-. From the left navigation, select *Alerts* and then select the *Alerts* tab.
+. From the left navigation, select *Health > Alerts* and then select the *Alerts* tab.
 . Set the scope (organization or fleet) and apply any filters or search text you want included in the export.
 . Select *Download CSV*.
 . Open the file from your browser's downloads location.

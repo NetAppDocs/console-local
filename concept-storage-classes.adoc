@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: concept-storage-classes.html
 keywords: storage classes, storage policy, standardize, netapp console local
-summary: "Learn how storage classes in NetApp Console (local) let you define and apply consistent storage policies across your environment."
+summary: "Learn how storage classes in NetApp Console (local deployment) let you define and apply consistent storage policies across your environment."
 ---
-= Learn about storage classes in NetApp Console (local)
+= Learn about storage classes in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,19 +14,19 @@ summary: "Learn how storage classes in NetApp Console (local) let you define and
 [.lead]
 // Jira: SPSPM-3309, SPSPM-3328
 
-A storage class is a reusable template that defines how storage should behave. When you provision storage using a storage class, the NetApp Console (local) enforces the standards encoded in that class automatically—without requiring administrators to make individual configuration decisions for every workload.
+A storage class is a reusable template that defines how storage should behave. When you provision storage using a storage class, the NetApp Console (local deployment) enforces the standards encoded in that class automatically—without requiring administrators to make individual configuration decisions for every workload.
 
 == What a storage class is
 
-A storage class captures your organization's storage standards in a single, reusable object. It bundles policies for performance, capacity, security, and data protection into a named template. Administrators or automated workflows apply this template at provisioning time. After provisioning, the Console (local) tracks the workload against the class standards and alerts you if the workload drifts out of compliance.
+A storage class captures your organization's storage standards in a single, reusable object. It bundles policies for performance, capacity, security, and data protection into a named template. Administrators or automated workflows apply this template at provisioning time. After provisioning, the Console (local deployment) tracks the workload against the class standards and alerts you if the workload drifts out of compliance.
 
 Storage administrators define storage classes to encode enterprise requirements. All provisioning activity—whether done manually, through guided workflows, or through automation—draws from the library of classes those administrators have approved. This structure keeps your storage environment consistent as it grows and as team membership changes.
 
-== How the Console (local) uses storage classes
+== How the Console (local deployment) uses storage classes
 
-When you provision storage, you select a storage class rather than configuring individual settings. The Console (local) uses the policies in that class to identify which clusters in your fleet have the capacity and performance headroom to support the workload, then recommends the best placement option. After provisioning, the Console (local) continues to evaluate the workload against the storage class to detect drift—configuration changes or degrading performance that would take the workload outside its defined standards.
+When you provision storage, you select a storage class rather than configuring individual settings. The Console (local deployment) uses the policies in that class to identify which clusters in your fleet have the capacity and performance headroom to support the workload, then recommends the best placement option. After provisioning, the Console (local deployment) continues to evaluate the workload against the storage class to detect drift—configuration changes or degrading performance that would take the workload outside its defined standards.
 
-When the Console (local) detects drift, it shows options to fix the issue. Depending on your setup, you can follow guided steps to correct the issue manually, or let the Console (local) resolve common drift conditions automatically.
+When the Console (local deployment) detects drift, it shows options to fix the issue. Depending on your setup, you can follow guided steps to correct the issue manually, or let the Console (local deployment) resolve common drift conditions automatically.
 
 == Storage classes and storage class policies
 
@@ -53,17 +53,17 @@ After you create a storage class, associate it with the fleet where it will be u
 link:task-storage-class-fleet-associate.html[Associate a storage class with a fleet]
 
 . *Provision storage using the storage class.*
-When provisioning a volume or LUN, select a storage class instead of configuring individual settings. The Console (local) uses the class to recommend the best-fit cluster placement based on available capacity and performance headroom, then provisions the workload with the settings defined in the class.
+When provisioning a volume or LUN, select a storage class instead of configuring individual settings. The Console (local deployment) uses the class to recommend the best-fit cluster placement based on available capacity and performance headroom, then provisions the workload with the settings defined in the class.
 +
 link:task-provisioning-manual.html[Provision storage manually]
 
 . *Monitor workloads for drift.*
-After provisioning, the Console (local) continuously evaluates each workload against the standards encoded in its associated storage class. If a configuration change—whether made through the Console (local) or directly on the ONTAP cluster—takes the workload outside those standards, the Console (local) detects the drift and raises an alert.
+After provisioning, the Console (local deployment) continuously evaluates each workload against the standards encoded in its associated storage class. If a configuration change—whether made through the Console (local deployment) or directly on the ONTAP cluster—takes the workload outside those standards, the Console (local deployment) detects the drift and raises an alert.
 +
 link:task-fleet-health-monitor.html[Monitor fleet health]
 
 . *Remediate drift to restore compliance.*
-When the Console (local) detects drift, you can follow guided steps to correct the issue manually, or allow the Console (local) to resolve common drift conditions automatically. You can also disassociate a workload from its storage class if you need to change its settings, then reassociate it with the appropriate class.
+When the Console (local deployment) detects drift, you can follow guided steps to correct the issue manually, or allow the Console (local deployment) to resolve common drift conditions automatically. You can also disassociate a workload from its storage class if you need to change its settings, then reassociate it with the appropriate class.
 +
 link:task-remediation-guided.html[Remediate with guided steps] +
 link:task-remediation-automated.html[Remediate automatically]
@@ -72,6 +72,6 @@ link:task-remediation-automated.html[Remediate automatically]
 
 Before you create storage classes, ensure the following are in place:
 
-* Discover at least one ONTAP cluster so the Console (local) has storage targets to evaluate during placement. link:task-storage-discover.html[Discover storage]
-* Have the Organization admin role in the NetApp Console (local)
+* Discover at least one ONTAP cluster so the Console (local deployment) has storage targets to evaluate during placement. link:task-storage-discover.html[Discover storage]
+* Have the Organization admin role in the NetApp Console (local deployment)
 * Identify the performance, capacity, and tiering needs for each category of workload in your environment, then create the storage class policies that capture those requirements. Storage classes are assembled from policies, so policies must exist before you can build a storage class. link:concept-storage-class-policies.html[Learn about storage class policies]

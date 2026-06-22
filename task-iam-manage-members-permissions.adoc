@@ -5,7 +5,7 @@ keywords: user, directory user, directory users, service account, member, role, 
 summary: Add members and assign roles to provide permissions across different levels of your organization's resource hierarchy.
 ---
 
-= Add members to your NetApp Console (local) organization
+= Add members to your NetApp Console (local deployment) organization
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -24,10 +24,10 @@ After you create your folder and fleet hierarchy and place resources in the corr
 .Required access roles
 Super admin, Org admin, or Folder or fleet admin (for folders and fleets that they are administering). link:reference-iam-predefined-roles.html[Learn about access roles].
 
-== Understand how access is granted in NetApp Console (local)          
+== Understand how access is granted in NetApp Console (local deployment)          
 NetApp Console uses role-based access control (RBAC) to manage permissions. Assign roles to members to provide the required access. Each role defines allowed actions for specific resources.
 
-Note the following about granting access in NetApp Console (local):
+Note the following about granting access in NetApp Console (local deployment):
 
 * You must explicitly add each user to your organization and assign at least one role before that user can access resources.
 * A role that you assign at the organization or folder level is inherited by child scopes. Choose the assignment scope carefully so the member gets access only where needed. link:concept-iam-rbac.html#role-inheritance[Learn how role inheritance works].
@@ -37,7 +37,7 @@ Note the following about granting access in NetApp Console (local):
 
 NetApp Console supports three types of members: user accounts, directory users, and service accounts.
 
-Users with local Console accounts must create their sign-in before you can add them to the organization. Directory users authenticate through your integrated directory service, but you still add each directory user individually and assign roles in Console (local). Create service accounts directly in the Console.
+Users with local Console accounts must create their sign-in before you can add them to the organization. Directory users authenticate through your integrated directory service, but you still add each directory user individually and assign roles in Console (local deployment). Create service accounts directly in the Console.
 
 All members must have at least one role explicitly assigned to them in order to access resources.
 

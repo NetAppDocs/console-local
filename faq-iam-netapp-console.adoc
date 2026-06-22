@@ -72,7 +72,7 @@ No. You cannot change member access at a lower level if it was inherited from a 
 
 .Does Active Directory integration automatically grant a directory user access to resources?
 
-No. Active Directory integration lets users authenticate with their existing directory credentials, but administrators still need to add each directory user to the Console organization and assign at least one role in Console (local).
+No. Active Directory integration lets users authenticate with their existing directory credentials, but administrators still need to add each directory user to the Console organization and assign at least one role in Console (local deployment).
 
 == Ongoing hierarchy maintenance
 

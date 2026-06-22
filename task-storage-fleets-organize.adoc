@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-storage-fleets-organize.html
 keywords: organize, storage fleets, fleet, folder, group, storage systems, associate, netapp console
-summary: "Organize discovered storage systems into folders and fleets for simplified management in NetApp Console (local)."
+summary: "Organize discovered storage systems into folders and fleets for simplified management in NetApp Console (local deployment)."
 ---
-= Organize storage into fleets in NetApp Console (local)
+= Organize storage into fleets in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font

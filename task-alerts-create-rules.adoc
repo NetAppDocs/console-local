@@ -1,0 +1,74 @@
+---
+sidebar: sidebar
+permalink: task-alerts-create-rules.html
+keywords: alert notification rules, create alert rules, manage alert rules, netapp console local
+summary: "Create and manage alert notification rules in NetApp Console (local deployment)."
+---
+= Create and manage alert notification rules in NetApp Console (local deployment)
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Jira: SPSPM-3316, SPSPM-3496
+
+Create and manage alert notification rules in NetApp Console (local deployment). When you create a rule, you specify the conditions that trigger the notification, such as alert severity or impact area, and the delivery method, such as email or webhook.
+
+.Required role
+Super admin, Organization admin, Storage admin, Operations support analyst, or any of the admin roles for NetApp Backup and Recovery.
+
+include::_include/ontap-alerts-ems.adoc[]
+
+.Example notification rule for storage admins
+Suppose your storage admins need to respond immediately to critical capacity issues, but you don't want lower-severity alerts to flood their inboxes. You can create a notification rule that emails the storage admins when a critical alert occurs.
+
+In this example, you create a rule with the following settings:
+
+* *ONTAP management service*: Enabled
+* *Severity*: Critical
+* *Impact area*: Capacity
+* *IAM role*: Storage admin
+* *System*: <system_name>
+* *Delivery method*: Email
+
+With this rule in place, Console (local deployment) sends an email to all storage admins for the specified system when a critical capacity alert occurs. Alerts with a lower severity, such as warning or informational, don't generate an email, so the team can focus on the issues that require urgent attention.
+
+== Create an alert notification rule
+
+You can create alert notification rules to automatically send notifications when specific alerts are triggered. When you create a rule, you specify the conditions that trigger the notification and the delivery method. You can create multiple rules to cover different scenarios, and you can edit or delete existing rules as needed.
+
+When you create a rule, you can also define a time period that mutes notifications for that rule. For example, you might want to mute notifications during a known maintenance window or when you expect certain alerts to trigger but they don't require immediate attention.
+
+NOTE: You can't set notification rules for fleets. You can set them only for specific systems.
+
+.Steps
+. From the left navigation, select *Health > Alerts > Notification settings*.
+. Select *Add rule*.
+. Enter the following information:
++
+* Provide a name and description for the rule.
+* Set the services you want to monitor, such as ONTAP management or Backup and Recovery.
+* Select the role or roles of the users who should receive notifications when the rule is triggered, such as Storage admin or Organization admin. You can select multiple roles if needed.
+* Set the conditions that trigger the rule, such as alert severity or impact area. You can specify multiple conditions to narrow down when the rule applies.
+* Specify the system or systems that the rule applies to.
+* Optionally, define a time period that mutes notifications for the rule, such as a known maintenance window.
+
+
+== Deactivate an alert notification rule
+You can deactivate an alert notification rule if you no longer want it to trigger notifications. Deactivating a rule doesn't delete it, so you can reactivate it later if needed.
+
+.Steps
+. From the left navigation, select *Health > Alerts > Notification settings*.
+. In the *Notification rules* list, find the rule you want to deactivate and move the slider in the Active column to deactivate it.
+
+
+
+== Delete an alert notification rule
+You can delete an alert notification rule if you no longer need it. Deleting a rule permanently removes it, so you can't recover it.
+
+.Steps
+. From the left navigation, select *Health > Alerts > Notification settings*.
+. In the *Notification rules* list, find the rule you want to delete and select the action menu for that rule.
+. Select *Delete* from the action menu.

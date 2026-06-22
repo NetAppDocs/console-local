@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-discover-storage.html
 keywords: discover storage, add storage, ontap clusters, netapp console local
-summary: "Discover on-premises ONTAP clusters in NetApp Console (local) to start managing and monitoring your storage."
+summary: "Discover on-premises ONTAP clusters in NetApp Console (local deployment) to start managing and monitoring your storage."
 ---
-= Discover storage in NetApp Console (local)
+= Discover storage in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,7 +14,7 @@ summary: "Discover on-premises ONTAP clusters in NetApp Console (local) to start
 [.lead]
 // Jira: SPSPM-3497
 
-Discover on-premises ONTAP clusters in the NetApp Console (local) so you can manage and monitor them from a single interface.
+Discover on-premises ONTAP clusters in the NetApp Console (local deployment) so you can manage and monitor them from a single interface.
 
 NOTE: Stub page. Content to be developed.
 

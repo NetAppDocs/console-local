@@ -5,7 +5,7 @@ keywords: software contract, hardware contract, contracts, expiration date, expi
 summary: You can view contract details for each of your on-premises ONTAP clusters from the Subscriptions and licenses page.
 ---
 
-= View ONTAP cluster and contract details in NetApp Console (local)
+= View ONTAP cluster and contract details in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font

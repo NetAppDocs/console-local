@@ -1,0 +1,2 @@
+ONTAP alerts generally map to the alerts available in the ONTAP Event Management System (EMS). link:https://docs.netapp.com/us-en/ontap-ems/acp-auto-events.html[Learn more about the ONTAP EMS and available alerts.]
+
