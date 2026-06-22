@@ -20,7 +20,11 @@ Use the Workload Analyzer to view a single volume's behavior over time. You can 
 
 Use the Workload Analyzer to correlate metrics from a single volume across six sections so you can identify root causes quickly. Select a volume and a time range to view events, performance, and capacity together within the same window. This view can help you determine whether storage is the likely source of an application issue or whether another layer, such as networking, is causing the problem.
 
+Review the capacity section as part of this assessment. When an ONTAP system is more than 85% full, the high utilization can itself cause performance issues, so low available capacity can explain latency that the performance charts alone don't account for.
+
 After you identify a root cause, you can act directly from the analyzer. When automated options are available, Console (local) provides Fix-It recommendations with guided steps or one-click remediation.
+
+NOTE: Workload charts for LUNs don't provide the same level of detail as the charts for volumes, so you'll see fewer statistics when you analyze a LUN.
 
 == How to access the Workload Analyzer
 

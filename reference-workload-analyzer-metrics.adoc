@@ -64,7 +64,7 @@ If the selected volume uses a QoS policy, you can use two additional reference l
 | Reference line | Description
 
 | QoS Limit Max
-| The maximum latency ceiling defined by the QoS policy. When the latency line approaches or touches this line, the workload is being throttled.
+| The maximum latency ceiling defined by the QoS policy. When the latency line approaches or touches this line, ONTAP is throttling the workload.
 
 | QoS Limit Min
 | The guaranteed minimum latency floor defined by the QoS policy. This line indicates the response time floor enforced for the workload.
@@ -111,6 +111,10 @@ Use the throughput components in the *Throughput Analysis* section after you sel
 | QoS MB/s Limit
 | Maximum throughput ceiling from the attached QoS policy. The analyzer shows this line only when the volume uses a QoS policy.
 | Horizontal reference line on the MB/s chart.
+
+| Cloud Throughput
+| Throughput in MB/s used to write data to and read data from the cloud. The analyzer shows this component only for workloads that tier capacity to the cloud through FabricPool.
+| Line on the MB/s chart.
 |===
 
 The Read, Write, and Other components sum to the total IOPS or MB/s value. Hover over the chart to see each component's value, its percentage of the total, and the average I/O size (MB/s ÷ IOPS) per category.
@@ -207,6 +211,21 @@ Use Snapshot View when you want to review snapshot-specific metrics.
 
 Hover over the chart to see the snapshot reserve size, snapshot space used and its percentage of the reserve, total snapshot count, and the age of the oldest snapshot. When snapshot consumption exceeds the reserve, snapshots begin consuming space from the volume's data area.
 
+=== Cloud Tier View
+
+Use Cloud Tier View when the volume tiers data to a cloud capacity tier through FabricPool and you want to compare local and cloud usage.
+
+[cols="25,75",options="header"]
+|===
+| Metric | Description
+
+| Performance tier capacity
+| Amount of volume capacity stored on the local performance tier.
+
+| Cloud tier capacity
+| Amount of volume capacity tiered to the cloud capacity tier.
+|===
+
 == Forecast behavior
 
 Use the *Show Forecast* toggle in any analysis section when you want to project future values beyond the current time based on the observed trend. The following behaviors apply across all sections:
@@ -226,6 +245,9 @@ Use the *Show Forecast* toggle in any analysis section when you want to project 
 
 | Trend basis
 | The projection uses the rate of change from the most recent portion of the selected time range. High volatility in recent data reduces forecast confidence.
+
+| Minimum data required
+| Capacity forecasting requires at least 10 days of historical data. When fewer than 30 days of capacity remain before the volume is full, the analyzer identifies the storage as almost full.
 |===
 
 == Related information

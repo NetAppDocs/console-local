@@ -52,6 +52,8 @@ The analyzer plots configuration change events (wrench icon) and alert events (w
 * High *Data Processing* latency may indicate that inline efficiency settings are consuming more CPU than the workload can tolerate. Consider adjusting efficiency settings or QoS.
 * High *Cloud Latency* may indicate the workload is frequently accessing cold data on the capacity tier. Consider adjusting the tiering policy.
 
+. If the delay centers don't account for the slowdown, check the *Capacity Analysis* section. When the ONTAP system is more than 85% full, the high utilization can cause performance issues regardless of the delay center breakdown.
+
 . If latency increased immediately after a change event, use the event details and the related charts together to validate the likely cause:
 +
 * For QoS changes, compare the latency line to the QoS limit lines and review the throughput charts to see whether demand is meeting a policy ceiling.
