@@ -4,7 +4,7 @@ permalink: concept-workload-analyzer.html
 keywords: workload analyzer, volume analysis, latency, throughput, capacity, performance, netapp console
 summary: "Learn how the Workload Analyzer helps you investigate volume-level performance, capacity, and data protection issues."
 ---
-= Learn about NetApp Console (local) Workload Analyzer
+= Learn about NetApp Console (local deployment) Workload Analyzer
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -20,16 +20,20 @@ Use the Workload Analyzer to view a single volume's behavior over time. You can 
 
 Use the Workload Analyzer to correlate metrics from a single volume across six sections so you can identify root causes quickly. Select a volume and a time range to view events, performance, and capacity together within the same window. This view can help you determine whether storage is the likely source of an application issue or whether another layer, such as networking, is causing the problem.
 
-After you identify a root cause, you can act directly from the analyzer. When automated options are available, Console (local) provides Fix-It recommendations with guided steps or one-click remediation.
+Review the capacity section as part of this assessment. When an ONTAP system is more than 85% full, the high utilization can itself cause performance issues, so low available capacity can explain latency that the performance charts alone don't account for.
+
+After you identify a root cause, you can act directly from the analyzer. When automated options are available, Console (local deployment) provides Fix-It recommendations with guided steps or one-click remediation.
+
+NOTE: Workload charts for LUNs don't provide the same level of detail as the charts for volumes, so you'll see fewer statistics when you analyze a LUN.
 
 == How to access the Workload Analyzer
 
 You can open the Workload Analyzer in several ways:
 
-* *From the storage inventory*: Select a volume and click *Analyze*. The analyzer opens with the volume pre-filled and a default time range of the last two hours.
-* *From a volume detail page*: Click *Analyze* to open the analyzer pre-filled with the current volume and a default time range of the last two hours.
-* *From an alert detail page*: Click *Investigate with Analyzer*. The analyzer pre-fills the affected volume and shows the last 10 days of data by default, so you start your investigation in context without adjusting any settings.
-* *From the menu*: Navigate directly to the Workload Analyzer, search for a volume, set a time range, and click *Analyze*.
+* *From the storage inventory*: Select a volume and select *Analyze*. The analyzer opens with the volume pre-filled and a default time range of the last two hours.
+* *From a volume detail page*: Select *Analyze* to open the analyzer pre-filled with the current volume and a default time range of the last two hours.
+* *From an alert detail page*: Select *Investigate with Analyzer*. The analyzer pre-fills the affected volume and shows the last 10 days of data by default, so you start your investigation in context without adjusting any settings.
+* *From the menu*: Navigate directly to the Workload Analyzer, search for a volume, set a time range, and select *Analyze*.
 * *From other inventory views*: You can also start analysis from supported workload inventory pages, including LUN, NFS share, SMB/CIFS share, and related workload views.
 * *From the Virtual Machines page*: Select a datastore object and start workload analysis directly from that object.
 
@@ -61,17 +65,19 @@ Use the forecast toggle in each analysis section to extend the chart timeline be
 
 == Recommended investigation flow
 
-Use the four Workload Analyzer pages together:
+Use the Workload Analyzer pages together:
 
 * Start with this page to understand the analyzer entry points, sections, and overall investigation model.
 * Use the latency investigation page when an alert, application complaint, or event timeline suggests a performance slowdown.
 * Use the throughput investigation page when you need to understand demand patterns, QoS limit behavior, or read and write mix.
+* Use the capacity investigation page when a volume is filling up or snapshot copies are consuming more space than expected.
 * Use the metrics reference to interpret QoS limits, resource utilization, capacity trends, snapshot reserve behavior, and forecast details while you investigate.
 
 == Related information
 
 * link:task-analyzer-volume-latency-investigate.html[Investigate high latency on a volume]
 * link:task-analyzer-volume-throughput-investigate.html[Investigate high throughput demand on a volume]
+* link:task-analyzer-volume-capacity-investigate.html[Investigate capacity growth on a volume]
 * link:reference-workload-analyzer-metrics.html[Workload Analyzer metrics reference]
 * link:task-fleet-health-monitor.html[Monitor fleet health]
 * link:task-remediation-guided.html[Remediate with guided steps]

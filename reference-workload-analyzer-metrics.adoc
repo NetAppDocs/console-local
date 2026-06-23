@@ -4,7 +4,7 @@ permalink: reference-workload-analyzer-metrics.html
 keywords: workload analyzer, latency, delay center, throughput, IOPS, resource utilization, capacity, metrics, netapp console
 summary: "Reference for all metrics available in the Workload Analyzer, organized by analysis section."
 ---
-= Workload Analyzer metrics in NetApp Console (local)
+= Workload Analyzer metrics in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -17,6 +17,8 @@ Use this page to understand the metrics that the Workload Analyzer shows across 
 == Latency delay centers
 
 Use the delay centers in the *Latency Analysis* section after you select *By Contribution* from the View dropdown. Each delay center represents a distinct phase of the I/O path. Use these metrics to identify which part of the stack contributes most to response time.
+
+A delay center contributes the most latency when the resource it represents is in contention. When a resource is in contention, it can't keep up with demand, so the workloads that share it wait longer for I/O and experience higher latency. To bring a resource out of contention, reduce its load—for example, move workloads to a less busy node or aggregate, or adjust a QoS limit—so that response times return to normal.
 
 [cols="20,40,40",options="header"]
 |===
@@ -64,10 +66,10 @@ If the selected volume uses a QoS policy, you can use two additional reference l
 | Reference line | Description
 
 | QoS Limit Max
-| The maximum latency ceiling defined by the QoS policy. When the latency line approaches or touches this line, the workload is being throttled.
+| The maximum latency ceiling defined by the QoS policy. When the latency line approaches or touches this line, ONTAP is throttling the workload, and the QoS limit—rather than a physical resource—is the dominant source of latency.
 
 | QoS Limit Min
-| The guaranteed minimum latency floor defined by the QoS policy. This line indicates the response time floor enforced for the workload.
+| The guaranteed minimum latency floor defined by the QoS policy. This line indicates the response time floor enforced for the workload. When other workloads use QoS minimums to guarantee their throughput, this workload can be throttled and show higher latency.
 |===
 
 These horizontal lines do not appear in the delay center breakdown on hover. They serve as reference thresholds, not as contributors to latency.
@@ -111,6 +113,10 @@ Use the throughput components in the *Throughput Analysis* section after you sel
 | QoS MB/s Limit
 | Maximum throughput ceiling from the attached QoS policy. The analyzer shows this line only when the volume uses a QoS policy.
 | Horizontal reference line on the MB/s chart.
+
+| Cloud Throughput
+| Throughput in MB/s used to write data to and read data from the cloud. The analyzer shows this component only for workloads that tier capacity to the cloud through FabricPool.
+| Line on the MB/s chart.
 |===
 
 The Read, Write, and Other components sum to the total IOPS or MB/s value. Hover over the chart to see each component's value, its percentage of the total, and the average I/O size (MB/s ÷ IOPS) per category.
@@ -207,6 +213,21 @@ Use Snapshot View when you want to review snapshot-specific metrics.
 
 Hover over the chart to see the snapshot reserve size, snapshot space used and its percentage of the reserve, total snapshot count, and the age of the oldest snapshot. When snapshot consumption exceeds the reserve, snapshots begin consuming space from the volume's data area.
 
+=== Cloud Tier View
+
+Use Cloud Tier View when the volume tiers data to a cloud capacity tier through FabricPool and you want to compare local and cloud usage.
+
+[cols="25,75",options="header"]
+|===
+| Metric | Description
+
+| Performance tier capacity
+| Amount of volume capacity stored on the local performance tier.
+
+| Cloud tier capacity
+| Amount of volume capacity tiered to the cloud capacity tier.
+|===
+
 == Forecast behavior
 
 Use the *Show Forecast* toggle in any analysis section when you want to project future values beyond the current time based on the observed trend. The following behaviors apply across all sections:
@@ -226,10 +247,14 @@ Use the *Show Forecast* toggle in any analysis section when you want to project 
 
 | Trend basis
 | The projection uses the rate of change from the most recent portion of the selected time range. High volatility in recent data reduces forecast confidence.
+
+// ENGINEERING REVIEW: Confirm the capacity forecast minimum-data requirement and the "almost full" threshold for Console (local). The following values are carried over from Active IQ Unified Manager and may differ.
+| Minimum data required
+| Capacity forecasting requires at least 10 days of historical data. When fewer than 30 days of capacity remain before the volume is full, the analyzer identifies the storage as almost full.
 |===
 
 == Related information
 
-* link:concept-workload-analyzer.html[Learn about NetApp Console (local) Workload Analyzer]
+* link:concept-workload-analyzer.html[Learn about NetApp Console (local deployment) Workload Analyzer]
 * link:task-analyzer-volume-latency-investigate.html[Investigate high latency on a volume]
 * link:task-analyzer-volume-throughput-investigate.html[Investigate high throughput demand on a volume]

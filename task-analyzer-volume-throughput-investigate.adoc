@@ -4,7 +4,7 @@ permalink: task-analyzer-volume-throughput-investigate.html
 keywords: throughput, IOPS, MBs, read write, workload demand, workload analyzer, netapp console local
 summary: "Investigate high throughput demand on a volume using the Workload Analyzer to understand IOPS and MB/s patterns and identify read/write imbalances."
 ---
-= Investigate high throughput on a volume in NetApp Console (local)
+= Investigate high throughput on a volume in NetApp Console (local deployment>
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,18 +16,18 @@ When a volume's workload is consuming more IOPS or throughput than expected, use
 
 == Before you begin
 
-* Ensure NetApp Console (local) has already discovered the volume you want to investigate.
+* Ensure NetApp Console (local deployment) has already discovered the volume you want to investigate.
 * Identify the approximate time window when the demand spike occurred so you can select the right analysis range.
 
 .Steps
 
-. In the NetApp Console (local), navigate to *Workload Analyzer*.
+. In the NetApp Console (local deployment), navigate to *Workload Analyzer*.
 +
-Alternatively, from the storage inventory, select a volume and click *Analyze*.
+Alternatively, from the storage inventory, select a volume and select *Analyze*.
 
 . In the *Volume* field, search for and select the volume you want to investigate.
 
-. Set the *Time Range* to cover the period of high demand, then click *Analyze*.
+. Set the *Time Range* to cover the period of high demand, then select *Analyze*.
 
 . Scroll to the *Throughput Analysis* section.
 
@@ -41,6 +41,7 @@ The charts split into read, write, and other components for both IOPS and MB/s. 
 * *Read MB/s* and *Write MB/s* — throughput in megabytes per second by I/O direction
 * *Other IOPS* and *Other MB/s* — metadata and other non-data operations
 * *QoS IOPS Limit* and *QoS MB/s Limit* — policy ceilings that appear only when the volume uses a QoS policy
+* *Cloud Throughput* — MB/s written to and read from the cloud, shown only for workloads that tier capacity to the cloud through FabricPool
 
 . Hover over a peak in the chart to see the exact value and percentage breakdown for each component at that point in time.
 +
@@ -48,7 +49,7 @@ The hover tooltip also shows the average I/O size (throughput divided by IOPS) f
 
 . Enable *Show Forecast* to project whether current throughput trends will reach the QoS IOPS or MB/s limit.
 +
-If the forecast line is approaching a QoS limit line, the workload may be throttled in the near future.
+If the forecast line is approaching a QoS limit line, ONTAP might throttle the workload soon.
 
 . If you want to see aggregate demand without the breakdown, open the *View* dropdown and select *Totals*.
 +

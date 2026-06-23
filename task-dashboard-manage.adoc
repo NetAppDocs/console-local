@@ -1,0 +1,58 @@
+---
+sidebar: sidebar
+permalink: task-dashboard-manage.html
+keywords: manage dashboard, edit dashboard, clone dashboard, delete dashboard, netapp console local
+summary: "Manage custom dashboards in NetApp Console (local deployment) by editing, cloning, and deleting them as your monitoring needs change."
+---
+= Manage custom dashboards in NetApp Console (local deployment)
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
+
+Manage your custom dashboards in the NetApp Console (local deployment) to keep them aligned with your monitoring needs. You can edit a dashboard's contents, clone an existing dashboard as a starting point, and delete dashboards you no longer use.
+
+.Required role
+
+
+== Edit a dashboard
+
+.Steps
+
+. Select *Storage > Dashboards*.
+
+. Open the dashboard you want to edit.
+
+. Modify the dashboard as needed:
++
+* Update the name or description.
+* Add, remove, or reorder cards.
+* Drag cards to new positions or resize them on the grid.
+
+. Select *Save*.
+
+== Clone a dashboard
+
+.Steps
+
+. Select *Storage > Dashboards*.
+
+. For the dashboard you want to duplicate, select *Clone*.
++
+The Console (local deployment) creates a copy that includes all of the original dashboard's cards.
+
+. Edit the cloned dashboard as needed, then save it.
+
+== Delete a dashboard
+
+.Steps
+
+. Select *Storage > Dashboards*.
+
+. For the dashboard you want to remove, select *Delete*.
+
+. Confirm the deletion.

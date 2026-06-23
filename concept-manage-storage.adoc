@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-manage-storage.html
 keywords: storage management, storage classes, provisioning, storage class policies, netapp console local
-summary: "Learn about managing storage in NetApp Console (local), including storage classes, policies, and provisioning methods."
+summary: "Learn about managing storage in NetApp Console (local deployment), including storage classes, policies, and provisioning methods."
 ---
 = Understanding storage management in NetApp Console (local)
 :hardbreaks:
@@ -45,13 +45,13 @@ Using storage classes and policies helps you:
 
 == Choose how you want to provision
 
-NetApp Console (local) supports multiple provisioning workflows so you can match your operational model while still enforcing storage class standards.
+NetApp Console (local deployment) supports multiple provisioning workflows so you can match your operational model while still enforcing storage class standards.
 
 * *Manual provisioning* — You choose the target system and configuration details. Use when you need explicit control over system selection and configuration details.
-link:task-provisioning-manual.html[Provision storage manually in NetApp Console (local)]
+link:task-provisioning-manual.html[Provision storage manually in NetApp Console (local deployment)]
 
-* *Automated provisioning* — You provide workload inputs and (optionally) a storage class. NetApp Console (local) recommends best-fit placement and applies class-driven settings to reduce manual decisions and drift risk.
-link:task-provisioning-automated.html[Provision storage automatically in NetApp Console (local)]
+* *Automated provisioning* — You provide workload inputs and (optionally) a storage class. NetApp Console (local deployment) recommends best-fit placement and applies class-driven settings to reduce manual decisions and drift risk.
+link:task-provisioning-automated.html[Provision storage automatically in NetApp Console (local deployment)]
 
-* *AI-assisted (agentic) provisioning* — You describe what you need in natural language. NetApp Console (local) proposes a plan constrained by RBAC and storage classes, then provisions only after you review and approve the plan.
-link:task-provisioning-agentic.html[Provision storage with agentic workflows in NetApp Console (local)]
+* *AI-assisted (agentic) provisioning* — You describe what you need in natural language. NetApp Console (local deployment) proposes a plan constrained by RBAC and storage classes, then provisions only after you review and approve the plan.
+link:task-provisioning-agentic.html[Provision storage with agentic workflows in NetApp Console (local deployment)]

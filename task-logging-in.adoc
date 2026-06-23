@@ -5,7 +5,7 @@ keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud c
 summary: After you sign up to the NetApp Console, you can log in from the web-based console to start managing your data and storage infrastructure.
 ---
 
-= Log in to NetApp Console (local)
+= Log in to NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -20,7 +20,7 @@ After you sign up, your Console organization administrator must add your user ac
 
 .Steps
 
-. Open a web browser and go to the IP address where the Console (local) is installed.
+. Open a web browser and go to the IP address where the Console (local deployment) is installed.
 
 . On the *Log in* page, enter the email address that's associated with your login.
 

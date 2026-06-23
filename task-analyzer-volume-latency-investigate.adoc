@@ -4,7 +4,7 @@ permalink: task-analyzer-volume-latency-investigate.html
 keywords: latency, slow performance, delay center, workload analyzer, investigate, netapp console
 summary: "Investigate latency on a volume using the Workload Analyzer to identify which part of the I/O path is causing slow response times."
 ---
-= Investigate high latency on a volume in NetApp Console (local)
+= Investigate high latency on a volume in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,18 +16,18 @@ When application performance degrades, use the Workload Analyzer to identify whi
 
 == Before you begin
 
-* Ensure NetApp Console (local) has already discovered the volume you want to investigate.
+* Ensure NetApp Console (local deployment) has already discovered the volume you want to investigate.
 * Identify the approximate time window when the issue occurred so you can select the right analysis range.
 
 .Steps
 
-. In the NetApp Console (local), navigate to *Workload Analyzer*.
+. In the NetApp Console (local deployment), navigate to *Workload Analyzer*.
 +
-Alternatively, from the storage inventory, select a volume and click *Analyze*.
+Alternatively, from the storage inventory, select a volume and select *Analyze*.
 
 . In the *Volume* field, search for and select the volume you want to investigate.
 
-. Set the *Time Range* to cover the period when the performance issue occurred, then click *Analyze*.
+. Set the *Time Range* to cover the period when the performance issue occurred, then select *Analyze*.
 
 . Review the *Event Timeline* section for configuration changes or alerts that correlate with the time when latency increased.
 +
@@ -44,6 +44,8 @@ The analyzer plots configuration change events (wrench icon) and alert events (w
 * *Cloud Latency* — retrieval from a cloud capacity tier via FabricPool
 
 . Hover over a point on the chart where latency is highest to see each delay center's value and its percentage of total latency.
++
+The delay center with the highest contribution usually points to a resource that is in contention. When a shared resource can't keep up with demand, the volumes that use it wait longer for I/O. Reducing the load on that resource, such as moving workloads or adjusting a QoS limit, typically lowers latency.
 
 . Identify the dominant contributor and use the value to determine next steps:
 +
@@ -51,6 +53,8 @@ The analyzer plots configuration change events (wrench icon) and alert events (w
 * High *Network* latency may indicate NIC saturation or network path issues outside the cluster.
 * High *Data Processing* latency may indicate that inline efficiency settings are consuming more CPU than the workload can tolerate. Consider adjusting efficiency settings or QoS.
 * High *Cloud Latency* may indicate the workload is frequently accessing cold data on the capacity tier. Consider adjusting the tiering policy.
+
+. If the delay centers don't account for the slowdown, check the *Capacity Analysis* section. When the ONTAP system is more than 85% full, the high utilization can cause performance issues regardless of the delay center breakdown.
 
 . If latency increased immediately after a change event, use the event details and the related charts together to validate the likely cause:
 +
@@ -60,4 +64,4 @@ The analyzer plots configuration change events (wrench icon) and alert events (w
 
 .After you finish
 
-If a configuration or placement issue caused the problem and Console (local) can resolve it, the alert associated with the volume may offer a Fix-It option. See link:task-remediation-guided.html[Remediate with guided steps]. Refer to link:reference-workload-analyzer-metrics.html[Workload Analyzer metrics reference] if you need detailed descriptions of QoS limit lines, resource utilization indicators, or forecast behavior while you investigate.
+If a configuration or placement issue caused the problem and Console (local deployment) can resolve it, the alert associated with the volume may offer a Fix-It option. See link:task-remediation-guided.html[Remediate with guided steps]. Refer to link:reference-workload-analyzer-metrics.html[Workload Analyzer metrics reference] if you need detailed descriptions of QoS limit lines, resource utilization indicators, or forecast behavior while you investigate.

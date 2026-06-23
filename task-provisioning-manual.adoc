@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-provisioning-manual.html
 keywords: manual provisioning, provision storage, create volume, netapp console
-summary: "Manually provision storage resources using NetApp Console (local)."
+summary: "Manually provision storage resources using NetApp Console (local deployment)."
 ---
-= Provision storage manually in NetApp Console (local)
+= Provision storage manually in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -22,7 +22,7 @@ You must have a role that allows provisioning in the target fleet (for example, 
 
 == Before you begin
 
-- Ensure the target ONTAP cluster is discovered in Console (local).
+- Ensure the target ONTAP cluster is discovered in Console (local deployment).
 - Ensure you have credentials and access to the fleet that contains the target system.
 - If you intend to use a storage class, ensure the class exists and is associated with the fleet.
 

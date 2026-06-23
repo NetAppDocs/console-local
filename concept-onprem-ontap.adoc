@@ -5,7 +5,7 @@ keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onpr
 summary: You can manage the ONTAP clusters running on AFF/FAS controllers and ONTAP Select from the NetApp Console. Adding on-premises ONTAP systems to the NetApp Console enables you to manage all of your storage and data assets from a single interface.
 ---
 
-= Learn about on-premises ONTAP cluster management in NetApp Console (local)
+= Learn about on-premises ONTAP cluster management in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,25 +13,25 @@ summary: You can manage the ONTAP clusters running on AFF/FAS controllers and ON
 :imagesdir: ./media/
 
 [.lead]
-You can manage the ONTAP clusters running on AFF/FAS controllers and ONTAP Select from NetApp Console (local). Adding on-premises ONTAP systems to the Console (local) enables you to centrally manage all of your storage and data assets.
+You can manage the ONTAP clusters running on AFF/FAS controllers and ONTAP Select from NetApp Console (local deployment). Adding on-premises ONTAP systems to the Console (local deployment) enables you to centrally manage all of your storage and data assets.
 
 == NetApp Console
  
-NetApp Console (local) provides centralized management of NetApp storage and data services across on-premises and cloud environments at enterprise grade. The Console (local) is required to access and use NetApp data services. As a management interface, it enables you to manage many storage resources from one interface. Console (local) administrators can control access to storage and services for all systems within the enterprise.
+NetApp Console (local deployment) provides centralized management of NetApp storage and data services across on-premises and cloud environments at enterprise grade. The Console (local deployment) is required to access and use NetApp data services. As a management interface, it enables you to manage many storage resources from one interface. Console (local deployment) administrators can control access to storage and services for all systems within the enterprise.
  
-You don’t need a license or subscription to start using NetApp Console (local). However, some NetApp data services accessible from the Console (local) are licensed or subscription-based.
+You don’t need a license or subscription to start using NetApp Console (local deployment). However, some NetApp data services accessible from the Console (local deployment) are licensed or subscription-based.
  
-Learn more about the https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html[NetApp Console (local)].
+Learn more about the https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html[NetApp Console (local deployment)].
 
 
 
 == Features
 
 * Manage NFS and CIFS volumes
-* Access ONTAP System Manager for any managed cluster through the Console (local)
+* Access ONTAP System Manager for any managed cluster through the Console (local deployment)
 * Get health and performance observability with analysis and control
 * Use data services to replicate, back up, scan, classify, and tier data
-* View hardware and software contract status information in the Console (local)
+* View hardware and software contract status information in the Console (local deployment)
 
 == Cost
 

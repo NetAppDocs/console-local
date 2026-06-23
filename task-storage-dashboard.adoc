@@ -5,7 +5,7 @@ keywords:  bluexp, dashboard, console, home page
 summary: Within the NetApp Console, you can view metrics on the Home page. 
 ---
 
-= View Home page metrics in NetApp Console (local)
+= View Home page metrics in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -15,7 +15,7 @@ summary: Within the NetApp Console, you can view metrics on the Home page.
 [.lead]
 // Jira: PSPM-3769 for full GA, not July
 
-Monitoring the health of your storage estate ensures that you are aware of issues with storage protection and can take steps to resolve them. Using the NetApp Console (local) Home page, view a status of your backups and restores from NetApp Backup and Recovery and the number of workloads that are at risk for a ransomware attack or protected as indicated by NetApp Ransomware Resilience. You can review the storage capacity for individual clusters and Cloud Volumes ONTAP, ONTAP alerts, storage performance capacity per cluster or Cloud Volumes ONTAP system, the different types of licenses you have, and more.
+Monitoring the health of your storage estate ensures that you are aware of issues with storage protection and can take steps to resolve them. Using the NetApp Console (local deployment) Home page, view a status of your backups and restores from NetApp Backup and Recovery and the number of workloads that are at risk for a ransomware attack or protected as indicated by NetApp Ransomware Resilience. You can review the storage capacity for individual clusters and Cloud Volumes ONTAP, ONTAP alerts, storage performance capacity per cluster or Cloud Volumes ONTAP system, the different types of licenses you have, and more.
 
 All panes on the Home page show data at the organization level. The Storage capacity and Storage performance panes show systems associated with fleets that the user can access based on IAM permissions.
 
@@ -23,7 +23,7 @@ The system refreshes the data on the Home page every five minutes. Caching may c
 
 NOTE: Accurate metrics on the Home page require appropriately sized and configured Console agents.
 
-== Required NetApp Console (local) roles
+== Required NetApp Console (local deployment) roles
 
 Each pane in the Home page requires different user roles: 
 
@@ -36,7 +36,7 @@ Each pane in the Home page requires different user roles:
 If you do not have permissions to access a pane, the pane displays a message indicating you lack permissions to use it.
 
 
-link:reference-iam-predefined-roles.html[Learn about NetApp Console (local) access roles.]. 
+link:reference-iam-predefined-roles.html[Learn about NetApp Console (local deployment) access roles.]. 
 
 .Steps
 
@@ -44,16 +44,16 @@ link:reference-iam-predefined-roles.html[Learn about NetApp Console (local) acce
 +
 If you have the Organization admin or Super admin role and haven't yet added any storage systems, the Home page displays getting started information.
 +
-image:screenshot-home-greenfield.png[NetApp Console (local) Home page welcoming new users]
+image:screenshot-home-greenfield.png[NetApp Console (local deployment) Home page welcoming new users]
 + 
-If you already set up the NetApp Console (local), and added at least one ONTAP cluster, the Home page shows metrics about your storage environment.
+If you already set up the NetApp Console (local deployment), and added at least one ONTAP cluster, the Home page shows metrics about your storage environment.
 +
-image:screenshot-home-metrics.png[NetApp Console (local) Home page showing metrics]
+image:screenshot-home-metrics.png[NetApp Console (local deployment) Home page showing metrics]
 
    
 == Enable metrics to appear on the Home page    
 
-You can see metrics on the Home page when you belong to an organization with existing storage resources that have been added to Console (local).
+You can see metrics on the Home page when you belong to an organization with existing storage resources that have been added to Console (local deployment).
 
 
 == View the overall storage capacity

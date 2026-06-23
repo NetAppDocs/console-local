@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: concept-secure-access.html
 keywords: security, access control, SSO, MFA, AD, Active Directory, directory services, authentication, identity, netapp console local
-summary: "Learn about the security options available in NetApp Console (local), including Active Directory integration, single sign-on, and multi-factor authentication."
+summary: "Learn about the security options available in NetApp Console (local deployment), including Active Directory integration, single sign-on, and multi-factor authentication."
 ---
-= Learn about secure access to NetApp Console (local)
+= Learn about secure access to NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,36 +12,36 @@ summary: "Learn about the security options available in NetApp Console (local), 
 :imagesdir: ./media/
 
 [.lead]
-NetApp Console (local) provides multiple layers of security to protect your storage management environment and control who can access it.
+NetApp Console (local deployment) provides multiple layers of security to protect your storage management environment and control who can access it.
 
 == Active Directory integration
 
-Connect NetApp Console (local) to your Active Directory so users can sign in with their existing corporate credentials. This eliminates the need for separate passwords in Console (local) and supports directory-backed sign-in for the users that you add to your organization.
+Connect NetApp Console (local deployment) to your Active Directory so users can sign in with their existing corporate credentials. This eliminates the need for separate passwords in Console (local deployment) and supports directory-backed sign-in for the users that you add to your organization.
 
-link:task-iam-active-directory-integrate.html[Integrate Active Directory with NetApp Console (local)]
+link:task-iam-active-directory-integrate.html[Integrate Active Directory with NetApp Console (local deployment)]
 
 
 == Multi-factor authentication
 
 Users who aren't a part of your organization's single sign-on (SSO) setup can enable multi-factor authentication (MFA) for an additional layer of verification to prevent unauthorized access, even if credentials are compromised.
 
-link:task-user-settings.html[Enable MFA for NetApp Console (local)]
+link:task-user-settings.html[Enable MFA for NetApp Console (local deployment)]
 
 == Access control
 
-After authenticating users, control and monitor what they can do inside NetApp Console (local).
+After authenticating users, control and monitor what they can do inside NetApp Console (local deployment).
 
 == Identity and access management
 
 Use role-based access control to define what each member can see and manage. Assign members to specific fleets so they access only the storage resources relevant to their responsibilities.
 
-* link:concept-identity-and-access-management.html[Learn about NetApp Console (local) identity and access management]
-* link:concept-iam-rbac.html[Learn about NetApp Console (local) role-based access control]
-* link:task-iam-manage-members-permissions.html[Add members and assign roles in NetApp Console (local)]
-* link:task-iam-users-fleets-assign.html[Manage fleet access assignments in NetApp Console (local)]
+* link:concept-identity-and-access-management.html[Learn about NetApp Console (local deployment) identity and access management]
+* link:concept-iam-rbac.html[Learn about NetApp Console (local deployment) role-based access control]
+* link:task-iam-manage-members-permissions.html[Add members and assign roles in NetApp Console (local deployment)]
+* link:task-iam-users-fleets-assign.html[Manage fleet access assignments in NetApp Console (local deployment)]
 
 == Audit logging
 
-Track all user activity in NetApp Console (local) for compliance and security investigations.
+Track all user activity in NetApp Console (local deployment) for compliance and security investigations.
 
-link:task-audit-console-activity.html[View audit logs for NetApp Console (local)]
+link:task-audit-console-activity.html[View audit logs for NetApp Console (local deployment)]
