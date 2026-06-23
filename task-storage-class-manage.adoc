@@ -4,7 +4,7 @@ permalink: task-storage-class-manage.html
 keywords: create storage class, storage class, define, policy, netapp console
 summary: "Create a storage class in NetApp Console (local) to standardize storage provisioning."
 ---
-= Create a storage class in NetApp Console (local)
+= Creating storage classes in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
