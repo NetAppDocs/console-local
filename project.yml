@@ -38,6 +38,8 @@ sidebar:
         url: /faq-netapp-console-local.html
     - title: Install and setup
       entries:
+      - title: Quick start for setting up NetApp Console (local deployment)
+        url: /task-quick-start-console-setup.html
       - title: Install NetApp Console (local deployment)
         entries:
         - title: Installation workflow for NetApp Console (local deployment)
