@@ -100,7 +100,7 @@ sidebar:
         url: /task-iam-switch-fleets.html
       - title: Manage your NetApp Console user settings
         url: /task-user-settings.html
-      - title: Standardizing and managing storage
+      - title: Managing storage in NetApp Console (local)
         entries:
         - title: Understanding storage management
           url: /concept-manage-storage.html
@@ -124,7 +124,7 @@ sidebar:
             url: /task-provisioning-automated.html
           - title: Provisioning storage with agentic workflows
             url: /task-provisioning-agentic.html
-        - title: Monitoring and alerting
+        - title: Monitoring storage health
           entries:
           - title: Monitoring storage health
             url: /concept-monitor-storage.html

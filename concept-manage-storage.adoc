@@ -36,12 +36,12 @@ Using storage classes and policies helps you:
 
 == Typical workflow
 
-1. Discover storage systems into the correct fleet or fleets.
+1. An Organization admin discovers storage systems into the correct fleet or fleets.
 2. Define storage class policies that represent your standards.
 3. Create storage classes by combining policies into workload templates.
 4. Associate storage classes with the fleets where they apply.
-5. Provision volume or LUNs using the method that matches your operational model.
-6. Operate day-2 with monitoring, alerting, drift detection, and remediation.
+5. Provision volumes or LUNs using the method that matches your operational model.
+6. Monitor storage, manage alerts, detect drift, and remediate issues to keep workloads aligned with storage standards.
 
 == Choose how you want to provision
 
