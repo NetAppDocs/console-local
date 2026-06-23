@@ -32,7 +32,8 @@ When you configure an email server, Console (local) can send notifications, aler
 
 .Steps
 . Select *Administration > Console*.
-. Select *Configuration* to open the Systems configuration page.
+. Select *Configuration* to open the System configurations page.
+// The System configurations page is open by default as there is only the one option in the left menu: Configuration. Same comment for all other references below.
 . In the *Email server* section, select *Configure*.
 . Enter the connection details for your email server:
 +
@@ -49,7 +50,8 @@ You can update an existing email server configuration if you want to use a diffe
 
 .Steps
 . Select *Administration > Console*.
-. Select *Configuration* to open the Systems configuration page.
+. Select *Configuration* to open the System configurations page.
+// The System configurations page is open by default as there is only the one option in the left menu: Configuration.
 . In the *Email server* section, select *Configure*.
 . Select *Clear fields* to clear the existing configuration.
 . Enter the new connection details for your email server.
@@ -84,13 +86,14 @@ Before you create the webhook, ensure the following are in place:
 
 .Steps
 . Select *Administration > Console*.
-. Select *Configuration* to open the Systems configuration page.
+. Select *Configuration* to open the System configurations page.
 . In the *Webhook integration* section, select *Configure*.
 . Enter the required details for the webhook:
 +
 * A descriptive name for the webhook.
-* The Endpoint URL provided by the receiving application.
+* The endpoint URL provided by the receiving application.
 * Any required headers or secrets (authentication credentials).
-* The format to use when sending the webhook. JSON and OTEL (OpenTelemetry) are supported.
+* The format to use when sending the webhook. JSON and OpenTelemetry (OTEL) are supported.
 . Test the webhook connection to ensure that Console (local) can successfully send messages to the receiving application.
+. Select *Test webhook* to send a test webhook to the receiving application.
 . After the test succeeds, select *Save* to create the webhook.

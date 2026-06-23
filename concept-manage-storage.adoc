@@ -4,7 +4,7 @@ permalink: concept-manage-storage.html
 keywords: storage management, storage classes, provisioning, storage class policies, netapp console local
 summary: "Learn about managing storage in NetApp Console (local), including storage classes, policies, and provisioning methods."
 ---
-= Storage management in NetApp Console (local)
+= Understanding storage management in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,35 +14,33 @@ summary: "Learn about managing storage in NetApp Console (local), including stor
 [.lead]
 // Jira: SPSPM-3309
 
-NetApp Console (local) helps you run storage with consistent standards at scale. Instead of making one-off decisions for every volume or LUN, you define approved storage behavior once and apply it repeatedly across fleets—whether you provision manually, through automated placement, or with AI-assisted plan-and-approve workflows.
+NetApp Console (local) helps you manage ONTAP storage at scale using consistent, reusable standards. Instead of making one-off decisions for every volume or LUN, you define approved behavior once and apply it across fleets—whether you provision manually, use automated placement, or use AI-assisted plan-and-approve workflows.
 
-This section helps you understand storage management in NetApp Console (local), including how to define storage standards, apply them during provisioning, and choose the right provisioning method for your environment.
+== How storage management works
 
-== How storage management works in NetApp Console (local)
+NetApp Console (local) connects four concepts into one workflow:
 
-NetApp Console (local) connects four ideas into one workflow:
+. *Fleets* define the scope where you manage storage. A fleet groups systems so you can control access, apply standards consistently, and manage resources as a unit.
+. *Storage class policies* define standards as reusable building blocks (performance, capacity, security, data protection).
+. *Storage classes* express workload intent. A storage class is a named template assembled from one ore more policies.
+. *Provisioning workflows* create storage within guardrails. Different workflows make configuration decisions differently, but all can enforce storage classes and remain governed by RBAC and audit logging.
 
-. *Fleets* define where you manage storage. A fleet groups storage systems so you can scope access, apply standards consistently, and manage resources as a unit.
-. *Storage class policies* define your standards. Policies are reusable building blocks that standardize specific dimensions of storage behavior, such as performance targets, capacity behavior, security requirements, and data protection schedules.
-. *Storage classes* define workload intent. A storage class is a named template assembled from policies. It represents the desired behavior for workloads provisioned in the fleet.
-. *Provisioning workflows* create storage within guardrails. Provisioning methods differ in how placement and configuration choices are made, but each method can apply storage class standards and remains governed by RBAC and audit logging.
-
-== What you get from a standards-based approach
+== Why a standards-based approach helps
 
 Using storage classes and policies helps you:
 
-. *Reduce decision fatigue*: Operators provision storage by selecting an approved class instead of configuring many individual parameters.
-. *Improve consistency*: Workloads start with the same baseline settings across fleets and teams.
-. *Scale operations safely*: Standard definitions can be applied by junior admins, runbooks, automation, or AI-assisted workflows without losing governance.
-. *Enable governance and drift detection*: When workloads are provisioned with a class, NetApp Console (local) can monitor for drift and surface remediation options when behavior falls outside the class.
+. *Reduce decision fatigue*: provision by selecting an approved class instead of tuning many parameters.
+. *Increase consistency*: new workloads start from the same baseline across teams and fleets.
+. *Scale safely*: standards can be applied via runbooks, automation, or AI-assisted workflows without losing governance.
+. *Detect and remediate drift*: workloads can be monitored against class expectations and corrected when they fall out of compliance.
 
 == Typical workflow
 
 1. Discover storage systems into the correct fleet or fleets.
-2. Define storage class policies that represent your organization's standards.
-3. Assemble storage classes by combining policies into templates that match workload categories.
-4. Associate storage classes with fleets where those standards should apply.
-5. Provision volumes or LUNs using the provisioning method that matches your operational model.
+2. Define storage class policies that represent your standards.
+3. Create storage classes by combining policies into workload templates.
+4. Associate storage classes with the fleets where they apply.
+5. Provision volume or LUNs using the method that matches your operational model.
 6. Operate day-2 with monitoring, alerting, drift detection, and remediation.
 
 == Choose how you want to provision
