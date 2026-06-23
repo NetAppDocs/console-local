@@ -18,8 +18,6 @@ sidebar:
         url: /reference-limitations.html
     - title: Get started
       entries:
-      - title: Learn about NetApp Console
-        url: /concept-overview.html
       - title: Learn about NetApp Console (local deployment)
         url: /concept-netapp-console-local.html
       - title: Learn about managing storage with NetApp Console (local deployment)
@@ -42,8 +40,6 @@ sidebar:
         url: /task-quick-start-console-setup.html
       - title: Install NetApp Console (local deployment)
         entries:
-        - title: Installation workflow for NetApp Console (local deployment)
-          url: /concept-deploy-netapp-console-local.html
         - title: Install NetApp Console (local deployment)
           url: /task-install-agent-on-prem-ova.html
       - title: Plan your Console (local deployment) organization
