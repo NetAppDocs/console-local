@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-llm-connect.html
 keywords: LLM, AI, connect, large language model, console assistant, enable assistant, agentic features, netapp console
-summary: "Connect your large language model (LLM) to enable the NetApp Console assistant and AI-assisted management in NetApp Console (local deployment)."
+summary: "Connect your large language model (LLM) to enable the Console assistant and AI-assisted management in NetApp Console (local deployment)."
 ---
 = Connect your LLM and enable the NetApp Console assistant
 :hardbreaks:

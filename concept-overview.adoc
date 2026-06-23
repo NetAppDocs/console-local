@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-overview.html
 keywords: netapp console, overview, introduction, platform overview
-summary: "Learn about NetApp Console and how it helps you manage storage and data services across your environment."
+summary: "Learn about NetApp Console (local deployment) and how it helps you manage storage and data services across your environment."
 ---
 = Learn about NetApp Console
 :hardbreaks:

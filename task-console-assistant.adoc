@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-console-assistant.html
 keywords: console assistant, ai assistant, enable assistant, agentic features, netapp console local
-summary: "Enable the NetApp Console assistant so that users can ask questions and manage storage with natural language in NetApp Console (local deployment)."
+summary: "Enable the Console assistant so that users can ask questions and manage storage with natural language in NetApp Console (local deployment)."
 ---
 = Enable the NetApp Console assistant
 :hardbreaks:

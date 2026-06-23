@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-remove-on-prem.html
 keywords: ontap, cluster, remove, delete, remove ontap cluster, remove onprem, delete cluster, delete working environment, remove working environment, storage admin, netapp console, console remove system
-summary: Remove an on-premises ONTAP system if you no longer want to manage it from the NetApp Console.
+summary: Remove an on-premises ONTAP system if you no longer want to manage it from NetApp Console (local deployment).
 ---
 
 = Remove an on-premises ONTAP system from NetApp Console

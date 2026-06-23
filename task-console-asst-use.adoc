@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-console-asst-use.html
 keywords: console assistant, ai assistant, ask questions, provision storage, natural language, agentic, netapp console local
-summary: "Use the NetApp Console assistant to provision storage, investigate alerts, and get answers with natural language in NetApp Console (local deployment)."
+summary: "Use the Console assistant to provision storage, investigate alerts, and get answers with natural language in NetApp Console (local deployment)."
 ---
 = Use the NetApp Console assistant
 :hardbreaks:
