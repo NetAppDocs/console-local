@@ -18,7 +18,7 @@ summary: Discover on-prem ONTAP clusters from NetApp Console (local deployment) 
 Discover on-premises ONTAP clusters from the NetApp Console so that you can start managing volumes and performing advanced management using ONTAP System Manager, directly from the Console.
 
 .Required access roles
-Storage admin or System health specialist. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about NetApp Console access roles.^]
+Storage admin or System health specialist. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 
 == Step 1: Review discovery and management options

@@ -15,6 +15,9 @@ summary: "Set up identity and access in NetApp Console (local deployment) by cre
 [.lead]
 Set up your folder and fleet hierarchy, add members and starting permissions, and add and place resources in the correct fleets so the right teams can access and manage them.
 
+.Required access roles
+Super admin, Org admin or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
 
 You need the *Org admin* or *Super admin* role to complete initial setup. After setup, manage resources, member access, and fleet access as your organization changes.
 

@@ -17,7 +17,7 @@ summary: "Create and manage alert notification rules in NetApp Console (local de
 Create and manage alert notification rules in NetApp Console (local deployment). When you create a rule, you specify the conditions that trigger the notification, such as alert severity or impact area, and the delivery method, such as email or webhook.
 
 .Required access roles
-Super admin, Organization admin, Storage admin, Operations support analyst, or any of the admin roles for NetApp Backup and Recovery.
+Super admin, Organization admin, Storage admin, Operations support analyst, or any of the admin roles for NetApp Backup and Recovery. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 include::_include/ontap-alerts-ems.adoc[]
 

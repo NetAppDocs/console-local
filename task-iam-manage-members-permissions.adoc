@@ -15,14 +15,16 @@ summary: Add members and assign roles to provide permissions across different le
 [.lead]
 Add members to your NetApp Console (local deployment) organization and assign roles to grant access at the organization, folder, or fleet level for users, service accounts, and directory users.
 
+.Required access roles
+Super admin, Org admin, or Folder or fleet admin (for folders and fleets that they are administering). link:reference-iam-predefined-roles.html[Learn about access roles].
+
 == Before you begin
 
 * Create the folder and fleet hierarchy that matches your organization. link:task-iam-manage-folders-fleets.html[Learn how to organize your resources with folders and fleets].
 * Associate resources with the correct fleets before you assign member access. link:task-iam-manage-resources.html[Learn how to manage resources in folders and fleets].
 * If you are adding a directory user, integrate your directory service first. link:task-iam-active-directory-integrate.html[Learn how to integrate with your directory service].
 
-.Required access roles
-Super admin, Org admin, or Folder or fleet admin (for folders and fleets that they are administering). link:reference-iam-predefined-roles.html[Learn about access roles].
+
 
 == Understand how access is granted in NetApp Console (local deployment)          
 NetApp Console uses role-based access control (RBAC) to manage permissions. Assign roles to members to provide the required access. Each role defines allowed actions for specific resources.

@@ -14,10 +14,10 @@ summary: "Enable the Console assistant so that users can ask questions and manag
 [.lead]
 Enable the NetApp Console assistant so that users in your organization can use natural language to provision storage, investigate alerts, and get answers to storage management questions in NetApp Console (local deployment).
 
-As an organization admin or super admin, you make the Console assistant available by connecting a large language model (LLM) to the Console (local deployment). After you connect the LLM, the Console assistant becomes available to users, and its actions remain guided by the storage policies and role-based access controls that your organization has defined.
-
 .Required access roles
-Super admin or organization admin.
+Super admin or organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+As an organization admin or super admin, you make the Console assistant available by connecting a large language model (LLM) to the Console (local deployment). After you connect the LLM, the Console assistant becomes available to users, and its actions remain guided by the storage policies and role-based access controls that your organization has defined.
 
 == Before you begin
 

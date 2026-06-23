@@ -17,7 +17,7 @@ Remove an on-premises ONTAP system if you no longer want to manage it from the C
 
 
 .Required access roles
-Storage admin. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about NetApp Console access roles.^]
+Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 Removing the system doesn't affect the ONTAP cluster. You can rediscover it from the Console at any time.
 

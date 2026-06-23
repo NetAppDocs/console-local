@@ -16,7 +16,7 @@ summary: Control user access to resources by adding them to fleets and folders i
 Manage resource access in NetApp Console (local deployment) by associating resources with the correct folder or fleet, which controls which teams can access and manage them.
 
 .Required access roles
-Super admin, Organization admin, or Folder or fleet admin.Y link:reference-iam-predefined-roles.html[Learn about access roles].
+Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 Place resources where the right teams can manage them, move them when ownership changes, and remove associations when they are no longer needed.
 

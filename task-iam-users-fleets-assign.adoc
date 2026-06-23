@@ -14,10 +14,10 @@ summary: "Audit or change member access assignments for folders and storage flee
 [.lead]
 Audit or change member access assignments for folders and storage fleets in NetApp Console (local deployment). Folder and fleet admins typically work from this view because it shows only the scopes that they administer.
 
-Alternatively, you can manage all roles for a particular member across multiple folders or fleets. link:task-iam-manage-roles.html[Manage member access].
-
 .Required access roles
-You must have the Organization admin role to manage member access across all folders and fleets. Folder or fleet admins can manage member access only for folders and fleets that they administer. link:reference-iam-predefined-roles.html[Learn about access roles].
+Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+Alternatively, you can manage all roles for a particular member across multiple folders or fleets. link:task-iam-manage-roles.html[Manage member access].
 
 
 == How folder and fleet access works

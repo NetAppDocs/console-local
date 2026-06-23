@@ -17,7 +17,7 @@ If you discovered your on-premises ONTAP cluster directly without using a Consol
 
 
 .Required access roles
-Storage admin or System health specialist. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles.^]
+Storage admin or System health specialist. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 
 

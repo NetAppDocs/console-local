@@ -15,7 +15,7 @@ summary: "Manage member security settings in NetApp Console (local deployment), 
 Secure user access to your NetApp Console (local deployment) organization by managing member security settings. You can direct local users to change their own passwords, manage local users' multi-factor authentication (MFA), and recreate service account credentials.
 
 .Required access roles
-Super admin, Organization admin, or Folder or fleet admin.link:reference-iam-predefined-roles.html[Learn about access roles].
+Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 == Reset user passwords (local users only)
 
