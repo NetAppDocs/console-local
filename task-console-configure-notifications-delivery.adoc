@@ -33,7 +33,8 @@ When you configure an email server, Console (local deployment) sends notificatio
 
 .Steps
 . Select *Administration > Console*.
-. Select *Configuration* to open the Systems configuration page.
+. Select *Configuration* to open the System configurations page.
+// The System configurations page is open by default as there is only the one option in the left menu: Configuration. Same comment for all other references below.
 . In the *Email server* section, select *Configure*.
 . Enter the connection details for your email server:
 +
@@ -50,7 +51,8 @@ You can update an existing email server configuration if you want to use a diffe
 
 .Steps
 . Select *Administration > Console*.
-. Select *Configuration* to open the Systems configuration page.
+. Select *Configuration* to open the System configurations page.
+// The System configurations page is open by default as there is only the one option in the left menu: Configuration.
 . In the *Email server* section, select *Configure*.
 . Select *Clear fields* to clear the existing configuration.
 . Enter the new connection details for your email server.
@@ -86,7 +88,7 @@ Before you create the webhook, ensure the following are in place:
 
 .Steps
 . Select *Administration > Console*.
-. Select *Configuration* to open the Systems configuration page.
+. Select *Configuration* to open the System configurations page.
 . In the *Webhook integration* section, select *Configure*.
 . Enter the required details for the webhook:
 +

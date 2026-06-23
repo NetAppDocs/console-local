@@ -4,7 +4,7 @@ permalink: reference-storage-class-policies.html
 keywords: storage class policies, performance policy, capacity policy, security policy, data protection policy, netapp console
 summary: "Reference the system-defined storage class policies available in NetApp Console (local deployment)."
 ---
-= Storage class policies in NetApp Console (local deployment)
+= Reviewing predefined storage class policies in NetApp Console (local)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,6 +16,9 @@ NetApp Console (local deployment) includes system-defined policies across all fo
 
 == Performance policies
 
+Extreme Performance::
+Use for HPC, AI/ML, and analytics workloads requiring high burst IOPS and predictable low latency.
+
 Extreme for Database Data::
 Use for transactional database data volumes requiring sustained high IOPS and sub-millisecond latency.
 
@@ -25,9 +28,6 @@ Use for database transaction log volumes requiring the highest IOPS floor to pre
 Extreme for Database Shared Data::
 Use for shared database volumes accessed by multiple hosts requiring high throughput and consistent latency.
 
-Extreme Performance::
-Use for HPC, AI/ML, and analytics workloads requiring high burst IOPS and predictable low latency.
-
 Performance::
 Use for virtualized and enterprise applications requiring reliable performance without extreme IOPS demands.
 
@@ -36,22 +36,19 @@ Use for cost-sensitive workloads such as home directories, file shares, and arch
 
 == Capacity policies
 
-default::
-Use for general workloads where platform default capacity behavior is acceptable.
-
-production::
+Autogrow capacity::
 Use for production workloads that must expand automatically to prevent out-of-space failures.
 
 == Security policies
 
-default::
-Use for workloads where platform default security behavior is acceptable.
+Encryption at-rest::
+Use for production workloads where encryption is required for compliance.
 
-anti-ransomware::
+Ransomware protection::
 Use for workloads containing sensitive or business-critical data that require active ransomware protection.
 
-production::
-Use for production workloads where encryption is required for compliance.
+Standard security::
+Use for workloads where platform default security behavior is acceptable.
 
 == Data protection policies
 
@@ -59,4 +56,10 @@ default::
 Use for standard workloads requiring short-term recovery points without long-term retention overhead.
 
 3month-hourly::
+Use for regulated or business-critical workloads requiring granular intra-day recovery points and three months of historical retention.
+
+30-day recovery::
+Use for standard workloads requiring short-term recovery points without long-term retention overhead.
+
+90-day recovery::
 Use for regulated or business-critical workloads requiring granular intra-day recovery points and three months of historical retention.
