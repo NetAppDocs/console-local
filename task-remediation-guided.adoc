@@ -13,3 +13,6 @@ summary: "Use guided remediation in NetApp Console (local deployment) to resolve
 
 [.lead]
 Use guided remediation in the NetApp Console (local deployment) to resolve storage issues with step-by-step instructions that walk you through diagnosing and correcting problems in your environment.
+
+.Required access roles
+Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].

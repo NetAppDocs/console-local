@@ -16,7 +16,7 @@ summary: "Add cards to a custom dashboard in NetApp Console (local deployment) b
 
 Add cards to a custom dashboard in the NetApp Console (local deployment) to display the metrics you want to monitor. You create each card from a template, then customize its scope, aggregation, target resources, and time window before adding it.
 
-.Required role
+.Required access roles
 
 
 == Add a card from the Add Card menu

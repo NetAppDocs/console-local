@@ -13,3 +13,6 @@ summary: "Quickstart for data services in NetApp Console (local deployment) to e
 
 [.lead]
 Subscribe to data services in the NetApp Console (local deployment) to activate data protection capabilities for your storage environment.
+
+.Required access roles
+Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].

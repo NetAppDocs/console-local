@@ -13,3 +13,6 @@ summary: "Discover storage systems in NetApp Console (local deployment) to bring
 
 [.lead]
 Discover storage systems in the NetApp Console (local deployment) to bring them under centralized management and make them available for fleet organization.
+
+.Required access roles
+Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].

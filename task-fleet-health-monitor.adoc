@@ -15,3 +15,6 @@ summary: "Monitor fleet-wide health and performance across all storage managed b
 // Jira: SPSPM-3315
 
 Monitor fleet-wide health and performance in the NetApp Console (local deployment) to gain a unified view of storage status, utilization, and potential issues across all fleets.
+
+.Required access roles
+Super admin, Organization admin, Folder or fleet admin, Storage admin, Storage viewer, or Operations support analyst. link:reference-iam-predefined-roles.html[Learn about access roles].

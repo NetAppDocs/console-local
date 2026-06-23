@@ -14,6 +14,8 @@ summary: "Investigate latency on a volume using the Workload Analyzer to identif
 [.lead]
 When application performance degrades, use the Workload Analyzer to identify which part of the I/O path is causing the slowdown. The latency analysis section breaks down response time by delay center so you can distinguish between network issues, data processing overhead, aggregate contention, and other contributors.
 
+
+
 == Before you begin
 
 * Ensure NetApp Console (local deployment) has already discovered the volume you want to investigate.

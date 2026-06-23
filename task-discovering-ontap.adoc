@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-discovering-ontap.html
 keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onprem, discover aff cluster, discover cluster, add cluster, active iq, roles, subscriptions, licenses, digital advisor
-summary: Discover on-prem ONTAP clusters from the NetApp Console so that you can start managing volumes and performing advanced management using ONTAP System Manager, which is available from the Console.
+summary: Discover on-prem ONTAP clusters from NetApp Console (local deployment) so that you can start managing volumes and performing advanced management using ONTAP System Manager, which is available from the Console.
 ---
 
 = Discover on-premises ONTAP clusters in NetApp Console
@@ -17,8 +17,8 @@ summary: Discover on-prem ONTAP clusters from the NetApp Console so that you can
 
 Discover on-premises ONTAP clusters from the NetApp Console so that you can start managing volumes and performing advanced management using ONTAP System Manager, directly from the Console.
 
-.Required Console role:
-Storage admin or System health specialist. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about NetApp Console access roles.^]
+.Required access roles
+Storage admin or System health specialist. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 
 == Step 1: Review discovery and management options

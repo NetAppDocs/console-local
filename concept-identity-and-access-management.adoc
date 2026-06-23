@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-identity-and-access-management.html
 keywords: iam overview, overview, how iam works, iam example, organization, folders, fleets, resources, members, roles, permissions, resource hierarchy, identity and access management, access roles, iam, authentication, directory users, AD, Active Directory, directory services
-summary: Use NetApp Console's Identity and Access Management (IAM) to structure and control resource access according to your business hierarchy, such as by location, department, or fleet.
+summary: Use NetApp Console (local deployment)'s Identity and Access Management (IAM) to structure and control resource access according to your business hierarchy, such as by location, department, or fleet.
 ---
 
 = Learn about NetApp Console (local deployment) identity and access management
