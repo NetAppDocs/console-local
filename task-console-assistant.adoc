@@ -16,7 +16,7 @@ Enable the NetApp Console assistant so that users in your organization can use n
 
 As an organization admin or super admin, you make the Console assistant available by connecting a large language model (LLM) to the Console (local deployment). After you connect the LLM, the Console assistant becomes available to users, and its actions remain guided by the storage policies and role-based access controls that your organization has defined.
 
-.Required role
+.Required access roles
 Super admin or organization admin.
 
 == Before you begin

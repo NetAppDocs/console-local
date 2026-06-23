@@ -13,3 +13,6 @@ summary: "Monitor the protection status of your data using the NetApp Console (l
 
 [.lead]
 Monitor the protection status of your data using the new protection dashboard in the NetApp Console (local deployment) to track backup and replication coverage across your storage environment.
+
+.Required access roles
+Super admin, Organization admin, Folder or fleet admin, Storage viewer, or any Backup and Recovery role (super admin, admin, restore admin, clone admin, or viewer). link:reference-iam-predefined-roles.html[Learn about access roles].

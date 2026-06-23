@@ -16,6 +16,9 @@ summary: "Discover on-premises ONTAP clusters in NetApp Console (local deploymen
 
 Discover on-premises ONTAP clusters in the NetApp Console (local deployment) so you can manage and monitor them from a single interface.
 
+.Required access roles
+Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
 NOTE: Stub page. Content to be developed.
 
 == Before you begin

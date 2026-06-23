@@ -14,6 +14,9 @@ summary: "Monitor the system health of NetApp Console (local deployment) to ensu
 [.lead]
 Monitor the NetApp Console (local deployment) system health to ensure all components are operating correctly and to identify issues before they affect your environment.
 
+.Required access roles
+Super admin, Organization admin, Folder or fleet admin, Storage admin, Storage viewer, or Operations support analyst. link:reference-iam-predefined-roles.html[Learn about access roles].
+
 == View system health status
 
 <add a section about the agent/system dashboard here>

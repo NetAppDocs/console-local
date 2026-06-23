@@ -16,7 +16,7 @@ summary: If you discovered your on-prem ONTAP cluster directly without using a C
 If you discovered your on-premises ONTAP cluster directly without using a Console agent, you can open the system in the Console to manage the cluster and access ONTAP System Manager.
 
 
-.Required Console role:
+.Required access roles
 Storage admin or System health specialist. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles.^]
 
 

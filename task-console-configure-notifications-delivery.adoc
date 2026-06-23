@@ -17,8 +17,8 @@ summary: "Configure the notifications delivery channels for NetApp Console (loca
 
 You can set up multiple channels for alert notifications, including email and webhooks.
 
-.Required role
-Super admin or organization admin.
+.Required access roles
+Super admin or organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 By default, Console (local deployment) sends notifications through its built-in notification system. Configuring additional delivery channels lets you receive notifications in the way that best fits your workflow.
 

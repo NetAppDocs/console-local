@@ -21,7 +21,7 @@ After you connect your LLM, users open the Console assistant from the dashboard 
 
 To connect your LLM, you obtain an API key from your LLM provider and then enter the key and select a model in the Console (local deployment) AI Tools settings. The Console assistant's actions remain guided by the storage policies and role-based access controls that your organization has defined.
 
-.Required role
+.Required access roles
 Super admin or organization admin.
 
 == Before you begin

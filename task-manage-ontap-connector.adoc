@@ -18,7 +18,7 @@ summary: If you discovered an on-premises ONTAP cluster using a Console Agent, y
 If you discovered an on-premises ONTAP cluster using a Console agent, you can create volumes directly from the NetApp Console, access ONTAP System Manager (directly from the Console) for advanced management, and enable NetApp data services.
 
 
-.Required NetApp Console role:
+.Required access roles
 Storage admin or System health specialist. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles.^]
 
 

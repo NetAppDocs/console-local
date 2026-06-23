@@ -16,11 +16,10 @@ summary: "Use AI-driven agentic provisioning to autonomously fulfill storage req
 
 Use AI-assisted (agentic) provisioning when you want to request storage conversationally, review a proposed plan, and approve the change. This approach is useful when you want faster requests with less UI navigation while still keeping provisioning aligned with storage classes and RBAC. 
 
+.Required access roles
+Super admin, Organization admin, Folder or fleet admin, or Storage admin. Your AI-assisted actions are limited by the same role-based access as UI-based actions. link:reference-iam-predefined-roles.html[Learn about access roles].
+
 Agentic provisioning requires an LLM integration to be configured and available in your NetApp Console (local deployment) environment.
-
-== Required role
-
-Your AI-assisted actions are limited by the same RBAC permissions as UI-based actions. You must have permission to provision in the target fleet.
 
 == Before you begin
 

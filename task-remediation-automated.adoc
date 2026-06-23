@@ -13,3 +13,6 @@ summary: "Use automated remediation in NetApp Console (local deployment) to auto
 
 [.lead]
 Use automated remediation in the NetApp Console (local deployment) to automatically detect and resolve common storage issues without manual intervention, maintaining fleet health proactively.
+
+.Required access roles
+Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].

@@ -14,6 +14,9 @@ summary: "Grant access to data services in NetApp Console (local deployment) so 
 [.lead]
 Grant access to data services in NetApp Console (local deployment) so the right users and teams can use those services.
 
+.Required access roles
+Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
 NOTE: Stub page. Content to be developed.
 
 .Steps

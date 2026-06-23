@@ -15,6 +15,9 @@ summary: If needed, you can change the name of your NetApp Console (local deploy
 [.lead]
 Your NetApp Console organization has a name and an ID. You can choose a name for your organization to help identify it. You may also need to retrieve the organization ID for certain integrations.
 
+.Required access roles
+Super admin or Organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
 == Rename your organization
 
 You can rename your organization. This is helpful if you support more than organization.

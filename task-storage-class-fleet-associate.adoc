@@ -16,15 +16,14 @@ summary: "Associate a storage class with a fleet in NetApp Console (local deploy
 
 Associate a storage class with a fleet to make an approved set of storage standards available for provisioning in that fleet. This helps teams provision consistently and supports ongoing governance by evaluating workloads against the class standards.
 
+.Required access roles
+Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
 Associate storage classes with fleets when you want to:
 
 - Scope approved standards by environment (for example, production vs. development).
 - Ensure provisioning workflows in a fleet use a consistent baseline for performance, capacity behavior, security, and data protection.
 - Limit which standards are available to operators in a given fleet.
-
-== Required role
-
-You must have permissions to manage storage standards for the target fleet.
 
 == Associate a storage class with a fleet
 

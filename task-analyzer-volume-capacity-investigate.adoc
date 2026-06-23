@@ -16,6 +16,8 @@ summary: "Investigate capacity and snapshot growth on a volume using the Workloa
 
 When a volume is filling up or snapshot copies are consuming more space than expected, use the Workload Analyzer to examine capacity and snapshot trends over time. The capacity analysis section shows how physical and available space change, breaks down storage efficiency savings, and projects when the volume will reach a capacity threshold.
 
+
+
 == Before you begin
 
 * Ensure NetApp Console (local) has already discovered the volume you want to investigate.

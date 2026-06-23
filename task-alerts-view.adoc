@@ -16,7 +16,7 @@ summary: "View active alerts across your organization or for a specific fleet fr
 
 View active ONTAP alerts in the NetApp Console (local deployment). You can view alerts for the entire organization or switch to a fleet-wide view to focus on alerts for a specific fleet.
 
-.Required role
+.Required access roles
 Any role with the exception of Federation admin or Federation viewer. Federation admins and viewers cannot view alerts.
 
 

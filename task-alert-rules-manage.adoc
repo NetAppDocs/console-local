@@ -20,7 +20,7 @@ Use notification rules to route the right alerts to the right people through the
 
 A notification rule matches alerts based on conditions you define—such as service, severity, and impact area—and then delivers a notification through the channels you select. The Console (local deployment) includes default notification rules that you can view and adjust, and you can create your own custom rules. You can also mute rules to temporarily suppress notifications during planned events like maintenance windows.
 
-.Required role
+.Required access roles
 Super admin, Organization admin, Storage admin, Operations support analyst, or any of the admin roles for NetApp Backup and Recovery.
 
 include::_include/ontap-alerts-ems.adoc[]
