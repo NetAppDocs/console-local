@@ -97,13 +97,33 @@ When investigating an ONTAP alert, you can also go directly to the System Manage
 +
 * *All* (default) to see alerts across all fleets you have access to
 * A specific fleet to see alerts only for that fleet
-. Select the *Systems health* tab to view the full list of active alerts for the selected scope.
 . In either tab, select the name of the alert you want to investigate to view its details.
 +
 image:screenshot-alerts-investigate.png["View alert details"]
 . If applicable, select the VM or cluster name to open the System Manager interface for the system that generated the alert.
 +
 image:screenshot-alerts-details.png["View alert details and navigate to System Manager"]
+
+== Analyze an alert
+You can analyze an ONTAP alert in Workload Analyzer to understand what triggered it.
+
+When investigating an ONTAP alert, you can also go directly to the System Manager interface for the system that generated the alert to view additional details and take action.
+
+.Steps
+. Select *Health > Alerts > Overview*.
+. From the scope selector, choose one of the following:
++
+* *All* (default) to see alerts across all fleets you have access to
+* A specific fleet to see alerts only for that fleet
+. Select the *Systems health* tab to view the full list of active alerts for the selected scope.
+. In either tab, select the name of the alert you want to investigate to view its details.
++
+image:screenshot-alerts-investigate.png["View alert details"]
+. If applicable, select *Analyze* to open the Workload Analyzer interface for the system that generated the alert.
++
+image:screenshot-alerts-analyze.png["View alert details and navigate to Workload Analyzer"]
+
+. Enter the time range that covers the period when the alert was triggered, then select *Analyze* to view the analysis results. link:concept-workload-analyzer.html[Learn about Workload Analyzer.]
 
 == Export alerts to CSV
 
