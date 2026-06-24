@@ -105,4 +105,4 @@ Delete a notification rule if you no longer need it. Deleting a rule permanently
 
 * link:task-console-configure-notifications-delivery.html[Configure notification delivery]
 * link:concept-storage-alerts.html[Learn about storage alerts]
-* link:task-alerts-view.html[View alerts]
+* link:task-alerts-monitor.html[View alerts]

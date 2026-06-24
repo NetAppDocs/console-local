@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-alerts-view.html
+permalink: task-alerts-monitor.html
 keywords: view alerts, alerts overview, alerts dashboard, org-wide alerts, fleet alerts, netapp console local
 summary: "View active alerts across your organization or for a specific fleet from the alerts overview page in NetApp Console (local deployment)."
 ---
