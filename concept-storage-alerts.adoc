@@ -13,7 +13,7 @@ summary: "Learn how storage alerts in NetApp Console (local deployment) help you
 
 [.lead]
 // Jira: SPSPM-3316, SPSPM-3496
-Alerts in NetApp Console (local deployment) help you find and resolve issues in your on-premises ONTAP clusters. You can view alerts for fleets you have permission to access. Alerts include information about the impact area and severity of the issue. You can also receive notifications when alerts occur, so you can take action to resolve them quickly.
+Alerts in NetApp Console (local deployment) help you find and resolve issues in your on-premises ONTAP clusters as well as NetApp Backup and Recovery actions. You can view alerts for fleets you have permission to access. Alerts include information about the impact area and severity of the issue. You can also receive notifications when alerts occur, so you can take action to resolve them quickly.
 
 == What you can do with alerts
 
@@ -23,8 +23,11 @@ Alerts in NetApp Console (local deployment) help you find and resolve issues in 
 * Enable or disable alert rules
 * Receive notifications when alerts occur
 
-== Alert sources
 
-On-premises ONTAP clusters raise alerts through the Harvest integration with NetApp Console (local deployment).
+== Available alerts
+NetApp Console (local deployment) supports the following types of alerts:
+
+* include::_include/ontap-alerts-ems.adoc[]
+* link:https://docs.netapp.com/us-en/data-services-backup-recovery/reference-audit-actions.html[NetApp Backup and Recovery alerts.^]
 
 
