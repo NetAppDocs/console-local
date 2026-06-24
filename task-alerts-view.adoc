@@ -14,34 +14,97 @@ summary: "View active alerts across your organization or for a specific fleet fr
 [.lead]
 // Jira: SPSPM-3316, SPSPM-3496
 
-View active ONTAP alerts in the NetApp Console (local deployment). You can view alerts for the entire organization or switch to a fleet-wide view to focus on alerts for a specific fleet.
+View active alerts across your entire organization or for a specific fleet in NetApp Console (local deployment).
 
-.Required role
-Any role with the exception of Federation admin or Federation viewer. Federation admins and viewers cannot view alerts.
+.Required access role
+All roles except Federation admin and Federation viewer. Federation admins and viewers cannot view alerts.
+
+
+You can view a dashboard summary of active alerts as well as access information about specific alerts.
+
+For ONTAP alerts, you can access tools such as System Manager and the Workload analyzer directly from the Alerts page to investigate and resolve issues. 
+
+You can also export the alerts list to a CSV file for offline analysis or reporting.
+
+
+
+
 
 
 include::_include/ontap-alerts-ems.adoc[]
 
-== View ONTAP alerts
+== View the alerts dashboard
+
+You can filter the alerts dashboard to view alerts for your entire organization or for a specific fleet. The dashboard provides a summary of active alerts, including their severity and impact area. Additionally, you can filter the dashboard to view only critical alerts or only alerts for a specific impact area.
+
+The dashboard also includes a chart that shows the distribution of alerts over the past 24 hours, which can help you identify trends and patterns in your alert activity.
+
 
 .Steps
 
-. From the left navigation, select *Health > Alerts*.
+. Select *Health > Alerts > Overview*.
 . From the scope selector, choose one of the following:
 +
 * *All* (default) to see alerts across all fleets you have access to
 * A specific fleet to see alerts only for that fleet
 
-. Review the alert summary, including:
+. Filter the dashboard according to the alerts you need to view, including:
 +
-* Alert distribution by severity
-* Alert distribution by impact area
+* Severity (Critical, Major, Minor, Warning, or Info)
+* Impact area (Capacity, Connectivity, Data protection, Performance, or Security)
 * Critical alerts grouped by impact area
 * Alert count distribution over the past 24 hours
 
-. Select the *Alerts* tab to see the full list of active alerts.
+== View all alerts
+
+Use the Alerts tab to view the full list of active alerts for the scope you've selected. You can also search the list for specific alerts by name or description.
+
+.Steps
+
+. Select *Health > Alerts > Overview*.
+. From the scope selector, choose one of the following:
++
+* *All* (default) to see alerts across all fleets you have access to
+* A specific fleet to see alerts only for that fleet
+. Select the *Alerts* tab to view the full list of active alerts for the selected scope.
+
+. Optionally, search the list for a specific alert by name or description.
+
++
+image:screenshot-alerts-search.png["Search alerts by name or description"]
+
+== View alerts by system
+You can view alerts associated with a specific system within a fleet or your organization.
+
+.Steps
+. Select *Health > Alerts > Overview*.
+. From the scope selector, choose one of the following:
++
+* *All* (default) to see alerts across all fleets you have access to
+* A specific fleet to see alerts only for that fleet
+. Select the *Systems health* tab to view a summary of the alerts associated with the systems within the scope you've selected.
+. Select *View alerts* on the row of the respective system to view the full list of active alerts associated with that system.
 
 
+== Investigate an alert
+You can investigate an alert to understand what triggered it and who received a notification.
+
+When investigating an ONTAP alert, you can also go directly to the System Manager interface for the system that generated the alert to view additional details and take action.
+
+.Steps
+. Select *Health > Alerts > Overview*.
+. From the scope selector, choose one of the following:
++
+* *All* (default) to see alerts across all fleets you have access to
+* A specific fleet to see alerts only for that fleet
+. Select the *Systems health* tab to view the full list of active alerts for the selected scope.
+. In either tab, select the name of the alert you want to investigate to view its details.
++
+image:screenshot-alerts-investigate.png["View alert details"]
+. If applicable, select the VM or cluster name to open the System Manager interface for the system that generated the alert.
+
++
+image:screenshot-alerts-details.png["View alert details and navigate to System Manager"]
 
 == Export alerts to CSV
 
@@ -50,7 +113,7 @@ Export the alerts list in the NetApp Console (local deployment) to a CSV file fo
 
 .Steps
 
-. From the left navigation, select *Health > Alerts* and then select the *Alerts* tab.
+. Select *Health > Alerts* and then select the *Alerts* tab.
 . Set the scope (organization or fleet) and apply any filters or search text you want included in the export.
-. Select *Download CSV*.
-. Open the file from your browser's downloads location.
+. Select the download icon to export the alerts list to a CSV file.
+
