@@ -15,6 +15,9 @@ summary: You can view contract details for each of your on-premises ONTAP cluste
 [.lead]
 You can view capacity information as well as licensing information directly from the NetApp Console.
 
+.Required access roles
+Super admin, Organization admin, Folder or fleet admin, Storage admin, or Storage viewer. link:reference-iam-predefined-roles.html[Learn about access roles].
+
 == View capacity information
 When you select an on-premises ONTAP cluster from the *Systems* page, the *System details* page displays capacity information for the cluster, including total capacity, used capacity, and available capacity.
 

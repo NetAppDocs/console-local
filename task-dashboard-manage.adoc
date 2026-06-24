@@ -16,7 +16,7 @@ summary: "Manage custom dashboards in NetApp Console (local deployment) by editi
 
 Manage your custom dashboards in the NetApp Console (local deployment) to keep them aligned with your monitoring needs. You can edit a dashboard's contents, clone an existing dashboard as a starting point, and delete dashboards you no longer use.
 
-.Required role
+.Required access roles
 
 
 == Edit a dashboard

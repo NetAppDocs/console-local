@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-installing-https-cert.html
 keywords: https certificate, certificate, adding, installing, ca, certificate authority, format, encoding, restricted mode, access
-summary: Install a CA-signed certificate for user access to the web-based console when using NetApp Console in restricted mode.
+summary: Install a CA-signed certificate for user access to the web-based console when using NetApp Console (local deployment) in restricted mode.
 ---
 
 = Install a CA-signed certificate for NetApp Console access

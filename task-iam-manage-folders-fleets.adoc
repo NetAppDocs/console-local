@@ -13,7 +13,10 @@ summary: Add folders and fleets to match your business structure. After you crea
 :imagesdir: ./media/
 
 [.lead]
-Use folders and fleets to match your business structure, control access, and organize resources in NetApp Console (local deployment).
+Create folders and fleets to match your business structure, control access, and organize resources in NetApp Console (local deployment).
+
+.Required access roles
+Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 NetApp Console (local deployment) creates one default fleet when you create an organization. You can add more fleets and group them with folders. link:concept-identity-and-access-management.html[Learn about the resource hierarchy in NetApp Console].
 

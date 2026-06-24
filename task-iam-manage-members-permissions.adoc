@@ -13,7 +13,10 @@ summary: Add members and assign roles to provide permissions across different le
 :imagesdir: ./media/
 
 [.lead]
-After you create your folder and fleet hierarchy and place resources in the correct fleets, add members and assign their starting roles. You can grant access at the organization, folder, or fleet level for users, service accounts, and directory users.
+Add members to your NetApp Console (local deployment) organization and assign roles to grant access at the organization, folder, or fleet level for users, service accounts, and directory users.
+
+.Required access roles
+Super admin, Org admin, or Folder or fleet admin (for folders and fleets that they are administering). link:reference-iam-predefined-roles.html[Learn about access roles].
 
 == Before you begin
 
@@ -21,8 +24,7 @@ After you create your folder and fleet hierarchy and place resources in the corr
 * Associate resources with the correct fleets before you assign member access. link:task-iam-manage-resources.html[Learn how to manage resources in folders and fleets].
 * If you are adding a directory user, integrate your directory service first. link:task-iam-active-directory-integrate.html[Learn how to integrate with your directory service].
 
-.Required access roles
-Super admin, Org admin, or Folder or fleet admin (for folders and fleets that they are administering). link:reference-iam-predefined-roles.html[Learn about access roles].
+
 
 == Understand how access is granted in NetApp Console (local deployment)          
 NetApp Console uses role-based access control (RBAC) to manage permissions. Assign roles to members to provide the required access. Each role defines allowed actions for specific resources.
@@ -37,9 +39,11 @@ Note the following about granting access in NetApp Console (local deployment):
 
 NetApp Console supports three types of members: user accounts, directory users, and service accounts.
 
-Users with local Console accounts must create their sign-in before you can add them to the organization. Directory users authenticate through your integrated directory service, but you still add each directory user individually and assign roles in Console (local deployment). Create service accounts directly in the Console.
+NOTE: You must first configure an email server to use with Console (local deployment) before you can add users. link:task-console-configure-notifications-delivery.html[Learn how to configure an email server.]
 
-All members must have at least one role explicitly assigned to them in order to access resources.
+Directory users authenticate through your integrated directory service, but you must still add each directory user individually and assign roles in Console (local deployment). Create service accounts directly in the Console.
+
+All members must have at least one role explicitly assigned to them in order to access Console (local deployment).
 
 When adding a member, choose the organization, folder, or fleet where the member needs access and assign the starting role or roles they need.
 
@@ -49,7 +53,7 @@ When adding a member, choose the organization, folder, or fleet where the member
 
 You must have the Org admin or Folder or fleet admin role to add a user to an organization, folder, or fleet so they can access resources.
 
-
+NOTE: You must first configure an email server to use with Console (local deployment) before you can add users. link:task-console-configure-notifications-delivery.html[Learn how to configure an email server.]
 
 
 .Steps
@@ -153,29 +157,5 @@ link:reference-iam-predefined-roles.html[Learn about access roles].
 
 . To give the user additional access to other folders, fleets, or roles, select *Add role*, choose the folder or fleet, role category, and select a role.
 
-== View members of your organization
-
-Open a member's details to review each role they hold within the folders and fleets of your organization. For example, you can confirm that a storage engineer has the Storage admin role on the `Production-US-East` fleet and the Backup and Recovery admin role on the `Production-EU-West` fleet.
-
-.Steps
-
-. Select *Administration > Identity and access*.
-
-. Select *Members*.
-
-+
-The *Members* table lists the members of your organization.
 
 
-
-
-
-
-
-
-== Related information
-
-* link:concept-identity-and-access-management.html[Learn about identity and access management in NetApp Console]
-* link:task-iam-get-started.html[Get started with identity and access]
-* link:reference-iam-predefined-roles.html[NetApp Console access roles]
-* https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the API for identity and access^]

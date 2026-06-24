@@ -14,8 +14,8 @@ summary: "Integrate NetApp Console (local deployment) with Active Directory for 
 [.lead]
 Integrate NetApp Console (local deployment) with Active Directory for directory-backed sign-in and user lookup. Use your directory service to authenticate users, then assign access to those users in NetApp Console (local deployment).
 
-.Required role
-Super admin or organization admin.
+.Required access roles
+Super admin or organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 When you integrate with Active Directory, Console (local deployment) authenticates users through your existing directory. After you add a directory user to your organization, assign roles in Console (local deployment) to control what that user can access.
 

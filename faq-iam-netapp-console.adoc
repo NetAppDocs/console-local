@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: faq-iam-netapp-console.html
 keywords: faq, frequently asked questions, frequently asked questions about netapp console iam, identity and access management, role-based access control, rbac, iam, roles, permissions, organization, folders, fleets, members, service accounts, directory users, AD, Active Directory, directory services
-summary: "Frequently asked questions about identity and access management and role-based access control in NetApp Console."
+summary: "Frequently asked questions about identity and access management and role-based access control in NetApp Console (local deployment)."
 ---
 
 = Identity and access management FAQ for NetApp Console

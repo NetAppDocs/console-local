@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-llm-connect.html
 keywords: LLM, AI, connect, large language model, console assistant, enable assistant, agentic features, netapp console
-summary: "Connect your large language model (LLM) to enable the NetApp Console assistant and AI-assisted management in NetApp Console (local deployment)."
+summary: "Connect your large language model (LLM) to enable the Console assistant and AI-assisted management in NetApp Console (local deployment)."
 ---
 = Connect your LLM and enable the NetApp Console assistant
 :hardbreaks:
@@ -14,15 +14,15 @@ summary: "Connect your large language model (LLM) to enable the NetApp Console a
 [.lead]
 Connect your large language model (LLM) to the NetApp Console (local deployment) to enable the NetApp Console assistant and AI-assisted storage management. After you connect your LLM, the Console assistant becomes available to users in your organization, who can use natural language to provision storage, investigate alerts, and get answers to storage management questions.
 
+.Required access roles
+Super admin or organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
 After you connect your LLM, users open the Console assistant from the dashboard and choose an access mode that controls whether the assistant can change storage infrastructure:
 
 * In *Read only* mode, the assistant answers questions and provides guidance without making changes.
 * In *Read/write* mode, the assistant can act on storage infrastructure. Before it makes a change, it shows the details for the user to review and confirm. For asynchronous operations, such as volume creation, the assistant creates a job that the user can check on by asking the assistant.
 
 To connect your LLM, you obtain an API key from your LLM provider and then enter the key and select a model in the Console (local deployment) AI Tools settings. The Console assistant's actions remain guided by the storage policies and role-based access controls that your organization has defined.
-
-.Required role
-Super admin or organization admin.
 
 == Before you begin
 

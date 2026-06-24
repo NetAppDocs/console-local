@@ -14,11 +14,10 @@ summary: "Manually provision storage resources using NetApp Console (local deplo
 [.lead]
 Manually provision storage when you need full control over system selection and configuration details. Manual provisioning is useful when you're creating exception workloads, migrating workloads with known requirements, or validating behavior during rollout. 
 
+.Required access roles
+Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
 You can optionally select a storage class during manual provisioning to apply approved standards while retaining explicit control over placement.
-
-== Required role
-
-You must have a role that allows provisioning in the target fleet (for example, Organization admin, Folder or fleet admin, or Storage admin for that fleet).
 
 == Before you begin
 

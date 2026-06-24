@@ -14,6 +14,9 @@ summary: "Subscribe to data services in NetApp Console (local deployment) to ena
 [.lead]
 Subscribe to data services in NetApp Console (local deployment) to enable data protection capabilities for your storage environment.
 
+.Required access roles
+Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
 NOTE: Stub page. Content to be developed.
 
 .Steps

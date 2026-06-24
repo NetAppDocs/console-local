@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-iam-rename-organization.html
 keywords: rename organization, change organization name, name change, rename, change name, iam, ID, integration, fleet, organization, API, identity and access management
-summary: If needed, you can change the name of your NetApp Console organization.
+summary: If needed, you can change the name of your NetApp Console (local deployment) organization.
 ---
 
 = Manage your NetApp Console (local deployment) organization and fleet IDs
@@ -14,6 +14,9 @@ summary: If needed, you can change the name of your NetApp Console organization.
 
 [.lead]
 Your NetApp Console organization has a name and an ID. You can choose a name for your organization to help identify it. You may also need to retrieve the organization ID for certain integrations.
+
+.Required access roles
+Super admin or Organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 == Rename your organization
 

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-storage-dashboard.html
 keywords:  bluexp, dashboard, console, home page
-summary: Within the NetApp Console, you can view metrics on the Home page. 
+summary: Within NetApp Console (local deployment), you can view metrics on the Home page. 
 ---
 
 = View Home page metrics in NetApp Console (local deployment)

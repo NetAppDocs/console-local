@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-onprem-ontap.html
 keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onprem, discover aff cluster, discover cluster, add cluster, active iq, digital wallet, subscriptions, licenses, bluexp
-summary: You can manage the ONTAP clusters running on AFF/FAS controllers and ONTAP Select from the NetApp Console. Adding on-premises ONTAP systems to the NetApp Console enables you to manage all of your storage and data assets from a single interface.
+summary: You can manage the ONTAP clusters running on AFF/FAS controllers and ONTAP Select from NetApp Console (local deployment). Adding on-premises ONTAP systems to NetApp Console (local deployment) enables you to manage all of your storage and data assets from a single interface.
 ---
 
 = Learn about on-premises ONTAP cluster management in NetApp Console (local deployment)
@@ -21,7 +21,7 @@ NetApp Console (local deployment) provides centralized management of NetApp stor
  
 You don’t need a license or subscription to start using NetApp Console (local deployment). However, some NetApp data services accessible from the Console (local deployment) are licensed or subscription-based.
  
-Learn more about the https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html[NetApp Console (local deployment)].
+Learn more about the link:concept-netapp-console-local.html[NetApp Console (local deployment)].
 
 
 

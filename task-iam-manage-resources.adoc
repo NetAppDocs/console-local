@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-iam-manage-resources.html
 keywords: resource, hierarchy, association, access, resource permissions, resource hierarchy, iam, identity and access management
-summary: Control user access to resources by adding them to fleets and folders in your NetApp Console organization. Grant access to users at the fleet level. 
+summary: Control user access to resources by adding them to fleets and folders in your NetApp Console (local deployment) organization. Grant access to users at the fleet level. 
 ---
 
 = Manage resources in folders and fleets in NetApp Console (local deployment)
@@ -13,14 +13,15 @@ summary: Control user access to resources by adding them to fleets and folders i
 :imagesdir: ./media/
 
 [.lead]
-After you set up folders and fleets, manage resource access by associating resources with the correct fleet or folder. Resource association controls which teams can access and manage those resources.
+Manage resource access in NetApp Console (local deployment) by associating resources with the correct folder or fleet, which controls which teams can access and manage them.
+
+.Required access roles
+Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 Place resources where the right teams can manage them, move them when ownership changes, and remove associations when they are no longer needed.
 
 A _resource_ is an entity that Console (local deployment) recognizes, such as a storage resource or a Backup and Recovery workload.
 
-.Required access roles
-You must have the _Super admin_, _Organization admin_, or _Folder or fleet admin_ role to manage resources in NetApp Console (local deployment). link:reference-iam-predefined-roles.html[Learn about access roles].
 
 == Console resource types
 Console (local deployment) supports both storage resources and Backup and Recovery workloads. Associate either resource type with a fleet to control access and management.
