@@ -4,7 +4,7 @@ permalink: task-alerts-view.html
 keywords: view alerts, alerts overview, alerts dashboard, org-wide alerts, fleet alerts, netapp console local
 summary: "View active alerts across your organization or for a specific fleet from the alerts overview page in NetApp Console (local deployment)."
 ---
-= View alerts in NetApp Console (local deployment)
+= Monitor and investigate alerts in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,17 +14,18 @@ summary: "View active alerts across your organization or for a specific fleet fr
 [.lead]
 // Jira: SPSPM-3316, SPSPM-3496
 
-View active alerts across your entire organization or for a specific fleet in NetApp Console (local deployment).
+Monitor and investigate alerts in NetApp Console (local deployment) to keep your storage healthy and minimize disruption.
+
+View active alerts across your entire organization or a specific fleet, prioritize them by severity and impact area, and investigate root causes so you can resolve issues before they escalate.
 
 .Required access role
 All roles except Federation admin and Federation viewer. Federation admins and viewers cannot view alerts.
 
+For ONTAP alerts, you can access tools such as System Manager and Workload analyzer directly from the Alerts page to investigate and resolve issues. 
 
-You can view a dashboard summary of active alerts as well as access information about specific alerts.
+For external reporting, you can export the alerts list to a CSV file for offline analysis.
 
-For ONTAP alerts, you can access tools such as System Manager and the Workload analyzer directly from the Alerts page to investigate and resolve issues. 
-
-You can also export the alerts list to a CSV file for offline analysis or reporting.
+NOTE: You can also set up notification rules to receive alerts by email or webhook. link:task-alerts-create-rules.html[Learn how to set up alert notifications].
 
 == Available alerts
 NetApp Console (local deployment) supports the following types of alerts:
