@@ -70,7 +70,6 @@ Use the Alerts tab to view the full list of active alerts for the scope you've s
 . Select the *Alerts* tab to view the full list of active alerts for the selected scope.
 
 . Optionally, search the list for a specific alert by name or description.
-
 +
 image:screenshot-alerts-search.png["Search alerts by name or description"]
 
@@ -103,7 +102,6 @@ When investigating an ONTAP alert, you can also go directly to the System Manage
 +
 image:screenshot-alerts-investigate.png["View alert details"]
 . If applicable, select the VM or cluster name to open the System Manager interface for the system that generated the alert.
-
 +
 image:screenshot-alerts-details.png["View alert details and navigate to System Manager"]
 
