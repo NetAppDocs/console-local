@@ -4,7 +4,7 @@ permalink: task-analyzer-volume-throughput-investigate.html
 keywords: throughput, IOPS, MBs, read write, workload demand, workload analyzer, netapp console local
 summary: "Investigate high throughput demand on a volume using the Workload Analyzer to understand IOPS and MB/s patterns and identify read/write imbalances."
 ---
-= Investigate high throughput on a volume in NetApp Console (local deployment>
+= Investigate high throughput on a volume in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,20 +12,14 @@ summary: "Investigate high throughput demand on a volume using the Workload Anal
 :imagesdir: ./media/
 
 [.lead]
-When a volume's workload is consuming more IOPS or throughput than expected, use the Workload Analyzer to examine demand patterns over time. The throughput analysis section shows IOPS and MB/s with an optional read, write, and other breakdown so you can identify which type of I/O is driving high demand and whether that demand is trending toward a QoS limit.
+Use Workload Analyzer in NetApp Console (local deployment) to examine a volume's IOPS and throughput demand over time.
 
+When a volume's workload is consuming more IOPS or throughput than expected, identify what's driving the demand. The throughput analysis section shows IOPS and MB/s with an optional read, write, and other breakdown so you can identify which type of I/O is driving high demand and whether that demand is trending toward a QoS limit.
 
-
-== Before you begin
-
-* Ensure NetApp Console (local deployment) has already discovered the volume you want to investigate.
-* Identify the approximate time window when the demand spike occurred so you can select the right analysis range.
 
 .Steps
 
-. In the NetApp Console (local deployment), navigate to *Workload Analyzer*.
-+
-Alternatively, from the storage inventory, select a volume and select *Analyze*.
+. Select *Health > Workload Analyzer*.
 
 . In the *Volume* field, search for and select the volume you want to investigate.
 
@@ -35,7 +29,7 @@ Alternatively, from the storage inventory, select a volume and select *Analyze*.
 
 . Open the *View* dropdown and select *Breakdown (RWO)*.
 +
-The charts split into read, write, and other components for both IOPS and MB/s. This lets you determine whether demand is driven by read-heavy access patterns, write-heavy patterns, or a combination.
+The charts split into read, write, and other components for both IOPS and MB/s. This lets you determine whether read-heavy access patterns, write-heavy patterns, or a combination is driving the demand.
 
 . Use the component picker to enable or disable the metrics you want to examine:
 +
