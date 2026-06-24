@@ -100,37 +100,37 @@ sidebar:
         url: /task-iam-switch-fleets.html
       - title: Manage your NetApp Console user settings
         url: /task-user-settings.html
-      - title: Managing storage in NetApp Console (local)
+      - title: Manage storage
         entries:
-        - title: Understanding storage management
-          url: /concept-manage-storage.html
-        - title: Standardizing storage behavior
+        - title: Understand storage management
+          url: /concept-manage-storage-workflow.html
+        - title: Standardize storage behavior
           entries:
-          - title: Understanding storage classes
+          - title: Understand storage classes
             url: /concept-storage-classes.html
-          - title: Understanding storage class policies
+          - title: Understand storage class policies
             url: /concept-storage-class-policies.html
-          - title: Reviewing predefined storage class policies
+          - title: Review predefined storage class policies
             url: /reference-storage-class-policies.html
-          - title: Creating storage classes
+          - title: Create storage classes
             url: /task-storage-class-manage.html
-          - title: Associating storage classes with fleets
+          - title: Associate storage classes with fleets
             url: /task-storage-class-fleet-associate.html
-        - title: Provisioning storage
+        - title: Provision storage
           entries:
-          - title: Provisioning storage manually
+          - title: Provision storage manually
             url: /task-provisioning-manual.html
-          - title: Provisioning storage automatically
+          - title: Provision storage automatically
             url: /task-provisioning-automated.html
-          - title: Provisioning storage with agentic workflows
+          - title: Provision storage with agentic workflows
             url: /task-provisioning-agentic.html
-        - title: Monitoring storage health
+        - title: Monitor storage health
           entries:
-          - title: Learn about monitoring storage health in NetApp Console (local deployment)
+          - title: Learn about monitoring storage health
             url: /concept-monitor-storage.html
-          - title: Monitoring fleet-wide health and performance
+          - title: Monitor fleet-wide health and performance
             url: /task-fleet-health-monitor.html
-        - title: Managing storage alerts
+        - title: Manage storage alerts
           entries:
           - title: Learn about storage alerts
             url: /concept-storage-alerts.html

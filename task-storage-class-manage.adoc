@@ -4,7 +4,7 @@ permalink: task-storage-class-manage.html
 keywords: create storage class, storage class, define, policy, netapp console
 summary: "Create a storage class in NetApp Console (local deployment) to standardize storage provisioning."
 ---
-= Creating storage classes in NetApp Console (local)
+= Create storage classes in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -39,9 +39,10 @@ You must have the Org admin or Folder or fleet admin role to add a storage class
 . Select *Add*.
 
 . Under *Basic information*, enter the following:
-.. *Storage class name*: Enter a unique name for the storage class.
-.. *Description*: (Optional) Enter a description of the storage class.
-.. *Recommended apps*: (Optional) Enter a list of recommended apps for the storage class.
++
+* *Storage class name*: Enter a unique name for the storage class.
+* *Description*: (Optional) Enter a description of the storage class.
+* *Recommended apps*: (Optional) Enter a list of recommended apps for the storage class.
 
 . Under *Storage policies*, select one or more policies to associate with the storage class.
 
@@ -62,9 +63,10 @@ You must have the Org admin or Folder or fleet admin role to customize an existi
 . For the storage class you want to customize, select *…*, and then select *Duplicate*.
 
 . Under *Basic information*, update the following as required:
-.. *Storage class name*: Enter a unique name for the storage class.
-.. *Description*: (Optional) Enter a description of the storage class.
-.. *Recommended apps*: (Optional) Enter a list of recommended apps for the storage class.
++
+* *Storage class name*: Enter a unique name for the storage class.
+* *Description*: (Optional) Enter a description of the storage class.
+* *Recommended apps*: (Optional) Enter a list of recommended apps for the storage class.
 
 . Under *Storage policies*, select one or more policies to associate with the storage class.
 
@@ -85,9 +87,10 @@ You must have the Org admin or Folder or fleet admin role to edit a user-defined
 . For the storage class you want to edit, select *…*, and then select *Edit*.
 
 . Under *Basic information*, edit the following as required:
-.. *Storage class name*: Enter a unique name for the storage class.
-.. *Description*: (Optional) Enter a description of the storage class.
-.. *Recommended apps*: (Optional) Enter a list of recommended apps for the storage class.
++
+* *Storage class name*: Enter a unique name for the storage class.
+* *Description*: (Optional) Enter a description of the storage class.
+* *Recommended apps*: (Optional) Enter a list of recommended apps for the storage class.
 
 . Under *Storage policies*, select one or more policies to associate with the storage class.
 
