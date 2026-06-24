@@ -4,7 +4,7 @@ permalink: task-analyzer-volume-throughput-investigate.html
 keywords: throughput, IOPS, MBs, read write, workload demand, workload analyzer, netapp console local
 summary: "Investigate high throughput demand on a volume using the Workload Analyzer to understand IOPS and MB/s patterns and identify read/write imbalances."
 ---
-= Investigate high throughput on a volume in NetApp Console (local deployment>
+= Investigate high throughput on a volume in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -33,7 +33,7 @@ Alternatively, from the storage inventory, select a volume and select *Analyze*.
 
 . Open the *View* dropdown and select *Breakdown (RWO)*.
 +
-The charts split into read, write, and other components for both IOPS and MB/s. This lets you determine whether demand is driven by read-heavy access patterns, write-heavy patterns, or a combination.
+The charts split into read, write, and other components for both IOPS and MB/s. This lets you determine whether read-heavy access patterns, write-heavy patterns, or a combination is driving the demand.
 
 . Use the component picker to enable or disable the metrics you want to examine:
 +

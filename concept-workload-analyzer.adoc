@@ -63,15 +63,13 @@ Shows how physical space and available space in the volume have changed over tim
 
 Use the forecast toggle in each analysis section to extend the chart timeline beyond the current time and project future values based on the observed trend. A dashed line distinguishes forecast values from actual data. The analyzer also displays an insight message when the forecast indicates that a threshold breach is likely, along with an estimated time to breach.
 
-== Recommended investigation flow
+== When to use the Workload Analyzer
 
-Use the Workload Analyzer pages together:
+Use the Workload Analyzer in these scenarios:
 
-* Start with this page to understand the analyzer entry points, sections, and overall investigation model.
-* Use the latency investigation page when an alert, application complaint, or event timeline suggests a performance slowdown.
-* Use the throughput investigation page when you need to understand demand patterns, QoS limit behavior, or read and write mix.
-* Use the capacity investigation page when a volume is filling up or snapshot copies are consuming more space than expected.
-* Use the metrics reference to interpret QoS limits, resource utilization, capacity trends, snapshot reserve behavior, and forecast details while you investigate.
+* link:task-analyzer-volume-latency-investigate.html[Investigate high latency] when an alert, application complaint, or event timeline points to a performance slowdown.
+* link:task-analyzer-volume-throughput-investigate.html[Investigate high throughput] when you need to understand demand patterns, QoS limit behavior, or the read and write mix.
+* link:task-analyzer-volume-capacity-investigate.html[Investigate capacity growth] when a volume is filling up or snapshot copies are consuming more space than expected.
 
 == Related information
 

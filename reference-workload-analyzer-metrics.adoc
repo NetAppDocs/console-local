@@ -12,7 +12,7 @@ summary: "Reference for all metrics available in the Workload Analyzer, organize
 :imagesdir: ./media/
 
 [.lead]
-Use this page to understand the metrics that the Workload Analyzer shows across six sections. It explains each metric, how the analyzer renders it on the chart, and what it indicates about volume behavior.
+The Workload Analyzer shows metrics across six sections. Each metric description explains how the analyzer renders the metric on the chart and what it indicates about volume behavior.
 
 == Latency delay centers
 
@@ -69,7 +69,7 @@ If the selected volume uses a QoS policy, you can use two additional reference l
 | The maximum latency ceiling defined by the QoS policy. When the latency line approaches or touches this line, ONTAP is throttling the workload, and the QoS limit—rather than a physical resource—is the dominant source of latency.
 
 | QoS Limit Min
-| The guaranteed minimum latency floor defined by the QoS policy. This line indicates the response time floor enforced for the workload. When other workloads use QoS minimums to guarantee their throughput, this workload can be throttled and show higher latency.
+| The guaranteed minimum latency floor defined by the QoS policy. This line indicates the response time floor enforced for the workload. When other workloads use QoS minimums to guarantee their throughput, ONTAP can throttle this workload, which then shows higher latency.
 |===
 
 These horizontal lines do not appear in the delay center breakdown on hover. They serve as reference thresholds, not as contributors to latency.
