@@ -29,16 +29,10 @@ You can also export the alerts list to a CSV file for offline analysis or report
 == Available alerts
 NetApp Console (local deployment) supports the following types of alerts:
 
-* include::_include/ontap-alerts-ems.adoc[]
-* link:https://docs.netapp.com/us-en/data-services-backup-recovery/reference-audit-actions.html[NetApp Backup and Recovery alerts.^]
-
-
-
-
-
-
-
 include::_include/ontap-alerts-ems.adoc[]
+* link:https://docs.netapp.com/us-en/data-services-backup-recovery/reference-audit-actions.html[Learn more about NetApp Backup and Recovery alerts.^]
+
+
 
 == View the alerts dashboard
 
