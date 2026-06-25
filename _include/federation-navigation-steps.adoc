@@ -1,7 +1,0 @@
-
-.Steps
-
-. Select *Administration > Identity and access*. 
-. Select *Federation* to view the *Federations* page.
-
-. Select *Configure new federation*.
