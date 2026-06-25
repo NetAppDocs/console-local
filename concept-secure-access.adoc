@@ -27,11 +27,11 @@ Users can enable multi-factor authentication (MFA) for an additional layer of ve
 
 link:task-user-settings.html[Enable MFA for NetApp Console (local deployment)]
 
-== Access control
 
-After authenticating users, control and monitor what they can do inside NetApp Console (local deployment).
 
 == Identity and access management
+
+After authenticating users, control and monitor what they can do inside NetApp Console (local deployment).
 
 Use role-based access control to define what each member can see and manage. Assign members to specific fleets so they access only the storage resources relevant to their responsibilities.
 
@@ -42,6 +42,6 @@ Use role-based access control to define what each member can see and manage. Ass
 
 == Audit logging
 
-Track all user activity in NetApp Console (local deployment) for compliance and security investigations.
+Track all user activity (including API and service account users) in NetApp Console (local deployment) for compliance and security investigations.
 
 link:task-audit-console-activity.html[View audit logs for NetApp Console (local deployment)]
