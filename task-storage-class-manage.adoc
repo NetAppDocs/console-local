@@ -27,7 +27,7 @@ When users (or automation) provision a volume or LUN using a storage class, NetA
 
 === Create a storage class
 
-You must have the Org admin or Folder or fleet admin role to add a storage class.
+You must have the Organization admin or Folder or fleet admin role to add a storage class.
 
 
 .Steps
@@ -50,7 +50,7 @@ You must have the Org admin or Folder or fleet admin role to add a storage class
 
 === Customize an existing storage class
 
-You must have the Org admin or Folder or fleet admin role to customize an existing storage class.
+You must have the Organization admin or Folder or fleet admin role to customize an existing storage class.
 
 
 .Steps
@@ -73,7 +73,7 @@ You must have the Org admin or Folder or fleet admin role to customize an existi
 
 === Edit a user-defined storage class
 
-You must have the Org admin or Folder or fleet admin role to edit a user-defined storage class.
+You must have the Organization admin or Folder or fleet admin role to edit a user-defined storage class.
 
 
 .Steps
@@ -96,7 +96,7 @@ You must have the Org admin or Folder or fleet admin role to edit a user-defined
 
 === Delete a user-defined storage class
 
-You must have the Org admin or Folder or fleet admin role to delete a user-defined storage class.
+You must have the Organization admin or Folder or fleet admin role to delete a user-defined storage class.
 
 
 .Steps

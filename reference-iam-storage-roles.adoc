@@ -16,22 +16,16 @@ summary: You can assign the following roles to users to provide them access to t
 
 You can assign the following roles to users to provide them access to the storage management features in NetApp Console (local deployment). You can assign users an administrative role to manage storage or a viewer role for monitoring.
 
-NOTE: These roles are not available from the NetApp Console (local deployment) partnership API.
 
 Administrators can assign storage roles to users for the following storage resources and features:
 
 Storage resources: 
 
 * On-premises ONTAP clusters
-* StorageGRID
-* E-Series
 
 Console services and features:
 
-* Digital advisor
-* Software updates
-* Lifecycle planning
-* Sustainability
+* Storage health functions
 
 
 .Example for storage roles in NetApp Console (local deployment)
@@ -54,8 +48,8 @@ The following table shows the actions each storage role performs.
 
 
 4+| *Storage Management*:
-| Discover new resources (create systems) | Yes | Yes | No
-| View discovered systems | Yes | Yes | No
+| Discover new resources (add systems) | Yes | Yes | No
+| View added systems | Yes | Yes | No
 | Delete systems from the Console| Yes | No | No
 | Modify systems| Yes | No | No
 4+| *System manager access*

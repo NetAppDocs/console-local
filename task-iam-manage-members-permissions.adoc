@@ -16,7 +16,7 @@ summary: Add members and assign roles to provide permissions across different le
 Add members to your NetApp Console (local deployment) organization and assign roles to grant access at the organization, folder, or fleet level for users, service accounts, and directory users.
 
 .Required access roles
-Super admin, Org admin, or Folder or fleet admin (for folders and fleets that they are administering). link:reference-iam-predefined-roles.html[Learn about access roles].
+Super admin, Organization admin, or Folder or fleet admin (for folders and fleets that they are administering). link:reference-iam-predefined-roles.html[Learn about access roles].
 
 == Before you begin
 
@@ -32,7 +32,7 @@ NetApp Console uses role-based access control (RBAC) to manage permissions. Assi
 Note the following about granting access in NetApp Console (local deployment):
 
 * You must explicitly add each user to your organization and assign at least one role before that user can access resources.
-* A role that you assign at the organization or folder level is inherited by child scopes. Choose the assignment scope carefully so the member gets access only where needed. link:concept-iam-rbac.html#role-inheritance[Learn how role inheritance works].
+* A role that you assign at the organization or folder level is inherited by child scopes, so choose the assignment scope carefully to give the member access only where needed. link:concept-iam-rbac.html#role-inheritance[Learn more about how role inheritance works in NetApp Console (local deployment)].
 
 [#add-members]
 == Add members to your organization
@@ -51,9 +51,7 @@ When adding a member, choose the organization, folder, or fleet where the member
 
 === Add a user account
 
-You must have the Org admin or Folder or fleet admin role to add a user to an organization, folder, or fleet so they can access resources.
-
-NOTE: You must first configure an email server to use with Console (local deployment) before you can add users. link:task-console-configure-notifications-delivery.html[Learn how to configure an email server.]
+You must have the Organization admin or Folder or fleet admin role to add a user to an organization, folder, or fleet so they can access resources.
 
 
 .Steps

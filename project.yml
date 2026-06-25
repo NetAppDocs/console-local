@@ -44,7 +44,7 @@ sidebar:
           url: /task-install-agent-on-prem-ova.html
       - title: Plan your Console (local deployment) organization
         entries:
-        - title: Quick start for Console organization setup
+        - title: Get started with identity and access
           url: /task-iam-fleet-mgmt-get-started.html
         - title: Learn about folders and fleets
           url: /concept-folders-fleets-overview.html

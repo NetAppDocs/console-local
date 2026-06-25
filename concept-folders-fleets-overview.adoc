@@ -54,7 +54,7 @@ Members are the users and service accounts in your organization. Roles define wh
 Members::
 Members of your organization are user accounts or service accounts. A service account is typically used by an application to complete specified tasks without human intervention.
 +
-users with the Org admin role can add new members to your organization. All users (including service accounts and Active Directory users) must be explicitly added and granted at least one role in order to access Console (local deployment).
+Users with the Organization admin role can add new members to your organization. All users (including service accounts and Active Directory users) must be explicitly added and granted at least one role in order to access Console (local deployment).
 
 link:task-iam-manage-members-permissions.html[Learn how to add members to your organization].
 
@@ -69,10 +69,11 @@ Users can have multiple roles as their duties expand.
 
 === Role inheritance
 
-When you assign a role at the organization or folder level, that role is automatically inherited by all resources within the selected scope. Folder-level roles apply to all contained fleets, while fleet-level roles apply to all resources within that fleet.
+When you assign a role at the organization or folder level, the child folders, fleets, and resources beneath it inherit that role, so your folder and fleet design determines how broadly each assignment applies.
 
-To learn how inheritance affects role assignments and access changes, link:concept-iam-rbac.html#role-inheritance[learn how RBAC and role inheritance work].
+link:concept-iam-rbac.html#role-inheritance[Learn more about how role inheritance works in NetApp Console (local deployment)].
 
+[#organization-design-examples]
 == Organization design examples
 
 The right organizational structure depends on the size of your organization and how your teams are organized. The following examples show how different organizations can use the folder and fleet hierarchy to manage access effectively.
@@ -99,7 +100,7 @@ For large organizations with regional operations and specialized teams, implemen
 * *Platform roles*:
 ** 1 Organization admin: Global oversight and policy management
 ** 3 Folder or fleet admins: Regional control (one per region)
-** 1 Federation admin: Corporate identity provider and SSO integration
+** 1 Federation admin: Corporate directory service integration
 * *Storage roles by region*:
 ** Storage admin: Discover and manage storage systems in assigned regions
 ** Storage viewer: Monitor storage resources across regions

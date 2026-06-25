@@ -19,7 +19,7 @@ This FAQ answers common questions about NetApp Console (local deployment). It fo
 
 .What core capabilities does NetApp Console (local deployment) provide?
 
-NetApp Console (local deployment) provides four core capability areas: policy-driven storage provisioning through storage classes that bundle performance, capacity, and tiering policies; role-based access control and identity integration with Active Directory, SSO, and MFA support; continuous compliance monitoring and automated remediation that monitors workloads for drift and can remediate violations automatically; and security event integration and audit trail that forwards management events to your SIEM and generates an audit record for every administrative action.
+NetApp Console (local deployment) provides four core capability areas: policy-driven storage provisioning through storage classes that bundle performance, capacity, and tiering policies; role-based access control and identity integration with Active Directory and MFA support; continuous compliance monitoring and automated remediation that monitors workloads for drift and can remediate violations automatically; and security event integration and audit trail that forwards management events to your SIEM and generates an audit record for every administrative action.
 
 .What is the correct setup sequence for storage management in NetApp Console (local deployment)?
 

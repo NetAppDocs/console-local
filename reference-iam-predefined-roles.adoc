@@ -35,8 +35,8 @@ Users with this role manage your organization by creating folders and fleets, as
 
 | link:reference-iam-platform-roles.html#organization-admin-roles[Folder or fleet admin]|	Allows a user unrestricted access to assigned fleets and folders. Can add members to folders or fleets they manage, as well as perform any task and use any data service or application on resources within the folder or fleet they are assigned. 
 
-| link:reference-iam-platform-roles.html#federation-roles[Federation admin]|	Allows a user to create and manage federations (including directory service integrations) with the Console, which enables single-sign on (SSO). 
-| link:reference-iam-platform-roles.html#federation-roles[Federation viewer]|	Allows a user to view existing federations and directory service integrations with the Console. Cannot create or manage federations.
+| link:reference-iam-platform-roles.html#federation-roles[Federation admin]|	Allows a user to create and manage directory service federations with the Console so users can authenticate with their existing directory credentials. 
+| link:reference-iam-platform-roles.html#federation-roles[Federation viewer]|	Allows a user to view existing directory service federations with the Console. Cannot create or manage federations.
 | link:reference-iam-platform-roles.html#super-admin-roles[Super admin]| Gives the user all of admin roles. This role is designed for smaller organizations that may not need to distribute Console responsibilities across multiple users. 
 | link:reference-iam-platform-roles.html#super-admin-roles[Super viewer]|	Gives the user all viewer roles. This role is designed for smaller organizations that may not need to distribute Console responsibilities across multiple users.
 
@@ -68,7 +68,7 @@ The following is a list of roles in the application category. Each role grants s
 The following is a list of roles in the data service category. Each role grants specific permissions within its designated scope. Users who do not have the required data service role or a platform role will be unable to access the data service.
 
 
-[cols="1,2",options="header",cols="10,24"]
+[cols="1,2",options="header"]
 |===
 
 | Data service role
@@ -103,6 +103,6 @@ SnapCenter does not have a viewer role.
 == Related links
 
 * link:concept-identity-and-access-management.html[Learn about NetApp Console identity and access management]
-* link:task-iam-get-started.html[Get started with NetApp Console IAM]
+* link:task-iam-fleet-mgmt-get-started.html[Get started with identity and access in NetApp Console]
 * link:task-iam-manage-members-permissions.html[Add members and assign roles in a NetApp Console organization]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the API for NetApp Console IAM^]
