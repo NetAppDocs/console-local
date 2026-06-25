@@ -15,7 +15,7 @@ summary: Use NetApp Console (local deployment)'s Identity and Access Management 
 [.lead]
 // Jira: SPSPM-3302, SPSPM-3328
 
-Identity and access management (IAM) in NetApp Console (local deployment) controls who can sign in, how identities are verified, what resources users can access, and what actions they can perform. In NetApp Console (local deployment), IAM includes role-based access control (RBAC), multi-factor authentication (MFA), directory-backed authentication, and single sign-on (SSO), as well as the hierarchy and audit model that support delegated administration.
+Identity and access management (IAM) in NetApp Console (local deployment) controls who can sign in, how identities are verified, what resources users can access, and what actions they can perform. In NetApp Console (local deployment), IAM includes role-based access control (RBAC), multi-factor authentication (MFA), and directory-backed authentication, as well as the hierarchy and audit model that support delegated administration.
 
 Use this page to understand the NetApp Console (local deployment) IAM model at a high level. For detailed hierarchy planning examples, link:concept-folders-fleets-overview.html[learn about folders and fleets].
 
@@ -26,7 +26,7 @@ NOTE: You must have the _Super admin_, _Organization admin_, or _Folder or fleet
 
 NetApp Console (local deployment) IAM combines identity verification, access control, delegation, and auditability:
 
-* _Authentication_ determines how users sign in, whether with local credentials or through your directory and SSO configuration.
+* _Authentication_ determines how users sign in, whether with local credentials or through your directory configuration.
 * _Authorization_ determines what members can do after they sign in, based on predefined roles and the scope where you assign them.
 * _Hierarchy and scoping_ determine which folders, fleets, and resources a member can access.
 * _Member and credential management_ determine how you add users, service accounts, and how you manage MFA and service account secrets.
@@ -56,7 +56,7 @@ Roles that you assign at the organization or folder level are inherited by child
 
 NetApp designs NetApp Console (local deployment) roles with least-privilege principles so each role includes only the permissions needed for its tasks.
 
-To learn more about role design, scope, and inheritance, link:concept-iam-rbac.html#role-inheritance[learn how role-based access control and role inheritance work in NetApp Console (local deployment)].
+link:concept-iam-rbac.html#role-inheritance[Learn more about how role-based access control and role inheritance work in NetApp Console (local deployment)].
 
 
 == How the IAM hierarchy works
@@ -98,7 +98,7 @@ link:task-audit-console-activity.html[Learn how to audit NetApp Console (local d
 
 == Next steps with IAM in NetApp Console
 
-* link:task-iam-fleet-mgmt-get-started.html[Quick start for Console organization setup]
+* link:task-iam-fleet-mgmt-get-started.html[Get started with identity and access in NetApp Console]
 * link:concept-secure-access.html[Learn about secure access in NetApp Console (local deployment)]
 * link:concept-iam-rbac.html[Learn about RBAC in NetApp Console (local deployment)]
 * link:task-audit-console-activity.html[Monitor or audit Console (local deployment) activity]

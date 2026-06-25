@@ -25,7 +25,7 @@ NetApp Console (local deployment) enforces consistent storage behavior through s
 
 == Role-based access control and identity integration
 
-NetApp Console (local deployment) provides granular role-based access control (RBAC) that scopes what users can see and do to the fleets and resources they are responsible for. You can integrate with Active Directory to manage user access through your existing directory services, configure single sign-on (SSO) through your identity provider, and enforce multi-factor authentication (MFA) for all Console (local deployment) users. Access governance stays aligned with your organization's broader identity and access management practices.
+NetApp Console (local deployment) provides granular role-based access control (RBAC) that scopes what users can see and do to the fleets and resources they are responsible for. You can integrate with Active Directory to manage user access through your existing directory services and enforce multi-factor authentication (MFA) for all Console (local deployment) users. Access governance stays aligned with your organization's broader identity and access management practices.
 
 == Continuous compliance monitoring and automated remediation
 

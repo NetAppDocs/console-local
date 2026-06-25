@@ -17,7 +17,7 @@ Review or change a user's roles across multiple folders or fleets, such as check
 
 
 .Required access roles
-Super admin, Org admin, or Folder or fleet admin (for folders and fleets that they are administering). link:reference-iam-predefined-roles.html[Learn about access roles].
+Super admin, Organization admin, or Folder or fleet admin (for folders and fleets that they are administering). link:reference-iam-predefined-roles.html[Learn about access roles].
 
 You can view and manage access in two ways depending on your needs. If you want to view the roles that a particular user has across all the fleet in your organization, use the *Members* page.
 
@@ -30,7 +30,9 @@ NetApp Console uses role-based access control (RBAC) to manage member permission
 
 [#role-inheritance]
 === Using role inheritance
-A role that you assign at the folder level applies to all child fleets and folders, while a role that you assign at the fleet level applies only to that fleet's resources. If a member inherits access from the organization or a folder, change that assignment at the higher scope where you granted it. link:concept-iam-rbac.html#role-inheritance[Learn more about how role inheritance works].
+A role that you assign at the organization or folder level is inherited by the child scopes beneath it, so change an inherited assignment at the higher scope where you originally granted it.
+
+link:concept-iam-rbac.html#role-inheritance[Learn more about how role inheritance works in NetApp Console (local deployment)].
 
 
 

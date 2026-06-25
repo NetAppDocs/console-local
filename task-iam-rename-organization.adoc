@@ -65,5 +65,5 @@ image:screenshot-iam-project-id.png[A screenshot of the folders and fleets table
 .Related information
 
 * link:concept-identity-and-access-management.html[Learn about identity and access management]
-* link:task-iam-get-started.html[Get started with identity and access]
+* link:task-iam-fleet-mgmt-get-started.html[Get started with identity and access in NetApp Console]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the API for identity and access^]

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: concept-secure-access.html
-keywords: security, access control, SSO, MFA, AD, Active Directory, directory services, authentication, identity, netapp console local
-summary: "Learn about the security options available in NetApp Console (local deployment), including Active Directory integration, single sign-on, and multi-factor authentication."
+keywords: security, access control, MFA, AD, Active Directory, directory services, authentication, identity, netapp console local
+summary: "Learn about the security options available in NetApp Console (local deployment), including Active Directory integration and multi-factor authentication."
 ---
 = Learn about secure access to NetApp Console (local deployment)
 :hardbreaks:
@@ -23,7 +23,7 @@ link:task-iam-active-directory-integrate.html[Integrate Active Directory with Ne
 
 == Multi-factor authentication
 
-Users who aren't a part of your organization's single sign-on (SSO) setup can enable multi-factor authentication (MFA) for an additional layer of verification to prevent unauthorized access, even if credentials are compromised.
+Users can enable multi-factor authentication (MFA) for an additional layer of verification to prevent unauthorized access, even if credentials are compromised.
 
 link:task-user-settings.html[Enable MFA for NetApp Console (local deployment)]
 

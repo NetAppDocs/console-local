@@ -33,7 +33,7 @@ indexpage:
     - title: Set up NetApp Console (local deployment)
       links:
         - title: Get started with identity and access
-          url: /task-iam-get-started.html
+          url: /task-iam-fleet-mgmt-get-started.html
         - title: Create folders and fleets
           url: /task-iam-manage-folders-fleets.html
         - title: Add users to your Console organization

@@ -5,7 +5,7 @@ keywords: iam, quick start, get started, get started with iam, identity and acce
 summary: "Set up identity and access in NetApp Console (local deployment) by creating your folder and fleet hierarchy, adding members, adding resources, and placing those resources in the correct fleets."
 ---
 
-= Get started with fleet management in NetApp Console (local deployment)
+= Get started with identity and access in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,10 +16,10 @@ summary: "Set up identity and access in NetApp Console (local deployment) by cre
 Set up your folder and fleet hierarchy, add members and starting permissions, and add and place resources in the correct fleets so the right teams can access and manage them.
 
 .Required access roles
-Super admin, Org admin or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 
-You need the *Org admin* or *Super admin* role to complete initial setup. After setup, manage resources, member access, and fleet access as your organization changes.
+You need the *Organization admin* or *Super admin* role to complete initial setup. After setup, manage resources, member access, and fleet access as your organization changes.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Add or discover resources
 
