@@ -19,25 +19,26 @@ NetApp Console (local deployment) is a self-hosted deployment option that lets y
 NetApp Console (local deployment) delivers the unified storage management and automation capabilities such as provisioning, policy enforcement, drift detection, and remediation in an isolated deployment that keeps your data, metadata, and management traffic entirely within your own infrastructure. You get operational leverage without sacrificing the data sovereignty your organization requires.
 
 
-== Policy-driven storage provisioning
-
-NetApp Console (local deployment) enforces consistent storage behavior through storage classes—templates that bundle performance, capacity, and tiering policies into reusable definitions. Administrators define storage standards once. Provisioning activity across your environment, whether manual or automated, draws from those approved classes. This eliminates configuration drift, reduces the time junior administrators spend on provisioning decisions, and ensures that every workload meets your organization's standards from day one.
-
-link:concept-manage-storage.html[Learn about managing storage with NetApp Console (local deployment)]
-
 == Fleet-wide monitoring and observability
 
 NetApp Console (local deployment) gives you a single place to watch the health and performance of every cluster you manage. Fleet-wide dashboards surface the clusters and volumes that need attention, configurable alerts notify the right people when conditions change, and custom dashboards let each administrator build the monitoring view that matches their responsibilities. When a volume needs a closer look, the Workload Analyzer correlates latency, throughput, resource utilization, and configuration changes over time so you can pinpoint root causes and act before issues affect workloads.
 
 link:concept-monitor-storage.html[Learn about monitoring storage health in NetApp Console (local deployment)]
 
+
+== Policy-driven storage provisioning
+
+NetApp Console (local deployment) enforces consistent storage behavior through storage classes—templates that bundle performance, capacity, and tiering policies into reusable definitions. Administrators define storage standards once. Provisioning activity across your environment, whether manual or automated, draws from those approved classes. This eliminates configuration drift, reduces the time junior administrators spend on provisioning decisions, and ensures that every workload meets your organization's standards from day one.
+
+link:concept-manage-storage.html[Learn about managing storage with NetApp Console (local deployment)]
+
 == Continuous compliance monitoring and automated remediation
 
 After provisioning, NetApp Console (local deployment) monitors every workload against the storage class it was provisioned with. When a workload drifts—because of a direct cluster configuration change or degrading performance—NetApp Console (local deployment) flags the violation immediately. Administrators can follow guided remediation steps or configure automated remediation to resolve common drift conditions without manual intervention. This continuous enforcement reduces audit risk and keeps your environment compliant between scheduled reviews.
 
-== Data protection and mobility
+== Data protection
 
-Beyond provisioning and monitoring, NetApp Console (local deployment) gives you access to NetApp data services so you can protect and move data across your environment. From the same interface, you can back up and replicate data, tier cold data, and scan and classify data to support your protection and compliance requirements. Managing data protection alongside your storage keeps governance consistent and reduces the number of tools your teams need to operate.
+Beyond provisioning and monitoring, NetApp Console (local deployment) gives you access to NetApp Backup and Recovery so you can protect your data from the same interface. You can back up and restore your data to support your protection and recovery requirements. Managing data protection alongside your storage keeps governance consistent and reduces the number of tools your teams need to operate.
 
 link:concept-data-services.html[Learn about data services in NetApp Console (local deployment)]
 
