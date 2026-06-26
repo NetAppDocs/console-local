@@ -18,12 +18,16 @@ NetApp Console (local) helps you manage ONTAP storage at scale using consistent,
 
 This page is the starting point for storage admins managing ONTAP storage using fleets, storage class policies, and storage classes. It organizes the end-to-end workflow and links to detailed procedures.
 
+If you're new to these concepts, start with [Learn about managing storage with NetApp Console (local deployment)](concept-manage-storage.html).
+
 == Prerequisites and dependencies
 
-(Org Admin) Ensure storage systems are discovered and assigned to the correct fleet(s).
-Note: Storage admins can’t apply standards or provision into a fleet until systems are available in that fleet and access is granted via RBAC.
+Organization admin
+Ensure storage systems are discovered and assigned to the correct fleets.
+Storage admins can't apply standards or provision into a fleet until systems are available in that fleet and access is granted via RBAC.
 
-Org Admin prerequisite: Systems must be discovered and placed into the correct fleet(s) before you can apply standards or provision storage.
+RBAC access required
+Confirm you have access to the fleets where you will define standards and provision storage.
 
 == Typical workflow
 
@@ -68,16 +72,3 @@ Org Admin prerequisite: Systems must be discovered and placed into the correct f
 * Monitor workloads to detect drift from defined policies.
 
 * Remediate noncompliant configurations to restore policy alignment.
-
-== Choose how you want to provision
-
-NetApp Console (local deployment) supports multiple provisioning workflows so you can match your operational model while still enforcing storage class standards.
-
-* *Manual provisioning* — Choose the target system and configuration details. Use when you need explicit control over system selection and configuration details.
-link:task-provisioning-manual.html[Provision storage manually in NetApp Console (local deployment)]
-
-* *Automated provisioning* — Provide workload inputs and (optionally) a storage class. Console (local deployment) recommends best-fit placement and applies class-driven settings to reduce manual decisions and drift risk.
-link:task-provisioning-automated.html[Provision storage automatically in NetApp Console (local deployment)]
-
-* *AI-assisted (agentic) provisioning* — Describe what you need in natural language. Console (local deployment) proposes a plan constrained by RBAC and storage classes, then provisions only after you review and approve the plan.
-link:task-provisioning-agentic.html[Provision storage with agentic workflows in NetApp Console (local deployment)]

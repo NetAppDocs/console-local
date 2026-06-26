@@ -102,7 +102,7 @@ sidebar:
         url: /task-user-settings.html
       - title: Manage storage
         entries:
-        - title: Understand storage management
+        - title: Storage management workflow overview
           url: /concept-manage-storage-workflow.html
         - title: Standardize storage behavior
           entries:
