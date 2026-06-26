@@ -130,6 +130,6 @@ After initial setup, you can do the following:
 == Related information
 
 * link:concept-identity-and-access-management.html[Learn about identity and access in NetApp Console]
-* link:task-iam-get-started.html[Get started with identity and access]
+* link:task-iam-fleet-mgmt-get-started.html[Get started with identity and access in NetApp Console]
 * link:task-iam-users-fleets-assign.html[Manage fleet access assignments]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the identity and access API^]

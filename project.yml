@@ -44,11 +44,11 @@ sidebar:
           url: /task-install-agent-on-prem-ova.html
       - title: Plan your Console (local deployment) organization
         entries:
-        - title: Quick start for Console organization setup
+        - title: Get started with identity and access
           url: /task-iam-fleet-mgmt-get-started.html
         - title: Learn about folders and fleets
           url: /concept-folders-fleets-overview.html
-        - title: Understand role-based access control (RBAC)
+        - title: Learn about role-based access control (RBAC)
           url: /concept-iam-rbac.html
       - title: Set up your Console organization
         entries:
@@ -135,7 +135,7 @@ sidebar:
           - title: Learn about storage alerts
             url: /concept-storage-alerts.html
           - title: View alerts
-            url: /task-alerts-view.html
+            url: /task-alerts-monitor.html
           - title: Configure notification rules for alerts
             url: /task-alert-rules-manage.html
         - title: Investigate performance issues

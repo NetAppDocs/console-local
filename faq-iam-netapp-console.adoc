@@ -21,16 +21,16 @@ This FAQ answers common questions about identity and access management (IAM) in 
 
 When you sign up, the Console creates an organization with one Organization admin and one default fleet. From there, the recommended setup steps are:
 
+. Add or discover resources in Console.
 . Edit the default fleet or create additional fleets and folders to match your business hierarchy.
-. Add members to your organization.
-. Add or discover resources.
-. Associate resources with additional fleets as needed.
+. Associate resources with the correct fleets.
+. Add members to your organization and assign roles.
 
 == Resource hierarchy: organizations, folders, and fleets
 
 .What is the difference between a folder and a fleet in NetApp Console IAM?
 
-Folders group related fleets for organizational structure and role delegation. fleets contain resources and are where members access those resources. Resources cannot be directly associated with folders — they must be associated with fleets. Assigning a role at the folder level gives that member inherited access to all child fleets and folders.
+Folders group related fleets for organizational structure and role delegation. Fleets contain resources and are where members access those resources. Resources cannot be directly associated with folders — they must be associated with fleets. Assigning a role at the folder level gives that member inherited access to all child fleets and folders.
 
 .Are folders visible to all members of my organization?
 
@@ -97,6 +97,6 @@ Use a fleet-centric approach when you need to update everyone assigned to one fl
 
 * link:concept-identity-and-access-management.html[Learn about NetApp Console identity and access management]
 * link:reference-iam-predefined-roles.html[Learn about NetApp Console access roles]
-* link:task-iam-get-started.html[Get started with identity and access in NetApp Console]
+* link:task-iam-fleet-mgmt-get-started.html[Get started with identity and access in NetApp Console]
 * link:task-iam-manage-folders-fleets.html[Add folders and fleets to your NetApp Console organization]
 * link:task-iam-manage-members-permissions.html[Add members and assign roles in a NetApp Console organization]

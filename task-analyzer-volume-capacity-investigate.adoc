@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: task-analyzer-volume-capacity-investigate.html
-keywords: capacity, snapshot, storage efficiency, forecast, almost full, workload analyzer, netapp console local
+keywords: capacity, snapshot, storage efficiency, forecast, almost full, workload analyzer, netapp console local deployment
 summary: "Investigate capacity and snapshot growth on a volume using the Workload Analyzer to understand physical space, storage efficiency, and snapshot reserve trends."
 ---
-= Investigate capacity growth on a volume in NetApp Console (local)
+= Investigate capacity growth on a volume in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,20 +14,14 @@ summary: "Investigate capacity and snapshot growth on a volume using the Workloa
 [.lead]
 // Jira: SPSPM-3315
 
-When a volume is filling up or snapshot copies are consuming more space than expected, use the Workload Analyzer to examine capacity and snapshot trends over time. The capacity analysis section shows how physical and available space change, breaks down storage efficiency savings, and projects when the volume will reach a capacity threshold.
+Use Workload Analyzer in NetApp Console (local deployment) to investigate why a volume is running out of space.
 
+When a volume is filling up or snapshot copies are consuming more space than expected, examine capacity and snapshot trends over time. The capacity analysis section shows how physical and available space change, breaks down storage efficiency savings, and projects when the volume will reach a capacity threshold.
 
-
-== Before you begin
-
-* Ensure NetApp Console (local) has already discovered the volume you want to investigate.
-* Identify the approximate time window when capacity consumption increased so you can select the right analysis range.
 
 .Steps
 
-. In the NetApp Console (local), navigate to *Workload Analyzer*.
-+
-Alternatively, from the storage inventory, select a volume and select *Analyze*.
+. Select *Health > Workload Analyzer*.
 
 . In the *Volume* field, search for and select the volume you want to investigate.
 
@@ -35,7 +29,7 @@ Alternatively, from the storage inventory, select a volume and select *Analyze*.
 
 . Scroll to the *Capacity Analysis* section.
 
-. Open the *View* dropdown and select *Capacity View*.
+. Select *Capacity view* from the *View* dropdown.
 +
 The chart shows physical capacity as the bottom stacked area and available capacity as the top stacked area. Together they equal the total volume size, so you can see how quickly available space is decreasing.
 
@@ -43,17 +37,17 @@ The chart shows physical capacity as the bottom stacked area and available capac
 +
 A declining efficiency ratio while physical capacity rises can indicate that newly written data isn't deduplicating or compressing as well as the existing data.
 
-. To investigate snapshot consumption, open the *View* dropdown and select *Snapshot View*.
+. To investigate snapshot consumption, select *Snapshot View* from the *View* dropdown.
 +
 The chart shows the snapshot reserve as a horizontal reference line and snapshot used capacity as an area below it. Hover to see the snapshot space used and its percentage of the reserve, the total snapshot count, and the age of the oldest snapshot.
 +
 When snapshot consumption exceeds the reserve, snapshots begin consuming space from the volume's data area, which reduces the space available for new writes.
 
-. If the volume tiers data to the cloud, open the *View* dropdown and select *Cloud Tier View* to compare how much capacity is on the local performance tier versus the cloud capacity tier.
+. If the volume tiers data to the cloud, select *Cloud Tier View* from the *View* dropdown to compare how much capacity is on the local performance tier versus the cloud capacity tier.
 
 . Enable *Show Forecast* to project when the volume will reach a warning or critical capacity threshold.
 +
-// ENGINEERING REVIEW: Confirm the capacity forecast minimum-data requirement and the "almost full" threshold for Console (local). The following values are carried over from Active IQ Unified Manager and may differ.
+// ENGINEERING REVIEW: Confirm the capacity forecast minimum-data requirement and the "almost full" threshold for Console (local deployment). The following values are carried over from Active IQ Unified Manager and may differ.
 The capacity forecast requires at least 10 days of historical data. When fewer than 30 days of capacity remain before the volume is full, the analyzer identifies the storage as almost full. The forecast displays an insight message with an estimated time to breach.
 
 .After you finish
@@ -63,4 +57,4 @@ Use the capacity trends you observe to decide what to do next:
 * If available capacity is trending toward full, consider increasing the volume size, enabling autogrow, or moving data off the volume.
 * If snapshot used capacity is exceeding the reserve, review your snapshot policy and retention to reclaim space.
 * If the storage efficiency ratio is dropping, review whether the workload's data type or inline efficiency settings are reducing savings. Use link:reference-workload-analyzer-metrics.html[Workload Analyzer metrics reference] for detailed descriptions of capacity, snapshot, and efficiency metrics.
-* If a capacity-related alert is associated with the volume and Console (local) can resolve it, the alert may offer a Fix-It option. See link:task-remediation-guided.html[Remediate with guided steps].
+* If the volume has a capacity-related alert that Console (local deployment) can resolve, the alert may offer a Fix-It option. See link:task-remediation-guided.html[Remediate with guided steps].

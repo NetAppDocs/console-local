@@ -66,7 +66,7 @@ View the resources in your organization to find a specific resource and see whic
 
 Associate a resource with a fleet or folder so the appropriate teams can manage it. For example, after adding an ONTAP cluster, associate it with the `Production-US-East` fleet so the regional Storage admins for that fleet can manage it.
 
-NOTE: Users with the Org admin role can add resources to a folder to delegate fleet association tasks to the Folder or fleet admin for that folder. link:task-iam-manage-folders-fleets.html#associate-resource-folder[Learn about associating a resource with a folder].
+NOTE: Users with the Organization admin role can add resources to a folder to delegate fleet association tasks to the Folder or fleet admin for that folder. link:task-iam-manage-folders-fleets.html#associate-resource-folder[Learn about associating a resource with a folder].
 
 
 .Steps
@@ -145,6 +145,6 @@ NOTE: Access to the resource changes as soon as the association changes. If poss
 == Related information
 
 * link:concept-identity-and-access-management.html[Learn about identity and access in NetApp Console]
-* link:task-iam-get-started.html[Get started with identity and access in NetApp Console]
+* link:task-iam-fleet-mgmt-get-started.html[Get started with identity and access in NetApp Console]
 * link:task-iam-users-fleets-assign.html[Manage fleet access assignments after moving resources]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the API for identity and access^]

@@ -14,23 +14,49 @@ summary: "Learn about NetApp Console (local deployment), a self-hosted storage m
 [.lead]
 // Jira: SPSPM-3319
 
-The NetApp Console (local deployment) is a self-hosted deployment option that lets you run the NetApp Console (local deployment) platform in your on-premises environment.
+NetApp Console (local deployment) is a self-hosted deployment option that lets you run the NetApp Console (local deployment) control plane in your on-premises environment.
 
 NetApp Console (local deployment) delivers the unified storage management and automation capabilities such as provisioning, policy enforcement, drift detection, and remediation in an isolated deployment that keeps your data, metadata, and management traffic entirely within your own infrastructure. You get operational leverage without sacrificing the data sovereignty your organization requires.
+
+
+== Fleet-wide monitoring and observability
+
+NetApp Console (local deployment) gives you a single place to watch the health and performance of every cluster you manage. Fleet-wide dashboards surface the clusters and volumes that need attention, configurable alerts notify the right people when conditions change, and custom dashboards let each administrator build the monitoring view that matches their responsibilities. When a volume needs a closer look, the Workload Analyzer correlates latency, throughput, resource utilization, and configuration changes over time so you can pinpoint root causes and act before issues affect workloads.
+
+link:concept-monitor-storage.html[Learn about monitoring storage health in NetApp Console (local deployment)]
 
 
 == Policy-driven storage provisioning
 
 NetApp Console (local deployment) enforces consistent storage behavior through storage classes—templates that bundle performance, capacity, and tiering policies into reusable definitions. Administrators define storage standards once. Provisioning activity across your environment, whether manual or automated, draws from those approved classes. This eliminates configuration drift, reduces the time junior administrators spend on provisioning decisions, and ensures that every workload meets your organization's standards from day one.
 
-== Role-based access control and identity integration
-
-NetApp Console (local deployment) provides granular role-based access control (RBAC) that scopes what users can see and do to the fleets and resources they are responsible for. You can integrate with Active Directory to manage user access through your existing directory services, configure single sign-on (SSO) through your identity provider, and enforce multi-factor authentication (MFA) for all Console (local deployment) users. Access governance stays aligned with your organization's broader identity and access management practices.
+link:concept-manage-storage.html[Learn about managing storage with NetApp Console (local deployment)]
 
 == Continuous compliance monitoring and automated remediation
 
 After provisioning, NetApp Console (local deployment) monitors every workload against the storage class it was provisioned with. When a workload drifts—because of a direct cluster configuration change or degrading performance—NetApp Console (local deployment) flags the violation immediately. Administrators can follow guided remediation steps or configure automated remediation to resolve common drift conditions without manual intervention. This continuous enforcement reduces audit risk and keeps your environment compliant between scheduled reviews.
 
-== Security event integration and audit trail
+== Data protection
 
-NetApp Console (local deployment) integrates with your SIEM tools to forward management events and security logs to your centralized monitoring infrastructure. Every administrative action in NetApp Console (local deployment) generates an audit record, giving your security and compliance teams the visibility they need to investigate incidents, demonstrate control effectiveness, and satisfy audit requirements. Because NetApp Console (local deployment) runs in your own environment, log data never leaves your infrastructure.
+Beyond provisioning and monitoring, NetApp Console (local deployment) gives you access to NetApp Backup and Recovery so you can protect your data from the same interface. You can back up and restore your data to support your protection and recovery requirements. Managing data protection alongside your storage keeps governance consistent and reduces the number of tools your teams need to operate.
+
+link:concept-data-services.html[Learn about data services in NetApp Console (local deployment)]
+
+== AI-assisted management
+
+NetApp Console (local deployment) can connect to a large language model (LLM) of your choice to provide AI-assisted storage management. You can describe a workload in plain language to get a provisioning plan, ask the Console to investigate an active alert, or get contextual answers about your storage environment. Every AI action stays within the guardrails of your storage classes and the role-based access controls assigned to your account, and sensitive operations require your confirmation. Because the platform runs in your own environment, your data and queries stay within your network.
+
+link:concept-llm-integration.html[Learn about LLM integration in NetApp Console (local deployment)]
+
+== Role-based access control and identity integration
+
+NetApp Console (local deployment) provides granular role-based access control (RBAC) that scopes what users can see and do to the fleets and resources they are responsible for. You can integrate with Active Directory so users sign in with their existing corporate credentials, and local users can add multi-factor authentication (MFA) for another layer of verification. Access governance stays aligned with your organization's broader identity and access management practices.
+
+link:concept-identity-and-access-management.html[Learn about identity and access management in NetApp Console (local deployment)]
+link:concept-secure-access.html[Learn about secure access to NetApp Console (local deployment)]
+
+== Audit trail and log export
+
+Every administrative action in NetApp Console (local deployment) generates an audit record, giving your security and compliance teams the visibility they need to investigate incidents, demonstrate control effectiveness, and satisfy audit requirements. You can export the audit logs to your own syslog server through a webhook so they reach your centralized monitoring or SIEM tools for longer retention and analysis. Because NetApp Console (local deployment) runs in your own environment, log data never leaves your infrastructure.
+
+link:task-audit-console-activity.html[Learn about auditing activity in NetApp Console (local deployment)]

@@ -36,7 +36,7 @@ You can change your Console (local deployment) display name, which identifies yo
 
 Configure multi-factor authentication (MFA) to improve security by requiring a second verification method.
 
-Users who use single sign-on with an external identity provider or the NetApp Support Site cannot enable MFA. If either of these are true for you, you don't see the option to enable MFA in your profile settings.
+Users who sign in through the NetApp Support Site cannot enable MFA. If this is true for you, you don't see the option to enable MFA in your profile settings.
 
 Do not enable MFA if your user account is used for API access. Multi-factor authentication stops API access when enabled for a user account. Use service accounts for all API access.
 

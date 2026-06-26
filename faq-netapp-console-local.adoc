@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: faq-netapp-console-local.html
-keywords: faq, frequently asked questions, frequently asked questions about netapp console local, netapp console local, storage classes, storage fleets, storage class policies, AD, Active Directory, directory services, siem, llm, ai-assisted management, ontap
-summary: "Frequently asked questions about NetApp Console (local deployment), including storage classes, fleets, LLM integration, and security integrations."
+keywords: faq, frequently asked questions, frequently asked questions about netapp console local, netapp console local, storage classes, storage class policies, storage fleets, folders, rbac, role inheritance, active directory, mfa, workload analyzer, alerts, custom dashboards, llm, ai-assisted management, backup and recovery, audit, ontap
+summary: "Frequently asked questions about NetApp Console (local deployment), including deployment, storage classes, fleets, RBAC, monitoring, AI-assisted management, and data protection."
 ---
 
 = FAQ for NetApp Console (local deployment)
@@ -13,90 +13,165 @@ summary: "Frequently asked questions about NetApp Console (local deployment), in
 :imagesdir: ./media/
 
 [.lead]
-This FAQ answers common questions about NetApp Console (local deployment). It focuses on key concepts, setup prerequisites, and non-obvious system behavior useful when setting up and managing the Console (local deployment).
+This FAQ answers common questions about NetApp Console (local deployment). It focuses on concepts, prerequisites, and system behavior that are useful when you deploy, set up, and manage the Console (local deployment).
 
-== Getting started with NetApp Console (local deployment)
+== Get started with NetApp Console (local deployment)
 
-.What core capabilities does NetApp Console (local deployment) provide?
+.What is NetApp Console (local deployment) and why would I use the self-hosted option?
 
-NetApp Console (local deployment) provides four core capability areas: policy-driven storage provisioning through storage classes that bundle performance, capacity, and tiering policies; role-based access control and identity integration with Active Directory, SSO, and MFA support; continuous compliance monitoring and automated remediation that monitors workloads for drift and can remediate violations automatically; and security event integration and audit trail that forwards management events to your SIEM and generates an audit record for every administrative action.
+NetApp Console (local deployment) is a self-hosted deployment option that runs the Console control plane in your own on-premises environment. It delivers unified storage management and automation—provisioning, policy enforcement, drift detection, and remediation—while keeping your data, metadata, and management traffic entirely within your own infrastructure, so you get operational leverage without sacrificing data sovereignty. link:concept-netapp-console-local.html[Learn about NetApp Console (local deployment)].
 
-.What is the correct setup sequence for storage management in NetApp Console (local deployment)?
+.How do I deploy NetApp Console (local deployment)?
 
+You deploy NetApp Console (local deployment) as a virtual appliance in your VMware vCenter environment using a pre-configured OVA image. After deployment, discover your storage and add members and assign roles to get started. link:concept-deploy-netapp-console-local.html[Learn about deployment options].
 
+.Do I need a license or subscription to use NetApp Console (local deployment)?
+
+No. You don't need a license or subscription to start using NetApp Console (local deployment). However, some NetApp data services accessible from the Console (local deployment), such as NetApp Backup and Recovery, are licensed or subscription-based and might have an associated cost. link:concept-onprem-ontap.html[Learn about on-premises ONTAP cluster management].
+
+.What is the recommended setup sequence for storage management in NetApp Console (local deployment)?
+
+The typical workflow is to discover storage systems into the correct fleets, define storage class policies, create storage classes from those policies, associate classes with the fleets where they apply, provision volumes or LUNs using a class, and then monitor for drift and remediate to keep workloads aligned. link:concept-manage-storage.html[Learn about managing storage].
 
 == Storage classes and policies
 
 .What is a storage class and why would I use one?
 
-A storage class is a reusable template that captures your organization's storage standards—performance targets, capacity thresholds, and tiering rules—in a single named object. When you provision storage using a storage class, the Console (local deployment) enforces those standards automatically without requiring administrators to make individual configuration decisions for each workload. After provisioning, the Console (local deployment) continuously monitors the workload against the class and alerts you if it drifts out of compliance.
+A storage class is a reusable template that captures your organization's storage standards—performance, capacity, security, and data protection—in a single named object assembled from storage class policies. When you provision using a storage class, the Console (local deployment) enforces those standards automatically without per-workload configuration decisions, and afterward it monitors the workload against the class and alerts you if it drifts out of compliance. link:concept-storage-classes.html[Learn about storage classes].
 
 .What are storage class policies and how do they relate to storage classes?
 
-Storage class policies are the building blocks used to construct a storage class. Each policy controls one dimension of storage behavior: performance, capacity, or tiering. You define policies independently and then combine them when you build a storage class. This lets you reuse the same performance policy across multiple storage classes, or update a single policy in one place and have that change apply to every storage class that references it.
+Storage class policies are the building blocks you combine to construct a storage class. Each policy governs one dimension of storage behavior, so you define policies independently and then assemble them into a class. This lets you reuse the same policy across multiple classes or update a policy in one place and apply that change to every class that uses it. link:concept-storage-class-policies.html[Learn about storage class policies].
 
 .What types of storage class policies can I create?
 
-There are three types of storage class policies. A performance policy defines minimum and maximum IOPS and throughput targets; the Console (local deployment) uses these for placement recommendations and monitors provisioned workloads for drift. A capacity policy defines thresholds for storage space consumption and the Console (local deployment) generates alerts when a workload approaches or exceeds a threshold. A tiering policy controls how data moves between storage tiers based on access patterns and retention requirements to optimize cost without manual data movement.
+NetApp Console (local deployment) includes four types of storage class policies:
+
+* *Performance policy*: Sets expected IOPS/TB, peak IOPS/TB, absolute minimum IOPS, and expected latency targets used for placement and drift detection.
+* *Capacity policy*: Controls space reservation, autogrow, FabricPool tiering, and FlexVol or FlexGroup provisioning for NAS.
+* *Security policy*: Sets encryption, ransomware protection, and FIPS requirements.
+* *Data protection policy*: Sets the number of snapshots retained at each interval for a consistent backup schedule.
+
+link:concept-storage-class-policies.html[Learn about storage class policies].
+
+.Do I have to build storage classes and policies from scratch?
+
+No. The Console (local deployment) includes system-defined policies across all four policy types and predefined storage classes. You can use them as-is or copy them as a starting point for custom policies and classes tailored to your organization's requirements. link:concept-storage-class-policies.html[Learn about storage class policies].
 
 .What do I need to set up before I can create a storage class?
 
-Before creating a storage class, you need to: discover at least one ONTAP cluster so the Console (local deployment) has storage targets to evaluate during placement, have the Organization admin role, and create the storage class policies that capture your performance, capacity, and tiering requirements. Storage classes are assembled from policies, so policies must exist before you can build a storage class.
+Before you create a storage class, make sure you:
+
+* Discover at least one ONTAP cluster so the Console (local deployment) has storage targets to evaluate during placement.
+* Have the Organization admin role.
+* Create the storage class policies that capture your performance, capacity, and other requirements, because classes are assembled from policies.
+
+link:concept-storage-classes.html[Learn about storage classes].
 
 .What happens when a workload drifts out of compliance with its storage class?
 
-After provisioning, the Console (local deployment) continuously monitors each workload against the storage class it was provisioned with. When a workload drifts—due to a direct cluster configuration change or degrading performance—the Console (local deployment) flags the violation immediately. Administrators can follow guided remediation steps to resolve the issue manually, or configure automated remediation to resolve common drift conditions without manual intervention.
+After provisioning, the Console (local deployment) continuously evaluates each workload against its storage class. When a workload drifts—from a direct cluster configuration change or degrading performance—the Console flags the violation immediately and raises an alert. You can follow guided remediation steps or configure automated remediation to resolve common drift conditions. link:concept-storage-classes.html[Learn about storage classes].
 
-== Storage fleets
+== Storage fleets and folders
 
 .What is a storage fleet and why should I use one?
 
-A storage fleet groups storage systems that you manage together in NetApp Console (local deployment). Rather than managing individual clusters in isolation, fleets let you apply policies, grant user access, and monitor health across a group of related clusters as a single unit. This reduces repetitive administrative work and ensures every cluster in a fleet operates under the same standards.
+A storage fleet groups storage systems that you manage together. Instead of configuring policies or access cluster by cluster, you apply them once at the fleet level so every cluster in the fleet operates under the same standards, which reduces repetitive work and keeps behavior consistent. link:concept-storage-fleets.html[Learn about storage fleets].
 
-.How should I organize my storage into fleets?
+.What is the difference between folders and fleets?
 
-How you organize fleets depends on your operational model. Common approaches include grouping by environment (production, development, test), by business unit (finance, engineering, HR), by location or data center, or by application tier (databases, file shares, virtual machines). Each approach has different implications for how you apply policies and delegate access, so choose the model that matches how your teams are structured and how you want to scope management responsibilities.
+Folders group related fleets (for example, by region or business unit) and can't have storage systems associated with them directly, while fleets group the storage systems you manage together. Folders are an organizational and access-delegation tool that isn't visible to members without IAM permissions—members access fleets, not folders. link:concept-folders-fleets-overview.html[Learn about folders and fleets].
 
 .How does associating a storage class with a fleet affect provisioning?
 
-When you associate a storage class with a fleet, the Console (local deployment) applies the policies in that class to all storage provisioning within the fleet. Workloads provisioned inside the fleet automatically inherit the performance, capacity, and tiering rules from the storage class—without requiring administrators to select or verify policy settings at provisioning time. This makes the fleet-to-storage-class association the primary mechanism for enforcing consistent storage standards across a group of clusters.
+When you associate a storage class with a fleet, the Console (local deployment) applies that class's policies to all provisioning within the fleet. Workloads provisioned in the fleet automatically inherit the performance, capacity, and tiering rules without administrators selecting or verifying settings, making the fleet-to-class association the primary way to enforce consistent standards across clusters. link:concept-storage-fleets.html[Learn about storage fleets].
 
-.How does access control work with fleets?
+== Provisioning storage
 
-Fleets serve as the boundary for user access. When you assign users to a fleet, they gain management access to the storage within that fleet and no further. This lets you delegate storage management to team members or application owners without granting them visibility into unrelated parts of your infrastructure.
+.What provisioning methods does NetApp Console (local deployment) support?
 
-== AI-assisted management
+NetApp Console (local deployment) supports three provisioning workflows, all of which enforce storage classes and remain governed by RBAC and audit logging:
 
-.What AI-assisted management capabilities are available with LLM integration?
+* *Manual provisioning*: You choose the target system and configuration details for explicit control.
+* *Automated provisioning*: You provide workload inputs and an optional storage class, and the Console recommends best-fit placement.
+* *AI-assisted (agentic) provisioning*: You describe what you need in natural language, and the Console proposes a plan that you review and approve before it provisions.
 
-When LLM integration is enabled, the Console (local deployment) provides three AI-assisted capabilities: storage provisioning (describe a workload's requirements in plain language and the Console (local deployment) recommends and executes a provisioning plan based on your configured storage classes), alert response (ask the Console (local deployment) to investigate an active alert and it will analyze the issue and suggest or perform a fix depending on permissions granted), and search and guidance (ask questions about your storage environment or ONTAP administration and receive contextual answers drawn from documentation and your fleet's current state).
+link:concept-manage-storage.html[Learn about managing storage].
 
-.Which LLM providers does NetApp Console (local deployment) support?
+== Monitoring and alerts
 
-NetApp Console (local deployment) supports OpenAI, Anthropic, and AWS Bedrock. You bring your own subscription to one of these providers and supply a valid API key during configuration.
+.How do I monitor the health and performance of my storage?
 
-.Does enabling LLM integration send my storage data or queries to a third-party service?
+NetApp Console (local deployment) provides fleet-wide health and performance dashboards to spot clusters or volumes that need attention, the Workload Analyzer for deep-dive volume investigation, configurable alerts and notifications, and guided or automated remediation. link:concept-monitor-storage.html[Learn about storage monitoring].
 
-Because NetApp Console (local deployment) runs in your own environment, your data and queries stay within your network at all times by default. The Console (local deployment) does not send your data to a third-party LLM service without your explicit configuration—you must deliberately configure an outbound connection to your chosen LLM provider's endpoint. All AI actions also respect the role-based access controls assigned to your user account, and sensitive operations require your confirmation before the Console (local deployment) proceeds.
+.What does the Workload Analyzer do?
 
-.What do I need before I can enable LLM integration?
+The Workload Analyzer shows a single volume's behavior over time, correlating latency, throughput, IOPS, resource utilization, capacity, and configuration changes within the same window so you can pinpoint root causes. It can help you determine whether storage or another layer, such as networking, is the source of an application issue, and you can act on Fix-It recommendations directly from the analyzer. link:concept-workload-analyzer.html[Learn about the Workload Analyzer].
 
-Before connecting an LLM, ensure that NetApp Console (local deployment) is deployed and running, and has access to the clusters you want to manage with AI assistance, you have subscribed to a supported LLM provider (OpenAI, Anthropic, or AWS Bedrock) and obtained a valid API key, your network allows outbound connections from the Console (local deployment) to the LLM provider's endpoint, you have the Organization admin role, and storage classes are configured in the Console (local deployment) so the AI can guide provisioning decisions.
+.Why might a volume have high latency even when performance charts look normal?
 
-== Identity and security integrations
+Low available capacity can be the cause. When an ONTAP system is more than 85% full, the high utilization can itself cause performance issues, so the Workload Analyzer's capacity section can explain latency that the performance charts alone don't account for. link:concept-workload-analyzer.html[Learn about the Workload Analyzer].
+
+.Where do alerts in NetApp Console (local deployment) come from, and how are they categorized?
+
+Alerts originate from the ONTAP Event Management System (EMS) on discovered clusters and from NetApp Backup and Recovery operations, consolidated into a single organization-wide view. Each alert identifies the affected system, a severity (such as critical, warning, or informational), and an impact area (capacity, connectivity, data protection, performance, or security). The Console shows alerts only for the fleets your permissions allow. link:concept-storage-alerts.html[Learn about alerts].
+
+.How do alert notification rules decide who gets notified?
+
+A notification rule matches alerts on service, severity, impact area, and target system, then delivers notifications to users with specified access roles through email or webhook. Note that rules apply to specific systems, not to fleets, and can be muted during planned maintenance windows. The Console includes default rules and lets you create custom ones. link:concept-storage-alerts.html[Learn about alerts].
+
+.What can I do with custom dashboards?
+
+Custom dashboards let you build personalized monitoring views by assembling cards from predefined templates, choosing the scope, metrics, aggregation, target resources, and time window. Templates cover performance, capacity, health, and alerts, and you can scope cards to any level of the ONTAP hierarchy. Each dashboard and card is private to you and shows data only for resources you're authorized to view. link:concept-custom-dashboards.html[Learn about custom dashboards].
+
+== Identity and access
+
+.How does role-based access control work in NetApp Console (local deployment)?
+
+RBAC lets you assign predefined, least-privilege roles to members at the organization, folder, or fleet level, and the same role grants different effective access depending on the scope where you assign it. This lets you give broad access to central administrators while limiting regional or team admins to the fleets they manage. link:concept-iam-rbac.html[Learn about role-based access control].
+
+.How does role inheritance work, and can I override it at a lower scope?
+
+A role assigned at the organization or folder level is inherited by all child folders, fleets, and resources beneath it, so your folder and fleet design determines how broadly an assignment applies. You can't override inherited access at a lower scope—to change it, modify the assignment at the higher scope where you originally granted it. link:concept-iam-rbac.html#role-inheritance[Learn how role inheritance works].
+
+.What categories of predefined roles are available?
+
+NetApp Console (local deployment) groups predefined roles into three categories:
+
+* *Platform roles*: Console administration permissions, such as Organization admin, Folder or fleet admin, Federation admin, and Super admin or Super viewer.
+* *Application roles*: Storage and monitoring permissions, such as Storage admin, Storage viewer, and Operations support analyst.
+* *Data service roles*: Permissions for specific data services, such as the Backup and Recovery roles and Classification viewer.
+
+link:reference-iam-predefined-roles.html[Learn about the predefined access roles].
 
 .Why should I integrate NetApp Console (local deployment) with Active Directory?
 
-By default, Console (local deployment) users are managed individually, which becomes difficult to maintain and creates access risk as staff changes. Active Directory integration lets Console (local deployment) authenticate users through your existing directory, so users can sign in with their corporate credentials and administrators can look up directory users when assigning access. Console (local deployment) still uses its own roles to control authorization, which helps keep access decisions explicit and auditable.
+Integrating with Active Directory lets users sign in with their existing corporate credentials, eliminating separate Console passwords and letting administrators look up directory users when assigning access. Authorization stays separate: the Console still uses its own roles to control what each member can do. link:concept-secure-access.html[Learn about secure access].
 
-.What do I need before I can integrate with Active Directory?
+.How does multi-factor authentication work for Console users?
 
-Before integrating with Active Directory, ensure you have the Organization admin role, an Active Directory domain with credentials that have permission to query the directory, the LDAP server address and base distinguished name (DN), network connectivity from the Console (local deployment) to your LDAP server (port 389 for LDAP or port 636 for LDAPS), and SSL/TLS certificates if you plan to use LDAPS for encrypted communication.
+Local users can enable multi-factor authentication (MFA) to add another verification step that reduces the risk of unauthorized access if credentials are compromised. Directory-authenticated users can't enable MFA through the Console (local deployment). link:concept-secure-access.html[Learn about secure access].
 
-.What does SIEM integration do and why would I need it?
+== AI-assisted management
 
-SIEM integration forwards NetApp Console (local deployment) audit records—covering provisioning requests, configuration changes, access grants, policy updates, and login events—to your centralized security monitoring system. By default these records exist only within the Console (local deployment). Integrating with a SIEM lets your security operations team correlate Console (local deployment) activity with other system events, trigger alerts on suspicious patterns, and retain logs according to your security policies. For organizations subject to compliance frameworks like SOC 2 or ISO 27001, SIEM integration gives auditors the evidence they need.
+.Which LLM providers does NetApp Console (local deployment) support for AI-assisted management?
 
-.Which SIEM tools are compatible with NetApp Console (local deployment)?
+You bring your own subscription to a supported LLM provider—OpenAI, Anthropic, or AWS Bedrock—and supply a valid API key during configuration. You also need the Console deployed with cluster access, outbound network connectivity to the provider's endpoint, the Organization admin role, and configured storage classes to guide provisioning. link:concept-llm-integration.html[Learn about LLM integration].
 
-NetApp Console (local deployment) supports any SIEM platform that accepts syslog-formatted events, including Splunk, IBM QRadar, and Microsoft Sentinel. You configure the Console (local deployment) with your SIEM receiver's IP address or hostname, port, transport protocol (UDP or TCP), and TLS settings if required.
+.Does enabling LLM integration send my storage data or queries to a third-party service?
+
+Because NetApp Console (local deployment) runs in your own environment, your data and queries stay within your network by default. The Console does not send data to a third-party LLM service without your explicit configuration of an outbound connection. All AI actions also respect your RBAC, and sensitive operations require your confirmation. link:concept-llm-integration.html[Learn about LLM integration].
+
+.What can the Console assistant do, and how do I control whether it changes my storage?
+
+Once you connect an LLM, the Console assistant lets users provision storage, investigate alerts, and get answers using natural language. Users choose an access mode: in *Read only* mode the assistant answers and guides without making changes, while in *Read/write* mode it can act on storage infrastructure but shows the details for the user to review and confirm before each change. link:task-console-assistant.html[Enable the Console assistant].
+
+== Data protection and auditing
+
+.What data protection capabilities are available from NetApp Console (local deployment)?
+
+NetApp Console (local deployment) gives you access to NetApp Backup and Recovery so you can back up and restore data from the same interface, keeping governance consistent and reducing the number of tools your teams operate. link:concept-data-services.html[Learn about data services].
+
+.How does NetApp Console (local deployment) support auditing and log retention?
+
+Every administrative action generates an audit record that you can review and filter from the Audit page. You can export audit logs to your own syslog server through a webhook so they reach your centralized monitoring or SIEM tools for longer retention and analysis, and because the Console runs in your environment, log data never leaves your infrastructure. link:task-audit-console-activity.html[Learn about auditing activity].
