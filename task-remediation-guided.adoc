@@ -12,7 +12,30 @@ summary: "Use guided remediation in NetApp Console (local deployment) to resolve
 :imagesdir: ./media/
 
 [.lead]
-Use guided remediation in the NetApp Console (local deployment) to resolve storage issues with step-by-step instructions that walk you through diagnosing and correcting problems in your environment.
+Use guided remediation in NetApp Console (local deployment) to resolve storage issues with step-by-step instructions that walk you through diagnosing and correcting problems in your environment.
 
 .Required access roles
 Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+.What guided remediation is
+Guided remediation provides a reviewable, step-by-step workflow for resolving supported storage issues. Console (local deployment) recommends a corrective action and guides you through the required steps, including any prerequisites, impact considerations, and validation checks.
+
+Use guided remediation when you want Console (local deployment) to recommend a course of action and provide context while retaining control over when and how changes are applied.
+
+.When to use guided remediation
+Use guided remediation when you need:
++
+* Change review before execution
+* Exception handling for workloads that intentionally deviate from a storage class
+* Strict change control processes
+* Clear validation steps to confirm the issue is resolved
+
+If your environment allows low-touch fixes for common conditions, consider automatic remediation for eligible issues.
+
+== Where guided remediation is available
+Depending on the detected issue and your version, you can typically start guided remediation from:
++
+* Alert details (for health, capacity, protection, performance, or security findings)
+* Workload Analyzer results (when an investigation identifies a correctable condition)
+* Workload, inventory, or compliance views (when a workload shows drift from its assigned storage class)
+

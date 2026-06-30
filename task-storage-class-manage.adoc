@@ -15,7 +15,7 @@ summary: "Create a storage class in NetApp Console (local deployment) to standar
 Create a storage class in the NetApp Console (local deployment) to standardize how storage is provisioned and governed across your fleets. A storage class is a reusable template that bundles storage class policies—such as performance targets, capacity behavior, security requirements, and data protection schedules—into a single named definition.
 
 
-When users (or automation) provision a volume or LUN using a storage class, NetApp Console (local deployment) applies the class’s policies automatically. After provisioning, Console (local deployment) continuously monitors workloads against the storage class to detect drift and can guide or automate remediation to restore compliance.
+When users (or automation) provision a volume or LUN using a storage class, NetApp Console (local deployment) applies the class's policies automatically. After provisioning, Console (local deployment) continuously monitors workloads against the storage class to detect drift and can guide or automate remediation to restore compliance.
 
 
 == Before you begin
@@ -94,7 +94,7 @@ You must have the Organization admin or Folder or fleet admin role to edit a use
 
 . Under *Storage policies*, select one or more policies to associate with the storage class.
 
-. Select *Add*.
+. Select *Edit*.
 
 
 === Delete a user-defined storage class

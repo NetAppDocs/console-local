@@ -12,7 +12,24 @@ summary: "Use automated remediation in NetApp Console (local deployment) to auto
 :imagesdir: ./media/
 
 [.lead]
-Use automated remediation in the NetApp Console (local deployment) to automatically detect and resolve common storage issues without manual intervention, maintaining fleet health proactively.
+Automatically remediate common storage issues detected by NetApp Console (local deployment) to restore storage class compliance and improve fleet health with minimal manual intervention.
 
 .Required access roles
 Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+.What automatic remediation is
+Automatic remediation applies predefined corrective actions Console (local deployment) detects supported conditions, such as policy drift from a storage class or common health findings. Actions are subject to RBAC and any remediation settings configured in your environment.
+
+Depending on the detected issue and your configuration, Console (local deployment) can either:
+
+- Provide a one-click remediation option that you explicitly run.
+- Apply remediation automatically for supported conditions.
+
+.When to use automatic remediation
+Use automatic remediation when you want:
++
+* Fast recovery from common, low-risk conditions
+* Reduced operational overhead for routine fixes
+* Consistent restoration of storage class alignment across fleets
+
+Use guided remediation when you need change review, exception handling, or strict change control.
