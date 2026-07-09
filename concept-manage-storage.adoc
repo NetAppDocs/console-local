@@ -4,7 +4,7 @@ permalink: concept-manage-storage.html
 keywords: storage management, storage classes, provisioning, storage class policies, netapp console local
 summary: "Learn about managing storage in NetApp Console (local deployment), including storage classes, policies, and provisioning methods."
 ---
-= Understanding storage management in NetApp Console (local)
+= Learn about managing storage with NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,11 +14,13 @@ summary: "Learn about managing storage in NetApp Console (local deployment), inc
 [.lead]
 // Jira: SPSPM-3309
 
-NetApp Console (local) helps you manage ONTAP storage at scale using consistent, reusable standards. Instead of making one-off decisions for every volume or LUN, you define approved behavior once and apply it across fleets—whether you provision manually, use automated placement, or use AI-assisted plan-and-approve workflows.
+NetApp Console (local deployment) helps you manage ONTAP storage at scale using consistent, reusable standards. Instead of making one-off decisions for every volume or LUN, you define approved behavior once and apply it across fleets—whether you provision manually, use automated placement, or use AI-assisted plan-and-approve workflows.
+
+Storage management is the practice of defining storage standards, applying them consistently, and operating workloads so they stay aligned over time. In Console (local deployment), those standards are expressed as storage class policies and storage classes, scoped to fleets, and enforced through provisioning workflows governed by RBAC and audit logging.
 
 == How storage management works
 
-NetApp Console (local) connects four concepts into one workflow:
+Console (local deployment) connects four concepts into one workflow:
 
 . *Fleets* define the scope where you manage storage. A fleet groups systems so you can control access, apply standards consistently, and manage resources as a unit.
 . *Storage class policies* define standards as reusable building blocks (performance, capacity, security, data protection).
@@ -29,29 +31,24 @@ NetApp Console (local) connects four concepts into one workflow:
 
 Using storage classes and policies helps you:
 
-. *Reduce decision fatigue*: provision by selecting an approved class instead of tuning many parameters.
-. *Increase consistency*: new workloads start from the same baseline across teams and fleets.
-. *Scale safely*: standards can be applied via runbooks, automation, or AI-assisted workflows without losing governance.
-. *Detect and remediate drift*: workloads can be monitored against class expectations and corrected when they fall out of compliance.
+. *Reduce decision fatigue* by provisioning from approved options instead of tuning many parameters.
+. *Increase consistency* so new workloads start from the same baseline across teams and fleets.
+. *Scale safely* by applying standards via runbooks, automation, or AI-assisted workflows without losing governance.
+. *Detect and remediate drift* by monitoring workloads against class expectations and correcting noncompliance.
 
-== Typical workflow
+== Provisioning approaches
 
-1. An Organization admin discovers storage systems into the correct fleet or fleets.
-2. Define storage class policies that represent your standards.
-3. Create storage classes by combining policies into workload templates.
-4. Associate storage classes with the fleets where they apply.
-5. Provision volumes or LUNs using the method that matches your operational model.
-6. Monitor storage, manage alerts, detect drift, and remediate issues to keep workloads aligned with storage standards.
+Console (local deployment) supports multiple provisioning approaches. They differ mainly in how placement and configuration decisions are made, but all remain governed by RBAC, audit logging, and (when selected or required) storage class standards.
 
-== Choose how you want to provision
-
-NetApp Console (local deployment) supports multiple provisioning workflows so you can match your operational model while still enforcing storage class standards.
-
-* *Manual provisioning* — You choose the target system and configuration details. Use when you need explicit control over system selection and configuration details.
+* *Manual provisioning* — You select the target system and specify configuration details directly. Use manual provisioning when you need explicit control over system selection and configuration inputs.
 link:task-provisioning-manual.html[Provision storage manually in NetApp Console (local deployment)]
 
-* *Automated provisioning* — You provide workload inputs and (optionally) a storage class. NetApp Console (local deployment) recommends best-fit placement and applies class-driven settings to reduce manual decisions and drift risk.
+* *Automated provisioning* — You provide workload inputs and optionally select a storage class. Console (local deployment) recommends best-fit placement and applies class-driven settings to reduce manual decisions and configuration variance.
 link:task-provisioning-automated.html[Provision storage automatically in NetApp Console (local deployment)]
 
-* *AI-assisted (agentic) provisioning* — You describe what you need in natural language. NetApp Console (local deployment) proposes a plan constrained by RBAC and storage classes, then provisions only after you review and approve the plan.
+* *AI-assisted (agentic) provisioning* — You describe what you need in natural language. Console (local deployment) proposes a plan constrained by RBAC and storage classes, then provisions only after you review and approve the plan.
 link:task-provisioning-agentic.html[Provision storage with agentic workflows in NetApp Console (local deployment)]
+
+== Where to go next
+
+To implement standards and provision storage end to end, go to [Storage management workflow overview].

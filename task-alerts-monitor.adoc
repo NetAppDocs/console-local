@@ -52,10 +52,9 @@ The dashboard also includes a chart that shows the distribution of alerts over t
 
 . Filter the dashboard according to the alerts you need to view, including:
 +
-* Severity (Critical, Major, Minor, Warning, or Info)
-* Impact area (Capacity, Connectivity, Data protection, Performance, or Security)
+* Severity (Critical, Warning, or Informational)
 * Critical alerts grouped by impact area
-* Alert count distribution over the past 24 hours
+* Impact area (Security, Protection, Availability, Performance, Capacity, or Configuration)
 
 == View all alerts
 

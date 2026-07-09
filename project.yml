@@ -100,15 +100,15 @@ sidebar:
         url: /task-iam-switch-fleets.html
       - title: Manage your NetApp Console user settings
         url: /task-user-settings.html
-      - title: Manage storage in NetApp Console (local)
+      - title: Manage storage
         entries:
-        - title: Learn about storage management
-          url: /concept-manage-storage.html
+        - title: Storage management workflow overview
+          url: /concept-manage-storage-workflow.html
         - title: Standardize storage behavior
           entries:
-          - title: Learn about storage classes
+          - title: Understand storage classes
             url: /concept-storage-classes.html
-          - title: Learn about storage class policies
+          - title: Understand storage class policies
             url: /concept-storage-class-policies.html
           - title: Review predefined storage class policies
             url: /reference-storage-class-policies.html
@@ -126,7 +126,7 @@ sidebar:
             url: /task-provisioning-agentic.html
         - title: Monitor storage health
           entries:
-          - title: Learn about monitoring storage health in NetApp Console (local deployment)
+          - title: Learn about monitoring storage health
             url: /concept-monitor-storage.html
           - title: Monitor fleet-wide health and performance
             url: /task-fleet-health-monitor.html

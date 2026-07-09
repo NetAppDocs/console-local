@@ -4,7 +4,7 @@ permalink: task-storage-class-fleet-associate.html
 keywords: associate, storage class, fleet, assign, netapp console
 summary: "Associate a storage class with a fleet in NetApp Console (local deployment) to apply consistent storage policies."
 ---
-= Associating storage classes with fleets in NetApp Console (local)
+= Associate storage classes with fleets in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,24 +14,30 @@ summary: "Associate a storage class with a fleet in NetApp Console (local deploy
 [.lead]
 // Jira: SPSPM-3309
 
-Associate a storage class with a fleet to make an approved set of storage standards available for provisioning in that fleet. This helps teams provision consistently and supports ongoing governance by evaluating workloads against the class standards.
+Associate a storage class with a fleet to make an approved set of storage standards available when provisioning storage in that fleet. This helps teams provision consistently and supports ongoing compliance monitoring by checking workloads against the storage class.
 
 .Required access roles
 Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
-Associate storage classes with fleets when you want to:
+== When to associate a storage class with a fleet
+
+Associate storage classes with fleets to:
 
 - Scope approved standards by environment (for example, production vs. development).
-- Ensure provisioning workflows in a fleet use a consistent baseline for performance, capacity behavior, security, and data protection.
+- Ensure provisioning uses a consistent baseline for performance, capacity behavior, security, and data protection.
 - Limit which standards are available to operators in a given fleet.
 
 == Associate a storage class with a fleet
 
+Associate a storage class with a fleet so it's available for provisioning and ongoing compliance monitoring within that fleet.
+
 .Steps
 
-(Steps to be confirmed with the product team, as the UI may change. The following steps are a placeholder.)
+. Open the fleet you want to manage.
+. Locate the fleet configuration area for storage classes.
+. Select one or more storage classes to associate with the fleet.
+. Select *Save*.
 
-. Identify the target fleet where the class should be available.
-. Select the storage class or fleet configuration area.
-. Associate the storage class with the fleet.
-. Save and confirm the association.
+.Verify
+
+. Start a provisioning workflow in the fleet and confirm the storage class is available for selection.
