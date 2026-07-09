@@ -79,7 +79,7 @@ With this rule in place, Console (local deployment) sends an email to all storag
 * *Webhook*: sends alert data to an external system. Requires selecting a configured webhook integration.
 * *Console (local deployment) Notification Center*: displays real-time alerts in the Console (local deployment) for users who have the selected roles.
 . Optionally, to suppress notifications from this rule during a planned period, such as a maintenance window, set a *Mute notifications* schedule, and choose a recurrence if you want the mute period to repeat.
-. Select *Save*.
+. Select *Create*.
 
 == Enable or disable a notification rule
 
