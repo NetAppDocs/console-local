@@ -98,8 +98,8 @@ sidebar:
         url: /task-iam-switch-fleets.html
       - title: Manage your NetApp Console user settings
         url: /task-user-settings.html
-    - title: Use the NetApp Console assistant
-      url: /task-console-asst-use.html
+      - title: Use the NetApp Console assistant
+        url: /task-console-asst-use.html
     - title: Manage storage in NetApp Console
       entries:
       - title: Learn about storage management
