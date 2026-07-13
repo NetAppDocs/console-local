@@ -24,13 +24,7 @@ indexpage:
           url: /reference-ports-on-prem.html
         - title: Discover your storage
           url: /task-discover-storage.html
-    - title: Maintain NetApp Console (local deployment)
-      links:
-        - title: Maintain a vCenter-installed Console (local deployment)
-          url: /task-console-local-vm-config.html
-        - title: Audit NetApp Console (local deployment) operations
-          url: /task-audit-console-activity.html
-    - title: Set up NetApp Console (local deployment)
+    - title: Set up access and organization
       links:
         - title: Get started with identity and access
           url: /task-iam-fleet-mgmt-get-started.html
@@ -42,12 +36,24 @@ indexpage:
           url: /task-iam-active-directory-integrate.html
         - title: Connect your LLM
           url: /task-llm-connect.html
-    - title: Manage storage with NetApp Console (local deployment)
+    - title: Navigate and use NetApp Console (local deployment)
       links:
-        - title: Provision storage automatically
-          url: /task-provisioning-automated.html
+        - title: Log in to NetApp Console (local deployment)
+          url: /task-logging-in.html
+        - title: Switch between fleets in NetApp Console (local deployment)
+          url: /task-iam-switch-fleets.html
+        - title: Manage your NetApp Console (local deployment) user settings
+          url: /task-user-settings.html
+        - title: Use the NetApp Console assistant
+          url: /task-console-asst-use.html
+    - title: Standardize and provision storage
+      links:
         - title: Create a storage class
           url: /task-storage-class-manage.html
+        - title: Provision storage automatically
+          url: /task-provisioning-automated.html
+    - title: Monitor and investigate storage
+      links:
         - title: Monitor fleet-wide health and performance
           url: /task-fleet-health-monitor.html
         - title: Configure notification rules for alerts
@@ -56,14 +62,22 @@ indexpage:
           url: /task-analyzer-volume-latency-investigate.html
         - title: Investigate capacity growth on a volume
           url: /task-analyzer-volume-capacity-investigate.html
+    - title: Remediate storage issues
+      links:
         - title: Remediate storage issues automatically
           url: /task-remediation-automated.html
-    - title: Use NetApp Cyber Resilience data services
+    - title: Maintain and support
       links:
-        - title: Learn about data services
-          url: /concept-data-services.html
-        - title: Get started with data services
-          url: /task-quickstart-data-services.html
+        - title: Maintain a vCenter-installed Console (local deployment)
+          url: /task-console-local-vm-config.html
+        - title: Audit NetApp Console (local deployment) operations
+          url: /task-audit-console-activity.html
+        - title: Get help with NetApp Console (local deployment)
+          url: /task-get-help.html
+        - title: FAQ for NetApp Console (local deployment)
+          url: /faq-netapp-console-local.html
+    - title: Blogs and community (links TBD)
+      links: []
    
   
 
