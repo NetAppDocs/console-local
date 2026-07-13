@@ -100,6 +100,18 @@ sidebar:
         url: /task-user-settings.html
       - title: Use the NetApp Console assistant
         url: /task-console-asst-use.html
+      - title: Create custom dashboards
+        entries:
+        - title: Learn about custom dashboards
+          url: /concept-custom-dashboards.html
+        - title: Create a custom dashboard
+          url: /task-dashboard-create.html
+        - title: Add cards to a dashboard
+          url: /task-dashboard-cards-add.html
+        - title: Manage custom dashboards
+          url: /task-dashboard-manage.html
+        - title: Custom dashboard card templates reference
+          url: /reference-dashboard-card-templates.html
     - title: Manage storage in NetApp Console
       entries:
       - title: Learn about storage management
@@ -150,24 +162,7 @@ sidebar:
           url: /task-analyzer-volume-capacity-investigate.html
         - title: Workload Analyzer metrics reference
           url: /reference-workload-analyzer-metrics.html
-      - title: Remediate storage issues
-        entries:
-        - title: Remediate storage issues automatically
-          url: /task-remediation-automated.html
-        - title: Remediate storage issues with guided steps
-          url: /task-remediation-guided.html
-      - title: Create custom dashboards
-        entries:
-        - title: Learn about custom dashboards
-          url: /concept-custom-dashboards.html
-        - title: Create a custom dashboard
-          url: /task-dashboard-create.html
-        - title: Add cards to a dashboard
-          url: /task-dashboard-cards-add.html
-        - title: Manage custom dashboards
-          url: /task-dashboard-manage.html
-        - title: Custom dashboard card templates reference
-          url: /reference-dashboard-card-templates.html
+   
     - title: Administer and monitor
       entries:
       - title: Learn about administering NetApp Console
