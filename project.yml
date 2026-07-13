@@ -18,9 +18,9 @@ sidebar:
         url: /reference-limitations.html
     - title: Get started
       entries:
-      - title: Learn about NetApp Console (local deployment)
+      - title: Learn about NetApp Console
         url: /concept-netapp-console-local.html
-      - title: Learn about managing storage with NetApp Console (local deployment)
+      - title: Learn about managing storage with NetApp Console
         url: /concept-manage-storage.html
       - title: Learn about storage fleets
         url: /concept-storage-fleets.html
@@ -32,17 +32,17 @@ sidebar:
         url: /concept-llm-integration.html
       - title: Learn about data services
         url: /concept-data-services.html
-      - title: NetApp Console (local deployment) FAQ
+      - title: NetApp Console FAQ
         url: /faq-netapp-console-local.html
-    - title: Install and setup
+    - title: Install and set up
       entries:
-      - title: Quick start for setting up NetApp Console (local deployment)
+      - title: Quick start for setting up NetApp Console
         url: /task-quick-start-console-setup.html
-      - title: Install NetApp Console (local deployment)
+      - title: Install NetApp Console
         entries:
-        - title: Install NetApp Console (local deployment)
+        - title: Install NetApp Console
           url: /task-install-agent-on-prem-ova.html
-      - title: Plan your Console (local deployment) organization
+      - title: Plan your Console organization
         entries:
         - title: Get started with identity and access
           url: /task-iam-fleet-mgmt-get-started.html
@@ -54,7 +54,7 @@ sidebar:
         entries:
         - title: Create folders and fleets
           url: /task-iam-manage-folders-fleets.html
-        - title: Add storage systems to NetApp Console (local deployment)
+        - title: Add storage systems to NetApp Console
           url: /task-discover-storage.html
         - title: Associate resources to folders and fleets
           url: /task-iam-manage-resources.html
@@ -62,7 +62,7 @@ sidebar:
           url: /task-iam-manage-members-permissions.html
         - title: Access roles
           entries:
-          - title: NetApp Console (local deployment) access roles
+          - title: NetApp Console access roles
             url: /reference-iam-predefined-roles.html
           - title: Platform roles
             url: /reference-iam-platform-roles.html
@@ -74,7 +74,7 @@ sidebar:
             url: /reference-iam-backup-rec-roles.html
       - title: Configure Console integrations and services
         entries:
-        - title: Integrate NetApp Console (local deployment) with Active Directory
+        - title: Integrate NetApp Console with Active Directory
           url: /task-iam-active-directory-integrate.html
         - title: Connect your LLM and enable the NetApp Console assistant
           url: /task-llm-connect.html
@@ -90,7 +90,7 @@ sidebar:
           url: /task-quickstart-data-services.html
         - title: Grant access to data services
           url: /task-data-services-access-grant.html
-    - title: Navigate NetApp Console (local deployment)
+    - title: Navigate NetApp Console
       entries:
       - title: Log in to NetApp Console
         url: /task-logging-in.html
@@ -100,7 +100,7 @@ sidebar:
         url: /task-user-settings.html
     - title: Use the NetApp Console assistant
       url: /task-console-asst-use.html
-    - title: Manage storage in NetApp Console (local)
+    - title: Manage storage in NetApp Console
       entries:
       - title: Learn about storage management
         url: /concept-manage-storage.html
@@ -126,7 +126,7 @@ sidebar:
           url: /task-provisioning-agentic.html
       - title: Monitor storage health
         entries:
-        - title: Learn about monitoring storage health in NetApp Console (local deployment)
+        - title: Learn about monitoring storage health in NetApp Console
           url: /concept-monitor-storage.html
         - title: Monitor fleet-wide health and performance
           url: /task-fleet-health-monitor.html
@@ -170,15 +170,15 @@ sidebar:
           url: /reference-dashboard-card-templates.html
     - title: Administer and monitor
       entries:
-      - title: Learn about administering NetApp Console (local deployment)
+      - title: Learn about administering NetApp Console
         url: /concept-administer-netapp-console-local.html
-      - title: Audit NetApp Console (local deployment) operationa
+      - title: Audit NetApp Console operations
         url: /task-audit-console-activity.html
       - title: Licenses and subscriptions
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
-      - title: Maintain NetApp Console (local deployment)
+      - title: Maintain NetApp Console
         entries:
-        - title: Maintain the NetApp Console (local deployment) VM
+        - title: Maintain the NetApp Console VM
           url: /task-console-local-vm-config.html
       - title: Manage users and access
         entries:

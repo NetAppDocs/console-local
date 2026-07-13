@@ -5,7 +5,7 @@ keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onpr
 summary: Discover on-prem ONTAP clusters from NetApp Console (local deployment) so that you can start managing volumes and performing advanced management using ONTAP System Manager, which is available from the Console.
 ---
 
-= Discover on-premises ONTAP clusters in NetApp Console
+= Discover on-premises ONTAP clusters in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font

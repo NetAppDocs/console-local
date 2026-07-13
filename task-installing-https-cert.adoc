@@ -5,7 +5,7 @@ keywords: https certificate, certificate, adding, installing, ca, certificate au
 summary: Install a CA-signed certificate for user access to the web-based console when using NetApp Console (local deployment) in restricted mode.
 ---
 
-= Install a CA-signed certificate for NetApp Console access
+= Install a CA-signed certificate for NetApp Console (local deployment) access
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -5,7 +5,7 @@ keywords: ontap, cluster, remove, delete, remove ontap cluster, remove onprem, d
 summary: Remove an on-premises ONTAP system if you no longer want to manage it from NetApp Console (local deployment).
 ---
 
-= Remove an on-premises ONTAP system from NetApp Console
+= Remove an on-premises ONTAP system from NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font

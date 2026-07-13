@@ -4,7 +4,7 @@ permalink: reference-storage-class-policies.html
 keywords: storage class policies, performance policy, capacity policy, security policy, data protection policy, netapp console
 summary: "Reference the system-defined storage class policies available in NetApp Console (local deployment)."
 ---
-= Reviewing predefined storage class policies in NetApp Console (local)
+= Reviewing predefined storage class policies in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
