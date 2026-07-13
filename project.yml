@@ -90,14 +90,16 @@ sidebar:
           url: /task-quickstart-data-services.html
         - title: Grant access to data services
           url: /task-data-services-access-grant.html
-    - title: Log in to NetApp Console
-      url: /task-logging-in.html
+    - title: Navigate NetApp Console (local deployment)
+      entries:
+      - title: Log in to NetApp Console
+        url: /task-logging-in.html
+      - title: View systems associated with fleets
+        url: /task-iam-switch-fleets.html
+      - title: Manage your NetApp Console user settings
+        url: /task-user-settings.html
     - title: Use the NetApp Console assistant
       url: /task-console-asst-use.html
-    - title: View systems associated with fleets
-      url: /task-iam-switch-fleets.html
-    - title: Manage your NetApp Console user settings
-      url: /task-user-settings.html
     - title: Manage storage in NetApp Console (local)
       entries:
       - title: Learn about storage management
