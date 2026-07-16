@@ -4,7 +4,7 @@ permalink: task-console-asst-use.html
 keywords: console assistant, ai assistant, ask questions, provision storage, natural language, agentic, netapp console local
 summary: "Use the Console assistant to provision storage, investigate alerts, and get answers with natural language in NetApp Console (local deployment)."
 ---
-= Use the NetApp Console assistant
+= Use the NetApp Console assistant in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,8 +14,7 @@ summary: "Use the Console assistant to provision storage, investigate alerts, an
 [.lead]
 Use the NetApp Console assistant to manage storage and get answers with natural language. Instead of navigating menus, describe what you need in plain language and let the Console (local deployment) act on it, guided by your organization's storage policies and your role-based access.
 
-.Required access roles
-Super admin, Organization admin, Folder or fleet admin, or Storage admin. The assistant's actions are limited by your assigned role-based access. link:reference-iam-predefined-roles.html[Learn about access roles].
+The assistant's actions are limited by your assigned role-based access. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 == What you can do with the Console assistant
 
