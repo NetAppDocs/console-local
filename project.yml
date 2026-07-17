@@ -106,11 +106,11 @@ sidebar:
           url: /concept-custom-dashboards.html
         - title: Create a custom dashboard
           url: /task-dashboard-create.html
-        - title: Add cards to a dashboard
-          url: /task-dashboard-cards-add.html
+        - title: Customize dashboard cards
+          url: /task-customize-dashboard-cards.html
         - title: Manage custom dashboards
           url: /task-dashboard-manage.html
-        - title: Custom dashboard card templates reference
+        - title: Custom dashboard cards and metrics reference
           url: /reference-dashboard-card-templates.html
     - title: Manage storage in NetApp Console
       entries:

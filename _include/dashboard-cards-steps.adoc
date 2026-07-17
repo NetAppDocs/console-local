@@ -1,0 +1,37 @@
+//tag::core-add-card-flow[]
+. Select *Add Card*.
+
+. Select the *Scope* for the card, such as fleet, system, or volume.
+
+. Select the *Metric Type*: *Performance*, *Capacity*, *Health*, or *Alerts*.
+
+. Select a *Card Template*.
++
+The template defines the metric and chart type.
+
+. Select the *Aggregation*, such as fleet-wide or top N elements.
+
+. Select the *Target Resource Type* and then the specific *Target Resources* to monitor.
+
+. Select the *Time Window*: 30 minutes, 1 hour, 24 hours (default), 48 hours, 7 days, or 30 days.
+
+. Review the card preview, enter a card name and description, and then select *Add*.
+
+. Repeat these steps for additional cards.
+//end::core-add-card-flow[]
+
+//tag::templates-menu-flow[]
+. Select *Storage > Dashboards > Card Templates*.
+
+. Browse, sort, or filter the templates by metric type, metric, or target resource type.
+
+. Select a template, then select *Create Card from Template*.
+
+. Customize the scope, aggregation, target resource type, target resources, and time window.
+
+. Review the card preview and enter a name and description.
+
+. Add the card to an existing dashboard or create a new dashboard.
+
+. Save the dashboard.
+//end::templates-menu-flow[]

@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: reference-dashboard-card-templates.html
 keywords: card templates, dashboard cards, metric types, chart types, performance, capacity, health, alerts, netapp console local
-summary: "Reference for the custom dashboard card templates available in NetApp Console (local deployment), organized by metric type."
+summary: "Reference for custom dashboard cards and available metrics in NetApp Console (local deployment)."
 ---
-= Custom dashboard card templates in NetApp Console (local deployment)
+= Custom dashboard cards and metrics reference in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,7 +14,57 @@ summary: "Reference for the custom dashboard card templates available in NetApp 
 [.lead]
 // Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
 
-Custom dashboards provide card templates that you can add to a dashboard, organized by metric type. Each template defines a metric and a recommended chart type; you customize the scope, aggregation, and target objects when you add the card.
+Use this reference to choose available cards and metrics when building custom dashboards. Cards are organized by metric type. For each card, configure scope, aggregation, target resources, and time window.
+
+== How to use this reference
+
+Use this page in the following sequence:
+
+. Select a metric type that matches your monitoring goal.
+. Choose a predefined card template from that metric type.
+. Confirm the metric is available for your target resource type.
+. Set aggregation and time window in the dashboard workflow.
+
+== Available metrics by metric type
+
+[cols="20,30,50",options="header"]
+|===
+| Metric type | Available metrics | Typical use
+
+| Performance
+| Average latency, peak latency, IOPS, throughput (MB/s), utilization, performance capacity
+| Identify bottlenecks, sustained pressure, and performance headroom
+
+| Capacity
+| Used capacity, free capacity, capacity used (%), snapshot capacity used
+| Track growth, identify low-free-capacity areas, and monitor snapshot impact
+
+| Health
+| Health status, degraded/critical objects, failed disks, network interface errors, hot objects (by latency)
+| Detect health regressions and prioritize operational triage
+
+| Alerts
+| Critical alerts, alerts by severity, alerts by impact area, recent alerts, alert trend
+| Monitor active incidents and trend alert volume over time
+|===
+
+== Supported target resource scope
+
+Card templates can be scoped to one or more of the following resource levels:
+
+* Fleet
+* Cluster
+* System (node)
+* SVM
+* Volume
+* LUN
+* Local tier (aggregate)
+
+The available resource levels depend on the template and metric you select.
+
+== Time windows and aggregation
+
+When you add a card, you can choose a time window of 30 minutes, 1 hour, 24 hours, 48 hours, 7 days, or 30 days. You can also select aggregation options based on template support, such as fleet-wide rollup or top-N style views.
 
 == Chart types
 
@@ -145,3 +195,10 @@ Custom dashboards provide card templates that you can add to a dashboard, organi
 | Line
 | Alert count per time bucket over the chosen time window.
 |===
+
+== Related information
+
+* link:concept-custom-dashboards.html[Learn about custom dashboards]
+* link:task-dashboard-create.html[Create a custom dashboard]
+* link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console (local deployment)]
+* link:task-dashboard-manage.html[Manage custom dashboards]

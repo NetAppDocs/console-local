@@ -14,11 +14,11 @@ summary: "Learn how custom dashboards in NetApp Console (local deployment) let y
 [.lead]
 // Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
 
-Use custom dashboards to build personalized monitoring views of your fleet. You assemble each dashboard from card templates, choosing the scope, metrics, aggregation, and target resources that matter to you.
+Use custom dashboards to build role-specific monitoring views for your fleets. Build each dashboard from predefined cards, choose scope and target resources, and arrange cards for day-to-day operations.
 
 == What a custom dashboard is
 
-A custom dashboard is a saved collection of cards that you arrange on a grid. Each card is created from a predefined template that defines a metric and a visualization, such as a line chart, bar chart, pie or doughnut chart, table, or single-number stat panel. After you add a card, you customize its scope, aggregation, target resources, and time window.
+A custom dashboard is a saved collection of cards that you arrange on a grid. Each card is based on a predefined card template with a metric and a chart type. When you add the card, you configure the data scope, target objects, aggregation, and time window.
 
 Each dashboard and card is private to you. Every card shows data only for the storage resources you are authorized to view.
 
@@ -38,11 +38,23 @@ Health status, degraded or critical object counts, failed disks, network interfa
 Alerts::
 Critical alert counts, alerts by severity, alerts by impact area, recent alerts, and alert trends over time.
 
+For a complete catalog of predefined cards and metrics, see link:reference-dashboard-card-templates.html[Custom dashboard cards and metrics reference].
+
 == Target objects
 
 You can scope cards to any level of the ONTAP storage hierarchy: fleet, cluster, system (node), SVM, volume, LUN, and local tier (aggregate). The available target objects depend on the card template you select.
 
-== High-level workflow
+== Plan your dashboard
+
+Before you create a dashboard, define the operational question you need to answer, such as "Which volumes have sustained latency increases?" or "Which systems are approaching capacity limits?"
+
+Use that question to choose:
+
+* The metric types to include
+* The target scope (fleet, system, SVM, volume, LUN, or local tier)
+* The time windows and aggregations needed for decisions
+
+== Workflow
 
 Building and maintaining a custom dashboard involves the following steps.
 
@@ -54,7 +66,7 @@ link:task-dashboard-create.html[Create a custom dashboard]
 . *Add cards.*
 Add cards from templates, choosing the scope, metric type, aggregation, target resources, and time window. Preview each card with live data before you add it.
 +
-link:task-dashboard-cards-add.html[Add cards to a dashboard]
+link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console (local deployment)]
 
 . *Arrange and save.*
 Position and resize cards on the grid, then save the dashboard. Saved dashboards are available under *Storage > Dashboards*.
@@ -64,4 +76,9 @@ Edit, clone, or delete dashboards as your monitoring needs change.
 +
 link:task-dashboard-manage.html[Manage custom dashboards]
 
-For the full list of available card templates, see link:reference-dashboard-card-templates.html[Custom dashboard card templates].
+== Related information
+
+* link:task-dashboard-create.html[Create a custom dashboard]
+* link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console (local deployment)]
+* link:task-dashboard-manage.html[Manage custom dashboards]
+* link:reference-dashboard-card-templates.html[Custom dashboard cards and metrics reference]

@@ -14,9 +14,11 @@ summary: "Manage custom dashboards in NetApp Console (local deployment) by editi
 [.lead]
 // Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
 
-Manage your custom dashboards in the NetApp Console (local deployment) to keep them aligned with your monitoring needs. You can edit a dashboard's contents, clone an existing dashboard as a starting point, and delete dashboards you no longer use.
+Manage custom dashboards in NetApp Console (local deployment) to keep views aligned with operations. You can edit, clone, and delete dashboards as teams, fleets, and priorities change.
 
-.Required access roles
+== Before you begin
+
+Open *Storage > Dashboards* and identify the dashboard you want to modify.
 
 
 == Edit a dashboard
@@ -43,7 +45,7 @@ Manage your custom dashboards in the NetApp Console (local deployment) to keep t
 
 . For the dashboard you want to duplicate, select *Clone*.
 +
-The Console (local deployment) creates a copy that includes all of the original dashboard's cards.
+Console (local deployment) creates a copy that includes all cards from the original dashboard.
 
 . Edit the cloned dashboard as needed, then save it.
 
@@ -56,3 +58,9 @@ The Console (local deployment) creates a copy that includes all of the original 
 . For the dashboard you want to remove, select *Delete*.
 
 . Confirm the deletion.
+
+== Related information
+
+* link:concept-custom-dashboards.html[Learn about custom dashboards]
+* link:task-dashboard-create.html[Create a custom dashboard]
+* link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console (local deployment)]
