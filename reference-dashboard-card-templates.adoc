@@ -14,16 +14,18 @@ summary: "Reference for custom dashboard cards and available metrics in NetApp C
 [.lead]
 // Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
 
-Use this reference to choose available cards and metrics when building custom dashboards. Cards are organized by metric type. For each card, configure scope, aggregation, target resources, and time window.
+Choose dashboard cards and metrics that answer your operational questions, such as identifying performance bottlenecks, tracking capacity growth, or triaging active alerts. Select cards by metric type, then set scope, aggregation, target resources, and time window to match your monitoring goal.
 
-== How to use this reference
+This reference is for custom dashboards under *Storage > Dashboards*. For out-of-the-box, predefined dashboard panes, see the Home page dashboard task.
 
-Use this page in the following sequence:
+== Select cards for your monitoring goal
+
+Follow this sequence:
 
 . Select a metric type that matches your monitoring goal.
 . Choose a predefined card template from that metric type.
 . Confirm the metric is available for your target resource type.
-. Set aggregation and time window in the dashboard workflow.
+. Set aggregation and time window for the operational decision you need to make.
 
 == Available metrics by metric type
 
@@ -198,6 +200,7 @@ When you add a card, you can choose a time window of 30 minutes, 1 hour, 24 hour
 
 == Related information
 
+* link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
 * link:concept-custom-dashboards.html[Learn about custom dashboards]
 * link:task-dashboard-create.html[Create a custom dashboard]
 * link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console (local deployment)]

@@ -4,7 +4,7 @@ permalink: task-dashboard-create.html
 keywords: create dashboard, custom dashboard, add dashboard, monitoring, netapp console local
 summary: "Create a custom dashboard in NetApp Console (local deployment), add cards, and save a usable monitoring view."
 ---
-= Create a custom dashboard in NetApp Console (local deployment)
+= Build dashboards for monitoring goals in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,13 +16,17 @@ summary: "Create a custom dashboard in NetApp Console (local deployment), add ca
 
 Create a custom dashboard in NetApp Console (local deployment), add cards, and save a monitoring view for daily operations.
 
+If you only need organization-level monitoring that is ready to use, start with the built-in Home page dashboards. Create a custom dashboard when you need a role-specific view, resource-level targeting, or a tailored card layout.
+
 == Before you begin
 
 * Confirm that storage systems are discovered and reporting metrics.
 * Identify the metric types and resources you want the dashboard to track.
 
 
-== Create a dashboard
+== Build a dashboard for your monitoring goals
+
+Create a dashboard when you need one place to monitor the metrics that matter to your role, such as fleet health, performance hotspots, and alert trends.
 
 .Steps
 
@@ -34,18 +38,18 @@ Console (local deployment) creates a new dashboard with a default name and no de
 
 include::_include/dashboard-cards-steps.adoc[tag=core-add-card-flow]
 
-. Arrange the cards on the grid by dragging them to new positions and resizing them as needed.
 
-. Edit the dashboard name and description to describe its purpose.
+. Select the pencil icon to edit the dashboard name and description to describe its purpose.
 
-. Select *Save*.
+. Select *Save changes*.
 +
 The saved dashboard is available under *Storage > Dashboards*.
 
-For advanced card workflows, see link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console (local deployment)].
+For advanced card customization, see link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console (local deployment)].
 
 == Related information
 
+* link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
 * link:concept-custom-dashboards.html[Learn about custom dashboards]
 * link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console (local deployment)]
 * link:task-dashboard-manage.html[Manage custom dashboards]

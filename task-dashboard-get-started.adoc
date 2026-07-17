@@ -1,0 +1,60 @@
+---
+sidebar: sidebar
+permalink: task-dashboard-get-started.html
+keywords: dashboards, quick start, get started, custom dashboards, out-of-the-box dashboards, monitoring, netapp console local
+summary: "Get started with dashboards in NetApp Console (local deployment) by using built-in Home page dashboards and creating custom dashboards for role-specific monitoring."
+---
+
+= Get started with dashboards in NetApp Console (local deployment)
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Start with built-in dashboards for quick visibility, then create and refine custom dashboards when you need targeted monitoring views for teams, fleets, or operational workflows.
+
+.Required access roles
+A role that allows access to *Storage > Dashboards* and the resources you want to monitor.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Review built-in dashboards
+
+[role="quick-margin-para"]
+Use out-of-the-box Home page dashboards to check organization-level capacity, alerts, performance, and data protection status.
+
+[role="quick-margin-list"]
+* link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Create a custom dashboard
+
+[role="quick-margin-para"]
+Create a dashboard when you need a role-specific view for selected resources, metrics, and time windows.
+
+[role="quick-margin-list"]
+* link:task-dashboard-create.html[Create a custom dashboard]
+
+
+[role="quick-margin-list"]
+* link:task-dashboard-create.html[Create a custom dashboard]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Keep dashboards current
+
+[role="quick-margin-para"]
+Update dashboards as priorities change by editing, duplicating, or deleting custom dashboards.
+
+[role="quick-margin-list"]
+* link:task-dashboard-manage.html[Manage custom dashboards]
+
+== After initial setup
+
+After your dashboard workflow is in place, continue to refine views and card selections as operational needs change:
+
+* link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console (local deployment)]
+* link:task-dashboard-manage.html[Manage custom dashboards]
+* link:reference-dashboard-card-templates.html[Custom dashboard cards and metrics reference]
+
+.Related information
+
+* link:concept-custom-dashboards.html[Use dashboards in NetApp Console (local deployment)]
+* link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]

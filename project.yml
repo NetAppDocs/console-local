@@ -102,6 +102,10 @@ sidebar:
         url: /task-console-asst-use.html
       - title: Create custom dashboards
         entries:
+        - title: View Home page metrics (out-of-the-box dashboards)
+          url: /task-storage-dashboard.html
+        - title: Get started with dashboards
+          url: /task-dashboard-get-started.html
         - title: Learn about custom dashboards
           url: /concept-custom-dashboards.html
         - title: Create a custom dashboard

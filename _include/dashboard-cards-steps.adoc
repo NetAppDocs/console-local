@@ -1,19 +1,20 @@
 //tag::core-add-card-flow[]
 . Select *Add Card*.
 
-. Select the *Scope* for the card, such as fleet, system, or volume.
+. Select the *Resource type* for the card, such as fleet, system, or volume and then choose resources from the list of available resources.
 
-. Select the *Metric Type*: *Performance*, *Capacity*, *Health*, or *Alerts*.
+. Select *Next* to continue to the card configuration options.
 
-. Select a *Card Template*.
+. Choose a metric to display. You can filter the available metrics by type: the *Metric Type*: *Performance*, *Capacity*, *Health*, or *Alerts* or search for a specific metric by name. The available metrics depend on the resource type you selected.
+
+. Select a card to include in the dashboard and select *Next*. 
+
 +
-The template defines the metric and chart type.
+You can only select one card at a time. The card preview shows live data for the selected metric and resource type.
 
-. Select the *Aggregation*, such as fleet-wide or top N elements.
+. Name your card. The name must be unique within the dashboard.
 
-. Select the *Target Resource Type* and then the specific *Target Resources* to monitor.
 
-. Select the *Time Window*: 30 minutes, 1 hour, 24 hours (default), 48 hours, 7 days, or 30 days.
 
 . Review the card preview, enter a card name and description, and then select *Add*.
 

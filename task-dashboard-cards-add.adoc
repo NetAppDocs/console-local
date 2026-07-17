@@ -74,6 +74,7 @@ The template defines the metric and chart type.
 
 == Related information
 
+* link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
 * link:concept-custom-dashboards.html[Learn about custom dashboards]
 * link:task-dashboard-create.html[Create a custom dashboard]
 * link:task-dashboard-manage.html[Manage custom dashboards]
