@@ -34,13 +34,7 @@ include::_include/dashboard-cards-steps.adoc[tag=core-add-card-flow]
 
 . Save the dashboard.
 
-== Design cards from templates for a specific use case
 
-Use this option when you want to compare templates and design a card set for a specific team or operational use case.
-
-.Steps
-
-include::_include/dashboard-cards-steps.adoc[tag=templates-menu-flow]
 
 == Related information
 

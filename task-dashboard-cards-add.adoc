@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-dashboard-cards-add.html
 keywords: add card, dashboard card, card template, widget, preview, netapp console local
-summary: "Advanced guidance for adding and customizing dashboard cards in NetApp Console (local deployment)."
+summary: "Add dashboard cards in NetApp Console (local deployment) for targeted monitoring across performance, capacity, health, and alerts."
 ---
-= Add cards to a dashboard (advanced) in NetApp Console (local deployment)
+= Add dashboard cards for targeted monitoring in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,17 +14,20 @@ summary: "Advanced guidance for adding and customizing dashboard cards in NetApp
 [.lead]
 // Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
 
-Use this advanced topic when you need detailed card customization after completing link:task-dashboard-create.html[Create a custom dashboard].
-
-Add cards to a custom dashboard in NetApp Console (local deployment) by configuring scope, aggregation, target resources, and time window for each card.
+Add cards to a custom dashboard when you need focused visibility for specific ONTAP objects, metrics, and operational goals such as performance triage, capacity planning, health checks, and alert monitoring.
 
 == Before you begin
 
-* Create or open a dashboard where you want to place cards.
-* Review available templates and metrics in link:reference-dashboard-card-templates.html[Custom dashboard card templates and metrics reference].
+Prepare template and metric selections first so you can add cards quickly for the monitoring outcomes you need.
+
+Review available templates and metrics in link:reference-dashboard-card-templates.html[Custom dashboard card templates and metrics reference].
+
+NOTE: Card templates are predefined. You can select from available templates, but you cannot create new card templates.
 
 
-== Add a card from the Add Card menu
+== Add dashboard cards 
+
+Add dashboard cards when you need focused monitoring for specific ONTAP objects, such as tracking latency hotspots, capacity pressure, health risk, or alert volume.
 
 .Steps
 
@@ -57,26 +60,7 @@ Time window and aggregation are configured at the dashboard level. The values yo
 
 . Repeat these steps for each additional card, then save the dashboard.
 
-== Create a card from the Card Templates menu
 
-.Steps
-
-. Select *Storage > Dashboards > Card Templates*.
-
-. Browse, sort, or filter the templates by metric type, metric, or target resource type.
-
-. Select a template, then select *Create Card from Template*.
-
-+
-Time window and aggregation are configured at the dashboard level. The values you set apply to all cards in the dashboard.
-
-. Customize the scope, aggregation, target resource type, target resources, and time window.
-
-. Review the card preview and enter a name and description.
-
-. Add the card to an existing dashboard or create a new dashboard.
-
-. Save the dashboard.
 
 == Related information
 

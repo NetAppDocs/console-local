@@ -65,6 +65,8 @@ Available time windows are 30 minutes, 1 hour, 24 hours, 48 hours, 7 days, and 3
 
 Cards are the building blocks of custom dashboards. Each card uses a predefined template with a metric and chart type, then maps that view to specific ONTAP objects and monitoring goals.
 
+NOTE: Card templates are predefined and not user-created.
+
 
 
 === Storage operations metric index (at a glance)
