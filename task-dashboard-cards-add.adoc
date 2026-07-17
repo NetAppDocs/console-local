@@ -46,6 +46,9 @@ The template defines the metric and chart type.
 
 . Select the *Time Window*: 30 minutes, 1 hour, 24 hours (default), 48 hours, 7 days, or 30 days.
 
++
+Time window and aggregation are configured at the dashboard level. The values you set apply to all cards in the dashboard.
+
 . Review the card preview, which shows live data.
 
 . Enter a name and description for the card.
@@ -63,6 +66,9 @@ The template defines the metric and chart type.
 . Browse, sort, or filter the templates by metric type, metric, or target resource type.
 
 . Select a template, then select *Create Card from Template*.
+
++
+Time window and aggregation are configured at the dashboard level. The values you set apply to all cards in the dashboard.
 
 . Customize the scope, aggregation, target resource type, target resources, and time window.
 

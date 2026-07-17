@@ -18,6 +18,18 @@ Manage custom dashboards in NetApp Console (local deployment) to keep views alig
 
 This task applies only to custom dashboards under *Storage > Dashboards*. Built-in Home page dashboards are predefined and cannot be edited in the same way.
 
+From *Storage > Dashboards*, select a dashboard in the table to open it. The table includes predefined dashboards and custom dashboards you create. For details, see link:task-dashboard-view-additional.html[View additional dashboards in NetApp Console (local deployment)].
+
+== What you can adjust while viewing a dashboard
+
+While viewing a custom dashboard, you can:
+
+* Add, edit, or delete cards
+* Reorder and resize cards
+* Change time window and aggregation settings
+
+Time window and aggregation are configured at the dashboard level. The values you select apply to all cards in that dashboard.
+
 
 
 == Update a dashboard as priorities change
@@ -70,6 +82,7 @@ Delete a dashboard when it no longer supports current operations and you want to
 == Related information
 
 * link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
+* link:task-dashboard-view-additional.html[View additional dashboards in NetApp Console (local deployment)]
 * link:concept-custom-dashboards.html[Learn about custom dashboards]
 * link:task-dashboard-create.html[Create a custom dashboard]
 * link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console (local deployment)]

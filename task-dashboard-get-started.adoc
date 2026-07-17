@@ -26,16 +26,19 @@ Use out-of-the-box Home page dashboards to check organization-level capacity, al
 [role="quick-margin-list"]
 * link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Create a custom dashboard
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] View additional dashboards
 
 [role="quick-margin-para"]
-Create a dashboard when you need a role-specific view for selected resources, metrics, and time windows.
+Open *Storage > Dashboards* to view the dashboard table, which includes predefined dashboards and custom dashboards you create. Select any listed dashboard to view it.
+
+[role="quick-margin-para"]
+If Home page dashboards do not show the view you need, use predefined dashboards in *Storage > Dashboards* for additional role-specific views.
+
+[role="quick-margin-para"]
+Create a custom dashboard when you need a role-specific view for selected resources, metrics, and time windows.
 
 [role="quick-margin-list"]
-* link:task-dashboard-create.html[Create a custom dashboard]
-
-
-[role="quick-margin-list"]
+* link:task-dashboard-view-additional.html[View additional dashboards in NetApp Console (local deployment)]
 * link:task-dashboard-create.html[Create a custom dashboard]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Keep dashboards current

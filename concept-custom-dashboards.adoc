@@ -19,10 +19,12 @@ NetApp Console (local deployment) provides out-of-the-box dashboards that are re
 == Choose a dashboard type
 
 Out-of-the-box dashboards::
-Use the *Home* page to review ready-to-use monitoring panes for areas such as capacity, alerts, performance capacity, licenses, and data protection status. These views are preconfigured and update automatically.
+Out-of-the-box dashboards provide ready-to-use monitoring panes for areas such as capacity, alerts, performance capacity, licenses, and data protection status. These views are preconfigured and update automatically.
 
 Custom dashboards::
-Use *Storage > Dashboards* to create your own dashboard layouts from predefined cards. Choose the scope, metrics, target resources, and time windows that match your operational goals.
+Custom dashboards provide role-specific monitoring views built from predefined cards, including selectable scope, metrics, target resources, and time windows.
+
+Predefined dashboards and custom dashboards are both available in the dashboards experience.
 
 For details about built-in Home page dashboards, see link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)].
 
@@ -50,31 +52,16 @@ Critical alert counts, alerts by severity, alerts by impact area, recent alerts,
 
 For a complete catalog of predefined cards and metrics, see link:reference-dashboard-card-templates.html[Custom dashboard cards and metrics reference].
 
-== Select target objects
+== ONTAP object hierarchy
 
 You can scope cards to any level of the ONTAP storage hierarchy: fleet, cluster, system (node), SVM, volume, LUN, and local tier (aggregate). The available target objects depend on the card template you select.
 
-== Plan your dashboard
+== Operational focus areas
 
-Before you create a dashboard, define the operational question you need to answer, such as "Which volumes have sustained latency increases?" or "Which systems are approaching capacity limits?"
-
-Use that question to choose:
-
-* The metric types to include
-* The target scope (fleet, system, SVM, volume, LUN, or local tier)
-* The time windows and aggregations needed for decisions
-
-== Get started quickly
-
-Use the quick-start workflow to move from built-in dashboards to custom dashboards and ongoing dashboard maintenance:
-
-link:task-dashboard-get-started.html[Get started with dashboards in NetApp Console (local deployment)]
+Dashboard views can be organized around common storage administration goals such as workload performance triage, capacity planning, health risk detection, and alert prioritization.
 
 == Related information
 
 * link:task-dashboard-get-started.html[Get started with dashboards in NetApp Console (local deployment)]
 * link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
-* link:task-dashboard-create.html[Create a custom dashboard]
-* link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console (local deployment)]
-* link:task-dashboard-manage.html[Manage custom dashboards]
 * link:reference-dashboard-card-templates.html[Custom dashboard cards and metrics reference]

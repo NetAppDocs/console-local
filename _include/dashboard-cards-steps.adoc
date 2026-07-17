@@ -5,6 +5,9 @@
 
 . Select *Next* to continue to the card configuration options.
 
++
+Time window and aggregation are configured at the dashboard level. The values you set apply to all cards in the dashboard.
+
 . Choose a metric to display. You can filter the available metrics by type: the *Metric Type*: *Performance*, *Capacity*, *Health*, or *Alerts* or search for a specific metric by name. The available metrics depend on the resource type you selected.
 
 . Select a card to include in the dashboard and select *Next*. 
@@ -27,6 +30,9 @@ You can only select one card at a time. The card preview shows live data for the
 . Browse, sort, or filter the templates by metric type, metric, or target resource type.
 
 . Select a template, then select *Create Card from Template*.
+
++
+Time window and aggregation are configured at the dashboard level. The values you set apply to all cards in the dashboard.
 
 . Customize the scope, aggregation, target resource type, target resources, and time window.
 

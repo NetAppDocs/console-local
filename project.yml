@@ -94,6 +94,8 @@ sidebar:
       entries:
       - title: Log in to NetApp Console
         url: /task-logging-in.html
+      - title: View Home page metrics (out-of-the-box dashboards)
+        url: /task-storage-dashboard.html
       - title: View systems associated with fleets
         url: /task-iam-switch-fleets.html
       - title: Manage your NetApp Console user settings
@@ -102,12 +104,12 @@ sidebar:
         url: /task-console-asst-use.html
       - title: Create custom dashboards
         entries:
-        - title: View Home page metrics (out-of-the-box dashboards)
-          url: /task-storage-dashboard.html
-        - title: Get started with dashboards
-          url: /task-dashboard-get-started.html
+        - title: View additional dashboards
+          url: /task-dashboard-view-additional.html
         - title: Learn about custom dashboards
           url: /concept-custom-dashboards.html
+        - title: Get started with dashboards
+          url: /task-dashboard-get-started.html
         - title: Create a custom dashboard
           url: /task-dashboard-create.html
         - title: Customize dashboard cards
