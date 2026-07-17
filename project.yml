@@ -20,11 +20,9 @@ sidebar:
       entries:
       - title: Learn about NetApp Console
         url: /concept-netapp-console-local.html
-      - title: Learn about managing storage with NetApp Console
+      - title: Learn about fleet management
         url: /concept-manage-storage.html
-      - title: Learn about storage fleets
-        url: /concept-storage-fleets.html
-      - title: Learn about storage classes
+      - title: Learn about storage classes and policies
         url: /concept-storage-classes.html
       - title: Learn about identity and access management
         url: /concept-identity-and-access-management.html
@@ -145,11 +143,13 @@ sidebar:
       - title: Remediate storage alerts
         entries:
         - title: Learn about storage alerts
-          url: /concept-storage-alerts.html
+          url: /concept-console-alerts.html
         - title: View alerts
           url: /task-alerts-monitor.html
         - title: Configure notification rules for alerts
           url: /task-alert-rules-manage.html
+        - title: Alert remediation in NetApp Console (local deployment)
+          url: /reference-alert-remediation.html          
       - title: Investigate performance issues
         entries:
         - title: Learn about the Workload Analyzer
