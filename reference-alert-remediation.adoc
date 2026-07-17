@@ -1,0 +1,74 @@
+---
+sidebar: sidebar
+permalink: reference-alert-remediation.html
+keywords: card templates, dashboard cards, metric types, chart types, performance, capacity, health, alerts, netapp console local
+summary: "Reference for the custom dashboard card templates available in NetApp Console (local deployment), organized by metric type."
+---
+= Alert remediation in NetApp Console (local deployment)
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
+
+Use this reference to review common remediation actions available in NetApp Console (local deployment). For each action, the table describes when to use it, what to verify before you run it, and the expected operational impact.
+
+== Remediation actions reference (Console)
+
+[cols="35,45,20",options="header"]
+|===
+| Remediation action (UI label TBD)
+| What it means
+| Typical alert type
+
+| *Enable automatic volume growth*
+| Lets the system automatically increase the available space for a volume (up to a limit) to reduce the chance of running out of space.
+| Capacity
+
+| *Resize volume*
+| Increases the size of a volume right away to provide more space.
+| Capacity
+
+| *Bring volume online*
+| Makes an offline volume available again.
+| Availability
+
+| *Re-enable MetroCluster AUSO*
+| Restores automatic failover behavior for MetroCluster so protection works as intended.
+| Availability / DR
+
+| *Bring aggregate online*
+| Makes an offline aggregate available again.
+| Availability
+
+| *Root volume space recovery*
+| Frees space on the system's root volume to restore healthy operation.
+| Capacity / system health
+
+| *Bring intercluster LIF up*
+| Restores the intercluster connection used for replication and cluster-to-cluster communication.
+| Connectivity / replication
+
+| *Configure Service Processor network*
+| Sets up the Service Processor so it can be reached for support and maintenance.
+| Manageability
+
+| *Assign unassigned disks*
+| Makes available disks usable by assigning them so they can be used for storage.
+| Capacity
+
+| *Unrestrict volume*
+| Removes a restricted state so the volume can be used normally again.
+| Availability
+
+| *Bring NVMe namespace online*
+| Makes an offline NVMe namespace available again.
+| Availability
+
+| *Bring LUN online*
+| Makes an offline LUN available again.
+| Availability
+|===
