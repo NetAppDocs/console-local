@@ -20,7 +20,7 @@ If you only need organization-level monitoring that is ready to use, start with 
 
 == Before you begin
 
-* Confirm that storage systems are discovered and reporting metrics.
+* Confirm that storage systems are added to a Console fleet.
 * Identify the metric types and resources you want the dashboard to track.
 
 
