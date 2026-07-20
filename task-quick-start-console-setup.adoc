@@ -13,7 +13,7 @@ summary: "Set up NetApp Console (local deployment) by installing the software, p
 :imagesdir: ./media/
 
 [.lead]
-After you install NetApp Console (local deployment), set up your organization so that the right teams can securely manage the right storage resources. Follow these steps to plan your structure, organize resources, add members, configure integrations, and enable data services.
+After you install NetApp Console (local deployment), set up your organization so that the right teams can securely manage the right storage resources. Use this checklist to plan your structure, organize resources, add members, configure integrations, and enable data services.
 
 .Required access roles
 Super admin or Organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
@@ -32,12 +32,14 @@ Super admin or Organization admin. link:reference-iam-predefined-roles.html[Lear
 
 * Understand how role-based access control (RBAC) grants members the access they need. link:concept-iam-rbac.html[Understand RBAC].
 
+* Review the identity and access management workflow. link:task-iam-fleet-mgmt-get-started.html[Learn about IAM for fleet and resource management].
+
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Set up your organization
 
 [role="quick-margin-list"]
-* Create the folder and fleet hierarchy that matches your business structure. link:task-iam-manage-folders-fleets.html[Create folders and fleets].
-
 * Add your storage systems to NetApp Console (local deployment). link:task-add-systems.html[Add storage systems].
+
+* Create the folder and fleet hierarchy that matches your business structure. link:task-iam-manage-folders-fleets.html[Create folders and fleets].
 
 * Associate resources with the correct folders and fleets. link:task-iam-manage-resources.html[Associate resources to folders and fleets].
 
@@ -52,9 +54,9 @@ Super admin or Organization admin. link:reference-iam-predefined-roles.html[Lear
 
 * Configure how the Console (local deployment) delivers notifications. link:task-console-configure-notifications-delivery.html[Configure notification delivery].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Set up data services
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Set up data services (Optional)
 
 [role="quick-margin-list"]
-* Subscribe to the data services you want to use. link:task-data-services-subscribe.html[Subscribe to data services].
+* Subscribe to the data services you want to use. link:task-data-services-subscribe.html[Subscribe to data services]. You can skip this step if you do not plan to use data services.
 
 * Grant members access to the data services. link:task-data-services-access-grant.html[Grant access to data services].
