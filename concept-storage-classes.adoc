@@ -71,6 +71,5 @@ When the Console (local deployment) detects drift, you can follow guided steps t
 
 Before you create storage classes, ensure the following are in place:
 
-* Discover at least one ONTAP cluster so the Console (local deployment) has storage targets to evaluate during placement. link:task-storage-discover.html[Discover storage]
-* Have the Organization admin role in the NetApp Console (local deployment)
+* Discover at least one ONTAP cluster so the Console (local deployment) has storage targets to evaluate during placement. link:task-add-systems.html[Add storage systems]
 * Identify the performance, capacity, and tiering needs for each category of workload in your environment, then create the storage class policies that capture those requirements. Storage classes are assembled from policies, so policies must exist before you can build a storage class. link:concept-storage-class-policies.html[Learn about storage class policies]
