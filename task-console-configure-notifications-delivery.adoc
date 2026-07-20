@@ -101,4 +101,4 @@ Before you create the webhook, ensure the following are in place:
 . Select *Test webhook* to test the webhook connection and ensure that Console (local deployment) can successfully send messages to the receiving application.
 . After the test succeeds, select *Save* to create the webhook.
 +
-After you save the webhook, it is available for users to select where webhooks are supported such as Alert delivery options. link:task-alerts-create.html[Learn how to create alert rules and assign webhooks for alert delivery.]
+After you save the webhook, it is available for users to select where webhooks are supported, such as Alert delivery options. link:task-alerts-rules-manage.html[Learn how to create alert rules and assign webhooks for alert delivery.]
