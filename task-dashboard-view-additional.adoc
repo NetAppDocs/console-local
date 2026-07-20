@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-dashboard-view-additional.html
 keywords: dashboards, predefined dashboards, custom dashboards, storage dashboards, view dashboards, netapp console local
-summary: "View additional dashboards in NetApp Console (local deployment) by opening Storage > Dashboards and selecting predefined or custom dashboards."
+summary: 'Open the dashboards table to view predefined dashboards and any custom dashboards you create."
 ---
 
 = View additional dashboards in NetApp Console (local deployment)

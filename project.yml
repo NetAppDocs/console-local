@@ -14,8 +14,6 @@ sidebar:
       entries:
       - title: What's new
         url: /whats-new.html
-      - title: Known limitations
-        url: /reference-limitations.html
     - title: Get started
       entries:
       - title: Learn about NetApp Console
@@ -32,8 +30,6 @@ sidebar:
         url: /concept-llm-integration.html
       - title: Learn about data services
         url: /concept-data-services.html
-      - title: NetApp Console FAQ
-        url: /faq-netapp-console-local.html
     - title: Install and set up
       entries:
       - title: Quick start for setting up NetApp Console

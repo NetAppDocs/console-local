@@ -43,7 +43,7 @@ link:task-alerts-monitor.html[View storage alerts in NetApp Console (local deplo
 When issues are detected, remediate them directly from NetApp Console (local deployment):
 
 * *Automated remediation* — NetApp Console (local deployment) applies corrective actions automatically based on predefined rules.
-link:task-remediation-automated.html[Remediate storage issues automatically in NetApp Console (local deployment)]
+
 
 * *Guided remediation* — Follow step-by-step recommendations to resolve issues with full control over each action.
-link:task-remediation-guided.html[Remediate storage issues with guided steps in NetApp Console (local deployment)]
+

@@ -72,12 +72,10 @@ indexpage:
           url: /concept-deploy-netapp-console-local.html
         - title: Install Console (local deployment) in your vCenter environment
           url: /task-install-agent-on-prem-ova.html
-        - title: Review port requirements
-          url: /reference-ports-on-prem.html
-        - title: Discover your storage
+        - title: Add storage systems to NetApp Console (local deployment)
           url: /task-discover-storage.html
     - title: API documentation 
-      links: https://docs.netapp.com/us-en/console-local-automation/index.html
+      links: https://docs.netapp.com/us-en/console-local-automationF/index.html
     - title: Blogs and community (links TBD)
       links: []
    
