@@ -18,3 +18,5 @@ Monitor fleet-wide health and performance in the NetApp Console (local deploymen
 
 .Required access roles
 Super admin, Organization admin, Folder or fleet admin, Storage admin, Storage viewer, or Operations support analyst. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+STUB TOPIC FOR HOMEPAGE DASHBOARD. Content to be developed.
