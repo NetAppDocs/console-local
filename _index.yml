@@ -56,10 +56,6 @@ indexpage:
           url: /task-analyzer-volume-throughput-investigate.html
         - title: Investigate capacity growth on a volume
           url: /task-analyzer-volume-capacity-investigate.html
-        - title: Remediate storage issues automatically
-          url: /task-remediation-automated.html
-        - title: Remediate storage issues with guided steps
-          url: /task-remediation-guided.html
     - title: Maintain and support
       links:
         - title: Maintain a vCenter-installed Console (local deployment)
@@ -80,8 +76,8 @@ indexpage:
           url: /reference-ports-on-prem.html
         - title: Discover your storage
           url: /task-discover-storage.html
-    - title: API documentation (links TBD)
-      links: []
+    - title: API documentation 
+      links: https://docs.netapp.com/us-en/console-local-automation/index.html
     - title: Blogs and community (links TBD)
       links: []
    

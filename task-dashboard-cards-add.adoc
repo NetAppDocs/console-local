@@ -64,8 +64,4 @@ Time window and aggregation are configured at the dashboard level. The values yo
 
 == Related information
 
-* link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
-* link:concept-custom-dashboards.html[Learn about custom dashboards]
-* link:task-dashboard-create.html[Create a custom dashboard]
-* link:task-dashboard-manage.html[Manage custom dashboards]
-* link:reference-dashboard-card-templates.html[Custom dashboard card templates and metrics reference]
+* link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local de

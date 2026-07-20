@@ -13,7 +13,7 @@ summary: "Get started with dashboards in NetApp Console (local deployment) by us
 :imagesdir: ./media/
 
 [.lead]
-Start with built-in dashboards for quick visibility, then create and refine custom dashboards when you need targeted monitoring views for teams, fleets, or operational workflows.
+Start with built-in dashboards on the Home page for quick visibility, then create and refine custom dashboards when you need targeted monitoring views for teams, fleets, or operational workflows.
 
 .Required access roles
 A role that allows access to *Storage > Dashboards* and the resources you want to monitor.
