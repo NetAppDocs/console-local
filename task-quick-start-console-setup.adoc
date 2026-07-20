@@ -37,7 +37,7 @@ Super admin or Organization admin. link:reference-iam-predefined-roles.html[Lear
 [role="quick-margin-list"]
 * Create the folder and fleet hierarchy that matches your business structure. link:task-iam-manage-folders-fleets.html[Create folders and fleets].
 
-* Add your storage systems to NetApp Console (local deployment). link:task-discover-storage.html[Add storage systems].
+* Add your storage systems to NetApp Console (local deployment). link:task-add-systems.html[Add storage systems].
 
 * Associate resources with the correct folders and fleets. link:task-iam-manage-resources.html[Associate resources to folders and fleets].
 

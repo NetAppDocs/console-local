@@ -51,7 +51,7 @@ sidebar:
         - title: Create folders and fleets
           url: /task-iam-manage-folders-fleets.html
         - title: Add storage systems to NetApp Console
-          url: /task-discover-storage.html
+          url: /task-add-systems.html
         - title: Associate resources to folders and fleets
           url: /task-iam-manage-resources.html
         - title: Add members and assign initial roles
