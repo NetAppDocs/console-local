@@ -1,0 +1,41 @@
+---
+sidebar: sidebar
+permalink: task-dashboard-view-additional.html
+keywords: dashboards, predefined dashboards, custom dashboards, storage dashboards, view dashboards, netapp console local
+summary: "View additional dashboards in NetApp Console (local deployment) by opening Storage > Dashboards and selecting predefined or custom dashboards."
+---
+
+= View additional dashboards in NetApp Console (local deployment)
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Open the dashboards table to view predefined dashboards and any custom dashboards you create.
+
+== Before you begin
+
+* Ensure your role allows access to *Storage > Dashboards*.
+
+== View dashboards from the dashboards table
+
+In *Storage > Dashboards*, predefined dashboards and custom dashboards are listed together in the same table.
+
+.Steps
+
+. Select *Storage > Dashboards*.
+
+. Review the dashboard table to find the dashboard you want to open.
+
+. Select the dashboard name to open and view it.
+
+. If needed, use available actions to edit, duplicate, or delete custom dashboards.
+
+== Related information
+
+* link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
+* link:task-dashboard-get-started.html[Get started with dashboards in NetApp Console (local deployment)]
+* link:task-dashboard-manage.html[Manage custom dashboards]
+* link:concept-custom-dashboards.html[Use dashboards in NetApp Console (local deployment)]

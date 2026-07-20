@@ -92,24 +92,38 @@ sidebar:
       entries:
       - title: Log in to NetApp Console
         url: /task-logging-in.html
+      - title: View Home page metrics (out-of-the-box dashboards)
+        url: /task-storage-dashboard.html
       - title: View systems associated with fleets
         url: /task-iam-switch-fleets.html
       - title: Manage your NetApp Console user settings
         url: /task-user-settings.html
       - title: Use the NetApp Console assistant
         url: /task-console-asst-use.html
-      - title: Create custom dashboards
+      - title: Monitor with dashboards
         entries:
-        - title: Learn about custom dashboards
-          url: /concept-custom-dashboards.html
-        - title: Create a custom dashboard
-          url: /task-dashboard-create.html
-        - title: Add cards to a dashboard
-          url: /task-dashboard-cards-add.html
+        - title: Use predefined dashboards
+          entries:
+          - title: View Home page metrics
+            url: /task-storage-dashboard.html
+          - title: View additional dashboards
+            url: /task-dashboard-view-additional.html
+        - title: Use custom dashboards
+          entries:
+          - title: Learn about custom dashboards
+            url: /concept-custom-dashboards.html
+          - title: Get started with dashboards
+            url: /task-dashboard-get-started.html
+          - title: Create a custom dashboard
+            url: /task-dashboard-create.html
+          - title: Customize dashboard cards
+            url: /task-customize-dashboard-cards.html
+          - title: Custom dashboard cards and metrics reference
+            url: /reference-dashboard-card-templates.html
         - title: Manage custom dashboards
-          url: /task-dashboard-manage.html
-        - title: Custom dashboard card templates reference
-          url: /reference-dashboard-card-templates.html
+          entries:
+          - title: Manage custom dashboards
+            url: /task-dashboard-manage.html
     - title: Manage storage in NetApp Console
       entries:
       - title: Learn about storage management
