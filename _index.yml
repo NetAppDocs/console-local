@@ -64,8 +64,6 @@ indexpage:
           url: /task-audit-console-activity.html
         - title: Get help with NetApp Console (local deployment)
           url: /task-get-help.html
-        - title: FAQ for NetApp Console (local deployment)
-          url: /faq-netapp-console-local.html
     - title: Deploy NetApp Console (local deployment)
       links:
         - title: Learn about deploying Console (local deployment)
@@ -75,7 +73,9 @@ indexpage:
         - title: Add storage systems to NetApp Console (local deployment)
           url: /task-discover-storage.html
     - title: API documentation 
-      links: https://docs.netapp.com/us-en/console-local-automationF/index.html
+      links: 
+        - title: API documentation
+          url: Shttps://docs.netapp.com/us-en/console-local-automationF/index.html
     - title: Blogs and community (links TBD)
       links: []
    
