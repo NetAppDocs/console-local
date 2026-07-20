@@ -9,19 +9,19 @@ summary: "Open the dashboards table to view predefined dashboards and any custom
 :hardbreaks:
 :nofooter:
 :icons: font
-:linkattrs:S
+:linkattrs:
 :imagesdir: ./media/
 
 [.lead]
-Open the dashboards table to view predefined dashboards and any custom dashboards you create.
+Open the dashboards table to review predefined dashboards and any custom dashboards you create in one place.
 
 == Before you begin
 
 * Ensure your role allows access to *Storage > Dashboards*.
 
-== View dashboards from the dashboards table
+== Review dashboards in the dashboards table
 
-In *Storage > Dashboards*, predefined dashboards and custom dashboards are listed together in the same table.
+In *Storage > Dashboards*, predefined dashboards and custom dashboards appear together in the same table. For example, use the table when you want to compare a finance dashboard with a production dashboard during a maintenance window.
 
 .Steps
 
@@ -29,9 +29,9 @@ In *Storage > Dashboards*, predefined dashboards and custom dashboards are liste
 
 . Review the dashboard table to find the dashboard you want to open.
 
-. Select the dashboard name to open and view it.
+. Select the dashboard name to open it and view its metrics.
 
-. If needed, use available actions to edit, duplicate, or delete custom dashboards.
+. If needed, use the available actions to edit, duplicate, or delete custom dashboards.
 
 == Related information
 
@@ -39,3 +39,4 @@ In *Storage > Dashboards*, predefined dashboards and custom dashboards are liste
 * link:task-dashboard-get-started.html[Get started with dashboards in NetApp Console (local deployment)]
 * link:task-dashboard-manage.html[Manage custom dashboards]
 * link:concept-custom-dashboards.html[Use dashboards in NetApp Console (local deployment)]
+* link:concept-monitor-storage.html[Learn about storage monitoring in NetApp Console (local deployment)]

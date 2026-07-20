@@ -13,7 +13,7 @@ summary: "Get started with dashboards in NetApp Console (local deployment) by us
 :imagesdir: ./media/
 
 [.lead]
-Start with built-in dashboards on the Home page for quick visibility, then create and refine custom dashboards when you need targeted monitoring views for teams, fleets, or operational workflows.
+Start with built-in dashboards on the Home page for quick visibility, then use additional dashboards or custom dashboards when you need more targeted monitoring views for teams, fleets, or operational workflows.
 
 .Required access roles
 A role that allows access to *Storage > Dashboards* and the resources you want to monitor.
@@ -21,25 +21,27 @@ A role that allows access to *Storage > Dashboards* and the resources you want t
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Review built-in dashboards
 
 [role="quick-margin-para"]
-Use out-of-the-box Home page dashboards to check organization-level capacity, alerts, performance, and data protection status.
+Use out-of-the-box Home page dashboards to review organization-level capacity, alerts, performance, and data protection status. For example, a storage admin can spot a cluster that is nearing capacity before the next backup window.
 
 [role="quick-margin-list"]
 * link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
+* link:concept-monitor-storage.html[Learn about storage monitoring in NetApp Console (local deployment)]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] View additional dashboards
 
 [role="quick-margin-para"]
-Open *Storage > Dashboards* to view the dashboard table, which includes predefined dashboards and custom dashboards you create. Select any listed dashboard to view it.
+Open *Storage > Dashboards* to view the dashboard table, which includes predefined dashboards and custom dashboards you create. For example, use a predefined dashboard when you need a quick view of a busy production cluster.
 
 [role="quick-margin-para"]
 If Home page dashboards do not show the view you need, use predefined dashboards in *Storage > Dashboards* for additional role-specific views.
 
 [role="quick-margin-para"]
-Create a custom dashboard when you need a role-specific view for selected resources, metrics, and time windows.
+Create a custom dashboard when you need a role-specific view for selected resources, metrics, and time windows. For example, track one project volume during a migration or one fleet during a maintenance window.
 
 [role="quick-margin-list"]
 * link:task-dashboard-view-additional.html[View additional dashboards in NetApp Console (local deployment)]
 * link:task-dashboard-create.html[Create a custom dashboard]
+* link:task-alerts-monitor.html[View storage alerts in NetApp Console (local deployment)]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Keep dashboards current
 
@@ -48,6 +50,7 @@ Update dashboards as priorities change by editing, duplicating, or deleting cust
 
 [role="quick-margin-list"]
 * link:task-dashboard-manage.html[Manage custom dashboards]
+* link:task-fleet-health-monitor.html[Monitor fleet-wide health and performance in NetApp Console (local deployment)]
 
 == After initial setup
 
@@ -60,4 +63,5 @@ After your dashboard workflow is in place, continue to refine views and card sel
 .Related information
 
 * link:concept-custom-dashboards.html[Use dashboards in NetApp Console (local deployment)]
+* link:concept-monitor-storage.html[Learn about storage monitoring in NetApp Console (local deployment)]
 * link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]

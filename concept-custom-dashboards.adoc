@@ -14,15 +14,19 @@ summary: "Use built-in and custom dashboards in NetApp Console (local deployment
 [.lead]
 // Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
 
-NetApp Console (local deployment) provides out-of-the-box dashboards that are ready to use, and the ability to build your own custom dashboards for role-specific monitoring. Use built-in views for quick, organization-level visibility, and use custom dashboards when you need targeted metrics for specific teams, fleets, or operational workflows.
+NetApp Console (local deployment) provides ready-to-use dashboards and the ability to build custom dashboards for role-specific monitoring. Use built-in views for quick, organization-level visibility, and use custom dashboards when you need targeted metrics for specific teams, fleets, or operational workflows.
+
+Dashboards are part of the broader storage monitoring workflow. Start with the monitoring overview in link:concept-monitor-storage.html[Storage monitoring in NetApp Console (local deployment)] and use dashboards to visualize the metrics that help you detect health issues, track performance, and prioritize alerts.
+
+For example, a storage admin can use a custom dashboard to watch a finance cluster that is nearing 80% capacity at quarter end, or to track latency on a production volume while a backup runs overnight.
 
 == Choose a dashboard type
 
 Out-of-the-box dashboards::
-Out-of-the-box dashboards provide ready-to-use monitoring panes for areas such as capacity, alerts, performance capacity, licenses, and data protection status. These views are preconfigured and update automatically.
+Ready-to-use monitoring panes for areas such as capacity, alerts, performance capacity, licenses, and data protection status. These views are preconfigured and update automatically.
 
 Custom dashboards::
-Custom dashboards provide role-specific monitoring views built from predefined cards, including selectable scope, metrics, target resources, and time windows.
+Role-specific monitoring views built from predefined cards, including selectable scope, metrics, target resources, and time windows.
 
 Predefined dashboards and custom dashboards are both available in the dashboards experience.
 
@@ -30,13 +34,13 @@ For details about built-in Home page dashboards, see link:task-storage-dashboard
 
 == Understand custom dashboards
 
-A custom dashboard is a saved collection of cards that you arrange on a grid. Each card is based on a predefined card template with a metric and a chart type. When you add the card, you configure the data scope, target objects, aggregation, and time window.
+A custom dashboard is a saved collection of cards that you arrange on a grid. Each card is based on a predefined card template with a metric and chart type. When you add a card, you configure the scope, target objects, aggregation, and time window.
 
 Custom dashboards and cards are private to you. Every card shows data only for the storage resources you are authorized to view.
 
-== What you can monitor
+== Monitor what matters
 
-Card templates are organized by metric type so you can focus a dashboard on a specific operational area:
+Card templates are organized by metric type so you can focus a dashboard on a specific operational area. For example, use capacity cards to watch a volume that is growing faster than expected, or use alert cards to track repeated failures on a busy cluster:
 
 Performance::
 Latency, IOPS, throughput, utilization, and performance capacity across the fleet, systems, SVMs, volumes, and LUNs.
@@ -52,11 +56,11 @@ Critical alert counts, alerts by severity, alerts by impact area, recent alerts,
 
 For a complete catalog of predefined cards and metrics, see link:reference-dashboard-card-templates.html[Custom dashboard cards and metrics reference].
 
-== ONTAP object hierarchy
+== Scope dashboards across the ONTAP hierarchy
 
-You can scope cards to any level of the ONTAP storage hierarchy: fleet, cluster, system (node), SVM, volume, LUN, and local tier (aggregate). The available target objects depend on the card template you select.
+You can scope cards to any level of the ONTAP storage hierarchy: fleet, cluster, system (node), SVM, volume, LUN, and local tier (aggregate). For example, a fleet admin can compare capacity across clusters, while a storage owner can narrow in on a single volume or LUN. The available target objects depend on the card template you select.
 
-== Operational focus areas
+== Plan dashboard views
 
 Dashboard views can be organized around common storage administration goals such as workload performance triage, capacity planning, health risk detection, and alert prioritization.
 
