@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: reference-alert-remediation.html
 keywords: card templates, dashboard cards, metric types, chart types, performance, capacity, health, alerts, netapp console local
-summary: "Reference for the custom dashboard card templates available in NetApp Console (local deployment), organized by metric type."
+summary: "Reference for remediation actions available in NetApp Console (local deployment), including related alerts, impact areas, and action summaries."
 ---
-= Alert remediation in NetApp Console (local deployment)
+= Remediation actions in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,61 +14,87 @@ summary: "Reference for the custom dashboard card templates available in NetApp 
 [.lead]
 // Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
 
-Use this reference to understand common remediation actions available in NetApp Console (local deployment). For each action, the table describes what the action means and the type of alert it is typically associated with.
+Use this reference to understand the remediation actions available from *Fix it* in NetApp Console (local deployment). For each action, the table describes what the action does and the related alert. Review the action details in the confirmation dialog before you run it.
 
 == Remediation actions
 
-[cols="35,45,20",options="header"]
+[cols="20,17,28,12,23",options="header"]
 |===
 | Remediation action
-| Description
+| Alert name
+| Alert description
 | Impact area
+| Remediation summary
 
 | *Enable automatic volume growth*
-| Lets the system automatically increase the available space for a volume (up to a limit) to reduce the chance of running out of space.
+| Volume full
+| The volume is running low on space and is nearing full capacity.
 | Capacity
+| Automatically increases a volume's size (up to a configured limit) to reduce the risk of running out of space.
 
 | *Resize volume*
-| Increases the size of a volume right away to provide more space.
+| Volume full
+| The volume is running low on space and is nearing full capacity.
 | Capacity
+| Increases a volume's size to provide more space immediately.
 
 | *Bring volume online*
-| (Volume is in offline state and not serving I/O.) Makes an offline volume available again.
+| Volume offline
+| The volume is offline and not serving data.
 | Availability
-
-| *Re-enable MetroCluster AUSO*
-| Restores automatic failover behavior for MetroCluster so protection works as intended.
-| Availability / DR
+| Brings an offline volume online so it can resume serving data.
 
 | *Bring aggregate online*
-| Makes an offline aggregate available again.
+| Aggregate offline
+| The aggregate is not online and volumes hosted on it may be unavailable.
 | Availability
-
-| *Root volume space recovery*
-| Frees space on the system's root volume to restore healthy operation.
-| Capacity / system health
-
-| *Bring intercluster LIF up*
-| Restores the intercluster connection used for replication and cluster-to-cluster communication.
-| Connectivity / replication
-
-| *Configure Service Processor network*
-| Sets up the Service Processor so it can be reached for support and maintenance.
-| Manageability
-
-| *Assign unassigned disks*
-| Makes available disks usable by assigning them so they can be used for storage.
-| Capacity
-
-| *Unrestrict volume*
-| Removes a restricted state so the volume can be used normally again.
-| Availability
-
-| *Bring NVMe namespace online*
-| Makes an offline NVMe namespace available again.
-| Availability
+| Brings an offline aggregate online to restore access to the volumes it hosts.
 
 | *Bring LUN online*
-| Makes an offline LUN available again.
+| LUN offline
+| The LUN is offline and host access is unavailable.
 | Availability
+| Brings an offline LUN online so hosts can resume access and I/O.
+
+| *Unrestrict volume*
+| Volume restricted
+| The volume is in a restricted state and may not serve I/O normally.
+| Availability
+| Returns a restricted volume to an online state so clients can access it again.
+
+| *Bring NVMe namespace online*
+| NVMe namespace is offline
+| The NVMe namespace is offline and host access is unavailable.
+| Availability
+| Brings an offline NVMe namespace online to restore host access.
+
+| *Bring intercluster LIF up*
+| Intercluster LIF down
+| An intercluster LIF is down and cluster-to-cluster communication may be impacted.
+| Connectivity
+| Brings an intercluster LIF up to restore cluster-to-cluster connectivity used for replication.
+
+| *Re-enable MetroCluster AUSO*
+| MetroCluster automatic unplanned switchover disabled
+| Automatic unplanned switchover is disabled on this cluster.
+| Availability
+| Re-enables automatic unplanned switchover (AUSO) so MetroCluster protection works as intended.
+
+| *Configure Service Processor network*
+| Service Processor is not configured
+| The Service Processor (SP) network is not configured.
+| Manageability
+| Configures the Service Processor (SP) network settings to enable out-of-band management access.
+
+| *Assign unassigned disks*
+| Unassigned disks detected
+| Unassigned disks are present and available capacity may be unused. Assign the disks to a node so they can be used for storage.
+| Availability
+| Assigns currently unassigned disks to a node so they can be used for storage.
+
+| *Root volume space recovery*
+| Node root volume space low
+| Available space on the node root volume is low and may affect normal system operation.
+| System health
+| Frees space on the node root volume by deleting the largest snapshot or the largest core dump file. Deletions are permanent.
 |===
