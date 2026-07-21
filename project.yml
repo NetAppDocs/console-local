@@ -124,6 +124,10 @@ sidebar:
           entries:
           - title: Manage custom dashboards
             url: /task-dashboard-manage.html
+    - title: Alert remediation actions
+      entries:
+      - title: Alert remediation actions
+        url: /reference-alert-remediation.html
     - title: Manage storage in NetApp Console
       entries:
       - title: Learn about storage management
@@ -153,9 +157,7 @@ sidebar:
         - title: Learn about monitoring storage health in NetApp Console
           url: /concept-monitor-storage.html
         - title: Monitor fleet-wide health and performance
-          url: /task-fleet-health-monitor.html
-      - title: Alert remediation actions
-        url: /reference-alert-remediation.html 
+          url: /task-fleet-health-monitor.html 
       - title: Remediate storage alerts
         entries:
         - title: Learn about storage alerts
