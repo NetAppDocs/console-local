@@ -4,7 +4,7 @@ permalink: reference-alert-remediation.html
 keywords: card templates, dashboard cards, metric types, chart types, performance, capacity, health, alerts, netapp console local
 summary: "Reference for remediation actions available in NetApp Console (local deployment), including related alerts, impact areas, and action summaries."
 ---
-= Remediation actions in NetApp Console (local deployment)
+= Alert remediation actions in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font

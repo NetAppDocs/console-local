@@ -154,16 +154,16 @@ sidebar:
           url: /concept-monitor-storage.html
         - title: Monitor fleet-wide health and performance
           url: /task-fleet-health-monitor.html
-      - title: Remediate storage alerts
-        entries:
+        - title: Alert remediation actions
+          url: /reference-alert-remediation.html
+        - title: Remediate storage alerts
+          url: /task-remediate-storage-alerts.html
         - title: Learn about storage alerts
           url: /concept-console-alerts.html
         - title: View alerts
           url: /task-alerts-monitor.html
         - title: Configure notification rules for alerts
           url: /task-alert-rules-manage.html
-        - title: Alert remediation in NetApp Console (local deployment)
-          url: /reference-alert-remediation.html          
       - title: Investigate performance issues
         entries:
         - title: Learn about the Workload Analyzer
