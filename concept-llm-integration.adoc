@@ -30,15 +30,16 @@ When LLM integration is enabled, the Console (local deployment) provides three A
 
 All AI actions respect the role-based access controls assigned to your user account. Sensitive operations require your confirmation before the Console (local deployment) proceeds.
 
+[[supported-llm-providers]]
 == Supported LLM models
 Console (local deployment) supports the following LLM providers:
 
-* GPT-5.2
-* GPT-5.1
+
+* GPT-5.0, 5.1, 5.2, 5.3, 5.4, 5.5
 * GPT-4.1
 * GPT-5-mini
-* Claude-Sonnet-4.5
-* Claude-Opus-4.5
+* Claude-Sonnet-4.5, 4.6
+* Claude-Opus-4.5, 4.6, 4.7
 
 Local on-premises models are not supported.
 
@@ -46,9 +47,9 @@ Local on-premises models are not supported.
 
 Before connecting an LLM, ensure the following are in place:
 
-* Deploy and run the NetApp Console (local deployment)
+
 * Ensure the Console (local deployment) has access to the clusters you want to manage with AI assistance
-* Subscribe to a supported LLM provider (OpenAI, Anthropic, or AWS Bedrock) and obtain a valid API key
+* Subscribe to a supported LLM provider and obtain a valid API key
 * Configure your network to allow outbound connections from the Console (local deployment) to your LLM provider's endpoint
 * Have the Organization admin role in the NetApp Console (local deployment)
-* Configure and assign storage classes in the Console (local deployment) so the AI can guide provisioning decisions
+

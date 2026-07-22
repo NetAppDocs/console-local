@@ -28,20 +28,20 @@ To connect your LLM, you obtain an API key from your LLM provider and then enter
 
 Before you connect your LLM, make sure you have:
 
-* A valid API key from a supported LLM provider. Create the key with your provider and keep it available to paste into the Console (local deployment). Because most providers display the key only once, copy it as soon as you generate it.
+* A valid API key from a supported LLM provider. link:concept-llm-integration.html[Learn about supported providers.] and keep it available to paste into the Console (local deployment). Because most providers display the key only once, copy it as soon as you generate it.
 * Your user name or single sign-on (SSO) ID for the LLM provider account.
 * Network access from the Console (local deployment) to your LLM provider's endpoint.
 
 
-
 == Connect your LLM
 
-Enter your API key and select a model in the AI Tools settings to connect your LLM to the Console (local deployment).
+Enter your API key and select a model to connect your LLM to the Console (local deployment).
 
 .Steps
 . Log in to the NetApp Console (local deployment).
 . Select *Administration > AI Tools*.
 . Select the menu, and then select *Edit*.
+. Enter your 
 . In the *User name* field, enter your user name or SSO ID.
 . In the *API key* field, paste the API key from your LLM provider.
 . Select a model from the list. For example, `gpt-5-mini`.
