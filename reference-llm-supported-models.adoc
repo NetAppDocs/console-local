@@ -1,0 +1,62 @@
+---
+sidebar: sidebar
+permalink: reference-llm-supported-models.html
+keywords: LLM, supported models, OpenAI, OpenAI-compatible, model selection, netapp console
+summary: "Reference for supported LLM provider types and model availability in NetApp Console (local deployment)."
+---
+= Supported LLM providers and models in NetApp Console (local deployment)
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Supported provider types and model availability help you choose the right provider path and model for NetApp Console (local deployment).
+
+NetApp Console (local deployment) supports OpenAI and OpenAI-compatible provider types. The models available in the UI depend on the provider type and endpoint you configure.
+
+== See how provider type affects model availability
+
+Provider choice determines which models appear in the Console (local deployment) model list:
+
+* *OpenAI* shows models supported for direct OpenAI integration.
+* *OpenAI-compatible* shows models exposed by the compatible endpoint your organization configures.
+
+Model availability can vary based on endpoint configuration, proxy or gateway behavior, and organizational policy. The difference between provider types is the endpoint you connect to and the models that endpoint exposes, not the transport protocol.
+
+== Supported OpenAI models
+
+Add the supported OpenAI models here.
+
+[cols="35,65",options="header"]
+|===
+| Model | Notes
+
+| _Placeholder model_
+| Add supported OpenAI model details.
+|===
+
+== Supported OpenAI-compatible models
+
+Add the supported OpenAI-compatible models here.
+
+[cols="35,65",options="header"]
+|===
+| Model or endpoint-exposed model | Notes
+
+| _Placeholder model_
+| Add supported OpenAI-compatible model details.
+|===
+
+== Choose the right LLM model
+
+Use these guidelines when selecting a model:
+
+* Choose a model that your provider path exposes in the Console (local deployment) UI.
+* Use *Read only* mode first to validate response quality and policy alignment.
+* Choose a model that matches your performance, cost, and governance requirements.
+* If your organization uses an OpenAI-compatible endpoint, confirm available models with the service operator.
+
+For setup steps, see link:task-llm-connect.html[Connect your LLM and enable the NetApp Console assistant].
+For planning guidance, see link:concept-llm-integration.html[Learn about LLM integration in NetApp Console (local deployment)].

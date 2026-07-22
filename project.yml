@@ -78,6 +78,8 @@ sidebar:
           url: /task-iam-active-directory-integrate.html
         - title: Connect your LLM and enable the NetApp Console assistant
           url: /task-llm-connect.html
+        - title: Troubleshoot LLM integration
+          url: /task-llm-troubleshoot-integration.html
         - title: Configure notification delivery
           url: /task-console-configure-notifications-delivery.html
       - title: Set up data services
@@ -206,6 +208,8 @@ sidebar:
           url: /task-iam-rename-organization.html
         - title: Identity and access management API reference
           url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
+      - title: Supported LLM providers and models
+        url: /reference-llm-supported-models.html
       - title: Ports for the on-premises Console agent
         url: /reference-ports-on-prem.html
     - title: Knowledge and support

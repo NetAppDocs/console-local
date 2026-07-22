@@ -156,15 +156,15 @@ Local users can enable multi-factor authentication (MFA) to add another verifica
 
 .Which LLM providers does NetApp Console (local deployment) support for AI-assisted management?
 
-You bring your own subscription to a supported LLM provider—OpenAI, Anthropic, or AWS Bedrock—and supply a valid API key during configuration. You also need the Console deployed with cluster access, outbound network connectivity to the provider's endpoint, the Organization admin role, and configured storage classes to guide provisioning. link:concept-llm-integration.html[Learn about LLM integration].
+You bring your own subscription or service access for a supported provider type: OpenAI or OpenAI-compatible. You then supply a valid API key during configuration. You also need the Console deployed with cluster access, outbound network connectivity to the configured endpoint, the Organization admin role, and storage classes that guide provisioning. link:concept-llm-integration.html[Learn about LLM integration].
 
 .Does enabling LLM integration send my storage data or queries to a third-party service?
 
-Because NetApp Console (local deployment) runs in your own environment, your data and queries stay within your network by default. The Console does not send data to a third-party LLM service without your explicit configuration of an outbound connection. All AI actions also respect your RBAC, and sensitive operations require your confirmation. link:concept-llm-integration.html[Learn about LLM integration].
+The Console sends prompts and related context only to the LLM endpoint you configure. If that endpoint is a third-party cloud service, data is sent to that service over HTTPS. If that endpoint is an internal OpenAI-compatible service, data stays on your internal path for that integration. All AI actions also respect your RBAC, and sensitive operations require your confirmation. link:concept-llm-integration.html[Learn about LLM integration].
 
 .What can the Console assistant do, and how do I control whether it changes my storage?
 
-Once you connect an LLM, the Console assistant lets users provision storage, investigate alerts, and get answers using natural language. Users choose an access mode: in *Read only* mode the assistant answers and guides without making changes, while in *Read/write* mode it can act on storage infrastructure but shows the details for the user to review and confirm before each change. link:task-console-assistant.html[Enable the Console assistant].
+Once you connect an LLM, the Console assistant lets users provision storage, investigate alerts, and get answers using natural language. Users choose an access mode: in *Read only* mode the assistant answers and guides without making changes, while in *Read/write* mode it can act on storage infrastructure but shows the details for the user to review and confirm before each change. link:task-llm-connect.html[Connect your LLM and enable the NetApp Console assistant].
 
 == Data protection and auditing
 
