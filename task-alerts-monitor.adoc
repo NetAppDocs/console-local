@@ -25,7 +25,7 @@ For ONTAP alerts, you can access tools such as System Manager and Workload analy
 
 For external reporting, you can export the alerts list to a CSV file for offline analysis.
 
-NOTE: You can also set up notification rules to receive alerts by email or webhook. link:task-alerts-create-rules.html[Learn how to set up alert notifications].
+NOTE: You can also set up notification rules to receive alerts by email or webhook. link:task-alert-rules-manage.html[Learn how to set up alert notifications].
 
 == Available alerts
 NetApp Console (local deployment) supports the following types of alerts:

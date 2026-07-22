@@ -20,7 +20,7 @@ Super admin or Organization admin. link:reference-iam-predefined-roles.html[Lear
 
 == Rename your organization
 
-You can rename your organization. This is helpful if you support more than organization.
+You can rename your organization.
 
 .Steps
 
@@ -50,7 +50,7 @@ You can view the organization ID from the Organizations page and copy it to the 
 [#fleet-id]
 == Obtain the ID for a fleet
 
-You'll need to obtain the ID for a fleet if you are using the API. For example, when creating a Cloud Volumes ONTAP system.
+You'll need to obtain the ID for a fleet if you are using the API. 
 
 .Steps
 

@@ -13,9 +13,9 @@ summary: After you sign up to NetApp Console (local deployment), you can log in 
 :imagesdir: ./media/
 
 [.lead]
-After you sign up to the NetApp Console, you can log in from the web-based console to start managing your data and storage infrastructure.
+You can sign in to NetApp Console (local deployment) after your organization administrator has invited you to your Console (local deployment) organization user account. To login, you use the email address associated with your login.
 
-After you sign up, your Console organization administrator must add your user account to an organization before you access any resources. If you log in but don't see any resources, contact your organization administrator. link:task-user-settings.html#contact-admin[Contact your organization administrator].
+If you log in but don't see any resources, contact your organization administrator. link:task-user-settings.html#contact-admin[Contact your organization administrator].
 
 
 .Steps
@@ -27,7 +27,6 @@ After you sign up, your Console organization administrator must add your user ac
 . Depending on the authentication method associated with your login, you'll be prompted to enter your credentials.
 
 +
-* Your existing NetApp Support Site (NSS) credentials
 * A NetApp Console account using your email address and a password
 * An Active Directory account using your email address and password
 

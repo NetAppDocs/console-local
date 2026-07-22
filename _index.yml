@@ -58,10 +58,6 @@ indexpage:
           url: /task-analyzer-volume-throughput-investigate.html
         - title: Investigate capacity growth on a volume
           url: /task-analyzer-volume-capacity-investigate.html
-        - title: Remediate storage issues automatically
-          url: /task-remediation-automated.html
-        - title: Remediate storage issues with guided steps
-          url: /task-remediation-guided.html
     - title: Maintain and support
       links:
         - title: Maintain a vCenter-installed Console (local deployment)
@@ -72,20 +68,18 @@ indexpage:
           url: /reference-llm-supported-models.html
         - title: Get help with NetApp Console (local deployment)
           url: /task-get-help.html
-        - title: FAQ for NetApp Console (local deployment)
-          url: /faq-netapp-console-local.html
     - title: Deploy NetApp Console (local deployment)
       links:
         - title: Learn about deploying Console (local deployment)
           url: /concept-deploy-netapp-console-local.html
         - title: Install Console (local deployment) in your vCenter environment
           url: /task-install-agent-on-prem-ova.html
-        - title: Review port requirements
-          url: /reference-ports-on-prem.html
-        - title: Discover your storage
-          url: /task-discover-storage.html
-    - title: API documentation (links TBD)
-      links: []
+        - title: Add storage systems to NetApp Console (local deployment)
+          url: /task-add-systems.html
+    - title: API documentation 
+      links: 
+        - title: API documentation
+          url: https://docs.netapp.com/us-en/console-local-automation/index.html
     - title: Blogs and community (links TBD)
       links: []
    

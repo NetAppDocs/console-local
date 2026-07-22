@@ -116,7 +116,6 @@ b. Select *Actions* > *New VM from this template*
 The vSphere task bar shows the progress as the NetApp Console (local deployment) is deployed.
 . Power on the VM.
 
-NOTE: If the deployment fails, you can access the validation report and logs from the NetApp Console (local deployment) host. link:task-troubleshoot-console-local.html#troubleshoot-installation[Learn how to troubleshoot installation issues.]
 
 
 
