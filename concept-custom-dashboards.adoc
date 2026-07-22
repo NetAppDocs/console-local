@@ -14,25 +14,27 @@ summary: "Use built-in and custom dashboards in NetApp Console (local deployment
 [.lead]
 // Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
 
-NetApp Console (local deployment) provides out-of-the-box dashboards that are ready to use, and the ability to build your own custom dashboards for role-specific monitoring. Use built-in views for quick, organization-level visibility, and use custom dashboards when you need targeted metrics for specific teams, fleets, or operational workflows.
+NetApp Console (local deployment) allows you to build your own custom dashboards for role-specific monitoring. Use custom dashboards when you need targeted metrics for specific teams, fleets, or operational workflows.
 
 == Choose a dashboard type
 
-Out-of-the-box dashboards::
-Out-of-the-box dashboards provide ready-to-use monitoring panes for areas such as capacity, alerts, performance capacity, licenses, and data protection status. These views are preconfigured and update automatically.
+Home page dashboard::
+The Home page dashboard provides ready-to-use monitoring panes for areas such as capacity, alerts, performance capacity, licenses, and data protection status. These views are preconfigured and update automatically.
 
 Custom dashboards::
 Custom dashboards provide role-specific monitoring views built from predefined cards, including selectable scope, metrics, target resources, and time windows.
 
-Predefined dashboards and custom dashboards are both available in the dashboards experience.
+You can add a custom dashboard to the Home page dashboard.
 
-For details about built-in Home page dashboards, see link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)].
+For details about the Home page dashboard, see link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)].
 
 == Understand custom dashboards
 
 A custom dashboard is a saved collection of cards that you arrange on a grid. Each card is based on a predefined card template with a metric and a chart type. When you add the card, you configure the data scope, target objects, aggregation, and time window.
 
 Custom dashboards and cards are private to you. Every card shows data only for the storage resources you are authorized to view.
+
+You can add a custom dashboard to your Home page. Only one custom dashboard can be added at a time. You can remove the custom dashboard from your Home page and add a different one if needs change.
 
 == What you can monitor
 
@@ -52,9 +54,9 @@ Critical alert counts, alerts by severity, alerts by impact area, recent alerts,
 
 For a complete catalog of predefined cards and metrics, see link:reference-dashboard-card-templates.html[Custom dashboard cards and metrics reference].
 
-== ONTAP object hierarchy
+== Resource types
 
-You can scope cards to any level of the ONTAP storage hierarchy: fleet, cluster, system (node), SVM, volume, LUN, and local tier (aggregate). The available target objects depend on the card template you select.
+You can scope cards to any level of the ONTAP storage hierarchy: fleet, cluster, system (node), SVM, volume, LUN, and local tier (aggregate). The available resource types depend on the card template you select.
 
 == Operational focus areas
 

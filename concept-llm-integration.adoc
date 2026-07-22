@@ -30,6 +30,18 @@ When LLM integration is enabled, the Console (local deployment) provides three A
 
 All AI actions respect the role-based access controls assigned to your user account. Sensitive operations require your confirmation before the Console (local deployment) proceeds.
 
+== Supported LLM models
+Console (local deployment) supports the following LLM providers:
+
+* GPT-5.2
+* GPT-5.1
+* GPT-4.1
+* GPT-5-mini
+* Claude-Sonnet-4.5
+* Claude-Opus-4.5
+
+Local on-premises models are not supported.
+
 == Prerequisites
 
 Before connecting an LLM, ensure the following are in place:

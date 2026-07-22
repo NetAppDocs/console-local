@@ -68,7 +68,7 @@ Cards are the building blocks of custom dashboards. Each card uses a predefined 
 NOTE: Card templates are predefined and not user-created.
 
 
-
+[[metrics-list]]
 === Storage operations metric index (at a glance)
 
 Metric types align to common storage administration outcomes, including performance bottlenecks, capacity pressure, health risk, and alert volume.
@@ -98,7 +98,7 @@ Metric types align to common storage administration outcomes, including performa
 | <<alerts-templates,Go to templates>>
 |===
 
-=== Supported ONTAP object hierarchy
+=== Supported ONTAP object hierarchy (resource types)
 
 Card data can be represented at multiple ONTAP object levels, from fleet-level visibility to object-level troubleshooting.
 
