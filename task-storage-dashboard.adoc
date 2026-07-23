@@ -15,7 +15,7 @@ summary: "Within NetApp Console (local deployment), you can view metrics on the 
 [.lead]
 // Jira: PSPM-3769 for full GA, not July
 
-Use the Home page dashboard in NetApp Console (local deployment) to monitor high-level metrics for fleet health, alerts, security, capacity usage, latency, throughput, and IOPS. 
+Use the Home page dashboard in NetApp Console (local deployment) as your default daily starting point for monitoring storage health and performance. It provides high-level metrics for fleet health, alerts, security, capacity usage, latency, throughput, and IOPS.
 
 The Home page dashboard is automatically scoped to only the fleets and systems you are authorized to view. You can also add a custom dashboard to the Home page for role-specific monitoring.
 
@@ -64,5 +64,5 @@ The *System health status* card lists individual systems with their current heal
 
 == Related information
 
-* link:concept-custom-dashboards.html[Learn about dashboards in NetApp Console (local deployment)]
+* link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console (local deployment)]
 * link:reference-dashboard-card-templates.html[Predefined dashboards and custom dashboard cards reference in NetApp Console (local deployment)]

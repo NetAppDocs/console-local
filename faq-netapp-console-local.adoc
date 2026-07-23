@@ -122,7 +122,7 @@ A notification rule matches alerts on service, severity, impact area, and target
 
 .What can I do with custom dashboards?
 
-Custom dashboards let you build personalized monitoring views by assembling cards from predefined templates, choosing the scope, metrics, aggregation, target resources, and time window. Templates cover performance, capacity, health, and alerts, and you can scope cards to any level of the ONTAP hierarchy. Each dashboard and card is private to you and shows data only for resources you're authorized to view. link:concept-custom-dashboards.html[Learn about custom dashboards].
+Custom dashboards let you build personalized monitoring views by assembling cards from predefined templates, choosing the scope, metrics, aggregation, target resources, and time window. Templates cover performance, capacity, health, and alerts, and you can scope cards to any level of the ONTAP hierarchy. Each dashboard and card is private to you and shows data only for resources you're authorized to view. link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console (local deployment)].
 
 == Identity and access
 

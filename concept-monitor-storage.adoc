@@ -20,7 +20,7 @@ Start with dashboards for a quick view of storage health and performance. Use th
 
 * link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
 * link:task-dashboard-manage.html[Keep dashboards current in NetApp Console (local deployment)]
-* link:concept-custom-dashboards.html[Use dashboards in NetApp Console (local deployment)]
+* link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console (local deployment)]
 
 == Monitor fleet-wide health and performance
 

@@ -97,6 +97,6 @@ Delete a dashboard when it no longer supports current operations and you want to
 
 * link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
 * link:task-dashboard-get-started.html[Get started with dashboards in NetApp Console (local deployment)]
-* link:concept-custom-dashboards.html[Learn about dashboards in NetApp Console (local deployment)]
+* link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console (local deployment)]
 * link:task-dashboard-create.html[Create a custom dashboard]
 * link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console (local deployment)]
