@@ -1,5 +1,5 @@
 settings:
-  name: "NetApp Console"
+  name: "NetApp Console (local deployment)"
   internal:
     pdf_enabled: true
   prod:
