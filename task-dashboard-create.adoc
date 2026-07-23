@@ -18,10 +18,12 @@ Create a custom dashboard in NetApp Console (local deployment), add cards, and s
 
 If you only need organization-level monitoring that is ready to use, start with the built-in Home page dashboards. Create a custom dashboard when you need a role-specific view, resource-level targeting, or a tailored card layout.
 
-== Before you begin
 
-* Confirm that storage systems are added to a Console fleet.
-* Identify the metric types and resources you want the dashboard to track.
+.Console (local deployment) dashboard guidelines
+* Only the user who creates the dashboard can view it. You cannot share dashboards with other users, even when you add them to the Console Home page.
+* You can only view resources that you have permission to view. If you do not see a resource in the list of available resources, you do not have permission to view it.
+
+* Before you begin, identify the metric types and resources you want the dashboard to track. link:reference-dashboard-card-templates.html[View what metrics and resources you can view with Console dashboards.] 
 
 
 == Build a dashboard for your monitoring goals
@@ -41,11 +43,11 @@ include::_include/dashboard-cards-steps.adoc[tag=core-add-card-flow]
 
 . Select the pencil icon to edit the dashboard name and description to describe its purpose.
 
-. Select *Save changes*.
+. Select the action menu to the right of the Add card button and select *Save dashboard*.
 +
 The saved dashboard is available under *Storage > Dashboards*.
 
-For advanced card customization, see link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console (local deployment)].
+. Optionally, add this dashboard to your Home page by selecting *Add to Home page* from the action menu. The dashboard is added to the Home page. Only you can view custom dashboards that you create.It is not shared with others.
 
 == Related information
 

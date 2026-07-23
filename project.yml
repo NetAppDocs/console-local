@@ -74,6 +74,8 @@ sidebar:
           url: /task-iam-active-directory-integrate.html
         - title: Connect your LLM and enable the NetApp Console assistant
           url: /task-llm-connect.html
+        - title: Troubleshoot LLM integration
+          url: /task-llm-troubleshoot-integration.html
         - title: Configure notification delivery
           url: /task-console-configure-notifications-delivery.html
       - title: Set up data services
@@ -120,54 +122,63 @@ sidebar:
           url: /task-provisioning-automated.html
         - title: Provision storage with agentic workflows
           url: /task-provisioning-agentic.html
-      - title: Monitor storage health
+
+    - title: Monitor storage health
+      entries:
+      - title: Learn about monitoring storage health in NetApp Console
+        url: /concept-monitor-storage.html
+      - title: Monitor fleet-wide health and performance
+        url: /task-fleet-health-monitor.html
+      - title: Monitor with dashboards
         entries:
-        - title: Learn about monitoring storage health in NetApp Console
-          url: /concept-monitor-storage.html
-        - title: Dashboards
+        - title: Use predefined dashboards
           entries:
           - title: View Home page metrics
             url: /task-storage-dashboard.html
           - title: View additional dashboards
             url: /task-dashboard-view-additional.html
+        - title: Use custom dashboards
+          entries:
+          - title: Learn about custom dashboards
+            url: /concept-custom-dashboards.html
           - title: Get started with dashboards
             url: /task-dashboard-get-started.html
           - title: Create a custom dashboard
             url: /task-dashboard-create.html
           - title: Customize dashboard cards
             url: /task-customize-dashboard-cards.html
+          - title: Custom dashboard cards and metrics reference
+            url: /reference-dashboard-card-templates.html
+        - title: Manage custom dashboards
+          entries:
           - title: Manage custom dashboards
             url: /task-dashboard-manage.html
-          - title: Learn about custom dashboards
-            url: /concept-custom-dashboards.html
-          - title: Dashboard cards and metrics reference
-            url: /reference-dashboard-card-templates.html
-        - title: Alerts
-          entries:
-          - title: Learn about storage alerts
-            url: /concept-console-alerts.html
-          - title: View alerts
-            url: /task-alerts-monitor.html
-          - title: Configure notification rules for alerts
-            url: /task-alert-rules-manage.html
-        - title: Performance investigation
-          entries:
-          - title: Learn about the Workload Analyzer
-            url: /concept-workload-analyzer.html
-          - title: Investigate high latency on a volume
-            url: /task-analyzer-volume-latency-investigate.html
-          - title: Investigate high throughput demand on a volume
-            url: /task-analyzer-volume-throughput-investigate.html
-          - title: Investigate capacity growth on a volume
-            url: /task-analyzer-volume-capacity-investigate.html
-          - title: Workload Analyzer metrics reference
-            url: /reference-workload-analyzer-metrics.html
+      - title: Remediate alerts
+        entries:
+        - title: Learn about alerts
+          url: /concept-console-alerts.html
+        - title: View alerts
+          url: /task-alerts-monitor.html
+        - title: Configure notification rules for alerts
+          url: /task-alert-rules-manage.html
+      - title: Investigate performance issues
+        entries:
+        - title: Learn about the Workload Analyzer
+          url: /concept-workload-analyzer.html
+        - title: Investigate high latency on a volume
+          url: /task-analyzer-volume-latency-investigate.html
+        - title: Investigate high throughput demand on a volume
+          url: /task-analyzer-volume-throughput-investigate.html
+        - title: Investigate capacity growth on a volume
+          url: /task-analyzer-volume-capacity-investigate.html
+        - title: Workload Analyzer metrics reference
+          url: /reference-workload-analyzer-metrics.html
    
-    - title: Administer and monitor
+    - title: Administer and monitor NetApp Console (local deployment)
       entries:
-      - title: Learn about administering NetApp Console
+      - title: Learn about administering NetApp Console (local deployment)
         url: /concept-administer-netapp-console-local.html
-      - title: Audit NetApp Console operations
+      - title: Audit NetApp Console (local deployment) operations
         url: /task-audit-console-activity.html
       - title: Licenses and subscriptions
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
@@ -190,8 +201,12 @@ sidebar:
         entries:
         - title: Organization and fleet IDs
           url: /task-iam-rename-organization.html
-        - title: API reference
-          url: https://docs.netapp.com/us-en/console-local-automation/index.html
+        - title: Identity and access management API reference
+          url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
+      - title: Supported LLM providers and models
+        url: /reference-llm-supported-models.html
+      - title: Ports for the on-premises Console agent
+        url: /reference-ports-on-prem.html
     - title: Knowledge and support
       entries:
       - title: Register for support

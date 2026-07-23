@@ -1,0 +1,66 @@
+---
+sidebar: sidebar
+permalink: task-llm-troubleshoot-integration.html
+keywords: LLM, AI, troubleshooting, openai, openai-compatible, proxy, endpoint, api key, netapp console
+summary: "Troubleshoot LLM integration issues in NetApp Console (local deployment), including provider, endpoint, API key, and assistant availability errors."
+---
+= Troubleshoot LLM integration in NetApp Console (local deployment)
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Diagnose and resolve common LLM integration issues in NetApp Console (local deployment).
+
+If you have not completed setup, see link:task-llm-connect.html[Connect your LLM and enable the NetApp Console assistant].
+
+== Fix LLM configuration save or test failures
+
+If save fails in *Administration > AI Tools*, check the following:
+
+* Confirm that you selected the correct provider type: OpenAI or OpenAI-compatible.
+* Confirm that the endpoint URL is valid for the provider path you selected.
+* Confirm that the API key is valid, active, and copied without extra spaces.
+* Confirm that the selected model is supported by the configured provider endpoint.
+* Confirm that network policy allows outbound access from Console (local deployment) to the endpoint.
+
+If save still fails, collect the exact error text and contact support.
+
+== Restore a missing Console assistant button
+
+If users do not see the *Console assistant* button on the dashboard:
+
+* Confirm that LLM configuration in *Administration > AI Tools* was saved successfully.
+* Confirm that the LLM integration status is healthy.
+* Confirm that users are signed in to the correct organization and have expected role-based access controls.
+* Refresh the browser session and verify again.
+
+== Fix Console assistant runtime failures
+
+If the assistant opens but requests fail:
+
+* Re-check provider type, endpoint URL, and API key values in *Administration > AI Tools*.
+* Confirm that the model selected in AI Tools is available from the configured endpoint.
+* Confirm that your environment can reach the provider endpoint at request time.
+* Check whether provider-side quotas, limits, or temporary service issues block requests.
+
+== Fix slow or inconsistent Console assistant responses
+
+If responses are delayed or inconsistent:
+
+* Test a shorter prompt to determine whether latency is prompt-related.
+* Verify endpoint health and service status in your provider tooling.
+* Try another supported model on the same provider path.
+* Confirm that network path and proxy routing are stable.
+
+== Respond to LLM credential exposure or misuse
+
+If you suspect API key exposure or unauthorized use:
+
+. Revoke the existing API key in your provider system.
+. Create a new API key.
+. Update the key in *Administration > AI Tools*.
+. Verify successful reconnection with a read-only assistant test.
+
