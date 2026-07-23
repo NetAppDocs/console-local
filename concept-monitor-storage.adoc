@@ -19,8 +19,8 @@ NetApp Console (local deployment) helps you monitor storage across fleets with d
 Start with dashboards for a quick view of storage health and performance. Use the Home page for at-a-glance metrics, open the dashboards table for predefined and custom dashboards, and move into alerts, investigation, and remediation when you need more detail.
 
 * link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
-* link:task-dashboard-view-additional.html[View additional dashboards in NetApp Console (local deployment)]
-* link:concept-custom-dashboards.html[Use dashboards in NetApp Console (local deployment)]
+* link:task-dashboard-manage.html[Keep dashboards current in NetApp Console (local deployment)]
+* link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console (local deployment)]
 
 == Monitor fleet-wide health and performance
 

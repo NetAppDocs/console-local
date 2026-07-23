@@ -2,11 +2,11 @@ indexpage:
   title: NetApp Console (local deployment) documentation
   lead: Manage, monitor, and protect your storage infrastructure with NetApp Console (local deployment).
   summary: Use NetApp Console (local deployment)
-  keywords: storage management, data protection, operational efficiency, cost optimization, business continuity, unified management,  self-hosted, high availability, LLM integration, role-based access control, storage provisioning
+  keywords: storage management, data protection, operational efficiency, cost optimization, business continuity, unified management, self-hosted, high availability, LLM integration, role-based access control, storage provisioning
   tiles:
     - title: Learn about NetApp Console (local deployment)
       links:
-        - title: What is NetApp Console (local deployment)?
+        - title: Learn about NetApp Console (local deployment)
           url: /concept-netapp-console-local.html
         - title: Learn about identity and access management
           url: /concept-identity-and-access-management.html
@@ -14,6 +14,50 @@ indexpage:
           url: /concept-manage-storage.html
         - title: Learn about NetApp Console (local deployment) data services
           url: /concept-data-services.html
+    - title: Deploy NetApp Console (local deployment)
+      links:
+        - title: Learn about deploying Console (local deployment)
+          url: /concept-deploy-netapp-console-local.html
+        - title: Install Console (local deployment) in your vCenter environment
+          url: /task-install-agent-on-prem-ova.html
+        - title: Add storage systems to NetApp Console (local deployment)
+          url: /task-add-systems.html
+        - title: Connect an email server for notifications
+          url: /task-console-configure-notifications-delivery.html
+        - title: Connect your LLM
+          url: /task-llm-connect.html
+    - title: Set up user access and fleet management
+      links:
+        - title: Get started with identity and access
+          url: /task-iam-fleet-mgmt-get-started.html
+        - title: Create folders and fleets
+          url: /task-iam-manage-folders-fleets.html
+        - title: Add members and assign roles
+          url: /task-iam-manage-members-permissions.html
+        - title: Integrate with Active Directory
+          url: /task-iam-active-directory-integrate.html
+    - title: Standardize and provision storage
+      links:
+        - title: Learn about managing storage with NetApp Console (local deployment)
+          url: /concept-manage-storage.html
+        - title: Create a storage class
+          url: /task-storage-class-manage.html
+        - title: Provision storage manually
+          url: /task-provisioning-manual.html
+        - title: Provision storage automatically
+          url: /task-provisioning-automated.html
+    - title: Monitor, investigate, and remediate storage
+      links:
+        - title: Learn about monitoring storage health in NetApp Console
+          url: /concept-monitor-storage.html
+        - title: View Home page metrics
+          url: /task-storage-dashboard.html
+        - title: Get started with dashboards in NetApp Console (local deployment)
+          url: /task-dashboard-get-started.html
+        - title: View alerts
+          url: /task-alerts-monitor.html
+        - title: Configure notification rules for alerts
+          url: /task-alert-rules-manage.html
     - title: Navigate and use NetApp Console (local deployment)
       links:
         - title: Log in to NetApp Console (local deployment)
@@ -24,40 +68,8 @@ indexpage:
           url: /task-user-settings.html
         - title: Use the NetApp Console assistant
           url: /task-console-asst-use.html
-    - title: Standardize and provision storage
-      links:
-        - title: Create a storage class
-          url: /task-storage-class-manage.html
-        - title: Provision storage automatically
-          url: /task-provisioning-automated.html
-    - title: Set up access and organization
-      links:
-        - title: Get started with identity and access
-          url: /task-iam-fleet-mgmt-get-started.html
-        - title: Create folders and fleets
-          url: /task-iam-manage-folders-fleets.html
-        - title: Add users to your Console organization
-          url: /task-iam-manage-members-permissions.html
-        - title: Integrate with Active Directory
-          url: /task-iam-active-directory-integrate.html
-        - title: Connect your LLM
-          url: /task-llm-connect.html
-        - title: Troubleshoot LLM integration
-          url: /task-llm-troubleshoot-integration.html
-    - title: Monitor, investigate, and remediate storage
-      links:
-        - title: Monitor fleet-wide health and performance
-          url: /task-fleet-health-monitor.html
-        - title: View alerts
-          url: /task-alerts-monitor.html
-        - title: Configure notification rules for alerts
-          url: /task-alert-rules-manage.html
-        - title: Investigate high latency on a volume
-          url: /task-analyzer-volume-latency-investigate.html
-        - title: Investigate high throughput on a volume
-          url: /task-analyzer-volume-throughput-investigate.html
-        - title: Investigate capacity growth on a volume
-          url: /task-analyzer-volume-capacity-investigate.html
+      
+   
     - title: Maintain and support
       links:
         - title: Maintain a vCenter-installed Console (local deployment)
@@ -68,14 +80,6 @@ indexpage:
           url: /reference-llm-supported-models.html
         - title: Get help with NetApp Console (local deployment)
           url: /task-get-help.html
-    - title: Deploy NetApp Console (local deployment)
-      links:
-        - title: Learn about deploying Console (local deployment)
-          url: /concept-deploy-netapp-console-local.html
-        - title: Install Console (local deployment) in your vCenter environment
-          url: /task-install-agent-on-prem-ova.html
-        - title: Add storage systems to NetApp Console (local deployment)
-          url: /task-add-systems.html
     - title: API documentation 
       links: 
         - title: API documentation

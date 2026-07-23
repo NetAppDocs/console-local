@@ -56,5 +56,6 @@ Console (local deployment) includes default notification rules, and you can crea
 
 * link:task-alerts-monitor.html[Monitor and investigate alerts]
 * link:task-alert-rules-manage.html[Create and manage alert notification rules]
+* link:reference-ontap-alerts.html[ONTAP alerts reference]
 
 

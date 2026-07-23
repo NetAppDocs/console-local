@@ -1,5 +1,5 @@
 settings:
-  name: "NetApp Console"
+  name: "NetApp Console (local deployment)"
   internal:
     pdf_enabled: true
   prod:
@@ -74,8 +74,9 @@ sidebar:
           url: /task-iam-active-directory-integrate.html
         - title: Connect your LLM and enable the NetApp Console assistant
           url: /task-llm-connect.html
-        - title: Troubleshoot LLM integration
-          url: /task-llm-troubleshoot-integration.html
+          entries:
+          - title: Troubleshoot LLM integration
+            url: /task-llm-troubleshoot-integration.html
         - title: Configure notification delivery
           url: /task-console-configure-notifications-delivery.html
       - title: Set up data services
@@ -127,16 +128,10 @@ sidebar:
       entries:
       - title: Learn about monitoring storage health in NetApp Console
         url: /concept-monitor-storage.html
-      - title: Monitor fleet-wide health and performance
-        url: /task-fleet-health-monitor.html
       - title: Monitor with dashboards
         entries:
-        - title: Use predefined dashboards
-          entries:
-          - title: View Home page metrics
-            url: /task-storage-dashboard.html
-          - title: View additional dashboards
-            url: /task-dashboard-view-additional.html
+        - title: View Home page metrics
+          url: /task-storage-dashboard.html
         - title: Use custom dashboards
           entries:
           - title: Learn about custom dashboards
@@ -205,6 +200,12 @@ sidebar:
           url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
       - title: Supported LLM providers and models
         url: /reference-llm-supported-models.html
+      - title: ONTAP alerts reference
+        url: /reference-ontap-alerts.html
+      - title: Cluster security compliance categories
+        url: /reference-cluster-compliance-categories.html
+      - title: Storage VM security compliance categories
+        url: /reference-svm-compliance-categories.html
       - title: Ports for the on-premises Console agent
         url: /reference-ports-on-prem.html
     - title: Knowledge and support

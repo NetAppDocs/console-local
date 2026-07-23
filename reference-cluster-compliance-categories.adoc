@@ -1,0 +1,113 @@
+---
+sidebar: sidebar
+permalink: reference-cluster-compliance-categories.html
+keywords: cluster compliance, security compliance, cluster security, ontap cluster security, compliance categories, netapp console local
+summary: "Reference for cluster security compliance categories and recommended settings in NetApp Console (local deployment)."
+---
+= Cluster security compliance categories in NetApp Console (local deployment)
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Use this reference to review the cluster security compliance categories shown in NetApp Console (local deployment), including the recommended value and whether each category affects overall compliance status.
+
+These categories are based on ONTAP security posture checks.
+
+[cols="20,50,15,15",options="header"]
+|===
+| Category | What the category checks | Recommended value | Affects overall compliance
+
+| Global FIPS
+| Whether FIPS 140-2 mode is enabled. When enabled, TLSv1 and SSLv3 are disabled and only TLSv1.1 and TLSv1.2 are allowed.
+| Enabled
+| Yes
+
+| Telnet
+| Whether Telnet access is enabled. SSH is the recommended secure remote access method.
+| Disabled
+| Yes
+
+| Insecure SSH settings
+| Whether SSH is configured with insecure ciphers, such as ciphers that begin with `cbc`.
+| No
+| Yes
+
+| Login banner
+| Whether a login banner is configured for system access.
+| Enabled
+| Yes
+
+| Cluster peering
+| Whether communication between peered clusters is encrypted. Encryption must be enabled on both source and destination clusters.
+| Encrypted
+| Yes
+
+| Network Time Protocol
+| Whether one or more NTP servers are configured for the cluster. NetApp recommends at least three NTP servers for resilience.
+| Configured
+| Yes
+
+| OCSP
+| Whether Online Certificate Status Protocol validation is enabled for SSL/TLS certificate validation.
+| Enabled
+| No
+
+| Remote audit logging
+| Whether log forwarding (syslog) is encrypted.
+| Encrypted
+| Yes
+
+| AutoSupport HTTPS transport
+| Whether HTTPS is used as the default transport protocol for AutoSupport messages.
+| Enabled
+| Yes
+
+| Default admin user
+| Whether the built-in default admin account is disabled.
+| Disabled
+| Yes
+
+| SAML users
+| Whether SAML is configured for single sign-on and MFA-capable authentication.
+| No
+| No
+
+| Active Directory users
+| Whether Active Directory authentication is configured for cluster access.
+| No
+| No
+
+| LDAP users
+| Whether LDAP authentication is configured for cluster access.
+| No
+| No
+
+| Certificate users
+| Whether certificate-based users are configured for cluster login.
+| No
+| No
+
+| Local users
+| Whether local users are configured for cluster login.
+| No
+| No
+
+| Remote shell
+| Whether RSH is enabled. SSH is preferred for secure remote access.
+| Disabled
+| Yes
+
+| MD5 in use
+| Whether ONTAP user accounts still use MD5 hashing instead of stronger hashes such as SHA-512.
+| No
+| Yes
+
+| Certificate issuer type
+| The certificate issuer type used by the cluster.
+| CA-Signed
+| No
+|===
+

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: task-storage-dashboard.html
-keywords:  bluexp, dashboard, console, home page
-summary: Within NetApp Console (local deployment), you can view metrics on the Home page. 
+keywords: NetApp Console, local deployment, dashboard, console, home page, homepage
+summary: "Within NetApp Console (local deployment), you can view metrics on the Home page."
 ---
 
 = View Home page metrics in NetApp Console (local deployment)
@@ -15,173 +15,54 @@ summary: Within NetApp Console (local deployment), you can view metrics on the H
 [.lead]
 // Jira: PSPM-3769 for full GA, not July
 
-Monitoring the health of your storage estate helps you spot issues early and take action before they spread. Use the NetApp Console (local deployment) Home page to review the status of your backups and restores from NetApp Backup and Recovery, the workloads at risk for ransomware, and the workloads protected by NetApp Ransomware Resilience. You can also review storage capacity for individual clusters and Cloud Volumes ONTAP systems, ONTAP alerts, storage performance capacity, license status, and more.
+Use the Home page dashboard in NetApp Console (local deployment) as your default daily starting point for monitoring storage health and performance. It provides high-level metrics for fleet health, alerts, security, capacity usage, latency, throughput, and IOPS.
 
-Use this page as the entry point for the monitoring workflow. From here, you can move into additional dashboards, alerts, fleet health, and performance investigation.
+The Home page dashboard is automatically scoped to only the fleets and systems you are authorized to view. You can also add a custom dashboard to the Home page for role-specific monitoring.
 
-All panes on the Home page show data at the organization level. The Storage capacity and Storage performance panes show systems associated with fleets that the user can access based on IAM permissions.
+Use the cards as a layered triage workflow. Start with *Fleet health* and *Alerts* to find risk hotspots. Use *System health status* and *Recommended remediations* to identify impacted resources. Use *Capacity usage*, *Latency*, *Throughput*, and *IOPS* to investigate root causes.
 
-The system refreshes the data on the Home page every five minutes. Caching may cause the data on this page to differ from real values for up to 15 minutes.
+== Fleet health
 
-NOTE: Accurate metrics on the Home page require appropriately sized and configured Console agents.
+The *Fleet health* card shows a high-level status summary for the top five fleets, including system counts, used capacity, security compliance, and critical alerts. Use this card to identify which fleets need immediate attention.
 
-== Required NetApp Console (local deployment) roles
+== Recommended remediations
 
-Each pane in the Home page requires different user roles: 
+The *Recommended remediations* card lists active issues and suggested actions. The card prioritizes remediations based on capacity pressure, offline resources, and protection-related risks.
 
-* *Storage capacity pane*: Ability to see the NetApp Console Systems page
-* *ONTAP alerts pane*: Folder or fleet admin, Operations Support Analyst, Organization admin, Organization viewer, Super admin, Super viewer
-* *Storage performance capacity pane*: Ability to see the NetApp Console Systems page
-* *Licenses and subscriptions pane*: Folder or fleet admin, Organization admin, Organization viewer, Super admin, Super viewer
-* *Backup and Recovery pane*: Backup and recovery backup admin, Backup and recovery super admin, Backup and recovery backup viewer, Backup and recovery clone admin, Folder or fleet admin, Organization admin, Backup and recovery restore admin, Super admin, Super viewer
+== Alerts
 
-If you do not have permissions to access a pane, the pane displays a message indicating you lack permissions to use it.
+The *Alerts* card summarizes alert volume in the selected time range and groups it by severity. Use this card to understand current incident load and to spot recent changes in critical, warning, or informational alerts.
 
+== Security
 
-link:reference-iam-predefined-roles.html[Learn about NetApp Console (local deployment) access roles.]. 
+The *Security* card summarizes compliance and protection metrics, such as system compliance and ransomware-related controls. Use this view to monitor security trends across your resources.
 
-.Steps
+== Capacity usage
 
-. From the NetApp Console menu, select *Home*.
-+
-If you have the Organization admin or Super admin role and haven't yet added any storage systems, the Home page displays getting started information.
-+
-image:screenshot-home-greenfield.png[NetApp Console (local deployment) Home page welcoming new users]
-+ 
-If you already set up the NetApp Console (local deployment) and added at least one ONTAP cluster, the Home page shows metrics for your storage environment.
-+
-image:screenshot-home-metrics.png[NetApp Console (local deployment) Home page showing metrics]
+The *Capacity usage* card displays projected and historical usage trends across selected fleets or systems. Use this card to identify growth patterns and plan for additional capacity.
 
-   
-== Enable metrics to appear on the Home page    
+== Latency
 
-You can see metrics on the Home page when you belong to an organization with existing storage resources that have been added to Console (local deployment).
+The *Latency* card tracks response-time behavior over time across the selected systems. Use this trend to detect emerging performance delays and compare relative latency across resources.
 
+== Throughput
 
-== View the overall storage capacity
+The *Throughput* card shows data transfer rates over time for selected systems. Use this card to understand workload intensity and monitor throughput demand changes.
 
-The Storage capacity pane provides the following information across all ONTAP clusters: 
+== IOPS
 
-* Number of ONTAP systems discovered in the Console
-* Capacity usage per cluster 
+The *IOPS* card shows input/output operation rates over time. Use this card to compare activity levels between systems and identify sustained or intermittent I/O demand.
 
-The order of the clusters is based on the amount of capacity used. The cluster with the highest capacity appears first for easy identification.
+== Dashboard card (example metric card)
 
-Warning indicators show for clusters at 80% capacity, with data updating every five minutes.
+The lower *Dashboard* area can contain a user-selected custom dashboard such as average latency for a selected production scope. Use these cards for focused monitoring by team, workload, or goal.
 
+== System health status
 
+The *System health status* card lists individual systems with their current health state. Use this card to quickly identify unhealthy systems and correlate status changes with alerts and performance signals.
 
-TIP: If you have multiple fleets, you might see different data in the Storage capacity pane compared to the Systems page. This is because the Systems page shows information based on the fleet level, whereas the Storage capacity pane shows information at the organization level. Also, the data on this pane might differ from real values for a maximum of 15 minutes because the data is cached for that duration to optimize performance.
 
-.Steps
+== Related information
 
-. In the Storage capacity pane, select *View* to go to the Console Systems page. 
-. On the Systems page, select the fleet containing the cluster you want to view. 
-. On the Systems page, select a cluster to view more details about that cluster.
-
-
-
-== View ONTAP alerts
-
-View issues or potential risks in your NetApp on-premises ONTAP environments. You can see some non-EMS alerts and some EMS alerts. 
-
-The data updates every 5 minutes. 
-
-
-You can see ONTAP alerts with these severities:
-
-* Critical
-* Warning
-* Informational
-
-You can see ONTAP alerts for these impact areas:
-
-* Capacity
-* Performance
-* Protection
-* Availability
-* Security
-
-
-TIP: Caching optimizes performance, but may cause the data on this pane to differ from actual values for up to 15 minutes.
-
-*Systems supported*
-
-* An on-premises ONTAP NAS or SAN system is supported.
-* Cloud Volumes ONTAP systems are not supported.
-
-*Data sources supported*
-
-View alerts regarding certain events that occur in ONTAP. They are a combination of EMS and metric-based alerts.
-
-For details about ONTAP alerts, refer to https://docs.netapp.com/us-en/console-alerts/index.html[About ONTAP alerts^].
-
-For a list of alerts that you might see, refer to https://docs.netapp.com/us-en/console-alerts/alerts-use-dashboard.html[View potential risks in ONTAP storage^].
-
-
-.Steps
-
-. From the NetApp Console menu, review the ONTAP alerts pane. 
-. Optionally, filter the alerts by selecting the severity level or change the filter to show alerts based on impact area.  
-
-. In the ONTAP alerts pane, select *View* to go to the Console Alerts page. 
-
-
-== View storage performance capacity 
-
-Review the storage performance capacity used per cluster or Cloud Volumes ONTAP system to determine how performance capacity, latency, and IOPS are impacting your workloads. For example, you might find that you need to shift workloads to minimize latency and maximize IOPS and throughput for your critical workloads.
-
-The system arranges clusters and systems by performance capacity, listing the highest capacity first for easy identification.
-
-TIP: Caching optimizes performance, but may cause the data on this pane to differ from actual values for up to 15 minutes.
-
-.Steps
-
-. From the NetApp Console menu, review the Storage performance pane. 
-
-
-. In the Storage performance pane, select *View* to go to a Performance page that lists all the clusters and Cloud Volumes ONTAP systems data for performance capacity, IOPS, and latency. 
-. Select a cluster to view its details in System Manager. 
-
- 
-
-== View the licenses and subscriptions that you have
-
-Review the following information on the Licenses and subscriptions pane: 
-
-* The total number of licenses and subscriptions that you have.
-* The number of each type of license and subscription that you have (direct license, annual contract, or PAYGO).
-* The number of licenses and subscriptions that are active, require action, or nearing expiration. 
-* The system displays indicators next to the license types that require action or are nearing expiration.
-
-The data refreshes every 5 minutes.
-
-TIP: Caching optimizes performance, but may cause the data on this pane to differ from actual values for up to 15 minutes.
-
-.Steps
-
-. From the NetApp Console menu, review the Licenses and subscriptions pane. 
-
-. In the Licenses and subscriptions pane, select *View* to go to the Console Licenses and subscriptions page. 
-
-
-
-
-== View Backup and Recovery status
-
-Review the overall status of your backups and restores from NetApp Backup and Recovery. You can see the number of protected and unprotected resources. You can also see the percentage of backups and restore operations for protection of your workloads. A higher percentage indicates improved data protection.
-
-The data refreshes every 5 minutes.
-
-TIP: Caching optimizes performance, but may cause the data on this pane to differ from actual values for up to 15 minutes.
-
-.Steps
-. From the NetApp Console menu, review the Backup and Recovery pane.
-. Select *View* to go to the NetApp Backup and Recovery Dashboard. For details, refer to https://docs.netapp.com/us-en/data-services-backup-recovery/index.html[NetApp Backup and Recovery documentation^].
-
-
-
-
-
-
-
+* link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console (local deployment)]
+* link:reference-dashboard-card-templates.html[Predefined dashboards and custom dashboard cards reference in NetApp Console (local deployment)]
