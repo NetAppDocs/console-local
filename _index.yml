@@ -22,8 +22,10 @@ indexpage:
           url: /task-install-agent-on-prem-ova.html
         - title: Add storage systems to NetApp Console (local deployment)
           url: /task-add-systems.html
-        - title: Review required ports for on-premises deployment
-          url: /reference-ports-on-prem.html
+        - title: Connect an email server for notifications
+          url: /task-console-configure-notifications-delivery.html
+        - title: Connect your LLM
+          url: /task-llm-connect.html
     - title: Set up user access and fleet management
       links:
         - title: Get started with identity and access
@@ -68,10 +70,8 @@ indexpage:
           url: /task-user-settings.html
         - title: Use the NetApp Console assistant
           url: /task-console-asst-use.html
-        - title: Connect your LLM
-          url: /task-llm-connect.html
-        - title: Troubleshoot LLM integration
-          url: /task-llm-troubleshoot-integration.html
+      
+   
     - title: Maintain and support
       links:
         - title: Maintain a vCenter-installed Console (local deployment)
