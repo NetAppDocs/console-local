@@ -14,16 +14,6 @@ indexpage:
           url: /concept-manage-storage.html
         - title: Learn about NetApp Console (local deployment) data services
           url: /concept-data-services.html
-    - title: Set up access and organization
-      links:
-        - title: Get started with identity and access
-          url: /task-iam-fleet-mgmt-get-started.html
-        - title: Create folders and fleets
-          url: /task-iam-manage-folders-fleets.html
-        - title: Add members and assign roles
-          url: /task-iam-manage-members-permissions.html
-        - title: Integrate with Active Directory
-          url: /task-iam-active-directory-integrate.html
     - title: Deploy NetApp Console (local deployment)
       links:
         - title: Learn about deploying Console (local deployment)
@@ -34,6 +24,16 @@ indexpage:
           url: /task-add-systems.html
         - title: Review required ports for on-premises deployment
           url: /reference-ports-on-prem.html
+    - title: Set up user access and fleet management
+      links:
+        - title: Get started with identity and access
+          url: /task-iam-fleet-mgmt-get-started.html
+        - title: Create folders and fleets
+          url: /task-iam-manage-folders-fleets.html
+        - title: Add members and assign roles
+          url: /task-iam-manage-members-permissions.html
+        - title: Integrate with Active Directory
+          url: /task-iam-active-directory-integrate.html
     - title: Standardize and provision storage
       links:
         - title: Learn about managing storage with NetApp Console (local deployment)
