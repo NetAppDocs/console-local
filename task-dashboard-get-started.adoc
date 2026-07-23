@@ -39,7 +39,7 @@ If Home page dashboards do not show the view you need, use predefined dashboards
 Create a custom dashboard when you need a role-specific view for selected resources, metrics, and time windows. For example, track one project volume during a migration or one fleet during a maintenance window.
 
 [role="quick-margin-list"]
-* link:task-dashboard-view-additional.html[View additional dashboards in NetApp Console (local deployment)]
+* link:task-dashboard-manage.html[Keep dashboards current in NetApp Console (local deployment)]
 * link:task-dashboard-create.html[Create a custom dashboard]
 * link:task-alerts-monitor.html[View storage alerts in NetApp Console (local deployment)]
 

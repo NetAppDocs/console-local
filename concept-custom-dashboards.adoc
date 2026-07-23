@@ -4,7 +4,7 @@ permalink: concept-custom-dashboards.html
 keywords: dashboards, out-of-the-box dashboards, custom dashboards, dashboard, cards, widgets, card templates, monitoring, netapp console local
 summary: "Use built-in and custom dashboards in NetApp Console (local deployment) to monitor storage with predefined views or role-specific dashboards."
 ---
-= Use dashboards in NetApp Console (local deployment)
+= Learn about dashboards in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,9 +12,7 @@ summary: "Use built-in and custom dashboards in NetApp Console (local deployment
 :imagesdir: ./media/
 
 [.lead]
-// Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
-
-NetApp Console (local deployment) allows you to build your own custom dashboards for role-specific monitoring. Use custom dashboards when you need targeted metrics for specific teams, fleets, or operational workflows.
+Use dashboards in NetApp Console (local deployment) to monitor storage health with predefined views or role-specific custom dashboards. Choose custom dashboards when you need targeted metrics for specific teams, fleets, or operational workflows.
 
 == Choose a dashboard type
 
@@ -34,7 +32,7 @@ A custom dashboard is a saved collection of cards that you arrange on a grid. Ea
 
 Custom dashboards and cards are private to you. Every card shows data only for the storage resources you are authorized to view.
 
-You can add a custom dashboard to your Home page. Only one custom dashboard can be added at a time. You can remove the custom dashboard from your Home page and add a different one if needs change.
+You can add a custom dashboard to your Home page. Only one custom dashboard can be added at a time. You can remove the custom dashboard from your Home page and add a different one as needs change.
 
 == Monitor what matters
 
@@ -66,4 +64,5 @@ Dashboard views can be organized around common storage administration goals such
 
 * link:task-dashboard-get-started.html[Get started with dashboards in NetApp Console (local deployment)]
 * link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
+* link:concept-dashboard-cards-overview.html[Dashboard cards in NetApp Console (local deployment)]
 * link:reference-dashboard-card-templates.html[Custom dashboard cards and metrics reference]

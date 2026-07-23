@@ -131,12 +131,8 @@ sidebar:
         url: /task-fleet-health-monitor.html
       - title: Monitor with dashboards
         entries:
-        - title: Use predefined dashboards
-          entries:
-          - title: View Home page metrics
-            url: /task-storage-dashboard.html
-          - title: View additional dashboards
-            url: /task-dashboard-view-additional.html
+        - title: View Home page metrics
+          url: /task-storage-dashboard.html
         - title: Use custom dashboards
           entries:
           - title: Learn about custom dashboards
@@ -207,6 +203,10 @@ sidebar:
         url: /reference-llm-supported-models.html
       - title: ONTAP alerts reference
         url: /reference-ontap-alerts.html
+      - title: Cluster security compliance categories
+        url: /reference-cluster-compliance-categories.html
+      - title: Storage VM security compliance categories
+        url: /reference-svm-compliance-categories.html
       - title: Ports for the on-premises Console agent
         url: /reference-ports-on-prem.html
     - title: Knowledge and support
