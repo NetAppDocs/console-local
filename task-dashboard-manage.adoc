@@ -16,7 +16,7 @@ summary: "View and manage dashboards in NetApp Console (local deployment) by ope
 
 Manage custom dashboards in NetApp Console (local deployment) to keep views aligned with operations. You can edit, duplicate, and delete dashboards as teams, fleets, and priorities change.
 
-This task applies only to custom dashboards under *Storage > Dashboards*. Built-in Home page dashboards are predefined and cannot be edited in the same way.
+This task applies only to custom dashboards under *Storage > Dashboards*. Predefined Home page dashboards cannot be edited in the same way.
 
 
 == View dashboards 

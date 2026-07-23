@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: concept-custom-dashboards.html
-keywords: dashboards, out-of-the-box dashboards, custom dashboards, dashboard, cards, widgets, card templates, monitoring, netapp console local
-summary: "Use built-in and custom dashboards in NetApp Console (local deployment) to monitor storage with predefined views or role-specific dashboards."
+keywords: dashboards, predefined dashboards, custom dashboards, dashboard, cards, widgets, card templates, monitoring, netapp console local
+summary: "Use predefined and custom dashboards in NetApp Console (local deployment) to monitor storage with predefined views or role-specific dashboards."
 ---
 = Learn about dashboards in NetApp Console (local deployment)
 :hardbreaks:
@@ -18,6 +18,7 @@ Use dashboards in NetApp Console (local deployment) to monitor storage health wi
 
 Home page dashboard::
 The Home page dashboard provides ready-to-use monitoring panes for areas such as capacity, alerts, performance capacity, licenses, and data protection status. These views are preconfigured and update automatically.
+link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)].
 
 Custom dashboards::
 Role-specific monitoring views built from predefined cards, including selectable scope, metrics, target resources, and time windows.
@@ -64,5 +65,4 @@ Dashboard views can be organized around common storage administration goals such
 
 * link:task-dashboard-get-started.html[Get started with dashboards in NetApp Console (local deployment)]
 * link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
-* link:concept-dashboard-cards-overview.html[Dashboard cards in NetApp Console (local deployment)]
 * link:reference-dashboard-card-templates.html[Custom dashboard cards and metrics reference]
