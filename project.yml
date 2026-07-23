@@ -122,36 +122,37 @@ sidebar:
           url: /task-provisioning-automated.html
         - title: Provision storage with agentic workflows
           url: /task-provisioning-agentic.html
-      - title: Monitor storage health
+
+    - title: Monitor storage health
+      entries:
+      - title: Learn about monitoring storage health in NetApp Console
+        url: /concept-monitor-storage.html
+      - title: Monitor fleet-wide health and performance
+        url: /task-fleet-health-monitor.html
+      - title: Monitor with dashboards
         entries:
-        - title: Learn about monitoring storage health in NetApp Console
-          url: /concept-monitor-storage.html
-        - title: Monitor fleet-wide health and performance
-          url: /task-fleet-health-monitor.html
-        - title: Monitor with dashboards
+        - title: Use predefined dashboards
           entries:
-          - title: Use predefined dashboards
-            entries:
-            - title: View Home page metrics
-              url: /task-storage-dashboard.html
-            - title: View additional dashboards
-              url: /task-dashboard-view-additional.html
-          - title: Use custom dashboards
-            entries:
-            - title: Learn about custom dashboards
-              url: /concept-custom-dashboards.html
-            - title: Get started with dashboards
-              url: /task-dashboard-get-started.html
-            - title: Create a custom dashboard
-              url: /task-dashboard-create.html
-            - title: Customize dashboard cards
-              url: /task-customize-dashboard-cards.html
-            - title: Custom dashboard cards and metrics reference
-              url: /reference-dashboard-card-templates.html
+          - title: View Home page metrics
+            url: /task-storage-dashboard.html
+          - title: View additional dashboards
+            url: /task-dashboard-view-additional.html
+        - title: Use custom dashboards
+          entries:
+          - title: Learn about custom dashboards
+            url: /concept-custom-dashboards.html
+          - title: Get started with dashboards
+            url: /task-dashboard-get-started.html
+          - title: Create a custom dashboard
+            url: /task-dashboard-create.html
+          - title: Customize dashboard cards
+            url: /task-customize-dashboard-cards.html
+          - title: Custom dashboard cards and metrics reference
+            url: /reference-dashboard-card-templates.html
+        - title: Manage custom dashboards
+          entries:
           - title: Manage custom dashboards
-            entries:
-            - title: Manage custom dashboards
-              url: /task-dashboard-manage.html
+            url: /task-dashboard-manage.html
       - title: Remediate storage alerts
         entries:
         - title: Learn about storage alerts
@@ -173,11 +174,11 @@ sidebar:
         - title: Workload Analyzer metrics reference
           url: /reference-workload-analyzer-metrics.html
    
-    - title: Administer and monitor
+    - title: Administer and monitor NetApp Console (local deployment)
       entries:
-      - title: Learn about administering NetApp Console
+      - title: Learn about administering NetApp Console (local deployment)
         url: /concept-administer-netapp-console-local.html
-      - title: Audit NetApp Console operations
+      - title: Audit NetApp Console (local deployment) operations
         url: /task-audit-console-activity.html
       - title: Licenses and subscriptions
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
