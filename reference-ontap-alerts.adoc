@@ -31,188 +31,303 @@ The sections below group alerts by impact category and sort each table alphabeti
 
 These alerts can affect system, service, or data availability.
 
-[cols="25,15,45",options="header"]
+[cols="23,12,20,45",options="header"]
 |===
-| Alert name | Type | Description
+| Alert name | Type | Severity | Description
+
+| Active Directory Server Connection Down
+| EMS
+| Critical
+| All configured AD/LDAP servers for this SVM are unreachable.
 
 | Aggregate isn't online
 | Metric
+| Critical
 | Some aggregates are offline. Volume creation could cause duplicate FSIDs.
 
 | Antivirus server busy
 | EMS
+| Critical, Warning, Info
 | The antivirus server is overloaded and can't accept additional scan requests.
 
 | AWS credentials not initialized
 | EMS
+| Critical, Warning, Info
 | A module attempted to access AWS IAM role-based credentials before they were initialized.
 
 | Cloud tier unreachable
 | EMS
+| Critical, Warning, Info
 | A storage node cannot connect to Cloud Tier object store API. Some data will be inaccessible.
 
 | Disk failure
 | Metric
+| Critical
 | A disk has failed, is being sanitized, or is in Maintenance mode.
 
 | Disk out of service
 | EMS
+| Critical, Warning, Info
 | A disk was taken out of service due to failure, sanitization, or maintenance.
 
 | Disk shelves power supply removed
 | EMS
+| Critical, Warning, Info
 | A power supply unit was removed from the disk shelf.
 
 | FC target port commands exceeded
 | EMS
+| Critical, Warning, Info
 | The number of outstanding commands on the physical FC target port exceeds the supported limit.
 
 | Giveback of storage pool failed
 | EMS
+| Critical, Warning, Info
 | This event occurs during the relocation of a storage pool (aggregate) as part of a storage failover (SFO) giveback, when the destination node cannot reach the object stores.
 
 | HA interconnect down
 | EMS
+| Critical, Warning, Info
 | The high-availability (HA) interconnect is down. Risk of service outage when failover is not available.
 
 | InstanceDown
 | Metric
+| Critical
 | The monitored instance is unreachable and may be down or experiencing network issues.
 
 | LUN destroyed
 | EMS
+| Critical, Warning, Info
 | A LUN was destroyed and is no longer accessible.
 
 | LUN offline
 | EMS
+| Critical, Warning, Info
 | A LUN was taken offline manually.
 
 | Main unit fan failed
 | EMS
+| Critical, Warning, Info
 | One or more main unit fans have failed. The system remains operational.
 
 | Main unit fan in warning state
 | EMS
+| Critical, Warning, Info
 | One or more main unit cooling fans are in a warning state.
 
 | Max sessions per user exceeded
 | EMS
+| Critical, Warning, Info
 | You have exceeded the maximum number of sessions allowed per user over a TCP connection.
 
 | Max times open per file exceeded
 | EMS
+| Critical, Warning, Info
 | You have exceeded the maximum number of times that you can open the file over a TCP connection.
 
 | MetroCluster automatic unplanned switchover disabled
 | EMS
+| Critical, Warning, Info
 | Automatic unplanned switchover capability has been disabled on this cluster.
 
 | MetroCluster monitoring
 | EMS
+| Critical, Warning, Info
 | The system health monitor alert is detected.
 
 | NFSv4 store pool exhausted
 | EMS
+| Critical, Warning, Info
 | A NFSv4 store pool has been exhausted.
 
 | NetBIOS name conflict
 | EMS
+| Critical, Warning, Info
 | The NetBIOS Name Service has received a negative response to a name registration request, from a remote machine.
 
 | No registered scan engine
 | EMS
+| Critical, Warning, Info
 | The antivirus connector notified ONTAP that it does not have a registered scan engine.
 
 | No Vscan connection
 | EMS
+| Critical, Warning, Info
 | ONTAP has no Vscan connection to service virus scan requests. This might cause data unavailability if the scan-mandatory option is enabled.
 
 | Non-responsive antivirus server
 | EMS
+| Critical, Warning, Info
 | ONTAP detected a non-responsive antivirus server and forcibly closed its Vscan connection.
 
 | Nonexistent admin share
 | EMS
+| Critical, Warning, Info
 | Vscan issue: a client has attempted to connect to a nonexistent ONTAP_ADMIN$ share.
 
 | NVRAM battery low
 | EMS
+| Critical, Warning, Info
 | The NVRAM battery capacity is critically low. There might be a potential data loss if the battery runs out of power.
 
 | NVMe namespace destroyed
 | EMS
+| Critical, Warning, Info
 | An NVMe namespace was destroyed and is no longer accessible.
 
 | NVMe namespace offline
 | EMS
+| Critical, Warning, Info
 | An NVMe namespace was taken offline manually.
 
 | NVMe namespace online
 | EMS
+| Critical, Warning, Info
 | An NVMe namespace was brought back online.
 
 | NVMe-oF license grace period active
 | EMS
+| Critical, Warning, Info
 | This event occurs on a daily basis when the NVMe over Fabrics (NVMe-oF) protocol is in use and the grace period of the license is active.
 
 | NVMe-oF license grace period expired
 | EMS
+| Critical, Warning, Info
 | The NVMe over Fabrics (NVMe-oF) license grace period is over and the NVMe-oF functionality is disabled.
 
 | NVMe-oF license grace period start
 | EMS
+| Critical, Warning, Info
 | The NVMe over Fabrics (NVMe-oF) configuration was detected during the upgrade to ONTAP 9.5 software.
 
 | Object store host unresolvable
 | EMS
+| Critical, Warning, Info
 | The object store server host name cannot be resolved to an IP address.
 
 | Object store intercluster LIF down
 | EMS
+| Critical, Warning, Info
 | The object-store client cannot find an operational LIF to communicate with the object store server.
 
 | Object store signature mismatch
 | EMS
+| Critical, Warning, Info
 | The request signature sent to the object store server does not match the signature calculated by the client.
+
+| Port Status Down
+| EMS
+| Critical
+| This Ethernet port is down. Traffic on that link may be affected.
+
+| READDIR timeout
+| EMS
+| Critical, Warning, Info
+| A READDIR file operation has exceeded the timeout that it is allowed to run in WAFL.
+
+| Relocation of storage pool failed
+| EMS
+| Critical, Warning, Info
+| This event occurs during the relocation of an storage pool (aggregate), when the destination node cannot reach the object stores.
+
+| SAN "active-active" state changed
+| EMS
+| Critical, Warning, Info
+| The SAN pathing is no longer symmetric.
 
 | Service Processor heartbeat missed
 | EMS
+| Critical, Warning, Info
 | ONTAP is not receiving an expected heartbeat signal from the Service Processor (SP).
 
 | Service Processor heartbeat stopped
 | EMS
+| Critical, Warning, Info
 | ONTAP is no longer receiving heartbeats from the Service Processor (SP).
+
+| Service Processor not configured
+| EMS
+| Critical, Warning, Info
+| This event occurs on a weekly basis, to remind you to configure the Service Processor (SP).
 
 | Service Processor offline
 | EMS
+| Critical, Warning, Info
 | The Service Processor (SP) is offline.
+
+| SFP in FC target adapter receiving low power
+| EMS
+| Critical, Warning, Info
+| This alert occurs when the power received (RX) by a small form-factor pluggable transceiver (SFP in FC target) is at a level below the defined threshold.
+
+| SFP in FC target adapter transmitting low power
+| EMS
+| Critical, Warning, Info
+| This alert occurs when the power transmitted (TX) by a small form-factor pluggable transceiver (SFP in FC target) is at a level below the defined threshold.
+
+| Shadow copy failed
+| EMS
+| Critical, Warning, Info
+| A Volume Shadow Copy Service (VSS), a Microsoft Server backup and restore service operation, has failed.
 
 | Shelf fan failed
 | EMS
+| Critical, Warning, Info
 | The indicated cooling fan or fan module of the shelf has failed.
 
 | SnapMirror lag time is high
 | Metric
+| Critical
 | The SnapMirror relationship is more than one hour behind its expected update schedule.
+
+| Storage Failover Interconnect One Or More Links Down
+| EMS
+| Warning
+| One or more HA interconnect links to the partner node are down. Failover redundancy is reduced.
 
 | Storage switch power supplies failed
 | EMS
+| Critical, Warning, Info
 | There is a missing power supply in the cluster switch. Redundancy is reduced.
+
+| Storage VM stop succeeded
+| EMS
+| Critical, Warning, Info
+| The storage VM was stopped successfully.
+
+| SVM Configuration Replication License Invalid
+| EMS
+| Warning
+| The SVM-DR configuration replication license is missing, expired, or not applied
 
 | System cannot operate due to main unit fan failure
 | EMS
+| Critical, Warning, Info
 | One or more main unit fans have failed, disrupting system operation. This might lead to a potential data loss.
 
 | Too many CIFS authentication
 | EMS
+| Critical, Warning, Info
 | Many authentication negotiations have occurred simultaneously. There are 256 incomplete new session requests from this client.
+
+| Unassigned disks
+| EMS
+| Critical, Warning, Info
+| System has unassigned disks - capacity is being wasted.
 
 | Volume state offline
 | Metric
+| Informational
 | The volume has been taken offline.
+
+| Volume restricted
+| EMS
+| Critical, Warning, Info
+| This event indicates that a flexible volume is made restricted.
 
 | Virus detected
 | EMS
+| Critical, Warning, Info
 | A Vscan server reported that a file might be infected with a virus.
 |===
 
@@ -220,28 +335,43 @@ These alerts can affect system, service, or data availability.
 
 These alerts indicate storage consumption or capacity pressure.
 
-[cols="25,15,45",options="header"]
+[cols="23,12,20,45",options="header"]
 |===
-| Alert name | Type | Description
+| Alert name | Type | Severity | Description
+
+| FabricPool mirror replication resync completed
+| EMS
+| Critical, Warning, Info
+| The FabricPool mirror resync process completed successfully from the primary object store to the mirror object store.
 
 | FabricPool space usage limit nearly reached
 | EMS
+| Critical, Warning, Info
 | The total cluster-wide FabricPool space usage of object stores from capacity-licensed providers has nearly reached the licensed limit.
 
 | FabricPool space usage limit reached
 | EMS
+| Critical, Warning, Info
 | The total cluster-wide FabricPool space usage of object stores from capacity-licensed providers has reached the license limit.
 
 | Node root volume space low
 | EMS
+| Critical, Warning, Info
 | The system has detected that the root volume is dangerously low on space.
 
 | QoS monitor memory maxed out
 | EMS
+| Critical, Warning, Info
 | A QoS subsystem's dynamic memory has reached its limit for the current platform hardware.
+
+| Volume automatic resizing succeeded
+| EMS
+| Critical, Warning, Info
+| The volume was automatically resized because automatic volume growth is enabled.
 
 | Volume full
 | Metric
+| Critical
 | The volume is over 90% full. Free up space or add capacity to prevent write failures.
 |===
 
@@ -249,41 +379,52 @@ These alerts indicate storage consumption or capacity pressure.
 
 These alerts point to configuration changes or inventory updates.
 
-[cols="25,15,45",options="header"]
+[cols="23,12,20,45",options="header"]
 |===
-| Alert name | Type | Description
+| Alert name | Type | Severity | Description
 
 | Disk shelf power supply discovered
 | EMS
+| Critical, Warning, Info
 | A power supply unit was added to the disk shelf.
 
 | Volume created
 | Metric
+| Info
 | A volume was created.
 
 | Volume deleted
 | Metric
+| Warning
 | A volume was deleted.
 
 | Volume modified
 | Metric
+| Info
 | A volume was modified.
+
+| WAFL Consistency Check Overdue
+| EMS
+| Warning
+| WAFL consistency checks on this aggregate exceeded the hourly limit.
 |===
 
 == Performance alerts
 
 These alerts point to latency or node performance issues.
 
-[cols="25,15,45",options="header"]
+[cols="23,12,20,45",options="header"]
 |===
-| Alert name | Type | Description
+| Alert name | Type | Severity | Description
 
 | Node NFS latency is high
 | Metric
+| Critical
 | NFS operations on this node are experiencing high latency (>5000 us).
 
 | Node panic
 | EMS
+| Critical, Warning, Info
 | The node panicked and was restarted.
 |===
 
@@ -291,81 +432,142 @@ These alerts point to latency or node performance issues.
 
 These alerts affect replication, failover, or recovery.
 
-[cols="25,15,45",options="header"]
+[cols="23,12,20,45",options="header"]
 |===
-| Alert name | Type | Description
+| Alert name | Type | Severity | Description
+
+| Fanout SnapMirror relationship common snapshot deleted
+| EMS
+| Critical, Warning, Info
+| An older Snapshot copy is deleted as part of a SnapMirror Synchronous resynchronize or update operation.
 
 | ONTAP Mediator added
 | EMS
+| Critical, Warning, Info
 | The ONTAP Mediator was successfully added to this cluster.
 
 | ONTAP Mediator CA certificate expired
 | EMS
+| Critical, Warning, Info
 | The ONTAP Mediator certificate authority (CA) certificate has expired.
 
 | ONTAP Mediator CA certificate expiring
 | EMS
+| Critical, Warning, Info
 | The ONTAP Mediator certificate authority (CA) certificate is due to expire within the next 30 days.
 
 | ONTAP Mediator client certificate expired
 | EMS
+| Critical, Warning, Info
 | The ONTAP Mediator client certificate has expired.
 
 | ONTAP Mediator client certificate expiring
 | EMS
+| Critical, Warning, Info
 | The ONTAP Mediator client certificate is due to expire within the next 30 days.
 
 | ONTAP Mediator not accessible
 | EMS
+| Critical, Warning, Info
 | The ONTAP Mediator is not accessible, either because it has been repurposed or the Mediator package is no longer installed.
 
 | ONTAP Mediator removed
 | EMS
+| Critical, Warning, Info
 | The ONTAP Mediator was successfully removed from this cluster.
 
 | ONTAP Mediator unreachable
 | EMS
+| Critical, Warning, Info
 | The ONTAP Mediator is unreachable, which means SnapMirror failover is not possible until connectivity is restored.
 
 | ONTAP Mediator server certificate expired
 | EMS
+| Critical, Warning, Info
 | The ONTAP Mediator server certificate has expired.
 
 | ONTAP Mediator server certificate expiring
 | EMS
+| Critical, Warning, Info
 | The ONTAP Mediator server certificate is due to expire within the next 30 days.
 
 | SnapMirror active sync relationship out of sync
 | EMS
+| Critical, Warning, Info
 | The SnapMirror synchronous relationship moved from in-sync to out-of-sync. Data protection is affected.
+
+| SnapMirror active sync automatic unplanned failover completed
+| EMS
+| Critical, Warning, Info
+| The SnapMirror Business Continuity (SMBC) automatic unplanned failover operation completed.
+
+| SnapMirror active sync automatic unplanned failover failed
+| EMS
+| Critical, Warning, Info
+| The SnapMirror Business Continuity (SMBC) automatic unplanned failover operation failed.
+
+| SnapMirror active sync planned failover completed
+| EMS
+| Critical, Warning, Info
+| The SnapMirror Business Continuity (SMBC) planned failover operation completed.
+
+| SnapMirror active sync planned failover failed
+| EMS
+| Critical, Warning, Info
+| The SnapMirror Business Continuity (SMBC) planned failover operation failed.
+
+| SnapMirror relationship common snapshot failed
+| EMS
+| Critical, Warning, Info
+| There is a failure in creating a common Snapshot copy.
+
+| SnapMirror relationship initialization failed
+| EMS
+| Critical, Warning, Info
+| The SnapMirror initialize command fails and no more retries will be attempted.
 
 | SnapMirror relationship out of sync
 | EMS
+| Critical, Warning, Info
 | The SnapMirror synchronous relationship moved from in-sync to out-of-sync. Data protection is affected.
+
+| SnapMirror relationship resync attempt failed
+| EMS
+| Critical, Warning, Info
+| A SnapMirror synchronization attempt between the source and destination volumes failed.
+
+| SnapMirror relationship snapshot is not replicated
+| EMS
+| Critical, Warning, Info
+| The Snapshot copy for SnapMirror Synchronous relationship is not successfully replicated.
 |===
 
 == Security alerts
 
 These alerts point to threats or unauthorized access.
 
-[cols="25,15,45",options="header"]
+[cols="23,12,20,45",options="header"]
 |===
-| Alert name | Type | Description
+| Alert name | Type | Severity | Description
 
 | Ransomware activity detected
 | EMS
+| Critical, Warning, Info
 | To protect the data from the detected ransomware, a Snapshot copy has been taken that can be used to restore original data.
 
 | Storage VM anti-ransomware monitoring
 | EMS
+| Critical, Warning, Info
 | The anti-ransomware state of the Storage VM has changed.
 
 | Unauthorized user access to admin share
 | EMS
+| Critical, Warning, Info
 | A client tried to connect to the privileged ONTAP_ADMIN$ share, but the logged-in user isn't part of any active Vscan scanner pool on this SVM.
 
 | Volume anti-ransomware monitoring
 | EMS
+| Critical, Warning, Info
 | The anti-ransomware state of a volume is changed.
 |===
 
