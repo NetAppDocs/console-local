@@ -114,11 +114,11 @@ Low available capacity can be the cause. When an ONTAP system is more than 85% f
 
 .Where do alerts in NetApp Console (local deployment) come from, and how are they categorized?
 
-Alerts originate from the ONTAP Event Management System (EMS) on discovered clusters and from NetApp Backup and Recovery operations, consolidated into a single organization-wide view. Each alert identifies the affected system, a severity (such as critical, warning, or informational), and an impact area (capacity, connectivity, data protection, performance, or security). The Console shows alerts only for the fleets your permissions allow. link:concept-storage-alerts.html[Learn about alerts].
+Alerts originate from the ONTAP Event Management System (EMS) on discovered clusters and from NetApp Backup and Recovery operations, consolidated into a single organization-wide view. Each alert identifies the affected system, a severity (such as critical, warning, or informational), and an impact area (capacity, connectivity, data protection, performance, or security). The Console shows alerts only for the fleets your permissions allow. link:concept-alerts.html[Learn about alerts].
 
 .How do alert notification rules decide who gets notified?
 
-A notification rule matches alerts on service, severity, impact area, and target system, then delivers notifications to users with specified access roles through email or webhook. Note that rules apply to specific systems, not to fleets, and can be muted during planned maintenance windows. The Console includes default rules and lets you create custom ones. link:concept-storage-alerts.html[Learn about alerts].
+A notification rule matches alerts on service, severity, impact area, and target system, then delivers notifications to users with specified access roles through email or webhook. Note that rules apply to specific systems, not to fleets, and can be muted during planned maintenance windows. The Console includes default rules and lets you create custom ones. link:concept-alerts.html[Learn about alerts].
 
 .What can I do with custom dashboards?
 

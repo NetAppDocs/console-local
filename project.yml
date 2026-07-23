@@ -155,7 +155,7 @@ sidebar:
       - title: Remediate storage alerts
         entries:
         - title: Learn about storage alerts
-          url: /concept-storage-alerts.html
+          url: /concept-alerts.html
         - title: View alerts
           url: /task-alerts-monitor.html
         - title: Configure notification rules for alerts
