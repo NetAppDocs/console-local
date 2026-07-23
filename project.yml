@@ -153,10 +153,10 @@ sidebar:
           entries:
           - title: Manage custom dashboards
             url: /task-dashboard-manage.html
-      - title: Remediate storage alerts
+      - title: Remediate alerts
         entries:
-        - title: Learn about storage alerts
-          url: /concept-alerts.html
+        - title: Learn about alerts
+          url: /concept-console-alerts.html
         - title: View alerts
           url: /task-alerts-monitor.html
         - title: Configure notification rules for alerts
