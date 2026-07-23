@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-llm-troubleshoot-integration.html
 keywords: LLM, AI, troubleshooting, openai, openai-compatible, proxy, endpoint, api key, netapp console
-summary: "Troubleshoot LLM integration issues in NetApp Console (local deployment), including provider, endpoint, API key, and assistant availability errors."
+summary: "Troubleshoot LLM integration in NetApp Console (local deployment) with a quick triage flow for setup, assistant availability, runtime errors, and credential issues."
 ---
 = Troubleshoot LLM integration in NetApp Console (local deployment)
 :hardbreaks:
@@ -12,48 +12,55 @@ summary: "Troubleshoot LLM integration issues in NetApp Console (local deploymen
 :imagesdir: ./media/
 
 [.lead]
-Diagnose and resolve common LLM integration issues in NetApp Console (local deployment).
+Use this quick triage flow to diagnose and resolve common LLM integration issues in NetApp Console (local deployment).
 
 If you have not completed setup, see link:task-llm-connect.html[Connect your LLM and enable the NetApp Console assistant].
 
-== Fix LLM configuration save or test failures
+== Triage LLM integration issues quickly
 
-If save fails in *Administration > AI Tools*, check the following:
+. Validate AI Tools configuration in *Administration > AI Tools*.
++
+Confirm provider type, endpoint URL, API key, selected model, and outbound network access.
 
-* Confirm that you selected the correct provider type: OpenAI or OpenAI-compatible.
-* Confirm that the endpoint URL is valid for the provider path you selected.
-* Confirm that the API key is valid, active, and copied without extra spaces.
-* Confirm that the selected model is supported by the configured provider endpoint.
-* Confirm that network policy allows outbound access from Console (local deployment) to the endpoint.
+. Validate assistant availability on the dashboard.
++
+Confirm the *Console assistant* button appears for expected users and organizations.
 
-If save still fails, collect the exact error text and contact support.
+. Validate runtime behavior.
++
+Run a simple read-only request and confirm provider endpoint reachability, model availability, and provider service health.
 
-== Restore a missing Console assistant button
 
-If users do not see the *Console assistant* button on the dashboard:
 
-* Confirm that LLM configuration in *Administration > AI Tools* was saved successfully.
-* Confirm that the LLM integration status is healthy.
-* Confirm that users are signed in to the correct organization and have expected role-based access controls.
-* Refresh the browser session and verify again.
+== Troubleshoot by symptom
 
-== Fix Console assistant runtime failures
+[cols="1,1,2,2",options="header"]
+|===
+|Symptom
+|Likely cause
+|What to check
+|Next action
 
-If the assistant opens but requests fail:
+|Save or test fails in AI Tools
+|Configuration or connectivity mismatch
+|Provider type, endpoint URL, API key format, selected model, and outbound access
+|Correct the value that fails validation and save again
 
-* Re-check provider type, endpoint URL, and API key values in *Administration > AI Tools*.
-* Confirm that the model selected in AI Tools is available from the configured endpoint.
-* Confirm that your environment can reach the provider endpoint at request time.
-* Check whether provider-side quotas, limits, or temporary service issues block requests.
+|*Console assistant* button is missing
+|Unhealthy integration status, org mismatch, or RBAC mismatch
+|Successful AI Tools save, integration status, current organization, and expected access role
+|Refresh the session and verify with a known-good admin account
 
-== Fix slow or inconsistent Console assistant responses
+|Assistant opens but request fails
+|Provider or runtime path issue
+|Endpoint reachability, model availability on that endpoint, provider limits, and temporary provider status
+|Retry after fixing endpoint/model mismatch or provider-side limit issues
 
-If responses are delayed or inconsistent:
-
-* Test a shorter prompt to determine whether latency is prompt-related.
-* Verify endpoint health and service status in your provider tooling.
-* Try another supported model on the same provider path.
-* Confirm that network path and proxy routing are stable.
+|Assistant response is slow or inconsistent
+|Prompt size, endpoint performance, or network/proxy instability
+|Short prompt test, provider service health, and network/proxy stability
+|Use a shorter prompt, try another supported model, and stabilize network or proxy routing
+|===
 
 == Respond to LLM credential exposure or misuse
 
