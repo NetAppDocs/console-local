@@ -128,8 +128,6 @@ sidebar:
       entries:
       - title: Learn about monitoring storage health in NetApp Console
         url: /concept-monitor-storage.html
-      - title: Monitor fleet-wide health and performance
-        url: /task-fleet-health-monitor.html
       - title: Monitor with dashboards
         entries:
         - title: View Home page metrics

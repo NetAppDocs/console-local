@@ -54,8 +54,6 @@ indexpage:
           url: /task-storage-dashboard.html
         - title: Get started with dashboards in NetApp Console (local deployment)
           url: /task-dashboard-get-started.html
-        - title: Monitor fleet-wide health and performance
-          url: /task-fleet-health-monitor.html
         - title: View alerts
           url: /task-alerts-monitor.html
         - title: Configure notification rules for alerts
