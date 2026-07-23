@@ -205,6 +205,8 @@ sidebar:
           url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
       - title: Supported LLM providers and models
         url: /reference-llm-supported-models.html
+      - title: ONTAP alerts reference
+        url: /reference-ontap-alerts.html
       - title: Ports for the on-premises Console agent
         url: /reference-ports-on-prem.html
     - title: Knowledge and support
