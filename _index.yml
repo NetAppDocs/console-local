@@ -50,20 +50,14 @@ indexpage:
           url: /concept-monitor-storage.html
         - title: View Home page metrics
           url: /task-storage-dashboard.html
-        - title: Keep dashboards current in NetApp Console (local deployment)
-          url: /task-dashboard-manage.html
+        - title: Get started with dashboards in NetApp Console (local deployment)
+          url: /task-dashboard-get-started.html
         - title: Monitor fleet-wide health and performance
           url: /task-fleet-health-monitor.html
         - title: View alerts
           url: /task-alerts-monitor.html
         - title: Configure notification rules for alerts
           url: /task-alert-rules-manage.html
-        - title: Investigate high latency on a volume
-          url: /task-analyzer-volume-latency-investigate.html
-        - title: Investigate high throughput on a volume
-          url: /task-analyzer-volume-throughput-investigate.html
-        - title: Investigate capacity growth on a volume
-          url: /task-analyzer-volume-capacity-investigate.html
     - title: Navigate and use NetApp Console (local deployment)
       links:
         - title: Log in to NetApp Console (local deployment)
