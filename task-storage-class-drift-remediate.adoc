@@ -1,0 +1,58 @@
+---
+sidebar: sidebar
+permalink: remediate-storage-class-drift.html
+keywords: storage class drift, compliance, fix it, analyze, fleets, alerts, netapp console local
+summary: "Find and remediate storage class drift in NetApp Console (local deployment)."
+---
+= Remediate storage class drift
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Use the Analyze and Fix it flows to understand storage class drift and restore compliance with your assigned storage class.
+
+== Before you begin
+
+* Verify you have access to the fleet that contains the workload.
+* Verify your role permits remediation actions (for example, Storage admin for that fleet).
+
+== Identify affected workloads
+
+You can typically start from either entry point (availability depends on your deployment and permissions):
+
+* *Fleets:* Open the fleet and go to *Drift / Compliance* to review affected workloads across the fleet.
+* *Alerts:* Open the relevant alert and select *Analyze* to review details for a single workload.
+
+== Analyze the issue
+
+. Open the affected workload and select *Analyze*.
+. Review the findings for *configuration drift*, comparing *intended vs actual* settings.
+
+== Remediate
+
+. If a guided action is available, select *Fix it*.
+. Review the proposed change and proceed only after you understand the expected impact.
+
+[NOTE]
+====
+Some remediations can be applied in place. Others may require aligning the workload to a different storage class to restore the intended behavior. Console indicates expected impact during the action flow.
+====
+
+== Verify compliance
+
+After remediation completes, confirm that the workload returns to a compliant state after the next evaluation cycle. If the issue persists, re-open *Analyze* to see whether additional findings remain.
+
+== Troubleshooting
+
+* *Fix it is not available:* The issue may require a different remediation path (for example, updating the workload's storage class) or you may not have sufficient permissions.
+* *Status does not update immediately:* Compliance evaluation may take several minutes to reflect recent changes.
+
+== Related information
+
+* link:concept-storage-classes.html#storage-class-drift-and-compliance[Storage class drift and compliance]
+* link:task-fleet-health-monitor.html[Monitor fleet health]
+* link:task-remediation-guided.html[Guided remediation]
+
