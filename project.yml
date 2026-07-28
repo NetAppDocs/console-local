@@ -163,7 +163,9 @@ sidebar:
         - title: Configure notification rules for alerts
           url: /task-alert-rules-manage.html
         - title: Alert remediation actions
-          url: /reference-alert-remediation.html         
+          url: /reference-alert-remediation.html
+      - title: Remediate storage class drift
+        url: /remediate-storage-class-drift.html
       - title: Investigate performance issues
         entries:
         - title: Learn about the Workload Analyzer
