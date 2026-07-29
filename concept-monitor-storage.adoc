@@ -16,17 +16,15 @@ summary: "NetApp Console (local deployment) provides fleet-wide health dashboard
 
 NetApp Console (local deployment) helps you monitor storage across fleets with dashboards, alerts, deep-dive analysis, and remediation so you can spot and resolve issues before they affect workloads.
 
+
+
+== Monitor fleet-wide health with dashboards
+
 Start with dashboards for a quick view of storage health and performance. Use the Home page for at-a-glance metrics, open the dashboards table for predefined and custom dashboards, and move into alerts, investigation, and remediation when you need more detail.
 
 * link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
 * link:task-dashboard-manage.html[Keep dashboards current in NetApp Console (local deployment)]
 * link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console (local deployment)]
-
-== Monitor fleet-wide health and performance
-
-Use a single dashboard to monitor the health and performance of volumes across your fleets. For example, if a cluster approaches a backup window with high latency, use the fleet view to find the volumes that need attention first.
-
-link:task-fleet-health-monitor.html[Monitor fleet-wide health and performance in NetApp Console (local deployment)]
 
 == Investigate performance issues
 

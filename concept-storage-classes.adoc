@@ -60,6 +60,7 @@ An analysis view explains what changed and why. Guided remediation actions (for 
 You can typically investigate drift and non-compliance from one of these locations (availability depends on your deployment and permissions):
 
 * *Fleets:* Drift / Compliance (fleet-level view)
+//<tsharp> You can monitor drift from the storage class page, not the Fleets.
 * *Alerts:* Analyze (item-level triage)
 
 For step-by-step instructions, see xref:remediate-storage-class-drift.adoc[Remediate storage class drift and performance non-compliance].
@@ -87,3 +88,5 @@ For details on how to organize fleets, see link:concept-manage-storage.html[Lear
 * To create policies and storage classes, see link:task-storage-class-manage.html[Manage storage classes and policies].
 * To provision storage, see link:task-provisioning-manual.html[manual provisioning], link:task-provisioning-automated.html[automated provisioning], or link:task-provisioning-agentic.html[AI-assisted provisioning].
 * To monitor and remediate drift, see link:task-fleet-health-monitor.html[monitor fleet health], link:task-remediation-guided.html[guided remediation], and link:task-remediation-automated.html[automated remediation].
+//<tsharp> the task-fleet-health-monitor topic doesn't exist, this link should point to the remediate drift topic.
+//<tsharp> We need to standardize on how to do x-references. Typically, I've been using "Learn about <subject>"" instead of the see page title method. I inherited that in the Console (SaaS) docs and I think we should keep it.

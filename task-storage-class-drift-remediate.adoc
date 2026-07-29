@@ -13,15 +13,22 @@ summary: "Find and remediate storage class drift in NetApp Console (local deploy
 
 [.lead]
 Use the Alerts workflow to review drift details for a workload and restore compliance with its assigned storage class.
+//<tsharp> we typically don't use the word "workflow" like this in our docs. A rewrite could be: Review storage class drift details and remediate them from the Alerts page.  
 
 == Before you begin
+//<tsharp> This section needs a .Required roles line.  You can delete the ==Before you begin section and replace it with that. The second bullet can be a generica note. Maybe we write one for an include that says "You can only perform actions within fleets that you have permission." THen we can re-use it everywhere.
 
 * Verify you have access to the fleet that contains the workload.
 * Verify your role permits remediation actions (for example, Storage admin for that fleet).
 
 == Find drift-related alerts for a storage class
+//<tsharp> Typically, we've had an instro paragraph here with a real-world example. At least in this doc set, the pattern is: heading, intro paragraph, steps. The intro paragraph can be a single sentence. For example: "When a workload no longer matches its storage class intent, Console (local deployment) flags it for investigation and remediation."  Then the steps follow.
+//<tsharp> Need to add the .Steps element before each set of steps. I added one below as an example.
+
+.Steps
 
 . Go to *Storage classes*.
+//<tsharp> need the whole menu nav here: Select *Storage > Storage classes*. Or is this one NSelect *Alerts > Overview*?
 . In the *Drifts* column, select *View* for the relevant storage class.
 +
 Console opens the *Alerts* page with filters applied.
@@ -44,13 +51,18 @@ Console opens the *Alerts* page with filters applied.
 Some remediations can be applied in place. Others may require aligning the workload to a different storage class to restore the intended behavior. Console indicates expected impact during the remediation flow.
 ====
 
+//<tsharp> This note could be an intro paragraph instead. I think it reads more like an after thought here. Also, for future note uses, the format you are using up there is typically reserved for longer notes that need bullets. Typically, you can just type NOTE: text text and the system will format it as a note.  For example, NOTE: Some remediations can be applied in place. Others may require aligning the workload to a different storage class to restore the intended behavior. Console indicates expected impact during the remediation flow.
+
 == Verify compliance
 
 After remediation completes, confirm that the workload returns to a compliant state after the next evaluation cycle. If the issue persists, re-open *Analyze* to see whether additional findings remain.
+//<tsharp> where does this happen?
 
 == Troubleshooting
+//<tsharp> consider using a description  list for these. https://review.docs.netapp.com/us-en/content-standards/content-design/lists-cds.html  We should standardize on how to do troubleshooting info. Because these are bold, as a reader, I am thinking they are error messages? 
 
 * *No remediation action is available:* The issue may require a different remediation path (for example, updating the workload's storage class) or you may not have sufficient permissions.
+//<tsharp>not sure permission would be an issue. I think the Alerts page is filtered by only the alerts that you have permission to view. Shourjo is checking with Krishna to see who has permissions to view alerts and remediate from that page. 
 * *Status does not update immediately:* Compliance evaluation may take several minutes to reflect recent changes.
 
 == Related information

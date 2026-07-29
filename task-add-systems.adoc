@@ -16,6 +16,7 @@ summary: "Add storage systems to NetApp Console (local deployment)."
 
 Add storage systems to NetApp Console (local deployment) to enable monitoring and management of your storage infrastructure.
 
+//<tsharp> This topic is a stub. It needs more content. The steps are not complete and the intro paragraph is missing. I think this is a placeholder draft that should have been marked as such to make me a better collaborator. :) I think only the Org admin and Super admin can add systems. Let's talk this through with Krishna confirm the steps and permissions. I think the steps are: 1) Select the fleet, 2) Select Add system, 3) Enter system details, 4) Select Add. Then the system is added to the fleet and Console starts monitoring it. However, you can also do this workflow directly from the Administration > Identity and access page.
 
 
 
