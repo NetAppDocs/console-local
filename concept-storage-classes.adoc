@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: concept-storage-classes.html
-keywords: storage classes, storage policy, standardize, netapp console local
-summary: "Learn how storage classes in NetApp Console (local deployment) let you define and apply consistent storage policies across your environment."
+keywords: storage classes, storage class policies, standardize, fleet management, provisioning, netapp console local
+summary: "Learn how storage classes and storage class policies in NetApp Console (local deployment) define standards, govern provisioning, and support drift monitoring."
 ---
-= Learn about storage classes in NetApp Console (local deployment)
+= Learn about storage classes and policies in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,62 +14,76 @@ summary: "Learn how storage classes in NetApp Console (local deployment) let you
 [.lead]
 // Jira: SPSPM-3309, SPSPM-3328
 
-A storage class is a reusable template that defines how storage should behave. When you provision storage using a storage class, the NetApp Console (local deployment) enforces the standards encoded in that class automatically—without requiring administrators to make individual configuration decisions for every workload.
+A storage class is a reusable template that defines how storage should behave. When you provision storage using a storage class, NetApp Console (local deployment) enforces the standards encoded in that class automatically without requiring administrators to make individual configuration decisions for every workload.
 
-== What a storage class is
+Storage classes are built from storage class policies, which define individual dimensions of storage behavior. Together, they let you capture your organization's storage standards once and apply them consistently across fleets.
 
-A storage class captures your organization's storage standards in a single, reusable object. It bundles policies for performance, capacity, security, and data protection into a named template. Administrators or automated workflows apply this template at provisioning time. After provisioning, the Console (local deployment) tracks the workload against the class standards and alerts you if the workload drifts out of compliance.
+== What storage class policies are
 
-Storage administrators define storage classes to encode enterprise requirements. All provisioning activity—whether done manually, through guided workflows, or through automation—draws from the library of classes those administrators have approved. This structure keeps your storage environment consistent as it grows and as team membership changes.
+A storage class policy defines one dimension of storage behavior. Policies are reusable building blocks that you combine to create storage classes.
 
-== How the Console (local deployment) uses storage classes
+Common policy types include:
 
-When you provision storage, you select a storage class rather than configuring individual settings. The Console (local deployment) uses the policies in that class to identify which clusters in your fleet have the capacity and performance headroom to support the workload, then recommends the best placement option. After provisioning, the Console (local deployment) continues to evaluate the workload against the storage class to detect drift—configuration changes or degrading performance that would take the workload outside its defined standards.
+* *Performance policies* - Define latency targets, IOPS, or throughput requirements.
+* *Capacity policies* - Define provisioning mode, threshold alerts, or growth limits.
+* *Security policies* - Define encryption, compliance, or access control requirements.
+* *Data protection policies* - Define snapshot schedules, replication targets, or retention periods.
 
-When the Console (local deployment) detects drift, it shows options to fix the issue. Depending on your setup, you can follow guided steps to correct the issue manually, or let the Console (local deployment) resolve common drift conditions automatically.
+You define policies independently, then combine them when you build a storage class. This lets you reuse the same performance policy across multiple classes, or update a capacity policy in one place and apply that change to every class that uses it.
 
-== Storage classes and storage class policies
+== What storage classes are
 
-You assemble a storage class from storage class policies. Each policy controls one dimension of storage behavior: performance targets, capacity settings, security requirements, or data protection schedules. You define policies independently, then combine them when you build a storage class. This lets you reuse the same performance policy across multiple storage classes, or update a capacity policy in one place and apply that change to every class that uses it.
+A storage class is a named template assembled from one or more policies. It captures your organization's storage standards for a specific type of workload.
 
-link:concept-storage-class-policies.html[Learn about storage class policies]
+For example, you might create a *Production Database* storage class that combines high-performance, high-availability, and strict data protection policies, or a *Development File Share* storage class that combines moderate performance, flexible capacity, and basic data protection policies.
 
-== High-level workflow
+Storage administrators define storage classes to encode enterprise requirements. All provisioning activity, whether done manually, through guided workflows, or with automation, draws from the library of classes those administrators have approved.
 
-The following steps describe the end-to-end process for using storage classes to standardize and govern storage in your environment.
+== How storage classes enforce standards
 
-. *Create storage class policies.*
-Policies define the individual dimensions of storage behavior—performance targets, capacity settings, security requirements, and data protection schedules. You can use predefined system policies or create custom ones. Policies are the building blocks for storage classes, so create them before building a class.
-+
-link:concept-storage-class-policies.html[Learn about storage class policies]
+When you provision storage, you select a storage class rather than configuring individual settings. Console (local deployment) uses the policies in that class to identify which clusters in your fleet have the capacity and performance headroom to support the workload, recommend the best placement option, and apply class-driven settings automatically at provisioning time.
 
-. *Create a storage class.*
-Assemble a storage class by combining one policy from each applicable category. You can use a predefined storage class as-is or copy and customize one for your organization's standards. Six predefined classes are available:
+After provisioning, Console (local deployment) continuously evaluates each workload against its storage class standards.
 
+== Storage class drift and compliance
 
-. *Associate the storage class with a fleet.*
-After you create a storage class, associate it with the fleet where it will be used for provisioning and compliance monitoring.
-+
-link:task-storage-class-fleet-associate.html[Associate a storage class with a fleet]
+When a workload no longer matches its storage class intent, Console (local deployment) flags it for investigation and remediation.
 
-. *Provision storage using the storage class.*
-When provisioning a volume or LUN, select a storage class instead of configuring individual settings. The Console (local deployment) uses the class to recommend the best-fit cluster placement based on available capacity and performance headroom, then provisions the workload with the settings defined in the class.
-+
-link:task-provisioning-manual.html[Provision storage manually]
+Issues fall into two categories:
 
-. *Monitor workloads for drift.*
-After provisioning, the Console (local deployment) continuously evaluates each workload against the standards encoded in its associated storage class. If a configuration change—whether made through the Console (local deployment) or directly on the ONTAP cluster—takes the workload outside those standards, the Console (local deployment) detects the drift and raises an alert.
-+
-link:task-fleet-health-monitor.html[Monitor fleet health]
+* *Configuration drift*: Storage settings governed by the storage class policy no longer match the intended configuration. This can occur when changes are made directly on the ONTAP cluster or outside standard provisioning workflows.
+* *Performance non-compliance*: The workload's runtime behavior no longer meets the storage class performance intent (for example, sustained pressure near a QoS limit or elevated tail latency).
 
-. *Remediate drift to restore compliance.*
-When the Console (local deployment) detects drift, you can follow guided steps to correct the issue manually, or allow the Console (local deployment) to resolve common drift conditions automatically. You can also disassociate a workload from its storage class if you need to change its settings, then re-associate it with the appropriate class.
+An analysis view explains what changed and why. Guided remediation actions (for example, *Fix it*) may be available to help restore compliance. Some remediations can be applied in place, while others may require aligning the workload to a different storage class to restore the intended behavior.
 
+.Where to investigate
+You can typically investigate drift and non-compliance from one of these locations (availability depends on your deployment and permissions):
 
+* *Fleets:* Drift / Compliance (fleet-level view)
+* *Alerts:* Analyze (item-level triage)
 
-== Prerequisites
+For step-by-step instructions, see xref:remediate-storage-class-drift.adoc[Remediate storage class drift and performance non-compliance].
 
-Before you create storage classes, ensure the following are in place:
+== End-to-end workflow
 
-* Discover at least one ONTAP cluster so the Console (local deployment) has storage targets to evaluate during placement. link:task-add-systems.html[Add storage systems]
-* Identify the performance, capacity, and tiering needs for each category of workload in your environment, then create the storage class policies that capture those requirements. Storage classes are assembled from policies, so policies must exist before you can build a storage class. link:concept-storage-class-policies.html[Learn about storage class policies]
+The following steps describe the process for using storage classes to standardize and govern storage in your environment:
+
+1. *Create storage class policies* - Policies define the individual dimensions of storage behavior (performance targets, capacity settings, security requirements, data protection schedules). Create policies before building a storage class.
+2. *Create a storage class* - Assemble a storage class by combining one policy from each applicable category. You can use a predefined storage class or create a custom one for your organization's standards.
+3. *Associate the storage class with a fleet* - After you create a storage class, associate it with the fleet where it will be used for provisioning and compliance monitoring.
+4. *Provision storage using the storage class* - When provisioning a volume or LUN, select a storage class instead of configuring individual settings. Console (local deployment) uses the class to recommend the best-fit cluster placement, then provisions with the settings defined in the class.
+5. *Monitor workloads for drift* - Console (local deployment) continuously evaluates each workload against the standards encoded in its storage class. If configuration drift or performance non-compliance occurs, it flags the issue and may raise an alert.
+6. *Remediate drift to restore compliance* - When drift or performance non-compliance is detected, you can follow guided steps to correct the issue manually, let Console (local deployment) resolve common drift conditions automatically, or disassociate a workload from its storage class if you need to change its settings.
+
+== How storage classes work with fleets
+
+Storage classes are associated with fleets. When you associate a storage class with a fleet, that class becomes available for all provisioning within the fleet. This ensures that every workload provisioned in the fleet follows the same standards, making fleets the primary way to enforce consistent storage behavior across related clusters.
+
+For details on how to organize fleets, see link:concept-manage-storage.html[Learn about fleet management in NetApp Console (local deployment)].
+
+== Where to go next
+
+* To understand fleet organization, see link:concept-manage-storage.html[Learn about fleet management in NetApp Console (local deployment)].
+* To create policies and storage classes, see link:task-storage-class-manage.html[Manage storage classes and policies].
+* To provision storage, see link:task-provisioning-manual.html[manual provisioning], link:task-provisioning-automated.html[automated provisioning], or link:task-provisioning-agentic.html[AI-assisted provisioning].
+* To monitor and remediate drift, see link:task-fleet-health-monitor.html[monitor fleet health], link:task-remediation-guided.html[guided remediation], and link:task-remediation-automated.html[automated remediation].
