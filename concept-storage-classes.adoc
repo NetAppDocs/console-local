@@ -60,6 +60,7 @@ An analysis view explains what changed and why. Guided remediation actions (for 
 You can typically investigate drift and non-compliance from one of these locations (availability depends on your deployment and permissions):
 
 * *Fleets:* Drift / Compliance (fleet-level view)
+//<tsharp> You can monitor drift from the storage class page, not the Fleets.
 * *Alerts:* Analyze (item-level triage)
 
 For step-by-step instructions, see xref:remediate-storage-class-drift.adoc[Remediate storage class drift and performance non-compliance].

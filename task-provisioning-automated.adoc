@@ -14,6 +14,8 @@ summary: "Configure automated storage provisioning using storage classes and pol
 [.lead]
 Use automated provisioning to allocate storage based on storage class standards and fleet capacity. Automated provisioning is best when you want consistent outcomes and reduced manual decision-making.
 
+
+//<tsharp> is this a thing? Or is this a stub topic that is pretending to be a feature?
 .Required access roles
 Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 

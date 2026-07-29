@@ -20,6 +20,7 @@ Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:r
 You can optionally select a storage class during manual provisioning to apply approved standards while retaining explicit control over placement.
 
 == Before you begin
+//<tsharp> we don't use - for bullets but instead use * for unordered lists. I am not sure sure these bullets are accurate at all. I'm not seeing a flow where the user is prompted for credentials, for example. "Discovered" is the Console (SaaS) term for added, so that is off. 
 
 - Ensure the target ONTAP cluster is discovered in Console (local deployment).
 - Ensure you have credentials and access to the fleet that contains the target system.

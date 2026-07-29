@@ -14,24 +14,21 @@ summary: "Associate a storage class with a fleet in NetApp Console (local deploy
 [.lead]
 // Jira: SPSPM-3309
 
-Associate a storage class with a fleet to make an approved set of storage standards available when provisioning storage in that fleet. This helps teams provision consistently and supports ongoing compliance monitoring by checking workloads against the storage class.
+Associate storage classes with fleets in NetApp Console (local deployment) to enforce environment-specific standards, control which options operators can use, and simplify compliance checks against assigned classes.
 
 .Required access roles
 Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
-== When to associate a storage class with a fleet
 
-Associate storage classes with fleets to:
-
-- Scope approved standards by environment (for example, production vs. development).
-- Ensure provisioning uses a consistent baseline for performance, capacity behavior, security, and data protection.
-- Limit which standards are available to operators in a given fleet.
 
 == Associate a storage class with a fleet
 
 Associate a storage class with a fleet so it's available for provisioning and ongoing compliance monitoring within that fleet.
+//<tsharp> This still reads like the AI topic that was automatically put in. Storage classes aren't associated with fleets, they are associated when you provision a workload. The fleet is just the scope where the storage class is available for provisioning. And I'm not even sure about that part. It could be that storage classes only operate at the storage level and do not apply to fleets at all.
+//<tsharp> I'm not seeing anywhere in NCL where storage classes are associated with fleets. Need to dig in and see who has access to storage classes. My gut tells me that all users have access to the prefined and any custom storage classes/policies are available to only that user? Question for Krisha.
 
 .Steps
+//<tsharp> these aren't really the steps. I think this is a stub topic. Misleading, I know. :) A few of these tasks were just placeholder drafts and I should have marked them as such to make me a better collaborator. :(
 
 . Open the fleet you want to manage.
 . Locate the fleet configuration area for storage classes.
