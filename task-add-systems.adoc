@@ -1,0 +1,25 @@
+---
+sidebar: sidebar
+permalink: task-add-systems.html
+keywords: add storage systems, storage systems, netapp console local
+summary: "Add storage systems to NetApp Console (local deployment)."
+---
+= Add storage systems to NetApp Console (local deployment)
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Source: NetApp Console Local — Adding Storage Systems (Confluence page 560148946)
+
+Add storage systems to NetApp Console (local deployment) to enable monitoring and management of your storage infrastructure.
+
+
+
+
+
+.Steps
+
+

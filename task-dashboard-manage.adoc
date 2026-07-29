@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: task-dashboard-manage.html
-keywords: manage dashboard, edit dashboard, clone dashboard, delete dashboard, netapp console local
-summary: "Manage custom dashboards in NetApp Console (local deployment) by editing, cloning, and deleting them as your monitoring needs change."
+keywords: manage dashboard, view dashboards, edit dashboard, clone dashboard, delete dashboard, netapp console local
+summary: "View and manage dashboards in NetApp Console (local deployment) by opening, editing, cloning, and deleting custom dashboards."
 ---
-= Keep dashboards current in NetApp Console (local deployment)
+= Manage dashboards in NetApp Console (local deployment)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,19 +16,24 @@ summary: "Manage custom dashboards in NetApp Console (local deployment) by editi
 
 Manage custom dashboards in NetApp Console (local deployment) to keep views aligned with operations. You can edit, duplicate, and delete dashboards as teams, fleets, and priorities change.
 
-This task applies only to custom dashboards under *Storage > Dashboards*. Built-in Home page dashboards are predefined and cannot be edited in the same way.
+This task applies only to custom dashboards under *Storage > Dashboards*. Predefined Home page dashboards cannot be edited in the same way.
 
-From *Storage > Dashboards*, select a dashboard in the table to open it. The table includes predefined dashboards and custom dashboards you create. For details, see link:task-dashboard-view-additional.html[View additional dashboards in NetApp Console (local deployment)].
 
-== What you can adjust while viewing a dashboard
+== View dashboards 
 
-While viewing a custom dashboard, you can:
+View custom and predefined dashboards to find the dashboard you want to open, edit, duplicate, or delete.
 
-* Add, edit, or delete cards
-* Reorder and resize cards
-* Change time window and aggregation settings
+TIP: You can duplicate a predefined dashboard to create a custom version that you can edit.
 
-Time window and aggregation are configured at the dashboard level. The values you select apply to all cards in that dashboard.
+.Steps
+
+. Select *Storage > Dashboards*.
+
+. Review the dashboard table to find the dashboard you want to open.
+
+. Select the dashboard name to open it and view its metrics.
+
+. If needed, use the available actions to edit, duplicate, or delete custom dashboards.
 
 
 
@@ -42,17 +47,26 @@ Edit a dashboard when your operational priorities change and you need to adjust 
 
 . Open the dashboard you want to edit.
 
-. Modify an existing card on the dashboard by selecting Edit from the actions menu.
+. Modify an existing card on the dashboard by selecting Edit from the actions menu of the card.
 
 . Add a new card to the dashboard by selecting *Add Card* and following the steps in link:task-customize-dashboard-cards.html[Customize cards in NetApp Console (local deployment)].
 
 
+. Select *Save changes* to save the dashboard.
 
-. Select *Save changes*.
++
+
+* You can also choose to save your changes as a new dashboard by selecting *Save as new dashboard* from the action menu. This option is useful when you want to keep the original dashboard for other teams or fleets while creating a new version for your current monitoring needs.
+
+* You can also choose to discard your changes by selecting *Discard changes* from the action menu. This option is useful when you want to revert to the last saved version of the dashboard.
+
+
 
 == Reuse a custom dashboard for another resource or fleet
 
 Duplicate a dashboard when you want to reuse a proven layout for another team, fleet, or monitoring scenario without rebuilding it from scratch. 
+
+TIP: You can duplicate a predefined dashboard to create a custom version that you can edit.
 
 .Steps
 
@@ -65,7 +79,7 @@ Console (local deployment) creates a copy that includes all cards from the origi
 . Provide a name and description for the duplicated dashboard.
 
 
-. Select the duplicate dashboard you just created and select *Edit* from the actions menu to make further changes, then select *Save changes*.
+. Select the duplicate dashboard you just created to edit the cards on the dashboard. link:task-customize-dashboard-cards.html[Customize cards in NetApp Console (local deployment)] to change the metrics, resources, and card types to suit your new monitoring scenario.
 
 == Remove dashboards you no longer use
 
@@ -82,7 +96,7 @@ Delete a dashboard when it no longer supports current operations and you want to
 == Related information
 
 * link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
-* link:task-dashboard-view-additional.html[View additional dashboards in NetApp Console (local deployment)]
-* link:concept-custom-dashboards.html[Learn about custom dashboards]
+* link:task-dashboard-get-started.html[Get started with dashboards in NetApp Console (local deployment)]
+* link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console (local deployment)]
 * link:task-dashboard-create.html[Create a custom dashboard]
 * link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console (local deployment)]

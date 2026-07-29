@@ -25,12 +25,12 @@ For ONTAP alerts, you can access tools such as System Manager and Workload analy
 
 For external reporting, you can export the alerts list to a CSV file for offline analysis.
 
-NOTE: You can also set up notification rules to receive alerts by email or webhook. link:task-alerts-create-rules.html[Learn how to set up alert notifications].
+NOTE: You can also set up notification rules to receive alerts by email or webhook. link:task-alert-rules-manage.html[Learn how to set up alert notifications].
 
 == Available alerts
-NetApp Console (local deployment) supports the following types of alerts:
+NetApp Console (local deployment) supports alerts for ONTAP and NetApp Backup and recovery
 
-include::_include/ontap-alerts-ems.adoc[]
+* link:reference-ontap-alerts.html[View the ONTAP alerts reference]
 * link:https://docs.netapp.com/us-en/data-services-backup-recovery/reference-audit-actions.html[Learn more about NetApp Backup and Recovery alerts.^]
 
 

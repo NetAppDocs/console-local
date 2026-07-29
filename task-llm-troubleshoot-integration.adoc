@@ -1,0 +1,73 @@
+---
+sidebar: sidebar
+permalink: task-llm-troubleshoot-integration.html
+keywords: LLM, AI, troubleshooting, openai, openai-compatible, proxy, endpoint, api key, netapp console
+summary: "Troubleshoot LLM integration in NetApp Console (local deployment) with a quick triage flow for setup, assistant availability, runtime errors, and credential issues."
+---
+= Troubleshoot LLM integration in NetApp Console (local deployment)
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Use this quick triage flow to diagnose and resolve common LLM integration issues in NetApp Console (local deployment).
+
+If you have not completed setup, see link:task-llm-connect.html[Connect your LLM and enable the NetApp Console assistant].
+
+== Triage LLM integration issues quickly
+
+. Validate AI Tools configuration in *Administration > AI Tools*.
++
+Confirm provider type, endpoint URL, API key, selected model, and outbound network access.
+
+. Validate assistant availability on the dashboard.
++
+Confirm the *Console assistant* button appears for expected users and organizations.
+
+. Validate runtime behavior.
++
+Run a simple read-only request and confirm provider endpoint reachability, model availability, and provider service health.
+
+
+
+== Troubleshoot by symptom
+
+[cols="1,1,2,2",options="header"]
+|===
+|Symptom
+|Likely cause
+|What to check
+|Next action
+
+|Save or test fails in AI Tools
+|Configuration or connectivity mismatch
+|Provider type, endpoint URL, API key format, selected model, and outbound access
+|Correct the value that fails validation and save again
+
+|*Console assistant* button is missing
+|Unhealthy integration status, org mismatch, or RBAC mismatch
+|Successful AI Tools save, integration status, current organization, and expected access role
+|Refresh the session and verify with a known-good admin account
+
+|Assistant opens but request fails
+|Provider or runtime path issue
+|Endpoint reachability, model availability on that endpoint, provider limits, and temporary provider status
+|Retry after fixing endpoint/model mismatch or provider-side limit issues
+
+|Assistant response is slow or inconsistent
+|Prompt size, endpoint performance, or network/proxy instability
+|Short prompt test, provider service health, and network/proxy stability
+|Use a shorter prompt, try another supported model, and stabilize network or proxy routing
+|===
+
+== Respond to LLM credential exposure or misuse
+
+If you suspect API key exposure or unauthorized use:
+
+. Revoke the existing API key in your provider system.
+. Create a new API key.
+. Update the key in *Administration > AI Tools*.
+. Verify successful reconnection with a read-only assistant test.
+

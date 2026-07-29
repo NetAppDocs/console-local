@@ -20,9 +20,9 @@ You can set up multiple channels for alert notifications, including email and we
 .Required access roles
 Super admin or organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
-By default, Console (local deployment) sends notifications through its built-in notification system. Configuring additional delivery channels lets you receive notifications in the way that best fits your workflow.
+By default, Console (local deployment) displays notifications through its built-in notification system. Configuring additional delivery channels lets you receive notifications in the way that best fits your workflow.
 
-You can send all notifications through the same channels or use different channels for different notification types. For example, you might send urgent storage alerts through email while routing other alert traffic to Slack through a webhook.
+You can send all notifications through the same channels or use different channels for different notification types. For example, you might send urgent storage alerts through email while routing other alert traffic to a third-party monitoring tool through a webhook.
 
 
 
@@ -101,4 +101,4 @@ Before you create the webhook, ensure the following are in place:
 . Select *Test webhook* to test the webhook connection and ensure that Console (local deployment) can successfully send messages to the receiving application.
 . After the test succeeds, select *Save* to create the webhook.
 +
-After you save the webhook, it is available for users to select where webhooks are supported such as Alert delivery options. link:task-alerts-create.html[Learn how to create alert rules and assign webhooks for alert delivery.]
+After you save the webhook, it is available for users to select where webhooks are supported, such as Alert delivery options. link:task-alert-rules-manage.html[Learn how to create alert rules and assign webhooks for alert delivery.]

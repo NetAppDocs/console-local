@@ -27,7 +27,7 @@ You deploy NetApp Console (local deployment) as a virtual appliance in your VMwa
 
 .Do I need a license or subscription to use NetApp Console (local deployment)?
 
-No. You don't need a license or subscription to start using NetApp Console (local deployment). However, some NetApp data services accessible from the Console (local deployment), such as NetApp Backup and Recovery, are licensed or subscription-based and might have an associated cost. link:concept-onprem-ontap.html[Learn about on-premises ONTAP cluster management].
+No. You don't need a license or subscription to start using NetApp Console (local deployment). However, some NetApp data services accessible from the Console (local deployment), such as NetApp Backup and Recovery, are licensed or subscription-based and might have an associated cost. 
 
 .What is the recommended setup sequence for storage management in NetApp Console (local deployment)?
 
@@ -114,15 +114,15 @@ Low available capacity can be the cause. When an ONTAP system is more than 85% f
 
 .Where do alerts in NetApp Console (local deployment) come from, and how are they categorized?
 
-Alerts originate from the ONTAP Event Management System (EMS) on discovered clusters and from NetApp Backup and Recovery operations, consolidated into a single organization-wide view. Each alert identifies the affected system, a severity (such as critical, warning, or informational), and an impact area (capacity, connectivity, data protection, performance, or security). The Console shows alerts only for the fleets your permissions allow. link:concept-storage-alerts.html[Learn about alerts].
+Alerts originate from the ONTAP Event Management System (EMS) on discovered clusters and from NetApp Backup and Recovery operations, consolidated into a single organization-wide view. Each alert identifies the affected system, a severity (such as critical, warning, or informational), and an impact area (capacity, connectivity, data protection, performance, or security). The Console shows alerts only for the fleets your permissions allow. link:concept-console-alerts.html[Learn about alerts].
 
 .How do alert notification rules decide who gets notified?
 
-A notification rule matches alerts on service, severity, impact area, and target system, then delivers notifications to users with specified access roles through email or webhook. Note that rules apply to specific systems, not to fleets, and can be muted during planned maintenance windows. The Console includes default rules and lets you create custom ones. link:concept-storage-alerts.html[Learn about alerts].
+A notification rule matches alerts on service, severity, impact area, and target system, then delivers notifications to users with specified access roles through email or webhook. Note that rules apply to specific systems, not to fleets, and can be muted during planned maintenance windows. The Console includes default rules and lets you create custom ones. link:concept-console-alerts.html[Learn about alerts].
 
 .What can I do with custom dashboards?
 
-Custom dashboards let you build personalized monitoring views by assembling cards from predefined templates, choosing the scope, metrics, aggregation, target resources, and time window. Templates cover performance, capacity, health, and alerts, and you can scope cards to any level of the ONTAP hierarchy. Each dashboard and card is private to you and shows data only for resources you're authorized to view. link:concept-custom-dashboards.html[Learn about custom dashboards].
+Custom dashboards let you build personalized monitoring views by assembling cards from predefined templates, choosing the scope, metrics, aggregation, target resources, and time window. Templates cover performance, capacity, health, and alerts, and you can scope cards to any level of the ONTAP hierarchy. Each dashboard and card is private to you and shows data only for resources you're authorized to view. link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console (local deployment)].
 
 == Identity and access
 
@@ -156,15 +156,15 @@ Local users can enable multi-factor authentication (MFA) to add another verifica
 
 .Which LLM providers does NetApp Console (local deployment) support for AI-assisted management?
 
-You bring your own subscription to a supported LLM provider—OpenAI, Anthropic, or AWS Bedrock—and supply a valid API key during configuration. You also need the Console deployed with cluster access, outbound network connectivity to the provider's endpoint, the Organization admin role, and configured storage classes to guide provisioning. link:concept-llm-integration.html[Learn about LLM integration].
+You bring your own subscription or service access for a supported provider type: OpenAI or OpenAI-compatible. You then supply a valid API key during configuration. You also need the Console deployed with cluster access, outbound network connectivity to the configured endpoint, the Organization admin role, and storage classes that guide provisioning. link:concept-llm-integration.html[Learn about LLM integration].
 
 .Does enabling LLM integration send my storage data or queries to a third-party service?
 
-Because NetApp Console (local deployment) runs in your own environment, your data and queries stay within your network by default. The Console does not send data to a third-party LLM service without your explicit configuration of an outbound connection. All AI actions also respect your RBAC, and sensitive operations require your confirmation. link:concept-llm-integration.html[Learn about LLM integration].
+The Console sends prompts and related context only to the LLM endpoint you configure. If that endpoint is a third-party cloud service, data is sent to that service over HTTPS. If that endpoint is an internal OpenAI-compatible service, data stays on your internal path for that integration. All AI actions also respect your RBAC, and sensitive operations require your confirmation. link:concept-llm-integration.html[Learn about LLM integration].
 
 .What can the Console assistant do, and how do I control whether it changes my storage?
 
-Once you connect an LLM, the Console assistant lets users provision storage, investigate alerts, and get answers using natural language. Users choose an access mode: in *Read only* mode the assistant answers and guides without making changes, while in *Read/write* mode it can act on storage infrastructure but shows the details for the user to review and confirm before each change. link:task-console-assistant.html[Enable the Console assistant].
+Once you connect an LLM, the Console assistant lets users provision storage, investigate alerts, and get answers using natural language. Users choose an access mode: in *Read only* mode the assistant answers and guides without making changes, while in *Read/write* mode it can act on storage infrastructure but shows the details for the user to review and confirm before each change. link:task-llm-connect.html[Connect your LLM and enable the NetApp Console assistant].
 
 == Data protection and auditing
 

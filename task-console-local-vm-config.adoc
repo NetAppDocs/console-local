@@ -129,7 +129,7 @@ Access diagnostic tools to troubleshoot issues with the Console (local deploymen
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 . Enter `3` to view the Support and Diagnostics menu.
 . Enter `1` to access the diagnostic tools and follow the on-screen prompts.
-+ For example, you can verify that all Console (local deployment) services are running. link:task-troubleshoot-console-local.html#check-console-local-status[Check the Console (local deployment) status^].
+
 
 === Access the Console (local deployment) diagnostic tools remotely
 You can access diagnostic tools remotely with a tool such as Putty. Enable SSH access to the Console (local deployment) VM by assigning a one-time password.
