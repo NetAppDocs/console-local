@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: remediate-storage-class-drift.html
-keywords: storage class drift, compliance, fix it, analyze, fleets, alerts, netapp console local
+keywords: storage class drift, compliance, fix it, analyze, alerts, storage classes, netapp console local
 summary: "Find and remediate storage class drift in NetApp Console (local deployment)."
 ---
 = Remediate storage class drift
@@ -12,49 +12,50 @@ summary: "Find and remediate storage class drift in NetApp Console (local deploy
 :imagesdir: ./media/
 
 [.lead]
-Restore a workload to compliance with its assigned storage class by reviewing drift details and applying guided remediation (when available).
+Use the Alerts workflow to review drift details for a workload and restore compliance with its assigned storage class.
 
 == Before you begin
 
 * Verify you have access to the fleet that contains the workload.
 * Verify your role permits remediation actions (for example, Storage admin for that fleet).
 
-== Find a drifted workload
+== Find drift-related alerts for a storage class
 
-You can typically start from either entry point (availability depends on your deployment and permissions):
+. Go to *Storage classes*.
+. In the *Drifts* column, select *View* for the relevant storage class.
++
+Console opens the *Alerts* page with filters applied.
 
-* *Fleets:* Open the fleet and go to *Drift / Compliance* to review workloads flagged for drift.
-* *Alerts:* Open the relevant alert and select *Analyze* to review details for a single workload.
+. Select an alert name to open the alert details page.
 
 == Analyze the drift
 
-. Open the affected workload and select *Analyze*.
-. Review the findings for *configuration drift*:
-+
-* Compare *intended* vs *actual* settings.
-* Identify which setting change caused the drift (for example, snapshots disabled or encryption turned off).
+. On the alert details page, select *Analyze*.
+. Review the drift findings.
+. For configuration drift findings, compare *intended* vs *actual* settings to understand what changed.
 
-== Fix the drift
+== Remediate
 
-. If a guided action is available, select *Fix it*.
-. Review the proposed change, then proceed only after you understand the expected impact.
+. On the alert details page, select the recommended action (for example, *Fix it* if available).
+. Review the proposed change and proceed only after you understand the expected impact.
 
 [NOTE]
 ====
-Some remediations can be applied in place. Others may require aligning the workload to a different storage class to restore the intended behavior. Console indicates expected impact during the Fix it flow.
+Some remediations can be applied in place. Others may require aligning the workload to a different storage class to restore the intended behavior. Console indicates expected impact during the remediation flow.
 ====
 
-== Confirm the workload is compliant
+== Verify compliance
 
-After remediation completes, confirm that the workload returns to a compliant state after the next evaluation cycle. If the issue persists, re-open *Analyze* to check for additional findings.
+After remediation completes, confirm that the workload returns to a compliant state after the next evaluation cycle. If the issue persists, re-open *Analyze* to see whether additional findings remain.
 
 == Troubleshooting
 
-* *Fix it is not available:* You might not have sufficient permissions, or the issue might require a different remediation path (for example, updating the workload's storage class).
+* *No remediation action is available:* The issue may require a different remediation path (for example, updating the workload's storage class) or you may not have sufficient permissions.
 * *Status does not update immediately:* Compliance evaluation may take several minutes to reflect recent changes.
 
 == Related information
 
 * link:concept-storage-classes.html#storage-class-drift-and-compliance[Storage class drift and compliance]
-* link:task-fleet-health-monitor.html[Monitor fleet health]
+* link:concept-console-alerts.html[Learn about storage alerts]
+* link:task-alerts-monitor.html[View alerts]
 * link:task-remediation-guided.html[Guided remediation]
