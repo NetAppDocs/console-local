@@ -19,26 +19,25 @@ When application performance degrades, identify which part of the I/O path is ca
 
 .Steps
 
-. Select *Health > Workload Analyzer*.
-
-
-. In the *Volume* field, search for and select the volume you want to investigate.
+. Open Workload Analyzer using one of the following methods:
++
+* From the *Health* menu, select *Workload Analyzer*, then search for and select the volume you want to investigate in the *Volume* field.
+* From the *Storage > Fleets > Inventory* page, navigate to a volume you want to analyze and select *Analyze* from the action menu.
+* From the *Alerts > Overview* page, select a capacity-related alert for the volume you want to investigate, then select *Analyze* from the alert details.
 
 . Set the *Time Range* to cover the period when the performance issue occurred, then select *Analyze*.
 
-. Review the *Event Timeline* section for configuration changes or alerts that correlate with the time when latency increased.
+. Review the *Alert Timeline* section for alerts that correlate with the time when latency increased.
 +
 The analyzer plots configuration change events (wrench icon) and alert events (warning and critical icons) along the same time axis as the latency chart, making it easy to see whether a change preceded the degradation.
 
-. In the *Latency Analysis* section, open the *View* dropdown and select *By Contribution*.
+. In the *Latency* section, open the *View* dropdown and select Breakdown by delay center. The chart shows the contribution of each delay center to the total latency over time. Delay centers include:
 
-. Use the metric picker to enable the delay centers you want to examine:
 +
-* *Network* — time in the client-facing network stack
-* *Aggregate Ops* — disk I/O and RAID operations at the aggregate level
-* *Data Processing* — inline efficiency operations such as deduplication and compression
-* *Cluster Interconnect* — inter-node communication for cross-node data access
-* *Cloud Latency* — retrieval from a cloud capacity tier via FabricPool
+* Read latency
+* Write latency
+* Other latency
+
 
 . Hover over a point on the chart where latency is highest to see each delay center's value and its percentage of total latency.
 +
@@ -46,9 +45,9 @@ The delay center with the highest contribution usually points to a resource that
 
 . Identify the dominant contributor and use the value to determine next steps:
 +
-* High *Aggregate Ops* latency may indicate disk contention. Check the *Resource Utilization* section to confirm aggregate busy percentage.
-* High *Network* latency may indicate NIC saturation or network path issues outside the cluster.
-* High *Data Processing* latency may indicate that inline efficiency settings are consuming more CPU than the workload can tolerate. Consider adjusting efficiency settings or QoS.
+* High *Read latency* may indicate disk contention. Check the *Resource Utilization* section to confirm aggregate busy percentage.
+* High *Write latency* may indicate NIC saturation or network path issues outside the cluster.
+* High *Other latency* may indicate that inline efficiency settings are consuming more CPU than the workload can tolerate. Consider adjusting efficiency settings or QoS.
 * High *Cloud Latency* may indicate the workload is frequently accessing cold data on the capacity tier. Consider adjusting the tiering policy.
 
 . If the delay centers don't account for the slowdown, check the *Capacity Analysis* section. When the ONTAP system is more than 85% full, the high utilization can cause performance issues regardless of the delay center breakdown.

@@ -19,9 +19,11 @@ When a volume's workload is consuming more IOPS or throughput than expected, ide
 
 .Steps
 
-. Select *Health > Workload Analyzer*.
-
-. In the *Volume* field, search for and select the volume you want to investigate.
+. Open Workload Analyzer using one of the following methods:
++
+* From the *Health* menu, select *Workload Analyzer*, then search for and select the volume you want to investigate in the *Volume* field.
+* From the *Storage > Fleets > Inventory* page, navigate to a volume you want to analyze and select *Analyze* from the action menu.
+* From the *Alerts > Overview* page, select a capacity-related alert for the volume you want to investigate, then select *Analyze* from the alert details.
 
 . Set the *Time Range* to cover the period of high demand, then select *Analyze*.
 
