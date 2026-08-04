@@ -111,17 +111,8 @@ sidebar:
           url: /reference-storage-class-policies.html
         - title: Create storage classes
           url: /task-storage-class-manage.html
-        - title: Associate storage classes with fleets
-          url: /task-storage-class-fleet-associate.html
       - title: Provision storage
-        entries:
-        - title: Provision storage manually
-          url: /task-provisioning-manual.html
-        - title: Provision storage automatically
-          url: /task-provisioning-automated.html
-        - title: Provision storage with agentic workflows
-          url: /task-provisioning-agentic.html
-
+        url: /task-provisioning-manual.html
     - title: Monitor storage health
       entries:
       - title: Learn about monitoring storage health in NetApp Console

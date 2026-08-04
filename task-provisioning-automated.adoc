@@ -16,6 +16,9 @@ Use automated provisioning to allocate storage based on storage class standards 
 
 
 //<tsharp> is this a thing? Or is this a stub topic that is pretending to be a feature?
+
+//<mlucey> I have removed this topic from the left navigation.
+
 .Required access roles
 Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 

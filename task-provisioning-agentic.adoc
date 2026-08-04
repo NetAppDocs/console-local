@@ -14,6 +14,8 @@ summary: "Use AI-driven agentic provisioning to autonomously fulfill storage req
 [.lead]
 // Jira: SPSPM-3325, SPSPM-3304
 
+//<mlucey> I have removed this topic from the left navigation for now. It is touched on briefly in the section "Use the NetApp Console assistant"
+
 Use AI-assisted (agentic) provisioning when you want to request storage conversationally, review a proposed plan, and approve the change. This approach is useful when you want faster requests with less UI navigation while still keeping provisioning aligned with storage classes and RBAC. 
 
 .Required access roles
