@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-alerts-monitor.html
 keywords: view alerts, alerts overview, alerts dashboard, org-wide alerts, fleet alerts, netapp console local
-summary: "View active alerts across your organization or for a specific fleet from the alerts overview page in NetApp Console (local deployment)."
+summary: "View active alerts across your organization or for a specific fleet from the alerts overview page in NetApp Console local deployment."
 ---
-= Monitor and investigate alerts in NetApp Console (local deployment)
+= Monitor and investigate alerts in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,7 +14,7 @@ summary: "View active alerts across your organization or for a specific fleet fr
 [.lead]
 // Jira: SPSPM-3316, SPSPM-3496
 
-Monitor and investigate alerts in NetApp Console (local deployment) to keep your storage healthy and minimize disruption.
+Monitor and investigate alerts in NetApp Console local deployment to keep your storage healthy and minimize disruption.
 
 View active alerts across your entire organization or a specific fleet, prioritize them by severity and impact area, and investigate root causes so you can resolve issues before they escalate.
 
@@ -28,7 +28,7 @@ For external reporting, you can export the alerts list to a CSV file for offline
 NOTE: You can also set up notification rules to receive alerts by email or webhook. link:task-alert-rules-manage.html[Learn how to set up alert notifications].
 
 == Available alerts
-NetApp Console (local deployment) supports alerts for ONTAP and NetApp Backup and recovery
+NetApp Console local deployment supports alerts for ONTAP and NetApp Backup and recovery
 
 * link:reference-ontap-alerts.html[View the ONTAP alerts reference]
 * link:https://docs.netapp.com/us-en/data-services-backup-recovery/reference-audit-actions.html[Learn more about NetApp Backup and Recovery alerts.^]
@@ -127,7 +127,7 @@ image:screenshot-alerts-analyze.png["View alert details and navigate to Workload
 
 == Export alerts to CSV
 
-Export the alerts list in the NetApp Console (local deployment) to a CSV file for offline analysis or reporting. The export reflects the current scope (organization or fleet), search text, and filters.
+Export the alerts list in the NetApp Console local deployment to a CSV file for offline analysis or reporting. The export reflects the current scope (organization or fleet), search text, and filters.
 
 
 .Steps

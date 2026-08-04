@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-storage-class-fleet-associate.html
 keywords: associate, storage class, fleet, assign, netapp console
-summary: "Associate a storage class with a fleet in NetApp Console (local deployment) to apply consistent storage policies."
+summary: "Associate a storage class with a fleet in NetApp Console local deployment to apply consistent storage policies."
 ---
-= Associate storage classes with fleets in NetApp Console (local deployment)
+= Associate storage classes with fleets in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,7 +14,7 @@ summary: "Associate a storage class with a fleet in NetApp Console (local deploy
 [.lead]
 // Jira: SPSPM-3309
 
-Associate storage classes with fleets in NetApp Console (local deployment) to enforce environment-specific standards, control which options operators can use, and simplify compliance checks against assigned classes.
+Associate storage classes with fleets in NetApp Console local deployment to enforce environment-specific standards, control which options operators can use, and simplify compliance checks against assigned classes.
 
 .Required access roles
 Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].
@@ -26,6 +26,8 @@ Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:r
 Associate a storage class with a fleet so it's available for provisioning and ongoing compliance monitoring within that fleet.
 //<tsharp> This still reads like the AI topic that was automatically put in. Storage classes aren't associated with fleets, they are associated when you provision a workload. The fleet is just the scope where the storage class is available for provisioning. And I'm not even sure about that part. It could be that storage classes only operate at the storage level and do not apply to fleets at all.
 //<tsharp> I'm not seeing anywhere in NCL where storage classes are associated with fleets. Need to dig in and see who has access to storage classes. My gut tells me that all users have access to the prefined and any custom storage classes/policies are available to only that user? Question for Krisha.
+
+//<mlucey> I have removed this topic from the left navigation for now. Until I find out more.
 
 .Steps
 //<tsharp> these aren't really the steps. I think this is a stub topic. Misleading, I know. :) A few of these tasks were just placeholder drafts and I should have marked them as such to make me a better collaborator. :(

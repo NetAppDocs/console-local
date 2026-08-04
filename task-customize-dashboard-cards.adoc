@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-customize-dashboard-cards.html
 keywords: add card, dashboard card, card template, widget, preview, netapp console local
-summary: "Customize dashboard cards in NetApp Console (local deployment) by setting scope, templates, resources, and time windows."
+summary: "Customize dashboard cards in NetApp Console local deployment by setting scope, templates, resources, and time windows."
 ---
-= Customize cards in NetApp Console (local deployment)
+= Customize cards in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -38,8 +38,8 @@ include::_include/dashboard-cards-steps.adoc[tag=core-add-card-flow]
 
 == Related information
 
-* link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
-* link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console (local deployment)]
+* link:task-storage-dashboard.html[View Home page metrics in NetApp Console local deployment]
+* link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console local deployment]
 * link:task-dashboard-create.html[Create a custom dashboard]
 * link:task-dashboard-manage.html[Manage custom dashboards]
 * link:reference-dashboard-card-templates.html[Custom dashboard cards and metrics reference]

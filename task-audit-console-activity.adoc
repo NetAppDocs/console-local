@@ -5,7 +5,7 @@ keywords: administer, monitor, timeline, notifications, alerts, events, notifica
 summary: You can audit user activity (initiated from both the UI and API) from the Audit page, and you can monitor the status of the operations that the Console is performing to see if there are any issues that you need to address. You can view the status from the Audit page or configure the audit logs to be sent to your own syslog server.
 ---
 
-= Audit NetApp Console (local deployment) activity
+= Audit NetApp Console local deployment activity
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -21,7 +21,7 @@ You can audit user activity initiated from both the UI and API from the Audit pa
 Super admin, Organization admin, Folder and fleet admin, Operations support analyst, Super viewer, Organization viewer, or Folder and fleet viewer. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 
-You can view audit activity in the Console (local deployment), download a CSV of the audit logs, or configure the audit logs to be sent to your own syslog server by using a webhook.
+You can view audit activity in the Console local deployment, download a CSV of the audit logs, or configure the audit logs to be sent to your own syslog server by using a webhook.
 
 
 

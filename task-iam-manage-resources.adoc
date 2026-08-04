@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: task-iam-manage-resources.html
 keywords: resource, hierarchy, association, access, resource permissions, resource hierarchy, iam, identity and access management
-summary: Control user access to resources by adding them to fleets and folders in your NetApp Console (local deployment) organization. Grant access to users at the fleet level. 
+summary: Control user access to resources by adding them to fleets and folders in your NetApp Console local deployment organization. Grant access to users at the fleet level. 
 ---
 
-= Manage resources in folders and fleets in NetApp Console (local deployment)
+= Manage resources in folders and fleets in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,21 +13,21 @@ summary: Control user access to resources by adding them to fleets and folders i
 :imagesdir: ./media/
 
 [.lead]
-Manage resource access in NetApp Console (local deployment) by associating resources with the correct folder or fleet, which controls which teams can access and manage them.
+Manage resource access in NetApp Console local deployment by associating resources with the correct folder or fleet, which controls which teams can access and manage them.
 
 .Required access roles
 Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 Place resources where the right teams can manage them, move them when ownership changes, and remove associations when they are no longer needed.
 
-A _resource_ is an entity that Console (local deployment) recognizes, such as a storage resource or a Backup and Recovery workload.
+A _resource_ is an entity that Console local deployment recognizes, such as a storage resource or a Backup and Recovery workload.
 
 
 == Console resource types
-Console (local deployment) supports both storage resources and Backup and Recovery workloads. Associate either resource type with a fleet to control access and management.
+Console local deployment supports both storage resources and Backup and Recovery workloads. Associate either resource type with a fleet to control access and management.
 
 Storage resources::
-Storage resources are the most common type of resource in your organization. When you add a storage system to Console (local deployment), associate it with a fleet so the appropriate teams can access and manage it. For example, after adding an ONTAP cluster, associate it with the `Production-US-East` fleet.
+Storage resources are the most common type of resource in your organization. When you add a storage system to Console local deployment, associate it with a fleet so the appropriate teams can access and manage it. For example, after adding an ONTAP cluster, associate it with the `Production-US-East` fleet.
 
 +
 

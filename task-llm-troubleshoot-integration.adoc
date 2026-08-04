@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-llm-troubleshoot-integration.html
 keywords: LLM, AI, troubleshooting, openai, openai-compatible, proxy, endpoint, api key, netapp console
-summary: "Troubleshoot LLM integration in NetApp Console (local deployment) with a quick triage flow for setup, assistant availability, runtime errors, and credential issues."
+summary: "Troubleshoot LLM integration in NetApp Console local deployment with a quick triage flow for setup, assistant availability, runtime errors, and credential issues."
 ---
-= Troubleshoot LLM integration in NetApp Console (local deployment)
+= Troubleshoot LLM integration in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: "Troubleshoot LLM integration in NetApp Console (local deployment) with
 :imagesdir: ./media/
 
 [.lead]
-Use this quick triage flow to diagnose and resolve common LLM integration issues in NetApp Console (local deployment).
+Use this quick triage flow to diagnose and resolve common LLM integration issues in NetApp Console local deployment.
 
 If you have not completed setup, see link:task-llm-connect.html[Connect your LLM and enable the NetApp Console assistant].
 

@@ -1,5 +1,5 @@
 settings:
-  name: "NetApp Console (local deployment)"
+  name: "NetApp Console local deployment"
   internal:
     pdf_enabled: true
   prod:
@@ -8,7 +8,7 @@ settings:
 
 sidebar:
   entries:
-  - title: NetApp Console (local deployment)
+  - title: NetApp Console local deployment
     entries:
     - title: Release notes
       entries:
@@ -111,17 +111,8 @@ sidebar:
           url: /reference-storage-class-policies.html
         - title: Create storage classes
           url: /task-storage-class-manage.html
-        - title: Associate storage classes with fleets
-          url: /task-storage-class-fleet-associate.html
       - title: Provision storage
-        entries:
-        - title: Provision storage manually
-          url: /task-provisioning-manual.html
-        - title: Provision storage automatically
-          url: /task-provisioning-automated.html
-        - title: Provision storage with agentic workflows
-          url: /task-provisioning-agentic.html
-
+        url: /task-provisioning-manual.html
     - title: Monitor storage health
       entries:
       - title: Learn about monitoring storage health in NetApp Console
@@ -146,6 +137,8 @@ sidebar:
           entries:
           - title: Manage custom dashboards
             url: /task-dashboard-manage.html
+      - title: Monitor fleets using inventory
+        url: /concept-monitor-fleets-inventory.html
       - title: Remediate alerts
         entries:
         - title: Learn about alerts
@@ -171,11 +164,11 @@ sidebar:
         - title: Workload Analyzer metrics reference
           url: /reference-workload-analyzer-metrics.html
    
-    - title: Administer and monitor NetApp Console (local deployment)
+    - title: Administer and monitor NetApp Console local deployment
       entries:
-      - title: Learn about administering NetApp Console (local deployment)
+      - title: Learn about administering NetApp Console local deployment
         url: /concept-administer-netapp-console-local.html
-      - title: Audit NetApp Console (local deployment) operations
+      - title: Audit NetApp Console local deployment operations
         url: /task-audit-console-activity.html
       - title: Licenses and subscriptions
         url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
@@ -194,7 +187,7 @@ sidebar:
 
     - title: Reference
       entries:
-      - title: NetApp Console (local deployment) API
+      - title: NetApp Console local deployment API
         entries:
         - title: Organization and fleet IDs
           url: /task-iam-rename-organization.html

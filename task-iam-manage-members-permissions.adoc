@@ -5,7 +5,7 @@ keywords: user, directory user, directory users, service account, member, role, 
 summary: Add members and assign roles to provide permissions across different levels of your organization's resource hierarchy.
 ---
 
-= Add members to your NetApp Console (local deployment) organization
+= Add members to your NetApp Console local deployment organization
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: Add members and assign roles to provide permissions across different le
 :imagesdir: ./media/
 
 [.lead]
-Add members to your NetApp Console (local deployment) organization and assign roles to grant access at the organization, folder, or fleet level for users, service accounts, and directory users.
+Add members to your NetApp Console local deployment organization and assign roles to grant access at the organization, folder, or fleet level for users, service accounts, and directory users.
 
 .Required access roles
 Super admin, Organization admin, or Folder or fleet admin (for folders and fleets that they are administering). link:reference-iam-predefined-roles.html[Learn about access roles].
@@ -26,24 +26,24 @@ Super admin, Organization admin, or Folder or fleet admin (for folders and fleet
 
 
 
-== Understand how access is granted in NetApp Console (local deployment)          
+== Understand how access is granted in NetApp Console local deployment          
 NetApp Console uses role-based access control (RBAC) to manage permissions. Assign roles to members to provide the required access. Each role defines allowed actions for specific resources.
 
-Note the following about granting access in NetApp Console (local deployment):
+Note the following about granting access in NetApp Console local deployment:
 
 * You must explicitly add each user to your organization and assign at least one role before that user can access resources.
-* A role that you assign at the organization or folder level is inherited by child scopes, so choose the assignment scope carefully to give the member access only where needed. link:concept-iam-rbac.html#role-inheritance[Learn more about how role inheritance works in NetApp Console (local deployment)].
+* A role that you assign at the organization or folder level is inherited by child scopes, so choose the assignment scope carefully to give the member access only where needed. link:concept-iam-rbac.html#role-inheritance[Learn more about how role inheritance works in NetApp Console local deployment].
 
 [#add-members]
 == Add members to your organization
 
 NetApp Console supports three types of members: user accounts, directory users, and service accounts.
 
-NOTE: You must first configure an email server to use with Console (local deployment) before you can add users. link:task-console-configure-notifications-delivery.html[Learn how to configure an email server.]
+NOTE: You must first configure an email server to use with Console local deployment before you can add users. link:task-console-configure-notifications-delivery.html[Learn how to configure an email server.]
 
-Directory users authenticate through your integrated directory service, but you must still add each directory user individually and assign roles in Console (local deployment). Create service accounts directly in the Console.
+Directory users authenticate through your integrated directory service, but you must still add each directory user individually and assign roles in Console local deployment. Create service accounts directly in the Console.
 
-All members must have at least one role explicitly assigned to them in order to access Console (local deployment).
+All members must have at least one role explicitly assigned to them in order to access Console local deployment.
 
 When adding a member, choose the organization, folder, or fleet where the member needs access and assign the starting role or roles they need.
 

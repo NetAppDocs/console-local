@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: task-logging-in.html
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, login with netapp, log in with netapp, sign up, create account, AD, Active Directory, directory services
-summary: After you sign up to NetApp Console (local deployment), you can log in from the web-based console to start managing your data and storage infrastructure.
+summary: After you sign up to NetApp Console local deployment, you can log in from the web-based console to start managing your data and storage infrastructure.
 ---
 
-= Log in to NetApp Console (local deployment)
+= Log in to NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,14 +13,14 @@ summary: After you sign up to NetApp Console (local deployment), you can log in 
 :imagesdir: ./media/
 
 [.lead]
-You can sign in to NetApp Console (local deployment) after your organization administrator has invited you to your Console (local deployment) organization user account. To login, you use the email address associated with your login.
+You can sign in to NetApp Console local deployment after your organization administrator has invited you to your Console local deployment organization user account. To login, you use the email address associated with your login.
 
 If you log in but don't see any resources, contact your organization administrator. link:task-user-settings.html#contact-admin[Contact your organization administrator].
 
 
 .Steps
 
-. Open a web browser and go to the IP address where the Console (local deployment) is installed.
+. Open a web browser and go to the IP address where the Console local deployment is installed.
 
 . On the *Log in* page, enter the email address that's associated with your login.
 

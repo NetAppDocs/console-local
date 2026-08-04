@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: whats-new.html
 keywords: what's new, new features, release notes, netapp console local
-summary: "Learn about the new features and enhancements in the latest release of NetApp Console (local deployment)."
+summary: "Learn about the new features and enhancements in the latest release of NetApp Console local deployment."
 ---
-= What's new with NetApp Console (local deployment)
+= What's new with NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,4 +12,4 @@ summary: "Learn about the new features and enhancements in the latest release of
 :imagesdir: ./media/
 
 [.lead]
-Learn about the new features and enhancements in the latest release of the NetApp Console (local deployment).
+Learn about the new features and enhancements in the latest release of the NetApp Console local deployment.

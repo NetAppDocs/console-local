@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-iam-active-directory-integrate.html
 keywords: AD, Active Directory, LDAP, directory services, directory users, authentication, user management, netapp console
-summary: "Integrate NetApp Console (local deployment) with Active Directory for directory-backed sign-in and user lookup."
+summary: "Integrate NetApp Console local deployment with Active Directory for directory-backed sign-in and user lookup."
 ---
-= Integrate NetApp Console (local deployment) with Active Directory
+= Integrate NetApp Console local deployment with Active Directory
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,16 +12,16 @@ summary: "Integrate NetApp Console (local deployment) with Active Directory for 
 :imagesdir: ./media/
 
 [.lead]
-Integrate NetApp Console (local deployment) with Active Directory for directory-backed sign-in and user lookup. Use your directory service to authenticate users, then assign access to those users in NetApp Console (local deployment).
+Integrate NetApp Console local deployment with Active Directory for directory-backed sign-in and user lookup. Use your directory service to authenticate users, then assign access to those users in NetApp Console local deployment.
 
 .Required access roles
 Super admin or organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
-When you integrate with Active Directory, Console (local deployment) authenticates users through your existing directory. After you add a directory user to your organization, assign roles in Console (local deployment) to control what that user can access.
+When you integrate with Active Directory, Console local deployment authenticates users through your existing directory. After you add a directory user to your organization, assign roles in Console local deployment to control what that user can access.
 
-Active Directory integration also helps you meet compliance requirements by applying your existing controls, audit trails, and policies to Console (local deployment) access.
+Active Directory integration also helps you meet compliance requirements by applying your existing controls, audit trails, and policies to Console local deployment access.
 
-NOTE: Active Directory integration does not create federated groups in Console (local deployment), does not synchronize directory-group assignments into Console (local deployment), and does not automatically grant access. Administrators still add directory users to the organization and assign roles in Console (local deployment).
+NOTE: Active Directory integration does not create federated groups in Console local deployment, does not synchronize directory-group assignments into Console local deployment, and does not automatically grant access. Administrators still add directory users to the organization and assign roles in Console local deployment.
 
 == Before you begin
 
@@ -29,7 +29,7 @@ Before you integrate with Active Directory, make sure you have:
 
 * An Active Directory domain and credentials that can query the directory
 * The LDAP server address and the base distinguished name (DN) for the directory tree
-* Network access from Console (local deployment) to your LDAP server on port 389 (LDAP) or 636 (LDAPS)
+* Network access from Console local deployment to your LDAP server on port 389 (LDAP) or 636 (LDAPS)
 * SSL/TLS certificates, if you plan to use LDAPS
 
 .Steps
@@ -42,7 +42,7 @@ Before you integrate with Active Directory, make sure you have:
 * The *LDAP host*: hostname or IP address of your LDAP server. For multiple servers, enter the primary.
 * The port: 389 for LDAP or 636 for LDAPS.
 * The *Connection timeout* in milliseconds. The default is 1000 ms.
-. Select *Use SSL/TLS* to use LDAPS. Confirm that your LDAP server supports LDAPS and that Console (local deployment) can access the required certificates.
+. Select *Use SSL/TLS* to use LDAPS. Confirm that your LDAP server supports LDAPS and that Console local deployment can access the required certificates.
 . Test the connection. If it fails, check the LDAP host, port, network connectivity, and SSL/TLS certificates.
 . After the test succeeds, enter the directory and user details:
 +

@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: concept-storage-class-policies.html
 keywords: storage class policies, policies, storage class, IOPS, capacity, security, data protection, performance policy, netapp console
-summary: "Learn about the policies that serve as building blocks for storage classes in NetApp Console (local deployment)."
+summary: "Learn about the policies that serve as building blocks for storage classes in NetApp Console local deployment."
 ---
-= Understanding storage class policies in NetApp Console (local deployment)
+= Understanding storage class policies in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,17 +12,17 @@ summary: "Learn about the policies that serve as building blocks for storage cla
 :imagesdir: ./media/
 
 [.lead]
-Storage class policies are the building blocks you use to construct a storage class. Each policy controls a specific aspect of storage behavior. When you combine policies into a storage class, you create a reusable template that the NetApp Console (local deployment) enforces automatically at provisioning time and monitors continuously throughout a workload's lifecycle.
+Storage class policies are the building blocks you use to construct a storage class. Each policy controls a specific aspect of storage behavior. When you combine policies into a storage class, you create a reusable template that the NetApp Console local deployment enforces automatically at provisioning time and monitors continuously throughout a workload's lifecycle.
 
 == Policies as building blocks
 
 A storage class is composed of one or more policies, each governing a different dimension of storage behavior. Storage administrators define policies to encode enterprise standards—performance expectations, capacity thresholds, data placement rules—and then assemble those policies into storage class templates. When a workload is provisioned using a storage class, it inherits all of the policies in that class. This design separates the responsibility of defining standards from the act of provisioning, so storage can be provisioned consistently by automated workflows without needing to make individual configuration decisions.
 
 == Types of storage class policies
-NetApp Console (local deployment) includes four types of policies that you can use to construct storage classes:
+NetApp Console local deployment includes four types of policies that you can use to construct storage classes:
 
 Performance policy::
-A performance policy sets expected IOPS/TB, peak IOPS/TB, absolute minimum IOPS, and expected latency targets for a workload. The Console (local deployment) uses these values to recommend clusters with sufficient headroom at provisioning time and to detect IOPS or latency drift after provisioning.
+A performance policy sets expected IOPS/TB, peak IOPS/TB, absolute minimum IOPS, and expected latency targets for a workload. The Console local deployment uses these values to recommend clusters with sufficient headroom at provisioning time and to detect IOPS or latency drift after provisioning.
 
 Capacity policy::
 A capacity policy controls how a volume consumes and manages space. It sets space reservation (thick, thin, or system default), autogrow behavior, FabricPool tiering, and whether to provision NAS workloads as FlexVol or FlexGroup volumes.
@@ -35,7 +35,7 @@ A data protection policy sets the number of snapshots retained at each interval 
 
 == Default policies
 
-The Console (local deployment) includes system-defined policies across all four policy types. You can use these policies as-is when you create a storage class, or copy them as a starting point for custom policies tailored to your organization's requirements.
+The Console local deployment includes system-defined policies across all four policy types. You can use these policies as-is when you create a storage class, or copy them as a starting point for custom policies tailored to your organization's requirements.
 
 //// 
 These policy names are not final and should be vetted with PM and UX. These are straight from the PRD 

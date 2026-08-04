@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: reference-dashboard-card-templates.html
 keywords: card templates, dashboard cards, metric types, chart types, performance, capacity, health, alerts, netapp console local
-summary: "Reference for predefined dashboards and custom dashboard cards and metrics in NetApp Console (local deployment)."
+summary: "Reference for predefined dashboards and custom dashboard cards and metrics in NetApp Console local deployment."
 ---
-= Predefined dashboards and custom dashboard cards reference in NetApp Console (local deployment)
+= Predefined dashboards and custom dashboard cards reference in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -262,8 +262,8 @@ Alerts templates focus on incident volume, severity, and impact area to support 
 
 == Related information
 
-* link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
-* link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console (local deployment)]
+* link:task-storage-dashboard.html[View Home page metrics in NetApp Console local deployment]
+* link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console local deployment]
 * link:task-dashboard-create.html[Create a custom dashboard]
-* link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console (local deployment)]
+* link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console local deployment]
 * link:task-dashboard-manage.html[Manage custom dashboards]

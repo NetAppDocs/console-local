@@ -1,9 +1,10 @@
 ---
 sidebar: sidebar
 permalink: remediate-storage-class-drift.html
-keywords: storage class drift, compliance, fix it, analyze, alerts, storage classes, netapp console local
-summary: "Find and remediate storage class drift in NetApp Console (local deployment)."
+keywords: storage class drift, compliance, remediation, alerts, storage classes, netapp console local
+summary: "Find, analyze, and remediate storage class drift in NetApp Console local deployment."
 ---
+
 = Remediate storage class drift
 :hardbreaks:
 :nofooter:
@@ -12,58 +13,44 @@ summary: "Find and remediate storage class drift in NetApp Console (local deploy
 :imagesdir: ./media/
 
 [.lead]
-Use the Alerts workflow to review drift details for a workload and restore compliance with its assigned storage class.
-//<tsharp> we typically don't use the word "workflow" like this in our docs. A rewrite could be: Review storage class drift details and remediate them from the Alerts page.  
+Find drift-related alerts, analyze the drift findings, and remediate workloads that no longer match their storage class intent.
 
-== Before you begin
-//<tsharp> This section needs a .Required roles line.  You can delete the ==Before you begin section and replace it with that. The second bullet can be a generica note. Maybe we write one for an include that says "You can only perform actions within fleets that you have permission." THen we can re-use it everywhere.
+.Required roles
+Storage admin (or equivalent) for the fleet that contains the workload.
 
-* Verify you have access to the fleet that contains the workload.
-* Verify your role permits remediation actions (for example, Storage admin for that fleet).
+NOTE: You can only view and remediate workloads in fleets where you have permission.
 
-== Find drift-related alerts for a storage class
-//<tsharp> Typically, we've had an instro paragraph here with a real-world example. At least in this doc set, the pattern is: heading, intro paragraph, steps. The intro paragraph can be a single sentence. For example: "When a workload no longer matches its storage class intent, Console (local deployment) flags it for investigation and remediation."  Then the steps follow.
-//<tsharp> Need to add the .Steps element before each set of steps. I added one below as an example.
+== Remediate drift
+
+When a workload no longer matches its storage class intent, Console local deployment raises an alert. Use the alert to analyze the drift and apply the recommended remediation.
+
+Some remediations can be applied directly from the alert. Other issues might require updating the workload configuration or assigning a different storage class to restore compliance. The remediation workflow indicates the expected impact before changes are applied.
 
 .Steps
 
-. Go to *Storage classes*.
-//<tsharp> need the whole menu nav here: Select *Storage > Storage classes*. Or is this one NSelect *Alerts > Overview*?
+. Select *Storage > Storage classes*.
++
+A summary of storage class drift appears in the *Drifts by storage class* area. The complete list appears in the table.
+
 . In the *Drifts* column, select *View* for the relevant storage class.
 +
-Console opens the *Alerts* page with filters applied.
+The *Alerts > Overview* page opens with filters applied.
 
-. Select an alert name to open the alert details page.
+. Select an alert to open the alert details page.
 
-== Analyze the drift
+. Select *Analyze*.
 
-. On the alert details page, select *Analyze*.
-. Review the drift findings.
-. For configuration drift findings, compare *intended* vs *actual* settings to understand what changed.
+. Review the findings in *Workload analyzer*.
++
+For configuration drift findings, compare the intended and actual settings to determine what changed.
 
-== Remediate
+. Select the recommended remediation action, such as *Fix it*.
 
-. On the alert details page, select the recommended action (for example, *Fix it* if available).
-. Review the proposed change and proceed only after you understand the expected impact.
+. Review the proposed changes and apply the remediation.
 
-[NOTE]
-====
-Some remediations can be applied in place. Others may require aligning the workload to a different storage class to restore the intended behavior. Console indicates expected impact during the remediation flow.
-====
-
-//<tsharp> This note could be an intro paragraph instead. I think it reads more like an after thought here. Also, for future note uses, the format you are using up there is typically reserved for longer notes that need bullets. Typically, you can just type NOTE: text text and the system will format it as a note.  For example, NOTE: Some remediations can be applied in place. Others may require aligning the workload to a different storage class to restore the intended behavior. Console indicates expected impact during the remediation flow.
-
-== Verify compliance
-
-After remediation completes, confirm that the workload returns to a compliant state after the next evaluation cycle. If the issue persists, re-open *Analyze* to see whether additional findings remain.
-//<tsharp> where does this happen?
-
-== Troubleshooting
-//<tsharp> consider using a description  list for these. https://review.docs.netapp.com/us-en/content-standards/content-design/lists-cds.html  We should standardize on how to do troubleshooting info. Because these are bold, as a reader, I am thinking they are error messages? 
-
-* *No remediation action is available:* The issue may require a different remediation path (for example, updating the workload's storage class) or you may not have sufficient permissions.
-//<tsharp>not sure permission would be an issue. I think the Alerts page is filtered by only the alerts that you have permission to view. Shourjo is checking with Krishna to see who has permissions to view alerts and remediate from that page. 
-* *Status does not update immediately:* Compliance evaluation may take several minutes to reflect recent changes.
+. Return to *Storage > Storage classes* and verify that the workload is no longer listed as drifted.
++
+Compliance evaluations can take several minutes to reflect recent configuration changes. If the workload is still listed as drifted, return to the alert details page and select *Analyze* to review any remaining findings.
 
 == Related information
 

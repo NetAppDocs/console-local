@@ -5,7 +5,7 @@ keywords: folders, fleets, resource hierarchy, create folders, create fleets, ia
 summary: Add folders and fleets to match your business structure. After you create folders and fleets, you can associate resources with them and manage member access to those fleets.
 ---
 
-= Add folders and fleets to your NetApp Console (local deployment) organization
+= Add folders and fleets to your NetApp Console local deployment organization
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,12 +13,12 @@ summary: Add folders and fleets to match your business structure. After you crea
 :imagesdir: ./media/
 
 [.lead]
-Create folders and fleets to match your business structure, control access, and organize resources in NetApp Console (local deployment).
+Create folders and fleets to match your business structure, control access, and organize resources in NetApp Console local deployment.
 
 .Required access roles
 Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
-NetApp Console (local deployment) creates one default fleet when you create an organization. You can add more fleets and group them with folders. link:concept-identity-and-access-management.html[Learn about the resource hierarchy in NetApp Console].
+NetApp Console local deployment creates one default fleet when you create an organization. You can add more fleets and group them with folders. link:concept-identity-and-access-management.html[Learn about the resource hierarchy in NetApp Console].
 
 
 
@@ -29,7 +29,7 @@ Folders and fleets are the two building blocks you use to shape your organizatio
 * Folders group related fleets and support delegated administration and role inheritance.
 * Fleets are where you associate resources for management and how you grant users operational access.
 
-You can create folders and fleets first and add resources and member access later. This lets you plan your resource hierarchy before adding users and resources in Console (local deployment). If your structure is already defined, you can add resources and assign access when you create the fleet. You can update fleets at any time.
+You can create folders and fleets first and add resources and member access later. This lets you plan your resource hierarchy before adding users and resources in Console local deployment. If your structure is already defined, you can add resources and assign access when you create the fleet. You can update fleets at any time.
 
 For example, put production clusters in a Production fleet and test clusters in a Test fleet, and grant each team access only to the fleet they own.
 
@@ -76,7 +76,7 @@ You can add resources and assign member access when you create a fleet or folder
 
 [#associate-resource-folder]
 . Optional: Expand the *Resources* section to associate resources with the fleet or folder.
-.. Mark the check box next to the resource you want to associate and then select *Associate with the fleet*. If you haven't added systems to Console (local deployment) yet, you can do this step later.
+.. Mark the check box next to the resource you want to associate and then select *Associate with the fleet*. If you haven't added systems to Console local deployment yet, you can do this step later.
 +
 NOTE: Members can't access resources in a folder until those resources are assigned to a fleet.
 
@@ -118,7 +118,7 @@ Before you delete a folder or fleet, complete the following checks:
 
 . Confirm that you want to delete the folder or fleet.
 
-== Manage fleets and folders in NetApp Console (local deployment)
+== Manage fleets and folders in NetApp Console local deployment
 
 After initial setup, you can do the following:
 

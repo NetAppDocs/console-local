@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: task-provisioning-manual.html
-keywords: manual provisioning, provision storage, create volume, netapp console
-summary: "Manually provision storage resources using NetApp Console (local deployment)."
+keywords: provisioning, provision storage, create volume, netapp console
+summary: "Provision storage resources using NetApp Console local deployment."
 ---
-= Provision storage manually in NetApp Console (local deployment)
+= Provision storage in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,21 +12,12 @@ summary: "Manually provision storage resources using NetApp Console (local deplo
 :imagesdir: ./media/
 
 [.lead]
-Manually provision storage when you need full control over system selection and configuration details. Manual provisioning is useful when you're creating exception workloads, migrating workloads with known requirements, or validating behavior during rollout. 
+Provision volumes and LUNs in NetApp Console local deployment to make storage resources available for your workloads. During provisioning, you can optionally select a storage class to apply predefined storage policies and organizational standards.
 
 .Required access roles
 Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
-You can optionally select a storage class during manual provisioning to apply approved standards while retaining explicit control over placement.
-
-== Before you begin
-//<tsharp> we don't use - for bullets but instead use * for unordered lists. I am not sure sure these bullets are accurate at all. I'm not seeing a flow where the user is prompted for credentials, for example. "Discovered" is the Console (SaaS) term for added, so that is off. 
-
-- Ensure the target ONTAP cluster is discovered in Console (local deployment).
-- Ensure you have credentials and access to the fleet that contains the target system.
-- If you intend to use a storage class, ensure the class exists and is associated with the fleet.
-
-== Manually provision a volume
+== Provision a volume
 
 .Steps
 
@@ -55,7 +46,7 @@ You can optionally select a storage class during manual provisioning to apply ap
 
 . Select *Add*.
 
-== Manually provision a LUN
+== Provision a LUN
 
 .Steps
 

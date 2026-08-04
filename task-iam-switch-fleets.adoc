@@ -5,7 +5,7 @@ keywords: switch fleets, fleets, organizations, change, switch, change organizat
 summary: If your organization includes multiple fleets and you have access to those fleets, you can switch between them at any time.
 ---
 
-= Switch between fleets in NetApp Console (local deployment)
+= Switch between fleets in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -20,7 +20,7 @@ NOTE: You can't switch to another fleet while you are viewing any of the *Identi
 
 .Steps
 
-. In the top header of the Console (local deployment), select *Scope*.
+. In the top header of the Console local deployment, select *Scope*.
 
 . Browse through the fleets in your organization, select the fleet that you want, and then select *Switch*.
 +

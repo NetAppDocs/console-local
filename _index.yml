@@ -1,26 +1,26 @@
 indexpage:
-  title: NetApp Console (local deployment) documentation
-  lead: Manage, monitor, and protect your storage infrastructure with NetApp Console (local deployment).
-  summary: Use NetApp Console (local deployment)
+  title: NetApp Console local deployment documentation
+  lead: Manage, monitor, and protect your storage infrastructure with NetApp Console local deployment.
+  summary: Use NetApp Console local deployment
   keywords: storage management, data protection, operational efficiency, cost optimization, business continuity, unified management, self-hosted, high availability, LLM integration, role-based access control, storage provisioning
   tiles:
-    - title: Learn about NetApp Console (local deployment)
+    - title: Learn about NetApp Console local deployment
       links:
-        - title: Learn about NetApp Console (local deployment)
+        - title: Learn about NetApp Console local deployment
           url: /concept-netapp-console-local.html
         - title: Learn about identity and access management
           url: /concept-identity-and-access-management.html
-        - title: Learn about managing storage with NetApp Console (local deployment) 
+        - title: Learn about managing storage with NetApp Console local deployment 
           url: /concept-manage-storage.html
-        - title: Learn about NetApp Console (local deployment) data services
+        - title: Learn about NetApp Console local deployment data services
           url: /concept-data-services.html
-    - title: Deploy NetApp Console (local deployment)
+    - title: Deploy NetApp Console local deployment
       links:
-        - title: Learn about deploying Console (local deployment)
+        - title: Learn about deploying Console local deployment
           url: /concept-deploy-netapp-console-local.html
-        - title: Install Console (local deployment) in your vCenter environment
+        - title: Install Console local deployment in your vCenter environment
           url: /task-install-agent-on-prem-ova.html
-        - title: Add storage systems to NetApp Console (local deployment)
+        - title: Add storage systems to NetApp Console local deployment
           url: /task-add-systems.html
         - title: Connect an email server for notifications
           url: /task-console-configure-notifications-delivery.html
@@ -38,7 +38,7 @@ indexpage:
           url: /task-iam-active-directory-integrate.html
     - title: Standardize and provision storage
       links:
-        - title: Learn about managing storage with NetApp Console (local deployment)
+        - title: Learn about managing storage with NetApp Console local deployment
           url: /concept-manage-storage.html
         - title: Create a storage class
           url: /task-storage-class-manage.html
@@ -52,19 +52,19 @@ indexpage:
           url: /concept-monitor-storage.html
         - title: View Home page metrics
           url: /task-storage-dashboard.html
-        - title: Get started with dashboards in NetApp Console (local deployment)
+        - title: Get started with dashboards in NetApp Console local deployment
           url: /task-dashboard-get-started.html
         - title: View alerts
           url: /task-alerts-monitor.html
         - title: Configure notification rules for alerts
           url: /task-alert-rules-manage.html
-    - title: Navigate and use NetApp Console (local deployment)
+    - title: Navigate and use NetApp Console local deployment
       links:
-        - title: Log in to NetApp Console (local deployment)
+        - title: Log in to NetApp Console local deployment
           url: /task-logging-in.html
-        - title: Switch between fleets in NetApp Console (local deployment)
+        - title: Switch between fleets in NetApp Console local deployment
           url: /task-iam-switch-fleets.html
-        - title: Manage your NetApp Console (local deployment) user settings
+        - title: Manage your NetApp Console local deployment user settings
           url: /task-user-settings.html
         - title: Use the NetApp Console assistant
           url: /task-console-asst-use.html
@@ -72,13 +72,13 @@ indexpage:
    
     - title: Maintain and support
       links:
-        - title: Maintain a vCenter-installed Console (local deployment)
+        - title: Maintain a vCenter-installed Console local deployment
           url: /task-console-local-vm-config.html
-        - title: Audit NetApp Console (local deployment) operations
+        - title: Audit NetApp Console local deployment operations
           url: /task-audit-console-activity.html
         - title: Supported LLM providers and models
           url: /reference-llm-supported-models.html
-        - title: Get help with NetApp Console (local deployment)
+        - title: Get help with NetApp Console local deployment
           url: /task-get-help.html
     - title: API documentation 
       links: 
