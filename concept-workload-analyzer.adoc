@@ -30,9 +30,9 @@ NOTE: Workload charts for LUNs don't provide the same level of detail as the cha
 
 You can open the Workload Analyzer in several ways:
 
-* *From the Workload Analyzer page*: Select a volume and select *Analyze*. The analyzer opens with the volume pre-filled and a default time range of the last two hours.
-
-* *From an alert detail page*: Select *Investigate with Analyzer*. The analyzer pre-fills the affected volume and shows the last 10 days of data by default, so you start your investigation in context without adjusting any settings.
+* From the *Health* menu, select *Workload Analyzer*, then search for and select the volume you want to investigate in the *Volume* field.
+* From the *Storage > Fleets > Inventory* page, navigate to a volume you want to analyze and select *Analyze* from the action menu.
+* From the *Alerts > Overview* page, select a capacity-related alert for the volume you want to investigate, then select *Analyze* from the alert details.
 
 
 == Analyze latency, throughput, and storage capacity
