@@ -1,0 +1,80 @@
+---
+sidebar: sidebar
+permalink: concept-monitor-fleets-inventory.html
+keywords: inventory, fleet inventory, systems, volumes, capacity, security, performance, monitoring
+summary: "Use inventory to monitor fleet health and investigate storage resources in NetApp Console local deployment."
+---
+
+= Monitor fleets using inventory
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Use inventory to monitor fleet health and investigate storage resources across your environment. Inventory provides capacity, security, and performance views that help you identify issues, understand resource utilization, and track managed storage systems.
+
+Inventory is primarily an informational and diagnostic workspace. From inventory, you can review systems, volumes, and other storage objects across your fleets and perform common actions such as provisioning storage resources. For advanced storage management operations, NetApp Console local deployment redirects you to System Manager.
+
+== Access Inventory
+
+You can access *Inventory* from several areas of Console local deployment, including:
+
+* The Home page
+* Fleet overview pages
+* Fleet health cards and related inventory views
+
+Depending on where you enter *Inventory*, the displayed scope can be at the organization level or fleet level.
+
+== Inventory views
+
+*Inventory* provides multiple views that help you analyze different aspects of your storage environment.
+
+Capacity::
+View capacity utilization and identify systems, volumes, and other storage objects that consume storage resources.
+
+Security::
+Review security-related information and compliance status across managed storage resources.
+
+Performance::
+Analyze performance-related metrics and identify resources that might require further investigation.
+
+The information displayed varies depending on the selected view and object type.
+
+== Investigate storage resources
+
+Use *Inventory* to:
+
+* Monitor fleet health
+* Review storage capacity usage
+* Track managed storage systems
+* Identify volumes and other objects that consume capacity
+* Investigate potential security or performance issues
+* Locate resources that require administrative attention
+
+*Inventory* helps you move from high-level visibility into your environment to more detailed investigation of specific storage resources.
+
+== Provision storage resources
+
+Inventory includes workflows that allow you to provision storage resources such as volumes and LUNs.
+
+When provisioning resources, you select an existing managed storage system and provide the configuration settings required for the workload.
+
+== Inventory and alerts
+
+Alerts are generated for specific storage objects and conditions within your environment.
+
+When you select an alert, Console local deployment might direct you to System Manager for additional investigation or management actions. *Inventory* complements alerts by providing broader visibility into the overall state of your storage environment and managed resources.
+
+== Advanced management tasks
+
+*Inventory* helps you identify resources that require action, but some advanced storage management operations are performed in System Manager.
+
+Examples include:
+
+* Advanced workload management
+* Resource relocation and optimization tasks
+* Detailed system administration activities
+
+Use *Inventory* to identify and investigate issues, and then use System Manager when deeper management capabilities are required.

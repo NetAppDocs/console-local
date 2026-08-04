@@ -137,6 +137,8 @@ sidebar:
           entries:
           - title: Manage custom dashboards
             url: /task-dashboard-manage.html
+      - title: Monitor fleets using inventory
+        url: /concept-monitor-fleets.html
       - title: Remediate alerts
         entries:
         - title: Learn about alerts
