@@ -59,11 +59,10 @@ An analysis view explains what changed and why. Guided remediation actions (for 
 .Where to investigate
 You can typically investigate drift and non-compliance from one of these locations (availability depends on your deployment and permissions):
 
-* *Fleets:* Drift / Compliance (fleet-level view)
-//<tsharp> You can monitor drift from the storage class page, not the Fleets.
-* *Alerts:* Analyze (item-level triage)
+* *Storage classes:* Drift / Compliance
+* *Alerts:* Analyze
 
-For step-by-step instructions, see xref:remediate-storage-class-drift.adoc[Remediate storage class drift and performance non-compliance].
+For step-by-step instructions, see xref:task-storage-class-drift-remediate.adoc[Remediate storage class drift].
 
 == End-to-end workflow
 
@@ -87,6 +86,6 @@ For details on how to organize fleets, see link:concept-manage-storage.html[Lear
 * To understand fleet organization, see link:concept-manage-storage.html[Learn about fleet management in NetApp Console (local deployment)].
 * To create policies and storage classes, see link:task-storage-class-manage.html[Manage storage classes and policies].
 * To provision storage, see link:task-provisioning-manual.html[manual provisioning], link:task-provisioning-automated.html[automated provisioning], or link:task-provisioning-agentic.html[AI-assisted provisioning].
-* To monitor and remediate drift, see link:task-fleet-health-monitor.html[monitor fleet health], link:task-remediation-guided.html[guided remediation], and link:task-remediation-automated.html[automated remediation].
-//<tsharp> the task-fleet-health-monitor topic doesn't exist, this link should point to the remediate drift topic.
+* To analyze and remediate drift, see link:task-storage-class-drift-remediate.html[Remediate storage class drift]
 //<tsharp> We need to standardize on how to do x-references. Typically, I've been using "Learn about <subject>"" instead of the see page title method. I inherited that in the Console (SaaS) docs and I think we should keep it.
+//<mlucey> Will return to this.
