@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-quickstart-data-services.html
 keywords: quickstart, data services, enable, activate, netapp console
-summary: "Quickstart for data services in NetApp Console (local deployment) to enable data protection capabilities."
+summary: "Quickstart for data services in NetApp Console local deployment to enable data protection capabilities."
 ---
-= Quick start for data services in NetApp Console (local deployment)
+= Quick start for data services in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: "Quickstart for data services in NetApp Console (local deployment) to e
 :imagesdir: ./media/
 
 [.lead]
-Subscribe to data services in the NetApp Console (local deployment) to activate data protection capabilities for your storage environment.
+Subscribe to data services in the NetApp Console local deployment to activate data protection capabilities for your storage environment.
 
 .Required access roles
 Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].

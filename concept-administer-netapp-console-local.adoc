@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: concept-administer-netapp-console-local.html
 keywords: administer, monitor, audit, subscriptions, maintenance, troubleshooting, access management, netapp console local
-summary: "Learn how to administer and monitor NetApp Console (local deployment), including audit activity, subscriptions, maintenance, troubleshooting, and member access."
+summary: "Learn how to administer and monitor NetApp Console local deployment, including audit activity, subscriptions, maintenance, troubleshooting, and member access."
 ---
-= Learn about administration and monitoring in NetApp Console (local deployment)
+= Learn about administration and monitoring in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,14 +12,14 @@ summary: "Learn how to administer and monitor NetApp Console (local deployment),
 :imagesdir: ./media/
 
 [.lead]
-After you deploy NetApp Console (local deployment), use the administration and monitoring tools to review activity, maintain the VM, and manage member access.
+After you deploy NetApp Console local deployment, use the administration and monitoring tools to review activity, maintain the VM, and manage member access.
 
 == Audit activity
 
 Review user and API activity, track the status of Console operations, download audit logs, and export logs to external tools when you need longer retention or additional analysis.
 
-* link:task-audit-console-activity.html[Audit NetApp Console (local deployment) activity]
-* link:task-console-configure-notifications-delivery.html[Set up notifications delivery channels in NetApp Console (local deployment)]
+* link:task-audit-console-activity.html[Audit NetApp Console local deployment activity]
+* link:task-console-configure-notifications-delivery.html[Set up notifications delivery channels in NetApp Console local deployment]
 
 == Licenses and subscriptions
 
@@ -27,11 +27,11 @@ Use the licensing and subscriptions information to understand service entitlemen
 
 link:https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html[Learn about licenses and subscriptions^]
 
-== Maintain and troubleshoot the Console (local deployment) VM
+== Maintain and troubleshoot the Console local deployment VM
 
-Maintain the VM that hosts Console (local deployment), review network and system settings, access diagnostic tools, and troubleshoot issues when the service or agent does not behave as expected.
+Maintain the VM that hosts Console local deployment, review network and system settings, access diagnostic tools, and troubleshoot issues when the service or agent does not behave as expected.
 
-link:task-console-local-vm-config.html[Learn about how to maintain your VCenter or ESXi host for Console (local deployment).]
+link:task-console-local-vm-config.html[Learn about how to maintain your VCenter or ESXi host for Console local deployment.]
 
 
 == Manage users and access
@@ -39,5 +39,5 @@ link:task-console-local-vm-config.html[Learn about how to maintain your VCenter 
 Review member access across your organization, adjust access at the fleet level, and manage security settings such as MFA recovery and service account credentials.
 
 * link:task-iam-manage-roles.html[Manage member access in NetApp Console]
-* link:task-iam-users-fleets-assign.html[View or change fleet access assignments in NetApp Console (local deployment)]
-* link:task-manage-member-security.html[Manage member security in NetApp Console (local deployment)]
+* link:task-iam-users-fleets-assign.html[View or change fleet access assignments in NetApp Console local deployment]
+* link:task-manage-member-security.html[Manage member security in NetApp Console local deployment]

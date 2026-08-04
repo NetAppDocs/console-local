@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-provisioning-agentic.html
 keywords: agentic provisioning, AI, LLM, autonomous, intelligent provisioning, netapp console
-summary: "Use AI-driven agentic provisioning to autonomously fulfill storage requests in NetApp Console (local deployment)."
+summary: "Use AI-driven agentic provisioning to autonomously fulfill storage requests in NetApp Console local deployment."
 ---
-= Provision storage with AI-assisted (agentic) workflows in NetApp Console (local deployment)
+= Provision storage with AI-assisted (agentic) workflows in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,11 +19,11 @@ Use AI-assisted (agentic) provisioning when you want to request storage conversa
 .Required access roles
 Super admin, Organization admin, Folder or fleet admin, or Storage admin. Your AI-assisted actions are limited by the same role-based access as UI-based actions. link:reference-iam-predefined-roles.html[Learn about access roles].
 
-Agentic provisioning requires an LLM integration to be configured and available in your NetApp Console (local deployment) environment.
+Agentic provisioning requires an LLM integration to be configured and available in your NetApp Console local deployment environment.
 
 == Before you begin
 
-- Ensure LLM integration is configured and enabled for your NetApp Console (local deployment).
+- Ensure LLM integration is configured and enabled for your NetApp Console local deployment.
 - Ensure the target fleet contains discovered storage systems.
 - Ensure storage classes are configured and associated with the fleet so the assistant can propose class-aligned plans.
 

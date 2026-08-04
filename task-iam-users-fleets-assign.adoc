@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-iam-users-fleets-assign.html
 keywords: assign members, fleet, folder, access control, roles, storage management, netapp console
-summary: "Audit or change member access assignments for folders and storage fleets in NetApp Console (local deployment)."
+summary: "Audit or change member access assignments for folders and storage fleets in NetApp Console local deployment."
 ---
-= View or change fleet access assignments in NetApp Console (local deployment)
+= View or change fleet access assignments in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: "Audit or change member access assignments for folders and storage flee
 :imagesdir: ./media/
 
 [.lead]
-Audit or change member access assignments for folders and storage fleets in NetApp Console (local deployment). Folder and fleet admins typically work from this view because it shows only the scopes that they administer.
+Audit or change member access assignments for folders and storage fleets in NetApp Console local deployment. Folder and fleet admins typically work from this view because it shows only the scopes that they administer.
 
 .Required access roles
 Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
@@ -22,7 +22,7 @@ Alternatively, you can manage all roles for a particular member across multiple 
 
 == How folder and fleet access works
 
-Console (local deployment) uses role-based access control (RBAC). A role that you assign at the folder level applies to all fleets and subfolders within that folder; a role that you assign at the fleet level applies only to that fleet's resources. link:concept-iam-rbac.html#role-inheritance[Learn more about how access is granted and inherited].
+Console local deployment uses role-based access control (RBAC). A role that you assign at the folder level applies to all fleets and subfolders within that folder; a role that you assign at the fleet level applies only to that fleet's resources. link:concept-iam-rbac.html#role-inheritance[Learn more about how access is granted and inherited].
 
 NOTE: You can't change a role at the fleet level if a member inherits it from a folder or from the organization. To change inherited access, change the role at the higher scope.
 

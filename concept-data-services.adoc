@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: concept-data-services.html
 keywords: data services, data protection, data mobility, backup, replication, netapp console
-summary: "Learn about the data services available in NetApp Console (local deployment) for protecting and managing your data."
+summary: "Learn about the data services available in NetApp Console local deployment for protecting and managing your data."
 ---
-= Learn about data services in NetApp Console (local deployment)
+= Learn about data services in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,4 +12,4 @@ summary: "Learn about the data services available in NetApp Console (local deplo
 :imagesdir: ./media/
 
 [.lead]
-Learn about the data services available in the NetApp Console (local deployment) for protecting and managing your data, including backup, replication, and data mobility.
+Learn about the data services available in the NetApp Console local deployment for protecting and managing your data, including backup, replication, and data mobility.

@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: concept-deploy-netapp-console-local.html
 keywords: deploy, install, vCenter, Linux, high availability, deployment options, netapp console local
-summary: "Learn about deployment options for NetApp Console (local deployment), including vCenter and Linux installations."
+summary: "Learn about deployment options for NetApp Console local deployment, including vCenter and Linux installations."
 ---
-= Deployment options for NetApp Console (local deployment)
+= Deployment options for NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: "Learn about deployment options for NetApp Console (local deployment), 
 :imagesdir: ./media/
 
 [.lead]
-NetApp Console (local deployment) can be deployed in your on-premises environment using either a VMware vCenter appliance.
+NetApp Console local deployment can be deployed in your on-premises environment using either a VMware vCenter appliance.
 
 == Deployment options
 
@@ -20,14 +20,14 @@ Choose the deployment method that fits your environment.
 
 === Install in your vCenter environment
 
-Deploy NetApp Console (local deployment) as a virtual appliance in your VMware vCenter environment using a pre-configured OVA image.
+Deploy NetApp Console local deployment as a virtual appliance in your VMware vCenter environment using a pre-configured OVA image.
 
-link:task-install-agent-on-prem-ova.html[Install NetApp Console (local deployment) in your vCenter environment]
+link:task-install-agent-on-prem-ova.html[Install NetApp Console local deployment in your vCenter environment]
 
 
 == Next steps
 
 After deployment, complete the following tasks to get started:
 
-* link:task-add-systems.html[Add storage systems to NetApp Console (local deployment)]
-* link:task-iam-manage-members-permissions.html[Add members and assign roles in NetApp Console (local deployment)]
+* link:task-add-systems.html[Add storage systems to NetApp Console local deployment]
+* link:task-iam-manage-members-permissions.html[Add members and assign roles in NetApp Console local deployment]

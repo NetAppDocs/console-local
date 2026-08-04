@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-storage-class-fleet-associate.html
 keywords: associate, storage class, fleet, assign, netapp console
-summary: "Associate a storage class with a fleet in NetApp Console (local deployment) to apply consistent storage policies."
+summary: "Associate a storage class with a fleet in NetApp Console local deployment to apply consistent storage policies."
 ---
-= Associate storage classes with fleets in NetApp Console (local deployment)
+= Associate storage classes with fleets in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,7 +14,7 @@ summary: "Associate a storage class with a fleet in NetApp Console (local deploy
 [.lead]
 // Jira: SPSPM-3309
 
-Associate storage classes with fleets in NetApp Console (local deployment) to enforce environment-specific standards, control which options operators can use, and simplify compliance checks against assigned classes.
+Associate storage classes with fleets in NetApp Console local deployment to enforce environment-specific standards, control which options operators can use, and simplify compliance checks against assigned classes.
 
 .Required access roles
 Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].

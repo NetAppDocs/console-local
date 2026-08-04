@@ -5,7 +5,7 @@ keywords: fleets, access, resources, user roles, iam, identity and access manage
 summary: Manage member access in your Console organization. Assign roles to set permissions. Remove members when they leave.
 ---
 
-= Manage member access in NetApp Console (local deployment)
+= Manage member access in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -32,7 +32,7 @@ NetApp Console uses role-based access control (RBAC) to manage member permission
 === Using role inheritance
 A role that you assign at the organization or folder level is inherited by the child scopes beneath it, so change an inherited assignment at the higher scope where you originally granted it.
 
-link:concept-iam-rbac.html#role-inheritance[Learn more about how role inheritance works in NetApp Console (local deployment)].
+link:concept-iam-rbac.html#role-inheritance[Learn more about how role inheritance works in NetApp Console local deployment].
 
 
 
@@ -97,7 +97,7 @@ Remove a member when they leave the organization or change roles in a way that e
 [NOTE] 
 ====
 .Directory users
-Removing a user from your directory prevents that user from authenticating. You should also remove the user from your Console organization to keep the member list accurate and to remove any roles that were assigned in Console (local deployment).
+Removing a user from your directory prevents that user from authenticating. You should also remove the user from your Console organization to keep the member list accurate and to remove any roles that were assigned in Console local deployment.
 
 ====
 

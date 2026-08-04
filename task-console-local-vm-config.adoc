@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: task-console-local-vm-config.html
 keywords: Console local VM, vcenter, esxi, increase cpu, increase ram, vm maintenance, Console local maintenance, Console local operating system, Console local host
-summary: You can make changes to your existing VCenter or ESXi host after you deploy Console (local deployment). For example, you can increase the CPU or RAM of the VM instance that hosts Console (local deployment). 
+summary: You can make changes to your existing VCenter or ESXi host after you deploy Console local deployment. For example, you can increase the CPU or RAM of the VM instance that hosts Console local deployment. 
 ---
 
-= Maintain your vCenter or ESXi host for NetApp Console (local deployment)
+= Maintain your vCenter or ESXi host for NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,12 +13,12 @@ summary: You can make changes to your existing VCenter or ESXi host after you de
 :imagesdir: ./media/
 
 [.lead]
-You can make changes to your existing VCenter or ESXi host after you deploy the Console (local deployment). For example, you can increase the CPU or RAM of the VM instance that hosts the Console (local deployment). 
+You can make changes to your existing VCenter or ESXi host after you deploy the Console local deployment. For example, you can increase the CPU or RAM of the VM instance that hosts the Console local deployment. 
 
 Perform these maintenance tasks using the VM web console:
 
 * Increase disk size
-* Restart the Console (local deployment)
+* Restart the Console local deployment
 * Update static routes
 * Update search domains
 
@@ -31,7 +31,7 @@ You can access the maintenance console from the VSphere client.
 
 .Steps
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console (local deployment).
+. Select the VM instance that hosts the Console local deployment.
 . Select *Launch Web Console*.
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 
@@ -42,20 +42,20 @@ You can change the password for the `maint` user.
 
 .Steps
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console (local deployment).
+. Select the VM instance that hosts the Console local deployment.
 . Select *Launch Web Console*.
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 . Enter `1` to view the `System Configuration` menu.
 . Enter `1` to change the maintenance user password and follow the on-screen prompts.
 
 === Increase the CPU or RAM of the VM instance
-You can increase the CPU or RAM of the VM instance that hosts Console (local deployment).
+You can increase the CPU or RAM of the VM instance that hosts Console local deployment.
 
 Edit the VM instance settings in your VCenter or ESXi host, then use the maintenance Console to apply the changes.
 
 .Steps in the VSphere client
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console (local deployment).
+. Select the VM instance that hosts the Console local deployment.
 . Right-click the VM instance and select *Edit Settings*.
 . Increase the hard drive space used for /opt or the /var partition.
 .. Select *Hard Disk 2* to increase the hard drive space used for /opt.
@@ -65,33 +65,33 @@ Edit the VM instance settings in your VCenter or ESXi host, then use the mainten
 .Steps in the maintenance console
 
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts Console (local deployment).
+. Select the VM instance that hosts Console local deployment.
 . Select *Launch Web Console*.
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 . Enter `1 to view the `System Configuration` menu.
 . Enter `2` and follow the on-screen prompts. The console scans for new settings and increases the size of the partitions.
 
 
-=== View network settings for the Console (local deployment) VM
+=== View network settings for the Console local deployment VM
 
-View the network settings for the Console (local deployment) VM in the VSphere client to confirm or troubleshoot network issues. You can only view (not update) the following network settings: IP address and DNS details.
+View the network settings for the Console local deployment VM in the VSphere client to confirm or troubleshoot network issues. You can only view (not update) the following network settings: IP address and DNS details.
 
 .Steps
 
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console (local deployment).
+. Select the VM instance that hosts the Console local deployment.
 . Select *Launch Web Console*.
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 . Enter `2` to view the `Network Configuration` menu.
 . Enter a number between 1 and 6 to view the corresponding network settings. 
 
-=== Update the static routes for the Console (local deployment) VM
-Add, update, or remove static routes for the Console (local deployment) VM as needed.
+=== Update the static routes for the Console local deployment VM
+Add, update, or remove static routes for the Console local deployment VM as needed.
 
 .Steps
 
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console (local deployment).
+. Select the VM instance that hosts the Console local deployment.
 . Select *Launch Web Console*.
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 . Enter `2` to view the `Network Configuration` menu.
@@ -100,13 +100,13 @@ Add, update, or remove static routes for the Console (local deployment) VM as ne
 . Optionally, make additional changes.
 . Enter `9` to commit your changes.
 
-=== Update domain search settings for the Console (local deployment) VM
-You can update the search domain settings for the Console (local deployment) VM.
+=== Update domain search settings for the Console local deployment VM
+You can update the search domain settings for the Console local deployment VM.
 
 .Steps
 
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console (local deployment).
+. Select the VM instance that hosts the Console local deployment.
 . Select *Launch Web Console*.
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 . Enter `2`` to view the `Network Configuration` menu.
@@ -118,21 +118,21 @@ You can update the search domain settings for the Console (local deployment) VM.
 
 
 [[connect-vcenter-host]]
-=== Access the Console (local deployment) diagnostic tools
+=== Access the Console local deployment diagnostic tools
 
-Access diagnostic tools to troubleshoot issues with the Console (local deployment). NetApp Support may ask you to do this when troubleshooting issues.
+Access diagnostic tools to troubleshoot issues with the Console local deployment. NetApp Support may ask you to do this when troubleshooting issues.
 
 .Steps
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console (local deployment).
+. Select the VM instance that hosts the Console local deployment.
 . Select *Launch Web Console*.
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 . Enter `3` to view the Support and Diagnostics menu.
 . Enter `1` to access the diagnostic tools and follow the on-screen prompts.
 
 
-=== Access the Console (local deployment) diagnostic tools remotely
-You can access diagnostic tools remotely with a tool such as Putty. Enable SSH access to the Console (local deployment) VM by assigning a one-time password.
+=== Access the Console local deployment diagnostic tools remotely
+You can access diagnostic tools remotely with a tool such as Putty. Enable SSH access to the Console local deployment VM by assigning a one-time password.
 
 SSH access enables advanced terminal features like copy and paste.
 
@@ -140,12 +140,12 @@ SSH access enables advanced terminal features like copy and paste.
 
 .Steps
 . Open the VSphere client and log in to your VCenter.
-. Select the VM instance that hosts the Console (local deployment).
+. Select the VM instance that hosts the Console local deployment.
 . Select *Launch Web Console*.
 . Log in to the VM instance using the user name and password that you specified when you created the VM instance. The username is `maint` and the password is the one that you specified when you created the VM instance.
 . Enter `3` to view the `Support and Diagnostics` menu.
 . Enter `2` to access the diagnostic tools and follow the on-screen prompts to configure a one-time password that expires in 24 hours.
-. Use an SSH tool such as Putty to connect to the Console (local deployment) VM using the user name `diag` and the one-time password that you configured.
+. Use an SSH tool such as Putty to connect to the Console local deployment VM using the user name `diag` and the one-time password that you configured.
 
 
 

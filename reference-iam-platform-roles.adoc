@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: reference-iam-platform-roles.html
 keywords: predefined roles, iam roles, organization admin, folder or fleet admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, bluexp
-summary: Assign platform roles to users to grant permissions to manage NetApp Console (local deployment), assign roles, add users, and manage federations.
+summary: Assign platform roles to users to grant permissions to manage NetApp Console local deployment, assign roles, add users, and manage federations.
 ---
 
-= NetApp Console (local deployment) platform access roles
+= NetApp Console local deployment platform access roles
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,18 +13,18 @@ summary: Assign platform roles to users to grant permissions to manage NetApp Co
 :imagesdir: ./media/
 
 [.lead]
-Assign platform roles to users to grant permissions to manage the NetApp Console (local deployment), assign roles, add users, create fleets, and manage user authentication.
+Assign platform roles to users to grant permissions to manage the NetApp Console local deployment, assign roles, add users, create fleets, and manage user authentication.
 
 .Example for organization roles for a large multi-national organization
 XYZ Corporation organizes data storage access by region—North America, Europe, and Asia-Pacific—providing regional control with centralized oversight.
 
-The *Organization admin* in XYZ Corporation's Console (local deployment) creates an initial organization and separate folders for each region. The *Folder or fleet admin* for each region organizes fleets (with associated resources) within the region's folder.
+The *Organization admin* in XYZ Corporation's Console local deployment creates an initial organization and separate folders for each region. The *Folder or fleet admin* for each region organizes fleets (with associated resources) within the region's folder.
 
 Regional admins with the *Folder or fleet admin* role actively manage their folders by adding resources and users. These regional admins can also add, remove, or rename folders and fleets they manage. The *Organization admin* inherits permissions for any new resources, maintaining visibility of storage usage across the entire organization.
 
 Within the same organization, one user is assigned the *Federation admin* role to manage the federation of the organization with their corporate IdP. This user can add or remove federated organizations, but cannot manage users or resources within the organization. The *Organization admin* assigns a user the *Federation viewer* role to check federation status and view federated organizations.
 
-The following tables indicate the actions that each Console (local deployment) platform role can perform.
+The following tables indicate the actions that each Console local deployment platform role can perform.
 
 
 
@@ -40,7 +40,7 @@ The following tables indicate the actions that each Console (local deployment) p
 
 
 
-| Create, modify or delete systems from the Console (local deployment) (add or discover systems) |	Yes | Yes 
+| Create, modify or delete systems from the Console local deployment (add or discover systems) |	Yes | Yes 
 
 | Create folders and fleets, including deleting | Yes | No
 

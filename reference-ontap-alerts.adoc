@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: reference-ontap-alerts.html
 keywords: ONTAP alerts, EMS alerts, metric alerts, alert categories, netapp console, alerts reference
-summary: "Reference for ONTAP alerts monitored in NetApp Console (local deployment), organized by impact category."
+summary: "Reference for ONTAP alerts monitored in NetApp Console local deployment, organized by impact category."
 ---
-= ONTAP alerts reference in NetApp Console (local deployment)
+= ONTAP alerts reference in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: "Reference for ONTAP alerts monitored in NetApp Console (local deployme
 :imagesdir: ./media/
 
 [.lead]
-This reference lists the ONTAP alerts that NetApp Console (local deployment) can monitor, organized by impact category.
+This reference lists the ONTAP alerts that NetApp Console local deployment can monitor, organized by impact category.
 
 == Severity mapping
 

@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: task-dashboard-get-started.html
 keywords: dashboards, quick start, get started, custom dashboards, predefined dashboards, monitoring, netapp console local
-summary: "Get started with dashboards in NetApp Console (local deployment) by reviewing Home page and predefined dashboards, creating custom dashboards, and keeping them current."
+summary: "Get started with dashboards in NetApp Console local deployment by reviewing Home page and predefined dashboards, creating custom dashboards, and keeping them current."
 ---
 
-= Get started with dashboards in NetApp Console (local deployment)
+= Get started with dashboards in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -24,8 +24,8 @@ All roles. Dashboards show only the resources you are authorized to view. If you
 Use the Home page dashboard to review organization-level capacity, alerts, performance, and data protection status. 
 
 [role="quick-margin-list"]
-* link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
-* link:concept-monitor-storage.html[Learn about storage monitoring in NetApp Console (local deployment)]
+* link:task-storage-dashboard.html[View Home page metrics in NetApp Console local deployment]
+* link:concept-monitor-storage.html[Learn about storage monitoring in NetApp Console local deployment]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Review other predefined dashboards
 
@@ -33,7 +33,7 @@ Use the Home page dashboard to review organization-level capacity, alerts, perfo
 Open *Storage > Dashboards* to review predefined dashboards for additional role-specific views.
 
 [role="quick-margin-list"]
-* link:task-dashboard-manage.html[Manage dashboards in NetApp Console (local deployment)]
+* link:task-dashboard-manage.html[Manage dashboards in NetApp Console local deployment]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Build custom dashboards for focused monitoring
 
@@ -42,7 +42,7 @@ Create custom dashboards when you need targeted views for selected resources, me
 
 [role="quick-margin-list"]
 * link:task-dashboard-create.html[Create a custom dashboard]
-* link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console (local deployment)]
+* link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console local deployment]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Keep dashboards current
 
@@ -50,10 +50,10 @@ Create custom dashboards when you need targeted views for selected resources, me
 Update dashboards as priorities change by editing, duplicating, or deleting custom dashboards.
 
 [role="quick-margin-list"]
-* link:task-dashboard-manage.html[Manage dashboards in NetApp Console (local deployment)]
+* link:task-dashboard-manage.html[Manage dashboards in NetApp Console local deployment]
 * link:reference-dashboard-card-templates.html[Custom dashboard cards and metrics reference]
 
 .Related information
 
-* link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console (local deployment)]
-* link:task-storage-dashboard.html[View Home page metrics in NetApp Console (local deployment)]
+* link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console local deployment]
+* link:task-storage-dashboard.html[View Home page metrics in NetApp Console local deployment]

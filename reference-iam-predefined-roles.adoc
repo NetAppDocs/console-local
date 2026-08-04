@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: reference-iam-predefined-roles.html
 keywords: predefined roles, iam roles, organization admin, folder or fleet admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, access roles, rbac, bluexp
-summary: NetApp Console (local deployment) identity and access management includes predefined roles that you can assign to the members of your organization.
+summary: NetApp Console local deployment identity and access management includes predefined roles that you can assign to the members of your organization.
 ---
 
-= NetApp Console (local deployment) access roles
+= NetApp Console local deployment access roles
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,12 +13,12 @@ summary: NetApp Console (local deployment) identity and access management includ
 :imagesdir: ./media/
 
 [.lead]
-Identity and access management (IAM) in NetApp Console (local deployment) provides predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes. Roles fall into the following categories: platform, application, and data service.
+Identity and access management (IAM) in NetApp Console local deployment provides predefined roles that you can assign to the members of your organization across different levels of your resource hierarchy. Before you assign these roles, you should understand the permissions that each role includes. Roles fall into the following categories: platform, application, and data service.
 
 
 [[platform-roles]]
 == Platform roles
-Platform roles grant NetApp Console (local deployment) administration permissions, including role assignment and user management. The Console (local deployment) has several platform roles. 
+Platform roles grant NetApp Console local deployment administration permissions, including role assignment and user management. The Console local deployment has several platform roles. 
 
 [cols="1,2",options="header"]
 |===

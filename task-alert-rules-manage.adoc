@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-alert-rules-manage.html
 keywords: notifications, alerts, notification rules, alert rules, severity, impact area, email, webhook, mute, netapp console local
-summary: "Configure notification rules in NetApp Console (local deployment) to control which alerts raise notifications, who receives them, and how they are delivered."
+summary: "Configure notification rules in NetApp Console local deployment to control which alerts raise notifications, who receives them, and how they are delivered."
 ---
-= Configure notification rules for alerts in NetApp Console (local deployment)
+= Configure notification rules for alerts in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,21 +14,21 @@ summary: "Configure notification rules in NetApp Console (local deployment) to c
 [.lead]
 // Jira: SPSPM-3316, SPSPM-3496
 
-Configure notification rules in the NetApp Console (local deployment) to control which alerts raise notifications, who receives them, and how they are delivered. 
+Configure notification rules in the NetApp Console local deployment to control which alerts raise notifications, who receives them, and how they are delivered. 
 
 .Required access roles
 Super admin, Organization admin, Storage admin, Operations support analyst, or any of the admin roles for NetApp Backup and Recovery. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 Use notification rules to route the right alerts to the right people through the channels that fit your environment, while reducing noise from alerts that aren't relevant to you.
 
-A notification rule matches alerts based on conditions you define—such as service, severity, and impact area—and then delivers a notification through the channels you select. The Console (local deployment) includes default notification rules that you can view and adjust, and you can create your own custom rules. You can also mute rules to temporarily suppress notifications during planned events like maintenance windows.
+A notification rule matches alerts based on conditions you define—such as service, severity, and impact area—and then delivers a notification through the channels you select. The Console local deployment includes default notification rules that you can view and adjust, and you can create your own custom rules. You can also mute rules to temporarily suppress notifications during planned events like maintenance windows.
 
 include::_include/ontap-alerts-ems.adoc[]
 
 == Before you begin
 
-* To deliver notifications by email, your organization admin must configure an email server in the Console (local deployment). To deliver notifications to an external system, your organization admin must configure a webhook. For the steps, see link:task-console-configure-notifications-delivery.html[Configure notification delivery].
-* The Console (local deployment) Notification Center displays notifications by default, so no additional setup is required for in-console notifications.
+* To deliver notifications by email, your organization admin must configure an email server in the Console local deployment. To deliver notifications to an external system, your organization admin must configure a webhook. For the steps, see link:task-console-configure-notifications-delivery.html[Configure notification delivery].
+* The Console local deployment Notification Center displays notifications by default, so no additional setup is required for in-console notifications.
 
 == View notification rules
 
@@ -58,7 +58,7 @@ In this example, you create a rule with the following settings:
 * *System*: <system_name>
 * *Delivery method*: Email
 
-With this rule in place, Console (local deployment) sends an email to all storage admins for the specified system when a critical capacity alert occurs. Alerts with a lower severity, such as warning or informational, don't generate an email, so the team can focus on the issues that require urgent attention.
+With this rule in place, Console local deployment sends an email to all storage admins for the specified system when a critical capacity alert occurs. Alerts with a lower severity, such as warning or informational, don't generate an email, so the team can focus on the issues that require urgent attention.
 
 .Steps
 . From the left navigation, select *Health > Alerts*.
@@ -77,7 +77,7 @@ With this rule in place, Console (local deployment) sends an email to all storag
 +
 * *Email*: sends alert emails to users who have the selected roles. Requires a configured email server.
 * *Webhook*: sends alert data to an external system. Requires selecting a configured webhook integration.
-* *Console (local deployment) Notification Center*: displays real-time alerts in the Console (local deployment) for users who have the selected roles.
+* *Console local deployment Notification Center*: displays real-time alerts in the Console local deployment for users who have the selected roles.
 . Optionally, to suppress notifications from this rule during a planned period, such as a maintenance window, set a *Mute notifications* schedule, and choose a recurrence if you want the mute period to repeat.
 . Select *Create*.
 

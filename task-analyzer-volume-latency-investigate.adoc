@@ -4,7 +4,7 @@ permalink: task-analyzer-volume-latency-investigate.html
 keywords: latency, slow performance, delay center, workload analyzer, investigate, netapp console
 summary: "Investigate latency on a volume using the Workload Analyzer to identify which part of the I/O path is causing slow response times."
 ---
-= Investigate high latency on a volume in NetApp Console (local deployment)
+= Investigate high latency on a volume in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: "Investigate latency on a volume using the Workload Analyzer to identif
 :imagesdir: ./media/
 
 [.lead]
-Use Workload Analyzer in NetApp Console (local deployment) to find the source of a volume's slow response times.
+Use Workload Analyzer in NetApp Console local deployment to find the source of a volume's slow response times.
 
 When application performance degrades, identify which part of the I/O path is causing the slowdown. The latency analysis section breaks down response time by delay center so you can distinguish between network issues, data processing overhead, aggregate contention, and other contributors.
 
@@ -60,4 +60,4 @@ The delay center with the highest contribution usually points to a resource that
 
 .After you finish
 
-If a configuration or placement issue caused the problem and Console (local deployment) can resolve it, the alert on the volume may offer a Fix-It option. See link:task-remediation-guided.html[Remediate with guided steps]. Refer to link:reference-workload-analyzer-metrics.html[Workload Analyzer metrics reference] if you need detailed descriptions of QoS limit lines, resource utilization indicators, or forecast behavior while you investigate.
+If a configuration or placement issue caused the problem and Console local deployment can resolve it, the alert on the volume may offer a Fix-It option. See link:task-remediation-guided.html[Remediate with guided steps]. Refer to link:reference-workload-analyzer-metrics.html[Workload Analyzer metrics reference] if you need detailed descriptions of QoS limit lines, resource utilization indicators, or forecast behavior while you investigate.

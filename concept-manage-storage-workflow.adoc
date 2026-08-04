@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-manage-storage-workflow.html
 keywords: storage management, storage classes, provisioning, storage class policies, netapp console local
-summary: "Learn about managing storage in NetApp Console (local deployment), including storage classes, policies, and provisioning methods."
+summary: "Learn about managing storage in NetApp Console local deployment, including storage classes, policies, and provisioning methods."
 ---
 = Storage management workflow overview
 :hardbreaks:
@@ -18,7 +18,7 @@ NetApp Console (local) helps you manage ONTAP storage at scale using consistent,
 
 This page is the starting point for storage admins managing ONTAP storage using fleets, storage class policies, and storage classes. It organizes the end-to-end workflow and links to detailed procedures.
 
-If you're new to these concepts, start with [Learn about managing storage with NetApp Console (local deployment)](concept-manage-storage.html).
+If you're new to these concepts, start with [Learn about managing storage with NetApp Console local deployment](concept-manage-storage.html).
 
 == Prerequisites and dependencies
 

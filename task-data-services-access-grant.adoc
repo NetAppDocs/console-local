@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-data-services-access-grant.html
 keywords: grant access, data services, permissions, roles, netapp console local
-summary: "Grant access to data services in NetApp Console (local deployment) so the right users and teams can use those services."
+summary: "Grant access to data services in NetApp Console local deployment so the right users and teams can use those services."
 ---
-= Grant access to data services in NetApp Console (local deployment)
+= Grant access to data services in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: "Grant access to data services in NetApp Console (local deployment) so 
 :imagesdir: ./media/
 
 [.lead]
-Grant access to data services in NetApp Console (local deployment) so the right users and teams can use those services.
+Grant access to data services in NetApp Console local deployment so the right users and teams can use those services.
 
 .Required access roles
 Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
