@@ -27,7 +27,7 @@ include::_include/ontap-alerts-ems.adoc[]
 
 == Before you begin
 
-* To deliver notifications by email, your organization admin must configure an email server in the Console local deployment. To deliver notifications to an external system, your organization admin must configure a webhook. For the steps, see link:task-console-configure-notifications-delivery.html[Configure notification delivery].
+* To deliver notifications by email, your Organization admin must configure an email server in the Console local deployment. To deliver notifications to an external system, your Organization admin must configure a webhook. For the steps, see link:task-console-configure-notifications-delivery.html[Configure notification delivery].
 * The Console local deployment Notification Center displays notifications by default, so no additional setup is required for in-console notifications.
 
 == View notification rules
@@ -59,7 +59,7 @@ In this example, you create a rule with the following settings:
 
 With this rule in place, storage admins see a notification in the Console for every critical alert across all systems. This rule acts as a baseline that you can supplement with more targeted rules.
 
-.Example of a targeted notification rule for storage admin capacity alerts
+.Example of a targeted notification rule for Storage admin capacity alerts
 Suppose your storage admins need to respond immediately to critical capacity issues on a specific production system, but you don't want lower-severity alerts to flood their inboxes. You can create a targeted rule that emails storage admins only when a critical capacity alert fires on that system.
 
 In this example, you create a rule with the following settings:

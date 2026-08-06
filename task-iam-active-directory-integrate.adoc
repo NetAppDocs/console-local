@@ -15,11 +15,13 @@ summary: "Integrate NetApp Console local deployment with Active Directory for di
 Integrate NetApp Console local deployment with Active Directory for directory-backed sign-in and user lookup. Use your directory service to authenticate users, then assign access to those users in NetApp Console local deployment.
 
 .Required access roles
-Super admin or organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+Super admin or Organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
-When you integrate with Active Directory, Console local deployment authenticates users through your existing directory. After you add a directory user to your organization, assign Console access roles to control what that user can access.
+When you integrate with Active Directory, Console local deployment authenticates users through your existing directory. After you add a directory user, assign Console access roles to control what that user can access.
 
 Active Directory integration also helps you meet compliance requirements by applying your existing controls, audit trails, and policies to Console local deployment access.
+
+Directory users do not configure or use multi-factor authentication (MFA). Console local deployment supports MFA only for local users. link:task-manage-member-security.html[Learn how to manage member security settings].
 
 [NOTE]
 ====
@@ -29,7 +31,7 @@ Active Directory integration also helps you meet compliance requirements by appl
 
 == Before you begin
 
-Before you integrate with Active Directory, make sure you have:
+Before you integrate with Active Directory, confirm that you have:
 
 * An Active Directory domain and credentials that can query the directory
 * The LDAP server address and the base distinguished name (DN) for the directory tree
@@ -46,7 +48,7 @@ Before you integrate with Active Directory, make sure you have:
 * The *LDAP host*: hostname or IP address of your LDAP server. For multiple servers, enter the primary.
 * The port: 389 for LDAP or 636 for LDAPS.
 * The *Connection timeout* in milliseconds. The default is 1000 ms.
-. Select *Use SSL/TLS* to use LDAPS. Confirm that your LDAP server supports LDAPS and that Console local deployment can access the required certificates.
+. Select *Use SSL/TLS* to use LDAPS. Confirm that your LDAP server supports LDAPS and that the Console can access the required certificates.
 . Test the connection. If it fails, check the LDAP host, port, network connectivity, and SSL/TLS certificates.
 . After the test succeeds, enter the directory and user details:
 +
@@ -55,11 +57,11 @@ Before you integrate with Active Directory, make sure you have:
 . Select *Add* to save the integration.
 
 .After you finish
-After you save the integration, add directory users to your organization and assign them roles. You must configure and enable at least one Active Directory integration you can add directory users. link:task-iam-manage-members-permissions.html[Learn how to add directory users and assign roles].
+After you save the integration, add directory users to your organization and assign roles. You must configure and enable at least one Active Directory integration before you can add directory users. link:task-iam-manage-members-permissions.html[Learn how to add directory users and assign roles].
 
 == Disable or enable an Active Directory integration
 
-Disable an integration to temporarily suspend directory-backed authentication without deleting the configuration. When a directory service is disabled, role assignment for existing directory users is affected and those users cannot sign in through the directory.
+Disable an integration to temporarily suspend directory-backed authentication without deleting the configuration. When you disable a directory service, directory users cannot sign in through the directory.
 
 .Steps
 . Select *Administration > Identity and access*.

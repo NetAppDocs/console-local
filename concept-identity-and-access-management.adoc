@@ -63,7 +63,7 @@ link:concept-iam-rbac.html#role-inheritance[Learn more about how role-based acce
 
 NetApp Console local deployment uses a hierarchy to group resources and scope access. The organization is at the top, then folders, then fleets, and then the resources (including possible sub-folders) associated with those fleets.
 
-This hierarchy is what makes delegation possible. For example, an organization admin can manage access across the entire organization, while a folder or fleet admin can manage only the resources and members within the part of the hierarchy they own.
+This hierarchy is what makes delegation possible. For example, an Organization admin can manage access across the entire organization, while a Folder or fleet admin can manage only the resources and members within the part of the hierarchy they own.
 
 NetApp Console IAM is built on three types of components: organizational components that define the hierarchy, resources that are assigned within that hierarchy, and members and roles that control who can access what.
 
