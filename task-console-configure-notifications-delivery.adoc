@@ -15,7 +15,7 @@ summary: "Configure the notifications delivery channels for NetApp Console local
 [.lead]
 // Jira: SPSPM-3316, SPSPM-3496
 
-You can set up multiple channels for alert notifications, including email and webhooks.
+In NetApp Console local deployment, you can set up multiple channels for alert notifications, including email and webhooks.
 
 .Required access roles
 Super admin or organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].

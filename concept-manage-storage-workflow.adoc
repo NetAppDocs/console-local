@@ -4,7 +4,7 @@ permalink: concept-manage-storage-workflow.html
 keywords: storage management, storage classes, provisioning, storage class policies, netapp console local
 summary: "Learn about managing storage in NetApp Console local deployment, including storage classes, policies, and provisioning methods."
 ---
-= Storage management workflow overview
+= Storage management workflow overview in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,7 +14,7 @@ summary: "Learn about managing storage in NetApp Console local deployment, inclu
 [.lead]
 // Jira: SPSPM-3309
 
-NetApp Console (local) helps you manage ONTAP storage at scale using consistent, reusable standards. Instead of making one-off decisions for every volume or LUN, you define approved behavior once and apply it across fleets—whether you provision manually, use automated placement, or use AI-assisted plan-and-approve workflows.
+In NetApp Console local deployment, netApp Console (local) helps you manage ONTAP storage at scale using consistent, reusable standards. Instead of making one-off decisions for every volume or LUN, you define approved behavior once and apply it across fleets—whether you provision manually, use automated placement, or use AI-assisted plan-and-approve workflows.
 
 This page is the starting point for storage admins managing ONTAP storage using fleets, storage class policies, and storage classes. It organizes the end-to-end workflow and links to detailed procedures.
 

@@ -14,7 +14,7 @@ summary: "Learn how the Workload Analyzer helps you investigate volume-level per
 [.lead]
 // Jira: SPSPM-3315
 
-Use the Workload Analyzer to view a single volume's behavior over time. You can investigate performance degradation, capacity trends, and resource contention issues from the volume itself, from an alert, or from inventory.
+Use NetApp Console local deployment Workload Analyzer to view a single volume's behavior over time. You can investigate performance degradation, capacity trends, and resource contention issues from the volume itself, from an alert, or from inventory.
 
 == How Workload Analyzer identifies root causes
 

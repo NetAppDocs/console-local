@@ -5,7 +5,7 @@ keywords: storage class drift, compliance, remediation, alerts, storage classes,
 summary: "Find, analyze, and remediate storage class drift in NetApp Console local deployment."
 ---
 
-= Remediate storage class drift
+= Remediate storage class drift in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: "Find, analyze, and remediate storage class drift in NetApp Console loc
 :imagesdir: ./media/
 
 [.lead]
-Find drift-related alerts, analyze the drift findings, and remediate workloads that no longer match their storage class intent.
+In NetApp Console local deployment, find drift-related alerts, analyze the drift findings, and remediate workloads that no longer match their storage class intent.
 
 .Required roles
 Storage admin (or equivalent) for the fleet that contains the workload.

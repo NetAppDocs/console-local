@@ -12,7 +12,7 @@ summary: "Reference for all metrics available in the Workload Analyzer, organize
 :imagesdir: ./media/
 
 [.lead]
-The Workload Analyzer shows metrics across six sections. Each metric description explains how the analyzer renders the metric on the chart and what it indicates about volume behavior.
+In NetApp Console local deployment, the Workload Analyzer shows metrics across six sections. Each metric description explains how the analyzer renders the metric on the chart and what it indicates about volume behavior.
 
 
 === QoS reference lines in latency charts

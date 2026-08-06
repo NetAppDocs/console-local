@@ -13,7 +13,7 @@ summary: "Get started with dashboards in NetApp Console local deployment by revi
 :imagesdir: ./media/
 
 [.lead]
-Follow this workflow to monitor from broad to focused views: review the Home page dashboard, review predefined dashboards, create custom dashboards, and keep dashboards current.
+In NetApp Console local deployment, follow this workflow to monitor from broad to focused views: review the Home page dashboard, review predefined dashboards, create custom dashboards, and keep dashboards current.
 
 .Required access roles
 All roles. Dashboards show only the resources you are authorized to view. If you do not see a resource in the list of available resources, you do not have permission to view it.
