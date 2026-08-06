@@ -15,7 +15,7 @@ summary: You can audit user activity (initiated from both the UI and API) from t
 [.lead]
 // Jira: SPSPM-3319
 
-You can audit user activity initiated from both the UI and API from the Audit page, and you can monitor the status of operations and the user who initiated them.
+You can audit user activity initiated from both the UI and API from the Audit page, and you can monitor the status of operations in NetApp Console local deployment and the user who initiated them.
 
 .Required roles
 Super admin, Organization admin, Folder and fleet admin, Operations support analyst, Super viewer, Organization viewer, or Folder and fleet viewer. link:reference-iam-predefined-roles.html[Learn about access roles].

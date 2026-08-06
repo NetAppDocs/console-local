@@ -22,7 +22,7 @@ Use alerts in Console local deployment to:
 
 * Detect capacity, connectivity, data protection, performance, and security issues.
 * Prioritize alerts by severity and impact area.
-* Investigate the source of an alert in System Manager or Workload Analyzer, and apply a guided or automated Fix-It action when one is available.
+* Open an alert in System Manager or Workload Analyzer, then run a guided or automated Fix-It action when the page offers one.
 * Route notifications through email to users with specified access roles, or send alert data to an external system through a webhook.
 * Export the alerts list to a CSV file for offline analysis.
 

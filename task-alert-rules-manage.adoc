@@ -111,6 +111,7 @@ Mute a notification rule to suppress alert delivery during a planned event, such
 You can add multiple mute windows to a single rule and configure each one to recur on a schedule.
 
 .Examples of mute windows
+
 * *One-off maintenance window*: You're running a firmware upgrade on a storage system Saturday night and want to suppress the expected alerts during that window. Set a mute window for Saturday 10:00 PM to Sunday 2:00 AM with no recurrence. When the window expires, notifications resume automatically.
 
 

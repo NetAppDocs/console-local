@@ -120,6 +120,8 @@ When an alert includes a recommended action or Fix It option, use it to move fro
 . Review the alert details, then select the recommended action or *Fix It* option if one is available.
 . Follow the guided steps to apply the remediation and then return to the alert details to confirm the alert state.
 
+If the action resolves the issue, the alert no longer appears as active for that scope. If the alert remains active, review the alert details again and continue the investigation.
+
 == Analyze an alert
 You can analyze an ONTAP alert in Workload Analyzer to understand what triggered it.
 
