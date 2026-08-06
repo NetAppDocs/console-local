@@ -16,15 +16,15 @@ summary: "Find, analyze, and remediate storage class drift in NetApp Console loc
 In NetApp Console local deployment, find drift-related alerts, analyze the drift findings, and remediate workloads that no longer match their storage class intent.
 
 .Required roles
-Storage admin (or equivalent) for the fleet that contains the workload.
+Storage admin
 
 NOTE: You can only view and remediate workloads in fleets where you have permission.
 
 == Remediate drift
 
-When a workload no longer matches its storage class intent, Console local deployment raises an alert. Use the alert to analyze the drift and apply the recommended remediation.
+When a workload no longer matches its storage class intent, NetApp Console local deployment raises an alert. Use the alert to analyze the drift and apply the recommended remediation.
 
-Some remediations can be applied directly from the alert. Other issues might require updating the workload configuration or assigning a different storage class to restore compliance. The remediation workflow indicates the expected impact before changes are applied.
+You can apply some remediations directly from the alert. For other issues, update the workload configuration or assign a different storage class to restore compliance. The remediation workflow shows the expected impact before you apply changes.
 
 .Steps
 
@@ -48,7 +48,7 @@ For configuration drift findings, compare the intended and actual settings to de
 
 . Review the proposed changes and apply the remediation.
 
-. Return to *Storage > Storage classes* and verify that the workload is no longer listed as drifted.
+. Return to *Storage > Storage classes* and verify that the workload no longer appears as drifted.
 +
 Compliance evaluations can take several minutes to reflect recent configuration changes. If the workload is still listed as drifted, return to the alert details page and select *Analyze* to review any remaining findings.
 
