@@ -17,11 +17,15 @@ Integrate NetApp Console local deployment with Active Directory for directory-ba
 .Required access roles
 Super admin or organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
-When you integrate with Active Directory, Console local deployment authenticates users through your existing directory. After you add a directory user to your organization, assign roles in Console local deployment to control what that user can access.
+When you integrate with Active Directory, Console local deployment authenticates users through your existing directory. After you add a directory user to your organization, assign Console access roles to control what that user can access.
 
 Active Directory integration also helps you meet compliance requirements by applying your existing controls, audit trails, and policies to Console local deployment access.
 
-NOTE: Active Directory integration does not create federated groups in Console local deployment, does not synchronize directory-group assignments into Console local deployment, and does not automatically grant access. Administrators still add directory users to the organization and assign roles in Console local deployment.
+[NOTE]
+====
+* Active Directory integration does not create federated groups, does not synchronize directory-group assignments, and does not automatically grant access. Administrators still add directory users to the organization and assign roles in Console local deployment.
+* Only one Active Directory integration is supported at a time. Once an integration is configured, the *Add integration* button is disabled. To switch to a different directory, disable or delete the existing integration first.
+====
 
 == Before you begin
 
@@ -49,3 +53,26 @@ Before you integrate with Active Directory, make sure you have:
 * *Base DN*: the starting point for LDAP queries. For example, for the domain `example.com`, use `DC=example,DC=com`.
 * *User DN*: a user account with permission to query the directory. For example, `CN=ldap-reader,OU=Service Accounts,DC=example,DC=com`.
 . Select *Add* to save the integration.
+
+.After you finish
+After you save the integration, add directory users to your organization and assign them roles. You must configure and enable at least one Active Directory integration you can add directory users. link:task-iam-manage-members-permissions.html[Learn how to add directory users and assign roles].
+
+== Disable or enable an Active Directory integration
+
+Disable an integration to temporarily suspend directory-backed authentication without deleting the configuration. When a directory service is disabled, role assignment for existing directory users is affected and those users cannot sign in through the directory.
+
+.Steps
+. Select *Administration > Identity and access*.
+. Select *Directory services* to open the Federations page.
+. In the integrations list, locate the integration and select the action menu for that row.
+. Select *Disable* to suspend the integration, or *Enable* to restore it.
+
+== Delete an Active Directory integration
+
+Delete an integration to permanently remove the directory service configuration. Before deleting, review any warnings about directory users that are linked to the integration, as their access will be affected.
+
+.Steps
+. Select *Administration > Identity and access*.
+. Select *Directory services* to open the Federations page.
+. In the integrations list, locate the integration and select the action menu for that row.
+. Select *Delete* and confirm the deletion.

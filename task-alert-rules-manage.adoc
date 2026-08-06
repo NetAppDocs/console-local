@@ -44,21 +44,34 @@ The notification rules page is the central place to review and manage every rule
 
 Create a notification rule to define the conditions that trigger a notification and how that notification is delivered.
 
-NOTE: You can't set notification rules for fleets. You can set them only for specific systems.
+NOTE: You can't set notification rules for fleets. You can set them only for specific systems. In large environments with many systems, consider creating broader rules by severity rather than duplicating rules per system—for example, one Critical rule that covers all systems acts as a catch-all, with additional targeted rules for systems that need different routing or recipients.
 
-.Example notification rule for storage admins
-Suppose your storage admins need to respond immediately to critical capacity issues, but you don't want lower-severity alerts to flood their inboxes. You can create a notification rule that emails the storage admins when a critical alert occurs.
+.Example notification rule for Critical alerts across all systems
+Suppose you want to ensure no critical alert goes unnoticed, regardless of which system it originates from. You can create a broad rule that routes all critical alerts to the Console Notification Center for storage admins.
 
 In this example, you create a rule with the following settings:
 
-* *ONTAP management service*: Enabled
+* *Services*: All
+* *Severity*: Critical
+* *IAM role*: Storage admin
+* *System*: (Leave this blank to apply to all systems)
+* *Delivery method*: Console Notification Center
+
+With this rule in place, storage admins see a notification in the Console for every critical alert across all systems. This rule acts as a baseline that you can supplement with more targeted rules.
+
+.Example of a targeted notification rule for storage admin capacity alerts
+Suppose your storage admins need to respond immediately to critical capacity issues on a specific production system, but you don't want lower-severity alerts to flood their inboxes. You can create a targeted rule that emails storage admins only when a critical capacity alert fires on that system.
+
+In this example, you create a rule with the following settings:
+
+* *Services*: ONTAP management
 * *Severity*: Critical
 * *Impact area*: Capacity
 * *IAM role*: Storage admin
 * *System*: <system_name>
 * *Delivery method*: Email
 
-With this rule in place, Console local deployment sends an email to all storage admins for the specified system when a critical capacity alert occurs. Alerts with a lower severity, such as warning or informational, don't generate an email, so the team can focus on the issues that require urgent attention.
+With this rule in place, Console local deployment emails all storage admins for the specified system when a critical capacity alert occurs. Alerts with a lower severity, such as warning or informational, don't generate an email, so the team can focus on the issues that require urgent attention.
 
 .Steps
 . From the left navigation, select *Health > Alerts*.
@@ -77,8 +90,8 @@ With this rule in place, Console local deployment sends an email to all storage 
 +
 * *Email*: sends alert emails to users who have the selected roles. Requires a configured email server.
 * *Webhook*: sends alert data to an external system. Requires selecting a configured webhook integration.
-* *Console local deployment Notification Center*: displays real-time alerts in the Console local deployment for users who have the selected roles.
-. Optionally, to suppress notifications from this rule during a planned period, such as a maintenance window, set a *Mute notifications* schedule, and choose a recurrence if you want the mute period to repeat.
+* *Console Notification Center*: displays real-time alerts for users who have the selected roles.
+. Optionally, to suppress notifications from this rule during a planned period, such as a maintenance window, set a *Mute notifications* schedule, and choose a recurrence if you want the mute period to repeat. You can add multiple mute windows per rule, which is useful for recurring maintenance cycles such as weekly patching.
 . Select *Create*.
 
 == Enable or disable a notification rule
@@ -90,6 +103,28 @@ Enable or disable individual notification rules to control which conditions rais
 . Select *Notification settings*.
 . Locate the rule you want to change.
 . Toggle the rule's *Active* switch on or off. The change takes effect immediately.
+
+== Mute a notification rule
+
+Mute a notification rule to suppress alert delivery during a planned event, such as a maintenance window, without disabling the rule. Alerts continue to appear in the Alerts page during the mute period—only the email, webhook, and in-console notifications are suppressed. When the mute window expires, notifications resume automatically.
+
+You can add multiple mute windows to a single rule and configure each one to recur on a schedule.
+
+.Examples of mute windows
+* *One-off maintenance window*: You're running a firmware upgrade on a storage system Saturday night and want to suppress the expected alerts during that window. Set a mute window for Saturday 10:00 PM to Sunday 2:00 AM with no recurrence. When the window expires, notifications resume automatically.
+
+
+* *Recurring weekly patching window*: Your team patches systems every Sunday from midnight to 4:00 AM. Add a mute window with weekly recurrence so notifications are suppressed automatically each week without manual intervention. If a second system has its own patching schedule at a different time, add a second mute window to the same rule with its own start time and recurrence.
+
+.Steps
+. From the left navigation, select *Health > Alerts*.
+. Select *Notification rules*.
+. In the rules list, locate the rule you want to mute and select the action menu for that rule.
+. Select *Edit*.
+. In the *Mute notifications* section, set the start and end date and time for the mute window.
+. Optionally, select a recurrence to repeat the window on a schedule.
+. To add additional mute windows, select *Add mute window* and repeat the previous steps.
+. Select *Save*.
 
 == Delete a notification rule
 
