@@ -18,6 +18,7 @@ Use Workload Analyzer in NetApp Console local deployment to investigate why a vo
 
 When a volume is filling up or snapshot copies are consuming more space than expected, examine capacity and snapshot trends over time. The capacity analysis section shows how physical and available space change, breaks down storage efficiency savings, and projects when the volume will reach a capacity threshold.
 
+If you open the analyzer from an alert or from volume inventory, the volume is already selected and you can focus on capacity trends and the forecast window.
 
 .Steps
 
@@ -25,7 +26,7 @@ When a volume is filling up or snapshot copies are consuming more space than exp
 +
 * From the *Health* menu, select *Workload Analyzer*, then search for and select the volume you want to investigate in the *Volume* field.
 * From the *Storage > Fleets > Inventory* page, navigate to a volume you want to analyze and select *Analyze* from the action menu.
-* From the *Alerts > Overview* page, select a capacity-related alert for the volume you want to investigate, then select *Analyze* from the alert details.
+* From the *Alerts > Overview* page, select an alert for the volume you want to investigate, then select *Analyze* from the alert details.
 
 . Set the *Time Range* to cover the period of capacity growth, then select *Analyze*.
 
@@ -49,7 +50,6 @@ When snapshot consumption exceeds the reserve, snapshots begin consuming space f
 
 . Enable *Show Forecast* to project when the volume will reach a warning or critical capacity threshold.
 +
-// ENGINEERING REVIEW: Confirm the capacity forecast minimum-data requirement and the "almost full" threshold for Console local deployment. The following values are carried over from Active IQ Unified Manager and may differ.
 The capacity forecast requires at least 10 days of historical data. When fewer than 30 days of capacity remain before the volume is full, the analyzer identifies the storage as almost full. The forecast displays an insight message with an estimated time to breach.
 
 .After you finish
@@ -59,4 +59,4 @@ Use the capacity trends you observe to decide what to do next:
 * If available capacity is trending toward full, consider increasing the volume size, enabling autogrow, or moving data off the volume.
 * If snapshot used capacity is exceeding the reserve, review your snapshot policy and retention to reclaim space.
 * If the storage efficiency ratio is dropping, review whether the workload's data type or inline efficiency settings are reducing savings. Use link:reference-workload-analyzer-metrics.html[Workload Analyzer metrics reference] for detailed descriptions of capacity, snapshot, and efficiency metrics.
-* If the volume has a capacity-related alert that Console local deployment can resolve, the alert may offer a Fix-It option. See link:task-remediation-guided.html[Remediate with guided steps].
+* If the volume has a capacity-related alert that Console local deployment can resolve, the alert might offer a Fix-It option. See link:task-remediation-guided.html[Remediate with guided steps].

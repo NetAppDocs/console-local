@@ -33,6 +33,7 @@ Use the Audit page to identify who performed an action or its status.
 The Audit page shows the actions that users completed within your organization. For example, you can verify who added a member to an organization or that a fleet was deleted successfully, as well as see other storage management actions that users performed in your organization.
 
 The audit logs show activity for the following services:
+
 * Tenancy: actions related to managing your organization, such as adding users, creating fleets, and associating resources.
 * Storage-management: actions related to managing your storage resources.
 * Federation: actions related to managing federations, such as creating federations and adding or removing federated organizations.

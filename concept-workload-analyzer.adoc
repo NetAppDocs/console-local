@@ -14,11 +14,13 @@ summary: "Learn how the Workload Analyzer helps you investigate volume-level per
 [.lead]
 // Jira: SPSPM-3315
 
-Use the Workload Analyzer to view a single volume's behavior over time. You can investigate performance degradation, capacity trends, and resource contention issues.
+Use the Workload Analyzer to view a single volume's behavior over time. You can investigate performance degradation, capacity trends, and resource contention issues from the volume itself, from an alert, or from inventory.
 
 == How Workload Analyzer identifies root causes
 
 Use the Workload Analyzer to correlate metrics from a single volume across six sections so you can identify root causes quickly. Select a volume and a time range to view events, performance, and capacity together within the same window. This view can help you determine whether storage is the likely source of an application issue or whether another layer, such as networking, is causing the problem.
+
+The analyzer is most useful when you already know which volume is affected. If you open it from an alert or from volume inventory, Console local deployment opens the analyzer with the volume selected so you can focus on the analysis window and the charts.
 
 Review the capacity section as part of this assessment. When an ONTAP system is more than 85% full, the high utilization can itself cause performance issues, so low available capacity can explain latency that the performance charts alone don't account for.
 
@@ -32,7 +34,9 @@ You can open the Workload Analyzer in several ways:
 
 * From the *Health* menu, select *Workload Analyzer*, then search for and select the volume you want to investigate in the *Volume* field.
 * From the *Storage > Fleets > Inventory* page, navigate to a volume you want to analyze and select *Analyze* from the action menu.
-* From the *Alerts > Overview* page, select a capacity-related alert for the volume you want to investigate, then select *Analyze* from the alert details.
+* From the *Alerts > Overview* page, select an alert for the volume you want to investigate, then select *Analyze* from the alert details.
+
+You can also analyze LUNs, but they show fewer statistics than volumes.
 
 
 == Analyze latency, throughput, and storage capacity

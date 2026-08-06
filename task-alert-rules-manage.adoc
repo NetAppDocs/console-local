@@ -14,12 +14,12 @@ summary: "Configure notification rules in NetApp Console local deployment to con
 [.lead]
 // Jira: SPSPM-3316, SPSPM-3496
 
-Configure notification rules in the NetApp Console local deployment to control which alerts raise notifications, who receives them, and how they are delivered. 
+Configure notification rules in NetApp Console local deployment to control which alerts raise notifications, who receives them, and how they are delivered.
 
 .Required access roles
 Super admin, Organization admin, Storage admin, Operations support analyst, or any of the admin roles for NetApp Backup and Recovery. link:reference-iam-predefined-roles.html[Learn about access roles].
 
-Use notification rules to route the right alerts to the right people through the channels that fit your environment, while reducing noise from alerts that aren't relevant to you.
+Use notification rules to route the right alerts to the right people through the channels that fit your environment, while reducing noise from alerts that aren't relevant to you. Notification rules complement the Alerts page: you investigate or remediate the alert in the Alerts workflow, then use rules to control how similar alerts are delivered in the future.
 
 A notification rule matches alerts based on conditions you define—such as service, severity, and impact area—and then delivers a notification through the channels you select. The Console local deployment includes default notification rules that you can view and adjust, and you can create your own custom rules. You can also mute rules to temporarily suppress notifications during planned events like maintenance windows.
 
