@@ -23,7 +23,7 @@ Work with alerts in the Console local deployment to:
 * Detect capacity, connectivity, data protection, performance, and security issues.
 * Prioritize alerts by severity and impact area.
 * Investigate the source of an alert in System Manager or Workload Analyzer, and apply a guided or automated Fix-It action when one is available.
-* Route notifications to users with specified access roles through email, webhook, or both.
+* Route notifications through email to users with specified access roles, or send alert data to an external system through a webhook.
 * Export the alerts list to a CSV file for offline analysis.
 
 == Alert severity and impact areas
@@ -45,11 +45,13 @@ Each alert includes a severity and an impact area:
 Create notification rules to determine which alerts generate notifications and who receives them. A notification rule has the following characteristics:
 
 * It matches alerts on the service (such as ONTAP management or Backup and Recovery), severity, impact area, and target system.
-* It delivers notifications to users with the specified access roles through email, webhook, or both.
+* For email delivery, it sends notifications to users with the specified access roles. For webhook delivery, it sends alert data to the configured endpoint—access to that data is controlled by the receiving application, not by Console local deployment.
 * It applies to specific systems, not to fleets.
 * It can be muted during a planned maintenance window to suppress expected alerts.
 
-Console local deployment includes default notification rules, and you can create custom rules.
+Console local deployment includes a default notification rule that is active immediately after installation. The default rule monitors all services and systems for Critical-severity alerts and delivers notifications to the Console Notification Center only—no email or webhook delivery is configured until you set it up. You can view and adjust this rule, and create custom rules to match your environment.
+
+Info-level alerts are visible in the Alerts page but are not delivered by notification unless you explicitly create a rule that includes the Info severity level.
 
 
 .Related information
