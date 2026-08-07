@@ -14,6 +14,8 @@ summary: "Learn how NetApp Console local deployment integrates with OpenAI and O
 [.lead]
 NetApp Console local deployment connects to a large language model (LLM) for AI-assisted storage management. After setup, users can use natural language to provision storage, investigate alerts, and get storage guidance.
 
+include::_include/ai-preview.adoc[]
+
 AI-assisted management lets users describe requests in plain language while Console local deployment applies your storage policies.
 
 Console local deployment sends LLM requests only to the endpoint you configure.

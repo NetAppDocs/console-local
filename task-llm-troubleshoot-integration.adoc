@@ -14,6 +14,8 @@ summary: "Troubleshoot LLM integration in NetApp Console local deployment with a
 [.lead]
 Use this quick triage flow to diagnose and resolve common LLM integration issues in NetApp Console local deployment.
 
+include::_include/ai-preview.adoc[]
+
 If you have not completed setup, see link:task-llm-connect.html[Connect your LLM and enable the NetApp Console assistant].
 
 == Triage LLM integration issues quickly
