@@ -47,6 +47,7 @@ NetApp Console local deployment supports these LLM provider types:
 
 * *OpenAI* for direct OpenAI model access.
 * *OpenAI-compatible* for a compatible endpoint, such as an enterprise gateway or proxy service.
+* Anthropic for Anthropic's Claude models.
 
 Model availability depends on the endpoint you configure. Select a model from the list in Console local deployment.
 

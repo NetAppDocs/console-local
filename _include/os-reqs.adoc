@@ -15,11 +15,11 @@ The Console agent requires this space in `/var` because Docker or Podman are arc
 
 //tag::vmhost[]
 
-* CPU: 8 cores or 8 vCPUs
-* RAM: 32 GB
-* Disk space: 165 GB (thick provisioned)
-* vSphere 7.0 or higher
-* ESXi host 7.03 or higher
+* CPU: 16 cores or 16 vCPUs
+* RAM: 64 GB
+* Disk space: 596 GB (thick provisioning recommended)
+* vSphere 7.0u3 or higher, with virtual hardware version 19 or higher
+
 
 //end::vmhost[]
 
