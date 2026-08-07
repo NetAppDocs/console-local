@@ -23,7 +23,7 @@ Before installation, make sure your VM host meets the requirements and the NetAp
 
 Make sure your host machine meets installation requirements before installing NetApp Console local deployment.
 
-include::os-reqs.adoc[tag=vm-host]
+include::_include/os-reqs.adoc[tag=vmhost]
 
 NOTE: Install NetApp Console local deployment in a vCenter environment rather than directly on an ESXi host. 
 

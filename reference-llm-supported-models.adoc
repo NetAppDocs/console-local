@@ -27,27 +27,15 @@ Model availability can vary based on endpoint configuration, proxy or gateway be
 
 == Supported OpenAI models
 
-Add the supported OpenAI models here.
-
-[cols="35,65",options="header"]
-|===
-| Model | Notes
-
-| _Placeholder model_
-| Add supported OpenAI model details.
-|===
+* GPT-4.1
+* GPT-5-mini
+* GPT-5.1
+* GPT-5.2
 
 == Supported OpenAI-compatible models
 
-Add the supported OpenAI-compatible models here.
-
-[cols="35,65",options="header"]
-|===
-| Model or endpoint-exposed model | Notes
-
-| _Placeholder model_
-| Add supported OpenAI-compatible model details.
-|===
+* Claude Sonnet 4.5
+* Claude Opus 4.5
 
 == Choose the right LLM model
 
