@@ -28,7 +28,14 @@ If you log in but don't see any resources, contact your organization administrat
 
 +
 * A NetApp Console account using your email address and a password
+** If MFA is enabled: after entering your password, you'll be prompted to enter a TOTP code (from your authenticator app) or use a recovery code.
+
++
+NOTE: If When signing in with recovery codes, use them in the order shown in the UI during the recovery-code prompt.
+
 * An Active Directory account using your email address and password
+
+NOTE: If you are signing in with a recovery code, use them in the order shown in the UI during the recovery-code prompt.
 
 
 

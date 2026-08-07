@@ -12,7 +12,7 @@ summary: "Connect OpenAI or an OpenAI-compatible endpoint to enable the Console 
 :imagesdir: ./media/
 
 [.lead]
-Connect your large language model (LLM) to NetApp Console local deployment to enable the NetApp Console assistant and AI-assisted storage management.
+Connect your large language model (LLM) to NetApp Console local deployment to enable the Console assistant and AI-assisted storage management.
 
 include::_include/ai-preview.adoc[]
 
@@ -49,9 +49,9 @@ Enter provider settings, API key, and model to connect your LLM to Console local
 . Log in to the NetApp Console local deployment.
 . Select *Administration > AI Tools*.
 . Select the menu, and then select *Edit*.
-. In *Provider type*, select *OpenAI* or *OpenAI-compatible*.
+. In *Provider type*, select a provider type: link:concept-llm-integration.html[Learn about provider choices.]
 . If prompted for a provider endpoint, enter the endpoint URL for the provider path you selected.
-. If your organization uses a proxy or gateway, enter the proxy or gateway URL and credentials.
+. Enter the proxy or gateway URL and credentials.
 . In the *User name* field, enter your user name or SSO ID if your provider path requires it.
 . In the *API key* field, paste the API key from your selected provider path.
 . Select a model from the list.

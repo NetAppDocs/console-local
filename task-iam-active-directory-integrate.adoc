@@ -21,12 +21,13 @@ When you integrate with Active Directory, Console local deployment authenticates
 
 Active Directory integration also helps you meet compliance requirements by applying your existing controls, audit trails, and policies to Console local deployment access.
 
-Directory users do not configure or use multi-factor authentication (MFA). Console local deployment supports MFA only for local users. link:task-manage-member-security.html[Learn how to manage member security settings].
+
 
 [NOTE]
 ====
 * Active Directory integration does not create federated groups, does not synchronize directory-group assignments, and does not automatically grant access. Administrators still add directory users to the organization and assign roles in Console local deployment.
 * Only one Active Directory integration is supported at a time. Once an integration is configured, the *Add integration* button is disabled. To switch to a different directory, disable or delete the existing integration first.
+* Directory users do not configure or use multi-factor authentication (MFA). Console local deployment supports MFA only for local users. link:task-manage-member-security.html[Learn how to manage member security settings].
 ====
 
 == Before you begin
@@ -52,7 +53,7 @@ Before you integrate with Active Directory, confirm that you have:
 . Test the connection. If it fails, check the LDAP host, port, network connectivity, and SSL/TLS certificates.
 . After the test succeeds, enter the directory and user details:
 +
-* *Base DN*: the starting point for LDAP queries. For example, for the domain `example.com`, use `DC=example,DC=com`.
+* *Base DN binding*: Enter the Bind DN for the LDAP/AD account this app will use to connect to the directory, and enter the Bind credential (password) for that account. Console uses these details to bind to LDAP and validate the connection.
 * *User DN*: a user account with permission to query the directory. For example, `CN=ldap-reader,OU=Service Accounts,DC=example,DC=com`.
 . Select *Add* to save the integration.
 
