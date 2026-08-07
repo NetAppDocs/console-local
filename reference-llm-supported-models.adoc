@@ -14,6 +14,8 @@ summary: "Review the LLM provider types and models you can use in NetApp Console
 [.lead]
 NetApp Console local deployment supports OpenAI, OpenAI-compatible, and Anthropic LLM provider types. The models you can select depend on the provider type and endpoint you configure.
 
+include::_include/ai-preview.adoc[]
+
 Choose a model that matches your performance, cost, and governance requirements.
 
 == See how provider type affects model availability

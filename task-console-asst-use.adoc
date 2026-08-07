@@ -14,6 +14,8 @@ summary: "Use the Console assistant to provision storage, investigate alerts, an
 [.lead]
 Use the NetApp Console assistant in NetApp Console local deployment to manage storage and get answers with natural language. Describe what you need in plain language, and NetApp Console local deployment acts on it within your storage policies and role-based access.
 
+include::_include/ai-preview.adoc[]
+
 The assistant's actions are limited by your assigned role-based access. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 == See what you can do with the Console assistant

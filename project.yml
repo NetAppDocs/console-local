@@ -14,6 +14,8 @@ sidebar:
       entries:
       - title: What's new
         url: /whats-new.html
+      - title: Known limitations
+        url: /reference-local-known-limitations.html
     - title: Get started
       entries:
       - title: Learn about NetApp Console
@@ -26,7 +28,7 @@ sidebar:
         url: /concept-identity-and-access-management.html
       - title: Learn about LLM integration (AI-assisted management)
         url: /concept-llm-integration.html
-      - title: Learn about data services
+      - title: Learn about NetApp Backup and Recovery 
         url: /concept-data-services.html
     - title: Install and set up
       entries:
@@ -77,16 +79,6 @@ sidebar:
             url: /task-llm-troubleshoot-integration.html
         - title: Configure notification delivery
           url: /task-console-configure-notifications-delivery.html
-      - title: Set up data services
-        entries:
-        - title: Subscribe to data services
-          url: /task-data-services-subscribe.html
-        - title: Learn about using data services
-          url: /concept-use-data-services.html
-        - title: Quick start to using data services
-          url: /task-quickstart-data-services.html
-        - title: Grant access to data services
-          url: /task-data-services-access-grant.html
     - title: Use NetApp Console
       entries:
       - title: Log in to NetApp Console

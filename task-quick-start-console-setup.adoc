@@ -54,9 +54,11 @@ Super admin or Organization admin. link:reference-iam-predefined-roles.html[Lear
 
 * Configure how the Console local deployment delivers notifications. link:task-console-configure-notifications-delivery.html[Configure notification delivery].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Set up data services (Optional)
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Set up NetApp Backup and Recovery
 
 [role="quick-margin-list"]
-* Subscribe to the data services you want to use. link:task-data-services-subscribe.html[Subscribe to data services]. You can skip this step if you do not plan to use data services.
+link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html#use-a-netapp-backup-and-recovery-byol-license[Obtain a license for NetApp Backup and Recovery^]. You can skip this step if you do not want access to advanced Backup and Recovery services.
 
-* Grant members access to the data services. link:task-data-services-access-grant.html[Grant access to data services].
+* Add the NetApp Backup and Recovery license to NetApp Console local deployment. link:https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-services-licenses.html[Add the license to NetApp Console local deployment^].
+
+* link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-rbac-setup.html[Grant users access to NetApp Backup and Recovery].
