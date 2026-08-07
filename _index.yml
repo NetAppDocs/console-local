@@ -10,11 +10,13 @@ indexpage:
           url: /concept-netapp-console-local.html
         - title: Learn about identity and access management
           url: /concept-identity-and-access-management.html
-        - title: Learn about managing storage with NetApp Console local deployment 
+        - title: Learn about managing storage with NetApp Console local deployment
           url: /concept-manage-storage.html
-        - title: Learn about NetApp Console local deployment data services
+        - title: Learn about LLM integration (AI-assisted management)
+          url: /concept-llm-integration.html
+        - title: Learn about data services
           url: /concept-data-services.html
-    - title: Deploy NetApp Console local deployment
+    - title: Deploy and connect Console
       links:
         - title: Learn about deploying Console local deployment
           url: /concept-deploy-netapp-console-local.html
@@ -22,11 +24,11 @@ indexpage:
           url: /task-install-agent-on-prem-ova.html
         - title: Add storage systems to NetApp Console local deployment
           url: /task-add-systems.html
+        - title: Connect your LLM and enable the Console assistant
+          url: /task-llm-connect.html
         - title: Connect an email server for notifications
           url: /task-console-configure-notifications-delivery.html
-        - title: Connect your LLM
-          url: /task-llm-connect.html
-    - title: Set up user access and fleet management
+    - title: Set up access and organization
       links:
         - title: Get started with identity and access
           url: /task-iam-fleet-mgmt-get-started.html
@@ -36,10 +38,10 @@ indexpage:
           url: /task-iam-manage-members-permissions.html
         - title: Integrate with Active Directory
           url: /task-iam-active-directory-integrate.html
-    - title: Standardize and provision storage
+    - title: Provision and standardize storage
       links:
-        - title: Learn about managing storage with NetApp Console local deployment
-          url: /concept-manage-storage.html
+        - title: Learn about storage classes and policies
+          url: /concept-storage-classes.html
         - title: Create a storage class
           url: /task-storage-class-manage.html
         - title: Provision storage manually
@@ -54,38 +56,39 @@ indexpage:
           url: /task-storage-dashboard.html
         - title: Get started with dashboards in NetApp Console local deployment
           url: /task-dashboard-get-started.html
-        - title: View alerts
+        - title: Investigate a volume with the Workload Analyzer
+          url: /concept-workload-analyzer.html
+        - title: View and manage alerts
           url: /task-alerts-monitor.html
-        - title: Configure notification rules for alerts
-          url: /task-alert-rules-manage.html
-    - title: Navigate and use NetApp Console local deployment
+    - title: Use AI-assisted management
+      links:
+        - title: Use the NetApp Console assistant
+          url: /task-console-asst-use.html
+        - title: Supported LLM providers and models
+          url: /reference-llm-supported-models.html
+    - title: Maintain and get support
       links:
         - title: Log in to NetApp Console local deployment
           url: /task-logging-in.html
-        - title: Switch between fleets in NetApp Console local deployment
-          url: /task-iam-switch-fleets.html
-        - title: Manage your NetApp Console local deployment user settings
-          url: /task-user-settings.html
-        - title: Use the NetApp Console assistant
-          url: /task-console-asst-use.html
-      
-   
-    - title: Maintain and support
-      links:
         - title: Maintain a vCenter-installed Console local deployment
           url: /task-console-local-vm-config.html
         - title: Audit NetApp Console local deployment operations
           url: /task-audit-console-activity.html
-        - title: Supported LLM providers and models
-          url: /reference-llm-supported-models.html
+        - title: Manage your user settings
+          url: /task-user-settings.html
         - title: Get help with NetApp Console local deployment
           url: /task-get-help.html
-    - title: API documentation 
-      links: 
-        - title: API documentation
-          url: https://docs.netapp.com/us-en/console-local-automation/index.html
-    - title: Blogs and community (links TBD)
-      links: []
+    - title: API documentation
+      links:
+        - title: Agentic Platform
+          url: /agentic/get-configs.html
+        - title: Assets
+          url: /asset/get-organizations-aggregates.html
+        - title: Identity and access management
+          url: /tenancyv4/get-fleets.html
+        - title: Storage management
+          url: /storage-management/get-v1-organizations-capacitypolicies.html
+ 
    
   
 
