@@ -28,7 +28,7 @@ The assistant sends requests only to the LLM endpoint configured by your adminis
 
 == Confirm that you can use the Console assistant
 
-* An organization admin or super admin must enable the Console assistant by connecting a large language model (LLM) to Console local deployment. If you do not see the *Console assistant* button on the dashboard, ask your administrator to enable it. For more information, see link:task-llm-connect.html[Connect your LLM and enable the NetApp Console assistant].
+* An Organization admin or Super admin must enable the Console assistant by connecting a large language model (LLM) to Console local deployment. If you do not see the *Console assistant* button on the dashboard, ask your administrator to enable it. For more information, see link:task-llm-connect.html[Connect your LLM and enable the NetApp Console assistant].
 * Make sure you have the role-based access controls required for the actions you want the assistant to perform.
 
 == Ask the Console assistant a question or request an action

@@ -23,7 +23,7 @@ Before installation, make sure your VM host meets the requirements and the NetAp
 
 Make sure your host machine meets installation requirements before installing NetApp Console local deployment.
 
-include::os-reqs.adoc[tag=vm-host]
+include::_include/os-reqs.adoc[tag=vmhost]
 
 NOTE: Install NetApp Console local deployment in a vCenter environment rather than directly on an ESXi host. 
 
@@ -35,7 +35,10 @@ NOTE: Install NetApp Console local deployment in a vCenter environment rather th
 
 NetApp Console local deployment needs access to the networks where your ONTAP clusters and other resources are located. This allows the NetApp Console local deployment to discover those resources, monitor their health, and perform actions on them. If your NetApp Console local deployment doesn't have access to a target network, it won't be able to manage the resources on that network.
 
-Customer question: What information do I need to gather before I install NetApp Console local deployment? 
+Possible conflict with IP addresses in the 172 range
+The NetApp Console deploys an agent with two interfaces that have IP addresses in the <placeholder> ranges.
+
+If your network has a subnet configured with either of these ranges, then you might experience connectivity failures from the Console. For example, discovering on-premises ONTAP clusters in the Console might fail.
 
 
 

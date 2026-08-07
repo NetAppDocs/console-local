@@ -68,7 +68,7 @@ You can only use a recovery code once. If you lose yours, create a new one.
 . Copy the generated recovery code and save it in a secure location.
 
 == Delete your MFA configuration
-When you're finished, either log out of the Console local deployment or move the slider back to return to read-only mode. The system removes your elevated permissions when your session expires.
+Deleting MFA removes the second verification step for your next sign-in. To use MFA again, you must configure it again from your user settings.
 
 NOTE: If you are unable to access your authentication app or recovery code, you will need to contact your Organization administrator to reset your MFA configuration.
 

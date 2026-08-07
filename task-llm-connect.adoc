@@ -15,7 +15,7 @@ summary: "Connect OpenAI or an OpenAI-compatible endpoint to enable the Console 
 Connect your large language model (LLM) to NetApp Console local deployment to enable the NetApp Console assistant and AI-assisted storage management.
 
 .Required access roles
-Super admin or organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+Super admin or Organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 After setup, users open the Console assistant from the dashboard and choose an access mode:
 

@@ -54,11 +54,11 @@ If you need to add a new member and assign their first role, see link:task-iam-m
 
 === Add an access role to an existing member
 
-Grant a member an additional role at the organization, folder, or fleet level when their responsibilities expand. For example, give a Storage admin the Backup and Recovery admin role at the organization level so they can manage backup and recovery tasks across every fleet without losing their existing storage permissions.
+Grant a member an additional role at the organization, folder, or fleet level when their responsibilities expand. For example, give a Storage admin the Backup and recovery admin role at the organization level so they can manage backup and recovery tasks across every fleet without losing their existing storage permissions.
 
 You can assign a member an access role for your organization, folder, or fleet.
 
-Members can have multiple roles within the same fleet and in different fleets. For example, smaller organizations may assign all available access roles to the same user, while larger organizations may have users do more specialized tasks. Alternatively, you could also assign one user the Ransomware Resilience admin role at the organization level. In that example, the user would be able to perform Ransomware Resilience tasks on all fleets within your organization. 
+Members can have multiple roles within the same fleet and in different fleets. For example, smaller organizations may assign all available access roles to the same user, while larger organizations may have users do more specialized tasks. Alternatively, you could also assign one user the Ransomware resilience admin role at the organization level. In that example, the user would be able to perform Ransomware resilience tasks on all fleets within your organization. 
 
 Your access role strategy should align with the way you have organized your NetApp resources. 
 

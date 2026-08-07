@@ -115,8 +115,8 @@ For organizations with specialized teams requiring specific access, use targeted
 
 * *Structure*: Organization > Department folders (IT, Security, Development) > Fleet-specific resources
 * *Specialized roles*:
-** Security team: Ransomware Resilience admin and Classification viewer roles
-** Backup team: Backup and Recovery super admin for comprehensive backup operations
+** Security team: Ransomware resilience admin and Classification viewer roles
+** Backup team: Backup and recovery super admin for comprehensive backup operations
 ** Development team: Storage admin for test environment management
 ** Compliance team: Operation support analyst for monitoring and support case management
 * *Benefits*: Tailored access control, improved operational efficiency, and clear accountability for specialized tasks

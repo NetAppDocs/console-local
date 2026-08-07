@@ -19,7 +19,7 @@ Monitor and investigate alerts in NetApp Console local deployment to keep your s
 View active alerts across your entire organization or a specific fleet, prioritize them by severity and impact area, and investigate root causes so you can resolve issues before they escalate. When an alert includes a recommended action or Fix It option, you can move from investigation directly into remediation.
 
 .Required access role
-You need any role except Federation admin or Federation viewer to view alerts. link:reference-iam-predefined-roles.html[Learn about access roles].
+All roles except Federation admin and Federation viewer. Users with the Federation admin or Federation viewer role cannot view alerts. link:reference-iam-predefined-roles.html[Learn about access roles].
 
 For ONTAP alerts, you can access tools such as System Manager and Workload Analyzer directly from the Alerts page to investigate and resolve issues.
 

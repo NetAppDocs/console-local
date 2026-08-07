@@ -19,21 +19,24 @@ Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-pr
 
 == Reset user passwords (local users only)
 
-Organization admins cannot reset user passwords for local users. However, they can instruct local users to reset their own passwords.
+Administrators cannot reset local user passwords directly.
 
-Instruct a local user to reset their password from the Console local deployment login page by selecting *Forgot password?*.
+Direct local users to reset their passwords from the Console local deployment login page by selecting *Forgot password?*.
 
-NOTE: This option is not available for users who authenticate through an integrated directory service.
+NOTE: This option is not available for directory users.
 
 == Manage a local user's multi-factor authentication (MFA) 
 
 If a local user loses access to their MFA device, you can either remove or disable their MFA configuration.
 
-NOTE: Multi-factor authentication is only available for local users. Directory-authenticated users cannot enable MFA through Console local deployment.
+NOTE: Multi-factor authentication is only available for local users. Directory users cannot enable MFA through Console local deployment.
 
-Users must set up MFA again when they log in after removal. If the user temporarily loses access to their MFA device, they can use their saved recovery code to log in.
+Use these guidelines to choose the right action:
 
-If they do not have their recovery code, temporarily disable MFA to allow login. When you disable MFA for a user, it is disabled for only eight hours and then re-enabled automatically. The user is allowed one login during that time without MFA. After the eight hours, the user must use MFA to log in.
+* Select *Disable* when the user temporarily loses access to their MFA device. Disabling MFA allows one sign-in without MFA for eight hours and then automatically re-enables MFA.
+* Select *Remove* when the user must fully reset MFA. After you remove MFA, the user signs in without MFA until they configure MFA again.
+
+If a user has a saved recovery code, they can sign in with it. If a user does not have a recovery code, disable MFA so the user can sign in and regain access.
 
 NOTE: To manage a local user's multi-factor authentication, you must have an email address in the same domain as the affected user.
 
@@ -42,12 +45,13 @@ NOTE: To manage a local user's multi-factor authentication, you must have an ema
 . Select *Administration* > *Identity and access*.
 
 . Select *Members*.
-+
-The Members table lists the members of your organization.
 
 . From the Members page, navigate to a member in the table, select image:icon-action.png[An icon with three dots] and then select *Manage multi-factor authentication*.
 
 . Choose whether to remove or to disable the user's MFA configuration.
+
+.After you finish
+Review the audit log to confirm who changed MFA access, when they changed it, and whether the action succeeded. link:task-audit-console-activity.html[Learn how to audit NetApp Console local deployment activity].
 
 == Recreate the credentials for a service account
 
