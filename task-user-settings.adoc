@@ -34,7 +34,7 @@ You can change your Console local deployment display name, which identifies you 
 [[task-user-mfa]]
 == Configure multi-factor authentication
 
-Configure multi-factor authentication (MFA) to improve security by requiring a second verification method.
+Configure multi-factor authentication (MFA) to improve security by requiring a second verification method when logging in to NetAppConsole local deployment.
 
 Users who sign in through the NetApp Support Site cannot enable MFA. If this is true for you, you don't see the option to enable MFA in your profile settings.
 
@@ -56,7 +56,12 @@ NOTE: If you do not have access to your authentication app or lose your recovery
 
 +
 
+NOTE: If you need to sign in with a recovery code, use them in the order shown in the UI during the recovery-code prompt.
+
++
+
 After you set up MFA, the Console local deployment prompts you to enter a one-time code from your authentication app each time you log in.
+
 
 == Regenerate your MFA recovery code
 You can only use a recovery code once. If you lose yours, create a new one.
@@ -65,7 +70,7 @@ You can only use a recovery code once. If you lose yours, create a new one.
 . Select the profile icon in the upper right corner of the the Console local deployment to view the User settings panel.
 . Select image:icon-action.png["An icon that is three side-by-side dots"] next to the *Multi-Factor Authentication* header.
 . Select *Regenerate recovery code*.
-. Copy the generated recovery code and save it in a secure location.
+. Copy the generated recovery codes and save them in a secure location.
 
 == Delete your MFA configuration
 Deleting MFA removes the second verification step for your next sign-in. To use MFA again, you must configure it again from your user settings.
