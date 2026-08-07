@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-local-known-limitations.html
-keywords: card templates, dashboard cards, metric types, chart types, performance, capacity, health, alerts, netapp console local
+keywords: console local deployment, known limitations, unsupported platforms, unsupported devices, unsupported functions, IP range
 summary: "Reference for known limitations in NetApp Console local deployment."
 ---
 = Known limitations in NetApp Console local deployment
