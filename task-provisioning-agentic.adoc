@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-provisioning-agentic.html
-keywords: agentic provisioning, AI, LLM, autonomous, intelligent provisioning, netapp console
+keywords: agentic provisioning, AI-assisted provisioning, natural language, conversational provisioning, plan-and-approve, storage class, Console assistant, LLM, RBAC, netapp console local
 summary: "Use AI-driven agentic provisioning to autonomously fulfill storage requests in NetApp Console local deployment."
 ---
 = Provision storage with AI-assisted (agentic) workflows in NetApp Console local deployment

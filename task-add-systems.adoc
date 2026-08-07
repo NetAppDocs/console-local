@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-add-systems.html
-keywords: add storage systems, storage systems, netapp console local
+keywords: add storage systems, ONTAP, cluster, discover storage, fleet, storage discovery, centralized monitoring, storage management, netapp console local
 summary: "Add storage systems to NetApp Console local deployment."
 ---
 = Add storage systems to NetApp Console local deployment

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-dashboard-create.html
-keywords: create dashboard, custom dashboard, add dashboard, monitoring, netapp console local
+keywords: create dashboard, custom dashboard, add dashboard, metrics, cards, card templates, fleet monitoring, storage visibility, performance monitoring, capacity monitoring, netapp console local
 summary: "Create a custom dashboard in NetApp Console local deployment, add cards, and save a usable monitoring view."
 ---
 = Build dashboards for monitoring goals in NetApp Console local deployment

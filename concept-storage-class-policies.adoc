@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-storage-class-policies.html
-keywords: storage class policies, policies, storage class, IOPS, capacity, security, data protection, performance policy, netapp console
+keywords: storage class policies, policies, storage class, IOPS, latency, throughput, capacity, security, data protection, performance policy, tiering, encryption, ransomware protection, storage standardization, policy enforcement, compliance monitoring, netapp console local
 summary: "Learn about the policies that serve as building blocks for storage classes in NetApp Console local deployment."
 ---
 = Understanding storage class policies in NetApp Console local deployment

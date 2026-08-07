@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-iam-analyst-roles.html
-keywords: predefined roles, iam roles, Organization admin, Folder or fleet admin, identity and access management, access roles, admin
+keywords: operations support analyst, analyst roles, read-only access, monitoring access, alert access, audit access, identity and access management, access roles, rbac, netapp console local
 summary: You can assign the Operational support analyst role to users to provide them access to alerts and monitoring. Users with this role can also open support cases.
 ---
 

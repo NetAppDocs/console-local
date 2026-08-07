@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-alert-remediation.html
-keywords: card templates, dashboard cards, metric types, chart types, performance, capacity, health, alerts, netapp console local
+keywords: alert remediation, fix-it, guided remediation, automated remediation, ONTAP alerts, storage alerts, compliance alerts, remediate drift, alert actions, netapp console local
 summary: "Reference for remediation actions available in NetApp Console local deployment, including related alerts, impact areas, and action summaries."
 ---
 = Alert remediation actions in NetApp Console local deployment

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-workload-analyzer-metrics.html
-keywords: workload analyzer, latency, delay center, throughput, IOPS, resource utilization, capacity, metrics, netapp console
+keywords: workload analyzer, latency, delay center, throughput, IOPS, resource utilization, capacity, capacity forecast, QoS, storage efficiency, snapshot, performance troubleshooting, metrics reference, netapp console local
 summary: "Reference for all metrics available in the Workload Analyzer, organized by analysis section."
 ---
 = Workload Analyzer metrics in NetApp Console local deployment

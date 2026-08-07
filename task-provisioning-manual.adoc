@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-provisioning-manual.html
-keywords: provisioning, provision storage, create volume, netapp console
+keywords: provisioning, provision storage, create volume, create LUN, ONTAP, storage class, fleet, NAS, SAN, manual provisioning, netapp console
 summary: "Provision storage resources using NetApp Console local deployment."
 ---
 = Provision storage in NetApp Console local deployment

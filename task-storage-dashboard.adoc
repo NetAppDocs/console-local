@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-storage-dashboard.html
-keywords: NetApp Console, local deployment, dashboard, console, home page, homepage
+keywords: storage dashboard, home page, fleet health, capacity monitoring, IOPS, performance metrics, alerts, storage KPIs, monitoring, netapp console local
 summary: "Within NetApp Console local deployment, you can view metrics on the Home page."
 ---
 

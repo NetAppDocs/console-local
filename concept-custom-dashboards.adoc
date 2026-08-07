@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-custom-dashboards.html
-keywords: dashboards, predefined dashboards, custom dashboards, dashboard, cards, widgets, card templates, monitoring, netapp console local
+keywords: dashboards, predefined dashboards, custom dashboards, cards, card templates, metrics, KPI, fleet health, performance monitoring, capacity monitoring, storage visibility, netapp console local
 summary: "Learn how predefined Home page dashboards and custom dashboards work together in NetApp Console local deployment."
 ---
 = Learn about custom dashboards in NetApp Console local deployment

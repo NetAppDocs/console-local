@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-iam-platform-roles.html
-keywords: predefined roles, iam roles, Organization admin, Folder or fleet admin, Classification viewer, Snapcenter admin, role, iam role, admin, iam, identity and access management, bluexp
+keywords: predefined roles, iam roles, Organization admin, Folder or fleet admin, Super admin, Federation admin, platform roles, role, iam, identity and access management, netapp console local
 summary: Assign platform roles to users to grant permissions to manage NetApp Console local deployment, assign roles, add users, and manage federations.
 ---
 

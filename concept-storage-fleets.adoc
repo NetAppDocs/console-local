@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-storage-fleets.html
-keywords: storage fleets, fleet management, storage organization, folders, netapp console
+keywords: storage fleets, fleet management, storage organization, folders, ONTAP, clusters, storage systems, resource grouping, delegated administration, fleet design, netapp console local
 summary: "A storage fleet groups storage systems that you manage together in NetApp Console local deployment. Use folders to group related fleets. You can apply policies, grant access, and monitor health at the needed scope."
 ---
 = Learn about storage fleets in NetApp Console local deployment

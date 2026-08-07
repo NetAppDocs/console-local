@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-manage-storage-workflow.html
-keywords: storage management, storage classes, provisioning, storage class policies, netapp console local
+keywords: storage management workflow, storage classes, provisioning, storage class policies, ONTAP, fleet, drift detection, compliance monitoring, storage governance, operational efficiency, netapp console local
 summary: "Learn about managing storage in NetApp Console local deployment, including storage classes, policies, and provisioning methods."
 ---
 = Storage management workflow overview in NetApp Console local deployment

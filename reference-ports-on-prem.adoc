@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-ports-on-prem.html
-keywords: networking, network, requirements, ports, on-prem, linux, http, https, bluexp, console agent, console
+keywords: networking, network requirements, ports, on-premises, TCP, HTTP, HTTPS, firewall, connectivity requirements, Console agent, agent connectivity, netapp console local
 summary: The Console agent uses _inbound_ ports when installed manually on an on-premises Linux host. Refer to these ports for planning purposes.
 ---
 
