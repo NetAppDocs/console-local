@@ -13,7 +13,7 @@ summary: You can assign the Operational support analyst role to users to provide
 :imagesdir: ./media/
 
 [.lead]
-You can assign the Operational support analyst role to users to provide them access to alerts and monitoring.
+In NetApp Console local deployment, you can assign the Operational support analyst role to users to provide them access to alerts and monitoring.
 
 == Operational support analyst 
 [cols="1,2",options="header"]

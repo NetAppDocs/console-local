@@ -14,6 +14,8 @@ summary: "Investigate latency on a volume using the Workload Analyzer to identif
 [.lead]
 Use Workload Analyzer in NetApp Console local deployment to find the source of a volume's slow response times.
 
+If you open the analyzer from an alert or from volume inventory, the volume is already selected and you can focus on the time range and chart breakdowns.
+
 When application performance degrades, identify which part of the I/O path is causing the slowdown. The latency analysis section breaks down response time by delay center so you can distinguish between network issues, data processing overhead, aggregate contention, and other contributors.
 
 
@@ -27,11 +29,11 @@ When application performance degrades, identify which part of the I/O path is ca
 
 . Set the *Time Range* to cover the period when the performance issue occurred, then select *Analyze*.
 
-. Review the *Alert Timeline* section for alerts that correlate with the time when latency increased.
+. Review the *Event timeline* section to see configuration changes and alerts that line up with the latency increase.
 +
 The analyzer plots configuration change events (wrench icon) and alert events (warning and critical icons) along the same time axis as the latency chart, making it easy to see whether a change preceded the degradation.
 
-. In the *Latency* section, open the *View* dropdown and select Breakdown by delay center. The chart shows the contribution of each delay center to the total latency over time. Delay centers include:
+. In the *Latency* section, open the *View* dropdown and select *Breakdown by delay center*. The chart shows the contribution of each delay center to the total latency over time. Delay centers include:
 
 +
 * Read latency
@@ -41,7 +43,7 @@ The analyzer plots configuration change events (wrench icon) and alert events (w
 
 . Hover over a point on the chart where latency is highest to see each delay center's value and its percentage of total latency.
 +
-The delay center with the highest contribution usually points to a resource that is in contention. When a shared resource can't keep up with demand, the volumes that use it wait longer for I/O. Reducing the load on that resource, such as moving workloads or adjusting a QoS limit, typically lowers latency.
+The largest delay center usually points to the resource under contention. When a shared resource cannot keep up with demand, the volumes that use it wait longer for I/O. Reduce the load on that resource, such as by moving workloads or adjusting a QoS limit, to lower latency.
 
 . Identify the dominant contributor and use the value to determine next steps:
 +
@@ -60,4 +62,4 @@ The delay center with the highest contribution usually points to a resource that
 
 .After you finish
 
-If a configuration or placement issue caused the problem and Console local deployment can resolve it, the alert on the volume may offer a Fix-It option. See link:task-remediation-guided.html[Remediate with guided steps]. Refer to link:reference-workload-analyzer-metrics.html[Workload Analyzer metrics reference] if you need detailed descriptions of QoS limit lines, resource utilization indicators, or forecast behavior while you investigate.
+If a configuration or placement issue caused the problem and Console local deployment can resolve it, the alert on the volume may offer a Fix-It option. See link:task-remediation-guided.html[Remediate with guided steps]. Refer to link:reference-workload-analyzer-metrics.html[Workload Analyzer metrics reference] for detailed descriptions of QoS limit lines, resource utilization indicators, and forecast behavior.

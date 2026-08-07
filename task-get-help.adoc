@@ -13,4 +13,5 @@ summary: NetApp provides support for NetApp Console local deployment in a variet
 :imagesdir: ./media/
 
 [.lead]
+NetApp Console local deployment information for this task.
 include::https://raw.githubusercontent.com/NetAppDocs/console-family/main/_include/get-help.adoc[]

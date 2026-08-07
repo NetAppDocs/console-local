@@ -15,7 +15,7 @@ summary: You can audit user activity (initiated from both the UI and API) from t
 [.lead]
 // Jira: SPSPM-3319
 
-You can audit user activity initiated from both the UI and API from the Audit page, and you can monitor the status of operations and the user who initiated them.
+You can audit user activity initiated from both the UI and API from the Audit page, and you can monitor the status of operations in NetApp Console local deployment and the user who initiated them.
 
 .Required roles
 Super admin, Organization admin, Folder and fleet admin, Operations support analyst, Super viewer, Organization viewer, or Folder and fleet viewer. link:reference-iam-predefined-roles.html[Learn about access roles].
@@ -33,6 +33,7 @@ Use the Audit page to identify who performed an action or its status.
 The Audit page shows the actions that users completed within your organization. For example, you can verify who added a member to an organization or that a fleet was deleted successfully, as well as see other storage management actions that users performed in your organization.
 
 The audit logs show activity for the following services:
+
 * Tenancy: actions related to managing your organization, such as adding users, creating fleets, and associating resources.
 * Storage-management: actions related to managing your storage resources.
 * Federation: actions related to managing federations, such as creating federations and adding or removing federated organizations.

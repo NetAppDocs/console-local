@@ -16,7 +16,7 @@ summary: "Use AI-driven agentic provisioning to autonomously fulfill storage req
 
 //<mlucey> I have removed this topic from the left navigation for now. It is touched on briefly in the section "Use the NetApp Console assistant"
 
-Use AI-assisted (agentic) provisioning when you want to request storage conversationally, review a proposed plan, and approve the change. This approach is useful when you want faster requests with less UI navigation while still keeping provisioning aligned with storage classes and RBAC. 
+In NetApp Console local deployment, use AI-assisted (agentic) provisioning when you want to request storage conversationally, review a proposed plan, and approve the change. This approach is useful when you want faster requests with less UI navigation while still keeping provisioning aligned with storage classes and RBAC. 
 
 .Required access roles
 Super admin, Organization admin, Folder or fleet admin, or Storage admin. Your AI-assisted actions are limited by the same role-based access as UI-based actions. link:reference-iam-predefined-roles.html[Learn about access roles].

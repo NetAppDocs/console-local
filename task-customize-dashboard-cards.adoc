@@ -14,7 +14,7 @@ summary: "Customize dashboard cards in NetApp Console local deployment by settin
 [.lead]
 // Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
 
-Customize dashboard cards when you need to focus operators on the signals that matter most, such as SLA risk, capacity pressure, or recurring alert noise. Use this topic to shape dashboard views around the operational decisions your team needs to make.
+In NetApp Console local deployment, customize dashboard cards when you need to focus operators on the signals that matter most, such as SLA risk, capacity pressure, or recurring alert noise. Use this topic to shape dashboard views around the operational decisions your team needs to make.
 
 == Before you begin
 
