@@ -193,8 +193,6 @@ sidebar:
         url: /reference-cluster-compliance-categories.html
       - title: Storage VM security compliance categories
         url: /reference-svm-compliance-categories.html
-      - title: Ports for the on-premises Console agent
-        url: /reference-ports-on-prem.html
     - title: Knowledge and support
       entries:
       - title: Register for support
