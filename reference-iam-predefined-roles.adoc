@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-iam-predefined-roles.html
-keywords: predefined roles, iam roles, Organization admin, Folder or fleet admin, Classification viewer, Snapcenter admin, role, iam role, admin, iam, identity and access management, access roles, rbac, bluexp
+keywords: predefined roles, iam roles, Organization admin, Folder or fleet admin, Super admin, storage roles, analyst roles, backup and recovery roles, role categories, rbac, identity and access management, access roles, netapp console local
 summary: NetApp Console local deployment identity and access management includes predefined roles that you can assign to the members of your organization.
 ---
 

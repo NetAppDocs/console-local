@@ -22,7 +22,7 @@ Choose the deployment method that fits your environment.
 
 Deploy NetApp Console local deployment as a virtual appliance in your VMware vCenter environment using a pre-configured OVA image.
 
-link:task-install-agent-on-prem-ova.html[Install NetApp Console local deployment in your vCenter environment]
+link:task-install-agent-on-prem-ova.html[Install NetApp Console local deployment in your vCenter environment].
 
 
 == Next steps

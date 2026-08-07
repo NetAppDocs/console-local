@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-logging-in.html
-keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, login with netapp, log in with netapp, sign up, create account, AD, Active Directory, directory services
+keywords: logging in, log in, sign in, signing in, user account, MFA, multi-factor authentication, AD, Active Directory, directory services, local user, Console local deployment access
 summary: After you sign up to NetApp Console local deployment, you can log in from the web-based console to start managing your data and storage infrastructure.
 ---
 

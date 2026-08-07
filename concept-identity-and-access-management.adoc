@@ -17,7 +17,7 @@ summary: Use NetApp Console local deployment's Identity and Access Management (I
 
 Identity and access management (IAM) in NetApp Console local deployment controls who can sign in, how identities are verified, what resources users can access, and what actions they can perform. In NetApp Console local deployment, IAM includes role-based access control (RBAC), multi-factor authentication (MFA), and directory-backed authentication, as well as the hierarchy and audit model that support delegated administration.
 
-Use this page to understand the NetApp Console local deployment IAM model at a high level. For detailed hierarchy planning examples, link:concept-folders-fleets-overview.html[learn about folders and fleets].
+Use this page to understand the NetApp Console local deployment IAM model at a high level. For detailed hierarchy planning examples, link:concept-folders-fleets-overview.html[Learn about folders and fleets in NetApp Console local deployment].
 
 NOTE: You must have the _Super admin_, _Organization admin_, or _Folder or fleet admin_ roles to manage IAM in NetApp Console.
 
@@ -41,7 +41,7 @@ You can integrate NetApp Console local deployment with Active Directory so users
 
 For local users, MFA adds another verification step to reduce the risk of unauthorized access if credentials are compromised.
 
-To learn more about authentication and secure sign-in options, link:concept-secure-access.html[learn about secure access in NetApp Console local deployment].
+To learn more about authentication and secure sign-in options, link:concept-secure-access.html[Learn about secure access in NetApp Console local deployment].
 
 
 == How authorization works
@@ -56,7 +56,7 @@ Roles that you assign at the organization or folder level are inherited by child
 
 NetApp designs NetApp Console local deployment roles with least-privilege principles so each role includes only the permissions needed for its tasks.
 
-link:concept-iam-rbac.html#role-inheritance[Learn more about how role-based access control and role inheritance work in NetApp Console local deployment].
+link:concept-iam-rbac.html#role-inheritance[Learn about role-based access control and role inheritance in NetApp Console local deployment].
 
 
 == How the IAM hierarchy works
@@ -69,7 +69,7 @@ NetApp Console IAM is built on three types of components: organizational compone
 
 Because roles inherit through this hierarchy, your folder and fleet design directly affects how broadly each access assignment applies.
 
-link:task-iam-manage-folders-fleets.html[Learn how to add fleets to your organization.^]
+link:task-iam-manage-folders-fleets.html[Learn how to add fleets to your organization.^].
 
 
 

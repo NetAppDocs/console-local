@@ -53,7 +53,7 @@ NetApp Console local deployment supports these LLM provider types:
 
 Model availability depends on the endpoint you configure. Select a model from the list in Console local deployment.
 
-For supported model details, see link:reference-llm-supported-models.html[Supported LLM providers and models].
+For supported model details, see link:reference-llm-supported-models.html[Learn about supported LLM providers and models in NetApp Console local deployment].
 
 == Understand where LLM requests go
 

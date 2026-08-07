@@ -51,7 +51,7 @@ Update dashboards as priorities change by editing, duplicating, or deleting cust
 
 [role="quick-margin-list"]
 * link:task-dashboard-manage.html[Manage dashboards in NetApp Console local deployment]
-* link:reference-dashboard-card-templates.html[Custom dashboard cards and metrics reference]
+* link:reference-dashboard-card-templates.html[Learn about custom dashboard cards and metrics in NetApp Console local deployment]
 
 .Related information
 

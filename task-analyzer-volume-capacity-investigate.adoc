@@ -58,5 +58,5 @@ Use the capacity trends you observe to decide what to do next:
 
 * If available capacity is trending toward full, consider increasing the volume size, enabling autogrow, or moving data off the volume.
 * If snapshot used capacity is exceeding the reserve, review your snapshot policy and retention to reclaim space.
-* If the storage efficiency ratio is dropping, review whether the workload's data type or inline efficiency settings are reducing savings. Use link:reference-workload-analyzer-metrics.html[Workload Analyzer metrics reference] for detailed descriptions of capacity, snapshot, and efficiency metrics.
+* If the storage efficiency ratio is dropping, review whether the workload's data type or inline efficiency settings are reducing savings. Use link:reference-workload-analyzer-metrics.html[Learn about Workload Analyzer metrics in NetApp Console local deployment] for detailed descriptions of capacity, snapshot, and efficiency metrics.
 * If the volume has a capacity-related alert that Console local deployment can resolve, the alert might offer a Fix-It option. See link:task-remediation-guided.html[Remediate with guided steps].

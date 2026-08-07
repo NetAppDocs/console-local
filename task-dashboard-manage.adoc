@@ -49,7 +49,9 @@ Edit a dashboard when your operational priorities change and you need to adjust 
 
 . Modify an existing card on the dashboard by selecting Edit from the actions menu of the card.
 
-. Add a new card to the dashboard by selecting *Add Card* and following the steps in link:task-customize-dashboard-cards.html[Customize cards in NetApp Console local deployment].
+. Add a new card to the dashboard by selecting *Add Card*.
++
+link:task-customize-dashboard-cards.html[Customize cards in NetApp Console local deployment].
 
 
 . Select *Save changes* to save the dashboard.
@@ -79,7 +81,9 @@ Console local deployment creates a copy that includes all cards from the origina
 . Provide a name and description for the duplicated dashboard.
 
 
-. Select the duplicate dashboard you just created to edit the cards on the dashboard. link:task-customize-dashboard-cards.html[Customize cards in NetApp Console local deployment] to change the metrics, resources, and card types to suit your new monitoring scenario.
+. Select the duplicate dashboard you just created. Change the metrics, resources, and card types to suit your new monitoring scenario.
++
+link:task-customize-dashboard-cards.html[Customize cards in NetApp Console local deployment].
 
 == Remove dashboards you no longer use
 

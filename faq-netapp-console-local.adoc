@@ -132,7 +132,7 @@ RBAC lets you assign predefined, least-privilege roles to members at the organiz
 
 .How does role inheritance work, and can I override it at a lower scope?
 
-A role assigned at the organization or folder level is inherited by all child folders, fleets, and resources beneath it, so your folder and fleet design determines how broadly an assignment applies. You can't override inherited access at a lower scope—to change it, modify the assignment at the higher scope where you originally granted it. link:concept-iam-rbac.html#role-inheritance[Learn how role inheritance works].
+A role assigned at the organization or folder level is inherited by all child folders, fleets, and resources beneath it, so your folder and fleet design determines how broadly an assignment applies. You can't override inherited access at a lower scope—to change it, modify the assignment at the higher scope where you originally granted it. link:concept-iam-rbac.html#role-inheritance[Learn about role inheritance in NetApp Console local deployment].
 
 .What categories of predefined roles are available?
 
@@ -174,4 +174,4 @@ NetApp Console local deployment gives you access to NetApp Backup and Recovery s
 
 .How does NetApp Console local deployment support auditing and log retention?
 
-Every administrative action generates an audit record that you can review and filter from the Audit page. You can export audit logs to your own syslog server through a webhook so they reach your centralized monitoring or SIEM tools for longer retention and analysis, and because the Console runs in your environment, log data never leaves your infrastructure. link:task-audit-console-activity.html[Learn about auditing activity].
+Every administrative action generates an audit record that you can review and filter from the Audit page. You can export audit logs to your own syslog server through a webhook so they reach your centralized monitoring or SIEM tools for longer retention and analysis, and because the Console runs in your environment, log data never leaves your infrastructure. link:task-audit-console-activity.html[Audit NetApp Console local deployment activity].

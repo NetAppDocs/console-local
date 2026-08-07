@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-monitor-fleets-inventory.html
-keywords: inventory, fleet inventory, systems, volumes, capacity, security, performance, monitoring
+keywords: inventory, fleet inventory, systems, volumes, capacity, security, performance, monitoring, ONTAP, clusters, fleet visibility, capacity planning, storage governance, netapp console local
 summary: "Use inventory to monitor fleet health and investigate storage resources in NetApp Console local deployment."
 ---
 

@@ -14,7 +14,7 @@ summary: "Learn how to use folders and storage fleets to organize resources and 
 [.lead]
 In NetApp Console local deployment, use folders and storage fleets to organize your NetApp resources and control access according to your business structure—by location, department, or workload type.
 
-Use this page for hierarchy strategy and fleet design patterns. For a complete IAM model of members, roles, and resource scope, link:concept-identity-and-access-management.html[learn about identity and access management].
+Use this page for hierarchy strategy and fleet design patterns. For a complete IAM model of members, roles, and resource scope, link:concept-identity-and-access-management.html[Learn about identity and access management in NetApp Console local deployment].
 
 You organize resources in a hierarchy: the organization is at the top, then folders (which can contain other folders or fleets), and then fleets, which contain storage systems. Assign access roles at the organization, folder, or fleet level so users have the right access to resources.
 
@@ -30,7 +30,7 @@ An organization is the top level of the NetApp Console local deployment hierarch
 Folders::
 Folders group related fleets to organize them by location, site, or business unit. You can't associate storage systems directly with folders, but assigning a member a role at the folder level gives them access to all fleets in that folder.
 +
-NOTE: Organization admins can add a resource to a folder to delegate the task of associating the resource with fleets to a Folder or fleet admin. link:task-iam-manage-resources.html[Learn about associating resources with folders and fleets].
+NOTE: Organization admins can add a resource to a folder to delegate the task of associating the resource with fleets to a Folder or fleet admin. link:task-iam-manage-resources.html[Associate resources with folders and fleets].
 
 Fleets::
 Fleets group storage systems. Assign resources to fleets and grant members access at the fleet level. Resources can belong to multiple fleets. Members with fleet access can manage the resources in that fleet.
@@ -71,7 +71,7 @@ Users can have multiple roles as their duties expand.
 
 When you assign a role at the organization or folder level, the child folders, fleets, and resources beneath it inherit that role, so your folder and fleet design determines how broadly each assignment applies.
 
-link:concept-iam-rbac.html#role-inheritance[Learn more about how role inheritance works in NetApp Console local deployment].
+link:concept-iam-rbac.html#role-inheritance[Learn about role inheritance in NetApp Console local deployment].
 
 [#organization-design-examples]
 == Organization design examples

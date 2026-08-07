@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-custom-dashboards.html
-keywords: dashboards, predefined dashboards, custom dashboards, dashboard, cards, widgets, card templates, monitoring, netapp console local
+keywords: dashboards, predefined dashboards, custom dashboards, cards, card templates, metrics, KPI, fleet health, performance monitoring, capacity monitoring, storage visibility, netapp console local
 summary: "Learn how predefined Home page dashboards and custom dashboards work together in NetApp Console local deployment."
 ---
 = Learn about custom dashboards in NetApp Console local deployment
@@ -53,7 +53,7 @@ Health status, degraded or critical object counts, failed disks, network interfa
 Alerts::
 Critical alert counts, alerts by severity, alerts by impact area, recent alerts, and alert trends over time.
 
-For a complete catalog of predefined cards and metrics, see link:reference-dashboard-card-templates.html[Custom dashboard cards and metrics reference].
+For a complete catalog of predefined cards and metrics, see link:reference-dashboard-card-templates.html[Learn about custom dashboard cards and metrics in NetApp Console local deployment].
 
 == Resource types
 
@@ -67,4 +67,4 @@ Organize custom dashboards around storage administration goals such as workload 
 
 * link:task-dashboard-get-started.html[Get started with dashboards in NetApp Console local deployment]
 * link:task-storage-dashboard.html[View Home page metrics in NetApp Console local deployment]
-* link:reference-dashboard-card-templates.html[Custom dashboard cards and metrics reference]
+* link:reference-dashboard-card-templates.html[Learn about custom dashboard cards and metrics in NetApp Console local deployment]

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-analyzer-volume-throughput-investigate.html
-keywords: throughput, IOPS, MBs, read write, workload demand, workload analyzer, netapp console local
+keywords: throughput, IOPS, MB/s, read write, workload demand, QoS, resource utilization, workload analyzer, performance troubleshooting, netapp console local
 summary: "Investigate high throughput demand on a volume using the Workload Analyzer to understand IOPS and MB/s patterns and identify read/write imbalances."
 ---
 = Investigate high throughput on a volume in NetApp Console local deployment
@@ -59,6 +59,9 @@ The totals view shows a single IOPS line and a single MB/s line, which is useful
 Use the throughput patterns you observe to decide what to do next:
 
 * If read IOPS are very high relative to write IOPS, consider whether read-ahead settings or caching can reduce the load on the volume.
-* If the workload is approaching or has reached the QoS IOPS or MB/s limit, use the QoS limit lines and related metric definitions in link:reference-workload-analyzer-metrics.html[Workload Analyzer metrics reference] to confirm throttling and decide whether you need to adjust the limit.
-* If throughput is high and latency is also elevated, check the *Resource Utilization* section to determine whether the underlying node or aggregate is under contention. Use link:task-analyzer-volume-latency-investigate.html[Investigate high latency on a volume] together with link:reference-workload-analyzer-metrics.html[Workload Analyzer metrics reference] to compare throughput peaks, latency spikes, and resource utilization over the same period.
-* If the analyzer shows rapid capacity or snapshot growth while demand is increasing, review the capacity and snapshot metrics in link:reference-workload-analyzer-metrics.html[Workload Analyzer metrics reference] to understand how that growth might affect the volume.
+* If the workload is approaching or has reached the QoS IOPS or MB/s limit, use the QoS limit lines and related metric definitions to confirm throttling and decide whether you need to adjust the limit.
+* If throughput is high and latency is also elevated, check the *Resource Utilization* section to determine whether the underlying node or aggregate is under contention. Compare throughput peaks, latency spikes, and resource utilization over the same period.
+* If the analyzer shows rapid capacity or snapshot growth while demand is increasing, review the capacity and snapshot metrics to understand how that growth might affect the volume.
+
+link:task-analyzer-volume-latency-investigate.html[Investigate high latency on a volume].
+link:reference-workload-analyzer-metrics.html[Learn about Workload Analyzer metrics in NetApp Console local deployment].
