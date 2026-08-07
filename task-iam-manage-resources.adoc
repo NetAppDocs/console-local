@@ -66,7 +66,7 @@ View the resources in your organization to find a specific resource and see whic
 
 Associate a resource with a fleet or folder so the appropriate teams can manage it. For example, after adding an ONTAP cluster, associate it with the `Production-US-East` fleet so the regional Storage admins for that fleet can manage it.
 
-NOTE: Users with the Organization admin role can add resources to a folder to delegate fleet association tasks to the Folder or fleet admin for that folder. link:task-iam-manage-folders-fleets.html#associate-resource-folder[Learn about associating a resource with a folder].
+NOTE: Users with the Organization admin role can add resources to a folder to delegate fleet association tasks to the Folder or fleet admin for that folder. link:task-iam-manage-folders-fleets.html#associate-resource-folder[Associate a resource with a folder].
 
 
 .Steps
@@ -83,7 +83,7 @@ Note that you can only select from the folders and fleets for which you have adm
 
 
 * If you associated the resource with fleets, members who have permissions for those fleets now have the ability to access the resource from the Console.
-* If you associated the resource with a folder, a _Folder or fleet admin_ can now access the resource and associate it with a fleet within the folder. link:task-iam-manage-folders-fleets.html#associate-resource-folder[Learn about associating a resource with a folder].
+* If you associated the resource with a folder, a _Folder or fleet admin_ can now access the resource and associate it with a fleet within the folder. link:task-iam-manage-folders-fleets.html#associate-resource-folder[Associate a resource with a folder].
 
 
 
@@ -105,7 +105,10 @@ The following example shows a resource that is associated with one fleet.
 image:screenshot-iam-resource-details.png[A screenshot of the resource details page that shows a resource associated with a fleet that's directly underneath the organization.]
 
 
-NOTE: To see which members have access to the resource, review the associated folder or fleet. link:task-iam-users-fleets-assign.html[Manage fleet access assignments]. To manage one member across multiple scopes, use link:task-iam-manage-roles.html[Manage member access].
+NOTE: To see which members have access to the resource, review the associated folder or fleet.
+
+link:task-iam-users-fleets-assign.html[Manage fleet access assignments].
+link:task-iam-manage-roles.html[Manage member access].
 
 [#remove-resource]
 == Remove a resource from a folder or fleet

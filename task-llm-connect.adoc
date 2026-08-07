@@ -38,7 +38,7 @@ Before you connect your LLM, gather the following:
 * Network access from Console local deployment to the selected endpoint.
 * Storage classes and role-based access controls for the assistant actions you plan to allow.
 
-For supported model details, see link:reference-llm-supported-models.html[Supported LLM providers and models].
+For supported model details, see link:reference-llm-supported-models.html[Learn about supported LLM providers and models in NetApp Console local deployment].
 
 
 == Connect an LLM to NetApp Console local deployment
@@ -49,7 +49,9 @@ Enter provider settings, API key, and model to connect your LLM to Console local
 . Log in to the NetApp Console local deployment.
 . Select *Administration > AI Tools*.
 . Select the menu, and then select *Edit*.
-. In *Provider type*, select a provider type: link:concept-llm-integration.html[Learn about provider choices.]
+. In *Provider type*, select a provider type.
++
+link:concept-llm-integration.html[Learn about LLM integration in NetApp Console local deployment].
 . If prompted for a provider endpoint, enter the endpoint URL for the provider path you selected.
 . Enter the proxy or gateway URL and credentials.
 . In the *User name* field, enter your user name or SSO ID if your provider path requires it.
@@ -59,7 +61,7 @@ Enter provider settings, API key, and model to connect your LLM to Console local
 +
 If save or test fails, verify the provider type, endpoint URL, API key, and selected model, and then try again.
 
-link:task-llm-troubleshoot-integration.html[Learn about troubleshooting your LLM integration].
+link:task-llm-troubleshoot-integration.html[Troubleshoot your LLM integration].
 
 == Verify that LLM integration works
 

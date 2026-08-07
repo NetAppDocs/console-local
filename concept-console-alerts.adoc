@@ -58,6 +58,6 @@ Info-level alerts are visible in the Alerts page but are not delivered by notifi
 
 * link:task-alerts-monitor.html[Monitor and investigate alerts]
 * link:task-alert-rules-manage.html[Create and manage alert notification rules]
-* link:reference-ontap-alerts.html[ONTAP alerts reference]
+* link:reference-ontap-alerts.html[Learn about ONTAP alerts in NetApp Console local deployment]
 
 

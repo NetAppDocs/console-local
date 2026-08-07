@@ -32,7 +32,7 @@ NetApp Console uses role-based access control (RBAC) to manage member permission
 === Using role inheritance
 A role that you assign at the organization or folder level is inherited by the child scopes beneath it, so change an inherited assignment at the higher scope where you originally granted it.
 
-link:concept-iam-rbac.html#role-inheritance[Learn more about how role inheritance works in NetApp Console local deployment].
+link:concept-iam-rbac.html#role-inheritance[Learn about role inheritance in NetApp Console local deployment].
 
 
 
@@ -41,7 +41,7 @@ link:concept-iam-rbac.html#role-inheritance[Learn more about how role inheritanc
 
 Confirm exactly which roles a member holds and at which scope before you make a change. For example, check whether a teammate already has the Storage admin role on the `Production-EU-West` fleet.
 
-If you have the _Folder or fleet admin_ role, the page displays all members in the organization. However, you can view and manage permissions only for the folders and fleets that you administer. link:reference-iam-predefined-roles.html[Learn more about the actions that a _Folder or fleet admin_ can complete].
+If you have the _Folder or fleet admin_ role, the page displays all members in the organization. However, you can view and manage permissions only for the folders and fleets that you administer. link:reference-iam-predefined-roles.html[Learn about Folder or fleet admin actions in NetApp Console local deployment].
 
 include::_include/tasks-role.adoc[tag=view-role]
 

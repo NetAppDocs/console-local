@@ -65,4 +65,4 @@ The *System health status* card lists individual systems with their current heal
 == Related information
 
 * link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console local deployment]
-* link:reference-dashboard-card-templates.html[Predefined dashboards and custom dashboard cards reference in NetApp Console local deployment]
+* link:reference-dashboard-card-templates.html[Learn about custom dashboard cards and metrics in NetApp Console local deployment]

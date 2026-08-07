@@ -32,7 +32,7 @@ NetApp Console uses role-based access control (RBAC) to manage permissions. Assi
 Note the following about granting access in NetApp Console local deployment:
 
 * You must explicitly add each user to your organization and assign at least one role before that user can access resources.
-* A role that you assign at the organization or folder level is inherited by child scopes, so choose the assignment scope carefully to give the member access only where needed. link:concept-iam-rbac.html#role-inheritance[Learn more about how role inheritance works in NetApp Console local deployment].
+* A role that you assign at the organization or folder level is inherited by child scopes, so choose the assignment scope carefully to give the member access only where needed. link:concept-iam-rbac.html#role-inheritance[Learn about role inheritance in NetApp Console local deployment].
 
 [#add-members]
 == Add members to your organization

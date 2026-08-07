@@ -20,4 +20,4 @@ Support for Backup and Recovery is already built in to all ONTAP systems, so the
 
 NOTE: NetApp Backup and Recovery is in preview mode for NetApp Console local deployment. The service is not yet generally available, and the features and functionality are subject to change.
 
-link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html[Learn more about NetApp Backup and Recovery.^]
+link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html[Learn more about NetApp Backup and Recovery.^].

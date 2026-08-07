@@ -71,8 +71,8 @@ Use the forecast toggle in each analysis section to extend the chart timeline be
 
 .Related information
 
-link:task-analyzer-volume-latency-investigate.html[Investigate high latency on a volume]
-link:task-analyzer-volume-throughput-investigate.html[Investigate high throughput demand on a volume]
-link:task-analyzer-volume-capacity-investigate.html[Investigate capacity growth on a volume]
-link:reference-workload-analyzer-metrics.html[Workload Analyzer metrics reference]
+link:task-analyzer-volume-latency-investigate.html[Investigate high latency on a volume].
+link:task-analyzer-volume-throughput-investigate.html[Investigate high throughput demand on a volume].
+link:task-analyzer-volume-capacity-investigate.html[Investigate capacity growth on a volume].
+link:reference-workload-analyzer-metrics.html[Learn about Workload Analyzer metrics in NetApp Console local deployment].
 

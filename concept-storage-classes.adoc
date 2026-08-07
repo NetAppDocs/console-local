@@ -85,7 +85,9 @@ For details on how to organize fleets, see link:concept-manage-storage.html[Lear
 
 * To understand fleet organization, see link:concept-manage-storage.html[Learn about fleet management in NetApp Console local deployment].
 * To create policies and storage classes, see link:task-storage-class-manage.html[Manage storage classes and policies].
-* To provision storage, see link:task-provisioning-manual.html[manual provisioning], link:task-provisioning-automated.html[automated provisioning], or link:task-provisioning-agentic.html[AI-assisted provisioning].
+* link:task-provisioning-manual.html[Provision storage manually]
+* link:task-provisioning-automated.html[Provision storage automatically]
+* link:task-provisioning-agentic.html[Provision storage with AI assistance]
 * To analyze and remediate drift, see link:task-storage-class-drift-remediate.html[Remediate storage class drift]
 //<tsharp> We need to standardize on how to do x-references. Typically, I've been using "Learn about <subject>"" instead of the see page title method. I inherited that in the Console (SaaS) docs and I think we should keep it.
 //<mlucey> Will return to this.

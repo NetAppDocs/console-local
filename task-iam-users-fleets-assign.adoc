@@ -22,7 +22,7 @@ Alternatively, you can manage all roles for a particular member across multiple 
 
 == How folder and fleet access works
 
-Console local deployment uses role-based access control (RBAC). A role that you assign at the folder level applies to all fleets and subfolders within that folder; a role that you assign at the fleet level applies only to that fleet's resources. link:concept-iam-rbac.html#role-inheritance[Learn more about how access is granted and inherited].
+Console local deployment uses role-based access control (RBAC). A role that you assign at the folder level applies to all fleets and subfolders within that folder; a role that you assign at the fleet level applies only to that fleet's resources. link:concept-iam-rbac.html#role-inheritance[Learn about role inheritance in NetApp Console local deployment].
 
 NOTE: You can't change a role at the fleet level if a member inherits it from a folder or from the organization. To change inherited access, change the role at the higher scope.
 
@@ -55,6 +55,8 @@ To add a new member and assign their first role, use the onboarding task instead
 . Modify member access:
 +
 * *Change a member's role*: For any member with a role other than Organization admin, select their existing role and choose a new role. The change applies only at this scope; roles inherited from a higher scope don't appear here.
-* *Remove member access at this scope*: For a member who has a role defined directly at this folder or fleet, remove the role to revoke their access at this scope. This doesn't remove the member from your organization or affect roles they have at other scopes. To remove the member from the organization entirely, use link:task-iam-manage-roles.html#remove-a-member-from-your-organization[Remove a member from your organization].
+* *Remove member access at this scope*: For a member who has a role defined directly at this folder or fleet, remove the role to revoke their access at this scope. This doesn't remove the member from your organization or affect roles they have at other scopes.
++
+link:task-iam-manage-roles.html#remove-a-member-from-your-organization[Remove a member from your organization].
 
 . Select *Apply*.

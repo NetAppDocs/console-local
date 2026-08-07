@@ -83,4 +83,6 @@ Console local deployment supports three provisioning approaches, all governed by
 
 * To understand storage standards, see link:concept-storage-classes.html[Learn about storage classes and policies in NetApp Console local deployment].
 * To create and manage fleets, see link:task-iam-manage-folders-fleets.html[Manage folders and fleets].
-* To provision storage, see link:task-provisioning-manual.html[manual provisioning], link:task-provisioning-automated.html[automated provisioning], or link:task-provisioning-agentic.html[AI-assisted provisioning].
+* link:task-provisioning-manual.html[Provision storage manually]
+* link:task-provisioning-automated.html[Provision storage automatically]
+* link:task-provisioning-agentic.html[Provision storage with AI assistance]

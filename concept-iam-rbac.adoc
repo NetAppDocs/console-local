@@ -43,7 +43,7 @@ NetApp Console local deployment roles use least-privilege principles that ensure
 
 You can assign multiple roles to a member based on their responsibilities. For example, you might assign a member both the Storage admin role and the Backup and Recovery admin role for a specific fleet.
 
-To choose access for a member, match the role category to the member's responsibilities, then assign the role at the scope (organization, folder, or fleet) that matches how broadly the member should have that access. Learn more about how link:concept-folders-fleets-overview.html#organization-design-examples[different organizations structure roles and scope in NetApp Console local deployment].
+To choose access for a member, match the role category to the member's responsibilities, then assign the role at the scope (organization, folder, or fleet) that matches how broadly the member should have that access. link:concept-folders-fleets-overview.html#organization-design-examples[Learn about how different organizations structure roles and scope in NetApp Console local deployment].
 
 link:reference-iam-predefined-roles.html[Learn about the predefined roles that you can assign to members in NetApp Console local deployment].
 
@@ -56,5 +56,7 @@ Use the scope that matches the access you want the member to keep. For example, 
 
 You can't override inherited access at a lower scope. If a member inherits a role from the organization or from a folder, change that assignment at the higher scope where you originally granted it.
 
-To see how inheritance works in your resource hierarchy, link:concept-folders-fleets-overview.html[learn about folders and fleets]. To update roles for one member or one fleet, use link:task-iam-manage-roles.html[Manage member access] or link:task-iam-users-fleets-assign.html[Manage fleet access assignments].
+link:concept-folders-fleets-overview.html[Learn about folders and fleets in NetApp Console local deployment].
+link:task-iam-manage-roles.html[Manage member access].
+link:task-iam-users-fleets-assign.html[Manage fleet access assignments].
 

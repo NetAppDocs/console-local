@@ -16,72 +16,69 @@ NetApp Console local deployment lets you host and run the NetApp Console autonom
 
 You get unified storage management, policy enforcement, fleet-scale automation, and AI-assisted operations. No data, metadata, or management traffic leaves your environment.
 
-== Local deployment operations and connectivity
+== Deploy and operate Console in your own infrastructure
 
 NetApp Console local deployment runs in your own infrastructure, so your team controls deployment, connectivity, and daily operations. You deploy the Console agent, maintain the Console virtual machine, and manage the network paths required for monitoring and management traffic. This gives enterprise administrators full control of operational boundaries while keeping management data inside the environment.
 
-link:task-install-agent-on-prem-ova.html[Install NetApp Console local deployment using an OVA in vCenter]
-link:task-console-local-vm-config.html[Maintain your vCenter or ESXi host for NetApp Console local deployment]
-link:reference-ports-on-prem.html[Ports for the on-premises Console agent in NetApp Console local deployment]
+link:task-install-agent-on-prem-ova.html[Install NetApp Console local deployment using an OVA in vCenter].
+link:task-console-local-vm-config.html[Maintain your vCenter or ESXi host for NetApp Console local deployment].
+link:reference-ports-on-prem.html[Learn about ports for the on-premises Console agent in NetApp Console local deployment].
 
-== API-driven operations and service accounts
+== Automate storage operations with APIs and service accounts
 
 NetApp Console local deployment supports API-based integrations so your organization can automate repeatable storage operations. Service accounts let applications authenticate and operate with assigned roles. The same role-based access control and audit controls that apply to interactive users govern those actions. This supports enterprise automation while keeping access scoped and accountable.
 
-link:task-iam-manage-members-permissions.html[Add members to your NetApp Console local deployment organization]
+link:task-iam-manage-members-permissions.html[Add members to your NetApp Console local deployment organization].
 https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the API for NetApp Console IAM^]
 
-== Role-based access control and identity integration
+== Control access with RBAC and Active Directory integration
 
 NetApp Console local deployment provides zero-trust role-based access control (RBAC) that limits what users can see and do within the fleets and resources they manage. You can integrate with Active Directory so users sign in with their existing corporate credentials, and local users can add multi-factor authentication (MFA) for another layer of verification. Access governance stays aligned with your organization's broader identity and access management practices.
 
-link:concept-identity-and-access-management.html[Learn about identity and access management in NetApp Console local deployment]
-link:concept-secure-access.html[Learn about secure access to NetApp Console local deployment]
+link:concept-identity-and-access-management.html[Learn about identity and access management in NetApp Console local deployment].
+link:concept-secure-access.html[Learn about secure access to NetApp Console local deployment].
 
-== Enterprise resource organization and delegated administration
+== Organize fleets and delegate storage administration
 
 NetApp Console local deployment scales administration by organizing resources into folders and fleets. You can map fleets to environments, business units, or regions, then delegate administration at organization, folder, or fleet scope to keep ownership clear. This structure helps large storage teams distribute work without losing policy consistency or governance.
 
-link:concept-folders-fleets-overview.html[Learn about folders and fleets in NetApp Console local deployment]
-link:concept-storage-fleets.html[Learn about storage fleets in NetApp Console local deployment]
+link:concept-folders-fleets-overview.html[Learn about folders and fleets in NetApp Console local deployment].
+link:concept-storage-fleets.html[Learn about storage fleets in NetApp Console local deployment].
 
-== Audit trail and log export
+== Track and export administrative activity for compliance
 
 Every administrative action generates an audit record. Security and compliance teams can use these records to investigate incidents, show control effectiveness, and satisfy audit requirements. Export audit logs to your syslog server through a webhook for centralized monitoring, longer retention, and analysis. Because NetApp Console local deployment runs in your own environment, log data never leaves your infrastructure.
 
-link:task-audit-console-activity.html[Learn about auditing activity in NetApp Console local deployment]
+link:task-audit-console-activity.html[Audit NetApp Console local deployment activity].
 
-== Policy-driven storage provisioning
+== Provision storage consistently with storage class policies
 
-NetApp Console local deployment enforces consistent storage behavior through storage classes—templates that bundle performance, capacity, and tiering policies into reusable definitions. Administrators define storage standards once. Administrators and automated workflows use those approved classes for all provisioning activity across your environment. This stops configuration drift, reduces the time junior administrators spend on provisioning decisions, and guarantees that every workload meets your organization's standards immediately.
+NetApp Console local deployment enforces consistent storage behavior through storage classes—templates that bundle performance, capacity, and tiering policies into reusable definitions. Administrators define storage standards once. Administrators and automated workflows use those approved classes for all provisioning activity across your environment. This stops configuration drift, reduces the time junior administrators spend on provisioning decisions, and guarantees that every workload meets your organization's standards immediately. After provisioning, Console local deployment continues to monitor each workload for compliance.
 
-link:concept-manage-storage.html[Learn about managing storage with NetApp Console local deployment]
+link:concept-manage-storage.html[Learn about managing storage with NetApp Console local deployment].
 
-== Continuous compliance monitoring and automated remediation
+== Monitor storage class compliance and remediate drift automatically
 
 NetApp Console local deployment monitors every workload against the storage class used to provision it. When a workload drifts—because of a direct cluster configuration change or degrading performance—NetApp Console local deployment flags the violation immediately. Administrators can follow guided remediation steps or configure automated remediation to resolve common drift conditions without manual intervention. This continuous enforcement reduces audit risk and keeps your environment compliant between scheduled reviews.
 
-== Fleet-wide monitoring and observability
+== Monitor storage health and receive alerts across fleets
 
-NetApp Console local deployment gives you a single place to watch the health and performance of every cluster you manage. Fleet-wide dashboards display clusters and volumes that need attention. Configurable alerts notify the right people when conditions change. Custom dashboards let administrators build monitoring views that match their responsibilities. The Workload Analyzer correlates latency, throughput, resource utilization, and configuration changes over time to help you pinpoint root causes before issues affect workloads.
+NetApp Console local deployment gives you a single place to watch the health and performance of every cluster you manage. Fleet-wide dashboards display clusters and volumes that need attention. Custom dashboards let administrators build monitoring views that match their responsibilities. The Workload Analyzer correlates latency, throughput, resource utilization, and configuration changes over time to help you pinpoint root causes before issues affect workloads.
 
-link:concept-monitor-storage.html[Learn about monitoring storage health in NetApp Console local deployment]
+Configure email and webhook delivery channels so alerts reach the right teams when conditions change. Organization admins set up destinations, and storage admins apply them in alert rules so response paths match your operational model. This helps enterprise teams respond faster to capacity, performance, and protection events.
 
-== Alert delivery integrations
+link:concept-monitor-storage.html[Learn about monitoring storage health in NetApp Console local deployment].
+link:task-console-configure-notifications-delivery.html[Set up notification delivery channels in NetApp Console local deployment].
+link:task-alert-rules-manage.html[Configure notification rules for alerts in NetApp Console local deployment].
 
-NetApp Console local deployment helps you route alert notifications to the right teams through configurable delivery channels. Organization admins can configure email and webhook destinations, and storage admins can apply those channels in alert rules so response paths match your operational model. This helps enterprise teams reduce unnecessary alerts and respond faster to capacity, performance, and protection events.
-
-link:task-console-configure-notifications-delivery.html[Set up notification delivery channels in NetApp Console local deployment]
-link:task-alert-rules-manage.html[Configure notification rules for alerts in NetApp Console local deployment]
-
-== AI-assisted management
+== Provision storage and investigate alerts with natural language
 
 NetApp Console local deployment can connect to your own large language model (LLM) to provide AI-assisted storage management. You can describe a workload in plain language to get a provisioning plan, ask the Console to investigate an active alert, or get contextual answers about your storage environment. Every AI action stays within the guardrails of your storage classes and the role-based access controls that apply to your account, and you must confirm sensitive operations before they proceed. Console local deployment sends requests only to the LLM endpoint your administrators configure.
 
-link:concept-llm-integration.html[Learn about LLM integration in NetApp Console local deployment]
+link:concept-llm-integration.html[Learn about LLM integration in NetApp Console local deployment].
 
-== Data protection
+== Back up and restore storage with NetApp Backup and Recovery
 
 Beyond provisioning and monitoring, NetApp Console local deployment gives you access to NetApp Backup and Recovery so you can protect your data from the same interface. You can back up and restore your data to support your protection and recovery requirements. Managing data protection alongside your storage keeps governance consistent and reduces the number of tools your teams need to operate.
 
-link:concept-data-services.html[Learn about data services in NetApp Console local deployment]
+link:concept-data-services.html[Learn about data services in NetApp Console local deployment].

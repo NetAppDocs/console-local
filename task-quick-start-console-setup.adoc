@@ -21,7 +21,7 @@ Super admin or Organization admin. link:reference-iam-predefined-roles.html[Lear
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Install NetApp Console local deployment
 
 [role="quick-margin-list"]
-* Review the installation workflow to understand the deployment process. link:concept-deploy-netapp-console-local.html[Review the installation workflow].
+* Review the installation workflow to understand the deployment process. link:concept-deploy-netapp-console-local.html[Learn about the installation workflow for NetApp Console local deployment].
 
 * Install NetApp Console local deployment in your vCenter. link:task-install-agent-on-prem-ova.html[Install NetApp Console local deployment].
 
@@ -30,9 +30,9 @@ Super admin or Organization admin. link:reference-iam-predefined-roles.html[Lear
 [role="quick-margin-list"]
 * Learn how folders and fleets organize your resources. link:concept-folders-fleets-overview.html[Learn about folders and fleets].
 
-* Understand how role-based access control (RBAC) grants members the access they need. link:concept-iam-rbac.html[Understand RBAC].
+* Understand how role-based access control (RBAC) grants members the access they need. link:concept-iam-rbac.html[Learn about role-based access control in NetApp Console local deployment].
 
-* Review the identity and access management workflow. link:task-iam-fleet-mgmt-get-started.html[Learn about IAM for fleet and resource management].
+* Review the identity and access management workflow. link:task-iam-fleet-mgmt-get-started.html[Get started with IAM for fleet and resource management].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Set up your organization
 
@@ -57,7 +57,7 @@ Super admin or Organization admin. link:reference-iam-predefined-roles.html[Lear
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Set up NetApp Backup and Recovery
 
 [role="quick-margin-list"]
-link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html#use-a-netapp-backup-and-recovery-byol-license[Obtain a license for NetApp Backup and Recovery^]. You can skip this step if you do not want access to advanced Backup and Recovery services.
+* link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html#use-a-netapp-backup-and-recovery-byol-license[Obtain a license for NetApp Backup and Recovery^]. You can skip this step if you do not want access to advanced Backup and Recovery services.
 
 * Add the NetApp Backup and Recovery license to NetApp Console local deployment. link:https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-services-licenses.html[Add the license to NetApp Console local deployment^].
 

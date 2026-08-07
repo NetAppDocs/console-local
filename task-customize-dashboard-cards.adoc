@@ -19,7 +19,7 @@ In NetApp Console local deployment, customize dashboard cards when you need to f
 == Before you begin
 
 * Create or open a dashboard where you want to place cards.
-* Review available templates and metrics in link:reference-dashboard-card-templates.html[Custom dashboard cards and metrics reference].
+* Review available templates and metrics in link:reference-dashboard-card-templates.html[Learn about custom dashboard cards and metrics in NetApp Console local deployment].
 
 
 == Add cards while refining an existing dashboard
@@ -42,4 +42,4 @@ include::_include/dashboard-cards-steps.adoc[tag=core-add-card-flow]
 * link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console local deployment]
 * link:task-dashboard-create.html[Create a custom dashboard]
 * link:task-dashboard-manage.html[Manage custom dashboards]
-* link:reference-dashboard-card-templates.html[Custom dashboard cards and metrics reference]
+* link:reference-dashboard-card-templates.html[Learn about custom dashboard cards and metrics in NetApp Console local deployment]

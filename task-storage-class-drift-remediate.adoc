@@ -54,7 +54,7 @@ Compliance evaluations can take several minutes to reflect recent configuration 
 
 == Related information
 
-* link:concept-storage-classes.html#storage-class-drift-and-compliance[Storage class drift and compliance]
+* link:concept-storage-classes.html#storage-class-drift-and-compliance[Learn about storage class drift and compliance in NetApp Console local deployment]
 * link:concept-console-alerts.html[Learn about storage alerts]
 * link:task-alerts-monitor.html[View alerts]
 * link:task-remediation-guided.html[Guided remediation]

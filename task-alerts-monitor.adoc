@@ -30,7 +30,7 @@ NOTE: You can also set up notification rules to receive alerts by email or webho
 == Available alerts
 NetApp Console local deployment supports alerts for ONTAP and NetApp Backup and Recovery.
 
-* link:reference-ontap-alerts.html[View the ONTAP alerts reference]
+* link:reference-ontap-alerts.html[Learn about ONTAP alerts in NetApp Console local deployment]
 * link:https://docs.netapp.com/us-en/data-services-backup-recovery/reference-audit-actions.html[Learn more about NetApp Backup and Recovery alerts.^]
 
 
