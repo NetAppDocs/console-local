@@ -12,7 +12,7 @@ summary: "Learn how to use folders and storage fleets to organize resources and 
 :imagesdir: ./media/
 
 [.lead]
-Use folders and storage fleets to organize your NetApp resources and control access according to your business structure—by location, department, or workload type.
+In NetApp Console local deployment, use folders and storage fleets to organize your NetApp resources and control access according to your business structure—by location, department, or workload type.
 
 Use this page for hierarchy strategy and fleet design patterns. For a complete IAM model of members, roles, and resource scope, link:concept-identity-and-access-management.html[learn about identity and access management].
 

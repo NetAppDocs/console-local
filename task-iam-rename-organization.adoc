@@ -13,7 +13,7 @@ summary: If needed, you can change the name of your NetApp Console local deploym
 :imagesdir: ./media/
 
 [.lead]
-Your NetApp Console organization has a name and an ID. You can choose a name for your organization to help identify it. You may also need to retrieve the organization ID for certain integrations.
+In NetApp Console local deployment, your NetApp Console organization has a name and an ID. You can choose a name for your organization to help identify it. You may also need to retrieve the organization ID for certain integrations.
 
 .Required access roles
 Super admin or Organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].

@@ -13,7 +13,7 @@ summary: Manage member access in your Console organization. Assign roles to set 
 :imagesdir: ./media/
 
 [.lead]
-Review or change a user's roles across multiple folders or fleets, such as checking everything a storage engineer can access, adding a new role in another region, or removing that user's access when responsibilities change.
+In NetApp Console local deployment, review or change a user's roles across multiple folders or fleets, such as checking everything a storage engineer can access, adding a new role in another region, or removing that user's access when responsibilities change.
 
 
 .Required access roles

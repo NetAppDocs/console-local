@@ -16,19 +16,19 @@ summary: "View active alerts across your organization or for a specific fleet fr
 
 Monitor and investigate alerts in NetApp Console local deployment to keep your storage healthy and minimize disruption.
 
-View active alerts across your entire organization or a specific fleet, prioritize them by severity and impact area, and investigate root causes so you can resolve issues before they escalate.
+View active alerts across your entire organization or a specific fleet, prioritize them by severity and impact area, and investigate root causes so you can resolve issues before they escalate. When an alert includes a recommended action or Fix It option, you can move from investigation directly into remediation.
 
 .Required access role
 All roles except Federation admin and Federation viewer. Users with the Federation admin or Federation viewer role cannot view alerts. link:reference-iam-predefined-roles.html[Learn about access roles].
 
-For ONTAP alerts, you can access tools such as System Manager and Workload analyzer directly from the Alerts page to investigate and resolve issues. 
+For ONTAP alerts, you can access tools such as System Manager and Workload Analyzer directly from the Alerts page to investigate and resolve issues.
 
 For external reporting, you can export the alerts list to a CSV file for offline analysis.
 
 NOTE: You can also set up notification rules to receive alerts by email or webhook. link:task-alert-rules-manage.html[Learn how to set up alert notifications].
 
 == Available alerts
-NetApp Console local deployment supports alerts for ONTAP and NetApp Backup and recovery
+NetApp Console local deployment supports alerts for ONTAP and NetApp Backup and Recovery.
 
 * link:reference-ontap-alerts.html[View the ONTAP alerts reference]
 * link:https://docs.netapp.com/us-en/data-services-backup-recovery/reference-audit-actions.html[Learn more about NetApp Backup and Recovery alerts.^]
@@ -37,9 +37,9 @@ NetApp Console local deployment supports alerts for ONTAP and NetApp Backup and 
 
 == View the alerts dashboard
 
-You can filter the alerts dashboard to view alerts for your entire organization or for a specific fleet. The dashboard provides a summary of active alerts, including their severity and impact area. Additionally, you can filter the dashboard to view only critical alerts or only alerts for a specific impact area.
+Use the alerts dashboard to get a quick view of current alert activity for the scope you selected. The dashboard summarizes active alerts by severity and impact area, and it includes a chart that shows alert distribution over the past 24 hours so you can spot trends quickly.
 
-The dashboard also includes a chart that shows the distribution of alerts over the past 24 hours, which can help you identify trends and patterns in your alert activity.
+You can filter the dashboard to focus on critical alerts or alerts for a specific impact area.
 
 
 .Steps
@@ -58,7 +58,7 @@ The dashboard also includes a chart that shows the distribution of alerts over t
 
 == View all alerts
 
-Use the Alerts tab to view the full list of active alerts for the scope you've selected. You can also search the list for specific alerts by name or description.
+Use the Alerts tab to view the full list of active alerts for the scope you've selected. The list updates to reflect the current organization or fleet scope, and you can search the list for specific alerts by name or description.
 
 .Steps
 
@@ -74,7 +74,8 @@ Use the Alerts tab to view the full list of active alerts for the scope you've s
 image:screenshot-alerts-search.png["Search alerts by name or description"]
 
 == View alerts by system
-You can view alerts associated with a specific system within a fleet or your organization.
+
+You can view alerts for a specific system within a fleet or your organization.
 
 .Steps
 . Select *Health > Alerts > Overview*.
@@ -87,7 +88,7 @@ You can view alerts associated with a specific system within a fleet or your org
 
 
 == Investigate an alert
-You can investigate an alert to understand what triggered it and who received a notification.
+You can investigate an alert to see what triggered it and who received the notification.
 
 When investigating an ONTAP alert, you can also go directly to the System Manager interface for the system that generated the alert to view additional details and take action.
 
@@ -103,6 +104,23 @@ image:screenshot-alerts-investigate.png["View alert details"]
 . If applicable, select the VM or cluster name to open the System Manager interface for the system that generated the alert.
 +
 image:screenshot-alerts-details.png["View alert details and navigate to System Manager"]
+
+== Remediate an alert
+
+When an alert includes a recommended action or Fix It option, use it to move from investigation into remediation without leaving the alert details.
+
+.Steps
+
+. Select *Health > Alerts > Overview*.
+. From the scope selector, choose one of the following:
++
+* *All* (default) to see alerts across all fleets you have access to
+* A specific fleet to see alerts only for that fleet
+. Select the alert you want to remediate.
+. Review the alert details, then select the recommended action or *Fix It* option if one is available.
+. Follow the guided steps to apply the remediation and then return to the alert details to confirm the alert state.
+
+If the action resolves the issue, the alert no longer appears as active for that scope. If the alert remains active, review the alert details again and continue the investigation.
 
 == Analyze an alert
 You can analyze an ONTAP alert in Workload Analyzer to understand what triggered it.

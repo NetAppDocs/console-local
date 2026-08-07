@@ -5,7 +5,7 @@ keywords: inventory, fleet inventory, systems, volumes, capacity, security, perf
 summary: "Use inventory to monitor fleet health and investigate storage resources in NetApp Console local deployment."
 ---
 
-= Monitor fleets using inventory
+= Monitor fleets using inventory in NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: "Use inventory to monitor fleet health and investigate storage resource
 :imagesdir: ./media/
 
 [.lead]
-Use inventory to monitor fleet health and investigate storage resources across your environment. Inventory provides capacity, security, and performance views that help you identify issues, understand resource utilization, and track managed storage systems.
+In NetApp Console local deployment, use inventory to monitor fleet health and investigate storage resources across your environment. Inventory provides capacity, security, and performance views that help you identify issues, understand resource utilization, and track managed storage systems.
 
 Inventory is primarily an informational and diagnostic workspace. From inventory, you can review systems, volumes, and other storage objects across your fleets and perform common actions such as provisioning storage resources. For advanced storage management operations, NetApp Console local deployment redirects you to System Manager.
 

@@ -13,7 +13,7 @@ summary: The Console agent uses _inbound_ ports when installed manually on an on
 :imagesdir: ./media/
 
 [.lead]
-The Console agent uses _inbound_ ports when installed manually on an on-premises Linux host. Refer to these ports for planning purposes.
+In NetApp Console local deployment, the Console agent uses _inbound_ ports when installed manually on an on-premises Linux host. Refer to these ports for planning purposes.
 
 These inbound rules apply to all NetApp Console deployment modes.
 

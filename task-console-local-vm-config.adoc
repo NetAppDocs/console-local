@@ -13,7 +13,7 @@ summary: You can make changes to your existing VCenter or ESXi host after you de
 :imagesdir: ./media/
 
 [.lead]
-You can make changes to your existing VCenter or ESXi host after you deploy the Console local deployment. For example, you can increase the CPU or RAM of the VM instance that hosts the Console local deployment. 
+In NetApp Console local deployment, you can make changes to your existing VCenter or ESXi host after you deploy the Console local deployment. For example, you can increase the CPU or RAM of the VM instance that hosts the Console local deployment. 
 
 Perform these maintenance tasks using the VM web console:
 

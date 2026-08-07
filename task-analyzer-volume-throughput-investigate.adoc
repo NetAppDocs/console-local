@@ -16,6 +16,7 @@ Use Workload Analyzer in NetApp Console local deployment to examine a volume's I
 
 When a volume's workload is consuming more IOPS or throughput than expected, identify what's driving the demand. The throughput analysis section shows IOPS and MB/s with an optional read, write, and other breakdown so you can identify which type of I/O is driving high demand and whether that demand is trending toward a QoS limit.
 
+If you open the analyzer from an alert or from volume inventory, the volume is already selected and you can focus on the time range and throughput charts.
 
 .Steps
 
@@ -23,7 +24,7 @@ When a volume's workload is consuming more IOPS or throughput than expected, ide
 +
 * From the *Health* menu, select *Workload Analyzer*, then search for and select the volume you want to investigate in the *Volume* field.
 * From the *Storage > Fleets > Inventory* page, navigate to a volume you want to analyze and select *Analyze* from the action menu.
-* From the *Alerts > Overview* page, select a capacity-related alert for the volume you want to investigate, then select *Analyze* from the alert details.
+* From the *Alerts > Overview* page, select an alert for the volume you want to investigate, then select *Analyze* from the alert details.
 
 . Set the *Time Range* to cover the period of high demand, then select *Analyze*.
 
