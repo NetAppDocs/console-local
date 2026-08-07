@@ -20,12 +20,12 @@ sidebar:
       entries:
       - title: Learn about NetApp Console
         url: /concept-netapp-console-local.html
+      - title: Learn about identity and access management
+        url: /concept-identity-and-access-management.html
       - title: Learn about fleet management
         url: /concept-manage-storage.html
       - title: Learn about storage classes and policies
         url: /concept-storage-classes.html
-      - title: Learn about identity and access management
-        url: /concept-identity-and-access-management.html
       - title: Learn about LLM integration (AI-assisted management)
         url: /concept-llm-integration.html
       - title: Learn about NetApp Backup and Recovery 
