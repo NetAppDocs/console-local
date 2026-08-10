@@ -186,8 +186,8 @@ sidebar:
         entries:
         - title: Organization and fleet IDs
           url: /task-iam-rename-organization.html
-        - title: Identity and access management API reference
-          url: https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html
+        - title: Console local deployment API reference
+          url: https://docs.netapp.com/us-en/console-local-automation/index.html 
       - title: Supported LLM providers and models
         url: /reference-llm-supported-models.html
       - title: ONTAP alerts reference
