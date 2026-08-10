@@ -5,6 +5,8 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: true
+  release_notes_autogen:
+    release_notes_repo: console-local-relnotes
 
 sidebar:
   entries:
@@ -16,6 +18,8 @@ sidebar:
         url: /whats-new.html
       - title: Known limitations
         url: /reference-local-known-limitations.html
+      - title: Compare NetApp Console local deployment and NetApp Console
+        url: /console-differences.html
     - title: Get started
       entries:
       - title: Learn about NetApp Console
@@ -74,9 +78,8 @@ sidebar:
           url: /task-iam-active-directory-integrate.html
         - title: Connect your LLM and enable the NetApp Console assistant
           url: /task-llm-connect.html
-          entries:
-          - title: Troubleshoot LLM integration
-            url: /task-llm-troubleshoot-integration.html
+        - title: Troubleshoot LLM integration
+          url: /task-llm-troubleshoot-integration.html
         - title: Configure notification delivery
           url: /task-console-configure-notifications-delivery.html
     - title: Use NetApp Console
@@ -140,7 +143,7 @@ sidebar:
         - title: Configure notification rules for alerts
           url: /task-alert-rules-manage.html
         - title: Remediate storage class drift
-          url: /remediate-storage-class-drift.html
+          url: /task-storage-class-drift-remediate.html
         - title: Alert remediation actions
           url: /reference-alert-remediation.html
       - title: Investigate performance issues
@@ -193,8 +196,6 @@ sidebar:
         url: /reference-cluster-compliance-categories.html
       - title: Storage VM security compliance categories
         url: /reference-svm-compliance-categories.html
-      - title: Ports for the on-premises Console agent
-        url: /reference-ports-on-prem.html
     - title: Knowledge and support
       entries:
       - title: Register for support

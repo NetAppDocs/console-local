@@ -1,0 +1,4 @@
+=== Introducing NetApp Console local deployment
+
+
+https://docs.netapp.com/us-en/console-local/netapp-console-local.html[Learn NetApp Console local deployment].

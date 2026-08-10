@@ -64,5 +64,5 @@ The largest delay center usually points to the resource under contention. When a
 
 If a configuration or placement issue caused the problem and Console local deployment can resolve it, the alert on the volume may offer a Fix-It option.
 
-link:task-remediation-guided.html[Remediate with guided steps].
+
 link:reference-workload-analyzer-metrics.html[Learn about Workload Analyzer metrics in NetApp Console local deployment].
