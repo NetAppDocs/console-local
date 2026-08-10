@@ -1,0 +1,83 @@
+---
+sidebar: sidebar
+permalink: reference-svm-compliance-categories.html
+keywords: svm compliance, storage vm compliance, security compliance, svm security, compliance categories, netapp console local
+summary: "Reference for storage VM security compliance categories and recommended settings in NetApp Console local deployment."
+---
+= Storage VM security compliance categories in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Use this reference to review the storage VM (SVM) security compliance categories shown in NetApp Console local deployment, including the recommended value and whether each category affects overall compliance status.
+
+These categories are based on ONTAP security posture checks.
+
+[cols="20,50,15,15",options="header"]
+|===
+| Category | What the category checks | Recommended value | Affects overall compliance
+
+| Audit log
+| Whether SVM audit logging is enabled.
+| Enabled
+| Yes
+
+| Insecure SSH settings
+| Whether SSH is configured with insecure ciphers, such as ciphers that begin with `cbc`.
+| No
+| Yes
+
+| Login banner
+| Whether a login banner is configured for users who access SVMs.
+| Enabled
+| Yes
+
+| LDAP encryption
+| Whether LDAP encryption is enabled.
+| Enabled
+| No
+
+| NTLM authentication
+| Whether NTLM authentication is enabled.
+| Enabled
+| No
+
+| LDAP payload signing
+| Whether LDAP payload signing is enabled.
+| Enabled
+| No
+
+| CHAP settings
+| Whether CHAP is enabled.
+| Enabled
+| No
+
+| Kerberos V5
+| Whether Kerberos V5 authentication is enabled.
+| Enabled
+| No
+
+| NIS authentication
+| Whether NIS authentication is configured.
+| Disabled
+| No
+
+| FPolicy status active
+| Whether FPolicy is created and active.
+| Yes
+| No
+
+| SMB encryption enabled
+| Whether SMB signing and sealing are enabled.
+| Yes
+| No
+
+| SMB signing enabled
+| Whether SMB signing is enabled.
+| Yes
+| No
+|===
+

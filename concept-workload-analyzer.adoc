@@ -1,0 +1,78 @@
+---
+sidebar: sidebar
+permalink: concept-workload-analyzer.html
+keywords: workload analyzer, volume analysis, latency, throughput, capacity, performance, netapp console
+summary: "Learn how the Workload Analyzer helps you investigate volume-level performance, capacity, and data protection issues."
+---
+= Learn about NetApp Console local deployment Workload Analyzer
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Jira: SPSPM-3315
+
+Use NetApp Console local deployment Workload Analyzer to view a single volume's behavior over time. You can investigate performance degradation, capacity trends, and resource contention issues from the volume itself, from an alert, or from inventory.
+
+== How Workload Analyzer identifies root causes
+
+Use the Workload Analyzer to correlate metrics from a single volume across six sections so you can identify root causes quickly. Select a volume and a time range to view events, performance, and capacity together within the same window. This view can help you determine whether storage is the likely source of an application issue or whether another layer, such as networking, is causing the problem.
+
+The analyzer is most useful when you already know which volume is affected. If you open it from an alert or from volume inventory, Console local deployment opens the analyzer with the volume selected so you can focus on the analysis window and the charts.
+
+The analyzer tracks one volume at a time, so use it to investigate a specific issue rather than compare multiple volumes.
+
+Review the capacity section as part of this assessment. When an ONTAP system is more than 85% full, the high utilization can itself cause performance issues, so low available capacity can explain latency that the performance charts alone don't account for.
+
+After you identify a root cause, you can act directly from the analyzer. When automated options are available, Console local deployment provides Fix-It recommendations with guided steps or one-click remediation.
+
+NOTE: Workload charts for LUNs don't provide the same level of detail as the charts for volumes, so you'll see fewer statistics when you analyze a LUN.
+
+== Access Workload Analyzer
+
+You can open the Workload Analyzer in several ways:
+
+* From the *Health* menu, select *Workload Analyzer*, then search for and select the volume you want to investigate in the *Volume* field.
+* From the *Storage > Fleets > Inventory* page, navigate to a volume you want to analyze and select *Analyze* from the action menu.
+* From the *Alerts > Overview* page, select an alert for the volume you want to investigate, then select *Analyze* from the alert details.
+
+You can also analyze LUNs, but they show fewer statistics than volumes.
+
+
+== Analyze latency, throughput, and storage capacity
+
+Use these six sections to investigate a volume:
+
+Volume selection::
+Choose the volume and time range to investigate so all charts and events align to the same workload and analysis window.
+
+Event timeline::
+View current and historical configuration changes, warning alerts, and critical alerts for the selected volume during the analysis window. Use this section to correlate "what changed" with changes in performance or capacity behavior.
+
+Latency analysis::
+View volume latency over time, either as a total or broken down by delay center—network, data processing, aggregate operations, cluster interconnect, and others. If the volume uses a QoS policy, the analyzer displays the policy's maximum and minimum latency limits as reference lines so you can see how close the workload is to a throttling threshold. Toggle the forecast to project whether latency is trending toward a warning or critical threshold.
+
+Throughput analysis::
+View IOPS and MB/s over time, with an optional read/write/other breakdown. If the volume uses a QoS policy, the analyzer displays IOPS and throughput limit lines. Toggle the forecast to project whether demand is trending toward QoS limits.
+
+Resource utilization::
+View how busy the nodes and aggregates serving the volume are during the analysis window. The analyzer plots each resource as an independent line rather than stacking values, so you can identify whether a specific node or aggregate is a contention source. Toggle the forecast to project whether any resource is trending toward a high-utilization threshold.
+
+Capacity analysis::
+View how physical space and available space in the volume have changed over time. Hover to see a storage efficiency breakdown including deduplication, compression, and compaction savings. Toggle the forecast to project when the volume will reach warning or critical capacity thresholds. Switch to the snapshot view to see how snapshot space is tracking against the configured snapshot reserve.
+
+== Forecast capacity and performance trends
+
+Use the forecast toggle in each analysis section to extend the chart timeline beyond the current time and project future values based on the observed trend. A dashed line distinguishes forecast values from actual data. The analyzer also displays an insight message when the forecast indicates that a threshold breach is likely, along with an estimated time to breach.
+
+
+
+.Related information
+
+link:task-analyzer-volume-latency-investigate.html[Investigate high latency on a volume].
+link:task-analyzer-volume-throughput-investigate.html[Investigate high throughput demand on a volume].
+link:task-analyzer-volume-capacity-investigate.html[Investigate capacity growth on a volume].
+link:reference-workload-analyzer-metrics.html[Learn about Workload Analyzer metrics in NetApp Console local deployment].
+

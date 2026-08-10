@@ -1,0 +1,60 @@
+---
+sidebar: sidebar
+permalink: task-storage-class-drift-remediate.html
+keywords: storage class drift, drift remediation, compliance, fix-it, guided remediation, automated remediation, drift detection, storage governance, storage standards, netapp console local
+summary: "Find, analyze, and remediate storage class drift in NetApp Console local deployment."
+---
+
+= Remediate storage class drift in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+In NetApp Console local deployment, find drift-related alerts, analyze the drift findings, and remediate workloads that no longer match their storage class intent.
+
+.Required roles
+Storage admin
+
+NOTE: You can only view and remediate workloads in fleets where you have permission.
+
+== Remediate drift
+
+When a workload no longer matches its storage class intent, NetApp Console local deployment raises an alert. Use the alert to analyze the drift and apply the recommended remediation.
+
+You can apply some remediations directly from the alert. For other issues, update the workload configuration or assign a different storage class to restore compliance. The remediation workflow shows the expected impact before you apply changes.
+
+.Steps
+
+. Select *Storage > Storage classes*.
++
+A summary of storage class drift appears in the *Drifts by storage class* area. The complete list appears in the table.
+
+. In the *Drifts* column, select *View* for the relevant storage class.
++
+The *Alerts > Overview* page opens with filters applied.
+
+. Select an alert to open the alert details page.
+
+. Select *Analyze*.
+
+. Review the findings in *Workload analyzer*.
++
+For configuration drift findings, compare the intended and actual settings to determine what changed.
+
+. Select the recommended remediation action, such as *Fix it*.
+
+. Review the proposed changes and apply the remediation.
+
+. Return to *Storage > Storage classes* and verify that the workload no longer appears as drifted.
++
+Compliance evaluations can take several minutes to reflect recent configuration changes. If the workload is still listed as drifted, return to the alert details page and select *Analyze* to review any remaining findings.
+
+== Related information
+
+* link:concept-storage-classes.html#storage-class-drift-and-compliance[Learn about storage class drift and compliance in NetApp Console local deployment]
+* link:concept-console-alerts.html[Learn about storage alerts]
+* link:task-alerts-monitor.html[View alerts]
+

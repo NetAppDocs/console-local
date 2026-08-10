@@ -1,0 +1,74 @@
+---
+sidebar: sidebar
+permalink: concept-manage-storage-workflow.html
+keywords: storage management workflow, storage classes, provisioning, storage class policies, ONTAP, fleet, drift detection, compliance monitoring, storage governance, operational efficiency, netapp console local
+summary: "Learn about managing storage in NetApp Console local deployment, including storage classes, policies, and provisioning methods."
+---
+= Storage management workflow overview in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Jira: SPSPM-3309
+
+In NetApp Console local deployment, netApp Console (local) helps you manage ONTAP storage at scale using consistent, reusable standards. Instead of making one-off decisions for every volume or LUN, you define approved behavior once and apply it across fleets—whether you provision manually, use automated placement, or use AI-assisted plan-and-approve workflows.
+
+This page is the starting point for storage admins managing ONTAP storage using fleets, storage class policies, and storage classes. It organizes the end-to-end workflow and links to detailed procedures.
+
+If you're new to these concepts, start with [Learn about managing storage with NetApp Console local deployment](concept-manage-storage.html).
+
+== Prerequisites and dependencies
+
+Organization admin
+Ensure storage systems are discovered and assigned to the correct fleets.
+Storage admins can't apply standards or provision into a fleet until systems are available in that fleet and access is granted via RBAC.
+
+RBAC access required
+Confirm you have access to the fleets where you will define standards and provision storage.
+
+== Typical workflow
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Review fleets and access
+
+[role="quick-margin-list"]
+* Review available fleets and confirm you have access to the fleets where you want to manage storage.
+
+* Validate permissions and scope before you create or assign storage standards.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Define storage class policies
+
+[role="quick-margin-list"]
+* Define storage class policies that represent your standards.
+
+* Capture requirements (performance, protection, placement) into reusable policies.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create storage classes
+
+[role="quick-margin-list"]
+* Create storage classes by combining policies into workload templates.
+
+* Use consistent templates to ensure workloads are provisioned to your standards.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Associate storage classes with fleets
+
+[role="quick-margin-list"]
+* Associate storage classes with the fleets where they apply.
+
+* Scope classes to the right fleets so the correct options appear during provisioning.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Provision volumes or LUNs
+
+[role="quick-margin-list"]
+* Provision volumes or LUNs using the method that matches your operational model.
+
+* Choose the workflow that aligns with how your teams request, approve, and deliver storage.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six] Monitor workloads and remediate drift
+
+[role="quick-margin-list"]
+* Monitor workloads to detect drift from defined policies.
+
+* Remediate noncompliant configurations to restore policy alignment.

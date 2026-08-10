@@ -1,0 +1,62 @@
+---
+sidebar: sidebar
+permalink: concept-iam-rbac.html
+keywords: roles, permissions, role-based access control, rbac, iam, identity and access management, least privilege, access control, NetApp Console local access, organization access, folder access, fleet access, resource access, directory users, AD, Active Directory, directory services
+summary: Manage user access to NetApp Console local deployment with role-based access control (RBAC), assigning predefined roles at the organization, folder, or fleet level. Each role grants specific permissions that define what actions users can perform within their assigned scope.
+---
+
+= Learn about role-based access control in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Manage user access to NetApp Console local deployment with role-based access control (RBAC), assigning predefined roles at the organization, folder, or fleet level. Each role grants specific permissions that define what actions users can perform within their assigned scope.
+
+NetApp designs Console local deployment roles with least-privilege, so each role includes only the permissions needed for its tasks. This approach enhances security by limiting access to what each member requires.
+
+After you organize resources into folders and fleets, assign organization members a role or roles for specific folders or fleets, that allow them to perform only their responsibilities.
+
+For example, you can assign a member the Backup and Recovery admin role for a specific fleet level, allowing them to perform Backup and Recovery operations for resources within that fleet, without granting them broader access to the entire organization. This same user can be granted the role for several fleets within your organization. 
+
+You can assign members multiple roles for the same scope or different scopes, depending on their responsibilities. For example, a smaller organization might assign the same member both Storage admin and Backup and Recovery admin roles at the organization level, while a larger organization might have different members assigned to each role at the fleet level.
+
+== Types of Console organization members
+NetApp Console local deployment supports the following types of members:
+
+* _Users_: Individual users can either be local users you add to NetApp Console local deployment who use local credentials or directory users who authenticate through your integrated Active Directory or LDAP service. Both types of users can be assigned roles in NetApp Console local deployment to access resources.
+* _Service accounts_: Non-human accounts that applications or services use to interact with NetApp Console local deployment through APIs. You can add service accounts directly to your Console local deployment organization. 
+
+link:task-iam-manage-members-permissions.html#add-members[Learn how to add members to your organization.]
+
+
+== Predefined roles in NetApp Console local deployment
+NetApp Console local deployment includes predefined roles that you can assign to organization members. Each role includes permissions that specify what actions a member can do within their assigned scope (organization, folder, or fleet). 
+
+NetApp Console local deployment roles use least-privilege principles that ensure members have only the permissions needed for their tasks, and categorizes roles by the type of access they provide:
+
+* Platform roles: Provide Console local deployment administration permissions
+* Data services roles: Provide permissions for managing specific data services, such as Ransomware Resilience and Backup and Recovery
+* Application roles: Provide permissions for managing storage as well as audit Console local deployment events and alerts
+
+You can assign multiple roles to a member based on their responsibilities. For example, you might assign a member both the Storage admin role and the Backup and Recovery admin role for a specific fleet.
+
+To choose access for a member, match the role category to the member's responsibilities, then assign the role at the scope (organization, folder, or fleet) that matches how broadly the member should have that access. link:concept-folders-fleets-overview.html#organization-design-examples[Learn about how different organizations structure roles and scope in NetApp Console local deployment].
+
+link:reference-iam-predefined-roles.html[Learn about the predefined roles that you can assign to members in NetApp Console local deployment].
+
+[#role-inheritance]
+== How role inheritance works
+
+When you assign a role at the organization or folder level, that role is inherited by the child scopes within that part of the hierarchy. This means that organization-level roles apply across the organization, folder-level roles apply to all child folders and fleets in that folder, and fleet-level roles apply only to the resources in that fleet.
+
+Use the scope that matches the access you want the member to keep. For example, assign a role at the folder level when the member needs the same access across several fleets in one region. Assign the role at the fleet level when the member should access only one fleet.
+
+You can't override inherited access at a lower scope. If a member inherits a role from the organization or from a folder, change that assignment at the higher scope where you originally granted it.
+
+link:concept-folders-fleets-overview.html[Learn about folders and fleets in NetApp Console local deployment].
+link:task-iam-manage-roles.html[Manage member access].
+link:task-iam-users-fleets-assign.html[Manage fleet access assignments].
+

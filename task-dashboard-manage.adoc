@@ -1,0 +1,106 @@
+---
+sidebar: sidebar
+permalink: task-dashboard-manage.html
+keywords: manage dashboard, view dashboards, edit dashboard, clone dashboard, delete dashboard, netapp console local
+summary: "View and manage dashboards in NetApp Console local deployment by opening, editing, cloning, and deleting custom dashboards."
+---
+= Manage dashboards in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
+
+Manage custom dashboards in NetApp Console local deployment to keep views aligned with operations. You can edit, duplicate, and delete dashboards as teams, fleets, and priorities change.
+
+This task applies only to custom dashboards under *Storage > Dashboards*. Predefined Home page dashboards cannot be edited in the same way.
+
+
+== View dashboards 
+
+View custom and predefined dashboards to find the dashboard you want to open, edit, duplicate, or delete.
+
+TIP: You can duplicate a predefined dashboard to create a custom version that you can edit.
+
+.Steps
+
+. Select *Storage > Dashboards*.
+
+. Review the dashboard table to find the dashboard you want to open.
+
+. Select the dashboard name to open it and view its metrics.
+
+. If needed, use the available actions to edit, duplicate, or delete custom dashboards.
+
+
+
+== Update a dashboard as priorities change
+
+Edit a dashboard when your operational priorities change and you need to adjust which cards and metrics are visible.
+
+.Steps
+
+. Select *Storage > Dashboards*.
+
+. Open the dashboard you want to edit.
+
+. Modify an existing card on the dashboard by selecting Edit from the actions menu of the card.
+
+. Add a new card to the dashboard by selecting *Add Card*.
++
+link:task-customize-dashboard-cards.html[Customize cards in NetApp Console local deployment].
+
+
+. Select *Save changes* to save the dashboard.
+
++
+
+* You can also choose to save your changes as a new dashboard by selecting *Save as new dashboard* from the action menu. This option is useful when you want to keep the original dashboard for other teams or fleets while creating a new version for your current monitoring needs.
+
+* You can also choose to discard your changes by selecting *Discard changes* from the action menu. This option is useful when you want to revert to the last saved version of the dashboard.
+
+
+
+== Reuse a custom dashboard for another resource or fleet
+
+Duplicate a dashboard when you want to reuse a proven layout for another team, fleet, or monitoring scenario without rebuilding it from scratch. 
+
+TIP: You can duplicate a predefined dashboard to create a custom version that you can edit.
+
+.Steps
+
+. Select *Storage > Dashboards*.
+
+. For the dashboard you want to duplicate, select *Duplicate* from the actions menu.
++
+Console local deployment creates a copy that includes all cards from the original dashboard.
+
+. Provide a name and description for the duplicated dashboard.
+
+
+. Select the duplicate dashboard you just created. Change the metrics, resources, and card types to suit your new monitoring scenario.
++
+link:task-customize-dashboard-cards.html[Customize cards in NetApp Console local deployment].
+
+== Remove dashboards you no longer use
+
+Delete a dashboard when it no longer supports current operations and you want to keep your dashboard list focused on active use cases.
+
+.Steps
+
+. Select *Storage > Dashboards*.
+
+. For the dashboard you want to remove, select *Delete*.
+
+. Confirm the deletion.
+
+== Related information
+
+* link:task-storage-dashboard.html[View Home page metrics in NetApp Console local deployment]
+* link:task-dashboard-get-started.html[Get started with dashboards in NetApp Console local deployment]
+* link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console local deployment]
+* link:task-dashboard-create.html[Create a custom dashboard]
+* link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console local deployment]

@@ -1,0 +1,45 @@
+---
+sidebar: sidebar
+permalink: task-logging-in.html
+keywords: logging in, log in, sign in, signing in, user account, MFA, multi-factor authentication, AD, Active Directory, directory services, local user, Console local deployment access
+summary: After you sign up to NetApp Console local deployment, you can log in from the web-based console to start managing your data and storage infrastructure.
+---
+
+= Log in to NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can sign in to NetApp Console local deployment after your organization administrator has invited you to your Console local deployment organization user account. To login, you use the email address associated with your login.
+
+If you log in but don't see any resources, contact your organization administrator. link:task-user-settings.html#contact-admin[Contact your organization administrator].
+
+
+.Steps
+
+. Open a web browser and go to the IP address where the Console local deployment is installed.
+
+. On the *Log in* page, enter the email address that's associated with your login.
+
+. Depending on the authentication method associated with your login, you'll be prompted to enter your credentials.
+
++
+* A NetApp Console account using your email address and a password
+
++
+[NOTE]
+====
+* If MFA is enabled: after entering your password, you'll be prompted to enter a TOTP code (from your authenticator app) or use a recovery code.
+* If you are signing in with recovery codes, use them in the order shown in the UI during the recovery-code prompt.
+====
+
+* An Active Directory account using your email address and password
+
+
+
+
+
+

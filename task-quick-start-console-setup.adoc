@@ -1,0 +1,64 @@
+---
+sidebar: sidebar
+permalink: task-quick-start-console-setup.html
+keywords: quick start, setup, set up, console local, admin setup, getting started, folders, fleets, rbac, members, data services, netapp console
+summary: "Set up NetApp Console local deployment by installing the software, planning and creating your organization, configuring integrations, and setting up data services."
+---
+
+= Quick start for setting up NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+After you install NetApp Console local deployment, set up your organization so that the right teams can securely manage the right storage resources. Use this checklist to plan your structure, organize resources, add members, configure integrations, and enable data services.
+
+.Required access roles
+Super admin or Organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Install NetApp Console local deployment
+
+[role="quick-margin-list"]
+* Review the installation workflow to understand the deployment process. link:concept-deploy-netapp-console-local.html[Learn about the installation workflow for NetApp Console local deployment].
+
+* Install NetApp Console local deployment in your vCenter. link:task-install-agent-on-prem-ova.html[Install NetApp Console local deployment].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Plan your organization
+
+[role="quick-margin-list"]
+* Learn how folders and fleets organize your resources. link:concept-folders-fleets-overview.html[Learn about folders and fleets].
+
+* Understand how role-based access control (RBAC) grants members the access they need. link:concept-iam-rbac.html[Learn about role-based access control in NetApp Console local deployment].
+
+* Review the identity and access management workflow. link:task-iam-fleet-mgmt-get-started.html[Get started with IAM for fleet and resource management].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Set up your organization
+
+[role="quick-margin-list"]
+* Add your storage systems to NetApp Console local deployment. link:task-add-systems.html[Add storage systems].
+
+* Create the folder and fleet hierarchy that matches your business structure. link:task-iam-manage-folders-fleets.html[Create folders and fleets].
+
+* Associate resources with the correct folders and fleets. link:task-iam-manage-resources.html[Associate resources to folders and fleets].
+
+* Add members and assign their initial roles. link:task-iam-manage-members-permissions.html[Add members and assign roles].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Configure integrations and services
+
+[role="quick-margin-list"]
+* Integrate with Active Directory so that directory users can access the Console local deployment. link:task-iam-active-directory-integrate.html[Integrate with Active Directory].
+
+* Connect your large language model (LLM) to enable the Console assistant and AI-assisted management. link:task-llm-connect.html[Connect your LLM].
+
+* Configure how the Console local deployment delivers notifications. link:task-console-configure-notifications-delivery.html[Configure notification delivery].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Set up NetApp Backup and Recovery
+
+[role="quick-margin-list"]
+* link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html#use-a-netapp-backup-and-recovery-byol-license[Obtain a license for NetApp Backup and Recovery^]. You can skip this step if you do not want access to advanced Backup and Recovery services.
+
+* Add the NetApp Backup and Recovery license to NetApp Console local deployment. link:https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-services-licenses.html[Add the license to NetApp Console local deployment^].
+
+* link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-rbac-setup.html[Grant users access to NetApp Backup and Recovery].

@@ -1,0 +1,135 @@
+---
+sidebar: sidebar
+permalink: task-iam-manage-folders-fleets.html
+keywords: folders, fleets, resource hierarchy, create folders, create fleets, iam, identity and access management, fleet id, initial iam setup, fleet hierarchy design, folder hierarchy configuration, rbac setup, tenancy setup, organizational onboarding, team structure alignment, delegated administration model, access governance planning, operational readiness
+summary: Add folders and fleets to match your business structure. After you create folders and fleets, you can associate resources with them and manage member access to those fleets.
+---
+
+= Add folders and fleets to your NetApp Console local deployment organization
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Create folders and fleets to match your business structure, control access, and organize resources in NetApp Console local deployment.
+
+.Required access roles
+Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+NetApp Console local deployment creates one default fleet when you create an organization. You can add more fleets and group them with folders. link:concept-identity-and-access-management.html[Learn about the resource hierarchy in NetApp Console].
+
+
+
+
+== Using folders and fleets to organize resources
+Folders and fleets are the two building blocks you use to shape your organization into something that matches how your teams actually work. For example, one folder per region with a production and a development fleet inside each.
+
+* Folders group related fleets and support delegated administration and role inheritance.
+* Fleets are where you associate resources for management and how you grant users operational access.
+
+You can create folders and fleets first and add resources and member access later. This lets you plan your resource hierarchy before adding users and resources in Console local deployment. If your structure is already defined, you can add resources and assign access when you create the fleet. You can update fleets at any time.
+
+For example, put production clusters in a Production fleet and test clusters in a Test fleet, and grant each team access only to the fleet they own.
+
+=== Folders
+Folders organize fleets by business structure, such as business unit, region, or team. You can nest folders to mirror your organization.
+
+Roles assigned at a folder level are inherited by child folders and fleets. You can also use a folder to delegate fleet assignment tasks to a Folder or fleet admin for that part of the hierarchy.
+
+NOTE: Members work in fleets, not folders. A resource associated only with a folder is not manageable by members until it is associated with a fleet.
+
+For example, a regional enterprise could use folders to organize ONTAP storage by business unit and workload. It might create a top-level folder for North America, subfolders for Production and Development, and fleets for ONTAP clusters that host SAP, VMware, and backup volumes. Storage admins assigned to the North America folder inherit access to all child fleets, while application teams get access only to the fleets they manage.
+
+
+
+
+=== Fleets
+Associate resources with fleets so members can manage them. A fleet can exist directly under the organization or inside a folder.
+
+For example, a healthcare company uses ONTAP storage in separate production and development fleets. The production fleet runs clinical apps and patient record databases, while the development fleet supports testing and validation. This separation protects live data, enforces tighter production access, supports auditability and least-privilege controls, and lets dev teams work without impacting patient-facing workloads.
+
+Users navigate between assigned fleets on the *Systems* page to manage the resources associated with each fleet. 
+
+
+== Add a folder or fleet
+Add a fleet whenever you need a new boundary for resources and member access, and add a folder when you want to group related fleets and delegate their administration. For example, add a `Production` folder containing a `Production-US-East` fleet and a `Production-EU-West` fleet, then assign a regional lead the Folder or fleet admin role on just their fleet.
+
+You can create up to seven hierarchy levels.
+
+You can add resources and assign member access when you create a fleet or folder, or you can do it later.
+
+
+
+.Steps
+
+. Select *Administration > Identity and access*.
+
+. Select *Organization*.
+
+. From the *Organization* page, select *Add folder or fleet*.
+
+. Select *Folder* or *Fleet*.
+
+. In *Name and location*: Enter a name and choose a location for the folder or fleet.
+
+[#associate-resource-folder]
+. Optional: Expand the *Resources* section to associate resources with the fleet or folder.
+.. Mark the check box next to the resource you want to associate and then select *Associate with the fleet*. If you haven't added systems to Console local deployment yet, you can do this step later.
++
+NOTE: Members can't access resources in a folder until those resources are assigned to a fleet.
+
+. Optional: Expand the *Access* section to assign access to members. Select *Add a member* to assign access and a role. By default, the user who creates the fleet has access to it.
++
+link:reference-iam-predefined-roles.html[Learn about access roles].
+
+. Select *Add*.
+
+
+
+== Rename a folder or fleet
+
+Rename a folder or fleet as needed. Renaming does not affect associated resources or member access.
+
+.Steps
+
+. From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon with three dots"] and then select *Edit folder* or *Edit fleet*.
+
+. On the *Edit* page, enter a new name and select *Apply*.
+
+
+[#delete-a-folder-or-fleet]
+== Delete a folder or fleet
+
+Delete folders and fleets you no longer need, such as after team restructuring or fleet completion.
+
+Before you delete a folder or fleet, complete the following checks:
+
+* Verify that the folder or fleet does not contain resources. link:task-iam-manage-resources.html#remove-resource[Learn how to remove resource associations].
+* Review members who still have access to the folder or fleet. link:task-iam-users-fleets-assign.html[View member access assignments].
+* Remove or update member access as needed. link:task-iam-users-fleets-assign.html[Modify member access assignments].
+* If you are deleting a fleet, move resources to the target fleet first. link:task-iam-manage-resources.html[Learn how to move resources between fleets].
+
+
+.Steps
+
+. From the *Organization* page, navigate to a fleet or folder in the table, select image:icon-action.png["An icon with three dots"] and then select *Delete*.
+
+. Confirm that you want to delete the folder or fleet.
+
+== Manage fleets and folders in NetApp Console local deployment
+
+After initial setup, you can do the following:
+
+* *Manage resource associations for folders and fleets*: link:task-iam-manage-resources.html[Learn how to associate resources with fleets and folders].
+* *View or update access for one folder or fleet*: link:task-iam-users-fleets-assign.html[Learn how to grant users access to fleets].
+* *Manage one member across multiple folders and fleets*: link:task-iam-manage-roles.html[Learn how to manage member access].
+* *Add additional members and assign starting permissions*: link:task-iam-manage-members-permissions.html[Learn how to manage members and permissions].
+
+== Related information
+
+* link:concept-identity-and-access-management.html[Learn about identity and access in NetApp Console]
+* link:task-iam-fleet-mgmt-get-started.html[Get started with identity and access in NetApp Console]
+* link:task-iam-users-fleets-assign.html[Manage fleet access assignments]
+* https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the identity and access API^]

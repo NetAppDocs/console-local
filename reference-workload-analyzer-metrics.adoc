@@ -1,0 +1,215 @@
+---
+sidebar: sidebar
+permalink: reference-workload-analyzer-metrics.html
+keywords: workload analyzer, latency, delay center, throughput, IOPS, resource utilization, capacity, capacity forecast, QoS, storage efficiency, snapshot, performance troubleshooting, metrics reference, netapp console local
+summary: "Reference for all metrics available in the Workload Analyzer, organized by analysis section."
+---
+= Workload Analyzer metrics in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+In NetApp Console local deployment, the Workload Analyzer shows metrics across six sections. Each metric description explains how the analyzer renders the metric on the chart and what it indicates about volume behavior.
+
+
+=== QoS reference lines in latency charts
+
+If the selected volume uses a QoS policy, you can use two additional reference lines in the metric picker:
+
+[cols="20,80",options="header"]
+|===
+| Reference line | Description
+
+| QoS Limit Max
+| The maximum latency ceiling defined by the QoS policy. When the latency line approaches or touches this line, ONTAP is throttling the workload, and the QoS limit—rather than a physical resource—is the dominant source of latency.
+
+| QoS Limit Min
+| The guaranteed minimum latency floor defined by the QoS policy. This line indicates the response time floor enforced for the workload. When other workloads use QoS minimums to guarantee their throughput, ONTAP can throttle this workload, which then shows higher latency.
+|===
+
+These horizontal lines do not appear in the delay center breakdown on hover. They serve as reference thresholds, not as contributors to latency.
+
+=== Latency breakdown by I/O type
+
+Use the I/O type breakdown in the *Latency Analysis* section after you select *Breakdown by delay center* from the View dropdown. The chart breaks total latency into three categories based on the direction of the I/O operation. Use these metrics to determine whether a performance issue is affecting reads, writes, or metadata operations.
+
+[cols="20,40,40",options="header"]
+|===
+| Latency type | Description | Common causes of elevated values
+
+| Read latency
+| Average time to complete a client read request on the volume, from when the request is received until data is returned. Read requests must traverse the full I/O path from the network protocol layer through the data processing stack to the aggregate where the data resides.
+| Aggregate or disk contention; cache misses that promote reads to physical disk; cold data retrieved from a cloud capacity tier via FabricPool; cross-node reads when data resides on a different node than the one handling the request.
+
+| Write latency
+| Average time to acknowledge a client write request on the volume. ONTAP acknowledges a write once it is committed to the NVRAM write log; the data is later flushed to the aggregate.
+| NIC saturation or high round-trip latency between the client and the storage node; synchronous SnapMirror waiting for the destination cluster to confirm receipt before the write can be acknowledged; NVRAM pressure under heavy write loads; CPU overhead from inline deduplication, compression, or compaction running in the write I/O path.
+
+| Other latency
+| Average time to complete non-read, non-write operations on the volume, including file opens, attribute lookups, directory traversals, file creates, and locks. Elevated other latency can affect application responsiveness even when read and write latency appear normal.
+| CPU pressure from inline efficiency operations competing with metadata processing; high namespace activity from workloads that generate large numbers of file creates, deletes, or directory scans; QoS throttling that constrains total IOPS, leaving fewer IOPS available for metadata operations; volume activation overhead when many volumes are concurrently active.
+|===
+
+== Throughput components
+
+Use the throughput components in the *Throughput Analysis* section after you select *Breakdown (RWO)* from the View dropdown. The analyzer shows both IOPS and MB/s simultaneously.
+
+[cols="20,40,40",options="header"]
+|===
+| Component | Description | Rendered as
+
+| Read IOPS
+| Read operations per second.
+| Stacked area on the IOPS chart.
+
+| Write IOPS
+| Write operations per second.
+| Stacked area on the IOPS chart.
+
+| Other IOPS
+| Metadata and other non-data operations per second.
+| Stacked area on the IOPS chart.
+
+| Read MB/s
+| Read throughput in megabytes per second.
+| Stacked area on the MB/s chart.
+
+| Write MB/s
+| Write throughput in megabytes per second.
+| Stacked area on the MB/s chart.
+
+| Cloud Throughput
+| Throughput in megabytes per second between the volume and the cloud capacity tier. This metric appears only for workloads that tier capacity to the cloud through FabricPool.
+| Stacked area on the MB/s chart.
+|===
+
+The Read, Write, and Other components sum to the total IOPS or MB/s value. Hover over the chart to see each component's value, its percentage of the total, and the average I/O size (MB/s ÷ IOPS) per category.
+
+== Resource utilization metrics
+
+Use the *Resource Utilization* section to review resource utilization metrics. The analyzer shows each resource serving the volume as an independent line. Resources do not stack.
+
+=== Node metrics
+
+[cols="25,75",options="header"]
+|===
+| Metric | Description
+
+| Node utilization
+| Composite utilization percentage for the node. Hover to see the CPU utilization, network utilization, and available headroom for each node.
+
+| CPU utilization
+| Percentage of node CPU capacity in use. The hover tooltip shows this value.
+
+| Network utilization
+| Percentage of node network capacity in use. The hover tooltip shows this value.
+
+| Headroom
+| Remaining node capacity available for additional workload. The hover tooltip shows this value.
+|===
+
+=== Aggregate metrics
+
+[cols="25,75",options="header"]
+|===
+| Metric | Description
+
+| Aggregate utilization
+| Disk busy percentage for the aggregate. Hover to see the disk busy value, number of volumes on the aggregate, and available headroom.
+
+| Disk busy
+| Percentage of time the aggregate's disks actively service I/O. The hover tooltip shows this value.
+
+| Volume count
+| Number of volumes currently hosted on the aggregate. The hover tooltip shows this value.
+
+| Headroom
+| Remaining aggregate capacity available for additional workload. The hover tooltip shows this value.
+|===
+
+When a node or aggregate utilization line crosses the high-utilization warning threshold, which the chart marks with a dashed reference line, other workloads on that resource may be competing with the selected volume for I/O capacity.
+
+== Capacity metrics
+
+=== Capacity View
+
+Use the *Capacity Analysis* section to review Capacity View metrics after you select *Capacity View* from the View dropdown.
+
+[cols="25,75",options="header"]
+|===
+| Metric | Description
+
+| Physical Capacity
+| Space consumed on disk after storage efficiency operations. This is the bottom stacked area in the chart. Physical + Available always equals the total volume size.
+
+| Available Capacity
+| Free space remaining in the volume. This is the top stacked area in the chart. It decreases as Physical Capacity grows.
+
+| Storage Efficiency Ratio
+| Overall efficiency ratio (logical data ÷ physical data). The hover tooltip shows this value. It reflects combined savings from deduplication, compression, and compaction.
+
+| Deduplication savings
+| Space saved by removing duplicate data blocks. The hover tooltip shows this value.
+
+| Compression savings
+| Space saved by compressing data inline. The hover tooltip shows this value.
+
+| Compaction savings
+| Space saved by packing multiple small blocks into a single physical block. The hover tooltip shows this value.
+|===
+
+=== Snapshot View
+
+Use Snapshot View when you want to review snapshot-specific metrics.
+
+[cols="25,40,35",options="header"]
+|===
+| Metric | Description | Rendered as
+
+| Available snapshot
+| Pre-allocated space reserved for snapshots, configured as a percentage of the volume size.
+| Horizontal reference line.
+
+| Used snapshot
+| Actual space consumed by snapshot copies.
+| Area chart below the reserve line.
+|===
+
+Hover over the chart to see the snapshot reserve size, snapshot space used and its percentage of the reserve, total snapshot count, and the age of the oldest snapshot. When snapshot consumption exceeds the reserve, snapshots begin consuming space from the volume's data area.
+
+
+
+== Forecast behavior
+
+Use the *Show Forecast* toggle in any analysis section when you want to project future values beyond the current time based on the observed trend. The following behaviors apply across all sections:
+
+[cols="25,75",options="header"]
+|===
+| Aspect | Behavior
+
+| Projection window
+| Projects forward based on the selected time range. For a 2-hour view, the projection window is approximately 1 hour. For a 7-day view, the projection window extends several days.
+
+| Visual style
+| The analyzer renders forecast values as a dashed line. A vertical separator marks the boundary between actual data and projected values.
+
+| Threshold alerts
+| The analyzer displays an insight message when the forecast indicates that the volume will breach a warning or critical threshold, along with an estimated time to breach.
+
+| Trend basis
+| The projection uses the rate of change from the most recent portion of the selected time range. High volatility in recent data reduces forecast confidence.
+
+// ENGINEERING REVIEW: Confirm the capacity forecast minimum-data requirement and the "almost full" threshold for Console (local). The following values are carried over from Active IQ Unified Manager and may differ.
+| Minimum data required
+| Capacity forecasting requires at least 10 days of historical data. When fewer than 30 days of capacity remain before the volume is full, the analyzer identifies the storage as almost full.
+|===
+
+== Related information
+
+* link:concept-workload-analyzer.html[Learn about NetApp Console local deployment Workload Analyzer]
+* link:task-analyzer-volume-latency-investigate.html[Investigate high latency on a volume]
+* link:task-analyzer-volume-throughput-investigate.html[Investigate high throughput demand on a volume]
+* link:task-analyzer-volume-capacity-investigate.html[Investigate capacity growth on a volume]

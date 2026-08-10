@@ -1,0 +1,88 @@
+---
+sidebar: sidebar
+permalink: task-llm-connect.html
+keywords: LLM, AI, connect, large language model, console assistant, openai, openai-compatible, proxy, netapp console
+summary: "Connect OpenAI or an OpenAI-compatible endpoint to enable the Console assistant and AI-assisted management in NetApp Console local deployment."
+---
+= Connect your LLM and enable the NetApp Console assistant in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Connect your large language model (LLM) to NetApp Console local deployment to enable the Console assistant and AI-assisted storage management.
+
+include::_include/ai-preview.adoc[]
+
+.Required access roles
+Super admin or Organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+After setup, users open the Console assistant from the dashboard and choose an access mode:
+
+* In *Read only* mode, the assistant answers questions and provides guidance without making changes.
+* In *Read/write* mode, the assistant can act on storage infrastructure. It shows details for review and confirmation before each change. For asynchronous operations, such as volume creation, it creates a job that users can check from the assistant.
+
+To connect your LLM, select a provider path, enter endpoint details and API key, and then select a model in *Administration > AI Tools*. Assistant actions stay within your storage policies and role-based access controls.
+
+== Gather what you need before you connect an LLM
+
+Before you connect your LLM, gather the following:
+
+* Your provider type decision: OpenAI or OpenAI-compatible. link:concept-llm-integration.html[Learn about provider choices.]
+* A valid API key for the provider path you select.
+* The endpoint URL for your provider path.
+* Your proxy or gateway URL, if your organization requires one.
+* Your user name or single sign-on (SSO) ID for the LLM provider account, if required.
+* Network access from Console local deployment to the selected endpoint.
+* Storage classes and role-based access controls for the assistant actions you plan to allow.
+
+For supported model details, see link:reference-llm-supported-models.html[Learn about supported LLM providers and models in NetApp Console local deployment].
+
+
+== Connect an LLM to NetApp Console local deployment
+
+Enter provider settings, API key, and model to connect your LLM to Console local deployment.
+
+.Steps
+. Log in to the NetApp Console local deployment.
+. Select *Administration > AI Tools*.
+. Select the menu, and then select *Edit*.
+. In *Provider type*, select a provider type.
++
+link:concept-llm-integration.html[Learn about LLM integration in NetApp Console local deployment].
+. If prompted for a provider endpoint, enter the endpoint URL for the provider path you selected.
+. Enter the proxy or gateway URL and credentials.
+. In the *User name* field, enter your user name or SSO ID if your provider path requires it.
+. In the *API key* field, paste the API key from your selected provider path.
+. Select a model from the list.
+. Review the configuration, and then select *Save*.
++
+If save or test fails, verify the provider type, endpoint URL, API key, and selected model, and then try again.
+
+link:task-llm-troubleshoot-integration.html[Troubleshoot your LLM integration].
+
+== Verify that LLM integration works
+
+After you save the configuration, verify assistant availability and behavior.
+
+.Steps
+. Confirm that the *Console assistant* button appears on the NetApp Console local deployment dashboard.
+. Open the assistant in *Read only* mode and run a basic query.
+. Open the assistant in *Read/write* mode and confirm that storage-changing actions require user confirmation before execution.
+. Verify that the users who need action workflows have the required role-based access controls.
+
+After you complete validation, users can open the Console assistant from the dashboard and describe tasks in plain language. For usage examples and end-user workflows, see link:task-console-asst-use.html[Use the NetApp Console assistant].
+
+== Protect credentials and monitor LLM usage
+
+* Use a dedicated API key for Console local deployment integration when possible.
+* Rotate API keys according to your organization policy.
+* Restrict who can edit AI Tools settings to required admin roles only.
+* Monitor provider-side API usage and alerts to track abnormal activity or cost spikes.
+
+
+
+
+

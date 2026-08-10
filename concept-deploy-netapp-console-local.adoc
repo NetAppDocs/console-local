@@ -1,0 +1,30 @@
+---
+sidebar: sidebar
+permalink: concept-deploy-netapp-console-local.html
+keywords: deploy, install, vCenter, Linux, high availability, deployment options, netapp console local
+summary: "Learn about deployment options for NetApp Console local deployment, including vCenter and Linux installations."
+---
+= Deployment options for NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Install NetApp Console local deployment in your vCenter environment.
+
+
+=== Install in your vCenter environment
+
+Deploy NetApp Console local deployment as a virtual appliance in your VMware vCenter environment using a pre-configured OVA image.
+
+link:task-install-agent-on-prem-ova.html[Install NetApp Console local deployment in your vCenter environment].
+
+
+== Next steps
+
+After deployment, complete the following tasks to get started:
+
+* link:task-add-systems.html[Add storage systems to NetApp Console local deployment]
+* link:task-iam-manage-members-permissions.html[Add members and assign roles in NetApp Console local deployment]

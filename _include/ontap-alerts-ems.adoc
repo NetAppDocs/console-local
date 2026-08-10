@@ -1,0 +1,2 @@
+* link:https://docs.netapp.com/us-en/ontap-ems/acp-auto-events.html[Learn more about the ONTAP EMS and available alerts.^]
+

@@ -1,0 +1,46 @@
+//tag::core-add-card-flow[]
+. Select *Add Card*.
+
+. Select the *Resource type* for the card, such as fleet, system, or volume and then choose resources from the list of available resources.
+
+. Select *Next* to continue to choose a metric and card type.
+
+
+
+. Choose a metric to display. You can filter the available metrics by type: the *Metric Type*: *Performance*, *Capacity*, *Health*, or *Alerts* or search for a specific metric by name. The available metrics depend on the resource type you selected.
+
++
+link:reference-dashboard-card-templates.html#metrics-list[Learn about the available metrics.]
+
+. Select a card to include in the dashboard and select *Next*. 
+
++
+You can only select one card at a time. The card preview shows live data for the selected metric and resource type.
+
+. Name your card. The name must be unique within the dashboard.
+
+
+
+. Review the card preview, enter a card name and description, and then select *Add*.
+
+. Repeat these steps for additional cards.
+//end::core-add-card-flow[]
+
+//tag::templates-menu-flow[]
+. Select *Storage > Dashboards > Card Templates*.
+
+. Browse, sort, or filter the templates by metric type, metric, or target resource type.
+
+. Select a template, then select *Create Card from Template*.
+
++
+Time window and aggregation are configured at the dashboard level. The values you set apply to all cards in the dashboard.
+
+. Customize the scope, aggregation, target resource type, target resources, and time window.
+
+. Review the card preview and enter a name and description.
+
+. Add the card to an existing dashboard or create a new dashboard.
+
+. Save the dashboard.
+//end::templates-menu-flow[]

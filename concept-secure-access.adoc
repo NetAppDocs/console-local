@@ -1,0 +1,47 @@
+---
+sidebar: sidebar
+permalink: concept-secure-access.html
+keywords: security, access control, MFA, multi-factor authentication, AD, Active Directory, LDAP, LDAPS, directory services, authentication, zero trust, secure access governance, reduce attack surface, netapp console local
+summary: "Learn about the security options available in NetApp Console local deployment, including Active Directory integration and multi-factor authentication."
+---
+= Learn about secure access to NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+NetApp Console local deployment provides multiple layers of security to protect your storage management environment and control who can access it.
+
+== Active Directory integration
+
+Connect NetApp Console local deployment to your Active Directory so users can sign in with their existing corporate credentials. This eliminates the need for separate passwords in Console local deployment and supports directory-backed sign-in for the users that you add to your organization.
+
+link:task-iam-active-directory-integrate.html[Integrate Active Directory with NetApp Console local deployment].
+
+
+== Multi-factor authentication
+
+Users can enable multi-factor authentication (MFA) for an additional layer of verification to prevent unauthorized access, even if credentials are compromised.
+
+link:task-user-settings.html[Enable MFA for NetApp Console local deployment].
+
+
+
+== Identity and access management
+
+After authenticating users, control and monitor what they can do inside NetApp Console local deployment.
+
+Use role-based access control to define what each member can see and manage. Assign members to specific fleets so they access only the storage resources relevant to their responsibilities.
+
+* link:concept-identity-and-access-management.html[Learn about NetApp Console local deployment identity and access management]
+* link:concept-iam-rbac.html[Learn about NetApp Console local deployment role-based access control]
+* link:task-iam-manage-members-permissions.html[Add members and assign roles in NetApp Console local deployment]
+* link:task-iam-users-fleets-assign.html[Manage fleet access assignments in NetApp Console local deployment]
+
+== Audit logging
+
+Track all user activity (including API and service account users) in NetApp Console local deployment for compliance and security investigations.
+
+link:task-audit-console-activity.html[View audit logs for NetApp Console local deployment].

@@ -1,0 +1,74 @@
+---
+sidebar: sidebar
+permalink: task-manage-member-security.html
+keywords: member security, password reset, MFA, multi-factor authentication, service account, credentials, netapp console local, AD, Active Directory, directory services
+summary: "Manage member security settings in NetApp Console local deployment, including password resets, MFA management, and service account credentials."
+---
+= Manage member security in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Secure user access to your NetApp Console local deployment organization by managing member security settings. You can direct local users to change their own passwords, manage local users' multi-factor authentication (MFA), and recreate service account credentials.
+
+.Required access roles
+Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+== Reset user passwords (local users only)
+
+Administrators cannot reset local user passwords directly.
+
+Direct local users to reset their passwords from the Console local deployment login page by selecting *Forgot password?*.
+
+NOTE: This option is not available for directory users.
+
+== Manage a local user's multi-factor authentication (MFA) 
+
+If a local user loses access to their MFA device, you can either remove or disable their MFA configuration.
+
+NOTE: Multi-factor authentication is only available for local users. Directory users cannot enable MFA through Console local deployment.
+
+Use these guidelines to choose the right action:
+
+* Select *Disable* when the user temporarily loses access to their MFA device. Disabling MFA allows one sign-in without MFA for eight hours and then automatically re-enables MFA.
+* Select *Remove* when the user must fully reset MFA. After you remove MFA, the user signs in without MFA until they configure MFA again.
+
+If a user has a saved recovery code, they can sign in with it. If a user does not have a recovery code, disable MFA so the user can sign in and regain access.
+
+NOTE: To manage a local user's multi-factor authentication, you must have an email address in the same domain as the affected user.
+
+.Steps
+
+. Select *Administration* > *Identity and access*.
+
+. Select *Members*.
+
+. From the Members page, navigate to a member in the table, select image:icon-action.png[An icon with three dots] and then select *Manage multi-factor authentication*.
+
+. Choose whether to remove or to disable the user's MFA configuration.
+
+.After you finish
+Review the audit log to confirm who changed MFA access, when they changed it, and whether the action succeeded. link:task-audit-console-activity.html[Learn how to audit NetApp Console local deployment activity].
+
+== Recreate the credentials for a service account
+
+You can create new credentials for a service account if you lose or need to update them.
+
+Creating new credentials deletes the old ones. You cannot use the old credentials.
+
+.Steps
+
+. Select *Administration* > *Identity and access*.
+
+. Select *Members*.
+
+. In the Members table, navigate to a service account, select image:icon-action.png[An icon with three dots] and then select *Recreate secrets*.
+
+. Select *Recreate*.
+
+. Download or copy the client ID and client secret.
++
+The Console local deployment shows the client secret only once. Make sure you copy or download it and store it securely.

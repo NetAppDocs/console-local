@@ -1,0 +1,62 @@
+---
+sidebar: sidebar
+permalink: task-iam-users-fleets-assign.html
+keywords: assign members, fleet, folder, access control, roles, storage management, netapp console
+summary: "Audit or change member access assignments for folders and storage fleets in NetApp Console local deployment."
+---
+= View or change fleet access assignments in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Audit or change member access assignments for folders and storage fleets in NetApp Console local deployment. Folder and fleet admins typically work from this view because it shows only the scopes that they administer.
+
+.Required access roles
+Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+Alternatively, you can manage all roles for a particular member across multiple folders or fleets. link:task-iam-manage-roles.html[Manage member access].
+
+
+== How folder and fleet access works
+
+Console local deployment uses role-based access control (RBAC). A role that you assign at the folder level applies to all fleets and subfolders within that folder; a role that you assign at the fleet level applies only to that fleet's resources. link:concept-iam-rbac.html#role-inheritance[Learn about role inheritance in NetApp Console local deployment].
+
+NOTE: You can't change a role at the fleet level if a member inherits it from a folder or from the organization. To change inherited access, change the role at the higher scope.
+
+== View members assigned to a folder or fleet
+
+Review exactly who can manage specific folder or fleet. For example, before associating a new production ONTAP cluster with the `Production-US-East` fleet, open the fleet's Access tab to confirm who has access.
+
+.Steps
+
+. Select *Administration* > *Identity and access*.
+
+. Select *Organization*.
+
+. From the Organization page, navigate to a folder or fleet in the table, select image:icon-action.png[An icon with three dots] and then select *Edit folder* or *Edit fleet*.
+
+. Select *Access* to view the members who have access to the folder or fleet.
+
+== Modify member access from a folder or fleet
+
+Adjust the roles of members who already belong to your organization, scoped to a single folder or fleet. For example, when a teammate moves from a development fleet to a production fleet, promote them from Storage viewer to Storage admin on the production fleet without affecting their access elsewhere.
+
+To add a new member and assign their first role, use the onboarding task instead. link:task-iam-manage-members-permissions.html[Add members and assign roles].
+
+.Steps
+
+. From the Organization page, navigate to a folder or fleet in the table, select image:icon-action.png[An icon with three dots] and then select *Edit folder* or *Edit fleet*.
+
+. Select *Access* to view the list of members who have access.
+
+. Modify member access:
++
+* *Change a member's role*: For any member with a role other than Organization admin, select their existing role and choose a new role. The change applies only at this scope; roles inherited from a higher scope don't appear here.
+* *Remove member access at this scope*: For a member who has a role defined directly at this folder or fleet, remove the role to revoke their access at this scope. This doesn't remove the member from your organization or affect roles they have at other scopes.
++
+link:task-iam-manage-roles.html#remove-a-member-from-your-organization[Remove a member from your organization].
+
+. Select *Apply*.

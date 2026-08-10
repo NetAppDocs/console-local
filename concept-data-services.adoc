@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+permalink: concept-data-services.html
+keywords: data services, data protection, data mobility, backup, replication, netapp console
+summary: "Learn about using NetApp Backup and Recovery  in NetApp Console local deployment for protecting and managing your data."
+---
+= Learn about NetApp Backup and Recovery in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+NetApp Backup and Recovery is a data service that provides efficient, secure, and cost-effective data protection for all your ONTAP workloads, including volumes, databases, virtual machines, and Kubernetes workloads.
+
+A workload is a logical grouping of resources within a system that is managed as a single unit for protection, governance, detection, and recovery. In Backup and Recovery, a workload is the unit you protect. Its meaning depends on the data source: for Kubernetes a workload is an application, for VM environments it's a virtual machine, and for database environments it's a database.
+
+Support for Backup and Recovery is already built in to all ONTAP systems, so there is no need for additional hardware or media gateways. This makes backup operations simple and cost effective. The NetApp Console simplifies the implementation of any backup strategy, including the full spectrum of 3-2-1 backup variants, without needing multiple resource managers or specialized personnel.
+
+NOTE: NetApp Backup and Recovery is in preview mode for NetApp Console local deployment. The service is not yet generally available, and the features and functionality are subject to change.
+
+link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html[Learn more about NetApp Backup and Recovery.^].

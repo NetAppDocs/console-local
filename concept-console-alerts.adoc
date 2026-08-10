@@ -1,0 +1,63 @@
+---
+sidebar: sidebar
+permalink: concept-console-alerts.html
+keywords: alerts, alerting, fleet monitoring, severity, impact area, netapp console local
+summary: "Learn how storage alerts in NetApp Console local deployment help you monitor the health of your on-premises ONTAP clusters across your organization and fleets."
+---
+= Learn about alerts in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Jira: SPSPM-3316, SPSPM-3496
+NetApp Console local deployment generates alerts that identify health issues on your on-premises ONTAP clusters and for NetApp Backup and Recovery operations.
+
+
+Console local deployment consolidates alerts from ONTAP clusters and Backup and Recovery operations into a single view. The Alerts page includes a dashboard, an alerts list, and a systems view so you can review alerts across the entire organization or scope them to a specific fleet or system. Each alert identifies the affected system, its severity, and its impact area.
+
+Use alerts in Console local deployment to:
+
+* Detect capacity, connectivity, data protection, performance, and security issues.
+* Prioritize alerts by severity and impact area.
+* Open an alert in System Manager or Workload Analyzer, then run a guided or automated Fix-It action when the page offers one.
+* Route notifications through email to users with specified access roles, or send alert data to an external system through a webhook.
+* Export the alerts list to a CSV file for offline analysis.
+
+== Alert severity and impact areas
+
+Each alert includes a severity and an impact area:
+
+* *Severity* indicates urgency, from highest to lowest: Critical, Major, Minor, Warning, and Info.
+* *Impact area* identifies the affected domain: Capacity, Connectivity, Data protection, Performance, and Security.
+
+== Alert sources and scope
+
+* *ONTAP alerts* originate from the ONTAP Event Management System (EMS) on the on-premises clusters that Console local deployment has discovered. link:https://docs.netapp.com/us-en/ontap-ems/acp-auto-events.html[Learn more about the ONTAP EMS and available alerts.^]
+* *NetApp Backup and Recovery alerts* originate from Backup and Recovery actions. link:https://docs.netapp.com/us-en/data-services-backup-recovery/reference-audit-actions.html[Learn more about NetApp Backup and Recovery alerts.^]
+* Your permissions determine which fleets you can view. Scope the view to the entire organization, a specific fleet, or an individual system. The *Systems health* tab shows per-system status and the *Alerts* tab shows the current alert list for the selected scope.
+* The CSV export reflects the current scope, search text, and filters.
+
+== Alert notification rules
+
+Create notification rules to determine which alerts generate notifications and who receives them. A notification rule has the following characteristics:
+
+* It matches alerts on the service (such as ONTAP management or Backup and Recovery), severity, impact area, and target system.
+* For email delivery, it sends notifications to users with the specified access roles. For webhook delivery, it sends alert data to the configured endpoint—access to that data is controlled by the receiving application, not by Console local deployment.
+* It applies to specific systems, not to fleets.
+* It can be muted during a planned maintenance window to suppress expected alerts.
+
+Console local deployment includes a default notification rule that is active immediately after installation. The default rule monitors all services and systems for Critical-severity alerts and delivers notifications to the Console Notification Center only—no email or webhook delivery is configured until you set it up. You can view and adjust this rule, and create custom rules to match your environment.
+
+Info-level alerts are visible in the Alerts page but are not delivered by notification unless you explicitly create a rule that includes the Info severity level.
+
+
+.Related information
+
+* link:task-alerts-monitor.html[Monitor and investigate alerts]
+* link:task-alert-rules-manage.html[Create and manage alert notification rules]
+* link:reference-ontap-alerts.html[Learn about ONTAP alerts in NetApp Console local deployment]
+
+

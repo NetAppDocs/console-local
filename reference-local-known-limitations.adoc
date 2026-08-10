@@ -1,0 +1,31 @@
+---
+sidebar: sidebar
+permalink: reference-local-known-limitations.html
+keywords: console local deployment, known limitations, unsupported platforms, unsupported devices, unsupported functions, IP range
+summary: "Reference for known limitations in NetApp Console local deployment."
+---
+= Known limitations in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully.
+
+These limitations are specific to the setup for the NetApp Console and administration: the agent, the software as a service (SaaS) platform, and more.
+
+== Console VM limitations
+
+=== Possible conflict with IP addresses in the 10.42.0.0/16 and 10.43.0.0/16 ranges
+
+include::_include/os-reqs.adoc[tag=ip-range-conflict]
+
+
+
+=== Shared Linux hosts are not supported
+The agent isn't supported on a VM that is shared with other applications. The VM must be dedicated to the agent software.
+
+=== Third-party agents and extensions
+Third-party agents or VM extensions are not supported on the agent VM.

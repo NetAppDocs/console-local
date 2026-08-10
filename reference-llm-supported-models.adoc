@@ -1,0 +1,46 @@
+---
+sidebar: sidebar
+permalink: reference-llm-supported-models.html
+keywords: LLM, supported models, OpenAI, OpenAI-compatible, model selection, netapp console
+summary: "Review the LLM provider types and models you can use in NetApp Console local deployment."
+---
+= Supported LLM providers and models in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+NetApp Console local deployment supports OpenAI, OpenAI-compatible, and Anthropic LLM provider types. The models you can select depend on the provider type and endpoint you configure.
+
+include::_include/ai-preview.adoc[]
+
+Choose a model that matches your performance, cost, and governance requirements.
+
+== See how provider type affects model availability
+
+The provider type you choose determines which models appear in the Console local deployment model list:
+
+* *OpenAI* — provides models for direct OpenAI integration.
+* *OpenAI-compatible* — provides models that your organization's compatible endpoint exposes.
+* *Anthropic* — provides models for direct Anthropic integration.
+
+The models you see can vary based on endpoint configuration, proxy or gateway behavior, and organizational policy. Provider types differ by the endpoint you connect to and the models that endpoint exposes, not the transport protocol.
+
+== Supported OpenAI models
+
+* GPT-5.4
+* GPT-5.5
+
+
+== Supported Anthropic models
+
+* Claude Sonnet 4.6
+* Claude Opus 4.6, 4.7 & 4.8
+
+
+== Related information
+
+* link:task-llm-connect.html[Connect your LLM and enable the NetApp Console assistant].
+* link:concept-llm-integration.html[Learn about LLM integration in NetApp Console local deployment].

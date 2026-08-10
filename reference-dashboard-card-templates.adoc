@@ -1,0 +1,269 @@
+---
+sidebar: sidebar
+permalink: reference-dashboard-card-templates.html
+keywords: card templates, dashboard cards, metric types, chart types, performance, capacity, health, alerts, netapp console local
+summary: "Reference for predefined dashboards and custom dashboard cards and metrics in NetApp Console local deployment."
+---
+= Predefined dashboards and custom dashboard cards reference in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Source: NetApp Console Local — Customizable Dashboard (Confluence page 560148946)
+
+
+In NetApp Console local deployment, predefined dashboards and custom dashboard card templates provide monitoring coverage for ONTAP performance, capacity, health, and alert operations.
+
+
+== Predefined dashboards
+
+The following predefined dashboards are available out of the box.
+
+[cols="35,65",options="header"]
+|===
+| Name | Description
+
+| Volumes
+| Volume performance, capacity, QoS, FabricPool, growth rate, and forecast metrics.
+
+| Time Till Full
+| ONTAP time-till-full predictions for clusters, volumes, and aggregates.
+
+| Security
+| Security compliance, encryption, autonomous ransomware protection, and authentication overview.
+
+| SVMs
+| ONTAP SVM performance, capacity, volume, LIF, protocol (CIFS, FCP, iSCSI, NFS, NVMe/FC), QoS, and latency heatmap monitoring.
+
+| Power
+| ONTAP cluster power consumption, temperature, and fan speed monitoring for nodes, shelves, and aggregates.
+
+| Nodes
+| ONTAP node performance, CPU, network, and backend monitoring.
+
+| Network
+| Network performance metrics including Ethernet, FibreChannel, NVMe/FC, Link Aggregation Groups, and Routes.
+
+| LUNs
+| ONTAP LUN performance, capacity, and efficiency monitoring.
+
+| Health
+| ONTAP cluster health monitoring including errors, warnings, EMS alerts, HA issues, node/disk/shelf health, volumes, licenses, and network ports.
+
+| Aggregates
+| ONTAP aggregate capacity, efficiency ratios, and growth rate monitoring.
+|===
+
+== Dashboard-level time windows and aggregation
+
+Available time windows are 30 minutes, 1 hour, 24 hours, 48 hours, 7 days, and 30 days. Aggregation options vary by template and include views such as fleet-wide rollup or top-N style results. Time window and aggregation are configured at the dashboard level and apply to all cards in the dashboard.
+
+== Dashboard card templates and metrics
+
+Cards are the building blocks of custom dashboards. Each card uses a predefined template with a metric and chart type, then maps that view to specific ONTAP objects and monitoring goals.
+
+NOTE: Card templates are predefined and not user-created.
+
+
+[[metrics-list]]
+=== Storage operations metric index (at a glance)
+
+Metric types align to common storage administration outcomes, including performance bottlenecks, capacity pressure, health risk, and alert volume.
+
+[cols="18,37,30,15",options="header"]
+|===
+| Metric type | Supported metrics | Storage admin use case | Detailed templates
+
+| Performance
+| Average latency, peak latency, IOPS, throughput (MB/s), utilization, performance capacity
+| Identify bottlenecks, sustained pressure, and performance headroom
+| <<performance-templates,Go to templates>>
+
+| Capacity
+| Used capacity, free capacity, capacity used (%), snapshot capacity used
+| Track growth, identify low-free-capacity areas, and monitor snapshot impact
+| <<capacity-templates,Go to templates>>
+
+| Health
+| Health status, degraded/critical objects, failed disks, network interface errors, hot objects (by latency)
+| Detect health regressions and prioritize operational triage
+| <<health-templates,Go to templates>>
+
+| Alerts
+| Alerts (Critical), alerts by severity, alerts by impact area, recent alerts, alert trend
+| Monitor active incidents and trend alert volume over time
+| <<alerts-templates,Go to templates>>
+|===
+
+=== Supported ONTAP object hierarchy (resource types)
+
+Card data can be represented at multiple ONTAP object levels, from fleet-level visibility to object-level troubleshooting.
+
+*Resource type* settings map to one or more of the following resource levels:
+
+* Fleet
+* Cluster
+* System (node)
+* SVM
+* Volume
+* LUN
+* Local tier (aggregate)
+
+The available resource levels depend on the template and metric you select.
+
+
+
+=== Chart types for operational analysis
+
+Chart type affects how quickly you can interpret trends, comparisons, distributions, and point-in-time values.
+
+[cols="25,75",options="header"]
+|===
+| Chart type | Best for
+
+| Line chart
+| Time-series trends, such as latency, IOPS, throughput, utilization, and alert trends over time.
+
+| Bar chart
+| Categorical comparison and distribution, such as alerts by severity or impact area.
+
+| Pie or doughnut
+| Proportional distribution, such as capacity used percentage.
+
+| Table
+| Detailed, multi-column data, such as used capacity, health status, and recent alerts.
+
+| Single number (stat)
+| A single key value at a glance, such as critical alert counts or failed disks.
+|===
+
+[[performance-templates]]
+=== Performance templates for workload triage
+
+Performance templates focus on latency, throughput, and utilization signals that indicate workload pressure.
+
+[cols="25,20,55",options="header"]
+|===
+| Template | Chart type | Description
+
+| Average Latency
+| Line
+| Average latency across the selected targets over the chosen time window.
+
+| Peak Latency
+| Line
+| Maximum latency observed across the selected targets over the chosen time window.
+
+| IOPS
+| Line
+| Sum of I/O operations per second across the selected targets.
+
+| Throughput (MB/s)
+| Line
+| Sum of data throughput across the selected targets.
+
+| Utilization
+| Line
+| Average CPU or disk utilization across the selected targets.
+
+| Performance Capacity
+| Table
+| Headroom analysis comparing current utilization to the optimal point.
+|===
+
+[[capacity-templates]]
+=== Capacity templates for growth and headroom
+
+Capacity templates focus on consumed and available space to support growth planning and risk detection.
+
+[cols="25,20,55",options="header"]
+|===
+| Template | Chart type | Description
+
+| Used Capacity
+| Table
+| Sum of used capacity across the selected targets.
+
+| Free Capacity
+| Table
+| Sum of free or available capacity across the selected targets.
+
+| Capacity Used (%)
+| Pie or doughnut
+| Average used-to-total ratio across the selected targets.
+
+| Snapshot Capacity Used
+| Table
+| Sum of snapshot space consumed across the selected targets.
+|===
+
+[[health-templates]]
+=== Health templates for risk detection
+
+Health templates focus on object status and failure indicators to support operational triage.
+
+[cols="25,20,55",options="header"]
+|===
+| Template | Chart type | Description
+
+| Health Status
+| Table
+| Latest health state for each selected target object.
+
+| Degraded/Critical Objects
+| Single number
+| Count of objects whose health state is not OK.
+
+| Failed Disks
+| Single number
+| Sum of failed disks across the selected systems.
+
+| Network Interface Errors
+| Pie or doughnut
+| Sum of network interface error counters across the selected targets.
+
+| Hot Objects (by Latency)
+| Table
+| Resources ranked by peak latency, in descending order.
+|===
+
+[[alerts-templates]]
+=== Alerts templates for incident prioritization
+
+Alerts templates focus on incident volume, severity, and impact area to support monitoring and prioritization.
+
+[cols="25,20,55",options="header"]
+|===
+| Template | Chart type | Description
+
+| Alerts (Critical)
+| Single number
+| Count of critical-severity alerts within the time window.
+
+| Alerts by Severity
+| Bar
+| Alerts grouped by severity level.
+
+| Alerts by Impact Area
+| Bar
+| Alerts grouped by impact area, such as capacity, performance, or security.
+
+| Recent Alerts
+| Table
+| Most recent alerts, sorted by time in descending order.
+
+| Alert Trend
+| Line
+| Alert count per time bucket over the chosen time window.
+|===
+
+== Related information
+
+* link:task-storage-dashboard.html[View Home page metrics in NetApp Console local deployment]
+* link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console local deployment]
+* link:task-dashboard-create.html[Create a custom dashboard]
+* link:task-customize-dashboard-cards.html[Customize dashboard cards in NetApp Console local deployment]
+* link:task-dashboard-manage.html[Manage custom dashboards]

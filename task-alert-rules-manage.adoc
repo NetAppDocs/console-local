@@ -1,0 +1,144 @@
+---
+sidebar: sidebar
+permalink: task-alert-rules-manage.html
+keywords: notifications, alerts, notification rules, alert rules, severity, impact area, email, webhook, mute, netapp console local
+summary: "Configure notification rules in NetApp Console local deployment to control which alerts raise notifications, who receives them, and how they are delivered."
+---
+= Configure notification rules for alerts in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Jira: SPSPM-3316, SPSPM-3496
+
+Configure notification rules in NetApp Console local deployment to control which alerts raise notifications, who receives them, and how they are delivered.
+
+.Required access roles
+Super admin, Organization admin, Storage admin, Operations support analyst, or any of the admin roles for NetApp Backup and Recovery. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+Use notification rules to route the right alerts to the right people through the channels that fit your environment, while reducing noise from alerts that aren't relevant to you. Notification rules complement the Alerts page: you investigate or remediate the alert in the Alerts workflow, then use rules to control how similar alerts are delivered in the future.
+
+A notification rule matches alerts based on conditions you define—such as service, severity, and impact area—and then delivers a notification through the channels you select. The Console local deployment includes default notification rules that you can view and adjust, and you can create your own custom rules. You can also mute rules to temporarily suppress notifications during planned events like maintenance windows.
+
+include::_include/ontap-alerts-ems.adoc[]
+
+== Before you begin
+
+* To deliver notifications by email, your Organization admin must configure an email server in the Console local deployment. To deliver notifications to an external system, your Organization admin must configure a webhook. For the steps, see link:task-console-configure-notifications-delivery.html[Configure notification delivery].
+* The Console local deployment Notification Center displays notifications by default, so no additional setup is required for in-console notifications.
+
+== View notification rules
+
+The notification rules page is the central place to review and manage every rule that applies to your organization. Each rule shows its key attributes so that you can quickly assess and adjust your alerting behavior.
+
+.Steps
+. From the left navigation, select *Health > Alerts*.
+. Select *Notification settings*.
+. Review the rules in the list. Each rule shows its active status, name, the services and severity levels it monitors, the roles authorized to receive notifications, the enabled delivery channels, when it was last modified, and any scheduled mute period.
+. To find a specific rule, use the filter and search controls to filter by active status, service, severity, role, channel, or mute status.
+
+== Create a notification rule
+
+Create a notification rule to define the conditions that trigger a notification and how that notification is delivered.
+
+NOTE: You can't set notification rules for fleets. You can set them only for specific systems. In large environments with many systems, consider creating broader rules by severity rather than duplicating rules per system—for example, one Critical rule that covers all systems acts as a catch-all, with additional targeted rules for systems that need different routing or recipients.
+
+.Example notification rule for Critical alerts across all systems
+Suppose you want to ensure no critical alert goes unnoticed, regardless of which system it originates from. You can create a broad rule that routes all critical alerts to the Console Notification Center for storage admins.
+
+In this example, you create a rule with the following settings:
+
+* *Services*: All
+* *Severity*: Critical
+* *IAM role*: Storage admin
+* *System*: (Leave this blank to apply to all systems)
+* *Delivery method*: Console Notification Center
+
+With this rule in place, storage admins see a notification in the Console for every critical alert across all systems. This rule acts as a baseline that you can supplement with more targeted rules.
+
+.Example of a targeted notification rule for Storage admin capacity alerts
+Suppose your storage admins need to respond immediately to critical capacity issues on a specific production system, but you don't want lower-severity alerts to flood their inboxes. You can create a targeted rule that emails storage admins only when a critical capacity alert fires on that system.
+
+In this example, you create a rule with the following settings:
+
+* *Services*: ONTAP management
+* *Severity*: Critical
+* *Impact area*: Capacity
+* *IAM role*: Storage admin
+* *System*: <system_name>
+* *Delivery method*: Email
+
+With this rule in place, Console local deployment emails all storage admins for the specified system when a critical capacity alert occurs. Alerts with a lower severity, such as warning or informational, don't generate an email, so the team can focus on the issues that require urgent attention.
+
+.Steps
+. From the left navigation, select *Health > Alerts*.
+. Select *Notification settings*, and then select *Add rule*.
+. Define the conditions that the rule matches:
++
+* *Rule name*: enter a concise, descriptive name. This field is required.
+* *Rule description*: optionally, enter additional context about the rule's purpose.
+* *Services*: select one or more ONTAP or platform services that the rule applies to.
+* *Roles*: select the access roles that users must have to receive notifications when the rule is triggered.
+* *Severity levels*: select which severity levels the rule monitors, such as Critical, Warning, Error, or Information.
+* *Impact area*: select the operational areas to match, such as Capacity or Performance.
+* *Alert name*: select the specific alert types that trigger the rule.
+* *System*: select the system context that the rule applies to.
+. Select the delivery channels for the notification:
++
+* *Email*: sends alert emails to users who have the selected roles. Requires a configured email server.
+* *Webhook*: sends alert data to an external system. Requires selecting a configured webhook integration.
+* *Console Notification Center*: displays real-time alerts for users who have the selected roles.
+. Optionally, to suppress notifications from this rule during a planned period, such as a maintenance window, set a *Mute notifications* schedule, and choose a recurrence if you want the mute period to repeat. You can add multiple mute windows per rule, which is useful for recurring maintenance cycles such as weekly patching.
+. Select *Create*.
+
+== Enable or disable a notification rule
+
+Enable or disable individual notification rules to control which conditions raise notifications. Disable rules that aren't relevant to your environment to reduce noise, and enable rules to start receiving their notifications again.
+
+.Steps
+. From the left navigation, select *Health > Alerts*.
+. Select *Notification settings*.
+. Locate the rule you want to change.
+. Toggle the rule's *Active* switch on or off. The change takes effect immediately.
+
+== Mute a notification rule
+
+Mute a notification rule to suppress alert delivery during a planned event, such as a maintenance window, without disabling the rule. Alerts continue to appear in the Alerts page during the mute period—only the email, webhook, and in-console notifications are suppressed. When the mute window expires, notifications resume automatically.
+
+You can add multiple mute windows to a single rule and configure each one to recur on a schedule.
+
+.Examples of mute windows
+
+* *One-off maintenance window*: You're running a firmware upgrade on a storage system Saturday night and want to suppress the expected alerts during that window. Set a mute window for Saturday 10:00 PM to Sunday 2:00 AM with no recurrence. When the window expires, notifications resume automatically.
+
+
+* *Recurring weekly patching window*: Your team patches systems every Sunday from midnight to 4:00 AM. Add a mute window with weekly recurrence so notifications are suppressed automatically each week without manual intervention. If a second system has its own patching schedule at a different time, add a second mute window to the same rule with its own start time and recurrence.
+
+.Steps
+. From the left navigation, select *Health > Alerts*.
+. Select *Notification rules*.
+. In the rules list, locate the rule you want to mute and select the action menu for that rule.
+. Select *Edit*.
+. In the *Mute notifications* section, set the start and end date and time for the mute window.
+. Optionally, select a recurrence to repeat the window on a schedule.
+. To add additional mute windows, select *Add mute window* and repeat the previous steps.
+. Select *Save*.
+
+== Delete a notification rule
+
+Delete a notification rule if you no longer need it. Deleting a rule permanently removes it, so you can't recover it.
+
+.Steps
+. From the left navigation, select *Health > Alerts*.
+. Select *Notification settings*.
+. In the rules list, locate the rule you want to delete and select the action menu for that rule.
+. Select *Delete* from the action menu.
+
+== Related information
+
+* link:task-console-configure-notifications-delivery.html[Configure notification delivery]
+* link:concept-console-alerts.html[Learn about Console alerts]
+* link:task-alerts-monitor.html[View alerts]

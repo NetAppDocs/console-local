@@ -1,0 +1,88 @@
+---
+sidebar: sidebar
+permalink: concept-manage-storage.html
+keywords: fleet management, folders, fleets, storage management, storage classes, provisioning, netapp console local
+summary: "Learn how fleet management and storage management work in NetApp Console local deployment, including hierarchy, access control, standards, and provisioning methods."
+---
+= Learn about fleet management in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Jira: SPSPM-3309
+
+Fleet management in NetApp Console local deployment is the practice of organizing storage systems into logical groups so you can apply consistent policies, control access, and monitor health across related clusters. Instead of managing each cluster independently, fleet management lets you treat your fleet as a common pool of resources to support your data storage goals.
+
+As your storage environment grows, managing individual clusters becomes impractical. Fleet management solves this by giving you a structured way to group related systems, delegate responsibilities, and ensure every cluster operates under the same standards.
+
+== Why fleet management matters
+
+Fleet management addresses three core challenges:
+
+* *Simplification through abstraction* - Fleet management abstracts away the complexity of managing individual storage infrastructure. Instead of dealing with cluster-by-cluster configuration, you manage your storage estate as a unified whole, reducing operational overhead and decision fatigue.
+* *Consistency and scalability* - Without clear organization, different teams make different decisions for similar workloads, leading to fragmented configurations. Fleet management lets you apply standards across dozens of systems at once, ensuring new workloads start from the same baseline across teams and fleets.
+* *Governance and control* - As teams grow, you need clear boundaries for who can manage what. Fleet management provides those boundaries through organizational structure and access control, ensuring that storage decisions remain governed and auditable.
+
+== How fleets organize your resources
+
+Your organization's resource hierarchy consists of folders and fleets:
+
+For a detailed overview of the hierarchy and access model, see link:concept-folders-fleets-overview.html[Learn about folders and fleets in NetApp Console local deployment].
+
+* *Organization* - The top level representing your company.
+* *Folders* - Help you organize related fleets. For example, you might create a folder for each region or business unit, then create fleets within each folder. Folders can contain other folders or fleets. When you assign a role at the folder level, members inherit that role for all fleets within the folder.
+* *Fleets* - Group the storage systems you manage together. You associate storage systems with fleets and assign members to fleets to grant them access.
+
+NOTE: Folders are an organizational tool and are not visible to members who do not have IAM permissions such as Organization admin, Folder admin, or Fleet admin roles. Members access fleets, not folders.
+
+== Common fleet organization patterns
+
+How you organize fleets depends on your operational model:
+
+* *By environment* - Create separate fleets for production, development, and test workloads. This keeps production storage under tighter policies while allowing more flexibility in lower environments.
+* *By business unit* - Group clusters that serve a specific department, such as finance, engineering, or HR, into a dedicated fleet. You can then assign storage management responsibilities to team members within that business unit without exposing other fleets to them.
+* *By location or data center* - When clusters are distributed across sites, organizing by location lets you monitor site-level health, apply region-specific policies, and track capacity consumption per site.
+* *By application tier* - Group clusters that host a specific class of workload, such as databases, file shares, or virtual machines, so you can apply consistent standards tuned to that workload type across the entire fleet.
+
+TIP: Use folders to add another level of organization. For example, create a folder for each region and then create environment-based fleets within each regional folder.
+
+== How fleet management enables access control
+
+Fleets and folders serve as boundaries for user access and administrative responsibility:
+
+* *Folder-level access* - When you assign a role at the folder level, the member inherits that role for all fleets and resources within the folder. This lets you delegate administrative responsibilities without granting access to the entire organization.
+* *Fleet-level access* - When you assign a role at the fleet level, the member has access only to the storage systems within that fleet. This lets you delegate storage management to team members or application owners without exposing unrelated parts of your infrastructure.
+
+Console local deployment provides fleet-level health and performance monitoring so you can see the status of all clusters in a fleet from a single view, identify issues early, and act before they affect workloads.
+
+== How storage management works
+
+Storage management is the practice of defining storage standards, applying them consistently, and operating workloads so they stay aligned over time. In Console local deployment, those standards are expressed as storage class policies and storage classes, scoped to fleets, and enforced through provisioning workflows governed by RBAC and audit logging.
+
+Console local deployment connects four concepts into one workflow:
+
+* *Fleets* define the scope where you manage storage. A fleet groups systems so you can control access, apply standards consistently, and manage resources as a unit.
+* *Storage class policies* define standards as reusable building blocks (performance, capacity, security, data protection).
+* *Storage classes* express workload intent. A storage class is a named template assembled from one or more policies.
+* *Provisioning workflows* create storage within guardrails. Different workflows make configuration decisions differently, but all can enforce storage classes and remain governed by RBAC and audit logging.
+
+== Provisioning approaches
+
+Console local deployment supports three provisioning approaches, all governed by RBAC, audit logging, and storage class standards:
+
+* *Manual provisioning* - You select the target system and specify configuration details directly. Use this when you need explicit control over system selection and configuration.
+
+* *Automated provisioning* - You provide workload inputs and optionally select a storage class. Console local deployment recommends best-fit placement and applies class-driven settings to reduce manual decisions.
+
+* *AI-assisted (agentic) provisioning* - You describe what you need in natural language. Console local deployment proposes a plan constrained by RBAC and storage classes, then provisions only after you review and approve.
+
+== Where to go next
+
+* To understand storage standards, see link:concept-storage-classes.html[Learn about storage classes and policies in NetApp Console local deployment].
+* To create and manage fleets, see link:task-iam-manage-folders-fleets.html[Manage folders and fleets].
+* link:task-provisioning-manual.html[Provision storage manually]
+* link:task-provisioning-automated.html[Provision storage automatically]
+* link:task-provisioning-agentic.html[Provision storage with AI assistance]

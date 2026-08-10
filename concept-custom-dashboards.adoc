@@ -1,0 +1,70 @@
+---
+sidebar: sidebar
+permalink: concept-custom-dashboards.html
+keywords: dashboards, predefined dashboards, custom dashboards, cards, card templates, metrics, KPI, fleet health, performance monitoring, capacity monitoring, storage visibility, netapp console local, monitoring
+summary: "Learn how predefined Home page dashboards and custom dashboards work together in NetApp Console local deployment."
+---
+= Learn about custom dashboards in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Use custom dashboards in NetApp Console local deployment to create focused monitoring views for specific teams, fleets, workloads, and operational goals. Custom dashboards complement the Home page dashboard by adding targeted visibility to broad, always-available monitoring.
+
+== How dashboard types work together
+
+Home page dashboard::
+Ready-to-use monitoring panes for capacity, alerts, performance capacity, licenses, and data protection status. Views are preconfigured and update automatically.
+link:task-storage-dashboard.html[View Home page metrics in NetApp Console local deployment].
+
+Custom dashboards::
+Role-specific monitoring views built from predefined cards, including selectable scope, metrics, target resources, and time windows.
+
+Use both together:
+* Start on the Home page for daily baseline monitoring.
+* Use custom dashboards for focused investigation by team, fleet, workload, or operational question.
+
+You can add one custom dashboard to the Home page at a time.
+
+== Understand custom dashboards
+
+A custom dashboard is a saved collection of cards that you arrange on a grid. Each card is based on a predefined card template with a metric and chart type. When you add a card, you configure the scope, target objects, aggregation, and time window.
+
+Custom dashboards and cards are private to you. Each card shows data only for the storage resources you are authorized to view.
+
+You can remove the custom dashboard from your Home page and add a different one as monitoring priorities change.
+
+== Monitor what matters
+
+Card templates are organized by metric type so you can focus a dashboard on a specific operational area. For example, use capacity cards to watch a volume that is growing faster than expected, or use alert cards to track repeated failures on a busy cluster:
+
+Performance::
+Latency, IOPS, throughput, utilization, and performance capacity across the fleet, systems, SVMs, volumes, and LUNs.
+
+Capacity::
+Used capacity, free capacity, capacity used percentage, and snapshot capacity across the fleet, systems, SVMs, volumes, LUNs, and local tiers.
+
+Health::
+Health status, degraded or critical object counts, failed disks, network interface errors, and hot objects.
+
+Alerts::
+Critical alert counts, alerts by severity, alerts by impact area, recent alerts, and alert trends over time.
+
+For a complete catalog of predefined cards and metrics, see link:reference-dashboard-card-templates.html[Learn about custom dashboard cards and metrics in NetApp Console local deployment].
+
+== Resource types
+
+You can scope cards to any level of the ONTAP storage hierarchy: fleet, cluster, system (node), SVM, volume, LUN, and local tier (aggregate). The available resource types depend on the card template you select.
+
+== Plan dashboard views
+
+Organize custom dashboards around storage administration goals such as workload performance triage, capacity planning, health risk detection, and alert prioritization.
+
+== Related information
+
+* link:task-dashboard-get-started.html[Get started with dashboards in NetApp Console local deployment]
+* link:task-storage-dashboard.html[View Home page metrics in NetApp Console local deployment]
+* link:reference-dashboard-card-templates.html[Learn about custom dashboard cards and metrics in NetApp Console local deployment]

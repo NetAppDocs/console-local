@@ -1,0 +1,84 @@
+---
+sidebar: sidebar
+permalink: task-audit-console-activity.html
+keywords: administer, monitor, timeline, notifications, alerts, events, notification center, email, audit page, audit action
+summary: You can audit user activity (initiated from both the UI and API) from the Audit page, and you can monitor the status of the operations that the Console is performing to see if there are any issues that you need to address. You can view the status from the Audit page or configure the audit logs to be sent to your own syslog server.
+---
+
+= Audit NetApp Console local deployment activity
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Jira: SPSPM-3319
+
+You can audit user activity initiated from both the UI and API from the Audit page, and you can monitor the status of operations in NetApp Console local deployment and the user who initiated them.
+
+.Required roles
+Super admin, Organization admin, Folder and fleet admin, Operations support analyst, Super viewer, Organization viewer, or Folder and fleet viewer. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+
+You can view audit activity in the Console local deployment, download a CSV of the audit logs, or configure the audit logs to be sent to your own syslog server by using a webhook.
+
+
+
+
+== Audit user activity from the Audit page
+
+Use the Audit page to identify who performed an action or its status.
+
+The Audit page shows the actions that users completed within your organization. For example, you can verify who added a member to an organization or that a fleet was deleted successfully, as well as see other storage management actions that users performed in your organization.
+
+The audit logs show activity for the following services:
+
+* Tenancy: actions related to managing your organization, such as adding users, creating fleets, and associating resources.
+* Storage-management: actions related to managing your storage resources.
+* Federation: actions related to managing federations, such as creating federations and adding or removing federated organizations.
+
+
+.Steps
+
+. Select *Administration > Audit*.
+
+. Use the filters above the table to change which actions display in the table.
++
+For example, you can use the *Service* filter to show actions related to a specific service, or you can use the *User* filter to show actions related to a specific user account.
+
+=== Filter audit logs for identity and access management actions
+
+To view only actions related to managing your organization—such as adding members, creating fleets, or deleting resources—filter the audit log by the Tenancy service.
+
+.Steps
+
+. Select *Administration > Audit*.
+
+. Use the filters to narrow the results. Select *Service* and then select *Tenancy*.
+
+. Use any of the other filters to further refine the results.
++
+For example, use the *User* filter to show IAM actions performed by a specific user account.
+
+=== Download audit logs from the Audit page
+You can download the audit logs from the Audit page to a CSV file. This enables you to keep a record of the actions that users perform in your organization. The downloaded CSV file includes all audit log columns, regardless of the filters or displayed columns on the Audit page.
+
+.Steps
+. In the *Audit* page, select the download icon in the upper right corner of the table.
+
+//// 
+SIEM integration to come
+
+=== Configure audit logs to be exported via webhook
+You can configure your audit logs to be exported to an external application. You do this by specifying a webhook to use. Before you can configure a webhook, you must first create it. 
+link:task-console-configure-notifications-delivery.html[Learn how to create a webhook integration].
+
+
+.Steps
+
+////
+
+
+
+

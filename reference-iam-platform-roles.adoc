@@ -1,0 +1,109 @@
+---
+sidebar: sidebar
+permalink: reference-iam-platform-roles.html
+keywords: predefined roles, iam roles, Organization admin, Folder or fleet admin, Super admin, Federation admin, platform roles, role, iam, identity and access management, netapp console local
+summary: Assign platform roles to users to grant permissions to manage NetApp Console local deployment, assign roles, add users, and manage federations.
+---
+
+= NetApp Console local deployment platform access roles
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Assign platform roles to users to grant permissions to manage the NetApp Console local deployment, assign roles, add users, create fleets, and manage user authentication.
+
+.Example for organization roles for a large multi-national organization
+XYZ Corporation organizes data storage access by region—North America, Europe, and Asia-Pacific—providing regional control with centralized oversight.
+
+The *Organization admin* in XYZ Corporation's Console local deployment creates an initial organization and separate folders for each region. The *Folder or fleet admin* for each region organizes fleets (with associated resources) within the region's folder.
+
+Regional admins with the *Folder or fleet admin* role actively manage their folders by adding resources and users. These regional admins can also add, remove, or rename folders and fleets they manage. The *Organization admin* inherits permissions for any new resources, maintaining visibility of storage usage across the entire organization.
+
+Within the same organization, one user is assigned the *Federation admin* role to manage the federation of the organization with their corporate IdP. This user can add or remove federated organizations, but cannot manage users or resources within the organization. The *Organization admin* assigns a user the *Federation viewer* role to check federation status and view federated organizations.
+
+The following tables indicate the actions that each Console local deployment platform role can perform.
+
+
+
+
+[[organization-admin-roles]]
+== Organization administration roles 
+[cols="2,1,1",options="header"]
+|===
+
+| Task
+| Organization admin
+| Folder or fleet admin
+
+
+
+| Create, modify or delete systems from the Console local deployment (add or discover systems) |	Yes | Yes 
+
+| Create folders and fleets, including deleting | Yes | No
+
+| Rename existing folders and fleets | Yes | Yes 
+
+| Assign roles and add users | Yes | Yes
+
+| Associate resources with folders and fleets  | Yes | Yes
+
+| Register for support and submit cases through the Console | Yes |	Yes 
+| Use data services that are not associated with an explicit access role | Yes | Yes 
+| View the Audit page and notifications | Yes |	Yes 
+
+|===
+
+[[federation-roles]]
+== Federation roles
+[cols="2,1,1",options="header"]
+|===
+
+| Task
+| Federation admin
+| Federation viewer
+
+
+| Create and update directory service integrations| Yes | No 
+
+| View federations and their details  | Yes | Yes
+
+|===
+
+
+
+[[super-admin-roles]]
+== Super admin and viewer roles 
+
+The *Super admin* role provides full access to manage Console features, storage, and data services. This role suits those overseeing administration and governance. In contrast, the *Super viewer* role offers read-only access, ideal for auditors or stakeholders who need visibility without making changes.
+
+Organizations should use *Super admin* access sparingly to minimize security risks and align with the principle of least privilege. Most organizations should assign fine-grained roles with only the necessary permissions to reduce risk and improve auditability.
+
+
+.Example for super roles
+ABC Corporation has a small team of five that leverages the NetApp Console for data services and storage management. Instead of distributing multiple roles, they assign the *Super admin* role to two senior team members who handle all administrative tasks, including user management and resource configuration. The remaining three team members are assigned the *Super viewer* role, allowing them to monitor storage health and data service status without the ability to modify settings.
+
+
+
+[cols="2,1",options="header"]
+|===
+| Role | Inherited roles
+
+a| Super admin
+a| * Organization admin  
+* Folder or fleet admin 
+
+* Backup and recovery super admin 
+* Storage admin 
+
+
+a| Super viewer
+a|
+* Organization viewer
+* Backup viewer
+* Storage viewer
+
+
+|===

@@ -1,0 +1,110 @@
+---
+sidebar: sidebar
+permalink: task-console-configure-notifications-delivery.html
+keywords: console local, SMTP, email server, webhook,  notifications delivery, alert routing, incident response, operational awareness, third-party integration, SIEM
+summary: "Configure the notifications delivery channels for NetApp Console local deployment."
+---
+
+= Set up notification delivery channels in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Jira: SPSPM-3316, SPSPM-3496
+
+In NetApp Console local deployment, you can set up multiple channels for alert notifications, including email and webhooks.
+
+.Required access roles
+Super admin or Organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+By default, Console local deployment displays notifications through its built-in notification system. Configuring additional delivery channels lets you receive notifications in the way that best fits your workflow.
+
+You can send all notifications through the same channels or use different channels for different notification types. For example, you might send urgent storage alerts through email while routing other alert traffic to a third-party monitoring tool through a webhook.
+
+
+After you set up notification delivery channels, you can configure notification rules and assign them to different channels. link:task-alert-rules-manage.html[Learn how to configure notification rules].
+
+
+
+== Configure an email server
+
+When you configure an email server, Console local deployment sends notifications, alerts, and user invitations through it. Console local deployment supports SMTP email servers, which can be your existing corporate email server or a third-party email service.
+
+
+.Steps
+. Select *Administration > Console*.
+. Select *Configuration* to open the System configurations page.
+
+. In the *Email server* section, select *Configure*.
+. Enter the connection details for your email server:
++
+* Add a sender name and a sender email address.
+* The *SMTP host*: hostname or IP address of your SMTP server. For multiple servers, enter the primary.
+* Select the connection protocol from the *Connection security* dropdown list. The port is configured for you and is read-only: 25 for SMTP with STARTTLS, or 465 for SMTPS.
++
+SMTPS (port 465) establishes an encrypted connection immediately and is recommended for security-sensitive environments. STARTTLS (port 25) upgrades from an unencrypted connection and may fall back to unencrypted transmission if the encryption negotiation fails.
+. Select *Test email* to send a test email to a recipient you specify.
+. After the test succeeds, select *Save* to save the configuration.
++
+If the test fails, re-verify the settings you entered and double-check that Console local deployment has network access to the email server.
+
+=== Update an email server configuration
+You can update an existing email server configuration if you want to use a different email server.
+
+.Steps
+. Select *Administration > Console*.
+. Select *Configuration* to open the System configurations page.
+. In the *Email server* section, select *Configure*.
+. Select *Clear fields* to clear the existing configuration.
+. Enter the new connection details for your email server.
+. Select *Test email* to send a test email to a recipient you specify.
+. After the test succeeds, select *Save* to save the new configuration.
++
+If the test fails, re-verify the settings you entered and double-check that Console local deployment has network access to the email server.
+
+
+=== Remove an email server configuration
+You can remove the email server configuration if you no longer want Console local deployment to send emails.
+
+.Steps
+. Select *Administration > Console*.
+. Select *Configuration* to open the Systems configuration page.
+. In the *Email server* section, select *Configure*.
+. Select *Clear fields* to clear the existing configuration.
+. Select *Save* to save the cleared configuration, which removes the email server configuration from Console local deployment.
+
+
+== Configure a webhook
+
+Set up webhooks to send notifications from Console local deployment to other tools or services. You can configure multiple webhooks, each pointing to a different endpoint. For example, one for a SIEM and another for an on-call paging service. 
+
+After you create a webhook, users with the Storage admin role can assign it to specific alert rules. For example, they can send critical alerts to email while sending all alerts to a third-party monitoring tool through a webhook.
+
+NOTE: Console local deployment does not enforce access control on webhook endpoints. Any user or system that can reach the endpoint URL receives the alert data. Ensure that access to the receiving application is restricted to authorized users through that application's own access controls.
+
+
+.Before you begin
+
+Confirm that Console local deployment can reach the receiving application over the network, and gather the endpoint URL, HTTP method, and any authentication or certificate details required by that application.
+
+.Steps
+. Select *Administration > Console*.
+. Select *Configuration* to open the System configurations page.
+. In the *Webhook integration* section, select *Configure*.
+. Enter the required details for the webhook:
++
+* A descriptive name for the webhook.
+* The Endpoint URL provided by the receiving application.
+* HTTP method
+* Optional: A self-signed certificate in PEM format.
+* Any required headers or secrets (authentication credentials).
+* The format to use when sending the webhook. JSON and OTEL (OpenTelemetry) are supported.
++
+Use JSON for general-purpose webhooks and custom REST endpoints. Use OTEL for observability platforms that natively consume OpenTelemetry signals, such as Grafana or other OpenTelemetry-compatible collectors.
+. Select *Test webhook* to test the webhook connection and ensure that Console local deployment can successfully send messages to the receiving application.
+. After the test succeeds, select *Save* to create the webhook.
++
+After you save the webhook, it is available for users to select where webhooks are supported, such as Alert delivery options. link:task-alert-rules-manage.html[Learn how to create alert rules and assign webhooks for alert delivery.]

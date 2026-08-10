@@ -1,0 +1,108 @@
+---
+sidebar: sidebar
+permalink: task-user-settings.html
+keywords: user profile, mfa, change password, role, login, multi-factor, authentication, dark mode, read-only mode, contact admin, AD, Active Directory, directory services
+summary: You can modify your Console profile including change your password, enable multi-factor authentication (MFA), and see who your Console administrator is.
+
+---
+
+= Manage your NetApp Console local deployment user settings
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+In NetApp Console local deployment, you can modify your Console local deployment profile including change your password, enable multi-factor authentication (MFA), and see who your Console administrator is.
+
+
+== Change your display name
+
+You can change your Console local deployment display name, which identifies you to other users. You cannot change your username or email address.
+
+.Steps
+
+. Select the profile icon in the upper right corner of the Console local deployment to view the User settings panel.
+
+. Select the *Edit* icon next to your name.
+
+. Enter your new display name in the *Name* field.
+
+
+
+[[task-user-mfa]]
+== Configure multi-factor authentication
+
+Configure multi-factor authentication (MFA) to improve security by requiring a second verification method when logging in to NetAppConsole local deployment.
+
+Users who sign in through the NetApp Support Site cannot enable MFA. If this is true for you, you don't see the option to enable MFA in your profile settings.
+
+Do not enable MFA if your user account is used for API access. Multi-factor authentication stops API access when enabled for a user account. Use service accounts for all API access.
+
+NOTE: You can't configure MFA for your account through the Console local deployment if your account uses Active Directory or another integrated directory service for authentication.
+
+.Before you begin
+* You must have already downloaded an authentication app, such as Google Authenticator or Microsoft Authenticator, to your device.
+* You'll need your password to set up MFA. 
+
+NOTE: If you do not have access to your authentication app or lose your recovery code, contact your Console administrator for help.
+
+.Steps
+. Select the profile icon in the upper right corner of the Console to view the User settings panel.
+. Select *Configure* next to the *Multi-Factor Authentication* header.
+. Follow the prompts to set up MFA for your account. 
+. When you finish, you'll be prompted to save your recovery codes. Choose to either copy the codes or download a text file containing the codes. Keep these codes somewhere safe. You need the recovery codes if you lose access to your authentication app.
+
++
+
+NOTE: If you need to sign in with a recovery code, use them in the order shown in the UI during the recovery-code prompt.
+
++
+
+After you set up MFA, the Console local deployment prompts you to enter a one-time code from your authentication app each time you log in.
+
+
+== Regenerate your MFA recovery code
+You can only use a recovery code once. If you lose yours, create a new one.
+
+.Steps
+. Select the profile icon in the upper right corner of the the Console local deployment to view the User settings panel.
+. Select image:icon-action.png["An icon that is three side-by-side dots"] next to the *Multi-Factor Authentication* header.
+. Select *Regenerate recovery code*.
+. Copy the generated recovery codes and save them in a secure location.
+
+== Delete your MFA configuration
+Deleting MFA removes the second verification step for your next sign-in. To use MFA again, you must configure it again from your user settings.
+
+NOTE: If you are unable to access your authentication app or recovery code, you will need to contact your Organization administrator to reset your MFA configuration.
+
+.Steps
+. Select the profile icon in the upper right corner of the Console local deployment to view the User settings panel.
+. Select image:icon-action.png["An icon that is three side-by-side dots"] next to the *Multi-Factor Authentication* header.
+. Select *Delete*.
+
+
+
+[[contact-admin]]
+== Contact your Organization administrator
+If you need to contact your organization administrator, you can send an email to them directly from the Console. The administrator manages user accounts and permissions within your organization.
+
+NOTE: You must have a default email application configured for your browser to use the *Contact admins* feature. 
+
+.Steps
+. Select the profile icon in the upper right corner of the Console local deployment to view the User settings panel.
+. Select *Contact admins* to send an email to your organization administrator. 
+. Select the email application to use.
+. Finish the email and select *Send*.
+
+== Configure dark mode (dark theme)
+You can set the Console local deployment to display in dark mode.
+
+.Steps
+. Select the profile icon in the upper right corner of the Console local deployment to view the User settings panel.
+. Move the *Dark theme* slider to enable it.
+
+
+
+

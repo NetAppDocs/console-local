@@ -1,0 +1,65 @@
+---
+sidebar: sidebar
+permalink: reference-storage-class-policies.html
+keywords: storage class policies, performance policy, capacity policy, security policy, data protection policy, netapp console
+summary: "Reference the system-defined storage class policies available in NetApp Console local deployment."
+---
+= Review predefined storage class policies in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+NetApp Console local deployment includes system-defined policies across all four policy types. Use this reference to identify which policy best fits your workload requirements when creating or customizing a storage class.
+
+== Performance policies
+
+Extreme Performance::
+Use for HPC, AI/ML, and analytics workloads requiring high burst IOPS and predictable low latency.
+
+Extreme for Database Data::
+Use for transactional database data volumes requiring sustained high IOPS and sub-millisecond latency.
+
+Extreme for Database Logs::
+Use for database transaction log volumes requiring the highest IOPS floor to prevent write bottlenecks.
+
+Extreme for Database Shared Data::
+Use for shared database volumes accessed by multiple hosts requiring high throughput and consistent latency.
+
+Performance::
+Use for virtualized and enterprise applications requiring reliable performance without extreme IOPS demands.
+
+Value::
+Use for cost-sensitive workloads such as home directories, file shares, and archives.
+
+== Capacity policies
+
+Autogrow capacity::
+Use for production workloads that must expand automatically to prevent out-of-space failures.
+
+== Security policies
+
+Encryption at-rest::
+Use for production workloads where encryption is required for compliance.
+
+Ransomware protection::
+Use for workloads containing sensitive or business-critical data that require active ransomware protection.
+
+Standard security::
+Use for workloads where platform default security behavior is acceptable.
+
+== Data protection policies
+
+default::
+Use for standard workloads requiring short-term recovery points without long-term retention overhead.
+
+3month-hourly::
+Use for regulated or business-critical workloads requiring granular intra-day recovery points and three months of historical retention.
+
+30-day recovery::
+Use for standard workloads requiring short-term recovery points without long-term retention overhead.
+
+90-day recovery::
+Use for regulated or business-critical workloads requiring granular intra-day recovery points and three months of historical retention.

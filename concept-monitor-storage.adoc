@@ -1,0 +1,53 @@
+---
+sidebar: sidebar
+permalink: concept-monitor-storage.html
+keywords: monitor, health, performance, alerts, workload analyzer, remediation, netapp console local, console local
+summary: "NetApp Console local deployment provides fleet-wide health dashboards, deep-dive volume analysis, configurable alerts, and guided or automated remediation so you can identify and resolve storage issues before they affect workloads."
+---
+= Storage monitoring in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Jira: SPSPM-3315
+
+NetApp Console local deployment helps you monitor storage across fleets with dashboards, alerts, deep-dive analysis, and remediation so you can spot and resolve issues before they affect workloads.
+
+
+
+== Monitor fleet-wide health with dashboards
+
+Start with dashboards for a quick view of storage health and performance. Use the Home page for at-a-glance metrics, open the dashboards table for predefined and custom dashboards, and move into alerts, investigation, and remediation when you need more detail.
+
+* link:task-storage-dashboard.html[View Home page metrics in NetApp Console local deployment]
+* link:task-dashboard-manage.html[Keep dashboards current in NetApp Console local deployment]
+* link:concept-custom-dashboards.html[Learn about custom dashboards in NetApp Console local deployment]
+
+== Investigate performance issues
+
+Use the Workload Analyzer to investigate performance issues on individual volumes. It correlates latency, throughput, IOPS, and configuration changes so you can pinpoint root causes.
+
+* link:concept-workload-analyzer.html[Learn about the NetApp Console local deployment Workload Analyzer]
+* link:task-analyzer-volume-latency-investigate.html[Investigate high latency on a volume in NetApp Console local deployment]
+* link:task-analyzer-volume-throughput-investigate.html[Investigate high throughput demand on a volume in NetApp Console local deployment]
+* link:reference-workload-analyzer-metrics.html[Learn about Workload Analyzer metrics in NetApp Console local deployment]
+
+== Configure alerts and notifications
+
+Configure alert policies and notification channels so the right people hear about storage conditions that require attention. For example, route a capacity warning to the storage team and a protection alert to the backup admin who can act on it.
+
+link:task-alert-rules-manage.html[Configure notifications and alert policies in NetApp Console local deployment].
+link:task-alerts-monitor.html[View storage alerts in NetApp Console local deployment].
+
+== Remediate issues
+
+When you detect an issue, remediate it directly from NetApp Console local deployment:
+
+* *Automated remediation* — NetApp Console local deployment applies corrective actions automatically based on predefined rules.
+
+
+* *Guided remediation* — Follow step-by-step recommendations to resolve issues with full control over each action.
+

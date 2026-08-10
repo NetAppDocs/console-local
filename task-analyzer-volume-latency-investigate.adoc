@@ -1,0 +1,68 @@
+---
+sidebar: sidebar
+permalink: task-analyzer-volume-latency-investigate.html
+keywords: latency, slow performance, delay center, workload analyzer, investigate, netapp console
+summary: "Investigate latency on a volume using the Workload Analyzer to identify which part of the I/O path is causing slow response times."
+---
+= Investigate high latency on a volume in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Use Workload Analyzer in NetApp Console local deployment to find the source of a volume's slow response times.
+
+If you open the analyzer from an alert or from volume inventory, the volume is already selected and you can focus on the time range and chart breakdowns.
+
+When application performance degrades, identify which part of the I/O path is causing the slowdown. The latency analysis section breaks down response time by delay center so you can distinguish between network issues, data processing overhead, aggregate contention, and other contributors.
+
+
+.Steps
+
+. Open Workload Analyzer using one of the following methods:
++
+* From the *Health* menu, select *Workload Analyzer*, then search for and select the volume you want to investigate in the *Volume* field.
+* From the *Storage > Fleets > Inventory* page, navigate to a volume you want to analyze and select *Analyze* from the action menu.
+* From the *Alerts > Overview* page, select a capacity-related alert for the volume you want to investigate, then select *Analyze* from the alert details.
+
+. Set the *Time Range* to cover the period when the performance issue occurred, then select *Analyze*.
+
+. Review the *Event timeline* section to see configuration changes and alerts that line up with the latency increase.
++
+The analyzer plots configuration change events (wrench icon) and alert events (warning and critical icons) along the same time axis as the latency chart, making it easy to see whether a change preceded the degradation.
+
+. In the *Latency* section, open the *View* dropdown and select *Breakdown by delay center*. The chart shows the contribution of each delay center to the total latency over time. Delay centers include:
+
++
+* Read latency
+* Write latency
+* Other latency
+
+
+. Hover over a point on the chart where latency is highest to see each delay center's value and its percentage of total latency.
++
+The largest delay center usually points to the resource under contention. When a shared resource cannot keep up with demand, the volumes that use it wait longer for I/O. Reduce the load on that resource, such as by moving workloads or adjusting a QoS limit, to lower latency.
+
+. Identify the dominant contributor and use the value to determine next steps:
++
+* High *Read latency* may indicate disk contention. Check the *Resource Utilization* section to confirm aggregate busy percentage.
+* High *Write latency* may indicate NIC saturation or network path issues outside the cluster.
+* High *Other latency* may indicate that inline efficiency settings are consuming more CPU than the workload can tolerate. Consider adjusting efficiency settings or QoS.
+* High *Cloud Latency* may indicate the workload is frequently accessing cold data on the capacity tier. Consider adjusting the tiering policy.
+
+. If the delay centers don't account for the slowdown, check the *Capacity Analysis* section. When the ONTAP system is more than 85% full, the high utilization can cause performance issues regardless of the delay center breakdown.
+
+. If latency increased immediately after a change event, use the event details and the related charts together to validate the likely cause:
++
+* For QoS changes, compare the latency line to the QoS limit lines and review the throughput charts to see whether demand is meeting a policy ceiling.
+* For aggregate or volume moves, compare the latency spike to the node and aggregate utilization values shown for the same timeframe.
+* For tiering policy changes, review the cloud latency contribution to determine whether cold-data access increased after the change.
+
+.After you finish
+
+If a configuration or placement issue caused the problem and Console local deployment can resolve it, the alert on the volume may offer a Fix-It option.
+
+
+link:reference-workload-analyzer-metrics.html[Learn about Workload Analyzer metrics in NetApp Console local deployment].

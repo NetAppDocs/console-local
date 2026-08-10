@@ -1,0 +1,72 @@
+---
+sidebar: sidebar
+permalink: task-iam-fleet-mgmt-get-started.html
+keywords: iam, quick start, get started, get started with iam, identity and access management
+summary: "Set up identity and access in NetApp Console local deployment by creating your folder and fleet hierarchy, adding members, adding resources, and placing those resources in the correct fleets."
+---
+
+= Get started with identity and access in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+In NetApp Console local deployment, set up your folder and fleet hierarchy, add members and starting permissions, and add and place resources in the correct fleets so the right teams can access and manage them.
+
+.Required access roles
+Super admin, Organization admin, or Folder or fleet admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+
+You need the *Organization admin* or *Super admin* role to complete initial setup. After setup, manage resources, member access, and fleet access as your organization changes.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Add or discover resources
+
+[role="quick-margin-para"]
+Add systems to Console local deployment. During initial setup, systems are typically added while the default fleet is selected.
+
+[role="quick-margin-para"]
+Learn how to create or discover resources:
+
+[role="quick-margin-list"]
+* https://docs.netapp.com/us-en/storage-management-ontap-onprem/index.html[On-premises ONTAP clusters^]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Create your folder and fleet hierarchy
+
+[role="quick-margin-para"]
+Create additional fleets and folders that match your business hierarchy.
+
+[role="quick-margin-para"]
+link:task-iam-manage-folders-fleets.html[Learn how to organize your resources with folders and fleets].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Associate resources with the correct fleets
+
+[role="quick-margin-para"]
+Adding or discovering a system in Console local deployment automatically associates the resource with the currently selected fleet. To make a system available to the right teams, associate it with the appropriate fleets in your hierarchy.
+
+[role="quick-margin-list"]
+* link:task-iam-manage-resources.html[Learn how to manage resources in folders and fleets].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Add members and assign starting permissions
+
+[role="quick-margin-para"]
+Add members and assign them roles at the organization, folder, or fleet level based on what they manage.
+
+[role="quick-margin-para"]
+link:task-iam-manage-members-permissions.html[Learn how to manage members and their permissions].
+
+== After initial setup
+
+After initial setup is complete, manage access and resource placement as your organization changes:
+
+* link:task-iam-manage-resources.html[Manage resources in folders and fleets]
+* link:task-iam-manage-roles.html[Manage member access across fleets and folders (member-centric)]
+* link:task-iam-users-fleets-assign.html[Manage who can access a specific fleet or folder (fleet-centric)]
+* link:task-iam-manage-folders-fleets.html#delete-a-folder-or-fleet[Delete folders and fleets when no longer needed]
+
+
+.Related information
+
+* link:concept-identity-and-access-management.html[Learn about identity and access management in NetApp Console]
+* https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the API for identity and access^]

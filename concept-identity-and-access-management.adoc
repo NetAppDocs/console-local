@@ -1,0 +1,105 @@
+---
+sidebar: sidebar
+permalink: concept-identity-and-access-management.html
+keywords: iam overview, overview, how iam works, iam example, organization, folders, fleets, resources, members, roles, permissions, resource hierarchy, identity and access management, access roles, iam, authentication, directory users, AD, Active Directory, directory services
+summary: Use NetApp Console local deployment's Identity and Access Management (IAM) to structure and control resource access according to your business hierarchy, such as by location, department, or fleet.
+---
+
+= Learn about NetApp Console local deployment identity and access management
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Jira: SPSPM-3302, SPSPM-3328
+
+Identity and access management (IAM) in NetApp Console local deployment controls who can sign in, how identities are verified, what resources users can access, and what actions they can perform. In NetApp Console local deployment, IAM includes role-based access control (RBAC), multi-factor authentication (MFA), and directory-backed authentication, as well as the hierarchy and audit model that support delegated administration.
+
+Use this page to understand the NetApp Console local deployment IAM model at a high level. For detailed hierarchy planning examples, link:concept-folders-fleets-overview.html[Learn about folders and fleets in NetApp Console local deployment].
+
+NOTE: You must have the _Super admin_, _Organization admin_, or _Folder or fleet admin_ roles to manage IAM in NetApp Console.
+
+
+== What IAM means in NetApp Console local deployment
+
+NetApp Console local deployment IAM combines identity verification, access control, delegation, and auditability:
+
+* _Authentication_ determines how users sign in, whether with local credentials or through your directory configuration.
+* _Authorization_ determines what members can do after they sign in, based on predefined roles and the scope where you assign them.
+* _Hierarchy and scoping_ determine which folders, fleets, and resources a member can access.
+* _Member and credential management_ determine how you add users, service accounts, and how you manage MFA and service account secrets.
+* _Audit and compliance tracking_ records IAM-related activity so you can review who changed access and when.
+
+
+== How authentication works
+
+NetApp Console local deployment supports both local identities and external identity integration.
+
+You can integrate NetApp Console local deployment with Active Directory so users sign in with their existing corporate credentials. This eliminates the need for separate passwords in Console local deployment and lets administrators look up directory users when assigning access.
+
+For local users, MFA adds another verification step to reduce the risk of unauthorized access if credentials are compromised.
+
+To learn more about authentication and secure sign-in options, link:concept-secure-access.html[Learn about secure access in NetApp Console local deployment].
+
+
+== How authorization works
+
+After a user signs in, NetApp Console local deployment uses RBAC to determine what that user can see and do.
+
+Active Directory or LDAP integration handles authentication. NetApp Console local deployment authorization remains separate: administrators assign predefined roles at the organization, folder, or fleet level to control what each member can access.
+
+The same role grants different effective access depending on the scope where you assign it. This model lets you give broad access to central administrators while limiting regional or team-level administrators to the fleets they manage.
+
+Roles that you assign at the organization or folder level are inherited by child scopes. This inheritance model is a key part of how NetApp Console delegates access across folders and fleets.
+
+NetApp designs NetApp Console local deployment roles with least-privilege principles so each role includes only the permissions needed for its tasks.
+
+link:concept-iam-rbac.html#role-inheritance[Learn about role-based access control and role inheritance in NetApp Console local deployment].
+
+
+== How the IAM hierarchy works
+
+NetApp Console local deployment uses a hierarchy to group resources and scope access. The organization is at the top, then folders, then fleets, and then the resources (including possible sub-folders) associated with those fleets.
+
+This hierarchy is what makes delegation possible. For example, an Organization admin can manage access across the entire organization, while a Folder or fleet admin can manage only the resources and members within the part of the hierarchy they own.
+
+NetApp Console IAM is built on three types of components: organizational components that define the hierarchy, resources that are assigned within that hierarchy, and members and roles that control who can access what.
+
+Because roles inherit through this hierarchy, your folder and fleet design directly affects how broadly each access assignment applies.
+
+link:task-iam-manage-folders-fleets.html[Learn how to add fleets to your organization.^].
+
+
+
+== Member security and credentials
+
+IAM in NetApp Console local deployment also includes operational controls for securing member access after accounts exist.
+
+For local users, administrators can help users recover access by directing password reset, removing or temporarily disabling MFA, and reviewing local-user MFA behavior. For service accounts, administrators can recreate credentials when secrets are lost or rotated.
+
+These controls are part of IAM because they determine how identities remain secure over time, not just how access is assigned initially.
+
+link:task-manage-member-security.html[Learn how to manage member security].
+
+
+== Audit IAM activity
+
+IAM in NetApp Console local deployment includes the ability to review and export access-related activity.
+
+From the Audit page, you can review actions related to managing your organization, such as adding members, creating fleets, and associating resources. You can also filter audit records by the Tenancy service to focus on IAM-related changes, or export audit logs to an external system.
+
+Auditability is an important IAM principle because it lets you verify who changed access, when the change happened, and whether the change was successful.
+
+link:task-audit-console-activity.html[Learn how to audit NetApp Console local deployment activity].
+
+
+
+== Next steps with IAM in NetApp Console
+
+* link:task-iam-fleet-mgmt-get-started.html[Get started with identity and access in NetApp Console]
+* link:concept-secure-access.html[Learn about secure access in NetApp Console local deployment]
+* link:concept-iam-rbac.html[Learn about RBAC in NetApp Console local deployment]
+* link:task-audit-console-activity.html[Monitor or audit Console local deployment activity]
+* https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html[Learn about the API for NetApp Console IAM^]

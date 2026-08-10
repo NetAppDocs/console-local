@@ -1,0 +1,32 @@
+---
+sidebar: sidebar
+permalink: task-provisioning-automated.html
+keywords: automated provisioning, automation, policy-driven, storage class, netapp console
+summary: "Configure automated storage provisioning using storage classes and policies in NetApp Console local deployment."
+---
+= Provision storage automatically in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+In NetApp Console local deployment, use automated provisioning to allocate storage based on storage class standards and fleet capacity. Automated provisioning is best when you want consistent outcomes and reduced manual decision-making.
+
+
+//<tsharp> is this a thing? Or is this a stub topic that is pretending to be a feature?
+
+//<mlucey> I have removed this topic from the left navigation.
+
+.Required access roles
+Super admin, Organization admin, Folder or fleet admin, or Storage admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+Automated provisioning typically selects best-fit placement from available systems in the fleet based on capacity and performance headroom, then provisions the workload with settings aligned to the storage class.
+
+== Before you begin
+
+- Ensure at least one ONTAP cluster is discovered in the target fleet.
+- If you want class-driven outcomes, ensure the storage class exists and is associated with the fleet.
+
+.Steps

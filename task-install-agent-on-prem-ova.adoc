@@ -1,0 +1,125 @@
+---
+sidebar: sidebar
+permalink: task-install-agent-on-prem-ova.html
+keywords: install agent, on-premises agent installation, vCenter, ESXi, VMware, OVA, deploy Console local deployment, agent deployment, netapp console local
+summary: If you are a VMWare user, you can use an OVA to install a Console agent in your VCenter. THe OVA download or URL is available through the NetApp Console local deployment.
+---
+
+= Install NetApp Console local deployment using an OVA in vCenter
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You use an OVA to install a NetApp Console local deployment in your VCenter. THe OVA download or URL is available through the NetApp Support site.
+
+
+== Prepare to install  NetApp Console local deployment 
+Before installation, make sure your VM host meets the requirements and the NetApp Console local deployment can access the internet and targeted networks. To use NetApp data services such as NetApp Backup and Recovery, create cloud provider credentials for the NetApp Console local deployment to perform actions on your behalf.
+
+=== Review NetApp Console local deployment host requirements
+
+Make sure your host machine meets installation requirements before installing NetApp Console local deployment.
+
+include::_include/os-reqs.adoc[tag=vmhost]
+
+NOTE: Install NetApp Console local deployment in a vCenter environment rather than directly on an ESXi host. 
+
+
+
+
+[[network-access-agent]]
+=== Set up network access for the NetApp Console local deployment
+
+include::_include/os-reqs.adoc[tag=ip-range-conflict]
+
+
+
+
+
+
+
+== Install NetApp Console local deployment in your VCenter environment
+NetApp supports installing NetApp Console local deployment in your VCenter environment. The OVA file includes a pre-configured VM image that you can deploy in your VMware environment.  
+
+=== Download the OVA or copy the URL    
+
+Download the OVA.
+
+. Download the Console local deployment software from the NetApp Support Site.
+
+
+
+=== Deploy NetApp Console local deployment in your VCenter
+
+Log into your VCenter environment to deploy Console local deployment.
+
+.Steps
+
+. Upload the self-signed certificate to your trusted certificates if your environment requires it. You can replace this certificate after installation.
+
+. Deploy the OVA from the content library or local system.
++
+|===
+|From the local system|From the content library
+|
+a. Right-click and select *Deploy OVF template...*.
+
+b. Choose the OVA file from the URL or browse to its location, then select *Next*.
+|
+a. Go to your content library and select the Console OVA. 
+
+b. Select *Actions* > *New VM from this template*
+|===
+. Complete the Deploy OVF Template wizard to deploy the Console.
+
+. Select a name and folder for the VM, then select *Next*.
+. Select a compute resource, then select *Next*.
+. Review the details of the template, then select *Next*.
+. Accept the license agreement, then select *Next*.
+. Choose the type of proxy configuration you want to use: explicit proxy, transparent proxy, or no proxy. 
+. Select the datastore where you want to deploy the VM, then select *Next*. Be sure it meets host requirements.
+. Select the network to which you want to connect the VM, then select *Next*. Ensure the network is IPv4 and has outbound internet access to the required endpoints.
+
+. in the *Customize template* window, complete the following fields:
+
++
+* *Proxy information* 
+** If you selected explicit proxy, enter the proxy server hostname or IP address and port number, as well as the username, password. 
+** If you selected transparent proxy, upload the respective certificate.
+* *Virtual Machine Configuration*
+** *Skip config check*: This check box is unchecked by default which means the NetApp Console local deployment runs a configuration check to validate network access. 
+*** NetApp recommends leaving this box unchecked so that the installation includes a configuration check of the NetApp Console local deployment. The Configuration check validates that the NetApp Console local deployment has network access to the required endpoints. If it deployment fails because of connectivity issues, you can access the validation report and logs from the NetApp Console local deployment host. In some cases, if you are confident that the NetApp Console local deployment has network access, you can choose to skip the check.
+
+
+
+
+** *Maintenance password*: Set the password for the `maint` user that allows access to the NetApp Console local deployment maintenance console.
+** *NTP servers*: Specify one or more NTP servers for time synchronization.
+** *Hostname*: Set the hostname for this VM. It must not include the search domain. For example, an FQDN of console10.searchdomain.company.com should be entered as console10.
+** *Primary DNS*: Specify the primary DNS server to use for name resolution.
+** *Secondary DNS*: Specify the secondary DNS server to use for name resolution.
+** Search domains: Specify the search domain name to use when resolving the hostname. For example, if the FQDN is console10.searchdomain.company.com, then enter searchdomain.company.com.
+** *IPv4 address*: The IP address that is mapped to the hostname.
+** *IPv4 subnet mask*: The subnet mask for the IPv4 address.
+** *IPv4 gateway address*: The gateway address for the IPv4 address.
+
+. Select *Next*.
+
+
+. Review the details in the *Ready to complete* window, select *Finish*.
++
+The vSphere task bar shows the progress as the NetApp Console local deployment is deployed.
+. Power on the VM.
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+---
+sidebar: sidebar
+permalink: task-iam-active-directory-integrate.html
+keywords: AD, Active Directory, LDAP, directory services, directory users, authentication, user management, netapp console
+summary: "Integrate NetApp Console local deployment with Active Directory for directory-backed sign-in and user lookup."
+---
+= Integrate NetApp Console local deployment with Active Directory
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Integrate NetApp Console local deployment with Active Directory for directory-backed sign-in and user lookup. Use your directory service to authenticate users, then assign access to those users in NetApp Console local deployment.
+
+.Required access roles
+Super admin or Organization admin. link:reference-iam-predefined-roles.html[Learn about access roles].
+
+When you integrate with Active Directory, Console local deployment authenticates users through your existing directory. After you add a directory user, assign Console access roles to control what that user can access.
+
+Active Directory integration also helps you meet compliance requirements by applying your existing controls, audit trails, and policies to Console local deployment access.
+
+
+
+[NOTE]
+====
+* Active Directory integration does not create federated groups, does not synchronize directory-group assignments, and does not automatically grant access. Administrators still add directory users to the organization and assign roles in Console local deployment.
+* Only one Active Directory integration is supported at a time. Once an integration is configured, the *Add integration* button is disabled. To switch to a different directory, disable or delete the existing integration first.
+* Directory users do not configure or use multi-factor authentication (MFA). Console local deployment supports MFA only for local users. link:task-manage-member-security.html[Learn how to manage member security settings].
+====
+
+== Before you begin
+
+Before you integrate with Active Directory, confirm that you have:
+
+* An Active Directory domain and credentials that can query the directory
+* The LDAP server address and the base distinguished name (DN) for the directory tree
+* Network access from Console local deployment to your LDAP server on port 389 (LDAP) or 636 (LDAPS)
+* SSL/TLS certificates, if you plan to use LDAPS
+
+.Steps
+. Select *Administration > Identity and access*.
+. Select *Directory services* to open the Federations page.
+. Select *Add integration*.
+. Enter the connection details for your Active Directory server:
++
+* A descriptive name for the integration.
+* The *LDAP host*: hostname or IP address of your LDAP server. For multiple servers, enter the primary.
+* The port: 389 for LDAP or 636 for LDAPS.
+* The *Connection timeout* in milliseconds. The default is 1000 ms.
+. Select *Use SSL/TLS* to use LDAPS. Confirm that your LDAP server supports LDAPS and that the Console can access the required certificates.
+. Test the connection. If it fails, check the LDAP host, port, network connectivity, and SSL/TLS certificates.
+. After the test succeeds, enter the directory and user details:
++
+* *Base DN binding*: Enter the Bind DN for the LDAP/AD account this app will use to connect to the directory, and enter the Bind credential (password) for that account. Console uses these details to bind to LDAP and validate the connection.
+* *User DN*: a user account with permission to query the directory. For example, `CN=ldap-reader,OU=Service Accounts,DC=example,DC=com`.
+. Select *Add* to save the integration.
+
+.After you finish
+After you save the integration, add directory users to your organization and assign roles. You must configure and enable at least one Active Directory integration before you can add directory users. link:task-iam-manage-members-permissions.html[Learn how to add directory users and assign roles].
+
+== Disable or enable an Active Directory integration
+
+Disable an integration to temporarily suspend directory-backed authentication without deleting the configuration. When you disable a directory service, directory users cannot sign in through the directory.
+
+.Steps
+. Select *Administration > Identity and access*.
+. Select *Directory services* to open the Federations page.
+. In the integrations list, locate the integration and select the action menu for that row.
+. Select *Disable* to suspend the integration, or *Enable* to restore it.
+
+== Delete an Active Directory integration
+
+Delete an integration to permanently remove the directory service configuration. Before deleting, review any warnings about directory users that are linked to the integration, as their access will be affected.
+
+.Steps
+. Select *Administration > Identity and access*.
+. Select *Directory services* to open the Federations page.
+. In the integrations list, locate the integration and select the action menu for that row.
+. Select *Delete* and confirm the deletion.

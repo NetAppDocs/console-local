@@ -1,0 +1,38 @@
+---
+sidebar: sidebar
+permalink: task-add-systems.html
+keywords: add storage systems, ONTAP, cluster, discover storage, fleet, storage discovery, centralized monitoring, storage management, netapp console local
+summary: "Add storage systems to NetApp Console local deployment."
+---
+= Add storage systems to NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// Source: NetApp Console Local — Adding Storage Systems (Confluence page 560148946)
+
+Add storage systems to NetApp Console local deployment to enable monitoring, inventory management, and administration of your storage infrastructure. After a storage system is added, Console local deployment discovers the system and begins collecting information that can be used for monitoring and management tasks.
+
+Before you begin, ensure that you have the required permissions to add storage systems and that the storage system is reachable from Console local deployment.
+
+//tsharp edited the first steps of this to be more specific. We can't assume they know where to go to add a system. Needs a team discussion to ensure our orientation steps are consistent across the docs.
+
+
+.Steps
+
+. Select *Storage > Management*.
+
+. From the Scope drop-down list, select the fleet to which you want to add a storage system.
+
+. Select *Add system*.
+
+. Enter the required storage system details, including connection information and credentials.
+
+. Review the information you entered and select *Add*.
++
+The storage system is added to the selected fleet. Console local deployment begins discovering and monitoring the system. Depending on the environment and network connectivity, it might take several minutes for the system to appear as fully managed.
+
+NOTE: You can also add a storage system from the *Administration > Identity and access* page by selecting *Add system* and providing the required system information.

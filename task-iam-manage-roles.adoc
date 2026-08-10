@@ -1,0 +1,117 @@
+---
+sidebar: sidebar
+permalink: task-iam-manage-roles.html
+keywords: fleets, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members, access roles, directory users, AD, Active Directory, directory services
+summary: Manage member access in your Console organization. Assign roles to set permissions. Remove members when they leave.
+---
+
+= Manage member access in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+In NetApp Console local deployment, review or change a user's roles across multiple folders or fleets, such as checking everything a storage engineer can access, adding a new role in another region, or removing that user's access when responsibilities change.
+
+
+.Required access roles
+Super admin, Organization admin, or Folder or fleet admin (for folders and fleets that they are administering). link:reference-iam-predefined-roles.html[Learn about access roles].
+
+You can view and manage access in two ways depending on your needs. If you want to view the roles that a particular user has across all the fleet in your organization, use the *Members* page.
+
+If you want to confirm who can access a specific fleet, review the members assigned to that fleet instead. link:task-iam-users-fleets-assign.html[Manage fleet access assignments].
+
+To add a new member, service account, or directory user and assign their first role, use the onboarding task instead. link:task-iam-manage-members-permissions.html[Add members and assign roles].
+
+== Understand how access is granted in NetApp Console
+NetApp Console uses role-based access control (RBAC) to manage member permissions. You can assign predefined roles at the organization, folder, or fleet level, depending on the scope of access that a member needs.
+
+[#role-inheritance]
+=== Using role inheritance
+A role that you assign at the organization or folder level is inherited by the child scopes beneath it, so change an inherited assignment at the higher scope where you originally granted it.
+
+link:concept-iam-rbac.html#role-inheritance[Learn about role inheritance in NetApp Console local deployment].
+
+
+
+[#manage-permissions]
+== View roles assigned to a member
+
+Confirm exactly which roles a member holds and at which scope before you make a change. For example, check whether a teammate already has the Storage admin role on the `Production-EU-West` fleet.
+
+If you have the _Folder or fleet admin_ role, the page displays all members in the organization. However, you can view and manage permissions only for the folders and fleets that you administer. link:reference-iam-predefined-roles.html[Learn about Folder or fleet admin actions in NetApp Console local deployment].
+
+include::_include/tasks-role.adoc[tag=view-role]
+
+== Assign or modify member access
+
+You can adjust a member's access whenever responsibilities change. For example, when a teammate takes on backup duties for a second region, add the Backup and Recovery admin role on that region's fleet without touching their existing storage roles.
+
+If you need to add a new member and assign their first role, see link:task-iam-manage-members-permissions.html#add-members[Add members and assign roles].
+
+
+=== Add an access role to an existing member
+
+Grant a member an additional role at the organization, folder, or fleet level when their responsibilities expand. For example, give a Storage admin the Backup and recovery admin role at the organization level so they can manage backup and recovery tasks across every fleet without losing their existing storage permissions.
+
+You can assign a member an access role for your organization, folder, or fleet.
+
+Members can have multiple roles within the same fleet and in different fleets. For example, smaller organizations may assign all available access roles to the same user, while larger organizations may have users do more specialized tasks. Alternatively, you could also assign one user the Ransomware resilience admin role at the organization level. In that example, the user would be able to perform Ransomware resilience tasks on all fleets within your organization. 
+
+Your access role strategy should align with the way you have organized your NetApp resources. 
+
+
+.Steps
+
+. Select *Administration > Identity and access*.
+
+. Select *Members*.
+
+. Select one of the member tabs: *Users*, *Directory users*, or *Service accounts*.
+
+include::_include/tasks-role.adoc[tag=add-role]
+
+=== Change a member's assigned role
+
+Replace a member's existing role with a different one when their responsibilities shift. For example, when a Storage viewer on the `Production-US-East` fleet needs the Storage admin role instead.
+
+NOTE: Each user must have at least one role. You can't remove all roles from a user. If you need to remove all roles, delete the user from your organization.
+
+.Steps
+
+. Select *Administration > Identity and access*.
+
+. Select *Members*.
+
+. Select one of the member tabs: *Users*, *Directory users*, or *Service accounts*.
+
+include::_include/tasks-role.adoc[tag=remove-role]
+
+
+=== Remove a member from your organization
+
+Remove a member when they leave the organization or change roles in a way that ends their need for Console access. For example, when a contractor's engagement ends or an employee transfers to a team outside your Console organization. 
+
+[NOTE] 
+====
+.Directory users
+Removing a user from your directory prevents that user from authenticating. You should also remove the user from your Console organization to keep the member list accurate and to remove any roles that were assigned in Console local deployment.
+
+====
+
+.Steps
+
+. Select *Administration > Identity and access*.
+
+. Select *Members*.
+
+. Select one of the member tabs: *Users*, *Directory users*, or *Service accounts*.
+
+. From the *Members* page, navigate to a member in the table, select image:icon-action.png["An icon that is three side-by-side dots"] then select *Delete user*.
+
+. Confirm that you want to remove the member from your organization.
+
+
+
