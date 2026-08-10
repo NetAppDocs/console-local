@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: remediate-storage-class-drift-remediate.html
+permalink: task-storage-class-drift-remediate.html
 keywords: storage class drift, drift remediation, compliance, fix-it, guided remediation, automated remediation, drift detection, storage governance, storage standards, netapp console local
 summary: "Find, analyze, and remediate storage class drift in NetApp Console local deployment."
 ---
