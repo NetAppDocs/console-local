@@ -12,11 +12,8 @@ summary: "Learn about deployment options for NetApp Console local deployment, in
 :imagesdir: ./media/
 
 [.lead]
-NetApp Console local deployment can be deployed in your on-premises environment using either a VMware vCenter appliance.
+Install NetApp Console local deployment in your vCenter environment.
 
-== Deployment options
-
-Choose the deployment method that fits your environment.
 
 === Install in your vCenter environment
 
