@@ -81,13 +81,13 @@ indexpage:
     - title: API documentation
       links:
         - title: Agentic Platform
-          url: /agentic/get-configs.html
+          url:  https://docs.netapp.com/us-en/console-local-automation/agentic/get-configs.html
         - title: Assets
-          url: /asset/get-organizations-aggregates.html
+          url:  https://docs.netapp.com/us-en/console-local-automation/asset/get-organizations-aggregates.html
         - title: Identity and access management
-          url: /tenancyv4/get-fleets.html
+          url:  https://docs.netapp.com/us-en/console-local-automation/tenancyv4/get-fleets.html
         - title: Storage management
-          url: /storage-management/get-v1-organizations-capacitypolicies.html
+          url:  https://docs.netapp.com/us-en/console-local-automation/storage-management/get-v1-organizations-capacitypolicies.html
 
     - title: Blogs & community
       links:
