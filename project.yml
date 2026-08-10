@@ -78,9 +78,8 @@ sidebar:
           url: /task-iam-active-directory-integrate.html
         - title: Connect your LLM and enable the NetApp Console assistant
           url: /task-llm-connect.html
-          entries:
-          - title: Troubleshoot LLM integration
-            url: /task-llm-troubleshoot-integration.html
+        - title: Troubleshoot LLM integration
+          url: /task-llm-troubleshoot-integration.html
         - title: Configure notification delivery
           url: /task-console-configure-notifications-delivery.html
     - title: Use NetApp Console

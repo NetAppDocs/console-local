@@ -88,6 +88,16 @@ indexpage:
           url: /tenancyv4/get-fleets.html
         - title: Storage management
           url: /storage-management/get-v1-organizations-capacitypolicies.html
+
+    - title: Blogs & community
+      links:
+        - title: NetApp Console local deployment
+          url: https://www.netapp.com/console
+        - title: NetApp Data Services
+          url: https://www.netapp.com/data-services/
+        - title: NetApp Community
+          url: https://community.netapp.com/
+
  
    
   
