@@ -16,6 +16,8 @@ indexpage:
           url: /concept-llm-integration.html
         - title: Learn about NetApp Backup and Recovery
           url: /concept-data-services.html
+        - title: Compare NetApp Console local deployment and NetApp Console
+          url: /console-differences.html
     - title: Deploy Console local deployment and add storage systems
       links:
         - title: Learn about deploying Console local deployment
