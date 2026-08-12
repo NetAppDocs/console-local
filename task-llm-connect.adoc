@@ -33,7 +33,6 @@ Before you connect your LLM, gather the following:
 * Your provider type decision: OpenAI or OpenAI-compatible. link:concept-llm-integration.html[Learn about provider choices.]
 * A valid API key for the provider path you select.
 * The endpoint URL for your provider path.
-* Your proxy or gateway URL, if your organization requires one.
 * Your user name or single sign-on (SSO) ID for the LLM provider account, if required.
 * Network access from Console local deployment to the selected endpoint.
 * Storage classes and role-based access controls for the assistant actions you plan to allow.
