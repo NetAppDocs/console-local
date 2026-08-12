@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: concept-llm-integration.html
-keywords: LLM, AI, artificial intelligence, AI-assisted management, large language model, proxy, openai-compatible, netapp console
-summary: "Learn how NetApp Console local deployment integrates with OpenAI and OpenAI-compatible models, including provider, proxy, and security decisions."
+keywords: LLM, AI, artificial intelligence, AI-assisted management, large language model,  openai-compatible, netapp console
+summary: "Learn how NetApp Console local deployment integrates with OpenAI and OpenAI-compatible models, including provider, and security decisions."
 ---
 = Learn about LLM integration in NetApp Console local deployment
 :hardbreaks:
@@ -49,7 +49,7 @@ NetApp Console local deployment supports these LLM provider types:
 
 * *OpenAI* for direct OpenAI model access.
 * *OpenAI-compatible* for a compatible endpoint, such as an enterprise gateway or proxy service.
-* Anthropic for Anthropic's Claude models.
+* *Anthropic* for Anthropic's Claude models.
 
 Model availability depends on the endpoint you configure. Select a model from the list in Console local deployment.
 
