@@ -48,7 +48,7 @@ NetApp supports installing NetApp Console local deployment in your VCenter envir
 
 Download the OVA.
 
-. Download the Console local deployment software from the NetApp Support Site.
+. Download the Console local deployment software from the link:https://mysupport.netapp.com/site/products/all/details/ncl/downloads-tab[NetApp Support Site^].
 
 
 
