@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: reference-ports-on-prem.html
-keywords: networking, network requirements, ports, on-premises, TCP, HTTP, HTTPS, firewall, connectivity requirements, Console agent, agent connectivity, netapp console local
-summary: The Console agent uses _inbound_ ports when installed manually on an on-premises Linux host. Refer to these ports for planning purposes.
+keywords: networking, network requirements, ports, on-premises, TCP, UDP, firewall, connectivity requirements, Console agent, agent connectivity, netapp console local, inbound ports, OVA
+summary: The NetApp Console local deployment OVA manages its own internal firewall. If your environment enforces an external firewall policy on the VM, ensure the following inbound ports are reachable from your management hosts.
 ---
 
-= Ports for the on-premises Console agent in NetApp Console local deployment
+= Inbound ports for NetApp Console local deployment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,20 +13,24 @@ summary: The Console agent uses _inbound_ ports when installed manually on an on
 :imagesdir: ./media/
 
 [.lead]
-In NetApp Console local deployment, the Console agent uses _inbound_ ports when installed manually on an on-premises Linux host. Refer to these ports for planning purposes.
-
-These inbound rules apply to all NetApp Console deployment modes.
+The NetApp Console local deployment OVA manages its own internal firewall. If your environment enforces an external firewall policy on the VM, ensure the following inbound ports are reachable from your management hosts.
 
 [cols="10,10,80",width=100%,options="header"]
 |===
 
-| Protocol
 | Port
+| Protocol
 | Purpose
 
-| HTTP | 80 a| 
-* Provides HTTP access from client web browsers to the local user interface
-* Used during the Cloud Volumes ONTAP upgrade process
-| HTTPS | 443 |	Provides HTTPS access from client web browsers to the local user interface
+| 22 | TCP | SSH for remote maintenance and diagnostic shell access
+| 123 | UDP | NTP for time synchronization
+| 2379 | TCP | etcd client API for RKE2 control-plane etcd client traffic
+| 2380 | TCP | etcd peer port for etcd member-to-member replication
+| 6443 | TCP | Kubernetes API server for kubectl and RKE2 API access
+| 8472 | UDP | Canal/Flannel VXLAN overlay for pod-to-pod traffic between RKE2 nodes
+| 9091 | TCP | Calico Felix metrics endpoint for CNI health and metrics
+| 9100 | TCP | Prometheus node_exporter for host metrics scraping
+| 9345 | TCP | RKE2 supervisor and server registration endpoint
+| 10250 | TCP | Kubelet API for metrics-server and kube-apiserver to kubelet
 
 |===
