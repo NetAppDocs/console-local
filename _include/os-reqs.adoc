@@ -20,6 +20,13 @@ The Console agent requires this space in `/var` because Docker or Podman are arc
 * Disk space: 596 GB (thick provisioning recommended)
 * vSphere 7.0u3 or higher, with virtual hardware version 19 or higher
 
+[NOTE]
+====
+* CPU and memory are reserved on the ESXi host when the VM powers on, not just allocated. Ensure the target host has at least 16 CPU cores and 64 GB available as unreserved capacity. Existing VM reservations on the host reduce available capacity.
+* The datastore must meet minimum disk write performance: fsync p99 write latency ≤ 20 ms and 4K random write IOPS ≥ 200. Latency above 50 ms or IOPS below 30 causes deployment failure.
+* IPv6 is not supported. A static IPv4 address is required.
+* Install NetApp Console local deployment in a vCenter environment rather than directly on an ESXi host.
+====
 
 //end::vmhost[]
 
