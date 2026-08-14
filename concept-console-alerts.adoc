@@ -46,7 +46,7 @@ Create notification rules to determine which alerts generate notifications and w
 
 * It matches alerts on the service (such as ONTAP management or Backup and Recovery), severity, impact area, and target system.
 * For email delivery, it sends notifications to users with the specified access roles. For webhook delivery, it sends alert data to the configured endpoint—access to that data is controlled by the receiving application, not by Console local deployment.
-* It applies to specific systems, not to fleets.
+* It applies to all systems in the organization.
 * It can be muted during a planned maintenance window to suppress expected alerts.
 
 Console local deployment includes a default notification rule that is active immediately after installation. The default rule monitors all services and systems for Critical-severity alerts and delivers notifications to the Console Notification Center only—no email or webhook delivery is configured until you set it up. You can view and adjust this rule, and create custom rules to match your environment.

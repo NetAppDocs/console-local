@@ -23,7 +23,7 @@ Use notification rules to route the right alerts to the right people through the
 
 A notification rule matches alerts based on conditions you define—such as service, severity, and impact area—and then delivers a notification through the channels you select. The Console local deployment includes a default notification rule that you can view and adjust, and you can create your own custom rules. You can also mute rules to temporarily suppress notifications during planned events like maintenance windows.
 
-include::_include/ontap-alerts-ems.adoc[]
+* link:reference-ontap-alerts.html[Learn about ONTAP alerts in NetApp Console local deployment]
 
 == Before you begin
 
@@ -44,18 +44,19 @@ The notification rules page is the central place to review and manage every rule
 
 Create a notification rule to define the conditions that trigger a notification and how that notification is delivered.
 
-NOTE: You can't set notification rules for fleets. You can set them only for specific systems. In large environments with many systems, consider creating broader rules by severity rather than duplicating rules per system—for example, one Critical rule that covers all systems acts as a catch-all, with additional targeted rules for systems that need different routing or recipients.
+NOTE: Notification rules apply to all systems in the organization.
+
+//<mlucey> Adding a comment here for future. This was the previous note: "You can't set notification rules for fleets. You can set them only for specific systems. In large environments with many systems, consider creating broader rules by severity rather than duplicating rules per system—for example, one Critical rule that covers all systems acts as a catch-all, with additional targeted rules for systems that need different routing or recipients." However, that detailed function is not available in the current release, so I am editing the note as follows: "Notification rules apply to all systems in the organization."
 
 .Example notification rule for Critical alerts across all systems
-Suppose you want to ensure no critical alert goes unnoticed, regardless of which system it originates from. You can create a broad rule that routes all critical alerts to the Console Notification Center for storage admins.
+Suppose you want to ensure no critical alert goes unnoticed, regardless of which system it originates from. You can create a broad rule that routes all critical alerts to the Console UI notifications for storage admins.
 
 In this example, you create a rule with the following settings:
 
 * *Services*: All
-* *Severity*: Critical
-* *IAM role*: Storage admin
-* *System*: (Leave this blank to apply to all systems)
-* *Delivery method*: Console Notification Center
+* *Severity levels*: Critical
+* *Roles*: Storage admin
+* *Delivery channels*: Console UI notifications
 
 With this rule in place, storage admins see a notification in the Console for every critical alert across all systems. This rule acts as a baseline that you can supplement with more targeted rules.
 
