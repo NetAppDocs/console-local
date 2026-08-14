@@ -66,17 +66,6 @@ You can update an existing email server configuration if you want to use a diffe
 If the test fails, re-verify the settings you entered and double-check that Console local deployment has network access to the email server.
 
 
-=== Remove an email server configuration
-You can remove the email server configuration if you no longer want Console local deployment to send emails.
-
-.Steps
-. Select *Administration > Console*.
-. Select *Configuration* to open the Systems configuration page.
-. In the *Email server* section, select *Configure*.
-. Select *Clear fields* to clear the existing configuration.
-. Select *Save* to save the cleared configuration, which removes the email server configuration from Console local deployment.
-
-
 == Configure a webhook
 
 Set up webhooks to send notifications from Console local deployment to other tools or services. You can configure multiple webhooks, each pointing to a different endpoint. For example, one for a SIEM and another for an on-call paging service. 
