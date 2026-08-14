@@ -16,7 +16,7 @@ summary: "Learn how storage alerts in NetApp Console local deployment help you m
 NetApp Console local deployment generates alerts that identify health issues on your on-premises ONTAP clusters and for NetApp Backup and Recovery operations.
 
 
-Console local deployment consolidates alerts from ONTAP clusters and Backup and Recovery operations into a single view. The Alerts page includes a dashboard, an alerts list, and a systems view so you can review alerts across the entire organization or scope them to a specific fleet or system. Each alert identifies the affected system, its severity, and its impact area.
+Console local deployment consolidates alerts from ONTAP clusters and Backup and Recovery operations into a single view. The Alerts page includes a dashboard, an alerts list, and a view that displays alerts across all systems in the organization. Each alert identifies the affected system, its severity, and its impact area.
 
 Use alerts in Console local deployment to:
 
