@@ -1,0 +1,7 @@
+//tag::alerts-retention[]
+NOTE: Alerts are retained in NetApp Console local deployment for 7 days from the time they are raised.
+//end::alerts-retention[]
+
+//tag::ui-notification-retention[]
+NOTE: Console UI notifications are retained for 24 hours.
+//end::ui-notification-retention[]

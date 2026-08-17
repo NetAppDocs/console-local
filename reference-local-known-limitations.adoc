@@ -29,3 +29,17 @@ NetApp Console local deployment isn't supported on a VM that is shared with othe
 
 === Third-party agents and extensions
 Third-party agents or VM extensions are not supported on the NetApp Console local deployment VM.
+
+== Identity and access limitations
+
+[cols="1,3",options="header"]
+|===
+| Area
+| Limitation
+
+| Local user onboarding and account recovery
+| An SMTP email server must be configured before you can invite local users or use password reset for local users.
+
+| Active Directory integration
+| Duplicate email addresses are not supported across local users and Active Directory users. For example, if the initial local organization admin later adds themselves as an Active Directory user, they must use a different email address.
+|===
