@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: task-install-agent-on-prem-ova.html
-keywords: install agent, on-premises agent installation, vCenter, ESXi, VMware, OVA, deploy Console local deployment, agent deployment, netapp console local
-summary: If you are a VMWare user, you can use an OVA to install a Console agent in your VCenter. THe OVA download or URL is available through the NetApp Console local deployment.
+keywords: install , on-premises installation, vCenter, ESXi, VMware, OVA, deploy Console local deployment,  deployment, netapp console local
+summary: You use an OVA to install a NetApp Console local deployment in your VCenter. THe OVA download or URL is available through the NetApp Support site.
 ---
 
 = Install NetApp Console local deployment using an OVA in vCenter
@@ -27,8 +27,6 @@ include::_include/os-reqs.adoc[tag=vmhost]
 
 
 
-
-[[network-access-agent]]
 === Set up network access for the NetApp Console local deployment
 
 include::_include/os-reqs.adoc[tag=ip-range-conflict]

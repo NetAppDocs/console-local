@@ -18,7 +18,7 @@ You get unified storage management, policy enforcement, fleet-scale automation, 
 
 == Deploy and operate Console in your own infrastructure
 
-NetApp Console local deployment runs in your own infrastructure, so your team controls deployment, connectivity, and daily operations. You deploy the Console agent, maintain the Console virtual machine, and manage the network paths required for monitoring and management traffic. This gives enterprise administrators full control of operational boundaries while keeping management data inside the environment.
+NetApp Console local deployment runs in your own infrastructure, so your team controls deployment, connectivity, and daily operations. This gives enterprise administrators full control of operational boundaries while keeping management data inside the environment.
 
 * link:task-install-agent-on-prem-ova.html[Install NetApp Console local deployment using an OVA in vCenter].
 * link:task-console-local-vm-config.html[Maintain your vCenter or ESXi host for NetApp Console local deployment].

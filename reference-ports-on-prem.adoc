@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-ports-on-prem.html
-keywords: networking, network requirements, ports, on-premises, TCP, UDP, firewall, connectivity requirements, Console agent, agent connectivity, netapp console local, inbound ports, OVA
+keywords: networking, network requirements, ports, on-premises, TCP, UDP, firewall, connectivity requirements, Console local, Console local connectivity, netapp console local, inbound ports, OVA
 summary: The NetApp Console local deployment OVA manages its own internal firewall. If your environment enforces an external firewall policy on the VM, ensure the following inbound ports are reachable from your management hosts.
 ---
 
