@@ -13,5 +13,44 @@ summary: NetApp provides support for NetApp Console local deployment in a variet
 :imagesdir: ./media/
 
 [.lead]
-NetApp Console local deployment information for this task.
-include::https://raw.githubusercontent.com/NetAppDocs/console-family/main/_include/get-help.adoc[]
+NetApp provides support for NetApp Console local deployment in a variety of ways. Extensive free self-support options are available 24x7, such as knowledge base (KB) articles and a community forum. You can register for support with the serial number of any storage resource associated with NetApp Console local deployment. Registration includes remote technical support through web ticketing.
+
+
+== Use self-support options
+
+These options are available for free, 24 hours a day, 7 days a week:
+
+* Documentation
++
+The NetApp Console local deployment documentation that you're currently viewing.
+
+* https://kb.netapp.com/Cloud/BlueXP[Knowledge base^]
++
+Search the NetApp Knowledge Base for articles that help you troubleshoot issues.
+
+
+
+== Open a support case with NetApp Console local deployment
+
+Open a support case using one of the NetApp storage system serial numbers managed through your NetApp Console local deployment environment.
+
+.Steps
+
+. Go to https://mysupport.netapp.com[NetApp Support Site^] and sign in with your NetApp Support credentials.
+. Select *Cases and Parts > Create Technical Case*.
+. Enter the serial number of the NetApp storage system associated with the Console local deployment product experiencing the issue.
+. Create a new case and select the appropriate category code for NetApp Console local deployment.
+
+== Download a support bundle
+
+A support bundle includes recent logs and configuration information. You can download the latest bundle and send it to NetApp technical support if requested.
+
+.Steps
+
+. Select *Administration > Support* to view the Support page.
+. On the Support card, select *Create* to create a bundle of logs and configuration data.
+. When the bundle is created, select *Download*. You're prompted to download a ZIP file.
+
++ 
+The system keeps only one bundle at a time. Creating a new support bundle replaces the previous one.
+

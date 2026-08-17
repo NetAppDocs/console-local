@@ -27,8 +27,6 @@ include::_include/os-reqs.adoc[tag=vmhost]
 
 
 
-
-[[network-access-agent]]
 === Set up network access for the NetApp Console local deployment
 
 include::_include/os-reqs.adoc[tag=ip-range-conflict]
