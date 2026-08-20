@@ -86,11 +86,6 @@ b. Select *Actions* > *New VM from this template*
 ** If you selected explicit proxy, enter the proxy server hostname or IP address and port number, as well as the username, password. 
 ** If you selected transparent proxy, upload the respective certificate.
 * *Virtual Machine Configuration*
-** *Skip config check*: This check box is unchecked by default which means the NetApp Console local deployment runs a configuration check to validate network access. 
-*** NetApp recommends leaving this box unchecked so that the installation includes a configuration check of the NetApp Console local deployment. The Configuration check validates that the NetApp Console local deployment has network access to the required endpoints. If it deployment fails because of connectivity issues, you can access the validation report and logs from the NetApp Console local deployment host. In some cases, if you are confident that the NetApp Console local deployment has network access, you can choose to skip the check.
-
-
-
 
 ** *Maintenance password*: Set the password for the `maint` user that allows access to the NetApp Console local deployment maintenance console.
 ** *NTP servers*: Specify one or more NTP servers for time synchronization.

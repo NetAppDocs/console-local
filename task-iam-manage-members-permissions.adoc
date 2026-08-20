@@ -84,6 +84,8 @@ link:reference-iam-predefined-roles.html[Learn about access roles].
 +
 The Console emails instructions to the user.
 
+NOTE: Local user invitation links are single-use and expire after 7 days. If a link expires before the user completes setup, remove the user and add them again to send a new invitation link.
+
 
 
 [[service-account]]
