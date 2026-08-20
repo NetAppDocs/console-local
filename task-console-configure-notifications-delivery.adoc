@@ -22,6 +22,8 @@ Super admin or Organization admin. link:reference-iam-predefined-roles.html[Lear
 
 By default, Console local deployment displays notifications through its built-in notification system. Configuring additional delivery channels lets you receive notifications in the way that best fits your workflow.
 
+include::_include/alerts-notifications-retention-notes.adoc[tag=ui-notification-retention]
+
 You can send all notifications through the same channels or use different channels for different notification types. For example, you might send urgent storage alerts through email while routing other alert traffic to a third-party monitoring tool through a webhook.
 
 

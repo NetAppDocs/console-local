@@ -16,6 +16,8 @@ NetApp Console local deployment lets you host and run the NetApp Console autonom
 
 You get unified storage management, policy enforcement, fleet-scale automation, and AI-assisted operations. No data, metadata, or management traffic leaves your environment.
 
+link:console-differences.html[Learn the differences between NetApp Console local deployment and NetApp Console SaaS and private mode].
+
 == Deploy and operate Console in your own infrastructure
 
 NetApp Console local deployment runs in your own infrastructure, so your team controls deployment, connectivity, and daily operations. This gives enterprise administrators full control of operational boundaries while keeping management data inside the environment.
