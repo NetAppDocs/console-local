@@ -54,7 +54,7 @@ Issues fall into two categories:
 * *Configuration drift*: Storage settings governed by the storage class policy no longer match the intended configuration. This can occur when changes are made directly on the ONTAP cluster or outside standard provisioning workflows.
 * *Performance non-compliance*: The workload's runtime behavior no longer meets the storage class performance intent (for example, sustained pressure near a QoS limit or elevated tail latency).
 
-An analysis view explains what changed and why. Guided remediation actions (for example, *Fix it*) may be available to help restore compliance. Some remediations can be applied in place, while others may require aligning the workload to a different storage class to restore the intended behavior.
+An analysis view explains what changed and why. Guided remediation actions (for example, *Fix It*) may be available to help restore compliance. Some remediations can be applied in place, while others may require aligning the workload to a different storage class to restore the intended behavior.
 
 .Where to investigate
 You can typically investigate drift and non-compliance from one of these locations (availability depends on your deployment and permissions):

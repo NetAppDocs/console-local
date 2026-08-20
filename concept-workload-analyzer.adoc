@@ -16,6 +16,9 @@ summary: "Learn how the Workload Analyzer helps you investigate volume-level per
 
 Use NetApp Console local deployment Workload Analyzer to view a single volume's behavior over time. You can investigate performance degradation, capacity trends, and resource contention issues from the volume itself, from an alert, or from inventory.
 
+For natural-language questions and high-level analysis across permitted resources, use the Console assistant.
+link:reference-console-assistant-operations.html[Learn about supported Console assistant operations.]
+
 == How Workload Analyzer identifies root causes
 
 Use the Workload Analyzer to correlate metrics from a single volume across six sections so you can identify root causes quickly. Select a volume and a time range to view events, performance, and capacity together within the same window. This view can help you determine whether storage is the likely source of an application issue or whether another layer, such as networking, is causing the problem.

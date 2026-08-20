@@ -69,6 +69,8 @@ Explore the prompt library to find a suitable starting point for questions about
 
 Investigate capacity and performance conditions within your permitted scope without changing your storage environment. Ask a read-only question that identifies the resource, scope, metric, and time period you want to understand. The assistant returns an analysis of the supported metrics and does not change your storage.
 
+include::_include/console-assistant-vs-workload-analyzer.adoc[]
+
 == Use the assistant for ONTAP management
 
 Manage supported ONTAP operations through reviewed assistant proposals so infrastructure changes remain deliberate and permission-controlled.
