@@ -73,6 +73,8 @@ Protect the integration with these controls:
 * Treat the API key as a privileged credential and rotate it according to your organization policy.
 * Review provider-side usage and alerts to detect unexpected activity.
 
+Control Console assistant costs by choosing an appropriate LLM provider and model, setting usage limits and alerts with your provider, and monitoring token usage. Only activities that send requests to the LLM consume provider tokens; backend operations do not.
+
 
 
 == Connect your LLM

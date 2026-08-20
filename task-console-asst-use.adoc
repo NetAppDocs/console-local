@@ -55,9 +55,19 @@ For example: `Create a 10GiB volume for home directories named home, and share i
 . Confirm the action. For asynchronous operations, such as volume creation, the assistant creates a job to complete the request.
 . To check on a request, ask the assistant. For example, enter `Let me know when the job completes`, and the assistant returns the current status.
 
+== Use a prompt from the prompt library
+
+Explore the prompt library to find a suitable starting point for questions about storage management and fleet conditions.
+
+.Steps
+. Open the Console assistant.
+. Open the prompt library from the button in the assistant header.
+. Select a prompt from the library, review it, and submit the request.
+. Follow the assistant's response. Depending on the request, the assistant might return information, ask for more details, or request confirmation before it performs an action.
+
 == Use the assistant for metrics and analytics
 
-Ask a read-only question that identifies the resource, scope, metric, and time period you want to understand. The assistant returns an analysis of the supported metrics and does not change your storage.
+Investigate capacity and performance conditions within your permitted scope without changing your storage environment. Ask a read-only question that identifies the resource, scope, metric, and time period you want to understand. The assistant returns an analysis of the supported metrics and does not change your storage.
 
 == Use the assistant for ONTAP management
 

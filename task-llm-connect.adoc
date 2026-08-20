@@ -26,11 +26,11 @@ After setup, users open the Console assistant from the dashboard and choose an a
 
 To connect your LLM, select a provider path, enter endpoint details and API key, and then select a model in *Administration > AI Tools*. Assistant actions stay within your storage policies and role-based access controls.
 
-== Gather what you need before you connect an LLM
+== Before you begin
 
 Prepare provider credentials and endpoint access so the Console assistant can operate within your organization’s configured governance boundaries.
 
-* Your provider type decision: OpenAI, OpenAI-compatible, or Anthropic, as supported by your release and endpoint. link:concept-llm-integration.html[Learn about provider choices.]
+* Your provider type decision: OpenAI, OpenAI-compatible, or Anthropic. link:concept-llm-integration.html[Learn about provider choices.]
 * A valid API key for the provider path you select.
 * The endpoint URL for your provider path.
 * Your user name or ID for the LLM provider account, if required.
@@ -51,8 +51,7 @@ Enable assistant capabilities through a validated provider configuration while r
 . In *Provider type*, select a provider type.
 +
 link:concept-llm-integration.html[Learn about LLM integration in NetApp Console local deployment].
-. If prompted for a provider endpoint, enter the endpoint URL for the provider path you selected.
-. Enter the proxy or gateway URL and credentials.
+. If using a provider proxy, enter enter the proxy or gateway URL and credentials.
 . In the *User name* field, enter your user name or SSO ID if your provider path requires it.
 . In the *API key* field, paste the API key from your selected provider path.
 . Select a model from the list.
