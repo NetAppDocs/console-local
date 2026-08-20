@@ -1,3 +1,5 @@
 === Introducing NetApp Console local deployment
 
 https://docs.netapp.com/us-en/console-local/concept-netapp-console-local.html[Learn NetApp Console local deployment].
+
+https://docs.netapp.com/us-en/console-local/console-differences.html[Learn the differences between NetApp Console local deployment and NetApp Console SaaS and private mode].
