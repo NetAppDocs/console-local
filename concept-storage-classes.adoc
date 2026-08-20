@@ -88,6 +88,7 @@ For details on how to organize fleets, see link:concept-manage-storage.html[Lear
 * link:task-provisioning-manual.html[Provision storage manually]
 * link:task-provisioning-automated.html[Provision storage automatically]
 * link:task-provisioning-agentic.html[Provision storage with AI assistance]
+* link:reference-console-assistant-operations.html[See supported Console assistant operations]
 * To analyze and remediate drift, see link:task-storage-class-drift-remediate.html[Remediate storage class drift]
 //<tsharp> We need to standardize on how to do x-references. Typically, I've been using "Learn about <subject>"" instead of the see page title method. I inherited that in the Console (SaaS) docs and I think we should keep it.
 //<mlucey> Will return to this.

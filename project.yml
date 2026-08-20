@@ -92,6 +92,8 @@ sidebar:
         url: /task-user-settings.html
       - title: Use the NetApp Console assistant
         url: /task-console-asst-use.html
+      - title: Supported Console assistant operations
+        url: /reference-console-assistant-operations.html
     - title: Manage storage in NetApp Console
       entries:
       - title: Learn about storage management
@@ -108,6 +110,8 @@ sidebar:
           url: /task-storage-class-manage.html
       - title: Provision storage
         url: /task-provisioning-manual.html
+      - title: Provision storage with AI assistance
+        url: /task-provisioning-agentic.html
     - title: Monitor storage health
       entries:
       - title: Learn about monitoring storage health in NetApp Console
@@ -190,6 +194,8 @@ sidebar:
           url: https://docs.netapp.com/us-en/console-local-automation/index.html 
       - title: Supported LLM providers and models
         url: /reference-llm-supported-models.html
+      - title: Supported Console assistant operations
+        url: /reference-console-assistant-operations.html
       - title: ONTAP alerts reference
         url: /reference-ontap-alerts.html
       - title: Cluster security compliance categories

@@ -1,0 +1,66 @@
+---
+sidebar: sidebar
+permalink: reference-console-assistant-operations.html
+keywords: Console assistant, AI-assisted management, agentic operations, metrics, storage provisioning, ONTAP management, netapp console local
+summary: "Review the customer-facing operation categories supported by the Console assistant in NetApp Console local deployment."
+---
+= Supported Console assistant operations in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+The Console assistant supports natural-language questions and selected storage operations. Available operations depend on the release, configured LLM endpoint, and your assigned permissions.
+
+include::_include/ai-preview.adoc[]
+
+Use the Console assistant in *Read only* mode for questions and analysis without infrastructure changes. Use *Read/write* mode for supported operations that can change storage or ONTAP systems. The assistant shows the proposed change and requires confirmation before it executes a write operation.
+
+== Conversational guidance and search
+
+Ask questions about NetApp Console local deployment, your storage environment, or supported ONTAP administration workflows. The assistant uses the configured LLM endpoint together with available documentation and fleet context to return an answer or request additional context.
+
+== Metrics and analytics
+
+Ask read-only questions about supported storage capacity, performance, and other metrics for resources in your permitted scope. Include the resource, metric, and time period when those details are relevant to your question.
+
+The assistant returns an analysis and does not change storage in *Read only* mode.
+
+== Storage provisioning
+
+Describe the workload and its storage requirements in natural language. The assistant can recommend a storage class and placement, identify missing details, and present a provisioning plan for review.
+
+After you approve the plan, the assistant provisions the supported volume or LUN operation within your role permissions and storage-class policies. For prerequisites and steps, see link:task-provisioning-agentic.html[Provision storage with AI-assisted workflows].
+
+== Alert investigation and remediation
+
+Ask the assistant to investigate a supported active alert. It analyzes the alert and may suggest a remediation action. When a supported remediation changes storage, the assistant presents the action for review and requires confirmation before execution.
+
+== ONTAP management
+
+Request a supported management operation for a registered ONTAP system in natural language. Identify the target cluster, SVM, or resource when you know it so the assistant can use the correct context.
+
+The assistant distinguishes read-only requests from write operations. Review the target and proposed changes before confirming a write operation. The available operation set depends on the Console local deployment release and the permissions assigned to your account.
+
+== Permissions and scope
+
+The assistant uses the permissions and resource scope of the signed-in user:
+
+* Your role determines which resources and operations you can view or change.
+* Organization, folder, and fleet scope limits the systems and workloads available to the assistant.
+* Storage-class policies constrain AI-assisted provisioning.
+* The assistant does not bypass Console local deployment access controls.
+
+For information about access roles, see link:reference-iam-predefined-roles.html[NetApp Console local deployment access roles].
+
+== Asynchronous operations
+
+Some supported write operations do not complete immediately. For these operations, the assistant creates a job. Ask the assistant for the request status to monitor completion.
+
+== Related information
+
+* link:concept-llm-integration.html[Learn about LLM integration in NetApp Console local deployment]
+* link:task-console-asst-use.html[Use the NetApp Console assistant]
+* link:reference-llm-supported-models.html[Supported LLM providers and models]

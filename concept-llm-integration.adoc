@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-llm-integration.html
 keywords: LLM, AI, artificial intelligence, AI-assisted management, large language model,  openai-compatible, netapp console
-summary: "Learn how NetApp Console local deployment integrates with OpenAI and OpenAI-compatible models, including provider, and security decisions."
+summary: "Learn how NetApp Console local deployment integrates with LLM providers to support AI-assisted storage management, analytics, and operations."
 ---
 = Learn about LLM integration in NetApp Console local deployment
 :hardbreaks:
@@ -12,7 +12,7 @@ summary: "Learn how NetApp Console local deployment integrates with OpenAI and O
 :imagesdir: ./media/
 
 [.lead]
-NetApp Console local deployment connects to a large language model (LLM) for AI-assisted storage management. After setup, users can use natural language to provision storage, investigate alerts, and get storage guidance.
+NetApp Console local deployment connects to a large language model (LLM) for AI-assisted storage management. After setup, users can use natural language for storage guidance, analytics, provisioning, and supported operations.
 
 include::_include/ai-preview.adoc[]
 
@@ -22,10 +22,12 @@ Console local deployment sends LLM requests only to the endpoint you configure.
 
 == What you can do with AI-assisted storage management
 
-When you enable LLM integration, Console local deployment provides three capabilities through the Console assistant:
+When you enable LLM integration, Console local deployment provides these capabilities through the Console assistant:
 
 * *Storage provisioning* Describe workload requirements in plain language. Console local deployment recommends and runs a provisioning plan based on your storage classes.
-* *Alert response* Ask Console local deployment to investigate an active alert. It analyzes the issue and suggests or runs an action based on assigned permissions.
+* *Metrics and analytics* Ask questions about storage capacity, performance, and other supported metrics in your current fleet state. This capability is read-only.
+* *Alert response* Ask Console local deployment to investigate an active alert. It analyzes the issue and suggests or runs a supported action based on assigned permissions.
+* *ONTAP management* Ask the assistant to view or perform supported management operations on registered ONTAP systems. Write operations require review and confirmation.
 * *Search and guidance* Ask questions about your storage environment or ONTAP administration. Console local deployment returns contextual answers from documentation and current fleet state.
 
 == Choose read-only or read/write access for the Console assistant
@@ -41,6 +43,7 @@ Console local deployment controls Console assistant actions through the same gov
 
 * Role-based access controls limit what each user can see and do.
 * Storage policies constrain provisioning and related actions.
+* The assistant uses the scope of the signed-in user when it accesses fleets, systems, and storage resources.
 * The Console assistant requires confirmation before it runs storage-changing actions.
 
 == Choose an LLM provider path
@@ -61,6 +64,7 @@ Data flow depends on the endpoint path you choose:
 
 * If you configure an OpenAI endpoint, Console local deployment sends prompts and context to the OpenAI endpoint.
 * If you configure an OpenAI-compatible endpoint, Console local deployment sends prompts and context to the compatible endpoint that your organization configures.
+* If you configure an Anthropic endpoint, Console local deployment sends prompts and context to the configured Anthropic endpoint.
 
 == Protect LLM credentials and control admin access
 

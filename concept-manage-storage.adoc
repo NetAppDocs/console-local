@@ -86,3 +86,4 @@ Console local deployment supports three provisioning approaches, all governed by
 * link:task-provisioning-manual.html[Provision storage manually]
 * link:task-provisioning-automated.html[Provision storage automatically]
 * link:task-provisioning-agentic.html[Provision storage with AI assistance]
+* link:reference-console-assistant-operations.html[See supported Console assistant operations]

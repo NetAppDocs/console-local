@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-console-asst-use.html
 keywords: console assistant, ai assistant, ask questions, provision storage, natural language, agentic, netapp console local
-summary: "Use the Console assistant to provision storage, investigate alerts, and get answers with natural language in NetApp Console local deployment."
+summary: "Use the Console assistant for storage guidance, analytics, provisioning, and supported operations in NetApp Console local deployment."
 ---
 = Use the NetApp Console assistant in NetApp Console local deployment
 :hardbreaks:
@@ -20,11 +20,13 @@ The assistant's actions are limited by your assigned role-based access. link:ref
 
 == See what you can do with the Console assistant
 
-The Console assistant is a natural language interface to NetApp Console local deployment. Ask a question or describe a task, and it returns an answer or a proposed action. The assistant provides these capabilities:
+Identify storage conditions and supported actions through one conversational interface so you can decide when guidance or intervention is needed. Ask a question or describe a task, and it returns an answer, analysis, or proposed action. The assistant provides these capabilities:
 
 * *Provision storage* Describe a workload in plain language. The assistant recommends a storage class and placement, then creates the volume or LUN after you confirm details. For example, ask it to create a CIFS volume with a specific capacity. The assistant identifies the cluster and storage virtual machine (SVM), fills in required parameters, and provisions storage.
+* *Analyze metrics* Ask about supported capacity, performance, and storage metrics for resources in your permitted scope. The assistant returns read-only analysis based on the available fleet state.
 * *Search and get guidance* Ask questions about your storage environment, find Console local deployment features, and get contextual answers from NetApp documentation and current fleet state.
 * *Investigate alerts* Ask the assistant to look into an active alert. It analyzes the issue and suggests a fix or, with your confirmation, performs a remediation action.
+* *Manage ONTAP systems* Request a supported ONTAP management operation in natural language. The assistant identifies missing system or SVM context, presents the proposed operation, and requires confirmation before a write operation.
 
 The assistant sends requests only to the LLM endpoint configured by your administrator in Console local deployment. It requests confirmation before it performs storage-changing actions, and all actions respect role-based access controls assigned to your account.
 
@@ -35,7 +37,7 @@ The assistant sends requests only to the LLM endpoint configured by your adminis
 
 == Ask the Console assistant a question or request an action
 
-Open the Console assistant, choose an access mode, and enter a prompt that describes your request.
+Request supported storage work conversationally so you can evaluate proposed changes before they affect your infrastructure.
 
 .Steps
 . From the NetApp Console local deployment dashboard, select the *Console assistant* button.
@@ -52,3 +54,13 @@ For example: `Create a 10GiB volume for home directories named home, and share i
 * For an action, the assistant shows the suggested action, asks for missing details such as permission level, and then asks for confirmation before it proceeds.
 . Confirm the action. For asynchronous operations, such as volume creation, the assistant creates a job to complete the request.
 . To check on a request, ask the assistant. For example, enter `Let me know when the job completes`, and the assistant returns the current status.
+
+== Use the assistant for metrics and analytics
+
+Ask a read-only question that identifies the resource, scope, metric, and time period you want to understand. The assistant returns an analysis of the supported metrics and does not change your storage.
+
+== Use the assistant for ONTAP management
+
+Manage supported ONTAP operations through reviewed assistant proposals so infrastructure changes remain deliberate and permission-controlled.
+
+For the supported operation categories and access requirements, see link:reference-console-assistant-operations.html[Supported Console assistant operations].
