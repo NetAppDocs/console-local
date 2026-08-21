@@ -53,6 +53,8 @@ The following tables indicate the actions that each Console local deployment pla
 | Register for support and submit cases through the Console | Yes |	Yes 
 | Use data services that are not associated with an explicit access role | Yes | Yes 
 | View the Audit page and notifications | Yes |	Yes 
+| Configure LLM integration and enable the Console assistant | Yes | No
+| Configure notification delivery and email server settings | Yes | No
 
 |===
 

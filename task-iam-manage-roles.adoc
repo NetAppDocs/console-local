@@ -49,7 +49,7 @@ include::_include/tasks-role.adoc[tag=view-role]
 
 You can adjust a member's access whenever responsibilities change. For example, when a teammate takes on backup duties for a second region, add the Backup and Recovery admin role on that region's fleet without touching their existing storage roles.
 
-If you need to add a new member and assign their first role, see link:task-iam-manage-members-permissions.html#add-members[Add members and assign roles].
+link:task-iam-manage-members-permissions.html#add-members[Learn how to add members and assign roles].
 
 
 === Add an access role to an existing member

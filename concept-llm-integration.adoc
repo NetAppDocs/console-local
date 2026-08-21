@@ -56,15 +56,8 @@ NetApp Console local deployment supports these LLM provider types:
 
 Model availability depends on the endpoint you configure. Select a model from the list in Console local deployment.
 
-For supported model details, see link:reference-llm-supported-models.html[Learn about supported LLM providers and models in NetApp Console local deployment].
+link:reference-llm-supported-models.html[Learn about supported LLM providers and models in NetApp Console local deployment].
 
-== Understand where LLM requests go
-
-Data flow depends on the endpoint path you choose:
-
-* If you configure an OpenAI endpoint, Console local deployment sends prompts and context to the OpenAI endpoint.
-* If you configure an OpenAI-compatible endpoint, Console local deployment sends prompts and context to the compatible endpoint that your organization configures.
-* If you configure an Anthropic endpoint, Console local deployment sends prompts and context to the configured Anthropic endpoint.
 
 == Protect LLM credentials and control admin access
 
@@ -79,9 +72,9 @@ Control Console assistant costs by choosing an appropriate LLM provider and mode
 
 == Connect your LLM
 
-After you make these decisions, continue with link:task-llm-connect.html[Connect your LLM and enable the NetApp Console assistant].
+After you make these decisions, link:task-llm-connect.html[connect your LLM to enable the NetApp Console assistant].
 
-If connection or runtime checks fail, see link:task-llm-troubleshoot-integration.html[Troubleshoot LLM integration].
+
 
 
 
