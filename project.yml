@@ -11,200 +11,199 @@ settings:
 sidebar:
   entries:
   - title: NetApp Console local deployment
+    url: /index.html
     entries:
-    - title: Release notes
+  - title: Release notes
+    entries:
+    - title: What's new
+      url: /whats-new.html
+    - title: Known limitations
+      url: /reference-local-known-limitations.html
+    - title: Compare NetApp Console local deployment and NetApp Console
+      url: /console-differences.html
+  - title: Get started
+    entries:
+    - title: Learn about NetApp Console
+      url: /concept-netapp-console-local.html
+    - title: Learn about identity and access management
+      url: /concept-identity-and-access-management.html
+    - title: Learn about fleet management
+      url: /concept-manage-storage.html
+    - title: Learn about storage classes and policies
+      url: /concept-storage-classes.html
+    - title: Learn about LLM integration (AI-assisted management)
+      url: /concept-llm-integration.html
+    - title: Learn about NetApp Backup and Recovery
+      url: /concept-data-services.html
+  - title: Install and set up
+    entries:
+    - title: Quick start for setting up NetApp Console
+      url: /task-quick-start-console-setup.html
+    - title: Install NetApp Console
       entries:
-      - title: What's new
-        url: /whats-new.html
-      - title: Known limitations
-        url: /reference-local-known-limitations.html
-      - title: Compare NetApp Console local deployment and NetApp Console
-        url: /console-differences.html
-    - title: Get started
-      entries:
-      - title: Learn about NetApp Console
-        url: /concept-netapp-console-local.html
-      - title: Learn about identity and access management
-        url: /concept-identity-and-access-management.html
-      - title: Learn about fleet management
-        url: /concept-manage-storage.html
-      - title: Learn about storage classes and policies
-        url: /concept-storage-classes.html
-      - title: Learn about LLM integration (AI-assisted management)
-        url: /concept-llm-integration.html
-      - title: Learn about NetApp Backup and Recovery 
-        url: /concept-data-services.html
-    - title: Install and set up
-      entries:
-      - title: Quick start for setting up NetApp Console
-        url: /task-quick-start-console-setup.html
       - title: Install NetApp Console
-        entries:
-        - title: Install NetApp Console
-          url: /task-install-agent-on-prem-ova.html
-      - title: Plan your Console organization
-        entries:
-        - title: Get started with identity and access
-          url: /task-iam-fleet-mgmt-get-started.html
-        - title: Learn about folders and fleets
-          url: /concept-folders-fleets-overview.html
-        - title: Learn about role-based access control (RBAC)
-          url: /concept-iam-rbac.html
-      - title: Set up your Console organization
-        entries:
-        - title: Create folders and fleets
-          url: /task-iam-manage-folders-fleets.html
-        - title: Add storage systems to NetApp Console
-          url: /task-add-systems.html
-        - title: Associate resources to folders and fleets
-          url: /task-iam-manage-resources.html
-        - title: Add members and assign initial roles
-          url: /task-iam-manage-members-permissions.html
-        - title: Access roles
-          entries:
-          - title: NetApp Console access roles
-            url: /reference-iam-predefined-roles.html
-          - title: Platform roles
-            url: /reference-iam-platform-roles.html
-          - title: Operations support analyst roles
-            url: /reference-iam-analyst-roles.html
-          - title: Storage roles
-            url: /reference-iam-storage-roles.html
-          - title: Backup and Recovery roles
-            url: /reference-iam-backup-rec-roles.html
-      - title: Configure Console integrations and services
-        entries:
-        - title: Integrate NetApp Console with Active Directory
-          url: /task-iam-active-directory-integrate.html
-        - title: Connect your LLM and enable the NetApp Console assistant
-          url: /task-llm-connect.html
-        - title: Troubleshoot LLM integration
-          url: /task-llm-troubleshoot-integration.html
-        - title: Configure notification delivery
-          url: /task-console-configure-notifications-delivery.html
-    - title: Use NetApp Console
+        url: /task-install-agent-on-prem-ova.html
+    - title: Plan your Console organization
       entries:
-      - title: Log in to NetApp Console
-        url: /task-logging-in.html
-      - title: View systems associated with fleets
-        url: /task-iam-switch-fleets.html
-      - title: Manage your NetApp Console user settings
-        url: /task-user-settings.html
-      - title: Use the NetApp Console assistant
-        url: /task-console-asst-use.html
-      - title: Supported Console assistant operations
-        url: /reference-console-assistant-operations.html
-    - title: Manage storage in NetApp Console
+      - title: Get started with identity and access
+        url: /task-iam-fleet-mgmt-get-started.html
+      - title: Learn about folders and fleets
+        url: /concept-folders-fleets-overview.html
+      - title: Learn about role-based access control (RBAC)
+        url: /concept-iam-rbac.html
+    - title: Set up your Console organization
       entries:
-      - title: Learn about storage management
-        url: /concept-manage-storage.html
-      - title: Standardize storage behavior
+      - title: Create folders and fleets
+        url: /task-iam-manage-folders-fleets.html
+      - title: Add storage systems to NetApp Console
+        url: /task-add-systems.html
+      - title: Associate resources to folders and fleets
+        url: /task-iam-manage-resources.html
+      - title: Add members and assign initial roles
+        url: /task-iam-manage-members-permissions.html
+      - title: Access roles
         entries:
-        - title: Learn about storage classes
-          url: /concept-storage-classes.html
-        - title: Learn about storage class policies
-          url: /concept-storage-class-policies.html
-        - title: Review predefined storage class policies
-          url: /reference-storage-class-policies.html
-        - title: Create storage classes
-          url: /task-storage-class-manage.html
-      - title: Provision storage
-        url: /task-provisioning-manual.html
-      - title: Provision storage with AI assistance
-        url: /task-provisioning-agentic.html
-    - title: Monitor storage health
+        - title: NetApp Console access roles
+          url: /reference-iam-predefined-roles.html
+        - title: Platform roles
+          url: /reference-iam-platform-roles.html
+        - title: Operations support analyst roles
+          url: /reference-iam-analyst-roles.html
+        - title: Storage roles
+          url: /reference-iam-storage-roles.html
+        - title: Backup and Recovery roles
+          url: /reference-iam-backup-rec-roles.html
+    - title: Configure Console integrations and services
       entries:
-      - title: Learn about monitoring storage health in NetApp Console
-        url: /concept-monitor-storage.html
-      - title: Monitor with dashboards
+      - title: Integrate NetApp Console with Active Directory
+        url: /task-iam-active-directory-integrate.html
+      - title: Connect your LLM and enable the NetApp Console assistant
+        url: /task-llm-connect.html
+      - title: Troubleshoot LLM integration
+        url: /task-llm-troubleshoot-integration.html
+      - title: Configure notification delivery
+        url: /task-console-configure-notifications-delivery.html
+  - title: Use NetApp Console
+    entries:
+    - title: Log in to NetApp Console
+      url: /task-logging-in.html
+    - title: View systems associated with fleets
+      url: /task-iam-switch-fleets.html
+    - title: Manage your NetApp Console user settings
+      url: /task-user-settings.html
+    - title: Use the NetApp Console assistant
+      url: /task-console-asst-use.html
+    - title: Supported Console assistant operations
+      url: /reference-console-assistant-operations.html
+  - title: Manage storage in NetApp Console
+    entries:
+    - title: Learn about storage management
+      url: /concept-manage-storage.html
+    - title: Standardize storage behavior
+      entries:
+      - title: Learn about storage classes
+        url: /concept-storage-classes.html
+      - title: Learn about storage class policies
+        url: /concept-storage-class-policies.html
+      - title: Review predefined storage class policies
+        url: /reference-storage-class-policies.html
+      - title: Create storage classes
+        url: /task-storage-class-manage.html
+    - title: Provision storage
+      url: /task-provisioning-manual.html
+    - title: Provision storage with AI assistance
+      url: /task-provisioning-agentic.html
+  - title: Monitor storage health
+    entries:
+    - title: Learn about monitoring storage health in NetApp Console
+      url: /concept-monitor-storage.html
+    - title: Monitor with dashboards
+      entries:
+      - title: View Home page metrics
+        url: /task-storage-dashboard.html
+      - title: Use custom dashboards
         entries:
-        - title: View Home page metrics
-          url: /task-storage-dashboard.html
-        - title: Use custom dashboards
-          entries:
-          - title: Learn about custom dashboards
-            url: /concept-custom-dashboards.html
-          - title: Get started with dashboards
-            url: /task-dashboard-get-started.html
-          - title: Create a custom dashboard
-            url: /task-dashboard-create.html
-          - title: Customize dashboard cards
-            url: /task-customize-dashboard-cards.html
-          - title: Custom dashboard cards and metrics reference
-            url: /reference-dashboard-card-templates.html
+        - title: Learn about custom dashboards
+          url: /concept-custom-dashboards.html
+        - title: Get started with dashboards
+          url: /task-dashboard-get-started.html
+        - title: Create a custom dashboard
+          url: /task-dashboard-create.html
+        - title: Customize dashboard cards
+          url: /task-customize-dashboard-cards.html
+        - title: Custom dashboard cards and metrics reference
+          url: /reference-dashboard-card-templates.html
+      - title: Manage custom dashboards
+        entries:
         - title: Manage custom dashboards
-          entries:
-          - title: Manage custom dashboards
-            url: /task-dashboard-manage.html
-      - title: Monitor fleets using inventory
-        url: /concept-monitor-fleets-inventory.html
-      - title: Remediate alerts
-        entries:
-        - title: Learn about alerts
-          url: /concept-console-alerts.html
-        - title: View alerts
-          url: /task-alerts-monitor.html
-        - title: Configure notification rules for alerts
-          url: /task-alert-rules-manage.html
-        - title: Remediate storage class drift
-          url: /task-storage-class-drift-remediate.html
-        - title: Alert remediation actions
-          url: /reference-alert-remediation.html
-      - title: Investigate performance issues
-        entries:
-        - title: Learn about the Workload Analyzer
-          url: /concept-workload-analyzer.html
-        - title: Investigate high latency on a volume
-          url: /task-analyzer-volume-latency-investigate.html
-        - title: Investigate high throughput demand on a volume
-          url: /task-analyzer-volume-throughput-investigate.html
-        - title: Investigate capacity growth on a volume
-          url: /task-analyzer-volume-capacity-investigate.html
-        - title: Workload Analyzer metrics reference
-          url: /reference-workload-analyzer-metrics.html
-   
-    - title: Administer and monitor NetApp Console local deployment
+          url: /task-dashboard-manage.html
+    - title: Monitor fleets using inventory
+      url: /concept-monitor-fleets-inventory.html
+    - title: Remediate alerts
       entries:
-      - title: Learn about administering NetApp Console local deployment
-        url: /concept-administer-netapp-console-local.html
-      - title: Audit NetApp Console local deployment operations
-        url: /task-audit-console-activity.html
-      - title: Licenses and subscriptions
-        url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
-      - title: Maintain NetApp Console
-        entries:
-        - title: Maintain the NetApp Console VM
-          url: /task-console-local-vm-config.html
-      - title: Manage users and access
-        entries:
-        - title: Manage member access (member-centric)
-          url: /task-iam-manage-roles.html
-        - title: Manage fleet access assignments (fleet-centric)
-          url: /task-iam-users-fleets-assign.html
-        - title: Manage member security
-          url: /task-manage-member-security.html
-
-    - title: Reference
+      - title: Learn about alerts
+        url: /concept-console-alerts.html
+      - title: View alerts
+        url: /task-alerts-monitor.html
+      - title: Configure notification rules for alerts
+        url: /task-alert-rules-manage.html
+      - title: Remediate storage class drift
+        url: /task-storage-class-drift-remediate.html
+      - title: Alert remediation actions
+        url: /reference-alert-remediation.html
+    - title: Investigate performance issues
       entries:
-      - title: NetApp Console local deployment API
-        entries:
-        - title: Organization and fleet IDs
-          url: /task-iam-rename-organization.html
-        - title: Console local deployment API reference
-          url: https://docs.netapp.com/us-en/console-local-automation/index.html 
-      - title: Supported LLM providers and models
-        url: /reference-llm-supported-models.html
-      - title: Supported Console assistant operations
-        url: /reference-console-assistant-operations.html
-      - title: ONTAP alerts reference
-        url: /reference-ontap-alerts.html
-      - title: Cluster security compliance categories
-        url: /reference-cluster-compliance-categories.html
-      - title: Storage VM security compliance categories
-        url: /reference-svm-compliance-categories.html
-    - title: Knowledge and support
+      - title: Learn about the Workload Analyzer
+        url: /concept-workload-analyzer.html
+      - title: Investigate high latency on a volume
+        url: /task-analyzer-volume-latency-investigate.html
+      - title: Investigate high throughput demand on a volume
+        url: /task-analyzer-volume-throughput-investigate.html
+      - title: Investigate capacity growth on a volume
+        url: /task-analyzer-volume-capacity-investigate.html
+      - title: Workload Analyzer metrics reference
+        url: /reference-workload-analyzer-metrics.html
+  - title: Administer and monitor NetApp Console local deployment
+    entries:
+    - title: Learn about administering NetApp Console local deployment
+      url: /concept-administer-netapp-console-local.html
+    - title: Audit NetApp Console local deployment operations
+      url: /task-audit-console-activity.html
+    - title: Licenses
+      url: https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html
+    - title: Maintain NetApp Console
       entries:
-      - title: Get help
-        url: /task-get-help.html
+      - title: Maintain the NetApp Console VM
+        url: /task-console-local-vm-config.html
+    - title: Manage users and access
+      entries:
+      - title: Manage member access (member-centric)
+        url: /task-iam-manage-roles.html
+      - title: Manage fleet access assignments (fleet-centric)
+        url: /task-iam-users-fleets-assign.html
+      - title: Manage member security
+        url: /task-manage-member-security.html
+  - title: Reference
+    entries:
+    - title: NetApp Console local deployment API
+      entries:
+      - title: Organization and fleet IDs
+        url: /task-iam-rename-organization.html
+      - title: Console local deployment API reference
+        url: https://docs.netapp.com/us-en/console-local-automation/index.html
+    - title: Supported LLM providers and models
+      url: /reference-llm-supported-models.html
+    - title: Supported Console assistant operations
+      url: /reference-console-assistant-operations.html
+    - title: ONTAP alerts reference
+      url: /reference-ontap-alerts.html
+    - title: Cluster security compliance categories
+      url: /reference-cluster-compliance-categories.html
+    - title: Storage VM security compliance categories
+      url: /reference-svm-compliance-categories.html
+  - title: Knowledge and support
+    entries:
+    - title: Get help
+      url: /task-get-help.html
   - title: Legal notices
     url: /legal-notices.html
