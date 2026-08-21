@@ -12,7 +12,6 @@ sidebar:
   entries:
   - title: NetApp Console local deployment
     url: /index.html
-    entries:
   - title: Release notes
     entries:
     - title: What's new
