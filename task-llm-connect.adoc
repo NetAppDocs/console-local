@@ -52,7 +52,6 @@ Enable assistant capabilities through a validated provider configuration while r
 +
 link:concept-llm-integration.html[Learn about LLM integration in NetApp Console local deployment].
 . If prompted for a provider endpoint, enter the endpoint URL for the provider path you selected.
-. Enter the proxy or gateway URL and credentials.
 . In the *User name* field, enter your user name or SSO ID if your provider path requires it.
 . In the *API key* field, paste the API key from your selected provider path.
 . Select a model from the list.
