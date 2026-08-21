@@ -27,7 +27,7 @@ A notification rule matches alerts based on conditions you define—such as serv
 
 == Before you begin
 
-* To deliver notifications by email, your Organization admin must configure an email server in the Console local deployment. To deliver notifications to an external system, your Organization admin must configure a webhook. For the steps, see link:task-console-configure-notifications-delivery.html[Configure notification delivery].
+* To deliver notifications by email, your Organization admin must configure an email server in the Console local deployment. To deliver notifications to an external system, your Organization admin must configure a webhook. link:task-console-configure-notifications-delivery.html[Learn how configuring webhooks].
 * The Console local deployment Notification Center displays notifications by default, so no additional setup is required for in-console notifications.
 
 include::_include/alerts-notifications-retention-notes.adoc[tag=ui-notification-retention]

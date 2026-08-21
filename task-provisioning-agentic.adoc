@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-provisioning-agentic.html
 keywords: agentic provisioning, AI-assisted provisioning, natural language, conversational provisioning, plan-and-approve, storage class, Console assistant, LLM, RBAC, netapp console local
-summary: "Use AI-driven agentic provisioning to autonomously fulfill storage requests in NetApp Console local deployment."
+summary: "Use AI-assisted provisioning to request storage, review a proposed plan, and approve the change in NetApp Console local deployment."
 ---
 = Provision storage with AI-assisted (agentic) workflows in NetApp Console local deployment
 :hardbreaks:
@@ -14,9 +14,7 @@ summary: "Use AI-driven agentic provisioning to autonomously fulfill storage req
 [.lead]
 // Jira: SPSPM-3325, SPSPM-3304
 
-//<mlucey> I have removed this topic from the left navigation for now. It is touched on briefly in the section "Use the NetApp Console assistant"
-
-In NetApp Console local deployment, use AI-assisted (agentic) provisioning when you want to request storage conversationally, review a proposed plan, and approve the change. This approach is useful when you want faster requests with less UI navigation while still keeping provisioning aligned with storage classes and RBAC. 
+In NetApp Console local deployment, request storage conversationally while preserving approved storage-class intent and role-based controls across managed fleets.
 
 include::_include/ai-preview.adoc[]
 
@@ -26,19 +24,20 @@ Super admin, Organization admin, Folder or fleet admin, or Storage admin. Your A
 Agentic provisioning requires an LLM integration to be configured and available in your NetApp Console local deployment environment.
 
 == Before you begin
+Prepare fleets, systems, storage classes, and LLM access so the assistant can generate plans within approved provisioning boundaries.
 
-- Ensure LLM integration is configured and enabled for your NetApp Console local deployment.
-- Ensure the target fleet contains discovered storage systems.
-- Ensure storage classes are configured and associated with the fleet so the assistant can propose class-aligned plans.
+* Ensure LLM integration is configured and enabled for your NetApp Console local deployment.
+* Ensure the target fleet contains discovered storage systems.
+* Ensure storage classes are configured and associated with the fleet so the assistant can propose class-aligned plans.
 
-.Steps (to be revisited)
+.Steps
 
 . Open the NetApp Console assistant.
 . Describe what you need in plain language (for example, protocol, size, environment, performance intent, and target fleet if applicable).
 . Review the proposed plan, including:
-The selected fleet and target system placement (if applicable)
-The storage class selected or recommended
-Key settings that will be applied (capacity behavior, protection schedule, security requirements, and any QoS-related intent if shown)
+The selected fleet and target system placement, if applicable.
+The selected or recommended storage class.
+The key settings that will be applied, such as capacity behavior, protection schedule, security requirements, and QoS-related intent, if shown.
 . Confirm or adjust the plan.
 If the plan selects an unexpected class or placement, specify the desired class, fleet, or constraints and regenerate the plan.
 . Approve execution to provision the workload.

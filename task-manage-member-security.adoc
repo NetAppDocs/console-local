@@ -55,7 +55,7 @@ Review the audit log to confirm who changed MFA access, when they changed it, an
 
 == Recreate the credentials for a service account
 
-You can create new credentials for a service account if you lose or need to update them.
+Rotate service account credentials when security requirements change, invalidating previous secrets and preserving controlled API access.
 
 Creating new credentials deletes the old ones. You cannot use the old credentials.
 

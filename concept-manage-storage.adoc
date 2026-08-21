@@ -30,13 +30,14 @@ Fleet management addresses three core challenges:
 
 Your organization's resource hierarchy consists of folders and fleets:
 
-For a detailed overview of the hierarchy and access model, see link:concept-folders-fleets-overview.html[Learn about folders and fleets in NetApp Console local deployment].
 
 * *Organization* - The top level representing your company.
 * *Folders* - Help you organize related fleets. For example, you might create a folder for each region or business unit, then create fleets within each folder. Folders can contain other folders or fleets. When you assign a role at the folder level, members inherit that role for all fleets within the folder.
 * *Fleets* - Group the storage systems you manage together. You associate storage systems with fleets and assign members to fleets to grant them access.
 
 NOTE: Folders are an organizational tool and are not visible to members who do not have IAM permissions such as Organization admin, Folder admin, or Fleet admin roles. Members access fleets, not folders.
+
+link:concept-folders-fleets-overview.html[Learn more about folders and fleets in NetApp Console local deployment].
 
 == Common fleet organization patterns
 
@@ -81,8 +82,9 @@ Console local deployment supports three provisioning approaches, all governed by
 
 == Where to go next
 
-* To understand storage standards, see link:concept-storage-classes.html[Learn about storage classes and policies in NetApp Console local deployment].
-* To create and manage fleets, see link:task-iam-manage-folders-fleets.html[Manage folders and fleets].
+* link:concept-storage-classes.html[Learn about storage classes and policies in NetApp Console local deployment].
+* link:task-iam-manage-folders-fleets.html[Learn how to create and manage fleets].
 * link:task-provisioning-manual.html[Provision storage manually]
 * link:task-provisioning-automated.html[Provision storage automatically]
 * link:task-provisioning-agentic.html[Provision storage with AI assistance]
+* link:reference-console-assistant-operations.html[See supported Console assistant operations]
