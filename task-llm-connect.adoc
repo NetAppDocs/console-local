@@ -26,7 +26,7 @@ After setup, users open the Console assistant from the dashboard and choose an a
 
 To connect your LLM, select a provider path, enter endpoint details and API key, and then select a model in *Administration > AI Tools*. Assistant actions stay within your storage policies and role-based access controls.
 
-== Gather what you need before you connect an LLM
+== Before you begin
 
 Prepare provider credentials and endpoint access so the Console assistant can operate within your organization’s configured governance boundaries.
 

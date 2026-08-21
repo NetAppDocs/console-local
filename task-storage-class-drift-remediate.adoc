@@ -44,7 +44,7 @@ The *Alerts > Overview* page opens with filters applied.
 +
 For configuration drift findings, compare the intended and actual settings to determine what changed.
 
-. Select the recommended remediation action, such as *Fix it*.
+. Select the recommended remediation action, such as *Fix It*.
 
 . Review the proposed changes and apply the remediation.
 
