@@ -12,7 +12,7 @@ summary: "Troubleshoot LLM integration in NetApp Console local deployment with a
 :imagesdir: ./media/
 
 [.lead]
-Use this quick triage flow to diagnose and resolve common LLM integration issues in NetApp Console local deployment.
+Diagnose LLM integration failures in NetApp Console local deployment to restore Console assistant access and reliable responses for storage guidance and operations.
 
 include::_include/ai-preview.adoc[]
 
@@ -49,8 +49,8 @@ Run a simple read-only request and confirm provider endpoint reachability, model
 |Correct the value that fails validation and save again
 
 |*Console assistant* button is missing
-|Unhealthy integration status, org mismatch, or RBAC mismatch
-|Successful AI Tools save, integration status, current organization, and expected access role
+|Unhealthy integration status
+|Successful AI Tools save, integration status, and expected access role
 |Refresh the session and verify with a known-good admin account
 
 |Assistant opens but request fails

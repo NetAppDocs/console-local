@@ -79,15 +79,16 @@ The following steps describe the process for using storage classes to standardiz
 
 Storage classes are associated with fleets. When you associate a storage class with a fleet, that class becomes available for all provisioning within the fleet. This ensures that every workload provisioned in the fleet follows the same standards, making fleets the primary way to enforce consistent storage behavior across related clusters.
 
-For details on how to organize fleets, see link:concept-manage-storage.html[Learn about fleet management in NetApp Console local deployment].
+link:concept-manage-storage.html[Learn about fleet management in NetApp Console local deployment].
 
 == Where to go next
 
-* To understand fleet organization, see link:concept-manage-storage.html[Learn about fleet management in NetApp Console local deployment].
-* To create policies and storage classes, see link:task-storage-class-manage.html[Manage storage classes and policies].
+* link:concept-manage-storage.html[Learn about fleet management in NetApp Console local deployment].
+* link:task-storage-class-manage.html[Manage storage classes and policies].
 * link:task-provisioning-manual.html[Provision storage manually]
 * link:task-provisioning-automated.html[Provision storage automatically]
 * link:task-provisioning-agentic.html[Provision storage with AI assistance]
-* To analyze and remediate drift, see link:task-storage-class-drift-remediate.html[Remediate storage class drift]
+* link:reference-console-assistant-operations.html[See supported Console assistant operations]
+* link:task-storage-class-drift-remediate.html[Learn how to remediate storage class drift]
 //<tsharp> We need to standardize on how to do x-references. Typically, I've been using "Learn about <subject>"" instead of the see page title method. I inherited that in the Console (SaaS) docs and I think we should keep it.
 //<mlucey> Will return to this.

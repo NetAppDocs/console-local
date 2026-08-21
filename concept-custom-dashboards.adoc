@@ -53,7 +53,7 @@ Health status, degraded or critical object counts, failed disks, network interfa
 Alerts::
 Critical alert counts, alerts by severity, alerts by impact area, recent alerts, and alert trends over time.
 
-For a complete catalog of predefined cards and metrics, see link:reference-dashboard-card-templates.html[Learn about custom dashboard cards and metrics in NetApp Console local deployment].
+link:reference-dashboard-card-templates.html[Review the catalog of custom dashboard cards and metrics in NetApp Console local deployment].
 
 == Resource types
 
