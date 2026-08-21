@@ -27,7 +27,7 @@ Platform roles grant NetApp Console local deployment administration permissions,
 | Responsibilities
 
 
-| link:reference-iam-platform-roles.html#organization-admin-roles[Organization admin] | Allows a user unrestricted access to all fleets and folders within an organization, add members to any fleet or folder, as well as perform any task and use any data service that does not have an explicit role associated with it. 
+| link:reference-iam-platform-roles.html#organization-admin-roles[Organization admin] | Allows a user unrestricted access to all fleets and folders within an organization, add members to any fleet or folder, as well as perform any task and use any data service that does not have an explicit role associated with it. Users with the Org admin role can also configure LLM integrations, email server settings, and add webhooks.
 
 Users with this role manage your organization by creating folders and fleets, assigning roles, adding users, and managing systems if they have the proper credentials.
 
@@ -62,6 +62,11 @@ The following is a list of roles in the application category. Each role grants s
 
 
 
+
+== Console assistant access
+
+An Organization admin or Super admin must configure an LLM integration before members can use the Console assistant. Each member can view or change only the resources allowed by their assigned roles and organization, folder, or fleet scope.
+link:reference-console-assistant-operations.html[Learn about supported Console assistant operations.]
 
 [[data-service-roles]]
 == Data service roles

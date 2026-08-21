@@ -1,0 +1,1 @@
+Use the Console assistant for natural-language questions and high-level analysis across the resources in your permitted scope. Use Workload Analyzer when you need detailed, time-based analysis of one volume, including latency, throughput, resource utilization, capacity, events, and forecasts.
