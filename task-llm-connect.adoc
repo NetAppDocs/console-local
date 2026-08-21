@@ -30,14 +30,14 @@ To connect your LLM, select a provider path, enter endpoint details and API key,
 
 Prepare provider credentials and endpoint access so the Console assistant can operate within your organization’s configured governance boundaries.
 
-* Your provider type decision: OpenAI, OpenAI-compatible, or Anthropic, as supported by your release and endpoint. link:concept-llm-integration.html[Learn about provider choices.]
+* Your provider type decision: OpenAI, OpenAI-compatible, or Anthropic, as supported by release and endpoint. 
 * A valid API key for the provider path you select.
 * The endpoint URL for your provider path.
 * Your user name or ID for the LLM provider account, if required.
 * Network access from Console local deployment to the selected endpoint.
 
 
-For supported model details, see link:reference-llm-supported-models.html[Learn about supported LLM providers and models in NetApp Console local deployment].
+link:reference-llm-supported-models.html[Learn about supported LLM providers and models in NetApp Console local deployment].
 
 
 == Connect an LLM to NetApp Console local deployment
@@ -68,7 +68,7 @@ Confirm assistant availability and approval behavior so users can rely on the co
 . Open the *Console assistant* in *Read/write* mode and confirm that storage-changing actions require user confirmation before execution.
 . Verify that the users who need action workflows have the required role-based access controls.
 
-After you complete validation, users can open the Console assistant from the dashboard and describe tasks in plain language. For usage examples and end-user workflows, see link:task-console-asst-use.html[Use the NetApp Console assistant].
+After you complete validation, users can open the Console assistant from the dashboard and describe tasks in plain language. link:task-console-asst-use.html[Learn about using NetApp Console assistant].
 
 == Protect credentials and monitor LLM usage
 

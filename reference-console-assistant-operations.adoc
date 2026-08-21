@@ -32,7 +32,8 @@ The assistant returns an analysis and does not change storage in *Read only* mod
 
 Describe the workload and its storage requirements in natural language. The assistant can recommend a storage class and placement, identify missing details, and present a provisioning plan for review.
 
-After you approve the plan, the assistant provisions the supported volume or LUN operation within your role permissions and storage-class policies. For prerequisites and steps, see link:task-provisioning-agentic.html[Provision storage with AI-assisted workflows].
+After you approve the plan, the assistant provisions the supported volume or LUN operation within your role permissions and storage-class policies. 
+link:task-provisioning-agentic.html[Learn how to provision storage with AI-assisted workflows].
 
 == Alert investigation and remediation
 
@@ -53,7 +54,7 @@ The assistant uses the permissions and resource scope of the signed-in user:
 * Storage-class policies constrain AI-assisted provisioning.
 * The assistant does not bypass Console local deployment access controls.
 
-For information about access roles, see link:reference-iam-predefined-roles.html[NetApp Console local deployment access roles].
+link:reference-iam-predefined-roles.html[Learn about NetApp Console local deployment access roles].
 
 == Asynchronous operations
 
