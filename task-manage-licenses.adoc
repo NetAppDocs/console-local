@@ -1,0 +1,88 @@
+---
+sidebar: sidebar
+permalink: task-manage-licenses.html
+keywords: licenses, licensing, NetApp Backup and Recovery, NetApp Console local deployment
+summary: "Manage direct licenses for NetApp Backup and Recovery in NetApp Console local deployment."
+---
+= Manage licenses in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Manage direct licenses for NetApp Backup and Recovery in NetApp Console local deployment. You can view license capacity, consumed capacity, and expiration dates.
+
+NOTE: NetApp Console local deployment does not require a license. The *Direct licenses* page lists direct licenses for supported services. NetApp Backup and Recovery is currently the only service listed and supported. For service-specific licensing information, see the documentation for link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html[NetApp Backup and Recovery^].
+
+.Required access roles
+Licenses and subscriptions admin. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-licenses-subscriptions.html[Learn about Licenses and subscriptions roles for NetApp Console^].
+
+== Obtain a license file
+
+Obtain a NetApp license file to upload when NetApp Console local deployment does not have internet access.
+
+When you purchase a license from a NetApp sales representative, you receive an email containing the serial number and licensing details. Use the serial number to obtain the license file if the license does not appear automatically in NetApp Console local deployment.
+
+.Steps
+
+. Find your NetApp Console account ID:
+
+. Select *Administration > Identity and access*.
+. On the *Organization* page, copy your account ID.
+
+If no account ID is listed and you only have an organization ID, copy the first eight characters of the organization ID and append them to `account-`. For example, if your organization ID is `ea10e1c6-80cc-4219-8e99-3c3e6b161ba5`, your account ID is `account-ea10e1c`.
+. Sign in to the link:https://mysupport.netapp.com/[NetApp Support Site^] and select *Systems > Software Licenses*.
+. Enter the serial number for your license.
+. In the *License Key* column, select *Get NetApp License File*.
+. Enter your NetApp Console account ID as the tenant ID and select *Submit* to download the license file.
+
+== Add a license
+
+Add a new direct license to the current scope by uploading a license file. The license enables a service for a specific time and maximum amount of space.
+
+.Steps
+
+. From the NetApp Console local deployment menu, select *Administration > Licenses*.
+. Select the *Direct licenses* tab.
+. Select *Add license*.
+. In the *Add license* dialog, review the guidance to obtain the correct license file from the NetApp Support Site by selecting *System > Software Licenses* and using the cloud service serial number and NetApp Console organization ID.
+. Select *Upload* and select the license file.
+. Select *Add license* to install the license.
+
+After the license is added, it appears as a new row in the *Direct licenses* table, the *Total licenses* summary increments, and the *License and Capacity Distribution* summary updates to reflect the new entitlement.
+
+== Update a license
+
+Replace or refresh an existing license entitlement, for example, when a license is renewed or its capacity or other entitlements change.
+
+.Steps
+
+. From the NetApp Console local deployment menu, select *Administration > Licenses*.
+. Select the *Direct licenses* tab.
+. Select image:icon-action.png[More icon] for the license you are updating, and select *Update license*.
+. In the upload flow, select *Upload* and select the new license file.
+. Select *Update license* to confirm the update.
+
+After the license is updated, the selected license row reflects the new entitlement, such as an updated expiration date or capacity, and the *License and Capacity Distribution* summary updates accordingly.
+
+== Remove a license
+
+Remove a direct license from the current scope. Removing a license stops it from contributing entitlement, including capacity and time, to the service in that scope.
+
+.Steps
+
+. From the NetApp Console local deployment menu, select *Administration > Licenses*.
+. Select the *Direct licenses* tab.
+. Select image:icon-action.png[More icon] for the license you want to remove, and select *Remove license*.
+. In the *Remove license* confirmation dialog, verify the serial number in the prompt.
+. Select *Remove* to permanently remove the license, or select *Cancel* to close the dialog without making changes.
+
+After the license is removed, its row is removed from the table, the *Total licenses* count decreases, and the *License and Capacity Distribution* summary updates accordingly. Removing a license may reduce service entitlement and can affect service operation if the scope no longer has valid entitlement.
+
+== View license status
+
+From the *Direct licenses* tab, review installed licenses and their status. The table includes the service, serial number, license type, consumed capacity, licensed capacity, and expiration date. You can sort or filter the table by column and use the row actions menu to update or remove a license.
+
+The *License and Capacity Distribution* summary shows the number of installed licenses and the capacity distribution for NetApp Backup and Recovery.
