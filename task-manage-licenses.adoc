@@ -12,13 +12,12 @@ summary: "Manage direct licenses for NetApp Backup and Recovery in NetApp Consol
 :imagesdir: ./media/
 
 [.lead]
-Manage direct licenses for NetApp Backup and Recovery in NetApp Console local deployment. You can view license capacity, consumed capacity, and expiration dates.
+Manage direct licenses for NetApp Backup and Recovery in NetApp Console local deployment. You can view consumed capacity, license capacity, and license expiry.
 
 NOTE: NetApp Console local deployment does not require a license. The *Direct licenses* page lists the direct license for the supported service: NetApp Backup and Recovery. For service-specific licensing information, see the documentation for link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html[NetApp Backup and Recovery^].
 
-// Mike: Verify that "License and subscription admin" is the exact NCL role required to access and manage licenses.
 .Required access roles
-Licenses and subscription admin. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-licenses-subscriptions.html[Learn about Licenses and subscriptions roles for NetApp Console^].
+You must have the Super Admin or Organization admin role to manage licenses in NetApp Console local deployment.
 
 == Add a license
 
@@ -47,7 +46,7 @@ Replace or refresh an existing license in your NetApp Console organization, for 
 . In the upload flow, select *Upload* and select the new license file.
 . Select *Update license* to confirm the update.
 
-After the license is updated, the selected license row reflects the new entitlement, such as an updated expiration date or capacity, and the *License and Capacity Distribution* summary updates accordingly.
+After the license is updated, the selected license row reflects the new entitlement, such as license expiry or license capacity, and the *License and Capacity Distribution* summary updates accordingly.
 
 == Remove a license
 
