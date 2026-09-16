@@ -14,10 +14,10 @@ summary: "Manage direct licenses for NetApp Backup and Recovery in NetApp Consol
 [.lead]
 Manage direct licenses for NetApp Backup and Recovery in NetApp Console local deployment. You can view consumed capacity, license capacity, and license expiry.
 
-NOTE: NetApp Console local deployment does not require a license. The *Direct licenses* page lists the direct license for the supported service: NetApp Backup and Recovery. For service-specific licensing information, see the documentation for link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html[NetApp Backup and Recovery^].
+NOTE: Console local deployment does not require a license. The *Direct licenses* page lists the direct license for the supported service: NetApp Backup and Recovery. For service-specific licensing information, see the documentation for link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html[NetApp Backup and Recovery^].
 
 .Required access roles
-You must have the Super Admin or Organization admin role to manage licenses in NetApp Console local deployment.
+You must have the Super admin or Organization admin role to manage licenses in Console local deployment.
 
 == Add a license
 
@@ -25,7 +25,7 @@ Add a new license to your NetApp Console organization by uploading a license fil
 
 .Steps
 
-. From the NetApp Console local deployment menu, select *Administration > Licenses*.
+. Select *Administration > Licenses*.
 . Select the *Direct licenses* tab.
 . Select *Add license*.
 . In the *Add license* dialog, review the guidance to obtain the correct license file from the NetApp Support Site by selecting *System > Software Licenses* and using the cloud service serial number and NetApp Console organization ID.
@@ -40,7 +40,7 @@ Replace or refresh an existing license in your NetApp Console organization, for 
 
 .Steps
 
-. From the NetApp Console local deployment menu, select *Administration > Licenses*.
+. Select *Administration > Licenses*.
 . Select the *Direct licenses* tab.
 . Select image:icon-action.png[More icon] for the license you are updating, and select *Update license*.
 . In the upload flow, select *Upload* and select the new license file.
@@ -54,7 +54,7 @@ Remove a license from your NetApp Console organization. Removing a license stops
 
 .Steps
 
-. From the NetApp Console local deployment menu, select *Administration > Licenses*.
+. Select *Administration > Licenses*.
 . Select the *Direct licenses* tab.
 . Select image:icon-action.png[More icon] for the license you want to remove, and select *Remove license*.
 . In the *Remove license* confirmation dialog, verify the serial number in the prompt.
@@ -68,7 +68,7 @@ From the *Direct licenses* tab, review installed licenses and their status. The 
 
 .Steps
 
-. From the NetApp Console local deployment menu, select *Administration > Licenses*.
+. Select *Administration > Licenses*.
 . Select the *Direct licenses* tab.
 
 The *License and Capacity Distribution* summary shows the number of installed licenses and the capacity distribution for NetApp Backup and Recovery.
