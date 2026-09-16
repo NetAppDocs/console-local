@@ -59,13 +59,13 @@ Remove a license from your NetApp Console organization. Removing a license stops
 . Select the *Direct licenses* tab.
 . Select image:icon-action.png[More icon] for the license you want to remove, and select *Remove license*.
 . In the *Remove license* confirmation dialog, verify the serial number in the prompt.
-. Select *Remove* to permanently remove the license, or select *Cancel* to close the dialog without making changes.
+. Select *Remove* to permanently remove the license.
 
 After the license is removed, its row is removed from the table, the *Total licenses* count decreases, and the *License and Capacity Distribution* summary updates accordingly. Removing a license may reduce service entitlement and can affect service operation if the scope no longer has valid entitlement.
 
 == View license status
 
-From the *Direct licenses* tab, review installed licenses and their status. The table includes the service, serial number, license type, consumed capacity, licensed capacity, and expiration date. You can sort or filter the table by column and use the row actions menu to update or remove a license.
+From the *Direct licenses* tab, review installed licenses and their status. The table includes the service, serial number, type, consumed capacity, license capacity, and license expiry. You can sort or filter the table by column and use the row actions menu to update or remove a license.
 
 .Steps
 
