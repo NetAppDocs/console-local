@@ -79,12 +79,9 @@ b. Select *Actions* > *New VM from this template*
 . Select the datastore where you want to deploy the VM, then select *Next*. Be sure it meets host requirements.
 . Select the network to which you want to connect the VM, then select *Next*. Ensure the network is IPv4 and has outbound internet access to the required endpoints.
 
-. in the *Customize template* window, complete the following fields:
+. In the *Customize template* window, complete the following fields:
 
 +
-* *Proxy information* 
-** If you selected explicit proxy, enter the proxy server hostname or IP address and port number, as well as the username, password. 
-** If you selected transparent proxy, upload the respective certificate.
 * *Virtual Machine Configuration*
 
 ** *Maintenance password*: Set the password for the `maint` user that allows access to the NetApp Console local deployment maintenance console.
