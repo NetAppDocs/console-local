@@ -105,6 +105,8 @@ b. Select *Actions* > *New VM from this template*
 The vSphere task bar shows the progress as the NetApp Console local deployment is deployed.
 . Power on the VM.
 
+NOTE: To secure communication with your own TLS certificate, follow the instructions in this link:https://kb.netapp.com/Cloud/ncds/ncld/ncld_kbs/How_to_Install_a_Commercial_TLS_Certificate_in_NetApp_Console_local_deployment[NetApp Support Site Knowledge Base article^].
+
 
 
 
