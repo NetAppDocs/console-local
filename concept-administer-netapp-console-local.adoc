@@ -23,7 +23,7 @@ Review user and API activity, track the status of Console operations, download a
 
 == Licenses
 
-Use the licensing information to understand service entitlements for your Netapp Console local deployment environment.
+Use the licensing information to understand service entitlements for your Console local deployment.
 
 link:task-manage-licenses.html[Manage licenses in NetApp Console local deployment]
 

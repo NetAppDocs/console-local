@@ -12,45 +12,62 @@ summary: "Manage direct licenses for NetApp Backup and Recovery in NetApp Consol
 :imagesdir: ./media/
 
 [.lead]
-Manage licenses for NetApp Backup and Recovery in NetApp Console local deployment. Only a direct license, also known as a bring-your-own-license (BYOL), is available. You can view consumed capacity, license capacity, and license expiry.
+Manage direct licenses for NetApp Backup and Recovery in NetApp Console local deployment. You can add, update, and remove licenses, and view consumed capacity, license capacity, and license expiry.
 
-NOTE: Console local deployment itself does not require a license. The *Direct licenses* page lists the direct license for the supported service, NetApp Backup and Recovery. For service-specific licensing information, see the documentation for link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html[NetApp Backup and Recovery^].
+NOTE: Console local deployment itself does not require a license. Only direct licenses, also known as bring-your-own-license (BYOL) licenses, are available. For service-specific licensing information, see the link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html[NetApp Backup and Recovery licensing documentation^].
 
 .Required access roles
+
 You must have the Super admin or Organization admin role to manage licenses in Console local deployment.
 
 == Add a license
 
-Add a new license to your NetApp Console organization by uploading a license file. The license provides a specified capacity for the service and remains valid until the license expiry date.
+Add a license to your Console organization by uploading a license file. The license enables NetApp Backup and Recovery for a specified period and up to a maximum storage capacity.
+
+.Before you begin
+
+You need your cloud service serial number and NetApp Console organization ID to generate the license file.
 
 .Steps
 
 . Select *Administration > Licenses*.
 . Select the *Direct licenses* tab.
 . Select *Add license*.
-. In the *Add license* dialog, review the guidance to obtain the correct license file from the NetApp Support Site by selecting *System > Software Licenses* and using the cloud service serial number and NetApp Console organization ID.
-. Select *Upload* and select the license file.
+. Go to the *System > Software Licenses* tab at the NetApp Support Site and generate the license file.
+. Return to the *Add license* dialog, select *Upload*, and select the license file.
 . Select *Add license* to install the license.
 
-After the license is added, it appears as a new row in the *Direct licenses* table, the *Total licenses* summary increments, and the *License and Capacity Distribution* summary updates to reflect the new entitlement.
+The license appears in the *Direct licenses* table, and the *License and Capacity Distribution* summary updates.
+
+== View license status
+
+Review installed licenses and their status from the *Direct licenses* tab. The table shows the service, serial number, type, consumed capacity, license capacity, and license expiry. The *License and Capacity Distribution* summary shows the number of installed licenses and the capacity allocated to NetApp Backup and Recovery.
+
+From the row actions menu (image:icon-action.png[More icon]) in each row, you can update or remove a license.
+
+.Steps
+
+. Select *Administration > Licenses*.
+. Select the *Direct licenses* tab.
+. Review the table and the *License and Capacity Distribution* summary.
 
 == Update a license
 
-Replace or refresh an existing license in your NetApp Console organization, for example, when a license is renewed or its capacity or other entitlements change.
+Replace an existing license in your Console organization, for example, when a license is renewed or its capacity or expiry date changes.
 
 .Steps
 
 . Select *Administration > Licenses*.
 . Select the *Direct licenses* tab.
 . Select image:icon-action.png[More icon] for the license you are updating, and select *Update license*.
-. In the upload flow, select *Upload* and select the new license file.
+. In the *Update license* dialog, select *Upload* and select the new license file.
 . Select *Update license* to confirm the update.
 
-After the license is updated, the selected license row reflects the new license expiry, license capacity, and other entitlements. The *License and Capacity Distribution* summary also updates accordingly.
+After the license is updated, the selected row shows the new license capacity and license expiry. The *License and Capacity Distribution* summary also updates.
 
 == Remove a license
 
-Remove a license from your NetApp Console organization. A removed license no longer contributes capacity or time-based entitlement to the service.
+Remove a license from your Console organization. Removing a license is permanent. A removed license no longer contributes capacity or duration to NetApp Backup and Recovery, and if no valid license remains, backup and recovery operations might be affected.
 
 .Steps
 
@@ -60,15 +77,4 @@ Remove a license from your NetApp Console organization. A removed license no lon
 . In the *Remove license* confirmation dialog, verify the serial number in the prompt.
 . Select *Remove* to permanently remove the license.
 
-After the license is removed, its row is removed from the table, the *Total licenses* count decreases, and the *License and Capacity Distribution* summary updates accordingly. Removing a license may reduce service entitlement and affect service operation if the organization no longer has valid entitlement.
-
-== View license status
-
-From the *Direct licenses* tab, review installed licenses and their status. The table shows the service, serial number, type, consumed capacity, license capacity, and license expiry. You can sort or filter the table by column and use the row actions menu to update or remove a license.
-
-.Steps
-
-. Select *Administration > Licenses*.
-. Select the *Direct licenses* tab.
-
-The *License and Capacity Distribution* summary shows the number of installed licenses and the capacity allocated to NetApp Backup and Recovery.
+The license is removed from the *Direct licenses* table, and the *License and Capacity Distribution* summary updates.
