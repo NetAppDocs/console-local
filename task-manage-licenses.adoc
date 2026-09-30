@@ -12,9 +12,9 @@ summary: "Manage direct licenses for NetApp Backup and Recovery in NetApp Consol
 :imagesdir: ./media/
 
 [.lead]
-Manage direct licenses for NetApp Backup and Recovery in NetApp Console local deployment. You can add, update, and remove licenses, and view consumed capacity, license capacity, and license expiry.
+Manage the direct license for NetApp Backup and Recovery in NetApp Console local deployment. You can add, update, and remove the license, and view consumed capacity, license capacity, and license expiry.
 
-NOTE: Console local deployment itself does not require a license. Only direct licenses, also known as bring-your-own-license (BYOL) licenses, are available. For service-specific licensing information, see the link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html[NetApp Backup and Recovery licensing documentation^].
+NOTE: Console local deployment itself does not require a license. NetApp Backup and Recovery is currently the only service supported by direct licensing in NetApp Console local deployment. This direct license is also known as a bring-your-own-license (BYOL) license. For service-specific licensing information, see the link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html[NetApp Backup and Recovery licensing documentation^].
 
 .Required access roles
 
@@ -22,7 +22,7 @@ You must have the Super admin or Organization admin role to manage licenses in C
 
 == Add a license
 
-Add a license to your Console organization by uploading a license file. The license enables NetApp Backup and Recovery for a specified period and up to a maximum storage capacity.
+Add a direct license to your Console organization by uploading a license file. The license is floating, so its capacity is shared across all systems associated with your organization. If an existing license provides sufficient backup capacity, you do not need to purchase another license.
 
 .Before you begin
 
@@ -67,7 +67,7 @@ After the license is updated, the selected row shows the new license capacity an
 
 == Remove a license
 
-Remove a license from your Console organization. Removing a license is permanent. A removed license no longer contributes capacity or duration to NetApp Backup and Recovery, and if no valid license remains, backup and recovery operations might be affected.
+Remove a license from your Console organization. Removing a license is permanent. A removed license no longer contributes capacity or duration to NetApp Backup and Recovery. If the license expires, backups from existing policies and restores continue, but you cannot create new backup policies or extend protection to additional workloads and datastores.
 
 .Steps
 
