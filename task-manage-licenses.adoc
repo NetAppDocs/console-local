@@ -1,0 +1,80 @@
+---
+sidebar: sidebar
+permalink: task-manage-licenses.html
+keywords: licenses, licensing, NetApp Backup and Recovery, NetApp Console local deployment, BYOL, bring-your-own-license, direct license
+summary: "Manage direct licenses for NetApp Backup and Recovery in NetApp Console local deployment."
+---
+= Manage licenses in NetApp Console local deployment
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Manage the NetApp Backup and Recovery license in NetApp Console local deployment. This is a floating license that you can use across all systems associated with your NetApp Console organization. If the license provides sufficient backup capacity, you do not need to purchase another one. You can add, update, and remove the license, and view its consumed capacity, license capacity, and license expiry.
+
+NOTE: NetApp Console local deployment does not require a license. NetApp Backup and Recovery is currently the only service that supports direct licensing in NetApp Console local deployment. This license is also called a bring-your-own-license (BYOL) license. For more information, see the link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html[NetApp Backup and Recovery licensing documentation^].
+
+.Required access roles
+
+You must have the Super admin or Organization admin role to manage licenses in Console local deployment.
+
+== Add a license
+
+Add a license to your Console organization by uploading a license file.
+
+.Before you begin
+
+You need your cloud service serial number and NetApp Console organization ID to generate the license file.
+
+.Steps
+
+. Select *Administration > Licenses*.
+. Select the *Direct licenses* tab.
+. Select *Add license*.
+. Go to the *System > Software Licenses* tab at the NetApp Support Site and generate the license file.
+. Return to the *Add license* dialog, select *Upload*, and select the license file.
+. Select *Add license* to install the license.
+
+The license appears in the *Direct licenses* table, and the *License and Capacity Distribution* summary updates.
+
+== View license status
+
+Review installed licenses and their status from the *Direct licenses* tab. The table shows the service, serial number, type, consumed capacity, license capacity, and license expiry. The *License and Capacity Distribution* summary shows the number of installed licenses and the capacity allocated to NetApp Backup and Recovery.
+
+From the actions menu image:icon-action.png[An icon with three dots] in each row, you can update or remove a license.
+
+.Steps
+
+. Select *Administration > Licenses*.
+. Select the *Direct licenses* tab.
+. Review the table and the *License and Capacity Distribution* summary.
+
+== Update a license
+
+Replace an existing license in your Console organization, for example, when a license is renewed or its capacity or expiry date changes.
+
+.Steps
+
+. Select *Administration > Licenses*.
+. Select the *Direct licenses* tab.
+. Select the actions menu image:icon-action.png[An icon with three dots] for the license you are updating, and select *Update license*.
+. In the *Update license* dialog, select *Upload* and select the new license file.
+. Select *Update license* to confirm the update.
+
+After the license is updated, the selected row shows the new license capacity and license expiry. The *License and Capacity Distribution* summary also updates.
+
+== Remove a license
+
+Remove a license from your Console organization. Removing a license is permanent. A removed license no longer contributes capacity or duration to NetApp Backup and Recovery. If the license expires, backups from existing policies and restores continue, but you cannot create new backup policies or extend protection to additional workloads and datastores.
+
+.Steps
+
+. Select *Administration > Licenses*.
+. Select the *Direct licenses* tab.
+. Select the actions menu image:icon-action.png[An icon with three dots] for the license you want to remove, and select *Remove license*.
+. In the *Remove license* confirmation dialog, verify the serial number in the prompt.
+. Select *Remove* to permanently remove the license.
+
+The license is removed from the *Direct licenses* table, and the *License and Capacity Distribution* summary updates.

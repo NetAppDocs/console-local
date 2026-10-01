@@ -59,6 +59,6 @@ Super admin or Organization admin. link:reference-iam-predefined-roles.html[Lear
 [role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html#use-a-netapp-backup-and-recovery-byol-license[Obtain a license for NetApp Backup and Recovery^]. You can skip this step if you do not want access to advanced Backup and Recovery services.
 
-* Add the NetApp Backup and Recovery license to NetApp Console local deployment. link:https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-services-licenses.html[Add the license to NetApp Console local deployment^].
+* Add the NetApp Backup and Recovery license to NetApp Console local deployment. link:task-manage-licenses.html[Manage licenses in NetApp Console local deployment].
 
 * link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-rbac-setup.html[Grant users access to NetApp Backup and Recovery].
