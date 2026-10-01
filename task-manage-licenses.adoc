@@ -43,7 +43,7 @@ The license appears in the *Direct licenses* table, and the *License and Capacit
 
 Review installed licenses and their status from the *Direct licenses* tab. The table shows the service, serial number, type, consumed capacity, license capacity, and license expiry. The *License and Capacity Distribution* summary shows the number of installed licenses and the capacity allocated to NetApp Backup and Recovery.
 
-From the row actions menu (image:icon-action.png[More icon]) in each row, you can update or remove a license.
+From the actions menu image:icon-action.png[An icon with three dots] in each row, you can update or remove a license.
 
 .Steps
 
@@ -59,7 +59,7 @@ Replace an existing license in your Console organization, for example, when a li
 
 . Select *Administration > Licenses*.
 . Select the *Direct licenses* tab.
-. Select image:icon-action.png[More icon] for the license you are updating, and select *Update license*.
+. Select the actions menu image:icon-action.png[An icon with three dots] for the license you are updating, and select *Update license*.
 . In the *Update license* dialog, select *Upload* and select the new license file.
 . Select *Update license* to confirm the update.
 
@@ -73,7 +73,7 @@ Remove a license from your Console organization. Removing a license is permanent
 
 . Select *Administration > Licenses*.
 . Select the *Direct licenses* tab.
-. Select image:icon-action.png[More icon] for the license you want to remove, and select *Remove license*.
+. Select the actions menu image:icon-action.png[An icon with three dots] for the license you want to remove, and select *Remove license*.
 . In the *Remove license* confirmation dialog, verify the serial number in the prompt.
 . Select *Remove* to permanently remove the license.
 
