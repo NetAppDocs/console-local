@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-administer-netapp-console-local.html
 keywords: administer Console local deployment, audit, audit log, compliance, SIEM, webhook, VM maintenance, access management, demonstrate compliance, operational visibility, netapp console local
-summary: "Learn how to administer and monitor NetApp Console local deployment, including audit activity, subscriptions, maintenance, troubleshooting, and member access."
+summary: "Learn how to administer and monitor NetApp Console local deployment, including audit activity, licenses, maintenance, troubleshooting, and member access."
 ---
 = Learn about administration and monitoring in NetApp Console local deployment
 :hardbreaks:
@@ -21,11 +21,11 @@ Review user and API activity, track the status of Console operations, download a
 * link:task-audit-console-activity.html[Audit NetApp Console local deployment activity]
 * link:task-console-configure-notifications-delivery.html[Set up notifications delivery channels in NetApp Console local deployment]
 
-== Licenses and subscriptions
+== Licenses
 
-Use the licensing and subscriptions information to understand service entitlements and subscription status for your Console environment.
+Use the licensing information to understand service entitlements for your Console local deployment.
 
-link:https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html[Learn about licenses and subscriptions^].
+link:task-manage-licenses.html[Manage licenses in NetApp Console local deployment]
 
 == Maintain and troubleshoot the Console local deployment VM
 
