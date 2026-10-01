@@ -12,7 +12,7 @@ summary: "Manage direct licenses for NetApp Backup and Recovery in NetApp Consol
 :imagesdir: ./media/
 
 [.lead]
-Manage the NetApp Backup and Recovery license in NetApp Console local deployment. The license is floating, so its capacity is shared across all systems in your organization. If the license provides sufficient backup capacity, you do not need to purchase another one. You can add, update, and remove the license, and view its consumed capacity, license capacity, and license expiry.
+Manage the NetApp Backup and Recovery license in NetApp Console local deployment. This is a floating license that you can use across all systems associated with your NetApp Console organization. If the license provides sufficient backup capacity, you do not need to purchase another one. You can add, update, and remove the license, and view its consumed capacity, license capacity, and license expiry.
 
 NOTE: NetApp Console local deployment does not require a license. NetApp Backup and Recovery is currently the only service that supports direct licensing in NetApp Console local deployment. This license is also called a bring-your-own-license (BYOL) license. For more information, see the link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html[NetApp Backup and Recovery licensing documentation^].
 
