@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-manage-licenses.html
-keywords: licenses, licensing, NetApp Backup and Recovery, NetApp Console local deployment
+keywords: licenses, licensing, NetApp Backup and Recovery, NetApp Console local deployment, BYOL, bring-your-own-license, direct license
 summary: "Manage direct licenses for NetApp Backup and Recovery in NetApp Console local deployment."
 ---
 = Manage licenses in NetApp Console local deployment
