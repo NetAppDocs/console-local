@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-llm-connect.html
-keywords: LLM, AI, connect, large language model, console assistant, openai, openai-compatible, proxy, netapp console
+keywords: LLM, AI, connect, large language model, console assistant, openai, openai-compatible proxy, netapp console
 summary: "Connect a supported LLM endpoint to enable the Console assistant and AI-assisted management in NetApp Console local deployment."
 ---
 = Connect your LLM and enable the NetApp Console assistant in NetApp Console local deployment
@@ -30,7 +30,7 @@ To connect your LLM, select a provider path, enter endpoint details and API key,
 
 Prepare provider credentials and endpoint access so the Console assistant can operate within your organization’s configured governance boundaries.
 
-* Your provider type decision: OpenAI, OpenAI-compatible, or Anthropic, as supported by release and endpoint. 
+* Your provider type decision: OpenAI, OpenAI-compatible proxy, or Anthropic
 * A valid API key for the provider path you select.
 * The endpoint URL for your provider path.
 * Your user name or ID for the LLM provider account, if required.
@@ -50,6 +50,11 @@ Enable assistant capabilities through a validated provider configuration while r
 . Select the menu, and then select *Edit*.
 . In *Provider type*, select a provider type.
 +
+
+* *OpenAI* for direct OpenAI model access.
+* *OpenAI-compatible proxy* to use an enterprise gateway or proxy service.
+* *Anthropic* for Anthropic's Claude models.
+
 link:concept-llm-integration.html[Learn about LLM integration in NetApp Console local deployment].
 . If prompted for a provider endpoint, enter the endpoint URL for the provider path you selected.
 . In the *User name* field, enter your user name or SSO ID if your provider path requires it.
