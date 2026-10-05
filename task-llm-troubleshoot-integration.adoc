@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-llm-troubleshoot-integration.html
-keywords: LLM, AI, troubleshooting, openai, openai-compatible, proxy, endpoint, api key, netapp console
+keywords: LLM, AI, troubleshooting, openai, openai-compatible proxy, endpoint, api key, netapp console
 summary: "Troubleshoot LLM integration in NetApp Console local deployment with a quick triage flow for setup, assistant availability, runtime errors, and credential issues."
 ---
 = Troubleshoot LLM integration in NetApp Console local deployment

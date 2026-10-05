@@ -23,7 +23,7 @@ Choose a model that matches your performance, cost, and governance requirements.
 The provider type you choose determines which models appear in the Console local deployment model list:
 
 * *OpenAI* — provides models for direct OpenAI integration.
-* *OpenAI-compatible* — provides models that your organization's compatible endpoint exposes.
+* *OpenAI-compatible proxy* — to use an enterprise gateway or proxy service to connect to supported models.
 * *Anthropic* — provides models for direct Anthropic integration.
 
 The models you see can vary based on endpoint configuration, proxy or gateway behavior, release support, and organizational policy. Provider types differ by the endpoint you connect to and the models that endpoint exposes, not the transport protocol.
