@@ -39,7 +39,7 @@ NOTE: The Console agent reserves the UID and GID range of 19000 to 19200. This r
 NetApp Console local deployment uses fixed address space for inter-service communication. The IP range 10.42.0.0/16 and 10.43.0.0/16 are used for the internal network. Before deploying Console local deployment, ensure these IP ranges are not assigned to other VMs, DHCP scopes, DNS records, or load balancer VIP pools on the VLANs made available to the Console local deployment.
 
 
-See Knowledge Base article Agent IP conflict with existing network for instructions on how to change the IP address of the agent’s interfaces.
+See Knowledge Base article link:https://kb.netapp.com/Cloud/ncds/ncld/ncld_kbs/What_are_the_IP_ranges_NetApp_Console_Local_reserves_for_Kubernetes[Agent IP conflict with existing network^] for instructions on how to change the IP address of the agent’s interfaces.
 
 //end::ip-range-conflict[]
 
